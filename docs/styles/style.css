@@ -166,3 +166,36 @@ li {
   height: 32px;
   justify-content: space-around;
 }
+
+.home__content {
+  width: 100%;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__cta-links {
+  display: flex;
+  width: 100%;
+  font-family: verdana;
+}
+
+.home__cta-links__link {
+  width: 100%;
+  display: flex;
+}
+
+.home__cta-links__link-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  padding: 16px;
+}
+
+.home__cta-links__link-wrapper strong {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
