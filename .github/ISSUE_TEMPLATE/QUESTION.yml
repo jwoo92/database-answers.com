@@ -1,0 +1,24 @@
+name: Question
+description: Ask an open question
+title: "[Question]: "
+labels: ["question"]
+assignees:
+  - jwoo92
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to ask an open question!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+  - type: textarea
+    id: question
+    attributes:
+      label: Open Question
+      placeholder: I have a question about...
+    validations:
+      required: true
