@@ -1,0 +1,31 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+{%- include head.html -%}
+<body class="subPageBody">
+    <div class="headerBackground subPageHeaderBackground">
+        <div class="container subPageContainer">
+        {%- include header.html -%}
+            <article class="page markdown-body{% if page.form %} page--form{% endif %}{% if page.center %} page--center{% endif %}{% if page.pf_page %} pf-page{% endif %}">
+                {%- include subheader.html -%}
+                {{ content }}
+                {%- if page.form -%}
+                <section class="section{%- if page.form_class -%} {{ page.form_class}}{%- endif -%}">
+                    {%- capture form_snippet -%}{{page.form}}.html{%- endcapture -%}
+                    {%- include {{ form_snippet }}  -%}
+                </section>
+                {%- endif -%}
+            </article>
+        </div>
+        {%- include footer.html -%}
+    </div>
+    {%- if page.mobile_class -%}
+    <script defer type="text/javascript">if(window.isNativeApp)document.body.className+=' mobile-app-{{ page.mobile_class }}';</script>
+    {%- endif -%}
+    {%- include tiktok-event_page-view.html -%}
+    {%- include facebook-chat.html -%}
+</body>
+</html>

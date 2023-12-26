@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Best Practice Manual Viewer</title>
-	
+
 <script type="text/javascript">
 
 /**********************************************
-* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
 * Visit http://www.dynamicdrive.com/ for full source code
 **********************************************/
@@ -79,12 +79,12 @@ inc++
 }
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -120,7 +120,7 @@ var alltags=document.all? document.all : document.getElementsByTagName("*")
 ccollect=getElementbyClass(alltags, "switchcontent")
 statecollect=getElementbyClass(alltags, "showstate")
 if (enablepersist=="on" && ccollect.length>0){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -142,7 +142,7 @@ window.onunload=saveswitchstate
 </script>
 
 
-	
+
 </head>
 
 <body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
@@ -159,24 +159,24 @@ window.onunload=saveswitchstate
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>
@@ -215,7 +215,7 @@ window.onunload=saveswitchstate
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -234,20 +234,20 @@ window.onunload=saveswitchstate
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
+
 	<p>
 
 <font face="Verdana" size=2 color="blue">
 <b><font COLOR=blue size=+1>Installing the Oracle 9i Database</font></b><br>This Manual describes how to install Oracle 9i and reduce the 1.7 Gb of disk space required.<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.0&nbsp;Before the Installation</b></font><p><div id="chap0" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.1       &nbsp;Background :</b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Oracle weighs in at 1.7 Gigabytes, which is a substantial amount of disk space, especially if you just want to check out the Personal Edition. Here are some suggestions for reducing the size of the installation :-
-</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.11      &nbsp;In addition you need some space (maybe 500MB) for your database files.</b></font><p><div id="para0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">I just installed 9i Enterprise on my computer, the installation size is 1.7G, and after playing with it for a few days, it grew to 3.9G. This was no problem to me, I have 2 disks with 95G capacity, I got it over a year ago. Nowadays hard drive is so much cheaper, just get yourself a 40G HD for about $200, you're doing yourself a big favour.</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.0&nbsp;During the Installation</b></font><p><div id="chap1" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.1       &nbsp;There are some things you can do during installation.</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.11      &nbsp;Here's how to substantially reduce the footprint.</b></font><p><div id="para1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">While 9i is installing keep an eye open for every file with the following file extensions:.avi.mov.pdf.html.doc.ico and delete them. 
-This monster contains almost 1GB of help files and documentation that has nothing to do with actually running the Oracle software. 
-<BR>Though you must temporarily dump some stuff so that the installer will move forward. 
-</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.12      &nbsp;The "database templates" that come with the distribution take lots of space.</b></font><p><div id="para2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">An easy way to work around this is to start the install - when the installer gets upset because you are running out of space, search for file larger than (say) 50M. 
-<BR>The ".DFJ" files will stick out like a sore thumb - you can delete and/or move them if you don't intend using them 
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.11      &nbsp;In addition you need some space (maybe 500MB) for your database files.</b></font><p><div id="para0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">I just installed 9i Enterprise on my computer, the installation size is 1.7G, and after playing with it for a few days, it grew to 3.9G. This was no problem to me, I have 2 disks with 95G capacity, I got it over a year ago. Nowadays hard drive is so much cheaper, just get yourself a 40G HD for about $200, you're doing yourself a big favour.</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.0&nbsp;During the Installation</b></font><p><div id="chap1" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.1       &nbsp;There are some things you can do during installation.</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.11      &nbsp;Here's how to substantially reduce the footprint.</b></font><p><div id="para1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">While 9i is installing keep an eye open for every file with the following file extensions:.avi.mov.pdf.html.doc.ico and delete them.
+This monster contains almost 1GB of help files and documentation that has nothing to do with actually running the Oracle software.
+<BR>Though you must temporarily dump some stuff so that the installer will move forward.
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.12      &nbsp;The "database templates" that come with the distribution take lots of space.</b></font><p><div id="para2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">An easy way to work around this is to start the install - when the installer gets upset because you are running out of space, search for file larger than (say) 50M.
+<BR>The ".DFJ" files will stick out like a sore thumb - you can delete and/or move them if you don't intend using them
 </font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.0&nbsp;After the Installation</b></font><p><div id="chap2" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.1       &nbsp;It is important that the installation was completed satisfactorily.</b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Here are some ways to check this :-</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.11      &nbsp;Start up SQL*Plus.</b></font><p><div id="para3" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Run some prepared Scripts, to check Table Ownwers, and so on.</font></div></td></tr></table>
 </font>
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>
@@ -260,24 +260,24 @@ This monster contains almost 1GB of help files and documentation that has nothin
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>

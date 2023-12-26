@@ -1,0 +1,165 @@
+<html><head><title>End2End View for the POC Hotels Platform</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<b>End2End View for the POC Hotels Platform </b>
+<br>Back to the <a href="index.html">Home Page</a>
+
+<br><br>
+
+<table border=1>
+
+<!------------
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br>
+<b>5) Tables for Revenue KPI</b>
+<br><br>
+<img src="images/HOTELS_revenue_per_room_kpi_model.gif">
+</TD
+</tr>
+-------------->
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>10) Revenue Data Mart</b> (a starting-point for discussion)
+<br><br><img border=0 alt="Conceptual Data Model for Hotels Platform " src="images/HOTELS_revenue_data_mart_model.gif">
+</td>
+</tr>
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>9) Conceptual Bookings Data Mart
+<br><br><img src="images/bookings_data_mart_conceptual.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>8) Logical Data Model for Reporting Services</b>
+<br>
+<br><img border=0 alt="Logical Data Model for Hotels Platform " src="images/rpts_logical_data_model.gif">
+</td>
+
+<!--------------
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>------) Report Paramters Data Model
+<br><br><img src="images/rpt_parameters_data_model.gif">
+</td>
+--------------------->
+</tr>
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>7) Layers in Hotel Platform</b>
+<br><br><img border=0 alt="Conceptual Data Model for Hotels Platform " src="images/platform_layers.jpg">
+</td>
+<td valign=top><font color=blue face=Verdana size=2>
+&nbsp;
+<!--------------
+<b>Data Dictionary</b>
+<br>
+<br>CRUD Operations are required for these Entities :-
+<br>1) Transaction Data - Bookings, Check-ins,Check-outs, Guests, events, Payments
+<br>2) Master Data - Hotels, Hotel Users, Rooms, Services.
+<br>3) Reference Data - Booking Status, Calendar, Country Codes, Event Types, Payment Methods.
+--------------------->
+
+</td>
+
+</tr>
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>6) Customers and Guests Data Model</b>
+<br><br><img border=0 alt="Customers and Guests Data Model" src="../canonical_data_models/images/customers_and_hotel_guests.gif">
+</td>
+</tr>
+
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>5) DBA Business Platform showing Services</b>
+<br><br><img border=0 alt="Generic Data Platform" src="../dba_business_platform/images/dba_business_platform_after_servicenow.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>4) Apex Logical Data Model</b>
+<br><br><img border=0 alt="Generic Data Platform" src="images/apex_logical_data_model.gif">
+</td>
+<td valign=top><font color=blue face=Verdana size=2>
+<b>Data Dictionary</b>
+
+<br>CRUD Operations are required for these Entities :-
+<br>1) Transaction Data - Bookings, Check-ins,Check-outs, Guests, events, Payments
+<br>2) Master Data - Hotels, Hotel Users, Rooms, Services.
+<br>3) Reference Data - Booking Status, Calendar, Country Codes, Event Types, Payment Methods.
+<hr>
+<b>TRANSACTIONS and PSEUDO-SQL</b>
+<br>Transaction 1) - 'Customer makes a Booking' -
+<br>Create -
+INSERT INTO Hotel_Events
+(Customer_ID '1',
+Platform_Code 'Hotel',
+Service_Code 'Make Booking'
+Date_Time SYSDATE(Now'))
+
+
+<hr>
+Transaction 2) - 'Customer checks in' -
+<br>Update - UPATE Event
+<br>Customer_ID 'Customer_ID',
+<br>Platform_Code 'Hotel',
+<br>Service_Code 'Check in'
+<br>Date_Time SYSDATE(Now)
+<br>WHERE Customer_Name = 'John Doe'
+
+<hr>
+Transaction 3) - 'Customer makes Payment' -
+<br>Upate - UPDATE Event
+<br>Customer_ID 'Customer_ID',
+<br>Platform_Code 'Hotel',
+<br>Customer_ID,
+<br>Service_Code 'Make Payment'
+<br>Date_Time SYSDATE(Now')
+<hr>
+Transaction 4) - 'Customer checks out' -
+<br>Update - UPDATE Event
+<br>Customer_ID 'Customer_ID',
+<br>Platform_Code 'Hotel',
+<br>Service_Code 'Check out'
+<br>Date_Time SYSDATE(Now')
+<hr>
+</td>
+</tr>
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>3.1) Events and Sub-Events</b>
+<br><br><img border=0 alt="Generic Data Platform" src="../canonical_data_models/images/events_and_sub_events_model.gif">
+</td>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>3.2) Gen Events and Sub-Events</b>
+<br><br>
+<img src="images/Hotel_and_Gen_Events_data_model.gif">
+</td>
+</tr>
+
+
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>2) Generic Data Platform</b>
+<br><br><img border=0 alt="Generic Data Platform" src="../canonical_data_models/images/generic_data_platform.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><br><b>1) Canonical Data Model</b>
+<br><br><img border=0 alt="Canonical Data Model" src="../canonical_data_models/images/cdm_with_views.jpg">
+</td>
+</tr>
+
+</table>
+
+<font size=1>
+<br><br><I> &#169 Database Answers Ltd. 2017</I></font>
+</font>
+</body>
+
+</html>

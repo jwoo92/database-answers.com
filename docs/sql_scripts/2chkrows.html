@@ -1,0 +1,42 @@
+<head><title>SQL for Row Counts</title></head>
+
+<body background="images/gmi_bk.jpg" bgcolor="#FFFFCC" text="#202020">
+
+<! Start of Standard Header -->
+<br><center><b><I>Step 2. SQL to generate and Run a Script to
+Check Row Count for each Table</I></b></center>
+<hr>
+<! End of Standard Header -->
+
+<OL>
+<li>set feedback off
+<li>set heading off
+<li>Generate the SQL Script, called gen_script.sql ...
+<br>spool gen_script.sql
+<br>select TO_CHAR(SysDate,'DD/Mon/YYYY  HH:MI P.M.') from
+dual;
+<br>Change Table Owner as appropriate ...
+<br>SELECT 'SELECT '||''''||Table_name||''''||', COUNT(*) FROM
+'||Table_Name||';'
+<br>FROM all_tables WHERE owner='OPS$ORACLE';
+<br>select TO_CHAR(SysDate,'DD/Mon/YYYY  HH:MI P.M.') from
+dual;
+<br>spool off
+<li>Run the generated SQL Script and create output file.
+<li>spool chk_num_rows.op
+<li>start gen_script.sql
+<li>spool off
+<li>rem This completes the Job.
+</body>
+
+<Start of Standard Footer>
+<hr size="5">
+<center>
+        [ <a href="index.html">Home Page</a>
+        | <a href="site_map.html">Search & Site Map</a>
+        | <a href="whatsnew.html">What's New</a> ]
+</center>
+<hr size="5">
+<!-- End of Standard Footer>
+
+</html>

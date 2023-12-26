@@ -1,0 +1,266 @@
+<html>
+<head>
+<title>Data Model for Feedback for Services</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://kozonplumbingandheating.com/contact_us/customer_feedback" target="_new">
+<img align=right alt="Father of all Data Models (Click for Kozon Web Site)" space="0" vspace="4" border=0 src="../../images/kozon_customer_feedback_sml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+--->
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="7%"><pre><font color=yellow face=Verdana size=2>Data Model for Feedback for Services&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for Data Model for Feedback for Services'>An Access Database</a> is available.
+
+<!---
+<pre><font color=blue face=Verdana size=2>These are the Steps we followed in defining our Data Model for Feedback for Services  (UDM).
+
+Step 1 : Getting Started
+Recently (January, 2014) I started  thinking about the nature of a UDM.
+Then I realised that my starting-point would have to be my <a href="../canonical_data_models/index.html">Canonical Data Model</a> because I created it to be a transaction-level Generic Model.
+
+Step 2 : What else do I need ?
+My Canonical Data Model is Event-oriented so I wondered 'What do I need to include that is NOT an Event ?'
+I decided that everything that people do is an Event.
+At first it seemed I would have to include Activities as well as Events but I found that there is something called a <a href="http://www.horseshowcentral.com/flex/eventing_three_day_event/113/1" target="_new">Three-Day Event</a> which is an
+Equestrian competition, and, (of course) takes place over 3 days.
+
+Therefore I decided I did not need an extra Entity called Activities.
+
+So What I needed to include that is NOT an Event was the calculation of derived figures such as Financial Totals and data for Performance Reports.
+This might lead to the design for <a HREeeeF="data_mart.html">a Data Mart</a>, which is very useful for providing data for Reports and Business Intelligence.
+
+After more reflection, I realised that thw Model has to include things that happen before or after Events.
+In other words, those that are related to planning for Events or analysing Performance after EVents have taken place.
+
+Then I realised that all the things that happen before or after Events are simple other Events.
+
+Of course, we can identify different patterns in these Events so we can establish a Framework of Design Patterns.</pre>
+--->
+
+
+
+
+
+
+<!---
+We are using this Canonical Data Model as the foundation for a <a href="bmews_strategy.html">Development Strategy</a> for a family of related Applications -
+<li><a href="../customers_and_services_generic/index.html">Customers and Services</a>
+<li><a href="../logistics_and_shipments/index.html">Logistics and shipments</a>
+<li><a href="../recruitment_agencies_generic/index.html">Recruitment Agencies</a>
+<li><a href="../talent_agencies/index.html">Talent Agencies</a>
+
+<hr>
+
+You can check out our discussions on <a href="facts.html">Data Model for Feedback for Services</a>
+--->
+
+<br><br>If you have any comments or suggestions
+<a href='mailto:dba_requests@barryw.org?subject=Comments on Data Model for Services Feedback'> we would be glad to hear them</a>.
+
+
+<br><br>If you are new to Data Models, this page of my new Tutorial will help you <a href="../../tutorial4_db_schema/tutorial_slide_5.html"><b>understand the Data Model</b></a>.
+
+
+<!---
+<br>This is an 'Easy to understand' version showing only the Entity names with key fields.
+<br><br>There is also a Data Model showing <a href="multi_resource_scheduling_showing_attributes.html">all Attributes</a>.
+<br>You can <a href="../../downloads/Design_Patterns_and_ERwins_Model_Templates.pdf">download</a> the Chapter on Model Templates from Donna Burbank's excellent book called "Data Modeling made simple with CA ERwin Data Modeler r8".
+--->
+
+<table border=1><tr><td valign=top><br>
+<img align=left alt="Data Model" for Feedback Services border=0 src="images/data_model.gif">
+</td>
+
+<td valign=top><pre><font color=blue face=Verdana size=2>
+<!----
+We have <a href="data_model_showing_attributes.html">a Top-Level Model showing Attributes</a>&nbsp;&nbsp;nbsp;
+and Some Subject Area Models :-
+<li><a href="events_subject_area.html">Events</a>
+<li><a href="party_subject_area.html">Party</a>
+
+Other aspects include :-
+<li>Cars and Petrol
+<li>Payments
+<li>Suppliers
+<li>Support for Events
+<li>Trains and Schedules
+<li>Travel and Transport
+<li><font color=red>Look for horizontal subject areas</font>
+--->
+
+
+Barry Williams
+Database Answers Ltd.
+London, England
+<br>January 7th. 2014
+</td>
+</tr>
+</table>
+
+
+
+
+
+<!---
+We have compared our Canonical Data Model with these models from practitioners whom we respect (listed alphabetically):-
+<li><a href="david_hays_model.html"><b>David Hay</b>'s Generic Enterprise Model</a>
+
+<li><a href="graeme_simsions_model.html"><b>Graeme Simsion</b>'s 'High-Level Supertypes'</a>
+<li><a href="john_giles_nimble_elephant.html"><b>John Giles</b>' Integration Patterns</a>.
+<li><a href="lawrence_sanders_model.html"><b>Lawrence Sanders</b>' Generic Organizational Data Model</a>
+<li><a href="steve_hobermans_model.html"><b>Steve Hoberman</b>'s Very High-Level Data Model</a>
+
+<br><br>
+Here are some other Data Model for Feedback for Services  on our Web Site :-
+<br>
+<li><a href="canonical_logistics.html">Canonical Logistics</a>
+<li><a href="canonical_shipments_with_messages.html">Canonical Shipments with Messages</a>
+<li><a href="customers_and_events.html">Customers and Events</a>
+<li><a href="customers_and_events_data_mart.html">Customers and Events Data Mart</a>
+<li><a href="../police_canonical_data_model/index.html">Police Canonical Data Model</a>
+<hr>
+<li><a href="data_mart.html">Data Mart</a>
+<li><a href="getting_started.html">Getting Started December 17th</a>
+<li><a href="getting_started_retail.html">Getting Started Retail (Dec 27th)</a>
+<hr>
+
+<br>
+Here are some more interesting external Web Links :-
+<li>From IBM on
+<a href="https://www.ibm.com/developerworks/data/library/techarticle/dm-0803sauter/" target="_new">
+SOA and Data Model for Feedback for Services </a>
+<li>from <a href="http://eaipatterns.com/CanonicalDataModel.html" target="_new">EAI Patterns</a>
+<br>
+<li>Wikipedia on <a href="http://en.wikipedia.org/wiki/Semantics_of_Business_Vocabulary_and_Business_Rules" target="_new">SBVR (Semantics for Business Volcabulary and Rules)</a> -  this helps provide guidelines for 'What is Customer ?' (thanks to <b>John Giles</b>).
+
+<br>
+
+<br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+<br>January 4th. 2014
+<br>
+</td>
+</tr>
+</table>
+
+--->
+
+<center><font COLOr=blue face=Verdana size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2014</I></font>
+</center>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

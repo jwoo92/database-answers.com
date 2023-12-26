@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>Job Costing and profitability Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.principlesofaccounting.com/" target="_new">
+<img align=right alt="Job Costing from the Principles of Accounting (Click for Web Site)" border=1  hspace="0" vspace="4" src="images/job_cost_sheet_sml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="job_costing_and_profitability_print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<img alt="Job Costing"       src="images/lft_job_costing.bmp">
+<img alt="and_profitability" src="images/rt_and_profitability.bmp">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+<a href="index.html">Back to the Data Model</a>
+<b><br>The Draft Business Rules have been defined and are listed below.</b>
+<pre><font color=blue face="Verdana" size=2><b>The Area being Modelled is Job Costing and Profitability:-</b>
+<b>A. This is a Statement of the Requirements.</b>
+<hr>
+<b>The requirement</b>
+To track the material and labour costs of a Job so profit can be calculated from this.
+To track who did what in the course of getting that Job done.
+
+<b>Conceptually</b>
+A Job is requested by a Client.
+Each Job is completed after a series of Subjobs are done.
+Each Subjob is done by a Worker.
+Each Subjob has an associated Material cost.
+Each Worker has an associated Labour rate cost.
+
+<b>Practically</b>
+Each Job is registered to a Client for a Job Type and given a Job number. The Payment amount
+for the Job is also recorded.
+The Worker registers the Subjob for that particular Job putting in details of who did it, what
+type of subjob was done, when it was started and when it was finished.
+
+
+<b>Problems with reporting history</b>
+There are two derived data values in what is required of this system:
+
+Subjob labour cost: subjob hours times worker's labour rate cost
+Profit: Job payment minus total Job cost (material plus labour cost).
+Since material and labour costs will change with time, I believe there would be problems with
+historically comparing Subjob labour cost and Profit from one year to another with the current schema
+since there is only a single field to record the values from which the data in question is derived?
+
+That being the case, is this where the the "date from" field comes in as shown in <a href="http://www.databaseanswers.org/tutorial4_db_schema/tutorial_slide_7.html" target="_new">your Tutorial</a>  ?
+
+Thanks!
+
+Kevin
+<hr>
+<b>B. The Things of Interest, ('THINGS'), include :-</b>
+B.1 Clients
+B.2 Jobs
+B.3 Sub Jobs
+B.4 Workers
+B.5 Others to be determined.
+
+<b>C. These THINGS are Related as follows :-</b>
+C.1 To be determined.
+
+<b>D. Other Characteristics of these THINGS include :-</b>
+D.1 To be determined.
+
+<b>E. Sample Data includes :-</b>
+E.1 To be determined.
+
+<b>F. Typical Enquiries include :-</b>
+F.1 </pre>
+</td></tr>
+
+<tr>
+<td>&nbsp</td>
+<td colspan=1><pre><font color=blue face=Verdana size=2>Barry Williams
+January 29th. 2010
+Principal Consultant
+Database Answers</pre>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: Blue;
+  font-weight: normal;
+}
+
+p {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: Blue;
+  margin: 2px 0px 5px;
+  line-height: 15px;
+  text-align: justify;
+}
+
+.small {
+  font-size: 11px;
+}
+
+.cell {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: Blue;
+  font-weight: normal;
+}
+
+ul {
+  list-style-position: outside;
+  list-style-type: square;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: -5px;
+}
+
+ol {
+  list-style-position: outside;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-left: 25px;
+  margin-right: 15px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.header1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  color: Blue;
+  margin: 0px;
+}
+
+.header2 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 11px;
+  color: Blue;
+  margin: 0px;
+}
+
+.header3 {
+  font-weight: bold;
+  color: Blue;
+  text-align: left;
+}
+
+.time {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: Blue;
+  margin: 0px 0px 0px 5px;
+  line-height: 10px;
+  font: bold;
+}
+
+.menu {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: Blue;
+  margin: 0px 0px;
+  line-height: 14px;
+}
+
+li {
+  margin: 5px 5px 5px 5px;
+}
+
+.usual {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: Blue;
+  line-height: 17px;
+}
+
+.data-model-columns {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  flex-wrap: wrap;
+  max-width: 100vw;
+}
+
+.data-model-column {
+  display: inline-block;
+  width: auto;
+  max-width: 450px;
+}
+
+.data-models-cta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.data-models-cta td {
+  padding: 0 15px;
+}
+
+.highlight-red,
+.highlight-red * {
+  color: red;
+}
+
+.highlight-green,
+.highlight-green * {
+  color: green;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 117px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1680px;
+  width: 100%;
+}
+
+.header-logo {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 32px;
+  background-image: url("/images/nav_bg.jpg");
+}
+
+.navbar-wrapper {
+  width: 100%;
+  max-width: 1710px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.nav-items {
+  align-items: center;
+  display: flex;
+  height: 32px;
+  justify-content: space-around;
+}
+
+.home__content {
+  width: 100%;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__cta-links {
+  display: flex;
+  width: 100%;
+  font-family: verdana;
+}
+
+.home__cta-links__link {
+  width: 100%;
+  display: flex;
+}
+
+.home__cta-links__link-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  padding: 16px;
+}
+
+.home__cta-links__link-wrapper strong {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.grow {
+  flex-grow: 1;
+}

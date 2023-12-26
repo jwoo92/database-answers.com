@@ -1,0 +1,262 @@
+<html><head><title>Print Version of the Data Models for BMEWS Design Pattern 1</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<b>Data Models for BMEWS Design Pattern 1</b>
+
+<br><br>
+
+
+<!-----
+<BBR><br><img border=0 alt="Data Model for BMEWS Design Pattern 1" src="images/data_model.gif">
+---->
+
+
+<table border=1>
+
+<tr>
+<td align=middle colspan=1 valign=top><font COLOr=blue face=Verdana size=2><br><b>Data Models</b><br>
+</td>
+<td align=middle><font COLOr=blue face=Verdana size=2><br><b>Commentary</b><br><br></td>
+</tr>
+
+<tr><td valign=top>
+<a href="../customers_commercial_and_personal/index.html">
+<img align=left alt="Data Model for the Customers Subject Area" border=0 src="../customers_commercial_and_personal/images/data_model.gif"></a>
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 1 : A Customer</b>
+<br><br>
+This Model dates from 2001 and shows how Inheritance helps us to model both <a href="../customers_commercial_and_personal/index.html">Commercial and Personal Customers</a>.
+<br><br>However it doesn't show any details of other things that we are interested in, like Payment Methods.
+<br><br>So we look for another Model which is a more suitable starting-point for a Customer who is going to make a Purchase.
+</td>
+</tr>
+
+
+
+<tr><td valign=top>
+<a href="../customers_and_addresses/index.html">
+<img align=left alt="Data Model for Customers and Addresses" border=0 src="../customers_and_addresses/images/data_model.gif"></a>
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 2 : Customers and Addresses</b>
+<br><br>This Model dates from 2006 and shows a general solution for Customers and Addresses.
+
+<br>We will have to add more Customer-related items to the Customer Entity but it is fine for a starting-point.
+<br>However it doesn't show any details of other things that we are interested in, like Payment Methods.
+<br><br>So we look for another Model which is a more suitable starting-point for a Customer who is going to make a Purchase.
+</td>
+</tr>
+
+
+<tr><td valign=top>
+<img align=left alt="Data Model for the Customers and Payments Subject Area" border=0 src="../customers_and_payments_e_govt/images/customers_and_payments_subject_area_model.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 3 :A Customer makes a Payment</b>
+<br><br>
+This Model dates from 2010 and was part of a Master Data Management (MDM) approach.
+<br>It includes Payment Methods and the MDM approach is good for this current work so we decide to includ it in our Top-Level Model.
+<br><br>So we choose this <a href="../customers_and_payments_e_govt/customers_and_payments_subject_area.html">Customers and Payments</a> Model
+and will adapt it to suit our requirements.
+
+<font color=red>barry</font>
+</td>
+</tr>
+
+
+<tr><td valign=top>
+<img align=left alt="Data Model for Customers and Orders" border=0 src="../retail_customers/images/customers_and_orders_model.gif">
+</td>
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 4 : Customer makes a Purchase</b>
+<br><br>This <a href="../retail_customers/customers_and_orders_model.html">Customers and Orders Model</a> dates from 2010.
+
+
+<br><br>It includes (Customer-related) Mailshots and (Promotion-related) Promotions.
+It is comprehensive so we decide to include it.
+<font color=red>barry</font>
+</td>
+</tr>
+
+
+
+<tr><td valign=top>
+<img align=left alt="Data Model for the BMEWS Design Pattern 1" border=0 width=700 src="../public_transport/images/data_model.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 5 : A Customer makes a Journey by Train</b>
+<br><br><a href="../public_transport/index.html">This Model</a> for Public Transport dates from 2009
+</td>
+</tr>
+
+<tr><td valign=top>
+<img align=left alt="Data Model for the BMEWS Design Pattern 1" border=0 src="../airline_reservations/images/data_model.gif"">
+</td>
+
+<td valign=top><pre><font COLOr=blue face=Verdana size=2><b>Step 6 : The Customer makes a reservation for a Flight</b></pre>
+<a href="../airline_reservations/index.html">This Model<A> dates from 2008
+
+<br><br>When we look at the Trains and Flight Reservations Models, we realise that we can replace them both by the "Trains and Boats and Planes" Model.
+<br>We prefer to have a smaller number of Models and have more powerful Models.
+</td>
+</tr>
+
+<tr><td valign=top>
+<img align=left alt="Data Model for Trains and Boats and Planes" border=0 src="../trains_and_boats_and_planes/images/data_model.gif">
+</td>
+
+<td valign=top><pre><font COLOr=blue face=Verdana size=2><b>Step 7 : Replace two Models by one for Trains and Boats and Planes</b></pre>
+<a href="../trains_and_boats_and_planes/index.html">This Model<A> dates from 2013
+
+<br><br>When we look at the Trains and Flight Reservations Models, we realise that we can replace them both by the "Trains and Boats and Planes" Model.
+<br>We prefer to have a smaller number of Models and have more powerful Models.
+</td>
+</tr>
+
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Data Model for the BMEWS Design Pattern 1" border=0 src="../bmews_design_pattern_1/images/data_model.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 8 : Review progress</b>
+On the left, we show the Data Model for Customers with Addresses and Payment Methods.
+
+<!---
+and here are links to the Subject Area Models that we have derived :-
+<li><a href="../airline_reservations/index.html">Airline Reservations</a> based on the Design Pattern of the
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../subject_area_reservations/index.html"><font color=red>Reservations Subject Area</font></a>
+<li><a href="../subject_area_customers_addresses_and_payment_methods/index.html">Customers</a> DONE
+<li><a href="subject_area_customers_purchases.html">Customers Purchases</a>
+<li><a href="subject_area_customers_purchases_payments.html">Customers Purchases and Payments</a>
+<li><a href="../parties_roles_and_customers/index.html">Parties, Roles and Customers</a>
+<li><a href="../public_transport/index.html">Public Transport</a> AS IS
+<li><a href="../trains_and_boats_and_planes/index.html">Trains and Boats and Planes</a> (NEEDS WORK)
+--->
+
+</td>
+</tr>
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Canonical Data Model" border=0 src="../canonical_data_models/images/data_model.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 9 : Adopt our Canonical Data Model</b>
+At this point we decide to use our
+<a href="../canonical_data_models/index.html">Canonical Data Model</a>, because its Event-Oriented Approach is very economical and very powerful.
+</td>
+</tr>
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Top-Level Data Model with Customers" border=0 src="images/top_level_data_model_with_customers.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 10 : Conclusions</b>
+On the left, we will show the Top-Level Data Model with Customers.
+<br>In the next Model, we replace Customers with Parties.
+<br><br>Logically, these are equivalent but the Parties approach is more general and professional.
+<br>You can choose the one which is more appropriate to your situation.
+<br>
+
+
+<!---
+<li><a href="../airline_reservations/index.html">Airline Reservations</a> based on the Design Pattern of the
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../subject_area_reservations/index.html"><font color=red>Reservations Subject Area</font></a>
+<li><a href="../subject_area_customers_addresses_and_payment_methods/index.html">Customers Addresses and Payment Methods</a>
+<li><a href="subject_area_customers_purchases_payments.html">Customers Purchases and Payments</a>
+<br>(which we prefer to <a href="subject_area_customers_purchases.html">Customers Purchases</a>)
+<li><a href="../parties_roles_and_customers/index.html">Parties, Roles and Customers</a>
+<li><a href="../public_transport/index.html">Public Transport</a> AS IS
+<li><a href="../trains_and_boats_and_planes/index.html">Trains and Boats and Planes</a> (NEEDS WORK)
+--->
+
+</td>
+</tr>
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Top-Level Data Model with Parties" border=0 src="images/top_level_data_model_with_parties.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 11 : Conclusions</b>
+On the left, we show the Top-Level Data Model, and here are links to the Subject Area Models that we have derived :-
+<li><a href="../airline_reservations/index.html">Airline Reservations</a> based on the Design Pattern of the
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../subject_area_reservations/index.html"><font color=red>Reservations Subject Area</font></a>
+<li><a href="../subject_area_customers_addresses_and_payment_methods/index.html">Customers Addresses and Payment Methods</a>
+<li><a href="subject_area_customers_purchases_payments.html">Customers Purchases and Payments</a>
+<br>(which we prefer to <a href="subject_area_customers_purchases.html">Customers Purchases</a>)
+
+
+<li><a href="../parties_roles_and_customers/index.html">Parties, Roles and Customers</a>
+<li><a href="../public_transport/index.html">Public Transport</a> AS IS
+<li><a href="../trains_and_boats_and_planes/index.html">Trains and Boats and Planes</a> (NEEDS WORK)
+</td>
+</tr>
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Customer Purchases Design Pattern Data Model" border=0 src="images/customer_purchases_design_pattern_data_model.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 12 : Design Pattern for a Generic Data Warehouse</b>
+<br>
+Our Data Warehouse is a Generic Third-Normal Form design.
+</td>
+</tr>
+
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Top-Level Data Model with Customers" border=0 src="images/top_level_data_model_with_customers.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 13 : Data Warehouse</b>
+<br>Our Data Warehouse has a Third-Normal Form design and is the same As our final Top-Level Model with Customers.
+</td>
+</tr>
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Data Mart Design Pattern" border=0 src="images/data_mart_design_pattern_data_model.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 14 : Design Pattern for a Generic Data Mart</b>
+</td>
+</tr>
+
+<tr><td valign=top>&nbsp;
+<img align=middle alt="Data Mart Phase 3" border=0 src="images/data_mart_phase_3.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 15 : Using the Design Pattern for our specific Data Mart</b>
+<br>This shows Data Mart Phase 3 for our specific Requirements.
+</td>
+</tr>
+
+<tr><td valign=top>&nbsp;
+<img align=left alt="Top-Level Data Model with Customers" border=0 src="images/top_level_data_model_with_customers.gif">
+</td>
+
+<td valign=top><font COLOr=blue face=Verdana size=2><b>Step 16 : Data Warehouse</b>
+<br>Our Data Warehouse has a Third-Normal Form design and is the same As our final Top-Ledvel Model with Customers.
+
+</td>
+</tr>
+
+
+</table>
+
+<br><br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+<br>February 16th. 2014
+<br>
+
+
+<font size=1>
+<br><br><I> &#169 Database Answers Ltd. 2014</I></font>
+
+</body>
+
+</html>

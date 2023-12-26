@@ -1,0 +1,115 @@
+<html><head><title>Event Reservations</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<table border=0 width=100%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_banner_and_btn_400.jpg">
+</td>
+
+<td align=right rowspan=2 valign=top>
+<a href="../../images/switzerland/train_on_viaduct.jpg">
+<img alt="Train on Viaduct in Switzerland" BORDEeeR=1 src="../../images/switzerland/train_on_viaduct_vsml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td align=left valign=top>
+<img alt="Event" src="../../images/buttons/button_studio/event.gif">
+<img alt="Reservations" src="../../images/buttons/button_studio/rt_reservations.gif">
+</td>
+</tr>
+
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<table bgcolor=blue border=0 width=100%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../../index.html"><img alt="Home" border=0 src="../../images/buttons/home_alt.gif"></a>
+</td>
+
+<td align=left valign=top width=100>
+<a href="../../ask_a_question.html"><img alt="Ask a Question" border=0 src="../../images/buttons/ask_a_question_alt.gif"></a>
+</td>
+<td align=middle valign=top width=60>
+<a href="../../careers.html"><img alt="Careers" border=0 src="../../images/buttons/careers_alt.jpg"></a>
+</td>
+<td align=left bgcolor=white valign=top width=85>
+<a href="../../data_models/index.html"><img alt="Data Models" border=0 src="../../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><img alt="FAQs" border=0 src="../../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../site_map.html"><img alt="Search" border=0 src="../../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><img alt="Site Map" border=0 src="../../images/buttons/site_map_alt.gif"></a>
+</td>
+<td>&nbsp</td>
+</tr>
+
+</table>
+
+<table bgcolor="98CEDF" width=100%>
+<tr><td><font color=blue face=Verdana size=2>
+
+<a href="index.html">Back to the Data Model.</a>
+
+<pre><font color=blue face=Verdana size=2>A distributed railway reservation system stores the following information
+(The following description may lead to un-normalized relations,normalize them wherever required)
+
+Train Description :-
+   includes Train number,Station from which the train originate and pass,
+   Time of departure and arrival at various destinations,
+   Number of seats available,Number of seats reserved etc.
+
+Passenger description :-
+  includes Passenger code,Name,Address,ph_no,etc.
+
+Reservation description :-
+  includes Passenger code,Train number,Seat reserved etc.
+
+Assume that only following two application exist.
+
+(a) A request about reservation availability :-
+    All information about trains from a given source
+    to destination is to be displayed on the user terminal.
+
+(b) A reservation request is to be fulfilled which includes:-
+    1. whether the passenger's data is already available.
+       If not insert passenger data
+
+2. Checking the availability of seats
+
+3.Inserting the reservation description.
+</pre>
+
+
+<P><b>Barry Williams</b>
+<br>Principal Consultant
+<br>Database Answers
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font color=blue face=Verdana size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 Database Answers Ltd. 2002</I></font></center>
+</td></tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<html>
+<head>
+<title>Tutorial on Data Modelling</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height=68 valign=middle><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></td>
+<td align=right rowspan=2 valign=middle width=100%><img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94></td>
+</tr>
+<tr><td><p class="time"><nobr><script language="JavaScript">theDate();</script></nobr></p></td></tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="/images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5">
+     	<p><img src="/images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="/images/spacer.gif" width="3" height="239"></td>
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="/images/spacer.gif" height=20>
+
+            <table width=90% width="590" border=0 cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">Tutorial on Data Modelling the Real World<img src="/images/spacer.gif" width="5" height="1">
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr>
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900">
+                <td><img src="/images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="/images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%">
+<p class="small">
+<b>My <a href="data_models/clients_and_fees/index.html"><b>'Clients and Fees' Data Model</a> is used in a <a href="http://weblogs.asp.net/scottgu/archive/2006/07/12/Tip_2F00_Trick_3A00_-Online-Database-Schema-Samples-Library.aspx" target="_new"><b>Tutorial</b></a>
+</b> on ASP.NET Development,<b>by Scott Guthrie, a General Manager in the Microsoft Developer Division</b>.</b>
+
+<br>It is presented as the solution to this problem - "You are building a web application, and are trying to figure out how to best model the particular database schema you need for the application".
+<br><br>The rest of this Page describes my new Tutorial based on <b>a new and unique Approach</b> I am developing,
+and I would be very pleased to have <a href="mailto:comments_on_tutorial@databaseanswers.org">your Comments</a>.
+<br><br>My Approach is a 'Top-Down' approach, based on understanding a Generic Model that can apply to any
+situation in the Real World and then applying this Model to the specific area that you are interested in.
+<br>In this way, you will learn the underlying principles and be able to think like a Data Modeller.
+<br>This Approach is facilitated by a number of 'Off-the-Shelf' Data Models combined with a set of Rules
+that helps you understand how to extend these Models.
+
+<br>In addition to the Generic Models list below, I have created some for Specific kinds of Real Worlds,
+including Entertainment and Insurance, which are listed <a href="data_models/real_world_series.html">on a separate page</a>.
+<br><br>These are <b>the Steps to follow</b> in my Real World Data Modelling Approach :-
+<br>Step 1) Start by understanding the <a href="data_models/real_world_series.html">Generic Model of the Real World</a>.
+<font color=blue size=1>
+<UL>
+<li>Most situations have People and Events, and usually have Organizations.
+<li>Sometimes you might include Interactions,(like CRM), Reservations and Transactions.
+<li>I have a range of appropriate Generic Models that you can use as your starting point.
+<li>Use the <a href="http://www.barryw.org/dba/pi_data_model_search/index.asp">Data Model Search Facility</a> to identify the ones that you need,(pay particular attention to the ones marked (T) for Tutorial.
+<li>Print them and then rename the Entities to reflect your requirements.
+</UL>
+</font>
+<font color=blue face=Verdana size=2>
+<br>Step 2) Review the Entities shown in the list on this Page and decide which you need.
+<br>Step 3) Use the Model Search Page to check the Entities and identify the relevant 'Kick-Start' Models.
+<br>Step 4) Print the 'Kick-Start' Models and combine the appropriate Entities to create your own Model.
+<br>Step 5) Optionally, <a href="mailto:comments_on_tutorial@databaseanswers.com">forward the results to me for my review</a>.
+<br><br><b>This Table shows the Generic Entities which I think are adequate to model any aspect of the Real World...</b>
+</p>
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+            <table width=90% width="590" border=0 cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+
+              <td colspan="3" width="100%" align="right" class="header1">
+                Here is my current Thinking</b>,</b>(please add <a href="mailto:comments_on_tutorial@databaseanswers.com">your comments)</a>
+		<img src="/images/spacer.gif" width="5" height="1">
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr>
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top">
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900">
+                      <td><img src="/images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="/images/spacer.gif" width="8" height="1"></td>
+
+                    <td width="100%" valign="top"> <img src="/images/spacer.gif" height=1 width="1">
+<br>
+                        <table width="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="25"><img src="/images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="images/circle1.gif" width="20" height="20">
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%">
+                              <div align="center">&nbsp;GENERIC THINGS IN THE REAL WORLD, and some EXAMPLES</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr>
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3">
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				<a class="cell" hreEEEf="data_models/customers_and_addresses/index.html">Addresses</a></td>
+                           	<td class="cell" width="70%">A Generic Approach, used in
+				<a class="cell" href="data_models/customers_and_addresses/index.html">Customers and Addresses</a>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Activities</td>
+                           	<td class="cell" width="70%">Any Activity involving a group of people, eg Committees and Projects.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Assets</td>
+                           	<td class="cell" width="70%">Physical things, that can be seen and touched, like
+				<a class="cell" href="data_models/car_sales/index.html">Cars</a> and
+				<a href="data_models/construction_and_manufacturing/index.html">Equipment</a>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Events</td>
+                           	<td class="cell" width="70%">
+				<pre><font face=Verdana>For example,<a href="data_models/athletes/index.html">Athletics Events</a>, <a href="data_models/call_centers/index.html">Customer Calls</a>, <a class="cell" href="data_models/generic_reservations/index.html">Reservations</a>, and <a class="cell" href="data_models/student_exams/index.html">Student Exams</a>.</td>
+                                </tr>
+
+<!---				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Organizations</td>
+                           	<td class="cell" width="70%">An excellent starting-point, shown in
+				<a class="cell" href="data_models/organisations_and_people_basic/index.html">Organizations & People</a>.</td>
+                                </tr>
+--->
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Parties</td>
+                           	<td class="cell" width="70%">
+				<pre><font face=Verdana><a href="data_models/parties_and_products/index.html">Always required</a>, but usually replaced by Sub-Types of <a class="cell" href="data_models/organisations_and_people_basic/index.html">Organizations & People</a>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				People</td>
+                           	<td class="cell" width="70%">Almost always required, for example,
+				<a href="data_models/lawyers_cases_and_bills/index.html">Lawyers</a> and
+				<a class="cell" href="data_models/student_loans/index.html">Students</a>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Products</td>
+                           	<td class="cell" width="70%">Shown with
+				<a class="cell" href="data_models/customers_and_products/index.html">Customers, Products and Orders</a>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Reservations</td>
+                           	<td class="cell" width="70%">Here's a
+				<a class="cell" href="data_models/generic_reservations/index.html">Generic Starting Point</a>
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Roles</td>
+                           	<td class="cell" width="70%">A Party can play a Role, such as Customer.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Services</td>
+                           	<td class="cell" width="70%">Shown with
+				<a class="cell" href="data_models/customers_and_services/index.html">Customers, Services and Orders</a>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                             	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Transactions</td>
+                           	<td class="cell" width="70%">For example,
+				<a class="cell" href="data_models/customers_card_transactions/index.html">Credit Card Transactions</a>.</td>
+                                </tr>
+
+                              </table>
+
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+
+
+
+        </td>
+      </tr></table>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

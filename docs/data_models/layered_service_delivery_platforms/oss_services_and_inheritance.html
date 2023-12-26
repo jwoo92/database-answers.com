@@ -1,0 +1,314 @@
+<html><head><title>Services and Inheritance Data Model for Layered Service Delivery Platforms</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<b>Data Model for OSS Services and Inheritance for the Layered Service Delivery Platforms</b>
+<br>Back to the <a href="index.html">Data Model</a>
+
+
+
+<br><br>
+<table border=1 colspan=2>
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>Services and Inheritance
+<br>
+<br><img src="images/oss_services_and_inheritance.jpg">
+</td>
+
+<td align=left valign=top><font color=blue face=Verdana size=2>
+This is the the Service Inheritance Data Model for our DBA Cloud Services.
+<br>Of course, we have to use the word 'Service' with two different meanings,
+<br>even though it is a litle confusing until you get used to it.
+
+<pre><font color=blue face=Verdana size=2><b>6. Demonstration Data</b>
+Here we define Demonstration Data in order of increased complexity of related Services.
+All of this data will be loaded using Apex before development  begins.
+
+<b>6.1 Data for Banking Services</b>
+Here our examples include making a Deposit and a Withdrawal and requesting a Statement.
+6.1.1 Make a Deposit
+This involves one Customer, a Date an Account Number and Amount.
+6.1.2 Make a Withdrawal
+This also involves one Customer, a Date an Account Number and Amount.
+6.1.3 Request a Bank Request
+This also involves one Customer, a Date and an Account Number.
+
+<b>6.2 Data for Customers Services</b>
+Here a Customer requests a Service which is provided by a Supplier and might involve Staff.
+Examples include a visit to a Dentist, a Doctor, a Hairdresser and so on.
+
+<b>6.3 Data for Logistics Services</b>
+Here we show some Attributes of the Entities.
+All examples involve a Mode of Transport, two Locations, two Dates, a Cost and a Class of Service.
+They do not all involve a Passenger.
+6.3.1 Make a Journey by Train
+This involves one Customer, who is called a Passenger.
+6.3.2 Make a Journey by Air
+This also involves one Passenger.
+6.3.3 Send a Package by Ship
+This involves one Package, which can be any single Item of any size.
+6.3.4 Send a Car by Ship
+This involves one  a car which is an Item and can be of any size.
+6.3.5 Send Food or Fruit by Air
+This can involve multiple Packages, which can be of any size.</pre>
+</td>
+</tr>
+</table>
+
+
+<!-----------
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+
+<b>Generic Platform Architecture</b>
+<br>
+<br>
+<hr><b>
+Some Typical KPIs
+<br><img src="images/typical_kpis.jpg">
+<br><br>
+
+<img align=left alt="Platform Architecure" border=0 src="images/platform_architecture.jpg">
+</td>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+
+<b>EE is target for October 6th Deliverable Plan</b>
+<br><br>
+<img align=middle alt="Ocober 6th. Plan" border=0 src="images/oct06th_plan.jpg">
+
+<br><br>Add Logistics, Hotel and Bank for POC by Friday, Nov 6th. for validation.
+<hr>
+<br>
+
+This table shows the Generic Services used in selected Vertical Applications
+
+<br><br>
+<table border=1 cellpadding=5>
+
+<tr>
+<td>&nbsp;</td>
+<td><font color=blue face=Verdana size=2>EE</td>
+<td><font color=blue face=Verdana size=2>Bank</td>
+<td><font color=blue face=Verdana size=2>Hotel</td>
+<td><font color=blue face=Verdana size=2>Log</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Move</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+<td><font color=blue face=Verdana size=2>&nbsp;</td>
+<td><font color=blue face=Verdana size=2>&nbsp;</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Pay</td>
+<td><font color=blue face=Verdana size=2><b>Yes</b></td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Reserve</td>
+<td><font color=blue face=Verdana size=2>&nbsp;</td>
+<td><font color=blue face=Verdana size=2>&nbsp;</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Service</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+<td><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+</table>
+
+<hr>
+
+<tr>
+<td align=middle colspan=2><font color=blue face=Verdana size=2>
+
+<br><b>This is the Logical Data Model for the October 6th. Development Platform for <font color=red>Everyday Events</font>
+<br>for the Plan shown above and to the right.</b>
+<br><br>
+<img src="images/oct06th_plan_data_model.gif">
+
+</td>
+
+<td colspan=2 valign=top><font color=blue face=Verdana size=2>
+<br>
+
+Reference Data (eg Document Definitions, Platforms) and Master Data (eg Addresses, Customers, Documents ,Document Definitions, Locations, Services and Staff) will be pre-loaded.
+<br><br>Transaction Data (eg Payments and Service Requests) will be entered by the User through the Apex Application.
+</td>
+</tr>
+</table>
+
+<table border=1>
+<tr>
+<td colspan=4><font color=blue face=Verdana size=2>
+<br>
+This is data that has been created for demonstration as an <b>Apex Report on October 6th.</b> thanks to Robertson's hard work ;-0)
+<br>The numbers are ID Record identifiers in the corresponding
+<a href="http://maroon.maxapex.net/apex/f?p=4550:1:13876660949058:::::">Apex</a> Table in the Data Model above</a>
+<br>Max Workspace is A13674, user baryw@dba.org, with m123.
+<br><br>
+</td>
+<tr>
+
+
+<tr>
+<td colspan=4 valign=top><pre><font color=blue face=Verdana size=2>The Report will look like this :-
+<br><br><b>Service Requests</b>
+On September 10, 2015 Norma drives to the BP Gas Station.
+On September 10, 2015 Norma drives to the Westfield Shopping Centre.
+On September 10, 2015 Barry eats at Tapas Revolution in  the Westfield Shopping Centre.
+On September 10, 2015 Norma goes to see The Commitments in the Palace Theatre.
+On September 26, 2015 Barry stayed at the Radisson Blu Hotel in Heathrow.
+On September 26, 2015 Norma goes to see the Jersey Boys in the Piccadilly Theatre.
+On October    6, 2015 Barry goes to see Memphis in   the Shaftesbury Theatre.
+On October    6, 2015 Barry stayed at Claridges Hotel in London.
+</td>
+</tr>
+
+<tr>
+<td colspan=4 valign=top><pre><font color=blue face=Verdana size=2>The next Section shows the demo data that will produce the Report show above.
+The initial SQL looks something like this :-
+SELECT Customer_ID
+FROM   Customers
+ORDER  BY Customer_ID
+
+<font color=red>For some strange reason, this perfectly good SQL produces an error message :-
+ORA-00942: table or view does not exist</font></pre>
+</td>
+</tr>
+
+
+<tr>
+<td valign=top><pre><font color=blue face=Verdana size=2><b>Service Requests (each SEervice Request has 3 parameters, each with an ID)</b>
+10 On September 10, 2015 Norma (Customer ID=11) drives to (Service ID=10) the BP Gas Station (Location ID=16)
+11 On September 10, 2015 Norma (11) drives to (10) the Westfield Shopping Centre (14)
+12 On September 10, 2015 Barry (10) eats at (11) Tapas Revolution in  the Westfield Shopping Centre (13)
+13 On September 10, 2015 Norma (11) goes to see (12) The Commitments in the Palace Theatre (11)
+14 On October   10, 2015 Barry (10) stayed at (13) the Radisson Blu Hotel in Heathrow (17)
+15 On October   10, 2015 Norma (11) goes to see (12) the Jersey Boys in the Piccadilly Theatre (13)
+16 On October   12, 2015 Barry (10) goes to see (12) Memphis in  the Shaftesbury Theatre (12)
+17 On October   12, 2015 Barry (10) stayed at (13) Claridges Hotel in London (15)
+</td>
+
+<td valign=top><font color=blue face=Verdana size=2>
+<b>Services</b>
+<br>10 drives to
+<br>11 eats at
+<br>12 goes to see
+<br>13 stayed at
+</td>
+
+<td valign=top><font color=blue face=Verdana size=2>
+<b>Customers</b>
+<br>10 Barry
+<br>11 Norma
+</td>
+
+<td valign=top><font color=blue face=Verdana size=2>
+<b>Locations</b>
+<br>10 the Commitments in the Palace Theatre
+<br>11 the Jersey Boys in the Piccadilly Theatre
+<br>12 Memphis in the Shaftesbury Theatre
+<br>13 the Tapas Revolution in Westfield
+<br>14 the Westfield Shopping Centre
+<br>15 Claridges Hotel in London
+<br>16 the local BP Gas Station
+<br>17 the Radisson Blu Hotel in Heathrow
+</td>
+</tr>
+
+</table>
+
+
+</table>
+
+<br>
+---------->
+
+<!---------
+<br><br>
+
+<table border=1>
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>Conceptual Model<br><br>
+<img align=left alt="Conceptual Data Model for Layered Service Delivery Platforms" border=0 src="images/conceptual_data_model.jpg">
+</td>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+kpi 1111111111111111111111111111111111111111111111111111
+<br>
+<b>Platform Architecture<br><br>
+<img align=left alt="Platform Architecture" border=0 src="images/platform_architecture.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=middle colspan=2 valign=top><font color=blue face=Verdana size=2><b>Getting Started Data Model<br><br>
+<img align=left alt="Getting Started Data Model" border=0 src="images/getting_started_data_model.gif">
+</td>
+</tr>
+
+<tr>
+
+<td align=left colspan=2 valign=top><font color=blue face=Verdana size=2>
+<font color=blue face=Verdana size=2>
+
+This Data Model combines our previous work on&nbsp;&nbsp;&nbsp;
+<li><a href="../business_activity_monitoring/index.html">Business Activity Monitoring</a>
+<li><a href="../canonical_data_models/index.html">Canonical Data Model</a>
+<li><a href="../bam_event_driven_architecture/index.html">Event-Driven Architecture and BAM</a>
+<li><a href="../financial_statement_generator/index.html">Financial Statement Generator</a>
+<li><a href="../publish_and_subscribe_and_event_alerts/index.html">Publish and Subscribe</a>
+
+
+<hr><b>Approach</b> - Maximum impact, avoid 'Invisible Work'
+<br><br><br>
+<hr><b>Logistics Platform</b>
+<br>Based on our Data Model for
+<a href="../logistics_and_travel/index.html">Logistics and Travel</a>
+
+
+<br>Event - Fly from London's Heathrow to Sweden's Arlanda &nbsp;&nbsp;&nbsp;
+<br>Master Data - Airports, Flight Schedules
+<br>Transaction 1 - Book a Flight
+<br>Transaction 2 - Book a Flight with Baggage
+
+<hr><b>Customer Services Platform</b>
+<br>Event - Buy a Product
+<br>Master Data - Product Catalogue
+<br>Transaction 1 - Make a Purchase
+<br>Transaction 2 - Arrange Delivery of Purchase
+
+<hr><b>PSA</b> - Timesheets
+
+<br><br>
+<hr><b>Canonical Data Model</b> - Events,  Documents
+
+
+
+</td>
+</tr>
+
+</table>
+------------------------->
+
+<font size=1>
+<br><br><I> &#169 Database Answers Ltd. 2015</I></font>
+
+</body>
+
+</html>

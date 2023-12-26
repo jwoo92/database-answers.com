@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Best Practice Manual Viewer</title>
-	
+
 <script type="text/javascript">
 
 /**********************************************
-* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
 * Visit http://www.dynamicdrive.com/ for full source code
 **********************************************/
@@ -79,12 +79,12 @@ inc++
 }
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -120,7 +120,7 @@ var alltags=document.all? document.all : document.getElementsByTagName("*")
 ccollect=getElementbyClass(alltags, "switchcontent")
 statecollect=getElementbyClass(alltags, "showstate")
 if (enablepersist=="on" && ccollect.length>0){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -142,7 +142,7 @@ window.onunload=saveswitchstate
 </script>
 
 
-	
+
 </head>
 
 <body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
@@ -159,24 +159,24 @@ window.onunload=saveswitchstate
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>
@@ -215,7 +215,7 @@ window.onunload=saveswitchstate
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -234,21 +234,21 @@ window.onunload=saveswitchstate
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
+
 	<p>
 
 <font face="Verdana" size=2 color="blue">
 <b><font COLOR=blue size=+1><FONT COLOR=green>UN GC Case Study of Aviva</FONT></font></b><br>Examples of how Aviva has followed the principles of the Global Compact.
-Material in this Case Study is taken from the <A HREF="http://www.aviva.com/responsibility/csr_report2003.htm" TARGET=_NEW>Aviva Corporate Social Responsibility Report for 2003</A>.<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.0&nbsp;These example are taken from the Report for CSR 2003.</b></font><p><div id="chap0" class="switchcontent">Aviva regards ethical practice as the cornerstone of responsible business.
+Material in this Case Study is taken from the <A HREF="http://www.aviva.com/responsibility/csr_report2003.html" TARGET=_NEW>Aviva Corporate Social Responsibility Report for 2003</A>.<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.0&nbsp;These example are taken from the Report for CSR 2003.</b></font><p><div id="chap0" class="switchcontent">Aviva regards ethical practice as the cornerstone of responsible business.
 </div><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.0&nbsp;Poland</b></font><p><div id="chap1" class="switchcontent">In 2002, CU Polska set up an internal audit function to review group governance processes.</div><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.0&nbsp;Romania</b></font><p><div id="chap2" class="switchcontent">Aviva Romania provides all employees with a staff handbook, which includes mandatory procedures for employees on mioney laundering, dress code, annual leave policy and so on.
 </div><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.0&nbsp;Italy</b></font><p><div id="chap3" class="switchcontent">Our business in Italy complies fully with the national and internal labour contracts, which povide guidance for responsible behaviour.
 </div><p><font color="red" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.0&nbsp;Canada</b></font><p><div id="chap4" class="switchcontent">In CGU Canada, the standards of business conduct policy must be signed upon hire, and this commitment is renewed once every calendar year after that.
  </div><p><font color="red" onClick="expandcontent(this, 'chap5')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>6.0&nbsp;Portugal</b></font><p><div id="chap5" class="switchcontent">Eurovida, our bancassurance joint-venture business in Portugal, is committed to creating a strong company culture based on ethical business conduct, focussing on integrity, fairness, quality and excellence.</div><p><font color="red" onClick="expandcontent(this, 'chap6')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>7.0&nbsp;The UK</b></font><p><div id="chap6" class="switchcontent">In the UK, our businesses encourage their employees and agents to conduct their duties in a professional manner, maintaining rigorous standards of integrity, honesty and conduct.
 </div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<UL><LI>Norwich Union</b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">In 2002, Norwich Union Insurance further developed the money laundering regime, which included enhanced reporting and computer based training.
-Over 85% of staff have been trained since implementation.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<LI>Morley Fund Management</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Morley Fund Management operates a corporate gift register, to monitor gifts received with a value of over £25.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<LI>Norwich Union Central Services</b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">In 2002, Central Services implemented a hospitality register, whcih centrally records all external hospitality invitations,(including gifts), offered to Central Services employees.</font></div></td></tr></table>
+Over 85% of staff have been trained since implementation.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<LI>Morley Fund Management</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Morley Fund Management operates a corporate gift register, to monitor gifts received with a value of over ï¿½25.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<LI>Norwich Union Central Services</b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">In 2002, Central Services implemented a hospitality register, whcih centrally records all external hospitality invitations,(including gifts), offered to Central Services employees.</font></div></td></tr></table>
 </font>
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>
@@ -261,24 +261,24 @@ Over 85% of staff have been trained since implementation.</font></div></td></tr>
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>

@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>Facts for School Reporting in Chile Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.caernarfon-college.cl/home/mision-vision" target="_new">
+<img align=right alt="School Reporting in Chile Week" border=1 hspace="0" vspace="4" src="images/caernarfon_college_logo_lge.jpg"></a>
+
+</td>
+</td>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+
+</p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for School Reporting in Chile</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+Back to the <a href="index.html">Data Model</a>
+<br>
+<pre><font color=blue face=Verdana size=2>Subject: Data Model for School Reporting in Chile
+Hi,
+
+I work in a small school down here in Chile. I have some experience in IT, mainly networking, and some rough idea of databases (and have been reading up).
+
+I�m trying to set one up to record subject (or courses) reports. That is, teachers have to write a short report of each of their pupils in their subject, every term, every year.
+
+Now, I have looked at other examples and suggestions, but none seem to fit quite right, and I have not been able to work out the proper schema logic.
+
+I was wondering if you could point me in the right direction.
+
+The main problem I have is fitting the real world model into the logic model. I have tried to think �out the box� by not limiting myself strictly to how things look �on the ground�
+� even so, can�t quite get it.
+
+The way the school is organized is as follows:
+
+There is the school year (March to December here).
+
+Then there are the terms (although students remain in the clases through the year and don�t change subjects).
+
+Then we have �yeargroups� (1st, 2nd, 3rd�. all the way 12th)
+
+Then we have subjects in a �yeargroup�. Here I have to use different terms, because, although a subject is referred to on its own, it�s actually taught by a teacher.
+So I usually create a �course�, which is a subject taught by a teacher for that year.
+
+Then we have the students that belong to a yeargroup. At the end of the year they move up to the next year group.
+
+Finally, the reports, that belong to a student in a term and yeargroup, to a particular course (subject and teacher).
+
+Also, I struggle to split the data so that I keep integrity for the reports that have been written already, so that when a students moves up a year group,
+their reports for last year remain, same for courses.
+
+Any ideas or tips are most appreciated,
+
+Regards,
+
+Christopher Eason.
+Caernarfon College.</pre>
+<center><font size=1>
+<br><br><I> &#169 Database Answers Ltd. 2017</I></font></center></pre>
+
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

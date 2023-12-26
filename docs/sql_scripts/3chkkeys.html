@@ -1,0 +1,80 @@
+<html>
+<head><title>SQL to Check Primary Indexes</title></head>
+
+<body background="images/gmi_bk.jpg" bgcolor="#FFFFCC" text="#202020">
+
+<table bgcolor="FFFF66" border="1" COLS="1" width="100%" CLASS="navbar">
+<tr>
+ <td><font face="Verdana, Lucida Sans, Arial, Helvetica, Geneva, sans-serif" size=2>
+   <b><small><a Title="Home" href="../index.html">Home</a> </small>
+    <img src="images/rt_arrow.gif" alt="Rt_Arrow.gif" width="13" height="9">
+
+    <b><small><a Title="Home" href="index.html">SQL Scripts</a> </small>
+    <img src="images/rt_arrow.gif" alt="Rt_Arrow.gif" width="13" height="9">
+   </strong>
+    <small>chk_primary_indexes</small></font>
+ </td>
+</tr>
+</table>
+
+<! Start of Standard Header -->
+<br><center><b><I>3. SQL to Check Primary Indexes</I>
+</b>
+</center>
+<hr>
+<! End of Standard Header -->
+
+In the SQL below, the Table name is hard-coded.
+<br>A Shell Script also exists, which takes the table name as a parameter.
+<br>
+<OL>
+<li>Find the Table Owner ...*/
+<br>SELECT owner,count(*) FROM all_tables GROUP BY owner;
+<br>Typical Output :-
+<pre> OWNER          COUNT(*)
+rem ------------   ----------
+rem OPS$ORACLE     64
+rem SYS            70
+rem SYSTEM         62
+
+rem Add check that all Primary keys are unique ...
+rem
+set heading off
+set feedback off
+SELECT   ind.uniqueness, COUNT(*)
+FROM     all_indexes ind
+WHERE    ind.table_owner = 'OPS$ORACLE'  /* TABLE_OWNER */
+AND      ind.index_name  LIKE '%_PK'
+GROUP    BY ind.uniqueness ;
+rem Use Table Owner to avoid retrieving details of System and
+other Tables ...
+SELECT
+ind.table_name,tab.column_id,ind.index_name,col.column_name
+FROM     all_ind_columns col, all_indexes ind,all_tab_columns
+tab
+WHERE    ind.table_owner = 'OPS$ORACLE'  /* TABLE_OWNER */
+AND      ind.table_name  =  col.table_name
+AND      ind.table_name  =  tab.table_name
+AND      ind.table_name  = 'BW_CONTRACTS'
+AND      tab.table_name  = 'BW_CONTRACTS'
+AND      col.column_name =  tab.column_name
+AND      ind.index_name  =  col.index_name
+AND      ind.index_name  LIKE '%_PK'
+AND      col.index_name  LIKE '%_PK'
+ORDER    BY ind.table_name ,tab.column_id ,ind.index_name ;
+
+</pre>
+
+</body>
+
+<Start of Standard Footer>
+<hr size="5">
+<center>
+        [ <a href="index.html">Home Page</a>
+        | <a href="site_map.html">Search & Site Map</a>
+        | <a href="whatsnew.html">What's New</a> ]
+</center>
+<hr size="5">
+<!-- End of Standard Footer>
+
+</html>

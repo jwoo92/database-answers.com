@@ -1,235 +1,1275 @@
 <html>
-<head>
-	<title>Performance Monitoring</title>
+<head><title>Tutorial on Integrated Performance Reporting</title>
+
+<meta Name="description"
+Content="We provide a Library of Data Models and free Databases.">
+<meta Name="keywords"
+Content="free access databases, access databases, access data models, data models,database designs, free databases, generic data models">
+
+<link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script>#</script>
 
-<!--- Start of Standard Header --->
-<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<!--  Start of Table 1 --->
+<table border=0 cellpadding=0 cellspacing=0 width=86%>
 <tr>
-<td ROWSPAN=1 valign=middle><a href="index.asp"><img src="../images/logo.gif" width=400 height=58 alt="DatabaseAnswers.org" border=0></a></td>
-<td align=right ROWSPAN=2 valign=bottom nowrap><img ALT="Steps to Peackocks Pond, Florida." SRC="../images/steps_xsml.jpg"></td>
+<td ROWSPANnnn=1 valign=middle><img alt="Database Answers" src="../images/dba_400_home.jpg" width=400 height=58></td>
+<td align=right rowspan=2 valign=middle nowrap>
+<a HREeeeF="images/father_of_all_data_models.gif" target="_new">
+<img alt="Components in an Integrated Performance Reporting System all work together" border=0 src="../images/components.gif"></a>
+</td>
 </tr>
+</table>
+
+
+<!--  End of Table 1 --->
+
+<!--  Start of Table 2 --->
+<table border=0 name="TOP NAVBAR" WIiiDTH=1200 WIiiiDTH=590 width=86% width=100% cellpadding=0 cellspacing=0 backgrond="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+<!---	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td> --->
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<!---	<td><a href="../first_timers.html"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td> --->
+<!---
+<td><a href="../pi_information_catalog/browse.asp"><img src="../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>              --->
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+<!--  End of Table 2 --->
+
+
+
+
+
+<!--  Start of Table 3 --->
+<table name="GRAY NAVBAR" border=0 cellpadding=0 cellspacing=0 WIiiiDTH=590 width=86%>
+<tr>
+<td width=80% bgcolor="#CCCCFF" align=center>
+
+<!--  Start of Table 5 --->
+
+	<table border=0 cellpadding=0 cellspacing=0 valign=top WIiiiDTH=590 width=86%>
+	<tr>
+	<td> <!-- Body Starts -->
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<!--  Start of Table 6 --->
+
+	<table border=0 WIiiiDTH=100% width=590 cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="61">&nbsp;</td>
+	<td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+
+	<td colspan="3" width=590 wiiiidth="100%" align="right" class="header1"><b>Welcome to my Tutorial on Integrated Perfomance Reporting</b>
+
+<!---	<img src="/images/spacer.gif" width="5" height="1"> --->
+</td>
+<!---	<td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width=1 height="20"></td> --->
+
+        </tr>
+
+        <tr>
+	<td rowspan="3" valign="top" width="61">&nbsp;</td>
+     	<td colspan="4" height=0 rowspan="3" valign="top" width=590>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height=0>
+            <tr bgcolor="#FF9900">
+            <td><img src="/images/px-orange.gif" width="1" height=3></td>
+            </tr>
+            </table>
+
+<!--  End of Table 6   --->
+<!--  Start of Table 7 --->
+<!--- Changes made by Barry on Saturday, November 8th --->
+            <table bgcolor=white border=0 width=590 width="100%" border=0 cellspacing="0" cellpadding="0">
+            <tr>
+            <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+
+	    <td align=left bgcolor="#CCCCFF" WIiiiDTH=15% width="90" backgroundDDD="images/px-left.guf" valign="top" bgcolor="#3399CC">
+	    <font color=blue face=Verdana size=2>
+
+<!---	<br> --->
+
+
+<!---	<br> --->
+<!---
+	<table border=2 width=1200>
+
+	<tr>
+	<td valign=top width=59><font color=blue face=Verdana size=2>
+<pre><font color=blue face=Verdana size=2><b>DEMONSTRATION OF RED-AMBER-GREEN REPORTING :</b>
+<br>This shows a map of cities in South-East Asia, Australia and New Zealand.
+
+<br>A single traffic-light colour is placed close to each City.
+The colour is Red if something is seriously wrong, Amber (or Yellow) if slightly wrong, and
+Green if everything is OK.
+
+<br>The colours displayed are a demonstration of a Performance Reporting System for a fictitious
+Freight Transport operation in South-East Asia.
+</pre>
+	</td>
+
+	<td>
+	<img align=left alt="Map of Cities in South-East Asia" src="images/xxx.jpg" SouRCe="images/cities_in_south_east_asia_wth_lights.jpg">
+
+	<br>
+	</td>
+	</tr>
+</table>
+--->
+
+<!--- <hr> --->
+
+
+
+	<table border=2 width=1200>
+
+	<tr>
+	<td valign=top width=59><font color=blue face=Verdana size=2>
+<pre><font color=blue face=Verdana size=2><b>INTRODUCTION :</b>
+<br>This is a  Tutorial on Integrated Performance Reporting.
+<font color=blue face=Verdana size=2>
+The Scope includes these five major Components :-
+	1) Performance Reports
+	2) Data Marts
+	3) Integrated Data to achieve a "Single View of the Truth"
+	4) Data Sources
+
+Each Components has implications for Data Quality.
+
+The Tutorial concludes with an analysis of how commercial products from
+Informatica and Microsoft can be used to implement this Approach.
+
+I hope you find this Tutorial interesting and helpful.
+Please <a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on Tutorial on Performance Reporting'>email me</a> and let me know.</pre>
+	</td>
+
+	<td>
+	<img align=rleft alt="Four Tiers in Performance Reporting" src="images/1_IPR_4_colour_Master.jpg">
+	<br>
+	</td>
+	</tr>
+</table>
+<!--- <hr> --->
+
+
+<!--- <hr> --->
+
+	<table border=2 width=1200>
 
 <tr>
-<td valign=middle><font face="Verdana" size=1 color="blue">You are Logged in as:
-<A href="pi_user_registration/index.asp"> dba_admin</A> | 
-<A href="login.asp">logout</a></font></td>
-</tr>
-<!--- End of standard Header --->
+<td width=59><img align=right alt="Four Tiers in Performance Reporting showing More Details" src="images/2_four_tier_perf_reporting_more_details.gif">
+<br>
+</td>
 
-<tr>
-<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+<td valign=top width=59><pre><font color=blue face=Verdana size=2>
+<b>2) MORE DETAILS</b>
+This diagram shows some more details.
+<br>For example, two important topics in Data Integration are a
+Common Data Model and a �Single View of the Truth�.
+<br>Examples of Performance Indicators include Basel II and Sarbanes-Oxley.
+</pre>
+</td>
 </tr>
+</table>
+
+	<table border=2 width=1200>
+
+	<tr>
+	<td valign=top>
+	<pre><font color=blue face=Verdana size=2><b>3) FUTURE ARCHITECTURE FOR DATA QUALITY :</b>
+<pre><font color=blue face=Verdana size=2><br>This Architecture shows how Data Quality will be achieved in the future.
+
+It is based on the role of a Data Quality Administrator.
+
+In the future, Web Services will be used to run Data Quality procedures
+against data that can be stored in a variety of locations.
+Results of Data Quality Test Runs will be reported locally to the Administrator.
+
+This approach has many benefits :-
+<li>It is possible to establish DQ functions which can be located anywhere,
+either internal or external to the enterprise.
+<li>Reference Data can be centralised in the Global HQ and accessed from
+anywhere around the world.
+
+	</td>
+
+	<td>
+	<img align=rleft alt="Future Architecture Data Quality" src="images/3_DQ_Future_Architecture.gif">
+	<br>
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
 <tr>
-<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+<td valign=top><img align=right alt="Data Sources" src="images/4_data_sources.gif">
+<br>
+</td>
+
+<td valign=top><pre><font color=blue face=Verdana size=2>
+<b>4) DATA SOURCES :</b>
+<li>Data Sources are the point-of-entry for data from any Source.
+<li>These can include batch inputs, such as Spreadsheets, data
+extract files from Operational Systems, and third-party data.
+<li>They can also include real-time input such as PDA or Smartphone data,
+data delivered by Web Services, or Internet Forms.
+</td>
 </tr>
+</table>
+
+	<table border=2 width=1200>
 <tr>
-<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+<td valign=top><pre><font color=blue face=Verdana size=2>
+<b>5) DATA INTEGRATION :</b>
+
+<br><li><b>Scope of Integration</b>
+<br>Data Integration includes :-
+<li>Mapping to Common Data Model
+<li>Transformation
+<li>Clean-Up
+<li>Validation
+
+<br><br>The details of all Data Transformation are defined in
+terms of Data Structures, Interfaces, and Data Models.
+<li>All Transformations also require Rules, with different syntax
+for different types of Transformations.
+When Transformations are applied, everything becomes a transition from
+one Model to another
+</td>
+
+<td valign=top><img align=left alt="Data Integration" src="images/5_data_integration.gif">
+<br>
+</td>
 </tr>
+</table>
+
+	<table border=2 width=1200>
 <tr>
-<td colspan=2 bgcolor="#3366CC">&nbsp;&nbsp;&nbsp;
-	<a href="../index.htm"><img src="../images/nav_home.gif" alt="Home" border=0></a>
-	<a href="../pi_best_practice_display/index.asp"><img src="../images/nav_bestpractice.gif" alt="Best Practice" border=0></a>
-	<a href="../pi_communities/boards.asp"><img src="../images/nav_communities.gif" alt="Communities" border=0></a>
-	<a href="../first_timers.htm"><img src="../images/nav_firsttimers.gif" alt="First Timers" border=0></a>
-	<a href="../pi_information_catalog/browse.asp"><img src="../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a>
-	<a href="../performance.htm"><img src="../images/nav_performance.gif" alt="Performance" border=0></a>
-	<a href="../users.htm"><img src="../images/nav_users.gif" alt="Users" border=0></a>
-	<a href="../search.htm"><img src="../images/nav_search.gif" alt="Search" border=0></a>
-	<a href="../site_map.htm"><img src="../images/nav_sitemap.gif" alt="Site Map" border=0></a>
+<td valign=top><img align=right alt="A Single View of the Truth" src="images/6_single_view_of_the_truth.gif">
+<br>
+</td>
+
+<td valign=top><pre><font color=blue face=Verdana size=2>
+<b>6) A SINGLE VIEW OF THE TRUTH :</b>
+<li>A Single View of the Customer is enabled by a Customer Master Index
+is used to consolidate data about a Customer from different Sources.
+<li>This involves matching individual Customers and mapping all Data Sources
+on to a common definition of a Customer.
+
+<li>This requires good quality data so that data integration is guaranteed
+to produce valid results.
+
+<li>This is achieved by applying Transformation algorithms to the individual
+data fields from the Operation Applications.
+
+<li>Definitions of these Transformations are stored in the Information Catalogue,
+along with Business Users who have authority to sign-off acceptable Data Quality.
+</td>
+</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top width=50%><pre><font color=blue face=Verdana size=2><b>7) A CUSTOMER MASTER INDEX :</b>
+	<li>A Customer Master Index is used to consolidate data about a Customer
+	from different Sources.
+	<li>This diagram shows the Customer Master Index (CMI) and the processes
+	that are associated with it.
+	</font>
+	</td>
+
+	<td valign=top width=50%>
+	<img align=rleft alt="Customer Master Index" src="images/7_customer_master_index.gif">
+	<br>
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+
+
+	<tr>
+	<td>
+	<img align=right alt="SOA Architecture" src="images/8_soa_architecture.jpg">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>8) SOA ARCHITECTURE :</b>
+	<li>In this diagram Levels 2 and 3 in the DQ Architecture are
+	combined into one Data Services Layer.
+	<li>Data Validation is applied when data is loaded in batch mode at
+	regular intervals, such as monthly. Validation is also applied in
+	real-time when data is loaded using PDAs or Smartphones.
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>9) COMMON DATA MODEL :</b>
+	<li>This Common Data Model applies to a wide range of business operations and environments.
+	<li>It provides a standard Layer which provides a target for integration of data from
+	various Sources, which are existing Operational Systems.
+	</td>
+
+	<td>
+	<img align=left alt="Father of all Data Model" src="images/9_father_of_all_data_models.gif">
+	<br>
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td>
+	<img align=right alt="Master Data Management (MDM) Architecture" src="images/10_mdm_architecture.gif">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>10) MDM ARCHITECTURE :</b>
+	<li>This diagram shows an expanded version of the Data Integration Layer.
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>11) DATA INTEGRATION :</b>
+	<li>Data Integration includes applying Rules for :-
+	<OL>
+	<li>Transformation
+	<li>Clean-Up
+	<li>Validation
+        </OL>
+
+<li>The final step is mapping to the <b>Common Data Model</b>.
+<li>The use of Rules and a Rules Engine is a very powerful
+technique to implement these processes.
+<li>Some examples of Rules are shown in the Section on the
+Information Catalogue.
+<li>Rules fall into a number of categories:
+<OL><li>Field Validation � these perform the basic data manipulation
+required to understand data, for example, checking that an e-mail has
+the right format, or checking for typing errors in fields, etc.
+<li>Cross-Reference  � these check two or more fields with each other,
+for example, that an age field is consistent with a data of birth field,
+or a first name matches the gender of a title, etc.
+<li>Reference Data � these rules match to internal or external reference files,
+for example, Royal Mail�s PAF File, ( Postal Address File).
+<li>Deduplication Rules � these apply particularly to Customers, but are also
+relevant for matching and deduplication �de-duping� functions across multiple data sources,
+<br>for example, deduplicating Customers across Billing, CRM and Operational Systems.
+</OL>
+
+<li>The details of all <b>Data Transformations</b> are defined in terms of Data Structures,
+ Interfaces, and Data Models.
+<li>All Transformations also require Rules, with different syntax for different types of
+Transformations.
+<li>When Transformations are applied, everything becomes a transition from one Model to another.
+	</td>
+
+	<td>
+	<img align=left alt="Enhanced Data Integration" src="images/11_data_integration.jpg">
+	<br>
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td>
+	<img align=right alt="Data Platform" src="images/12_data_platform.jpg">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>12) DATA PLATFORM :</b>
+	<li>Each level, from the bottom to the top, builds on the lower one.
+	<li>The Data in each Layer must be of good quality to provide a sound
+	foundation for the overall Data Platform.
+	<li>The Common Data Model is a vital Component in the Data Platform.
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>13) STEPS IN BUILDING THE DATA PLATFORM :</b>
+	<li>Each level, from the bottom to the top, builds on the lower one :-
+
+	<OL>
+	<li>Define the Rules for Data Quality for each Data Set.
+	<li>Apply the Rules until a satisfactory result is achieved.
+	<li>Move on to data at the next Step.
+        </OL>
+	</td>
+	<td>
+	<img align=left alt="Steps to the Data Platform" src="images/13_steps_to_the_data_platform.jpg">
+	<br>
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td>
+	<img align=right alt="Global Data Platform" src="images/14_global_data_platform.jpg">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>14) GLOBAL DATA PLATFORM :</b>
+	<li>This diagram can be used to plan an Approach to Global Data Platform.
+	<li>It provides a focal point for design and implementation of a
+	common approach to the consolidation of data.
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>15) DATA MARTS :</b>
+	<li>The data produced by the Data Integration Layer should be
+	consistent and of a very high quality, especially where the
+	matching join fields are required.
+	<li>These conditions are required for the data to be loaded into
+	Data Marts with compatible Dimensions and Facts.
+	<li>This should be straightforward if the Data Integration Layer
+	has been designed correctly.
+	<li>However, it is possible that new Data Marts may be required
+	that may, in turn, require new combinations of data that will show up
+	incompatible or incorrect data.
+	<li>In this case, additional Validation Rules will need to be defined,
+	signed-off and recorded in the Information Catalogue.
+	</td>
+
+	<td>
+	<img align=left alt="Data Marts" src="images/15_data_marts.jpg">
+	<br>
+	</td>
+
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td>
+	<img align=right alt="A Data Model for a Data Mart" src="images/16_data_model_for_data_mart.gif">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>16) DATA MODEL FOR DATA MART :</b>
+	<li>This is a Model for a typical Data Mart for Customers,
+	Products and Purchases.
+	<li>It is necessary to have good quality Data in order for
+	it to be loaded into the Data Mart.
+	<li>In other words, it is necessary to have a Single View of the Truth.
+	<li>This includes successful completion of these activities :-
+	<OL><li>Mapping Customer and Product data to a single definition
+	in the Common Data Model
+	<li>Conversion of units to a standard Unit of Measurement
+	<li>Calculation of Fact Amounts and Counts in line with the KPIs.
+	</OL>
+
+	</td>
+	</tr>
+</table>
+
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>17) PERFORMANCE REPORTS :</b>
+	<li><b>Overview</b>
+	<li>In recent years there has been increasing attention to the
+	need for enterprises to report correct data in a wide range of
+	Performance Reports.
+	<li>This applies to Basel II in the financial world, and Sarbanes-Oxley
+	in the business world.
+	<li>A failure to comply with the appropriate regulations can result in a
+	prison sentence for the senior management responsible.
+	<li>This has meant that attention has been focussed on the critical aspect
+	of Data Quality.
+
+	<br><li><b>Metrics for Data Quality</b>
+	<li>Defining metrics for data quality makes it possible to measure the quality
+	and establish a plan to improve it.
+	<li>Every time a rule is executed, the improvements can be measured and targeted.
+	<li>This could be done on a daily or weekly, and graphs could be plotted to keep
+	track of how well the data quality has improved.
+	<li>Let's say you wished to measure the quality of your account records.
+	<li>The first step is to establish the Metrics.
+	<br>For example, part of defining a �Single View of a Customer� could mean analyzing
+	five aspects of  Customer Data :-
+	<OL>
+	<li> Are business names matched to an external source, such as Experian�s National
+	Business Database
+	<li> Whether the address is valid and can be found in the Royal Mail Postal Address File (PAF).
+	<li> A valid e-mail exists
+	<li> A correctly formatted telephone exists,
+	<br> The record is unique.
+	<br>LI>The second step is to assign a weighting to each Metric � for example, 80%, 20%,
+	15%, 5% and 5% of the respective rules.
+	<li>This is averaged to create a unique value that indicates the level of Customer
+	Data Quality.
+	<li>The value of subsequent data improvement would re-calculate these values and
+	provide historical set of metric data that truly shows the improvement in data quality.
+	<td>
+	<img align=left alt="Performance Reports" src="images/17_performance_reports.jpg">
+	<br>
+	</td>
+
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td>
+	<img align=right alt="Informatica Dashboards" src="images/18_informatica_DQ_dashboard.jpg">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>18) EXAMPLE OF A DQ DASHBOARD :</b>
+	<li>Key Performance Indicators (�KPIs�) would be defined as
+	metrics for Data Quality.
+	<li>This screenshot shows an example of a Dashboard produced
+	by <a href="WWW.INFORMATICA.COM" target=_new>Informatica</a>,
+	which is a major supplier of Data Integration software.
+	</td>
+
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>19) THE INFORMATION CATALOG :</b>
+	<li><b>Overview</b>
+	<br>The Catalogue is typically published over the Intranet and
+	stores descriptive information about the five major Components and
+	their relationships.
+
+	<li><b>Globalisation</b>
+	<li>Data Quality on a Global scale requires that data is stored in
+	a manner that is compatible with the character sets in all the
+	appropriate languages.
+	<li>The <b>best solution111</b> to this is to use Unicode to hold character
+	information so that European and international languages are supported.
+	</td>
+
+	<td>
+	<img align=left alt="Information Catalog" src="images/19_information_catalog.jpg">
+	<br>
+	</td>
+
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td>
+	<img align=right alt="Information Catalog" src="images/20_role_of_the_information_catalog.jpg">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>20) THE ROLE OF THE INFORMATION CATALOG :</b>
+	<li><b>Overview</b>
+	This diagram shows the Role that the Information Catalogue plays in planning
+	and controlling the Steps involved in measuring and improving Data Quality.
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>21) EXAMPLE OF THE INFORMATION CATALOG :</b>
+	<li>This example shows how details of Data Models would be
+	recorded in an Information Catalog.
+	</td>
+
+
+	<td>
+<!---	<img align=right alt="Role of the Information Catalog" src="images/20_role_of_the_information_catalog.jpg"> --->
+<!--- <hr> --->
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid black .75pt;
+ mso-yfti-tbllook:175;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .75pt solid black;mso-border-insidev:.75pt solid black'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>Category<o:p></o:p></span></b></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>Data Model Name<o:p></o:p></span></b></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>Description<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Corporate<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Corporate
+  Data Model <o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Contains
+  Customers, Services, Property<span style='mso-spacerun:yes'>� </span>and
+  Finance.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Contracts
+  � OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Applies
+  to Council Tax Payments, Rent Arrears Repayment Schedule, etc.. <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Customer
+  � OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Shows
+  Person as Super-Type, &amp; Customers, Youth Offenders, etc. as Sub-Types <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Data
+  Warehouse � Debtors - OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Useful
+  for the Debtors Pilot Project.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Data
+  Warehouse � Service Usage - OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><span
+  style='mso-spacerun:yes'>�</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Finance
+  � OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Shows
+  Accounts and Transactions.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Maintenance
+  � OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Applies
+  to Housing Repairs, Grass-cutting, Street Lights,Vehicle Maintenance.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Parties,
+  Organisation and People - OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Shows
+  Party as Super-Type, with Organisations &amp; People as Sub-Types. <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Property
+  � OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Shows
+  Property as Super-Type, with Hostels, Parks, etc. as Sub-Types.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Reference
+  Data � OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Shows
+  Reference data from all Application Data Models<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Services
+  - OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Also
+  called a �Generalised Customer Data Model <b style='mso-bidi-font-weight:
+  normal'>(GCDM)�</b><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Subject
+  Area<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Single
+  Sign-On � OK<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Shows
+  cross-references from Customer ID to other Applications<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>User
+  View<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Customer
+  Problems and Haringey Solutions <o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Simple
+  but powerful Introductory Model.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>User
+  View<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Customers
+  and Addresses <o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><span
+  style='mso-spacerun:yes'>�</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17;mso-yfti-lastrow:yes'>
+  <td width=79 valign=top style='width:59.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>User
+  View<o:p></o:p></span></p>
+  </td>
+  <td width=204 valign=top style='width:153.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'>Customers
+  and Events <o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:270.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><span
+  style='mso-spacerun:yes'>�</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+	<br>
+	</td>
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td>
+	<img align=left alt="Implementation  of MDM with Informatica"
+	src="images/22_mdm_implementation_with_informatica.gif">
+	<br>
+	</td>
+
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>22) IMPLEMENTATION OF MDM WITH INFORMATICA :</b>
+	<li><b>Overview</b>
+	This diagram shows in blue the Informatica Components
+	that would be used to implement the Generic Architecture.
+	</tr>
+</table>
+
+	<table border=2 width=1200>
+	<tr>
+	<td valign=top><pre><font color=blue face=Verdana size=2><b>23) IMPLEMENTATION OF MDM WITH MICROSOFT :</b>
+	<li><b>Overview</b>
+	This diagram show how Microsoft SQL Products, specifically Server
+	Analytical Services (SSAS) and Integration Services (SSIS) could
+	be used to implement the Architecture.
+	</td>
+	<td>
+	<img align=left alt="Implementation  of MDM with Microsoft"
+	src="images/23_mdm_implementation_with_microsoft.gif">
+	<br>
+	</td>
+	</tr>
+</table>
+
+
+	<table border=2 width=1200>
+<tr>
+<td><img align=right alt="Four Tiers in Performance Reporting" src="images/1_IPR_4_colour_Master.jpg">
+</td>
+
+<td valign=top><pre><font color=blue face=Verdana size=2><b>24) SCOPE OF THIS TUTORIAL :</b>
+<OL>
+<b>During this short Tutorial,we have covered the following Topics :-</b>
+	<OL><li>Performance Reports
+	<li>Data Marts
+	<li>Data Integration
+	<li>Data Source
+	</OL>
+</OL>
+
+<li>If you would like to see other Topics included, please <a href='mailto:databaseanswers&#64;gmail.com?subject=Suggested Topics for the Tutorial on Integrated Performance Reports'>let me know</a>.
 </td>
 </tr>
 
-	<tr><td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td></tr>
-	<tr><td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td></tr>
-	<tr><td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td></tr>
-</table>
 
-<table border=0 cellpadding=0 cellspacing=0 width=100%>
-	<tr valign=top>
-	<td width=90 background="../images/bg_side.gif">
-	<table border=0 cellpadding=0 cellspacing=0 width=90>
-		<tr><td align=center>
-		<FONT COLOR=white COLOuuuR="#FF9900" FACE=Verdana SIZE=1>
-		<BR><A HREF="mailto:info@barryw.org"><FONT COLOR=white><B>Contact Us</B></A>
 
-<!--- <img ALT="Boschendhal Estate, South Africa" src="../images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5">  --->
-<!--- <p><img src="../images/v3/spacer.gif" width="90"></p> --->
 
-		</font>
-		</td></tr>
-	</table>
-	</td>
-	<td width=100% bgcolor="#CCCCFF" align=center>
 
-	<table border=0 cellpadding=10 cellspacing=0 width=100%>
-	<tr>
-	<td>
-	<!-- Body Starts -->
-	
-	<!-- Sample Section Starts -->
-	<table border=0 cellpadding=0 cellspacing=0 width=100%>
-		<tr>
-		<td align=right><font face="Verdana" size=2 color="blue"><b>Performance Monitoring</b>&nbsp;&nbsp;</font></td>
-		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
-		</tr>
-		<tr>
-		<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=20 height=2></td>
-		</tr>
-	</table>
 
-	<table border=0 cellpadding=0 cellspacing=0 width=100%>
-		<tr>
-		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
-		<td width=2><img src="../images/shim.gif" width=2 height=4></td>
-		<td>
-		<table border=0 cellpadding=4 cellspacing=0 width=100%>
-		<tr>
-		<td>
-<FONT COLOR=blue FACE=Verdana SIZE=2> 
+<!--- <hr> --->
 
-Three important aspects are :-
-<BR>1. KPIs
-<BR>2. Dashboards for presentation of results
-<BR>3. The use of common Reporting Standards, eg the UN Global Reporting Initiative, (GRI).
-<BR><BR>
-
-<CENTER>
-<!--- The variable code starts here ... --->
-<! If the Table is empty, then a message should be generated 'No Data in this Table.' --->
-	<table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#FF9900" name="change me">
-
-<!--- The data generated from the Database begins here ... --->
-        <tr><td class="header2" colspan=6><div align="center">
-	<FONT COLOR=blue FACE=Verdana SIZE=2>
-	<B>LIST OF USEFUL LINKS</div></td></tr>
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>Nr.</B></td>
-        <td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>ITEM</B></td>
-      	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>COMMENT</B></td>
-	</tr>
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>1</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="http://www.corporatescorecard.com.au/" TARGET=_NEW>Corporate Scorecard</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Online assessment hosted in Australia.</td>
-	</tr>
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>1</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="http://www.databaseanswers.org/data_models/crm_customer_metrics/customer_metrics.htm">Customer Metrics</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>The Underlying Data Models.</td>
-	</tr>
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>2</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="dashboard_from_cr_group.htm">Dashboard</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Example from Corporare Renaissance Group.</td>
-	</tr
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>3</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="http://management.about.com/cs/generalmanagement/a/keyperfindic.htm" TARGET=_NEW>KPI Definitions.</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Excellent introductory article.</td>
-	</tr>
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>3</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="kpi_definitions4_ict_education.htm">KPI Definitions for ICT in Education</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Measuring the Effectiveness of Teaching.</td>
-	</tr>
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>4</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="kpi_monitoring4_student_attendance.htm">KPIs Reporting for a Training College</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Monitoring Student Attendance.</td>
-	</tr>
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>5</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="http://www.kpisystems.com/case_studies/banking/risk_mgt/index.htm" TARGET=_NEW>Financial KPI Portal</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
-	</tr>
-
+<!-- Start of text to copy --->
 <!---
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>6</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="http://www.gmisystems.com/performance/index.htm">GMI Performance Page</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
-	</tr>
---->
-
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>7</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="http://www.globalreporting.org/">GRI - Global Reporting Initiative</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Associated with the UN</td>
-	</tr>
-
-<!---
-	<tr>
-	<td ALIGN=middle class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>8</td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
-	<A HREF="status_of_the_paper.htm">Status of the Paper</A></td>
-        <td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
-	</tr>
---->
-
-<!--- The data generated from the Database ends here ... --->
-	</table>
-<!--- The variable code ends here --->
-
-</font>
-		</td>
-		</tr>
-		</table>
-		</td>
-		</tr>
-	</table>
-	<!-- Sample Section Ends -->
-	<!-- Body Ends -->	
-	</td>
-	</tr>
-	</table>
-	</td>
-	</tr>
-</table>
-
-<table border=0 cellpadding=0 cellspacing=0 width=100%>
-<tr><td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td></tr>
-<tr><td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td></tr>
-<tr><td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td></tr>
-
 <tr>
-	<td colspan=2 bgcolor="#3366CC">&nbsp;&nbsp;&nbsp;
-	<a href="/index.asp"><img src="../images/nav_home.gif" alt="Home" border=0></a>
-	<a href="../pi_best_practice_display/index.asp"><img src="../images/nav_bestpractice.gif" alt="Best Practice" border=0></a>
-	<a href="../pi_communities/boards.asp"><img src="../images/nav_communities.gif" alt="Communities" border=0></a>
-	<a href="../first_timers.htm"><img src="../images/nav_firsttimers.gif" alt="First Timers" border=0></a>
-	<a href="../pi_information_catalog/browse.asp"><img src="../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a>
-	<a href="../performance.htm"><img src="../images/nav_performance.gif" alt="Performance" border=0></a>
-	<a href="../users.htm"><img src="../images/nav_users.gif" alt="Users" border=0></a>
-	<a href="../search.htm"><img src="../images/nav_search.gif" alt="Search" border=0></a>
-	<a href="../site_map.htm"><img src="../images/nav_sitemap.gif" alt="Site Map" border=0></a>
-	</td>
+<td><img align=right alt="Orders - Version 1" src="images/orders_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>8) COMMENTS :</b>
+<li>This is a very simple (and unrealistic) Diagram.
+<li>It shows that Customers order Products,such as Latte and a Muffin
+</td>
 </tr>
 
-<tr><td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td></tr>
-<tr><td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td></tr>
-<tr><td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td></tr>
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>10) COMMENTS :</b>
+	<li>This is a realistic Diagram showing the detail necessary
+	to correctly model Customers, Products and Order details.
+	</td>
+
+	<td>
+	<img align=rleft alt="Orders (Version 2)" src="images/orders_v2.gif">
+	<br>
+	</td>
+	</tr>
+--->
+<!-- End of text to copy --->
+<!---
+<tr>
+<td colspan=1><font color=blue face=Verdana size=2>
+<OL>
+<b><li>What have we found in Starbucks ?</b>
+<UL><li>Customers</UL>
+<UL><li>Orders</UL>
+<UL><li>Products
+<UL><li>Food
+<li>Drink
+
+
+</UL>
+</OL>
+</td>
+<td valign=bottom><font color=blue face=Verdana size=2>
+<b>Now we move on to Amazon ...</b></td>
+<tr>
+--->
+
+<!-- Start of text to copy --->
+
+
+
+
+
+<!-- End of text to copy --->
+
+<!-- Start of text to copy --->
+<!---
+<tr>
+<td valign=top><img align=right alt="Amazon Products - Version 1" src="images/amazon_products_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li>Different kinds of Products, like Books, are added quite easily.
+<li>We simply add different kinds of Products, and I have shown Books as an example.
+<li>You will see that the attibutes for Books are specific to Books and don't apply to Food or Drink.
+<li>For example, an Author and an ISBN.
+
+
+<br><br><br>
+<li><b>Inheritance</b>
+<li>The unusual symbol in the middle of the diagram, composed of a circle with two small lines underneath it is how Inheritance is shown using the particular Data Modelling Tool that I am using,which is called Dezign.
+<li>Inheritance is a very important topic when you are creating a Data Model.
+<li>In plain English, we would say that Inheritance occurs where a Parent-Child relationship exists between Things of Interest (or Entities).
+<li>You can ask the simple <b>'Is-a' question</b> - in this case, if we ask 'Is a Book a Product' then clearly the answer is 'Yes' so we think there is an Inheritance relationship between them.
+
+
+<li>In the example of Inheritance shown in this diagram, we can see that all Products have Names and Descriptions. Therefore, Books, Food and Drink will inherit these characteristics from the parent Product.
+<li>However, each type of Product will have specific characteristics that it does not share with other types of Products. For example, Books have ISBNs and Authors, but Food and Drink do not.
+<li>One of the important things in your Data Model design is to be sure you have identified all the Inheritance relationships.
+<li>However, from many years of experience as a DBA, I should point out that Inheritance is often blurred in a real physical Database because it can be clumsy to implement.
+<li>I sometimes find myself showing Inheritance in a Logical Data Model which then disappears when I design the Physical Database, which is what ultimately becomes the Database.
+
+
+<br><br><br>
+<li><b>There are three different approaches to implementing Inheritance in a Database :-</b>
+<OL><li>Implement nthe design as you see it , in other words, have a separate physical Table for each Product Entity in this diagram.
+<li>Add all attributes in the Product Super-Type to the Books, Food and Drink Sub-Types so you end up with three Tables. This is appealing because it seems a natural approach but it can be more difficulty when it comes to development.
+<li>Add all attributes from the Books, Food and Drink Sub-Types to the Product Super-Type.
+<br>This results in one large Table, where two-thirds of all Attributes are not populated in every record.
+<br>However, software development can be easier, depending on the coding conventions that are followed. Currently, wasted space is not such an issue, so this Approach is common.
+</td>
+</tr>
+--->
+
+
+
+<!---	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>COMMENTS :</b>
+	<li>Although Deliveries are complex in the real world, it is easy to add them to our Database design.
+	<li>We simply add a Reference Data Table of Delivery Status Codes and one Table for tracking Order Deliveries.
+	<li>You will notice that the name of this Table is 'Customer_Orders_Delivery', which follows our convention of combining the names of Tables that are combined in the data that is stored in the Table.
+
+	<li><b>Rabbits Ears</b>
+	<li><font size=2>You will notice that the table called 'Ref_Delivery_Stage_Codes' has a dotted line coming out on the right-hand side and going back in again on the top-right corner.
+	<li>Data Analysts call this a Reflexive Relationship, or informally, simply 'Rabbits Ears'.
+	<li>In plain English, we would say that the Table is joined to itself and it means that a record in this Table can be related to another record in the Table.
+	<li>This approach is how we handle the situation where each Delivery Stage is related to another one.
+	<li>When you buy a product from Amazon, you can track its progress as it leaves the Warehouse, clears Customs and is finally delivered to you.
+ 	<li>You should <b>pay special attention</b> to the little 'zeros' at each end of the dotted line.
+	<li>These are how we implement the fact that the 'Next Delivery Stage Code' is optional, because the last Stage in Delivery will not have a Next one.
+	<li>It's important to think through this level of detail otherwise you will get caught out somewhere down the line when real data can't be stored in your Database.
+	<li>In practice, it's smart to have a checklist of things like this to run through before you expose the first draft of your new Database design to a critical audience.
+ 	<li>It's good practice even if you don't have a critical audience because otherwise your design will need to be corrected.
+	</font>
+
+
+	</td>
+
+	<td>
+	<img align=rleft alt="Amazon Deliveries - Version 1" src="images/amazon_deliveries_v1.gif">
+	<br>
+	</td>
+	</tr>
+--->
+
+<!-- End of text to copy --->
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+<br><b>25) PLEASE EMAIL ME</b>
+<li>I hope you have found this Tutorial interesting and useful.
+<li>Please
+<a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on Tutorial on Performance Reporting'>email me</a> with your questions or suggestions so I can improve this first draft Tutorial.
+
+<br>I look forward to hearing from you !
+
+<br><br><b>Barry Williams</b>
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+
+</OL>
+</td>
+
+<tr>
+
 </table>
 
-</body>
 
+
+
+
+
+          </td>
+        </tr>
+      </table>
+
+<!--  End of Table ?? --->
+
+<br>
+
+<!--- <hr> --->
+
+
+
+
+
+
+
+<!--- barry extract ends here --->
+
+<br>
+
+
+	<!-- Sample Section Ends -->
+	<!-- Body Ends -->
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<!--  Start of Table 10 --->
+
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<!---	<td><img src="images/v3/spacer.gif" width=5 height=24>AAAA</td> --->
+
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-bottom.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+<!---	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td> --->
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<!---	<td><a href="../first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td> --->
+<!---	<td><a href="../pi_information_catalog/browse.asp"><img src="images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>              --->
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<!--  End of Table 10 --->
+
+<font color=black face="Verdana" size=1>
+
+<br><center><font color=red><I> &#169 DatabaseAnswers.org 2008</I></font></center>
+
+</body>
 </html>
+

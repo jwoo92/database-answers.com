@@ -70,11 +70,11 @@
 		<td><font face="Verdana, Tahoma, sans-serif" size=2>
 		
 		
-			<B>There are different levels of Registration :-</B>
-			<LI>Simple Basic Registration.
-			<LI>Intranet Registration.
-			<LI>Enterprise Registration.
-			<BR><BR>This Page provdes the simplest Level.				
+			<b>There are different levels of Registration :-</b>
+			<li>Simple Basic Registration.
+			<li>Intranet Registration.
+			<li>Enterprise Registration.
+			<br><br>This Page provdes the simplest Level.				
 		
 		
 		</font></td>
@@ -83,8 +83,8 @@
 	<!-- Sample Section Ends -->
 	
 	<p>
-		<HR>
-		<FONT COLOR=blue FACE=Verdana SIZE=2>
+		<hr>
+		<font color=blue face=Verdana size=2>
 		
 
 		Please answer all the questions ...
@@ -92,24 +92,24 @@
 
 		<FORM ACTION="register.asp" method="POST">
 
-		<!--- <B>SECTION A : Basic Registration details ...</B> --->
+		<!--- <b>SECTION A : Basic Registration details ...</b> --->
 
-		<B>1. Your Login name (e.g. johnd):</B> <INPUT TYPE="TEXT" NAME="login" MAXLENGTH=50>
+		<b>1. Your Login name (e.g. johnd):</b> <INPUT TYPE="TEXT" name="login" MAXLENGTH=50>
 
-		<p><FONT SIZE=2><B>2. Password ?</B> <INPUT TYPE="password" NAME="password" MAXLENGTH="50">
+		<p><font size=2><b>2. Password ?</b> <INPUT TYPE="password" name="password" MAXLENGTH="50">
 
-		<p><FONT SIZE=2><B>3. Repeat Password ?</B> <INPUT TYPE="password" NAME="password2" MAXLENGTH="50">
+		<p><font size=2><b>3. Repeat Password ?</b> <INPUT TYPE="password" name="password2" MAXLENGTH="50">
 
-		<p><FONT SIZE=2><B>4. Email Address ?</B> <INPUT TYPE="TEXT" NAME="email" MAXLENGTH="50">
+		<p><font size=2><b>4. Email Address ?</b> <INPUT TYPE="TEXT" name="email" MAXLENGTH="50">
 
 		<p align=center>
-		<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Submit">
+		<INPUT TYPE="SUBMIT" name="Submit" VALUE="Submit">
 		<INPUT TYPE="RESET" VALUE="Reset">
 		<input type="hidden" name="action" value="register">
 
 		</FORM>
 
-		<HR>
+		<hr>
 		
 		</font>
 	

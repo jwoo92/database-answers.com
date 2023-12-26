@@ -1,0 +1,984 @@
+<html>
+<head><title>iPhone Version Dimple and Toby Visit Windsor Castle</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!--  Start of Table 3 --->
+
+<table name="GRAY NAVBAR" border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td width=80% bgcolor="#CCCCFF" align=center>
+
+<!--  Start of Table 5 --->
+
+
+
+
+<!--- *** LOOK    BARRY     WIDTH OF PAGE  IS DEFINED HERE *** --->
+
+
+
+
+
+
+	<table border=3 cellpadding=0 cellspacing=0 valign=top width=40%>
+	<tr>
+	<td> <!-- Body Starts -->
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<!--  Start of Table 6 --->
+
+
+
+
+<!--  End of Table 6   --->
+<!--  Start of Table 7 --->
+
+            <table bgcolor=white width="100%" border=0 cellspacing="0" cellpadding="0">
+            <tr>
+            <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+
+	    <td align=left bgcolor="#CCCCFF" WIiiiDTH=15% width="90" backgroundDDD="images/px-left.guf" valign="top" bgcolor="#3399CC">
+	    <font color=blue face=Verdana size=2>
+
+	<table border=2>
+	<tr>
+	<td>
+	<img alt="Database Answers" src="../images/dba_400_home.jpg" width=400 height=58>
+	<br>   <font color=blue face=Verdana size=2>Welcome to our Tutorial on Data Modelling.
+<!---	<br>Here's the <a href="iphone_version_v1.html" target="_new">previous version</a>.</font> --->
+
+
+	</td>
+	</tr>
+
+	<tr>
+	<td valign=top><font color=blue face=Verdana size=2><b>1) GETTING STARTED :</b>
+	<img align=left alt="Dimple, (a 10-year old girl, who likes sightseeing and icecream)" border=0 height=100 src="images/dimple_r.jpg"></a>
+	<img align=left alt="Toby (Dimple's 12-year-old brother, who likes sightseeing and databases)" border=0 height=100 src="images/toby.jpg"></a>
+	<br>In this Tutorial, we follow two young visitors to Windsor Castle in England.
+	Our visitors are <b>Dimple</b>, a 10-year old girl, who likes sightseeing and icecream and
+ <b>Toby</b>, Dimple's 12-year-old brother, who likes sightseeing and databases.
+</td>
+</tr>
+
+	<tr>
+	<td valign=top><font color=blue face=Verdana size=2><b>2) WHAT SHALL WE DO TODAY ? :</b>
+	<br>[Dimple] : Toby, It's great being in London which is so exciting and buzzing.
+	<br>[Toby] : I'm glad you like it, Dimple. What would you like to do today ?
+<br>[Dimple] : I'd like to visit Windsor Castle, because it's one of the most popular tourist attractions in England, and it's easy to get to from London.
+<br>[Toby] : OK. Let's go ...
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>3) WINDSOR CASTLE</b>
+<br><br>
+<img alt="Shops with the Castle in the background (320x480)" border=0 HEIiiiGHT=320 width=300 WIiiiDTH=480 valign=mddle src="images/ip_windsor_castle_med.jpg"></a>
+<br>
+Windsor Castle is very beautiful and was built in the year 1068.
+</td>
+</tr>
+
+
+<tr>
+<td>
+<font color=blue face=Verdana size=2>
+<b>4) WINDSOR SHOPS</b>
+<br><img  alt="Shops with the Castle in the background (150x300)" border=0 height=150 width=300 valign=mddle src="images/ip_shops_and_castle_med.jpg"></a>
+<br>
+
+[Dimple] Wow, Toby, there are so many Banks, Cafes, Pubs, Restaurants, Shops, Wine Bars and Hospitals !!!
+<br>[Toby] : Yes, let's start thinking about our Data Model.
+<br>The other thing that we see when we look around is people - lots of people.
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>5) STARTING OUR DATA MODEL :</b>
+<br><img alt="People and Establishments" src="images/ip_people_and_establishments.gif">
+<br><br>[Dimple] : How do we get started ?
+<br>[Toby] : Well, we know that we have People and Places.
+<br> The simplest start is to call all these places Establishments.
+<br>Then we simply have different kinds of Establishments.
+<br> And we have people - local people, visitors, people working here, people here on business and so on.
+<br><br> [Dimple] : Hmmm - so how do we translate what we know to help us get started with our Data Model !!!
+</td>
+</tr>
+
+
+<tr>
+<td valign=middle>
+<font color=blue face=Verdana size=2>
+<b>6) IDENTIFIERS AND PRIMARY KEYS :</b>
+<br><img alt="People and Establishments with Identifiers" width=300 src="images/ip_people_and_establishments_with_identifiers.gif">
+<br><br>[Dimple] : Toby, I am one of these People so how I am I going to identify myself from everybody else.
+<br>[Toby] : We will give everybody a Unique Identifier and every Establishment its own unique Identifier.
+<br>When we use these we call them <b>Primary Keys</b>, and show them in the diagram with a <b>PK</b> on the left-hand side.
+<br>[Dimple] : That sounds good, Toby, but I don't know what it means.
+<br>[Toby] : Well, Dimple, let's look at how we use these Identifiers ...
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>7) RELATIONSHIPS AND FOREIGN KEYS :</b>
+<br>
+<img alt="People Establishments and Visits" WIiiiDTH=460 src="images/ip_people_establishments_and_visits.gif">
+<br>[Toby] : Dimple, now we can add some interesting details because we know that one person can visit many Establishments.
+<br>We also know that one Establishment is visited by many Visitors.
+<br>Then we call this a <b>Many-to-Many Relationship</b> between People and Establishments.
+<!---
+<br><br>To make it easier for you to understand I have expanded the <b>Many-to-Many Relationship</b> into two different things, which are called <b>One-to-Many Relationships</b>.
+<br>[Dimple] : So Toby, is that like saying that One Person can make Many Visits to many Establishments ?
+<br>[Toby] : Yes, Dimple - that's great - and we can also say that One Establishments can have Visits from many People.
+<br>At this point, we can show how all these boxes are related, and that is a very big step, because it takes us to the idea of 'Relationships'.
+<br>And now we can see how useful our Identifiers can be because we can include the Person and Establishment Identifiers in our Visits table. Then the Person_ID field becomes a link to a record for a Person in the Person Table.
+<br>This link is what is called a <b>Foreign Key</b> and we can see it's shown with <b>'FK'</b> on the left-hand side.
+--->
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>8) RELATIONSHIPS AND FOREIGN KEYS :</b>
+<!---
+<br>
+<img alt="People Establishments and Visits" src="images/ip_people_establishments_and_visits.gif">
+<br><br>[Toby] : Dimple, now we can add some interesting details because we know that one person can visit many Establishments.
+<br>We also know that one Establishment is visited by many Visitors.
+<br>Then we call this a <b>Many-to-Many Relationship</b> between People and Establishments.
+--->
+
+<br>To make it easier for you to understand I have expanded the <b>Many-to-Many Relationship</b> into two different things, which are called <b>One-to-Many Relationships</b>.
+<br>[Dimple] : So Toby, is that like saying that One Person can make Many Visits to many Establishments ?
+<br>[Toby] : Yes, Dimple - that's great - and we can also say that One Establishments can have Visits from many People.
+<!---
+<br>At this point, we can show how all these boxes are related, and that is a very big step, because it takes us to the idea of 'Relationships'.
+<br>And now we can see how useful our Identifiers can be because we can include the Person and Establishment Identifiers in our Visits table. Then the Person_ID field becomes a link to a record for a Person in the Person Table.
+<br>This link is what is called a <b>Foreign Key</b> and we can see it's shown with <b>'FK'</b> on the left-hand side.
+--->
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>9) RELATIONSHIPS AND FOREIGN KEYS :</b>
+<!---
+<br>
+<img alt="People Establishments and Visits" width=300 src="images/ip_people_establishments_and_visits.gif">
+<br><br>[Toby] : Dimple, now we can add some interesting details because we know that one person can visit many Establishments.
+<br>We also know that one Establishment is visited by many Visitors.
+<br>Then we call this a <b>Many-to-Many Relationship</b> between People and Establishments.
+<br><br>To make it easier for you to understand I have expanded the <b>Many-to-Many Relationship</b> into two different things, which are called <b>One-to-Many Relationships</b>.
+<br>[Dimple] : So Toby, is that like saying that One Person can make Many Visits to many Establishments ?
+<br>[Toby] : Yes, Dimple - that's great - and we can also say that One Establishments can have Visits from many People.
+--->
+
+<br>At this point, we can show how all these boxes are related, and that is a very big step, because it takes us to the idea of 'Relationships'.
+<br>And now we can see how useful our Identifiers can be because we can include the Person and Establishment Identifiers in our Visits table. Then the Person_ID field becomes a link to a record for a Person in the Person Table.
+<br>This link is what is called a <b>Foreign Key</b> and we can see it's shown with <b>'FK'</b> on the left-hand side.
+</td>
+</tr>
+
+<tr>
+<td valign=middle>
+<font color=blue face=Verdana size=2>
+<b>10) PRODUCTS AND PRODUCT TYPES :</b>
+<br><br><img alt="Products and Types" src="images/ip_products_and_types.gif">
+<br>[Dimple] : Toby, when we go into a shop we want to buy something.
+<br>And there are thousands and thousands of possibilities.
+<br>How do we deal with all that in our little Data Model ?
+<br>[Toby] : Well Dimple, it's really quite easy. It's like all our Modelling where we look for simple patterns that cover many situations.
+<br>[Dimple] : Hmm - I don't know what that means. Maybe if you showed me I might understand it.
+<br>[Toby] : OK.
+<!---
+<br>Everything that we buy is called a Product, and all we have to do is simply define the type of each Product - such as a Coffee, Muffin or a Newspaper.
+<br>Then we draw a little box called Products and say that every Product has a Type.
+<br>In other words, there is a Relationship between the Products and Product_Types boxes.
+<br>The lines are called Relationships and they are very important in Data Modelling.
+<br>We are now creating an Entity-Relationship Diagram or "ERD".
+--->
+</td>
+</tr>
+
+<tr>
+<td valign=middle>
+<font color=blue face=Verdana size=2>
+<b>11) PRODUCTS AND PRODUCT TYPES :</b>
+<!---
+<br><br><img alt="Products and Types" src="images/ip_products_and_types.gif">
+<br>[Dimple] : Toby, when we go into a shop we want to buy something.
+<br>And there are thousands and thousands of possibilities.
+<br>How do we deal with all that in our little Data Model ?
+<br>[Toby] : Well Dimple, it's really quite easy. It's like all our Modelling where we look for simple patterns that cover many situations.
+<br>[Dimple] : Hmm - I don't know what that means. Maybe if you showed me I might understand it.
+<br>[Toby] : OK.
+--->
+
+<br>Everything that we buy is called a Product, and all we have to do is simply define the type of each Product - such as a Coffee, Muffin or a Newspaper.
+<br>Then we draw a little box called Products and say that every Product has a Type.
+<br>In other words, there is a Relationship between the Products and Product_Types boxes.
+<br>The lines are called Relationships and they are very important in Data Modelling.
+<br>We are now creating an Entity-Relationship Diagram or "ERD".
+</td>
+</tr>
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>12) PRODUCTS, TYPES AND PRODUCT HIERARCHIES:</b>
+<br><br>
+<img alt="Starbucks menu Board" HEIiiiGHT=200 WIiiiDTH=350 src="images/starbucks_menu_board.jpg">
+<br><br>[Dimple] : Toby, when we look closely at the Menu Board to try to decide what to order we can see lots of possibilities
+<br>But after a while we can see a pattern that helps us decide.
+<br>How do we deal with all that in our little Data Model ?
+<!---
+<br><br>[Toby] : Well Dimple, it's really quite easy.
+<br>We define something called a <b>Hierarchy</b>.
+<br>Hierarchies are very common and simply mean any situation where there are Parents, Children, Gand-children and so on.
+--->
+</td>
+</tr>
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>13) PRODUCTS, TYPES AND PRODUCT HIERARCHIES:</b>
+<!---
+<br><br>
+<img alt="Starbucks menu Board" height=200 src="images/starbucks_menu_board.jpg">
+<br><br>[Dimple] : Toby, when we look closely at the Menu Board to try to decide what to order we can see lots of possibilities
+<br><br>But after a while we can see a pattern that helps us decide.
+<br>How do we deal with all that in our little Data Model ?
+--->
+<br>
+[Toby] : Well Dimple, it's really quite easy.
+<br>We define something called a <b>Hierarchy</b>.
+<br>Hierarchies are very common and simply mean any situation where there are Parents, Children, Gand-children and so on.
+</td>
+</tr>
+
+<!---
+<br>If we look at the Starbucks Menu Board on the right-hand side we can see a simple example of 'Expresso' and under it a number of different drinks.
+<br>My favourite is Caramel Macchiatto.
+<br>So in this case, the top-level of our hierarchy is a Product Category called Expresso, and the next level down is a Product called Caramel Macchiatto.
+<br><br>[Dimple] : OK. That sounds OK.
+
+<br><br>[Toby] : Finally, we show this Herarchy by a dotted line that in the top-right hand corner in the Entity called 'Ref_Types_of_Products'.
+<br>People who design Databases for a living call it a 'Reflexive' relationship but you and I can call it <b>'Rabbits-Ears'</b>
+--->
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>14) PRODUCTS, TYPES AND PRODUCT HIERARCHIES:</b>
+<br><br>
+<img align=left alt="Products, Types and Hierachies" src="images/ip_products_and_hierarchies.gif">
+
+<br><br><br><br><br><br><br><br><br>
+<br>On the Starbucks Menu we can see a simple example of 'Expresso' and under it a number of different drinks.
+My favourite is Caramel Macchiatto.
+<br>So in this case, the top-level of our hierarchy is a Product Category called Expresso, and the next level down is a Product called Caramel Macchiatto.
+<!---
+<br><br>[Dimple] : That sounds OK.
+
+<br><br>[Toby] : Finally, we show this Herarchy by a dotted line that in the top-right hand corner in the Entity called 'Ref_Types_of_Products'.
+<br>This is formally called a 'Reflexive' relationship and informally <b>'Rabbits-Ears'</b>
+--->
+
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>15) PRODUCTS, TYPES AND PRODUCT HIERARCHIES:</b>
+
+<!--- <img align=left alt="Starbucks menu Board" height=200 src="images/starbucks_menu_board.jpg"> --->
+<!---
+<img align=left alt="Products, Types and Hierachies" src="images/ip_products_and_hierarchies.gif">
+<br>If we look at the Starbucks Menu Board on the right-hand side we can see a simple example of 'Expresso' and under it a number of different drinks.
+<br>My favourite is Caramel Macchiatto.
+<br>So in this case, the top-level of our hierarchy is a Product Category called Expresso, and the next level down is a Product called Caramel Macchiatto.
+--->
+
+<br>[Dimple] : OK. That sounds OK.
+<br>[Toby] : Finally, we show this Herarchy by a dotted line that in the top-right hand corner in the Entity called 'Ref_Types_of_Products'.
+<br>This is formally called a 'Reflexive' relationship and informally <b>'Rabbits-Ears'</b>
+</td>
+</tr>
+
+<!---
+<br><br>[Dimple] : Toby, when we look closely at the Menu Board to try to decide what to order we can see lots of possibilities
+<br><br>But after a while we can see a pattern that helps us decide.
+<br>How do we deal with all that in our little Data Model ?
+<br><br>[Toby] : Well Dimple, it's really quite easy.
+<br>We define something called a <b>Hierarchy</b>.
+<br>Hierarchies are very common and simply mean any situation where there are Parents, Children, Gand-children and so on.
+--->
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>16) TYPES OF PEOPLE :</b>
+<img align=left alt="Types of People" src="images/ip_types_of_people.gif">
+<br><br><br><br><br><br><br>
+
+<br>[Dimple] : Toby, that looks OK.
+<br>I guess we can deal with Types of People the same way, can we ?
+<br>[Toby] : Yes, Dimple, and Types of Establishments as well.
+<br>[Dimple] : OK, that sounds sensible. And do they use these Identifiers in a Database ?
+<br>[Toby] : Yes, and what is even better is that the Database will automatically generate a new unique Identifier for you and your Visits and Purchases in case you want to get a refund later.
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>17) TYPES OF ESTABLISHMENTS:</b>
+<br><br>
+<img alt="Types Establishments" src="images/ip_types_of_establishments.gif">
+
+<br>[Dimple] : Toby, that looks OK.
+<br>I guess we can deal with Types of Establishments the same way, can we ?
+<br>[Toby] : Yes, Dimple.
+<br><br>[Dimple] : OK, that sounds sensible. And do they use these Identifiers in a Database ?
+<br>[Toby] : Yes, and what is even better is that the Database will automatically generate a new unique Identifier for you and your Visits and Purchases in case we want to keep track of things, like maybe you want to get a refund later
+so we need to get your details from the Database.
+
+<!---
+<br>[Toby] : Before we move on, let's talk about Establishments.
+<br>One special thing about Windsor is that it has a Castle where the Queen lives and a very large Royal Park, where she keeps Deer.
+<br>But when we think about these things, we find that we can simply fit into our definition of Establishments.
+--->
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>18) TYPES OF ESTABLISHMENTS:</b>
+<!---
+<br><br>
+<img alt="Types Establishments" src="images/ip_types_of_establishments.gif">
+
+<br>[Dimple] : Toby, that looks OK.
+<br>I guess we can deal with Types of Establishments the same way, can we ?
+<br>[Toby] : Yes, Dimple.
+<br><br>[Dimple] : OK, that sounds sensible. And do they use these Identifiers in a Database ?
+<br>[Toby] : Yes, and what is even better is that the Database will automatically generate a new unique Identifier for you and your Visits and Purchases in case we want to keep track of things, like maybe you want to get a refund later
+so we need to get your details from the Database.
+--->
+
+<br>[Toby] : Finally, let's a little more talk about Establishments.
+<br>One special thing about Windsor is that it has a Castle where the Queen lives and a very large Royal Park, where she keeps Deer.
+<br>But when we think about these things, we find that we can simply fit into our definition of Establishments, because they take Visitors, and have opening hours.
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>19) VISITS TO THE SHOPS :</b>
+<br><br>
+<img alt="People Establishments and Visits" WIiiiDTH=460 src="images/ip_people_establishments_and_visits.gif">
+
+<!--- <img alt="People and Visits to Establishments" src="images/ip_people_and_visits.gif"> --->
+<br>[Dimple] : Toby, with so many People, Establishments and Purchases how do they keep track of everything ?
+<br>[Toby] : Well, Dimple, by this time, everything has its own Identifier that is used wherever they need to keep track.
+<br>[Dimple] : OK, that sounds sensible. And do they use these Identifiers in a Database ?
+<br>[Toby] : Yes, and what is even better is that the Database will automatically generate a new unique Identifier for you and your Visits and Purchases in case you want to get a refund later.
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>20) VISITS AND PURCHASES :</b>
+<br>
+<img alt="Visits and Purchases" src="images/ip_visits_and_purchases.gif">
+<br>[Dimple] : Toby, with so many People, Establishments and Purchases how will we keep track of everything ?
+<br>[Toby] : Well, Dimple, by this time, everything has its own Identifier that is used wherever they need to keep track.
+<br>[Dimple] : OK, that sounds sensible. And do they use these Identifiers in a Database ?
+<br>[Toby] : Yes, and what is even better is that the Database will automatically generate a new unique Identifier for you and your Visits and Purchases in case you want to get a refund later.
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>21) PEOPLE AND STAFF:</b>
+<img alt="Types of People and Establishments" src="images/ip_people_and_staff.gif">
+<br>[Toby] : Dimple, let's take a closer look at the different types of people we can find in Windsor.
+<br>[Dimple] : OK, Toby. I hope I don't have to think too much because I might get a headache ?
+<br>[Toby] : No, Dimple, I will do the thinking and talking and all you have to do is nod your head when you understand.
+<br>[Dimple] : OK, Toby. I promise to do that.
+
+<!---
+<br><b>15b) PEOPLE AND STAFF:</b>
+<br>[Toby] : We already said that we have Local People and Tourists.
+<br>Some of these Local People are shoppers and some of them will be working in the shops.
+<br>We will call the workers 'Staff' and we know more about them than we do about the Visitors.
+<br>For example, we will probably know the Gender of everybody just by looking at them.
+
+<br><b>15c) PEOPLE AND STAFF:</b>
+<br>For Staff, we will usually also know their Data of Birth and their Home Address.
+<br>Therefore, although they are all People, we know more about Staff than we do about Visitors.
+<br>In Data Modelling we have a very powerful approach that we call <b>Inheritance</b> that we can use here.
+<br>It's shown by the funny circle with two lines.
+<br>If we want to describe this in English, we would say that Staff inherit the People_Type_Code and Gender from the parent Entity of People, and in addition, they have a Date of Birth and Home Address.
+
+<br><b>15d) PEOPLE AND STAFF:</b>
+<br>Does that make sense, Dimple ?
+<br>[Dimple] : I think so, Toby.
+<br>Is it like saying that we inherit having two arms and two legs from our Parents because they have two arms and two legs, but that we have also have things that are just us ?
+<br>[Toby] : Yes, Dimple - that's great - let's take a break and do some shopping !!!
+<br>[Dimple] : I like the sound of that, Toby. Can I have an icecream now?
+--->
+
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<!---
+<b>15a) PEOPLE AND STAFF:</b>
+<img alt="Types of People and Establishments" src="images/ip_people_and_staff.gif">
+<br>[Toby] : Dimple, let's take a closer look at the different types of people we can find in Windsor.
+<br>[Dimple] : OK, Toby. I hope I don't have to think too much because I might get a headache ?
+<br>[Toby] : No, Dimple, I will do the thinking and talking and all you have to do is nod your head when you understand.
+<br>[Dimple] : OK, Toby. I promise to do that.
+--->
+
+<b>22) PEOPLE AND STAFF:</b>
+<br>[Toby] : We already said that we have Local People and Tourists.
+<br>Some of these Local People are shoppers and some of them will be working in the shops.
+<br>We will call the workers 'Staff' and we know more about them than we do about the Visitors.
+<br>For example, we will probably know the Gender of everybody just by looking at them.
+<!---
+<br><b>15c) PEOPLE AND STAFF:</b>
+<br>For Staff, we will usually also know their Data of Birth and their Home Address.
+<br>Therefore, although they are all People, we know more about Staff than we do about Visitors.
+<br>In Data Modelling we have a very powerful approach that we call <b>Inheritance</b> that we can use here.
+<br>It's shown by the funny circle with two lines.
+<br>If we want to describe this in English, we would say that Staff inherit the People_Type_Code and Gender from the parent Entity of People, and in addition, they have a Date of Birth and Home Address.
+
+<br><b>15d) PEOPLE AND STAFF:</b>
+<br>Does that make sense, Dimple ?
+<br>[Dimple] : I think so, Toby.
+<br>Is it like saying that we inherit having two arms and two legs from our Parents because they have two arms and two legs, but that we have also have things that are just us ?
+<br>[Toby] : Yes, Dimple - that's great - let's take a break and do some shopping !!!
+<br>[Dimple] : I like the sound of that, Toby. Can I have an icecream now?
+--->
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<!---
+<b>15a) PEOPLE AND STAFF:</b>
+<img alt="Types of People and Establishments" src="images/ip_people_and_staff.gif">
+<br>[Toby] : Dimple, let's take a closer look at the different types of people we can find in Windsor.
+<br>[Dimple] : OK, Toby. I hope I don't have to think too much because I might get a headache ?
+<br>[Toby] : No, Dimple, I will do the thinking and talking and all you have to do is nod your head when you understand.
+<br>[Dimple] : OK, Toby. I promise to do that.
+
+<br><b>15b) PEOPLE AND STAFF:</b>
+<br>[Toby] : We already said that we have Local People and Tourists.
+<br>Some of these Local People are shoppers and some of them will be working in the shops.
+<br>We will call the workers 'Staff' and we know more about them than we do about the Visitors.
+<br>For example, we will probably know the Gender of everybody just by looking at them.
+--->
+
+<b>23) PEOPLE AND STAFF:</b>
+<br>For Staff, we will usually also know their Data of Birth and their Home Address.
+<br>Therefore, although they are all People, we know more about Staff than we do about Visitors.
+<br>In Data Modelling we have a very powerful approach that we call <b>Inheritance</b> that we can use here.
+<br>It's shown by the funny circle with two lines.
+<br>If we want to describe this in English, we would say that Staff inherit the People_Type_Code and Gender from the parent Entity of People, and in addition, they have a Date of Birth and Home Address.
+<!---
+<br><b>15d) PEOPLE AND STAFF:</b>
+<br>Does that make sense, Dimple ?
+<br>[Dimple] : I think so, Toby.
+<br>Is it like saying that we inherit having two arms and two legs from our Parents because they have two arms and two legs, but that we have also have things that are just us ?
+<br>[Toby] : Yes, Dimple - that's great - let's take a break and do some shopping !!!
+<br>[Dimple] : I like the sound of that, Toby. Can I have an icecream now?
+--->
+
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<!---
+<b>15a) PEOPLE AND STAFF:</b>
+<img alt="Types of People and Establishments" src="images/ip_people_and_staff.gif">
+<br>[Toby] : Dimple, let's take a closer look at the different types of people we can find in Windsor.
+<br>[Dimple] : OK, Toby. I hope I don't have to think too much because I might get a headache ?
+<br>[Toby] : No, Dimple, I will do the thinking and talking and all you have to do is nod your head when you understand.
+<br>[Dimple] : OK, Toby. I promise to do that.
+
+<br><b>15b) PEOPLE AND STAFF:</b>
+<br>[Toby] : We already said that we have Local People and Tourists.
+<br>Some of these Local People are shoppers and some of them will be working in the shops.
+<br>We will call the workers 'Staff' and we know more about them than we do about the Visitors.
+<br>For example, we will probably know the Gender of everybody just by looking at them.
+
+<br><b>15c) PEOPLE AND STAFF:</b>
+<br>For Staff, we will usually also know their Data of Birth and their Home Address.
+<br>Therefore, although they are all People, we know more about Staff than we do about Visitors.
+<br>In Data Modelling we have a very powerful approach that we call <b>Inheritance</b> that we can use here.
+<br>It's shown by the funny circle with two lines.
+<br>If we want to describe this in English, we would say that Staff inherit the People_Type_Code and Gender from the parent Entity of People, and in addition, they have a Date of Birth and Home Address.
+--->
+
+<b>24) PEOPLE AND STAFF:</b>
+<br>Does that make sense, Dimple ?
+<br>[Dimple] : I think so, Toby.
+<br>Is it like saying that we inherit having two arms and two legs from our Parents because they have two arms and two legs, but that we have also have things that are just us ?
+<br>[Toby] : Yes, Dimple - that's great - let's take a break and do some shopping !!!
+<br>[Dimple] : I like the sound of that, Toby. Can I have an icecream now?
+</td>
+</tr>
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>25) STAFF, ESTABLISHMENTS AND ONE-TO-MANY RELATIONSHIPS :</b>
+
+<br><br>
+<img alt="Staff,Establishments and Derived Fields" src="images/ip_staff_establishments_and_derived_fields_model.gif">
+
+<br>[Dimple] : Toby, how do we specify that Staff work in Establishments ?
+<br>[Toby] : Dimple, that's a very good question.
+<br>Fortunately, the answer is very easy, and we simply add a <b>One-to-Many Relationship</b> between the Staff and the Establishment.
+<!---
+<br><b>16b11) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+<br> In English, we would say that a <b>One-to-Many Relationship</b> means every member of Staff must work in one Establishemnt and every Establishment can employ many members of Staff.
+<br>In the diagram, we show this with a <b>Foreign Key</b> by the establishment_id field in the Staff Entity.
+<br>So if we look closely at the Staff Entity, we will see <b>'FK'</b> by the establishment_id field.
+<br>[Dimple] : OK, that sounds good, and I can see how the Identifiers are very important.
+<br>[Toby] : I am glad to hear it, Dimple.
+<br><b>16c111) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+<br>There is one more thing I have to say.
+<br>We are learning Data Modelling and one important thing about Data Modelling is that it has to follow a set of Rules.
+<br>These Rules help us to produce good Data Models and so they they are very important.
+<br><b>16d) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+<br>One of the Rules is that we cannot include any bits of data that can be derived from any other bits of data.
+<br>For example, we usually want to know how many people work in a Shop or Cafe.
+<br>Therefore we include a <b>Staff Count</b> field with the Establishment.
+
+<br><b>16e) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+When it comes to finding the derived value that goes in here, we will count the records in the Staff Table for each Establishment.
+<br>Therefore, it's a <b>derived Field</b> and we call it a name that starts with 'derived_' to make things clear.
+<br> Does that sound sensible, Dimple ?
+<br>[Dimple] : I suppose so, Toby.
+<br>But I've got a headache, can we go for an icecream now ?
+--->
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>26) ONE-TO-MANY RELATIONSHIPS AND FOREIGN KEYS :</b>
+<br>[Toby] : In English, we would say that a <b>One-to-Many Relationship</b> means every member of Staff must work in one Establishemnt and every Establishment can employ many members of Staff.
+<br>In the diagram, we show this with a <b>Foreign Key</b> by the establishment_id field in the Staff Entity.
+So if we look closely at the Staff Entity, we will see <b>'FK'</b> by the establishment_id field.
+<br>[Dimple] : OK, I can see how the Identifiers are very important.
+<br>[Toby] : I am glad to hear it, Dimple.
+
+<!---
+<br><b>16c111) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+<br>There is one more thing I have to say.
+<br>We are learning Data Modelling and one important thing about Data Modelling is that it has to follow a set of Rules.
+<br>These Rules help us to produce good Data Models and so they they are very important.
+<br><b>16d) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+<br>One of the Rules is that we cannot include any bits of data that can be derived from any other bits of data.
+<br>For example, we usually want to know how many people work in a Shop or Cafe.
+<br>Therefore we include a <b>Staff Count</b> field with the Establishment.
+
+<br><b>16e) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+When it comes to finding the derived value that goes in here, we will count the records in the Staff Table for each Establishment.
+<br>Therefore, it's a <b>derived Field</b> and we call it a name that starts with 'derived_' to make things clear.
+<br> Does that sound sensible, Dimple ?
+<br>[Dimple] : I suppose so, Toby.
+<br>But I've got a headache, can we go for an icecream now ?
+--->
+
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>27) RULES FOR DATA MODELLING :</b>
+<br>There is one more thing I have to say.
+<br>We are learning Data Modelling and one important thing about Data Modelling is that it has to follow a set of Rules.
+<br>These Rules help us to produce good Data Models and so they they are very important.
+<!---
+<br><b>16d11111) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+<br>One of the Rules is that we cannot include any bits of data that can be derived from any other bits of data.
+<br>For example, we usually want to know how many people work in a Shop or Cafe.
+<br>Therefore we include a <b>Staff Count</b> field with the Establishment.
+
+<br><b>16e) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+When it comes to finding the derived value that goes in here, we will count the records in the Staff Table for each Establishment.
+<br>Therefore, it's a <b>derived Field</b> and we call it a name that starts with 'derived_' to make things clear.
+<br> Does that sound sensible, Dimple ?
+<br>[Dimple] : I suppose so, Toby.
+<br>But I've got a headache, can we go for an icecream now ?
+--->
+
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<!---
+<br><b>16c111) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+<br>There is one more thing I have to say.
+<br>We are learning Data Modelling and one important thing about Data Modelling is that it has to follow a set of Rules.
+<br>These Rules help us to produce good Data Models and so they they are very important.
+--->
+
+<b>28) THE 'NO DERIVED FIELDS' RULE :</b>
+<br>One of the Rules is that we cannot include any bits of data that can be derived from any other bits of data.
+<br>For example, we usually want to know how many people work in a Shop or Cafe.
+<br>Therefore we include a <b>Staff Count</b> field with the Establishment.
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>29) FINDING DERIVED FIELDS :</b>
+<br>When it comes to finding the derived value that goes in here, we will count the records in the Staff Table for each Establishment.
+<br>Therefore, it's a <b>derived Field</b> and we call it a name that starts with 'derived_' to make things clear.
+<br> Does that sound sensible, Dimple ?
+<br>[Dimple] : I suppose so, Toby.
+<br>But I've got a headache, can we go for an icecream now ?
+
+</td>
+</tr>
+
+
+
+
+
+
+<!---
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>16b) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+
+<br><br>
+<img alt="Staff,Establishments and Derived Fields" src="images/ip_staff_establishments_and_derived_fields_model.gif">
+
+<br>[Dimple] : Toby, how do we specify that Staff work in Establishments ?
+<br>[Toby] : Dimple, that's a very good question.
+<br>Fortunately, the answer is very easy.
+<br>We add a <b>One-to-Many Relationship</b> between the Staff and Establishment Entities
+<br> In English, we would say that every member of Staff must work in one Establishemnt and every Establishment can employ many members of Staff.
+<br>In the diagram, we show this with a <b>Foreign Key</b> by the establishment_id field in the Staff Entity.
+<br>So if we look closely at the Staff Entity, we will see <b>'FK'</b> by the establishment_id field.
+
+<br><br>[Dimple] : OK, that sounds good, and I can see how the Identifiers are very important.
+
+<br><br>[Toby] : I am glad to hear it, Dimple.
+<br>There is one more thing I have to say.
+<br>We are learning Data Modelling and one important thing about Data Modelling is that it has to follow a set of Rules.
+<br>These Rules help us to produce good Data Models and so they they are very important.
+<br>One of the Rules is that we cannot include any bits of data that can be derived from any other bits of data.
+<br>For example, we usually want to know how many people work in a Shop or Cafe.
+<br>Therefore we include a <b>Staff Count</b> field with the Establishment.
+<br>But when to comes to finding the value that goes in here, we will count the records in the Staff Table for each Establishment.
+<br>Therefore, it's a <b>derived Field</b> and we call it a name that starts with 'derived_' to make things clear.
+<br><br> Does that sound sensible, Dimple ?
+<br><br>[Dimple] : I suppose so, Toby.
+<br>But I've got a headache, can we go for an icecream now ?
+</td>
+</tr>
+--->
+
+<!---
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>16c) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+
+<br><br>
+<img alt="Staff,Establishments and Derived Fields" src="images/ip_staff_establishments_and_derived_fields_model.gif">
+
+<br><br>[Dimple] : Toby, how do we specify that Staff must work in some Establishment ?
+
+<br><br>[Toby] : Dimple, that's a very good question.
+<br>Fortunately, the answer is very easy.
+<br>We add a One-to-Many Relationship between the Staff and Establishment Entities
+<br> In English, we would say that every member of Staff must work in one Establishemnt and every Establishment can employ many members of Staff.
+<br>In the diagram, we show this with a <b>Foreign Key</b> by the establishment_id field in the Staff Entity.
+<br>So if we look closely at the Staff Entity, we will see <b>'FK'</b> by the establishment_id field.
+
+<br><br>[Dimple] : OK, that sounds good, and I can see how the Identifiers are very important.
+
+<br><br>[Toby] : I am glad to hear it, Dimple.
+<br>There is one more thing I have to say.
+<br>We are learning Data Modelling and one important thing about Data Modelling is that it has to follow a set of Rules.
+<br>These Rules help us to produce good Data Models and so they they are very important.
+<br>One of the Rules is that we cannot include any bits of data that can be derived from any other bits of data.
+<br>For example, we usually want to know how many people work in a Shop or Cafe.
+<br>Therefore we include a <b>Staff Count</b> field with the Establishment.
+<br>But when to comes to finding the value that goes in here, we will count the records in the Staff Table for each Establishment.
+<br>Therefore, it's a <b>derived Field</b> and we call it a name that starts with 'derived_' to make things clear.
+<br><br> Does that sound sensible, Dimple ?
+<br><br>[Dimple] : I suppose so, Toby.
+<br>But I've got a headache, can we go for an icecream now ?
+</td>
+</tr>
+--->
+
+<!---
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>16d) STAFF, ESTABLISHMENTS AND DERIVED FIELDS :</b>
+
+<br>
+<img alt="Staff,Establishments and Derived Fields" src="images/ip_staff_establishments_and_derived_fields_model.gif">
+<br>[Dimple] : Toby, how do we specify that Staff work in Establishments ?
+
+<br>[Toby] : Dimple, that's a very good question.
+<br>Fortunately, the answer is very easy.
+<br>We add a One-to-Many Relationship between the Staff and Establishment Entities.
+In English, we would say that every member of Staff must work in one Establishemnt and every Establishment can employ many members of Staff.
+<br>In the diagram, we show this with a <b>Foreign Key</b> by the establishment_id field in the Staff Entity.
+<br>So if we look closely at the Staff Entity, we will see <b>'FK'</b> by the establishment_id field.
+
+<br><br>[Dimple] : OK, that sounds good, and I can see how the Identifiers are very important.
+
+<br><br>[Toby] : I am glad to hear it, Dimple.
+<br>There is one more thing I have to say.
+<br>We are learning Data Modelling and one important thing about Data Modelling is that it has to follow a set of Rules.
+<br>These Rules help us to produce good Data Models and so they they are very important.
+<br>One of the Rules is that we cannot include any bits of data that can be derived from any other bits of data.
+<br>For example, we usually want to know how many people work in a Shop or Cafe.
+<br>Therefore we include a <b>Staff Count</b> field with the Establishment.
+<br>But when to comes to finding the value that goes in here, we will count the records in the Staff Table for each Establishment.
+<br>Therefore, it's a <b>derived Field</b> and we call it a name that starts with 'derived_' to make things clear.
+<br><br> Does that sound sensible, Dimple ?
+<br><br>[Dimple] : I suppose so, Toby.
+<br>But I've got a headache, can we go for an icecream now ?
+</td>
+</tr>
+--->
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>30) REFERENCE DATA :</b>
+<br><br>
+<img alt="Types of Establishments and People Reference Data" src="images/ip_reference_data_2_tables_model.gif">
+<br>[Toby] : Dimple, we have talked about Reference Data for Types of Establishments and People.
+<br>I have given them both names that begin with 'Ref_' to make it clear that they are Reference Data.
+This means that the values don't change much and I can use them to define what the valid values can be.
+
+<!---
+<br>This is a technique that professional Data Modellers but we don't need to worry about it today.
+
+<br><br>[Dimple] : I'm glad to hear it, Toby !!!
+<br>Although it isn't difficult to understand and it seems like a good idea.
+<BR<What other kinds of Reference data do we have ?
+<br>[Toby] : In our small example, we have only four kinds altogether -
+Gender, Types of Establishment, People and Products.
+--->
+</td>
+</tr>
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>31) BRINGING IT ALL TOGETHER :</b>
+<br><br>
+<img alt="Bringing it all Together" src="images/ip_bringing_it_all_together_model.gif">
+
+<br>[Toby] : Dimple, if we bring together everything we have talked about, we will have a good Data Model that any professional would be proud of.
+<br><br>[Dimple] : OK, Toby. Do you think I will understand it ?
+
+<!--
+<br><br>[Toby] : Let me help you by making a list of the <b>Business Rules</b> for our Model :-
+<li> People can be either Staff or Visitors.
+<li> Products can be Caramel Machiatto , Panini and so on.
+<li> Staff have a Date of Birth and a Home Address.
+<li> People can make Visits to Establishments.
+<li> During a Visit they can purchase Products.
+<br><br>
+<br><br>[Toby] : OK, Dimple - we have a very nice Data Model and now we can take the break I promised you.
+<br><br>[Dimple] : That's great, Toby - can I have an icecream ?
+<br><br>Sure, but before we do I should say something about <b>PF</b>, which appears in the Staff Table.
+<br><br>It's unusual and it's called <b>PF</b> because it means a field which is a <b>P</b>rimary Key in the Staff Table and a <b>F</b>oreign Key to the People Table.
+
+<br><br>[Dimple] : Hmmm, I've got a headache, Toby - can we please go an get an icecream ?
+
+<br><br>[Toby] : OK, Dimple. You've been a very good girl and you deserve a break.
+--->
+</td>
+</tr>
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>32) BUSINESS RULES :</b>
+<br>[Toby] : Let me help you understand it by making a list of the <b>Business Rules</b> for our Model :-
+<font size=1>
+<li> People can be either Staff or Visitors.
+<li> Products can be Caramel Machiatto , Panini and so on.
+<li> Staff have a Date of Birth and a Home Address.
+<li> People can make Visits to Establishments.
+<li> During a Visit they can purchase Products.
+</font>
+<br>[Toby] : OK, Dimple - we have a very nice Data Model and now we can take a break.
+<br>[Dimple] : That's great, Toby - can I have an icecream ?
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>33) PF KEYS :</b>
+<br>Sure, but before we do I should say something about <b>PF</b>, which appears in the Staff Table.
+It's unusual and it's called <b>PF</b> because it means a field which is a <b>P</b>rimary Key in the Staff Table and a <b>F</b>oreign Key to the People Table.
+<br>[Dimple] : Hmmm, I've got a headache, Toby - can we please go an get an icecream ?
+<br>[Toby] : OK, Dimple. You've been a very good girl and you deserve a break.
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>34) ICECREAM :</b>
+<br><br>
+<img alt="Baskin-Robbins Icecream Parlour" width=300 src="images/baskin_robbins.jpg">
+<br>[Toby] : Dimple, I 've got some wonderful news for you.
+<br>[Dimple] : I'm glad to hear it, Toby - what is it ?
+<br>[Toby] : Your favourite <b>Baskin-Robbins</b> icecream is here in Windsor ;)
+<br>[Dimple] : Toby, are you teasing me ?
+<br>[Toby] : No, Dimple - look, there it is across the road from Windsor Castle !!
+<br>[Dimple] : Wow - I can have my favourite <b>Butter Pecan icecream</b>.
+</td>
+</tr>
+
+<hr>
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+<b>35) TOPICS WE HAVE COVERED :</b>
+<UL>
+	<li>Hierarchies,Identifiers and Inheritance
+	<li>One-to-Many and Many-to-Many Relationships
+	<li>Primary Keys, Foreign Keys, PF Keys and Reference Data
+</UL>
+</td>
+<tr>
+
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+<b>36) PLEASE EMAIL ME</b>
+<br>
+<img align=left alt="Barry Williams, your teacher" src="images/barryw_xsml.jpg">
+I hope you have found this Tutorial fun and useful.
+<br>Please <a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on Windsor Castle Tutorial'>email me</a> with your questions or suggestions.
+
+<br><b>Barry Williams</b>
+<font size=1>
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England</font>
+
+<br><font color=red size=1><I> &#169 DatabaseAnswers.org 2009</I></font>
+
+</td>
+<tr>
+</table>
+
+
+          </td>
+        </tr>
+      </table>
+
+<br> <br>
+
+
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<!--  Start of Table 10 --->
+<!---
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-bottom.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../pi_information_catalog/browse.asp"><img src="images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+--->
+
+<!--  End of Table 10 --->
+<font color=black face="Verdana" size=1>
+<!--- <br><center><font color=red><I> &#169 DatabaseAnswers.org 2009</I></font></center> --->
+</body>
+</html>
+

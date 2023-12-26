@@ -66,15 +66,15 @@
 		<td width=2><img src="images/shim.gif" width=2 height=4></td>
 		<td><font face="Verdana, Tahoma, sans-serif" size=2 color="blue">
 
-<CENTER>	This Search Page may be combined with the Site Map.
+<center>	This Search Page may be combined with the Site Map.
 
-<LI>Enter your search terms in the box (this is currently set up to search for DBA.com)
-<BR><BR>
+<li>Enter your search terms in the box (this is currently set up to search for DBA.com)
+<br><br>
 
-<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<font color=blue face="Verdana" size=2>
 <!-- begin body Text -->
 <form method="get" action="http://search.atomz.com/search/">
-<input SIZE=25 name="sp-q"><br><input type=submit value="Search">
+<input size=25 name="sp-q"><br><input type=submit value="Search">
 <input type=hidden name="sp-a" value="000a2cd3-sp00000000"></form>
 </font>
 

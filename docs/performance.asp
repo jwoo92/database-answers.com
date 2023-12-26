@@ -49,7 +49,7 @@
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -65,25 +65,25 @@
 		<td width=2 bgcolor="#FF9900"><img src="images/shim.gif" width=2 height=4></td>
 		<td width=2><img src="images/shim.gif" width=2 height=4></td>
 		<td><font face="Verdana, Tahoma, sans-serif" size=2 color="blue">
-<FONT COLOR=blue FACE=Verdana SIZE=2>
+<font color=blue face=Verdana size=2>
 
-<B>The User might ask some of the following questions  :-</B>
+<b>The User might ask some of the following questions  :-</b>
 <UL>
-<LI><A HREF="background.htm">What's the Background ?</A>
-<LI><A HREF="my_portal.htm">What would my Portal look like ?</A>
+<li><a href="background.html">What's the Background ?</a>
+<li><a href="my_portal.html">What would my Portal look like ?</a>
 <P>
-<LI><A HREF="http://www.databaseanswers.com/tutorials_database_driven/index.htm">Are there any Procedures I should follow ?</A>
-<LI><A HREF="http://www.databaseanswers.com/data_models/document_publication/tutorials/index.htm">Are there any standard Forms I should use ?</A>
-<LI><A HREF="http://www.databaseanswers.com/data_models/document_publication/tutorials/index.htm">How will my Performance be measured ?</A>
-<LI><A HREF="http://www.databaseanswers.com/data_models/document_publication/tutorials/index.htm">How do I define my Portal and the information I need ?</A>
+<li><a href="http://www.databaseanswers.com/tutorials_database_driven/index.html">Are there any Procedures I should follow ?</a>
+<li><a href="http://www.databaseanswers.com/data_models/document_publication/tutorials/index.html">Are there any standard Forms I should use ?</a>
+<li><a href="http://www.databaseanswers.com/data_models/document_publication/tutorials/index.html">How will my Performance be measured ?</a>
+<li><a href="http://www.databaseanswers.com/data_models/document_publication/tutorials/index.html">How do I define my Portal and the information I need ?</a>
 </UL>
 
 		</font></td>
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>

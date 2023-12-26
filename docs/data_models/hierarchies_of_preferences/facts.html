@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>Hierarchies of Preferences Dezign Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+	<img align=right alt="Pebble Beach" heiight=88 wiidth=206 hspace="0" vspace="4" src="../../images/pebble_beach_18th_sml.jpg">
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script></p>
+</td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/illya/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/illya/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/illya/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/illya/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.html"><img name="menu_home" src="../../images/illya/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/illya/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.html"><img name="menu_question" src="../../images/illya/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.html"> <img name="menu_careers" src="../../images/illya/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.html"><img name="menu_contact" src="../../images/illya/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/illya/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.html"><img name="menu_timers" src="../../images/illya/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.html"><img name="menu_search" src="../../images/illya/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.html"><img name="menu_map" src="../../images/illya/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/illya/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/illya/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+<img src="../../images/data_model_names/hierarchies_of_preferences.gif" height=24 width="449" alt="Hierarchies of Preferences">
+
+<font color=blue face=Verdana size=2>
+<br>&nbsp;&nbsp;&nbsp;<a href="index.html"><b>Back to the Data Model.</b></a>
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%"><pre><font color=blue face=Verdana size=2><b><br>The Draft Business Rules have been defined and are listed below.</b>
+<pre><font color=blue face="Verdana" size=2><b>User Requirements :-</b>
+A design to store Preference Settings in a database.
+Let's assume 3 levels
+1) a general (= default settings)
+2) group level
+3) user level - a user belongs to a group.
+
+Group- and User- settings overwrite the general settings and are normally a
+subset of all possible values.
+
+----------------------------
+this could be an example:
+general:
+- color = black
+- lang = en
+- size = 5
+group1:
+- lang = fr
+user1:
+- size = 6
+(user1 belongs to group1)
+----------------------------
+the query to get all the settings for user1 should return the following
+values:
+- color = black
+- lang = fr
+- size = 6
+----------------------------
+I know, there are other solutions than using a database and it could be a
+massive overkill, but I'm interested in possible designs.
+
+
+Thank you for any comment!
+
+Greetings from Switzerland to London
+
+Philipp
+
+<b>A. The Area being Modelled is :-</b>
+A Hierarchy of Preferences
+
+<b>B. The Things of Interest, ('THINGS'), include :-</b>
+B.1 Hierarchies
+B.2 Hierarchy Entries
+B.3 Hierarchy Levels
+B.3 Preferences
+
+<b>C. These THINGS are Related as follows :-</b>
+C.1 A HIERARCHY has one or many LEVELS.
+C.2
+
+<b>D. Other Characteristics of these THINGS include :-</b>
+D.1
+
+<b>E. Sample Data includes :-</b>
+To be determined
+
+<b>F. Typical Enquiries include :-</b>
+F.1 To be determined
+</pre>
+</td></tr>
+
+<tr>
+<td>&nbsp</td>
+<td colspan=1><pre><font color=blue face=Verdana size=2>
+Barry Williams
+9th. June 2003
+Principal Consultant
+Database Answers</pre>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/illya/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/illya/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/illya/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/illya/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.html"><img name="menu_home" src="../../images/illya/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/illya/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.html"><img name="menu_question" src="../../images/illya/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.html"> <img name="menu_careers" src="../../images/illya/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.html"><img name="menu_contact" src="../../images/illya/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/illya/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.html"><img name="menu_timers" src="../../images/illya/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.html"><img name="menu_search" src="../../images/illya/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.html"><img name="menu_map" src="../../images/illya/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/illya/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

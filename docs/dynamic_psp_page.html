@@ -1,0 +1,635 @@
+<html>
+<head>
+<title>Dynamic PSP Page</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height=68 valign=top><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></td>
+<td align=right rowspan=2 width=100%><img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94></td>
+</tr>
+<tr><td><p class="time"><nobr><script language="JavaScript">theDate();</script></nobr></p></td></tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="/images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+	<a href="dynamic_psp_template.html"><font color=white>Template</font></a>
+<!---	<img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> --->
+     	<p><img src="/images/spacer.gif" width="90"></p>
+</td>
+
+	<td valign="top"><img src="/images/spacer.gif" width="3" height="239"></td>
+
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="/images/spacer.gif" height=20>
+
+            <table width=90% width="590" border=0 cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">
+		Dynamic PSP Page<img src="/images/spacer.gif" width="5" height="1">
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr>
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900">
+                <td><img src="/images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="/images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"><p class="small">
+<font color=blue face=Verdana size=2>This page discusses Dynamic PL/SQL Pages which build on Oracle's PL/SQL.
+<!---
+<b><I>2) Review the <a href="bmews_components.html"><b>Components</b></a> and choose the Data Model that fits.</I></b>
+    2.1 Add Entities from <a href="data_models/index.html">other Data Models</a>.
+
+<b><I>3) Choose from the Library of Solutions Templates</I></b>
+    3.1 Identify any required new Features.
+--->
+
+<pre><font color=blue face=Verdana size=2><I>1) <b>A Data Dictionary</b> is central and stores the specifications</I><font size=1>
+    1.1 Requirements - The DBA_ADMIN Role can enter new Types and new Data.
+    1.2 Requirements - The PUBLIC Role can look at any Data but cannot make changes.
+    1.3 <a href="data_models/data_dictionary/index.html">Review the Data Model</a></font>
+
+<I>2) Generic Standard <b>Templates</b> provide MetaData-driven Applications development.</I>
+
+<I>3) <b>Performance Reporting and KPIs ...</I></b><font size=1>
+<UL><font size=1>Common <b>Reporting Standards</b> are very important</I>
+      We are currently reviewing the <a HREF ="http://www.globalreporting.org/" target="_new"><b>Global Reporting Initiative</b></a> of the UN Environment Programme.
+	<li>A typical Sequence of Steps is ...
+	<br>1) <a href="http://www.databaseanswers.org/pi_performance_monitoring/kpi_top_level.html">Sample KPI Report with Red or Green</a>
+	<br><br>2) <a href="http://www.databaseanswers.org/pi_performance_monitoring/kpi_definitions4_ict_education.html">KPI Definitions for Education</a>.
+	<br><br>3) <a href="http://www.databaseanswers.com/data_models/performance_monitoring/index.html">Data Model for KPIs and Raw Data</a>
+	<b>The SQL to create Oracle tables is available on demand.</b>
+</UL></font>
+<!---
+<hr>
+Andrew,
+
+Here are some scripts to create and load Tables ...
+
+Scripts are available ...
+1) Create External Table for Student Attendance ...
+--
+DROP TABLE ext_student_attendance
+/
+
+CREATE TABLE ext_student_attendance (
+  day_date date
+ ,class_code CHAR(20)
+ ,student_count INTEGER
+ )
+ ORGANIZATION EXTERNAL (
+ TYPE ORACLE_LOADER
+ DEFAULT DIRECTORY ext_data_files
+ ACCESS PARAMETERS (
+ FIELDS TERMINATED BY ',')
+ LOCATION ('student_attendance.csv')
+ )
+ reject limit unlimited
+/
+--
+
+2) Run as SYS - create directory External Data Files ...
+-- Date : 27th. May 2003
+-- Scott cannot run this Script without Permission, but SYS can.
+-- Change the Directory as appropriate for Oxford House ...
+-- I tried as sys to GRANT CREATE DIRECTORY to SCOTT but it didn't work.
+
+DROP DIRECTORY ext_data_files;
+
+-- Scott needs permission to execute the next statement ...
+-- so for the time being we run as SYS, load the data into a table
+-- and then connect as Scott.
+
+CREATE DIRECTORY ext_data_files
+ as 'D:\KUBI\DATA';
+
+-- Check that it has been created OK ...
+select created,object_name
+from   dba_objects
+where  object_type = 'DIRECTORY'
+order  by created,object_name;
+
+DROP TABLE ext_student_attendance;
+
+CREATE TABLE ext_student_attendance (
+  day_date date
+ ,class_code CHAR(20)
+ ,student_count INTEGER
+ )
+ ORGANIZATION EXTERNAL (
+ TYPE ORACLE_LOADER
+ DEFAULT DIRECTORY ext_data_files
+ ACCESS PARAMETERS (
+ FIELDS TERMINATED BY ',')
+ LOCATION ('student_attendance.csv')
+ )
+ reject limit unlimited;
+
+GRANT SELECT ON ext_student_attendance TO SCOTT;
+
+-- Check Data in External File ...
+SELECT * FROM ext_student_attendance;
+
+DROP   TABLE sys_student_attendance;
+
+CREATE TABLE sys_student_attendance (
+  day_date date
+ ,class_code CHAR(20)
+ ,student_count INTEGER);
+
+GRANT SELECT ON sys_student_attendance TO SCOTT;
+
+INSERT INTO sys_student_attendance (day_date,class_code,student_count)
+SELECT                              day_date,class_code,student_count
+FROM ext_student_attendance;
+
+3) Run as User (eg Scott/tiger) to create all User Tables ...
+-- Filename : cre_all_tables.sql
+--
+
+DROP   TABLE Actual_Trigger_Events;
+
+CREATE TABLE Actual_Trigger_Events(
+trigger_code CHAR(20) NOT NULL,
+trigger_date DATE NOT NULL,
+CONSTRAINT PK_Actual_Trigger_Events1 PRIMARY KEY (trigger_code,trigger_date));
+
+DROP   TABLE Planned_Trigger_Events;
+
+CREATE TABLE Planned_Trigger_Events(
+trigger_code CHAR(20) NOT NULL CONSTRAINT PK_Planned_Trigger_Events1 PRIMARY KEY,
+frequency_day_wk_mnth CHAR(1) NOT NULL,
+trigger_description VARCHAR2(80));
+
+ALTER TABLE Actual_Trigger_Events
+ADD CONSTRAINT FK_Actual_Trigger_Events_1
+FOREIGN KEY (trigger_code) REFERENCES Planned_Trigger_Events (trigger_code);
+
+-- Transaction_Files_Loaded ...
+DROP TABLE transaction_files_loaded;
+
+CREATE TABLE transaction_files_loaded (
+  day_date date
+ ,class_code CHAR(20)
+ ,student_count INTEGER);
+
+-- Transaction_Files_Loaded ...
+DROP TABLE student_summary_data;
+
+CREATE TABLE student_summary_data (
+  summary_day_date date
+ ,student_count INTEGER);
+
+DROP TABLE Ref_Calendar;
+
+CREATE TABLE Ref_Calendar(
+day_date DATE NOT NULL CONSTRAINT PK_Ref_Calendar1 PRIMARY KEY,
+business_day_yn CHAR(1),
+day_number INTEGER);
+
+
+DROP   TABLE Ref_Class_Codes;
+
+CREATE TABLE Ref_Class_Codes(
+class_code CHAR(20) NOT NULL CONSTRAINT PK_Ref_Class_Codes1 PRIMARY KEY,
+class_name VARCHAR2(80));
+
+DROP TABLE kpi_threshold_data;
+
+DROP   TABLE KPI_Threshold_Definitions;
+
+CREATE TABLE KPI_Threshold_Definitions(
+kpi_id INTEGER NOT NULL CONSTRAINT PK_KPI_Threshold_Definitions1 PRIMARY KEY,
+kpi_name CHAR(20),
+kpi_max_threshold INTEGER,
+kpi_min_threshold INTEGER,
+kpi_description VARCHAR2(255));
+
+
+CREATE TABLE KPI_Threshold_Data(
+summary_day_date DATE NOT NULL,
+kpi_id INTEGER NOT NULL,
+summary_student_count INTEGER,
+red_or_green CHAR(10),
+CONSTRAINT PK_KPI_Threshold_Data1 PRIMARY KEY (summary_day_date,kpi_id));
+
+ALTER TABLE KPI_Threshold_Data
+ADD CONSTRAINT FK_KPI_Threshold_Data_1
+FOREIGN KEY (kpi_id) REFERENCES KPI_Threshold_Definitions (kpi_id);
+
+DROP TABLE vw_kpi_top_level_data;
+
+CREATE TABLE VW_KPI_Top_level_Data(
+summary_day_date DATE NOT NULL,
+kpi_id INTEGER NOT NULL,
+kpi_description VARCHAR2(80),
+kpi_min_threshold INTEGER,
+kpi_max_threshold INTEGER,
+kpi_actual_total_student_count INTEGER,
+red_or_green CHAR(10),
+CONSTRAINT PK_VW_KPI_Top_level_Data1 PRIMARY KEY (summary_day_date,kpi_id));
+
+DROP SEQUENCE kpi_id_seq;
+
+CREATE SEQUENCE kpi_id_SEQ
+increment by 1
+start with 0
+NOMAXVALUE
+minvalue 0
+nocycle
+nocache
+noorder;
+
+CREATE OR REPLACE TRIGGER SET_kpi_id
+BEFORE INSERT
+ON KPI_Threshold_Definitions
+FOR EACH ROW
+BEGIN
+  SELECT kpi_id_SEQ.NEXTVAL
+  INTO :NEW.kpi_id
+  FROM DUAL;
+END;
+
+
+SELECT table_name
+FROM   user_tables
+ORDER  BY table_name;
+
+-- Load Data ...
+INSERT INTO Planned_Trigger_Events(
+         trigger_code      ,frequency_day_wk_mnth,trigger_description            )
+VALUES ('Load Summary Data',         'D'         ,'Load Student Attendance Count');
+
+-- Check data ...
+SELECT COUNT(*) AS rcd_count FROM  Planned_Trigger_Events;
+
+SELECT * FROM  Planned_Trigger_Events;
+
+INSERT INTO Ref_Calendar(day_date,business_day_yn,day_number)
+VALUES ('28-may-2003','Y',20030528);
+
+SELECT * FROM Ref_Calendar;
+/
+
+-- Load Data ...
+INSERT INTO Ref_Class_Codes(class_code        , class_name)
+VALUES                     ('Business English','Business English');
+
+INSERT INTO Ref_Class_Codes(class_code        , class_name)
+VALUES                     ('Oracle 9i DBA','Oracle 9i DBA Fundamentals');
+
+-- Check data ...
+SELECT COUNT(*) AS rcd_count FROM  Ref_Class_Codes;
+/
+
+SELECT * FROM  Ref_Class_Codes;
+/
+
+</pre>
+----></font>And here's a couple of related Pages :-
+<br><a href="http://www.databaseanswers.org/pi_performance_monitoring/kpi_definitions4_ict_education.html" target="_new">
+<li> KPI Definitions</a>
+<a href="http://www.databaseanswers.org/pi_performance_monitoring/kpi_monitoring4_student_attendance.html" target="_new">
+<li> KPI Reporting</a>.
+<li>Data Models have been created for for
+<a href="http://www.databaseanswers.com/data_models/kpi_definitions/index.html" target="_new">simple KPIs</a> and
+<a href="http://www.databaseanswers.com/data_models/performance_monitoring/index.html" target="_new">complex KPIs</a>
+
+Here's an example of the <a href="dynamic_psp_world_languages.html">World Language Classification</a>,and the <a href="http://www.webrecruiter.com/v7spec/welcome.html" target="_new">
+WebRecruiter Site</a>, which was developed using Dynamic PSP.
+Finally, here's <a href="dynamic_psp_template.html">a Template</a>, and an application of the Template to <a href="dynamic_psp_data_dictionary.html">a Data Dictionary</a>.
+		</td>
+          	</tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+            <table width=90% width="590" border=0 cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+
+              <td colspan="3" width="100%" align="right" class="header1">
+		Development Prototypes<img src="/images/spacer.gif" width="5" height="1">
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr>
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top">
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900">
+                      <td><img src="/images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="/images/spacer.gif" width="8" height="1"></td>
+
+                    <td width="100%" valign="top"> <img src="/images/spacer.gif" height=1 width="1">
+<br>
+
+                        <table width="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="25"><img src="/images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="images/circle1.gif" width="20" height="20">
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%">
+                              <div align="center">Some Useful Links</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr>
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3">
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+				<tr bgcolor="#B0D8FF">
+                            	<td align=middle class="cell" colspan=2 width="30%"><img src="images/white-point.gif" width="17" height="8">
+				<b><I>Getting Started with Dynamic PSP</I></b></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">&nbsp</td>
+                          	<td class="cell" width="70%"><a href="http://www.databaseanswers.ru/dbanswers/!go?id_=-40015&ids_=1002">
+				The Editor</a></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">&nbsp</td>
+                          	<td class="cell" width="70%"><a href="http://www.dynamicpsp.com/dpsp/prod/!go?ln=np_DWMX2004Started">
+				Getting Started with Dynamic PSP</a></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td align=middle class="cell" colspan=2 width="30%"><img src="images/white-point.gif" width="17" height="8">
+				<b><I>Specifications</I></b></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Data Dictionary</td>
+                          	<td class="cell" width="70%"><a href="dynamic_psp_data_dictionary.html">
+				Sample Page to display Data Dictionary</a></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				&nbsp</td>
+                          	<td class="cell" width="70%"><a href="dynamic_psp_dd_bp.html">
+				Display Best Practice entries in the Data Dictionary</a></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				&nbsp</td>
+                          	<td class="cell" width="70%"><a href="dynamic_psp_dd_glossary.html">
+				Display Glossary of Terms in the Data Dictionary</a></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				&nbsp</td>
+                          	<td class="cell" width="70%"><a href="dynamic_psp_dd_template.html">
+				Template to display Entries in the Data Dictionary</a></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td align=middle class="cell" colspan=2 width="30%"><img src="images/white-point.gif" width="17" height="8">
+				<b><I>Demonstrations</I></b></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Data Dictionary (1)</td>
+                          	<td class="cell" width="70%"><a href="http://www.databaseanswers.ru/desperado/index.dpsp" target="_new">
+				Data Dictionary Page</a> - Desperado in draft.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				Data Dictionary (2)</td>
+                          	<td class="cell" width="70%"><a href="http://www.dynamicpsp.com/dpsp/un/!go?ln=DD-Home.dpsp" target="_new">
+				Data Dictionary Page</a> - currently not working.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">&nbsp</td>
+                          	<td class="cell" width="70%">
+				<a HREeeF="http://www.dynamicpsp.com/dpsp/un/!go?ln=Table-Map-Columns.dpsp&tname=mapCustomer2SalesForceAccount" target="_new">
+				Display the Entry Types in the Dictionary.</a> with each Type being clickable to display all Contents of that Type.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">&nbsp</td>
+                          	<td class="cell" width="70%">
+				<a href="http://www.dynamicpsp.com/dpsp/un/!go?ln=Table-Map-Columns.dpsp&tname=mapCustomer2SalesForceAccount" target="_new">
+				Table Column Mapping</a> - currently not working.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">&nbsp</td>
+                          	<td class="cell" width="70%"><a href="http://www.dynamicpsp.com/dpsp/un/!go?ln=Table-Map.dpsp" target="_new">
+				Table Mapping (1)</a> - currently not working.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				&nbsp</td>
+                          	<td class="cell" width="70%">
+				<a href="http://www.dynamicpsp.com/dpsp/un/!go?ln=Table-Map.dpsp&tname=mapCustomer2SalesForceAccount" target="_new">
+				Table Mapping (2)</a> - currently not working.
+				</td>
+                                </tr>
+
+
+                         	<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				<a class="cell" href="http://www.dynamicpsp.com/docusr/!go?ln=Evidence-Home.dpsp" target="_new">
+				Tracking Evidence</a></td>
+                          	<td class="cell" width="70%">
+				This Application</a> has been developed using <a href="http://www.dynamicpsp.com" target="_new"><b>Dynamic PSP</b></a>
+				for a Police Department in Florida.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				<a class="cell" href="http://www.databaseanswers.ru/dbanswers/WLC.dpsp" target="_new">
+				World Languages</a></td>
+                          	<td class="cell" width="70%">
+				This Application</a> combines the power of <a href="http://www.dynamicpsp.com" target="_new"><b>Dynamic PSP</b></a>
+				with Oracle's extensions to SQL to display hierarchies.
+				</td>
+                                </tr>
+
+
+<!---
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="8">
+				<a class="cell" hreEEEf="bmews_projects">Microsoft</a></td>
+                          	<td class="cell" width="70%">An Access Database and Application Server Pages,(ASPs).</td>
+                                </tr>
+--->
+
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                            </table>
+
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+        </td>
+      </tr></table>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF BOTTOM MENU BAR --->
+
+<table name="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>Data Model for Model-View-Controller</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td>
+<a href="http://en.wikipedia.org/wiki/Model_view_controller" target="_new">
+<img alt="Wikipedia MVC Model View Controller Diagram (Click for Wikipedia article)" src="images/wikipedia_mvc_model_view_controller_diagram_sml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+
+</td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.html"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.html"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.html"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.html"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.html"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.html"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.html"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="0099FF" bgcolor="#B0D8FF" valign="top">
+<img alt="MVC - Model" src="images/lft_mvc_model.bmp">
+<img alt="View Controller" src="images/rt_viewcontroller.bmp">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+<a href="index.html">Back to the Data Model</a>
+<br><br><a href="http://en.wikipedia.org/wiki/Model_View_Presenter" target=_new>Model-View-Presenter</a> from Microsoft is related to MVC.
+
+<pre><font color=blue face=Verdana size=2><b>Here are the Specifications</b>
+I have derived these Specifications from <a href="http://en.wikipedia.org/wiki/Model_view_controller" target="_new">the Wikipedia entry for MVC</a>.
+
+As a design pattern MVC encompasses more of the architecture of an application than is
+typical for a design pattern.
+
+
+<b>Pattern description</b>
+Model�view�controller is both an architectural pattern and a design pattern, depending on where it is used.
+
+<b><I>As an Architectural Pattern</I></b>
+It is common to split an application into separate layers that run on different computers:
+<li> the presentation/user interface (UI)
+<li> business logic,
+<li> data access.
+
+In MVC the presentation layer is further separated into view and controller, resulting in three layers.
+
+MVC is often seen in web applications, where the view is the actual HTML or XHTML page, and the controller
+is the code that gathers dynamic data and generates the content within the HTML or XHTML.
+
+Finally, the model is represented by the actual content, which is often stored in a database or in XML nodes,
+and the business rules that transform that content based on user actions.
+
+Though MVC comes in different flavors, control flow is generally as follows:
+<li>The user interacts with the user interface in some way (for example, presses a mouse button).
+<li>The controller handles the input event from the user interface, often via a registered handler or callback.
+<li>The controller notifies the model of the user action, possibly resulting in a change in the model's state.
+    For example, the controller updates the user's shopping cart).[4]
+<li>A <b>View</b> uses the <b>Model</b> indirectly to generate an appropriate user interface
+(for example, the view lists the shopping cart's contents).
+
+The view gets its own data from the model.
+
+The model and controller have no direct knowledge of the view.
+
+The user interface waits for further user interactions, which restarts the cycle.
+
+Some implementations such as the W3C XForms also use the concept of a dependency graph to
+automate the updating of views when data in the model changes.
+
+By decoupling models and views, MVC helps to reduce the complexity in architectural design and to
+increase flexibility and reuse of code.
+
+<b><I>As a design pattern</I></b>
+MVC encompasses more of the architecture of an application than is typical for a design pattern.
+
+<b>Model</b>
+The Model is the domain-specific representation of the information on which the application operates.
+Domain logic adds meaning to raw data (for example, calculating whether today is the user's
+birthday, or the totals, taxes, and shipping charges for shopping cart items).
+
+Many applications use a persistent storage mechanism (such as a database) to store data.
+
+MVC does not specifically mention the <b>data access layer</b> because it is understood to be
+underneath or encapsulated by the model.
+
+<b>View</b>
+The View renders the model into a form suitable for interaction, typically a user interface element.
+Multiple views can exist for a single model for different purposes.
+
+<b>Controller</b>
+The Controller processes and responds to <b>events</b> (typically user actions) and may indirectly
+invoke changes on the model.
+
+[edit] Selected frameworks
+
+<b>Barry's Comments :-</b>
+From these Specifications, we can identify a need for :-
+<li> Controller
+<li> Event
+<li> Model
+<li> Users
+<li> View
+</pre>
+
+<p class="cell"><font color=blue face=Verdana size=2>
+<br><b>Barry Williams</b>
+<br>6th. February 2009
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.html"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.html"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.html"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.html"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.html"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.html"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.html"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

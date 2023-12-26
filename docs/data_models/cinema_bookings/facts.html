@@ -1,0 +1,143 @@
+<html><head><title>FACTS for a Data Model for Cinema Bookings</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+<table bgcolor="#FFFFCC" cellpadding=0 CELLSPACING=0 width=90%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_banner_and_btn_400_home.jpg">
+</td>
+<td align=right rowspan=2><a href="../../images/hotels/kasbah_du_toubkal.jpg">
+<img ALIiiGN=right alt="Kasbah du Toubkal Hotel, Morocco" border=0 src="../../images/hotels/kasbah_du_toubkal_sml_home.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td align=left valign=top>
+<img alt="Cinema" src="../../images/buttons/button_studio/cinema.gif">
+<img alt="Cinema" src="../../images/buttons/button_studio/rt_bookings.gif">
+</td>
+</tr>
+
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<table bgcolor=blue border=0 width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../../index.html"><img alt="Home" border=0 src="../../images/buttons/home_alt.gif"></a>
+</td>
+<td align=left valign=top width=100>
+<a href="../../ask_a_question.html"><img alt="Ask a Question" border=0 src="../../images/buttons/ask_a_question_alt.gif"></a>
+</td>
+<td align=left bgcolor=white valign=top width=85>
+<a href="../../data_models/index.html"><img alt="Data Models" border=0 src="../../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><img alt="FAQs" border=0 src="../../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../search.html"><img alt="Search" border=0 src="../../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><img alt="Site Map" border=0 src="../../images/buttons/site_map_alt.gif"></a>
+</td>
+<td>&nbsp</td>
+</tr>
+</table>
+
+<table bgcolor="98CEDF" width=90%>
+<tr>
+<tr>
+<td bgcolor=white valign=top>
+<a href="../../images/boschendal_pool.jpg"><img align=left alt="Boschendahl Estate, South Africa" border=0 height=128 width=85 src="../../images/boschendal_vertical_sml.jpg"></a>
+</td>
+
+<td valign=top>
+<font color=blue face="Verdana" size=2>
+<a href="index.html">A Conceptual Data Model</a> is available.
+
+<!-- end Standard Header - Version 3-->
+
+<b><br>The Draft Business Rules have been defined and are listed below.</b>
+<pre><font color=blue face="Verdana" size=2><b>A. The Area being Modelled is :-</b>
+A Web Site providing Hotel Information.
+
+<b>B. The Things of Interest, ('THINGS'), include :-</b>
+B.1 Bookings
+B.2 Cinemas
+B.3 Cinema Chains
+B.4 Customers
+B.5 Customer Groups
+B.6 Movies
+B.7 Movie Ratings
+B.8 Seats
+B.9 Seat Categories
+B.10 Seat Prices
+
+<b>C. These THINGS are Related as follows :-</b>
+C.1 A MOVIE must have one and only one MOVIE_RATING.
+C.2 A CINEMA can be associated with zero or one CINEMA_CHAIN.
+
+<b>D. Other Characteristics of these THINGS include :-</b>
+D.1 A CUSTOMER can make zero or many BOOKINGS.
+D.2 A CUSTOMER_GROUP can make zero or many BOOOKINGS.
+D.3 A BOOKING can consist of one or many SEATS.
+D.4 A BOOKING can involve an agreed discounted SELLING_PRICE.
+D.5 A CINEMA has a SEAT CAPACITY
+D.6 A SEAT can be in one and only one SEAT_CATEGORY.
+D.7 A SEAT has a recommended PRICE, which depends on the CATEGORY.
+
+<b>E. Sample Data includes :-</b>
+To be determined
+
+<b>F. Typical Enquiries include :-</b>
+F.1 Where is Harry Potter playing in London, England ?
+
+<!---
+G. DESIGN OPTIONS :
+G.1 Handling Sub-Categories
+       A general approach is to link the Table to itself. This allows flexible structures within the Products.
+       A fixed approach is to have separate Tables for Categories and Sub-Categories.
+	In this case, the general approach is recommended because change is likely to occur in the future.
+
+G.1 Handling other Stuff associated with a PRODUCT :-
+       A general approach like "Other Stuff" and "Other Stuff Type" or list them individually,
+       such as SECURITY_ISSUES, etc..
+
+       It's better to spell out the other Stuff because it makes the Database easier to understand.
+       Usually the maintenance involved is not an issue.
+
+       Different kinds of other Stuff which may occur in the future should be handled by adding specific Tables,
+       reflecting the structure of the other Stuff.
+--->
+Barry Williams
+Principal Consultant
+Database Answers
+20th. September 2002
+</pre>
+
+</td></tr>
+</table>
+
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Me a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email Me</a>
+        | <a href="../../site_map.html">Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font SIZE2=1><I> &#169 DatabaseAnswers.com 2002</I></font></center>
+
+</html>

@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>Data Model for Document Template Management</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height=100 valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://ec.europa.eu/environment/emas/toolkit/toolkit_12_1.html" target="_new">
+<img alt="EU Document Control (Click for Web Site)" border=0 src="images/eu_document_control_sml.jpg">
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for Document Template Management</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+Back to the <a href="index.html">Data Model</a>.
+
+<pre><font color=blue face="Verdana" size=2><b>The Area being Modelled is :-</b>
+A Data Model for Document Template Management
+
+<b>The Requirements</b> have been defined in a question to the Database Answers Web Site.
+
+Subject: document template managment
+
+Question: I need to manage document template.
+Users use our client program write their documents.
+Every document must use a template,that is ,user must pick up a template from server
+before their works.
+
+The biggest problem is the templates are maintained by a department and is changed every month.
+
+We need store all the templates' history in the database.
+
+When a template is changed, documents having applying this template should be changed also.
+
+The history of documents also should be stored in the database (something like svn. User can
+compare the history, view the history).
+
+The most crazy things is that the document cotains paragraphs and tables.
+
+Paragraphs having specific means will be parsed by our program and stored in different table, and
+so dose the tables in documents, but difference between paragraph and table in document is that
+colums of table can be added or removed by user.
+
+So, i have 2 big problem
+1. how do i manage the history of template and documents, and the relation between the documents and templates ?
+2. the tables in documents will be parsed and stored in database. the columns of the table can be changed by user,
+   so, how do i desgin the table in database.
+
+Performance may be a big issue
+
+Thanks a lot
+<b>Barry</b> has defined the 'Things of Interest' as follows :-
+A.1 Documents
+A.2 Templates
+A.3 Others to be determined
+
+<b>The Business Rules</b> are as follows :-
+B.1 To be determined
+</pre>
+
+<!---
+A.5 Employees
+A.6 Manufacturers
+A.7 Orders
+A.8 Products
+A.9 Ships
+A.10 Suppliers
+--->
+
+<center><font size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2011</I></font></center></pre>
+
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

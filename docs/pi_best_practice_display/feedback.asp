@@ -64,7 +64,7 @@
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
-		<td align=right><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2><b>Feedback Form</b>&nbsp;&nbsp;</font></td>
+		<td align=right><font color=blue face="Verdana, Tahoma, sans-serif" size=2><b>Feedback Form</b>&nbsp;&nbsp;</font></td>
 		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
 		</tr>
 		<tr>
@@ -75,12 +75,12 @@
 		<tr>
 		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
 		<td width=2><img src="../images/shim.gif" width=2 height=4></td>
-		<td><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2>Confidentiality will be strictly observed and you can be sure that we won't use your email address for any other purpose whatsoever. </font></td>
+		<td><font color=blue face="Verdana, Tahoma, sans-serif" size=2>Confidentiality will be strictly observed and you can be sure that we won't use your email address for any other purpose whatsoever. </font></td>
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
 	
-	<font COLOR=blue face="Verdana" size=2>
+	<font color=blue face="Verdana" size=2>
 	
 	<p>
 	<form action="feedback.asp" method="get">

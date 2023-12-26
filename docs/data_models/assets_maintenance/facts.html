@@ -1,0 +1,182 @@
+<html>
+<head><title>Business Rules for Assets Maintenance</title></head>
+
+<body text="#202020">
+
+<font color=blue face="Verdana" size=2>
+
+<a name="TOP">
+
+<table width=90%>
+<tr>
+<td align=left valign=top><H1><img alt="Database Answers Logo" border=0 height=58 width=400 src="../../images/dba_400_home.jpg"></td>
+<td align=right rowspan=2>
+<a href="http://www.phinza.com/technology.html" target="_new">
+<img alt="Asset Lifecycle (Click for Web Site)" border=0 src="images/asset_lifecycle_sml.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=left valign=top>
+<img alt="Assets"      src="images/lft_assets.bmp">
+<img alt="Maintenance" src="images/rt_maintenance.bmp">
+</td>
+</tr>
+
+</table>
+
+
+<table bgcolor=blue border=0 width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../../index.html"><img alt="Home" border=0 src="../../images/buttons/home_alt.gif"></a></td>
+<td align=left valign=top width=100>
+<a href="../../ask_a_question.html"><img alt="Ask a Question" border=0 src="../../images/buttons/ask_a_question_alt.gif"></a>
+</td>
+<td align=left bgcolor=white valign=top width=85>
+<a href="../../data_models/index.html"><img alt="Data Models" border=0 src="../../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><img alt="FAQs" border=0 src="../../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../site_map.html"><img alt="Search" border=0 src="../../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><img alt="Site Map" border=0 src="../../images/buttons/site_map_alt.gif"></a>
+</td>
+<td>&nbsp</td>
+</tr>
+
+</table>
+
+<table bgcolor="98CEDF" cellpadding=3 CELLSPACING=3 width=90%>
+<tr><td><font color=blue face=Verdana size=2>
+
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<img align=left alt="Boschendal, South Africa" src="../../images/boschendal_vertical_sml.jpg">
+<hr><pre><font color=blue face=Verdana size=2>User Requirements :-
+<b>An Assets Maintenance database.</b>
+
+<b>Functional Requirements.</b>
+Authorized Users (Five sales people) should have access to the database to enter a
+new complaint or to edit already opened complaint.
+
+Those five sales persons can login each time to the diferent computer ( 3 computers).
+
+Because I should track who opened complaint ( or edited already opened), there is a login problem.
+
+Each sales person should write to the system ( probably into customers details column),
+details about complaint. When another sales person some other day open the already opened complaint to
+add some aditonal information, new date should be entered and it should be recognized who added
+aditional info about complaint...,
+
+when the complaint is resolved, some kind of new box is shown on the form, in which person
+can put amount of money we pay back to the customer to resolve a complaint.
+
+In summary:
+
+The System should track who, when (date, time) has anything to do with new complain or has
+edited already opened, and what information was put into system.
+</pre>
+
+<hr>
+<br>Design Notes :-
+
+<!---
+<br>I have shown the 'Third_Party_Companies' Entity as being either a Supplier or a Maintenance Contractor.
+<br>This makes the Database more readable and easier to use, at the expense of generality.
+<br>In practice, a Supplier is also likely to provide Maintenance, and therefore be both a Supplier and
+a Maintenance Contractor.
+<br>However, for an alternative design with more generality I have defined an Entity called 'Ref_Company_Types'.
+<br>I have not used it and so it is not joined in a Relationship to any other Entity.
+<br>If this Reference Data Entity were to be used it would be necessary, of course, to add a 'company_type_code' to the 'Third_Party_Companies'
+Entity, and then you could either remove or leave the maintenance_contractor_yn and supplier_yn attributes.
+--->
+
+<hr>
+
+<b>This Page defines the Requirements for a Database for physical Assets.</b>
+<br>It contains four Sections :
+<br>1. Things of Interest
+<br>2. How these Things are related
+<br>3. Characteristics of these Things
+<br>4. User Scenarios
+
+<br><br>
+
+<OL>
+<li><b>The Things of Interest include :-</b>
+<UL>
+<li>Component Machine Parts, (this is a List of all Component Parts in all Machines).
+<li>Contracts
+<li>Engineer Visits
+<li>Faults, recorded in a Fault Log.
+<li>Machines
+<li>Machine Parts, (these are the specific Parts in a particular Machine).
+<li>Maintenance Contracts
+<li>Maintenance Engineers
+<li>Parts
+<li>Machine Parts, (these are the specific Parts in a particular Machine).
+<li>Parts - these are the Component Parts.
+<li>Part Faults, (these are the Faults that can occur with a specific Part).
+<li>Skills
+<li>Staff
+<li>Third Party Companies
+
+
+</UL>
+<P>
+<li><b>How are these Things related :-</b>
+<UL>
+<li>A Fault will always be associated with one Machine, and at least one Part of that Machine.
+<li>A Machine can have one or many Parts.
+<li>A Part can be associated with one or many Faults.
+<li>A Part can be associated with one or many Faults.
+<li>A Member can belong to one and only one Ministry.
+<li>A Member can have zero, one or many Skills.
+<li>A Ministry can arrange zero, one or many Activities.
+<li>Staff are associated with one or many Ministries.
+<li>Staff can have zero, one or many Skills.
+</UL>
+<P>
+<li><b>Characteristics of these Things :-</b>
+<UL><li>A Contract has :-
+<li>A Start Date and an End Date.
+</UL>
+
+<P>
+<li><b>User Scenarios :-</b>
+<OL>
+<li>
+<li>
+<li>
+</OL>
+</UL>
+</OL>
+
+
+<P><b>Barry Williams</b>
+<br>20th. December 2002
+<br>Principal Consultant
+<br>Database Answers
+
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font color=blue face=Verdana size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="ask_a_question.html">Ask Us a Question</a>
+        | <a href="mailto:info@databaseanswers.org">Email Us</a>
+        | <a href="site_map.html">Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 DataBase Answers.org 2002</I></font></center>
+</td></tr>
+</table>
+
+</body>
+
+</html>

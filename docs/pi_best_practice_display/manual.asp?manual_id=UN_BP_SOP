@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Best Practice Manual Viewer</title>
-	
+
 <script type="text/javascript">
 
 /**********************************************
-* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
 * Visit http://www.dynamicdrive.com/ for full source code
 **********************************************/
@@ -79,12 +79,12 @@ inc++
 }
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -120,7 +120,7 @@ var alltags=document.all? document.all : document.getElementsByTagName("*")
 ccollect=getElementbyClass(alltags, "switchcontent")
 statecollect=getElementbyClass(alltags, "showstate")
 if (enablepersist=="on" && ccollect.length>0){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -142,7 +142,7 @@ window.onunload=saveswitchstate
 </script>
 
 
-	
+
 </head>
 
 <body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
@@ -159,24 +159,24 @@ window.onunload=saveswitchstate
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>
@@ -215,7 +215,7 @@ window.onunload=saveswitchstate
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -234,17 +234,17 @@ window.onunload=saveswitchstate
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
+
 	<p>
 
 <font face="Verdana" size=2 color="blue">
-<b><font COLOR=blue size=+1>UN AIDS Best Practice Guidelines</font></b><br>Guidelines for documenting Best Practice for the United Nations AIDS Programme (from www.unaids.org/bestpractice).<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.&nbsp;Title</b></font><p><div id="chap0" class="switchcontent"></div><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.&nbsp;Background</b></font><p><div id="chap1" class="switchcontent">This gives information about the country and the situation there. Most of it can usually be copied from the UN Country Profile.</div><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.&nbsp;Brief Description</b></font><p><div id="chap2" class="switchcontent">A brief description of the Project</div><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.&nbsp;Goals</b></font><p><div id="chap3" class="switchcontent">A discussion of goals, objectives, etc..</div><p><font color="red" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.&nbsp;Brief History</b></font><p><div id="chap4" class="switchcontent">Background, important events, influences and relevant socio-economic factors.</div><p><font color="red" onClick="expandcontent(this, 'chap5')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>6.&nbsp;Major Elements of the Project</b></font><p><div id="chap5" class="switchcontent">Description of activities, programmes, etc. 
-this will usually be the largest section in the report.</div><p><font color="red" onClick="expandcontent(this, 'chap6')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>7.&nbsp;Partnerships and Alliances</b></font><p><div id="chap6" class="switchcontent">Description of relationships with organisations in the poublic and private sectors.</div><p><font color="red" onClick="expandcontent(this, 'chap7')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>8.&nbsp;Monitoring and Evaluation</b></font><p><div id="chap7" class="switchcontent">Description of evaluation activities taken to date. 
-Even if no formal evaluation has taken place, there should be some discussion of strenths and weaknesses in the Practice.</div><p><font color="red" onClick="expandcontent(this, 'chap8')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>9.&nbsp;The Future</b></font><p><div id="chap8" class="switchcontent">A brief discussion of what the future might be for the continuation of the Practice, including challenges and opportunities</div><p><font color="red" onClick="expandcontent(this, 'chap9')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>10.&nbsp;For more Information</b></font><p><div id="chap9" class="switchcontent">Mailing, phone, fax or email addresses.</div><p><font color="red" onClick="expandcontent(this, 'chap10')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>11.&nbsp;Quotes and Photos</b></font><p><div id="chap10" class="switchcontent">Photos and other graphics can help to enliven the text and give some color to the writing. Direct quotes from participants or staff members on the Project can often be included for the same reason.</div><p><font color="red" onClick="expandcontent(this, 'chap11')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>12.&nbsp;Length of the Case Study</b></font><p><div id="chap11" class="switchcontent">A Case Study is between 4,000 and 10,000 words. 
+<b><font COLOR=blue size=+1>UN AIDS Best Practice Guidelines</font></b><br>Guidelines for documenting Best Practice for the United Nations AIDS Programme (from www.unaids.org/bestpractice).<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.&nbsp;Title</b></font><p><div id="chap0" class="switchcontent"></div><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.&nbsp;Background</b></font><p><div id="chap1" class="switchcontent">This gives information about the country and the situation there. Most of it can usually be copied from the UN Country Profile.</div><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.&nbsp;Brief Description</b></font><p><div id="chap2" class="switchcontent">A brief description of the Project</div><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.&nbsp;Goals</b></font><p><div id="chap3" class="switchcontent">A discussion of goals, objectives, etc..</div><p><font color="red" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.&nbsp;Brief History</b></font><p><div id="chap4" class="switchcontent">Background, important events, influences and relevant socio-economic factors.</div><p><font color="red" onClick="expandcontent(this, 'chap5')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>6.&nbsp;Major Elements of the Project</b></font><p><div id="chap5" class="switchcontent">Description of activities, programmes, etc.
+this will usually be the largest section in the report.</div><p><font color="red" onClick="expandcontent(this, 'chap6')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>7.&nbsp;Partnerships and Alliances</b></font><p><div id="chap6" class="switchcontent">Description of relationships with organisations in the poublic and private sectors.</div><p><font color="red" onClick="expandcontent(this, 'chap7')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>8.&nbsp;Monitoring and Evaluation</b></font><p><div id="chap7" class="switchcontent">Description of evaluation activities taken to date.
+Even if no formal evaluation has taken place, there should be some discussion of strenths and weaknesses in the Practice.</div><p><font color="red" onClick="expandcontent(this, 'chap8')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>9.&nbsp;The Future</b></font><p><div id="chap8" class="switchcontent">A brief discussion of what the future might be for the continuation of the Practice, including challenges and opportunities</div><p><font color="red" onClick="expandcontent(this, 'chap9')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>10.&nbsp;For more Information</b></font><p><div id="chap9" class="switchcontent">Mailing, phone, fax or email addresses.</div><p><font color="red" onClick="expandcontent(this, 'chap10')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>11.&nbsp;Quotes and Photos</b></font><p><div id="chap10" class="switchcontent">Photos and other graphics can help to enliven the text and give some color to the writing. Direct quotes from participants or staff members on the Project can often be included for the same reason.</div><p><font color="red" onClick="expandcontent(this, 'chap11')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>12.&nbsp;Length of the Case Study</b></font><p><div id="chap11" class="switchcontent">A Case Study is between 4,000 and 10,000 words.
 The finished document can be submitted online, emailed or posted.</div>
 </font>
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>
@@ -257,24 +257,24 @@ The finished document can be submitted online, emailed or posted.</div>
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>

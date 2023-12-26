@@ -1,0 +1,433 @@
+<html>
+<head>
+<title>Architecture for BBC Data Integration Service</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border="0" cellspacing="0" cellpadding="0"><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height=68 valign=middle><img src="images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="images/switzerland/villars/valley_1.jpg"">
+<img alt="Our favourite European Ski Resort is Villars, Switzerland." border=0 HEIiiGHT=108 src="images/switzerland/villars/valley_1_sml.jpg"></a>
+
+<!--- <a href="images/north_wales/penygarreg_reservoir_north_wales.jpg"">
+<img alt="Penygarreg Lake, North Wales." border=0 height=108 src="images/north_wales/penygarreg_reservoir_north_wales_sml.jpg"></a> --->
+<!--- <img alt="Zannos Hotel, Santorini, Greece." border=0 src="images/santorini_zannos_hotel_sml.jpg" hspace="0" vspace="4"> --->
+<!--- <img alt="Eel Pie Island, London, England." border=0 src="images/eel_pie_island_london_sml.jpg" hspace="0" vspace="4">  --->
+<!--- <img alt="Bluebell Wood, Prestayn, North Wales" src="images/bluebell_wood_sml.jpg" hspace="0" vspace="4">               --->
+<!--- <img alt="Lighthouse and Sea" src="images/lighthouse_and_sea_sml.jpg" hspace="0" vspace="4">                            --->
+<!--- <img alt="Petanqe at Mangapapa Resort, new Zealand." border=0 src="images/petanque_at_mangapapa_nz_sml.jpg" hspace="0" vspace="4"> --->
+
+</td></tr>
+<tr><td align=left colspan=2 valign=middle><p class="time"><nobr><script language="JavaScript">theDate();</script></nobr></p></td></tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<!---	<td bgcolor="#FF9900"><img src="images/v3/px-orange.gif" width=6 height=24></td>
+	<td bgcolor="#FF9900"><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+	<td><img src="images/curve-top.gif" width=28 height=24></td>
+--->
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+
+	<td><a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="MAIN CONTENT" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+<!---
+<img alt="Underwater in Fiji" src="images/fiji_100.jpg" width="81" height="122" vspace="5">
+<p><img src="/images/spacer.gif" width="90"></p>
+--->
+
+<!---
+<script language="javascript" src=http://datafeed.ittoolbox.com/docssimplecode.asp?stories=10&area=DB&url=http://www.databaseanswers.com/datafeed_from_it_toolbox.html>
+</script>
+--->
+
+</td>
+
+<td valign="top"><img src="/images/spacer.gif" width="3" height="239"></td>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<table width="100%" border=0 cellspacing="0" cellpadding="3">
+
+<tr>
+<td align=right>
+&nbsp
+
+<font color=blue face="Verdana" size=2>
+<!-- begin body Text -->
+<!---
+<form method="get" action="http://search.atomz.com/search/">
+<input size=45 name="sp-q">
+<input type=submit value="Search">
+
+<input type=hidden name="sp-a" value="000a2cd3-sp00000000"></form>
+--->
+</td>
+</tr>
+
+</table>
+
+<!--- Welcome statement begins here --->
+<!--- <table border=3 width="570" border="0" cellspacing="0" cellpadding="0"></table> --->
+
+<!--- WHAT'S NEW --->
+
+      <table width="570" border=0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1"><font color=red>
+		Architecture for BBC Data Integration Service<img src="/images/spacer.gif" width="5" height="1">
+          </td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr>
+          <td rowspan="3" valign="top" width="61">
+		<img alt="Complex Systems" border=0 src="images/content1.gif" width="61" height="61">
+<!---
+<a href="ask_a_question.html"><font color=blue face=Verdana size=1>Advice</font></a>
+<br><a href="new_look_bmews.html"><font color=blue face=Verdana size=1>BMEWS</font></a>
+<br><a href="products/index.html"><font color=blue face=Verdana size=1>Products</font></a>
+<br><a href="new_look_csr.html"><font color=blue face=Verdana size=1>CSR</font></a>
+<br><a href="new_look_ungc.html"><font color=blue face=Verdana size=1>UNGC</font></a>
+--->
+
+<a href="ask_a_question.html"><font color=blue face=Verdana size=1>Advice</font></a>
+<br><a href="architecture4_bbc.html"><font color=blue face=Verdana size=1>BBC</font></a>
+<br><a href="new_look_bmews.html"><font color=blue face=Verdana size=1>BMEWS</font></a>
+<br><a href="architecture4_compliance.html"><font color=blue face=Verdana size=1>Compliance</font></a>
+<a href="new_look_csr.html"><font color=blue face=Verdana size=1>CSR</font></a>
+<br><a href="products/index.html"><font color=blue face=Verdana size=1>Products</font></a>
+<br><a href="bmews_templates.html"><font color=blue face=Verdana size=1>Templates</font></a>
+<a href="new_look_ungc.html"><font color=blue face=Verdana size=1>UNGC</font></a>
+<br><a href="new_look_xref.html"><font color=blue face=Verdana size=1>X-Ref</font></a>
+
+</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+	<tr bgcolor="#FF9900"><td><img src="/images/px-orange.gif" width="1" height="3"></td></tr>
+	</table>
+	<table width="100%" border=0 cellspacing="0" cellpadding="0">
+	<tr>
+                <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="/images/spacer.gif" width="8" height="1"></td>
+                <td width="100%"><font color=blue face=Verdana size=2>
+The BBC has a very significant Data Integration Service, and has defined a
+Standard Media Exchange Framework (SMEF), with a supporting
+<a HREeeeF="data_models/bbc_smef/index.html">Data Model (SMEF-DM)</a>.
+<br><br><center>
+
+<img alt="Architecture for BBC Data Integration Service" src="images/architecture4_bbc.gif">
+
+</center>
+
+
+		</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+<br>
+
+<!--- MISSION STATEMENT ... --->
+<!---
+      <table border=0 width="570" cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">Mission Statement<img src="/images/spacer.gif" width="5" height="1">
+          </td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr>
+          <td rowspan="3" valign="top" width="61"><img src="images/content1.gif" width="61" height="61"></td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900">
+                <td><img src="/images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="/images/spacer.gif" width="8" height="1"></td>
+                <td width="100%">
+                  <p><img src="images/arrow.gif" width="13" height="15">
+		We aim to be a 'One-Stop' Point of Reference for a wide range of advice and assistance
+		on Databases, including <a href="careers.html"><b>Career Advice</b></a>;</p>
+<br>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+<br>
+--->
+
+<!--- PRODUCTS and SERVICES --->
+<!---
+<table width="570" border=0 cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">
+	Products and Services<img src="/images/spacer.gif" width="5" height="1">
+          </td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr>
+          <td rowspan="3" valign="top" width="61"><img src="images/content2.gif" width="61" height="61"></td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+	<tr bgcolor="#FF9900"><td><img src="/images/px-orange.gif" width="1" height="3"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="/images/spacer.gif" width="8" height="1"></td>
+                <td width="100%">
+		<p><img src="images/arrow.gif" width="13" height="15">
+           	<b>The Products</b> we offer include <a href="data_models/index.html">over 100 Free Kick-Start Databases</a>.</p>
+		<p><img src="images/arrow.gif" width="13" height="15">
+           	<b>Our Services</b> include <a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp">free answers to Database Questions</a>,
+		Database Audit, Migration Strategies, and so on.</p>
+		<br>
+		</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+--->
+
+<br>
+
+<!--- GET THE MOST OUT OF THIS SITE --->
+<!---
+      <table border=0 width="570" cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">
+	How to get the most out of this Site<img src="/images/spacer.gif" width="5" height="1"> </td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr>
+          <td rowspan="3" valign="top" width="61"><img src="images/content1.gif" width="61" height="61"></td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+   		<tr bgcolor="#FF9900"><td><img src="/images/px-orange.gif" width="1" height="3"></td></tr>
+            	</table>
+
+            	<table width="100%" border=0 cellspacing="0" cellpadding="0">
+              	<tr>
+                	<td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                	<td><img src="/images/spacer.gif" width="8" height="1"></td>
+                	<td width="100%"><p><img src="images/arrow.gif" width="13" height="15">
+                  	There is a great deal of material on this Site.</p>
+                        <p><img src="images/arrow.gif" width="13" height="15">
+		We recommend that <a href="first_timers.html">first-time visitors</a> check out our <a href="site_map.html"><b>
+		Site Map</b></a> which covers a wide range of topics from <a href="careers.html">Careers</a> to <a href="web_services.html">
+		Web Services</a>.</p>
+               		</td>
+              	</tr>
+            	</table>
+	</td>
+	</tr>
+      </table>
+--->
+
+<!---
+	<table border=1 width="570" cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">
+	Welcome to our new Design for this Site<img src="/images/spacer.gif" width="5" height="1"> </td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+
+        <tr>
+	<td rowspan="3" valign="top" width="61"><img src="images/content2.gif" width="61" height="61"></td>
+	<td colspan="4" height="3" rowspan="3" valign="top">
+
+            	<table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+   		<tr bgcolor="#FF9900"><td><img src="/images/px-orange.gif" width="1" height="3"></td></tr>
+            	</table>
+
+            	<table width="100%" border=0 cellspacing="0" cellpadding="0">
+              	<tr>
+                	<td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                	<td><img src="/images/spacer.gif" width="8" height="1"></td>
+                	<td width="100%"><p><img src="images/arrow.gif" width="13" height="15">
+                  	This is our third Design since we started three years ago.
+			<br>
+			<font size=1>
+			<img src="images/arrow.gif" width="13" height="15">It will take quite a while to change all the Pages to the latest Design,
+			so please be patient if you find yourself looking at an early Page.
+			Our core competence is Databases,and we don't have much time to spend on HTML.
+			</font>
+               		</td>
+              	</tr>
+            	</table>
+          	</td>
+        	</tr>
+        	<tr>&nbsp</tr>
+        	<tr>&nbsp</tr>
+      </table>
+--->
+
+<!--- welcome statement ends here --->
+
+<!--- barry end here ... --->
+<br>
+    </td>
+  </tr>
+</table>
+
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="2"><img src="/images/spacer.gif" width="663" height="2"></td>
+  </tr>
+  <tr>
+    <td height="3" bgcolor="#FF9900"><img src="/images/spacer.gif" width="663" height="3"></td>
+  </tr>
+</table>
+
+<table name="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<!---	<td bgcolor="#FF9900"> <img src="images/v3/px-orange.gif" width=6 height=24></td>
+	<td><a href="index.html"> <img name="menu_home-active" src="images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom.gif" width=28 height=24></td>
+--->
+
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+
+	<td><a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" sOUrcE="images/v3/menu-careers-active.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+    <!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+<font color=blue face="Verdana" size=1>
+<center>
+<br>
+<center><font color=blue FONT=Verdana size=1><I> &#169 DataBase Answers 2004</I></font></center>
+<br><br>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<html><head><title>TopLink Verbatim</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jug" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+
+<table BGCOLOoooR="#FFFFCC" border=0 cellpadding="0" wiidth=80%>
+
+<tr>
+<td align=left valign=bottom><img alt="Database Answers Logo" border=0 heiight=66 wiidth=494 src="images/dba_banner_and_btn.jpg"></td>
+</tr>
+
+<tr>
+<td valign=top><font color=red face="Comic Sans MS" size=4>
+Verbatim Report of Experience with TopLink</b></font>
+</td>
+</tr>
+
+</table>
+
+<hr>
+<!-- end Standard Header - Version 3-->
+
+<font face="Verdana" size=2>
+
+<!-- begin body Text -->
+<img align=right alt="Living on the Edge of Lake Geneva, Switzerland" border=1 height=180 width=310 src="images/switzerland/lake_geneva.jpg">
+
+<font color=blue face=Verdana size=2>
+<pre><font size=2>
+I'd heard that TopLink was the product of choice for object-relational mappings.
+Java Report described it as  "A rock-solid, mature product that fits a lot of needs.
+The better you understand the problems of object-to-relational mapping, the more
+you appreciate how well TOPLink addresses those problems."
+
+So I was quite interested in doing some work for a company that was trying to
+standardize on TopLink.
+
+One of the staff was showing me how to import a database table through the
+TopLink GUI tool for establishing mappings between database tables and JAVA classes.
+He clicked OK and suggested it would take 5-10 minutes to complete.
+"Wait a second," I said, "it can't possibly take more than a couple
+of seconds to suck all the metadata from an Oracle database, let alone
+for a single table!", but his estimate turned out to be about right,
+and in line with my own later experience.
+When taking that long, you'd expect the results to be beautiful, but it
+would generally screw up if there'd been a change in the database effecting a
+primary key, that change wouldn't be reflected automatically.
+
+The TopLink GUI tool allowed mapping either JAVA class public data members
+directly or else through get and set methods.
+Oddly, though, even if get and set methods were being used, there still had
+to be an identification of a single data member even when the accessor methods
+did not correspond to a single data member.
+
+In some cases dummy variables had been added to a class to serve this purpose.
+
+Staff seemed to be taking an inordinate amount of time to solve simple mapping
+problems involving three table joins, and there seemed to be a lot of problems
+handling inheritance, but I can't comment on these further since I only implemented
+simple mappings myself.
+
+
+One thing that was noticed was that TopLink applications were using up all the the
+available Oracle database connections.
+It was pooling database connections (which is good) but by default it was opening up
+six connections (even if it only ever used one, which is bad).
+This was reconfigurable with some work - just that the default behaviour was bad.
+
+Another thing was that by default TopLink was caching everything, which I found a
+little strange; the database is after all a shared resource, which is the whole point.
+It took a second or two to figure out why a change made in the database was not being
+reflected in a read.
+Again, this can be turned off with some work, but it's an odd thing thing to have as a default.
+
+It's OK to have for static data, but not generally.
+I think one of the reasons for all the caching was to achieve reasonable performance and
+still access data in a way that favours many reads over a single join.
+
+I used the on line documentation a lot trying to find ways of solving problems.
+There are many ways of doing the same thing, and many classes share the same interface even if a
+good part of that interface is not usable in a given context - TopLink's own class hierarchies did
+not seem to be particularly well designed.
+A problem with the documentation was that there user documentation did not show import statements in examples or give any
+information about what packages classes belonged to.  For that you had to
+go the reference documentation, and hunt through what were a fair number of candidate packages.
+
+More generally, I don't think you should try and map classes directly with tools like TopLink, but rather map proxy classes and
+have a factory method to create the real object.
+If you don't do this you'll end up compromizing your class design too much.
+
+Anyway, <b>I don't think I would recommend this product.</b>
+
+Regards,
+Daniel Parker danielp@no_spam.nshima.com
+</pre>
+
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="ask_a_question.html">Ask me a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email</a>
+        | <a href="faqs.html">FAQs</a>
+        | <a href="history.html">History of Databases</a>
+        | <a href="links.html">Useful Links</a> ]
+<!--    | <a href="scripts.html">DBA Scripts</a> --->
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2000</I></font></center>
+
+
+</html>

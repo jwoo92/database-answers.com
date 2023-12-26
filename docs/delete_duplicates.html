@@ -1,0 +1,79 @@
+<html><head><title>Delete Duplicates</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jpg" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+
+<table BGCOLOoooR="#FFFFCC" border=0 cellpadding="5" width=80%>
+
+<tr>
+<td><img alt="Moon and Dish" heiight=32 wiidth=32 src="images/moon_and_dish.jpg" border=0>
+</td>
+<td><H1><font color=blue><b>Frequently Asked Questions (FAQs)</b></H1></td>
+</tr>
+</table>
+<hr>
+<!-- end Standard Header - Version 3-->
+
+<font face="Verdana" size=2>
+
+<!-- begin body Text -->
+
+<font color=blue face=Verdana size=2>
+<a href="images/philg/zarcero-costa-rica_lge.jpg">
+<img align=right alt="Zarcero, Costa Rica - Click for large Photo" border=0 height=138 width=377 src="images/philg/zarcero-costa-rica.jpg"></a>
+<font color=blue size=4><b>QUESTION :</b></font>
+How do I delete duplicate entries from a table ?
+
+<hr>
+<font color=blue size=4><b>ANSWER :</b></font>
+</font>
+
+
+<pre><font color=blue size=2>
+<b><font color=red>Option 1) The simplest and most elegant Method</font></b>
+CREATE TABLE table_without_duplicates AS
+SELECT DISTINCT *
+FROM   table_with_duplicates ;
+COMMIT;
+
+DROP TABLE table_with_duplicates ;
+COMMIT;
+RENAME TABLE table_without_duplicates table_with_duplicates;
+
+<b><font color=red>Option 2) An Oracle-specific Method</font></b>
+For Oracle, this solution utilizes the unique rowid of each row in a table,
+and removes all duplicate rows in a table:
+
+DELETE  FROM my_table t
+WHERE EXISTS (
+        SELECT *
+        FROM my_table tt
+        WHERE t.rowid      > tt.rowid
+        AND   tt.<value-1> = t.<value-1>
+        AND ... tt.value-n = t.value-n)
+
+</pre>
+
+</font>
+
+
+</body>
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="question.html">Ask me a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email</a>
+        | <a href="faqs.html">FAQs</a>
+        | <a href="history.html">History of Databases</a>
+        | <a href="links.html">Useful Links</a> ]
+<!--    | <a href="scripts.html">DBA Scripts</a> --->
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2000</I></font></center>
+
+
+</html>

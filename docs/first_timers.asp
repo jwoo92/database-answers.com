@@ -8,14 +8,14 @@
 <!--- Start of Standard Header --->
 <table border=0 cellpadding=0 cellspacing=0 width=100%>
 <tr>
-<td ROWSPAN=1 valign=middle><a href="index.asp"><img src="images/logo.gif" width=400 height=58 alt="DatabaseAnswers.org" border=0></a></td>
-<td align=right ROWSPAN=2 valign=bottom nowrap><img ALT="Bluebell Wood" SRC="images/bluebell_wood_sml.jpg"></td>
+<td rowspan=1 valign=middle><a href="index.asp"><img src="images/logo.gif" width=400 height=58 alt="DatabaseAnswers.org" border=0></a></td>
+<td align=right rowspan=2 valign=bottom nowrap><img alt="Bluebell Wood" src="images/bluebell_wood_sml.jpg"></td>
 </tr>
 
 <tr>
 <td valign=middle><font face="Verdana" size=1 color="blue">You are Logged in as:
-<A href="pi_user_registration/index.asp"> dba_admin</A> | 
-<A href="login.asp">logout</a></font></td>
+<a href="pi_user_registration/index.asp"> dba_admin</a> |
+<a href="login.asp">logout</a></font></td>
 </tr>
 <!--- End of standard Header --->
 
@@ -31,15 +31,15 @@
 
 <tr>
 	<td colspan=2 bgcolor="#3366CC">
-	<a href="index.htm">&nbsp;&nbsp;&nbsp;<img src="images/nav_home.gif" alt="Home" border=0></a>
+	<a href="index.html">&nbsp;&nbsp;&nbsp;<img src="images/nav_home.gif" alt="Home" border=0></a>
 	<a href="pi_best_practice_display/index.asp"><img src="images/nav_bestpractice.gif" alt="Best Practice" border=0></a>
 	<a href="pi_communities/boards.asp"><img src="images/nav_communities.gif" alt="Communities" border=0></a>
-	<a href="first_timers.htm"><img src="images/nav_firsttimers.gif" alt="First Timers" border=0></a>
+	<a href="first_timers.html"><img src="images/nav_firsttimers.gif" alt="First Timers" border=0></a>
 	<a href="pi_information_catalog/browse.asp"><img src="images/nav_infocatalog.gif" alt="Information Catalog" border=0></a>
-	<a href="performance.htm"><img src="images/nav_performance.gif" alt="Performance" border=0></a>
-	<a href="users.htm"><img src="images/nav_users.gif" alt="Users" border=0></a>
-	<a href="search.htm"><img src="images/nav_search.gif" alt="Search" border=0></a>
-	<a href="site_map.htm"><img src="images/nav_sitemap.gif" alt="Site Map" border=0></a>
+	<a href="performance.html"><img src="images/nav_performance.gif" alt="Performance" border=0></a>
+	<a href="users.html"><img src="images/nav_users.gif" alt="Users" border=0></a>
+	<a href="search.html"><img src="images/nav_search.gif" alt="Search" border=0></a>
+	<a href="site_map.html"><img src="images/nav_sitemap.gif" alt="Site Map" border=0></a>
 	</td>
 </tr>
 
@@ -53,12 +53,12 @@
 	<td width=90 background="images/bg_side.gif">
 	<table border=0 cellpadding=0 cellspacing=0 width=90>
 		<tr><td align=center>
-		<FONT COLOR=white COLOuuuR="#FF9900" FACE=Verdana SIZE=1>
-		<BR><A HREF="index.htm"><FONT COLOR=white><B>Contact Us</B></A>
-		<BR><A HREF="index.htm"><FONT COLOR=white>Option 2</A>
-		<BR><A HREF="index.htm"><FONT COLOR=white>Option 3</A>
+		<font color=white COLOuuuR="#FF9900" face=Verdana size=1>
+		<br><a href="index.html"><font color=white><b>Contact Us</b></a>
+		<br><a href="index.html"><font color=white>Option 2</a>
+		<br><a href="index.html"><font color=white>Option 3</a>
 
-<!--- <img ALT="Boschendhal Estate, South Africa" src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5">  --->
+<!--- <img alt="Boschendhal Estate, South Africa" src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5">  --->
 <!--- <p><img src="images/v3/spacer.gif" width="90"></p> --->
 
 		</font>
@@ -71,7 +71,7 @@
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -91,120 +91,120 @@
 		<table border=0 cellpadding=4 cellspacing=0 width=100%>
 		<tr>
 		<td>
-<FONT COLOR=blue FACE=Verdana SIZE=2> 
+<font color=blue face=Verdana size=2>
 
-<TABLE BORDER=0 CELLPADDING=5 WIDTH=90%>
-<TR>
-<TD ALIGN=left VALIGN=TOP><IMG ALT="Our Sponsor - Barry Williams, Internet Solutions Architect" HEIiGHT=160 WIiDTH=257 SRC="images/barryw_sml.jpg"></TD>
-<TD COLSPAN=2 VALIGN=top><B><FONT COLOR="blue" FACE=Verdana SIZE=2><B><I>(1) Become a Registered User</I></B>
-<BR>This Web Site offers a wide range of facilities.</B>
+<table border=0 cellpadding=5 width=90%>
+<tr>
+<td align=left valign=TOP><img alt="Our Sponsor - Barry Williams, Internet Solutions Architect" heiight=160 wiidth=257 src="images/barryw_sml.jpg"></td>
+<td colspan=2 valign=top><b><font color="blue" face=Verdana size=2><b><I>(1) Become a Registered User</I></b>
+<br>This Web Site offers a wide range of facilities.</b>
 
 <!---
-<BR>We recommend that <B>First-Time Visitors</B> check out our <A HREF="site_map.htm">Site Map</A> which 
-covers a wide range of topics from <A HREF="careers.htm">Career Guidance</A> to <A HREF="web_services.htm">Web Services</A>. 
+<br>We recommend that <b>First-Time Visitors</b> check out our <a href="site_map.html">Site Map</a> which
+covers a wide range of topics from <a href="careers.html">Career Guidance</a> to <a href="web_services.html">Web Services</a>.
 --->
 
-<BR><BR>To get an overview of what is available, you can check out the <A HREF="template4user_scenarios.htm">User Scenarios (aka Guided Tours)</A>
-</FONT></I></B
-</TD></TR>
+<br><br>To get an overview of what is available, you can check out the <a href="template4user_scenarios.html">User Scenarios (aka Guided Tours)</a>
+</font></I></B
+</td></tr>
 
 
-</TABLE>
-</FONT>
-<BR>
+</table>
+</font>
+<br>
 
 <P>
 
-<TABLE BORDER=0 CELLPADDING=5 WIDTH=90%>
-<TR><TD VALIGN=top><FONT COLOR=green FACE=Verdana SIZE=2><B><I>(2) Join a Community - Check Forums.</I></B>
-<BR>Communities support common interests and provide for 
-<A HREeeeF="search.htm">Question/Answers</A> so that experience can be shared.</TD>
-<TD VALIGN=TOP><IMG ALT="Entrance to Tutenkhamun's Tomb, Egypt" HEIiGHT=160 WIiDTH=257 SRC="images/tutenkhamun_xsml.jpg"></TD>
-</TR>
+<table border=0 cellpadding=5 width=90%>
+<tr><td valign=top><font color=green face=Verdana size=2><b><I>(2) Join a Community - Check Forums.</I></b>
+<br>Communities support common interests and provide for
+<a HREeeeF="search.html">Question/Answers</a> so that experience can be shared.</td>
+<td valign=TOP><img alt="Entrance to Tutenkhamun's Tomb, Egypt" heiight=160 wiidth=257 src="images/tutenkhamun_xsml.jpg"></td>
+</tr>
 
 <!---
-<TR><TD COLSPAN=2>
-<P><FONT COLOR=red FACE=Verdana SIZE=2>Please don't ask us a question if it does not include the word 'database'.</FONT></B>
-<FONT COLOR=red FACE=Verdana SIZE=2>We simply won't have time to answer it.</FONT>
+<tr><td colspan=2>
+<P><font color=red face=Verdana size=2>Please don't ask us a question if it does not include the word 'database'.</font></b>
+<font color=red face=Verdana size=2>We simply won't have time to answer it.</font>
 </P>
-</TD>
-</TR>
+</td>
+</tr>
 --->
 
-</TABLE>
-</FONT>
-<BR>
+</table>
+</font>
+<br>
 
 
-<TABLE BORDER=0 CELLPADDING=5 WIDTH=90%>
-<TR>
-<TD ALGIN=right VALIGN=TOP WIDTH=200><IMG ALT="Water" HEIGHT=104 WIDTH=193 SRC="images/water_sml.jpg"></TD>
-<TD VALIGN=top><FONT COLOR=brown FACE="Verdana" SIZE=2><B><I>(3) Best Practice and Tutorials</I></B>
-<BR>Best Practice provided advice and guidance.
-</FONT></TD>
-</TR>
-</TABLE>
+<table border=0 cellpadding=5 width=90%>
+<tr>
+<td ALGIN=right valign=TOP width=200><img alt="Water" height=104 width=193 src="images/water_sml.jpg"></td>
+<td valign=top><font color=brown face="Verdana" size=2><b><I>(3) Best Practice and Tutorials</I></b>
+<br>Best Practice provided advice and guidance.
+</font></td>
+</tr>
+</table>
 
-<BR>
-<TABLE BORDER=0 CELLPADDING=5 WIDTH=90%>
-<TR>
-<TD ALGIN=left VALIGN=top><FONT COLOR=blue FACE="Verdana" SIZE=2><B><I>(4) The Information Catalog</I></B>
-<BR>We have developed <A HREF="pi_information_catalog/index.htm">a Libary of available Information.</A>
-<BR>If you have a specific requirement that you can't find, then 
-<A HREF="mailto:help_pls@databaseanswers.org"><FONT COLOR=blue FACE=Verdana SIZE=2>let us know</A> and we will 
+<br>
+<table border=0 cellpadding=5 width=90%>
+<tr>
+<td ALGIN=left valign=top><font color=blue face="Verdana" size=2><b><I>(4) The Information Catalog</I></b>
+<br>We have developed <a href="pi_information_catalog/index.html">a Libary of available Information.</a>
+<br>If you have a specific requirement that you can't find, then
+<a href="mailto:help_pls@databaseanswers.org"><font color=blue face=Verdana size=2>let us know</a> and we will
 try to help you.
-</TD>
-<TD ALIGN=right VALIGN=TOP><IMG ALT="Bienecke Rare Book Library, Yale University" HEIGHT=106 WIDTH=180 SRC="images/yale/bienecke_vsml.jpg">
-</TR>
-</TABLE>
+</td>
+<td align=right valign=TOP><img alt="Bienecke Rare Book Library, Yale University" height=106 width=180 src="images/yale/bienecke_vsml.jpg">
+</tr>
+</table>
 
-<BR>
-<TABLE BORDER=0 CELLPADDING=5 WIDTH=90%>
-<TR>
-<TD VALIGN=TOP><IMG ALT="Costa Rica" BORDER=0 HEIGHT=79 WIDTH=216 SRC="images/philg/costa_rica_sml.jpg"></TD>
-<TD VALIGN=top><FONT COLOR=brown FACE="Verdana" SIZE=2><B><I>(5) Key Performance Indicators</I></B>
-<BR><A HREF="tutorials/index.htm">KPIs</A> can be linked to Best Practice and individual User's Interested.
-</FONT></TD>
-</TR>
-</TABLE>
-<BR>
-</TABLE>
+<br>
+<table border=0 cellpadding=5 width=90%>
+<tr>
+<td valign=TOP><img alt="Costa Rica" border=0 height=79 width=216 src="images/philg/costa_rica_sml.jpg"></td>
+<td valign=top><font color=brown face="Verdana" size=2><b><I>(5) Key Performance Indicators</I></b>
+<br><a href="tutorials/index.html">KPIs</a> can be linked to Best Practice and individual User's Interested.
+</font></td>
+</tr>
+</table>
+<br>
+</table>
 
-<CENTER>
+<center>
 <!--- The variable code starts here ... --->
 
 <!--- If the Table is empty, then a message should be generated 'No Data in this Table.' --->
 <!--- COMMENTED SECTION STARTS HERE ...
 	<table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#FF9900" name="change me">
         <tr><td class="header2" colspan="2"><div align="center">
-	<FONT COLOR=blue FACE=Verdana SIZE=2><B>Data for the DBA.org Template</div></td></tr>
-	<tr>	<td ALIGN=middle class="cell" bgcolor="#B0D8FF">
-	<FONT COLOR=blue FACE=Verdana SIZE=2> <B>language_code</B></td>
-        	<td ALIGN=middle class="cell" bgcolor="#B0D8FF">
-	<FONT COLOR=blue FACE=Verdana SIZE=2> <B>language_description</B></td>
+	<font color=blue face=Verdana size=2><b>Data for the DBA.org Template</div></td></tr>
+	<tr>	<td align=middle class="cell" bgcolor="#B0D8FF">
+	<font color=blue face=Verdana size=2> <b>language_code</b></td>
+        	<td align=middle class="cell" bgcolor="#B0D8FF">
+	<font color=blue face=Verdana size=2> <b>language_description</b></td>
 	</tr>
 
-	<tr>	<td ALIGN=left class="cell" bgcolor="#B0D8FF">
-	<FONT COLOR=blue FACE=Verdana SIZE=2> English</td>
-        	<td ALIGN=left class="cell" bgcolor="#B0D8FF">
-	<FONT COLOR=blue FACE=Verdana SIZE=2> English.</td>
+	<tr>	<td align=left class="cell" bgcolor="#B0D8FF">
+	<font color=blue face=Verdana size=2> English</td>
+        	<td align=left class="cell" bgcolor="#B0D8FF">
+	<font color=blue face=Verdana size=2> English.</td>
 	</tr>
-	<tr> 
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> French</td>
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> French.</td>
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> French</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> French.</td>
 	</tr>
-	<tr> 
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> Japanese</td>
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> Japanese.</td>
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> Japanese</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> Japanese.</td>
 	</tr>
-	<tr> 
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> Malay</td>
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> Bahasa Malay, spoken by the indigenous Malay people.</td>
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> Malay</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> Bahasa Malay, spoken by the indigenous Malay people.</td>
 	</tr>
-	
-	<tr> 
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> Welsh</td>
-		<td ALIGN=left class="cell" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2> Welsh.</td>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> Welsh</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><font color=blue face=Verdana size=2> Welsh.</td>
 	</tr>
 
 	</table>
@@ -213,56 +213,56 @@ COMMENTED OUT SECTION ENDS HERE --->
 
 
 <!---
-<TABLE BORDER=0 CELLPADDING=5 CELLSPACING=5>
-<TR>
-		<TD VALIGN=top>
+<table border=0 cellpadding=5 CELLSPACING=5>
+<tr>
+		<td valign=top>
 		<img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="pi_best_practice_display/index.asp"><font face="Verdana" size=2>Best Practice</A>
-		<UL><A HREF="pi_communities/boards.asp"><FONT COLOR=blue FACE=Verdana SIZE=2>
-		<LI>Display Best Practice</A>
-		<LI><A HREF="pi_communities/boards.asp"><FONT COLOR=blue FACE=Verdana SIZE=2<LI>Update Best Practice</A>
+		<a href="pi_best_practice_display/index.asp"><font face="Verdana" size=2>Best Practice</a>
+		<UL><a href="pi_communities/boards.asp"><font color=blue face=Verdana size=2>
+		<li>Display Best Practice</a>
+		<li><a href="pi_communities/boards.asp"><font color=blue face=Verdana size=2<li>Update Best Practice</a>
              	</UL>
-		</TD>
+		</td>
 
-		<TD><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="pi_best_practice_display/feedback.asp"><FONT COLOR=blue FACE=Verdana SIZE=2>Information Catalog</A>     		
+		<td><img src="images/v3/arrow.gif" width="13" height="15">
+		<a href="pi_best_practice_display/feedback.asp"><font color=blue face=Verdana size=2>Information Catalog</a>
 		<br><UL>
-		<A HREF="pi_information_catalog/browse.asp"><FONT COLOR=blue FACE=Verdana SIZE=2><LI>Browse the Information Catalog</A>
-		<A HREF="pi_information_catalog/browse.asp"><FONT COLOR=blue FACE=Verdana SIZE=2><LI>Update the Information Catalog</A>
+		<a href="pi_information_catalog/browse.asp"><font color=blue face=Verdana size=2><li>Browse the Information Catalog</a>
+		<a href="pi_information_catalog/browse.asp"><font color=blue face=Verdana size=2><li>Update the Information Catalog</a>
 		</UL>
-		<BR><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="pi_best_practice_data_entry/index.asp"><FONT COLOR=blue FACE=Verdana SIZE=2>Performance</A>
- 		<BR><BR><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="pi_user_registration/index.asp"><FONT COLOR=blue FACE=Verdana SIZE=2>Users</A>
-		</TD>
-</TR>
-
-<TR>
-		<TD>
 		<br><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="pi_communities/boards.asp"><FONT COLOR=blue FACE=Verdana SIZE=2>
-		Communities</A>
+		<a href="pi_best_practice_data_entry/index.asp"><font color=blue face=Verdana size=2>Performance</a>
+ 		<br><br><img src="images/v3/arrow.gif" width="13" height="15">
+		<a href="pi_user_registration/index.asp"><font color=blue face=Verdana size=2>Users</a>
+		</td>
+</tr>
+
+<tr>
+		<td>
+		<br><img src="images/v3/arrow.gif" width="13" height="15">
+		<a href="pi_communities/boards.asp"><font color=blue face=Verdana size=2>
+		Communities</a>
 		<UL>
-		<A HREF="pi_communities/boards.asp"><LI>Create a Community</A>
-		<A HREF="pi_communities/boards.asp"><LI>Join a Community</A>
+		<a href="pi_communities/boards.asp"><li>Create a Community</a>
+		<a href="pi_communities/boards.asp"><li>Join a Community</a>
              	</UL>
 
 		<br><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="gmi_site_map.htm">Contact Us</A>
+		<a href="gmi_site_map.html">Contact Us</a>
 
 		<br><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="gmi_first_timers.htm">First Timers</A>
+		<a href="gmi_first_timers.html">First Timers</a>
               	<br>
-		</TD>
+		</td>
 
-		<TD VALIGN=top>
-		<BR><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="pi_user_registration/index.asp"><FONT COLOR=blue FACE=Verdana SIZE=2>Search</A>
-		<BR><BR><img src="images/v3/arrow.gif" width="13" height="15">
-		<A HREF="pi_user_registration/index.asp">Site Map</A>
-		</TD>
-</TR>
-</TABLE>
+		<td valign=top>
+		<br><img src="images/v3/arrow.gif" width="13" height="15">
+		<a href="pi_user_registration/index.asp"><font color=blue face=Verdana size=2>Search</a>
+		<br><br><img src="images/v3/arrow.gif" width="13" height="15">
+		<a href="pi_user_registration/index.asp">Site Map</a>
+		</td>
+</tr>
+</table>
 --->
 
 </font>
@@ -273,7 +273,7 @@ COMMENTED OUT SECTION ENDS HERE --->
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	<!-- Body Ends -->	
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>
@@ -296,12 +296,12 @@ COMMENTED OUT SECTION ENDS HERE --->
 	<a href="index.asp">&nbsp;&nbsp;&nbsp;<img src="images/nav_home.gif" alt="Home" border=0></a>
 	<a href="pi_best_practice_display/index.asp"><img src="images/nav_bestpractice.gif" alt="Best Practice" border=0></a>
 	<a href="pi_communities/boards.asp"><img src="images/nav_communities.gif" alt="Communities" border=0></a>
-	<a href="first_timers.htm"><img src="images/nav_firsttimers.gif" alt="First Timers" border=0></a>
+	<a href="first_timers.html"><img src="images/nav_firsttimers.gif" alt="First Timers" border=0></a>
 	<a href="pi_information_catalog/browse.asp"><img src="images/nav_infocatalog.gif" alt="Information Catalog" border=0></a>
-	<a href="performance.htm"><img src="images/nav_performance.gif" alt="Performance" border=0></a>
-	<a href="users.htm"><img src="images/nav_users.gif" alt="Users" border=0></a>
-	<a href="search.htm"><img src="images/nav_search.gif" alt="Search" border=0></a>
-	<a href="site_map.htm"><img src="images/nav_sitemap.gif" alt="Site Map" border=0></a>
+	<a href="performance.html"><img src="images/nav_performance.gif" alt="Performance" border=0></a>
+	<a href="users.html"><img src="images/nav_users.gif" alt="Users" border=0></a>
+	<a href="search.html"><img src="images/nav_search.gif" alt="Search" border=0></a>
+	<a href="site_map.html"><img src="images/nav_sitemap.gif" alt="Site Map" border=0></a>
 	</td>
 	</tr>
 	<tr>

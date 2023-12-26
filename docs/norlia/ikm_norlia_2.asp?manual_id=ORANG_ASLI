@@ -1,13 +1,13 @@
 
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <title>Orang Asli Project Rpt</title>
 
 <script type="text/javascript">
 
 /***********************************************
-* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
 * Visit http://www.dynamicdrive.com/ for full source code
 ***********************************************/
@@ -80,12 +80,12 @@ inc++
 }
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -121,7 +121,7 @@ var alltags=document.all? document.all : document.getElementsByTagName("*")
 ccollect=getElementbyClass(alltags, "switchcontent")
 statecollect=getElementbyClass(alltags, "showstate")
 if (enablepersist=="on" && ccollect.length>0){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -151,7 +151,7 @@ window.onunload=saveswitchstate
 <tr>
 	<td><img height="78" width="622" src="images/header1.gif"></td>
 </tr>
-				
+
 <tr>
 	<td><img height="54" width="620" src="images/photo_line.gif"></td>
 </tr>
@@ -170,19 +170,19 @@ window.onunload=saveswitchstate
 --->
 
 	<td bgcoloUr="#c5bea5" bgcolor="#afa58c" COLSPAN=1>
-	<A HREF="ikm_norlia_1_in_malay.htm"><IMG ALIGN=left BORDER=0 SRC="images/flags/flag_malaysia.jpg"></A>
+	<A HREF="ikm_norlia_1_in_malay.html"><IMG ALIGN=left BORDER=0 SRC="images/flags/flag_malaysia.jpg"></A>
 	<center>
 	<font color="#7a5529" size="2" face="Verdana,Arial,Helvetica,Genevan">
-	<B>Small example of Indigenous Knowledge for</B> <FONT COLOR=yellow>Norlia Shidan</FONT> 
-	</center> 
+	<B>Small example of Indigenous Knowledge for</B> <FONT COLOR=yellow>Norlia Shidan</FONT>
+	</center>
 	</td>
 
 <!---
 	<td bgcolor="#afa58c" bgcoloUr="#c5bea5" wiIIIdth="124">
 	<center>
 	<font color="#7a5529" size="2" face="Verdana,Arial,Helvetica,Genevan">
-	<B>Map</B> 
-	</center> 
+	<B>Map</B>
+	</center>
 	</td>
 --->
 
@@ -192,10 +192,10 @@ window.onunload=saveswitchstate
 <!---	<td ALIGN=middle rowspan="3" bgcolor="#c5bea5" width="124" VALIGN=top><br>
 	<img height="10" width="123" src="images/Norlias_links_tl.gif"><br>
 
-	<a href="index.htm"><img height="9" width="123" src="images/-home.gif" border="0" alt="index page"></a><br>
+	<a href="index.html"><img height="9" width="123" src="images/-home.gif" border="0" alt="index page"></a><br>
 	<a hreEEEf="mailto:info_aatt_norlia.com"><img height="10" width="123" src="images/-email_me.gif" border="0" alt="e-Mail"></a><br>
-	<a href="background.htm"><img height="10" width="123" src="images/-my_background.gif" border="0" alt="my background"></a><br>
-	<a href="recipes.htm"><img height="10" width="123" src="images/-recipes.gif" border="0" alt="recipes"></a><br>
+	<a href="background.html"><img height="10" width="123" src="images/-my_background.gif" border="0" alt="my background"></a><br>
+	<a href="recipes.html"><img height="10" width="123" src="images/-recipes.gif" border="0" alt="recipes"></a><br>
 
 	<br>
 
@@ -215,10 +215,10 @@ window.onunload=saveswitchstate
 <p>
 
 <font face="Verdana" size=2 color="#7a5529">
-<b><font COLOR="#7a5529" size=+1> Orang Asli Indigenous Knowledge provided by University of Hawaii</font></b><br>      <p><p><font color="#7a5529" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.0&nbsp;Where did this material come from ?</b></font><p><div id="chap0" class="switchcontent">The source of this material was the Center for South-East Asian Studies at the 
+<b><font COLOR="#7a5529" size=+1> Orang Asli Indigenous Knowledge provided by University of Hawaii</font></b><br>      <p><p><font color="#7a5529" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.0&nbsp;Where did this material come from ?</b></font><p><div id="chap0" class="switchcontent">The source of this material was the Center for South-East Asian Studies at the
 <A HREF="http://www.hawaii.edu/cseas/pubs/malaysia/malaysia.html" TARGET=_NEW>the University of Hawaii</A>.</div><p><font color="#7a5529" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.0&nbsp;Traditional Remedies</b></font><p><div id="chap1" class="switchcontent">Remedies are derived from a variety of trees, including camphor, cassia and sandalwood.</div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.1       &nbsp;</B>For <B>Astringents</B>, use the Gambier shrub.</b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.2       &nbsp;</B><B>Candles</B> can be made from Beeswax.</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.3       &nbsp;</B>For <B>Skin disorders</B>, use a salve from the Cassia tree.</b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.4       &nbsp;</B>For <B>Headaches, Indigestion and Rheumatism</B>, use the Camphor tree.</b></font><p><div id="sec3" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'para0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.4.1     &nbsp;Camphor is also good for Indigestion and Rheumatism.</b></font><p><div id="para0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529">For Headaches, Indigestion and Rheumatism, use the Camphor tree.
 </font></div></td></tr></table><p><font color="#7a5529" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.0&nbsp;Recommended reading</b></font><p><div id="chap2" class="switchcontent">The best reference is this
-<A HREF="http://www.norlia.com/indigenous_knowledge.htm" TARGET=_NEW>Indigenous KM page</A>.
+<A HREF="http://www.norlia.com/indigenous_knowledge.html" TARGET=_NEW>Indigenous KM page</A>.
 </div>
 </font>
 	</TD>
@@ -245,22 +245,22 @@ window.onunload=saveswitchstate
 
 	</tr>
 
-	
+
 	</table>
 
-	<br>	
+	<br>
 	<font color="#cc0000" face="verdana,Verdana,Arial,helvetica" size="2">
-	
+
 	<br>
 	<table border="0" cellpadding="0" cellspacing="0" width="635">
 	<tr>
 		<td>
 		<font size="1" face="Verdana,Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#7a5529">
 		<center>
-		[ <a href="index.htm">Home Page</a> | 
-		<a hreEEEf="mailto:info_aatt_norlia.com">Email Me</a> | 
-		<a href="research_project.htm">Research Project</a> | 
-		<a href="site_map.htm">Site Map</a> ] 
+		[ <a href="index.html">Home Page</a> |
+		<a hreEEEf="mailto:info_aatt_norlia.com">Email Me</a> |
+		<a href="research_project.html">Research Project</a> |
+		<a href="site_map.html">Site Map</a> ]
 		</center>
 		</td>
 	</tr>

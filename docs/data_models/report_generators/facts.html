@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>Bearcat Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<img align=right alt="Actors Masks" hspace="0" vspace="4" src="../../images/actors_masks.gif">
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+
+</p>
+</td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.html"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.html"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.html"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.html"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.html"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.html"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.html"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<img alt="Report"     height=19 width=120 src="images/lft_report.bmp">
+<img alt="Generators" height=19 width=120 src="images/rt_generators.bmp">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+Back to the <a href="index.html">Data Model</a>.
+
+<!--- <br>The Draft <b>Business Rules have been defined and are listed below.</b> --->
+
+<pre><font color=blue face="Verdana" size=2><b>The Area being Modelled is :-</b>
+Modelling Corporate Banking to produce a range of Reports
+
+<b>A. A Typical User Scenario :</b>
+Step 1. A typical user scenario for the IntelliVIEW suite:
+Step 2. Report consumer will specify his reporting requirements.
+Step 3. Report designer will design the report, and make it available, either over the web as a dynamically generated asp/jsp or as an IntelliVIEW file format.
+Step 4. Every time report consumer runs the report, up-to-date data will be populated in it.
+Step 5. If the report is interactive, user will be able to make ad-hoc analytics and create charts, pivot tables etc. on his own.
+
+<b>B. THE APPROACH :</b>
+The Approach is to start with the Things of Interest in the Requirements and establish the Development Plan.
+
+<b>C. The Things of Interest</b>
+C.1 Accounts
+C.2 Addresses
+C.3 Branches
+C.4 Customers
+C.5 Financial Products
+C.6 Locations
+C.7 Services
+C.8 Transactions
+
+<b>D. Development Plan</b>
+The Plan is to agree the overall Scope and then to work through each area in detail.
+The sequence will be firstly, Products, then Customers, Fleets and Servicing.
+
+<b>Steps in the Plan</b>
+D.1 Barry will define the first draft of Tables in the Database.
+D.2 Aditya will comment on the draft Tables.
+D.3 Barry and Aditya will agree on the Tables in the Database.
+D.4 Barry will agree the sequence in which the Tables will be loaded with data :-
+    Products
+    Addresses
+    Customers
+D.5 Barry will provide data for loading into each Table.
+D.6 Barry will have Web Pages built for Data Entry and Update.
+D.7 Stuart will test the Application in an agreed sequence of functions.
+     This sequence will establish the foundation and extend it in a structured manner.
+</pre>
+
+<!---
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Org and People Model</td>
+	<td><font color=blue face=Verdana size=2><b>Police Model</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Account</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Calendar</td>
+	<td><font color=blue face=Verdana size=2>Easily added to Org & People</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Party</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Asset</td>
+	<td><font color=blue face=Verdana size=2>Vehicle</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Event</td>
+	<td><font color=blue face=Verdana size=2>Business Activity</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Organisation</td>
+	<td><font color=blue face=Verdana size=2>Organisation</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>Person</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+--->
+
+</pre>
+
+<!---
+to manage incoming information reports on criminal activity.
+
+The basic categories of our intelligence reports are "Persons", "Crime Category",
+i.e drugs, break & enter etc, "Locations of Interest", "Vehicles of Interest".
+
+There is a narrative field to describe the criminal activity.
+
+Each intelligence report is allocated a unique reference number, in the format of 'I 12345678'.
+
+It should be possible to enter a 'Person of Interest' only once in the database,
+ with a photo, then relate that persons involvements to data stored in the locations,
+vehicles, intelligence category tables, and include a description of the the report
+narrative, as information comes in on their activities, like where they go to -
+different <b>locations</b>, where they drive different <b>vehicles</b>.
+
+Sometimes there are <b>many persons of interest combined in the one report</b>.
+So I would like to be able to find a common way of linking the persons where the
+information report number is the same, Or if there is a better way to
+link the persons who appear in the same intelligence report.
+
+Australia.
+</pre>
+--->
+
+
+<!---
+A.1 <b>The Detail</b> reflects the Requirements.
+For example, Drivers have been included, but if this level of detail is not in the Requirmenet,
+then Drivers can be removed, which will simplify the Model.
+
+<b>B. The Things of Interest, ('THINGS'), include :-</b>
+B.1 <b>Customers</b>, which are Distributors.
+B.2 Delivery Routes.
+B.3 Locations on Routes.
+B.4 Employees, which are Drivers in this Model.
+B.5 Orders - which can be either Regular Orders and Actual Orders.
+B.6 Products.
+B.7 Trucks
+
+<b>C. These THINGS are Related as follows :-</b>
+C.1 A DELIVERY_ROUTES visits a number of DELIVERY_ROUTE_LOCATIONS.
+C.2 A DELIVERY contains a number of ORDERS.
+C.3 An ORDER contains a number of PRODUCTS.
+C.4 A REGULAR_ORDER allows the Customer, (Distributor), to say "Send me my Regular Order".
+C.5 An ACTUAL_ORDER allows for changes to the REGULAR_ORDER.
+C.4 A TRUCK can be associated with zero, one or many ORDER_DELIVERIES.
+
+<b>D. Other Characteristics of these THINGS include :-</b>
+D.1 A CUSTOMER can have one or zero PHONE_NUMBER.
+
+<b>A. Sample Data includes :-</b>
+A.1 To be determined
+
+<b>B. Typical Enquiries include :-</b>
+B.1 To be Determined
+--->
+</td></tr>
+
+<!--- <tr>
+<td>&nbsp</td>
+<td colspan=1><pre><font color=blue face=Verdana size=2> A GLOSSARY OF TERMS WOULD GO HERE AS A TABLE
+Barry Williams
+7th. December 2006
+Principal Consultant
+Database Answers
+</td>
+</tr> --->
+
+</table>
+
+</td>
+</tr>
+</table>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.html"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.html"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.html"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.html"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.html"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.html"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.html"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

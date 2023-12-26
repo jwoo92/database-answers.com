@@ -1,0 +1,248 @@
+<html>
+<head>
+<title>EMS Ship Supply Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.vecom-marine.com/" target="_new">
+<img alt="Vecom Marine (Click for Web Site)" border=0 HEIiiGHT=108 src="images/vecom_marine_sml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+--->
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for Customers and Services (EMS Ship Supply)</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for Customers and Services (EMS Ship Supply)'>An Access Database</a> is available on demand.
+
+This Model is based on our <a href="../canonical_data_models/index.html">Canonical Data Model</a>.
+
+<!---
+<br><br>
+<font color=blue face=Verdana size=2>This Model shows Entity names only.
+<br>If you want one showing all the Attributes in each Table, then please
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for Customers and Services (Generic)'>Email us</a>.
+--->
+
+<br><br>There might also be a design for a <a HREeeeF="data_mart.html">Data Mart</a> which is an excellent start for Enquiries and producing Reports.
+
+<br><br>If you are new to Data Models, this page of my new Tutorial will help you <a href="../../tutorial4_db_schema/tutorial_slide_5.html"><b>understand the Data Model</b></a>.
+<br><br>
+
+<!---
+<br>This is an 'Easy to understand' version showing only the Entity names with key fields.
+
+<br><br>There is also a Data Model showing <a href="st_stephens_school_data_model_without_ref_data.html">Attributes but without any Reference Data</a>,
+and one <a href="st_stephens_school_data_model_with_attributes.html">showing all attributes</a>
+--->
+
+<!---
+<br>There is also a design for <a href="retail_customers_data_mart.html">a Data Mart</a>, which is very useful for providng data for Reports and Business Intelligence.
+--->
+
+
+<!---
+<table border=3>
+<tr>
+<td colspan=2 valign=top><font color=blue face=Verdana size=2>
+This is a very traditional Receipt which shows only the date when it was issued...
+<br>
+<img align=left alt="Ticket for Elephant Ride" valign=top src="images/ticket_for_elephant_ride_med.gif">
+</td>
+
+<td colspan=2 ><font color=blue face=Verdana size=2>
+This is a modern Receipt from Starbucks at Langkawi Airport in Malaysia ...
+<br><img align=left alt="Sales Receipts Generic from Starbucks at Langkawi Airport,Malaysia" border=0 src="images/Receipt_from_Starbucks_Langkawi_Airport_lge.jpg">
+</td>
+
+<td colspan=1 valign=top><font color=blue face=Verdana size=2>
+The Generic Data Model for <br>Sales Receipts contains the minimum items ...
+<br><img align=left alt="Data Model for Generic Sales Receipt" border=0 src="images/data_model.gif">
+</td>
+
+<td valign=top><font color=blue face=Verdana size=2>
+And this is what the corresponding normalized Data Model looks like ...
+<br><img align=left alt="Normalised Data Model for Sales Receipts Generic in Malaysia" border=0 src="images/sales_receipt_generic.gif">
+</td>
+</tr>
+
+</table>
+--->
+
+<br><img align=left alt="Data Model for Customers and Services (EMS Ship Supply)" border=0 src="images/data_model.gif">
+
+
+<!---
+<br><br>This is the Top-Level Data Model and separate Models have been created for these Subject Areas :-
+
+<li><a href="customers_and_services_subject_area.html">Top-Level Customers and Services Subject Area</a>
+<li><a href="police_mdm_subject_area.html">Top-Level Customers and Services Payments Area</a>
+<br><br>A Transaction Model has been created, to provide a more general version of the Payment Model.
+It allows for Refunds, Adjustments and so on.
+
+<br><li><a href="customers_and_transactions_subject_area.html">Top-Level Customers and Transactions Subject Area</a>
+<li><a href="police_mdm_ref_data_subject_area.html">Reference Data Subject Area</a>
+--->
+
+<!--- <li><a href="customers_and_services_subject_area.html">Top-Level Customers and Services Subject Area</a> --->
+
+<br><br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+<br>September 30th. 2012
+
+
+<!---
+We have also created Data Models for :-
+<li><a href="customers_area_model.html">Customers Area</a>
+
+<li><a href="customers_and_orders_model.html">Customers and Orders</a>
+<li><a href="in_store_shopping_area_model.html">In-Store Shopping</a>
+<li><a href="online_shopping_area_model.html">Online Shopping</a>
+
+<br><br>
+Here are two Generic Retail Data Models that are worth a look :-
+<br>1) <b>ARTS</b> (The American Association for Retail Technology Standards Division) has published the
+<a href="http://www.infoadvisors.com/Services/ARTSDataModel/tabid/148/Default.aspx?gclid=CL7y15nCipwCFZ4A4wodRxzNYg" target="_new">ARTS Retail Data Model</a>.
+<br>This is an industry standard Data Model that addresses retail best practices in the areas of Customers, Products, etc.
+which is supported by InfoAdvisors.
+
+<br><br>2) <b>Oracle</b> also offers <a href="http://www.oracle.com/database/retail-data-model.html" target="_new">a Generic Retail Model</a>
+
+<li>Customer Master Data
+<li>Inventory Management
+<li>Product Items Master Data
+<li>Organizational Management
+<li>POS Transactions
+<li>Pricing and Promotions
+<li>Taxation
+<li>Tender Control
+--->
+
+<br>
+</td>
+</tr>
+</table>
+
+<center><font COLOr=blue face=Verdana size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2012</I></font>
+</center>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

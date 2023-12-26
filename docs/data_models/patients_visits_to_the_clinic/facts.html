@@ -1,0 +1,306 @@
+<html>
+<head>
+<title>Facts for Everardo</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a HREeeeF="http://www.hollischurch.org/" target="_new">
+<img align=right alt="Congregational Church of Hollis, New Hampshire" hspace="0" vspace="4" src="images/church_sml.jpg">
+</td>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+
+</p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for Everardo</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+Back to the <a href="index.html">Data Model</a>
+
+<pre><font color=blue face="Verdana" size=2><b>The Area being Modelled is :-</b>
+Everardo's Database
+<hr>
+Email from Everardo received April 10th. 2011
+Barry,
+Here is the latest model:
+  Base Tables Model v00.007.dez
+
+I may have to go with your idea though because there are too many status codes on the visit table.
+
+The only question I have is how can we satisfy a query like this:
+Select all visits where visitstatus="arrived" and treatmentstatus="not treated"
+
+If we go with only one status column ?
+
+It may require the addition of a log table where we store all the phases the visit went through and
+join with it to satisfy the querying requirements?
+
+Although not very elegant, the need for visit status, treatment status on the visit table may be a
+requirement since there are a lot of queries that depend on such conditions being met;
+
+If visit status='arrived' and treatment status = "treated" and billing status != "billed" then do this�..
+
+Thanks,
+
+Everardo
+
+<hr>
+Email received April 7th
+thank you so much. I have already created a first draft database based on it.
+Now I am writing some quick and dirty prototype to see if the whole thing ties nicely together.
+
+I don't know if you noticed but we use a table called chargecode to tie in the different types
+of charges in use here today: namely workelements and cpt4.
+
+Each department has a different work element table.
+The structure is the same but the same code means different things.
+
+Here is an example:
+
+
+
+So, 101 may mean something else for department 10, for example.
+
+Let me know what you thing about the several statuses on the visit, please.
+
+Thanks,
+Everardo
+
+
+<hr>
+<br><b>Everardo asks</b> :-
+Barry,
+
+Here is what I need.
+
+Please take a look at the requirements and then send me an estimate of how much would
+it cost me to have you evaluate and review what I have.
+
+I have sent you only $150 to cover for an initial review. I don�t know if that is enough?
+
+I will have to pay for this myself because the department is having some issues with money.
+
+As i told you in a previous email, I am trying to replace 12 badly designed ms access databases
+with a sql server backend and .net ui.
+
+The applications are quite similar to your <b>Hospice</b> Example in that, we have the following:
+<hr>
+<b>Glossary of Terms</b>
+<br>
+<b>Batch</b>
+A Batch just holds the next batch for the billing cycle, one per day, every day at 7 am.
+When we bill, we need to increment the batch id so that each bill will be grouped by this number.
+
+<hr>
+<br><b>Business Rules</b>
+<br>For each visit a staff member is assigned to the visit by the manager who "owns" the visit and either the same staff member or more than one who will actually treat the patient.
+
+
+
+
+A <b>Patient</b> has one or more <b>Insurance Carriers</b>
+
+A patient sees a <b>Primary Care Physician</b> (PCP) because of some <b>Incident</b>.
+
+The PCP refers the patient to our <b>Physical Therapy Department</b> for care.
+
+The referral authorizes the patient to see a <b>Therapist</b> for a number of <b>Visits</b> (say 12) using a primary carrier
+
+Once the patient arrives at the clinic, the patient is "arrived" in the system and pays a copay
+
+The therapist treats the patient and after that enters <b>"charges"</b> for the work done to the patient
+
+The therapist clicks on a "validate" button to validate the visit and the charges
+
+Once the therapist is done entering all the charges, he clicks in a validate button to validate the visit
+and the charges.
+
+This executes rules to see if the visit has the right authorization, if the visit date falls under the
+proper insurance coverage, etc
+
+If all is well, the visit becomes "Ready for Billing"
+
+A <b>Billing Person</b> runs billing the next morning:
+
+selects all the records that are "Ready for Billing" and clicks on the bill button
+
+Alternatively, she may select some records from the visit table and put them on hold, for further evaluation
+(they won�t be billed until they are switched back to ready for billing)
+
+The system should check each visit and charges and if all is good, creates a "bill record" (in reality, it is
+just a record to be sent to a downstream system for billing)
+
+When the manager decides it is time to send the billing records downstream, she clicks a "send bill" button.
+
+That is all.
+
+Here is a model:
+
+The problems I am facing now are the following:
+
+They seem to insist on keeping some of their current structure and flow in place even though I think the design is not good.
+
+For example:
+
+on the visit table, they have a visit type field which can contain any of the following values:
+
+As you can see, I think they are mixing visit statuses with billing status and types as well as treatment status. It is a mess.
+
+I wonder if it would be better to add a status column to the visit table for each of
+the different statuses and then create a <b>Visit Status</b> column and table to hold:
+<li>Cancelled
+<li>Kept (Arrived)
+<li>Pending
+<li>No Show
+<li>Rescheduled
+
+An <b>Authorization Status</b> column and table to hold:
+
+A <b>Billing Status</b> column and table to hold:
+- Not Billed
+- Billing in Progress
+- Ready for Billing
+- Hold
+- Billed
+
+And even a <b>Treatment Status</b> since only patients that were treated will be billed????
+
+This way it would be easier to see on which phase of the whole flow would a visit be in.
+
+I am divided on whether I should put all of the above statuses in the visit table or
+create additional tables to mimic each phase in the life of the visit?
+
+Please advise, I am under a lot of pressure to get this done right I think you are the
+right person to help me.
+
+Thank you,
+
+Everardo
+<hr>
+<b>B. Barry says the Things of Interest are :-</b>
+1. Charges
+2. Incidents
+3. Patients
+4. Primary Care Physician
+5. Therapists
+6. Visits
+2. Others to be determined
+
+<b>C. Status fields are :-</b>
+B.1 Authorization
+B.2 Billing
+B.3 Visit
+
+<b>C. The Business Rules are as follows :-</b>
+1. To be determined.
+<center><font size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2011</I></font></center></pre>
+
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,33 +1,33 @@
-<HTML><HEAD>
+<HTML><head>
 
-<!--- <meta http-equiv="refresh" content="3;URL=http://www.databaseanswers.org/site_map.htm"> ---> 
+<!--- <meta http-equiv="refresh" content="3;URL=http://www.databaseanswers.org/site_map.html"> --->
 
-<TITLE>Site Map</TITLE>
+<title>Site Map</title>
 
 <link rel="stylesheet" href="../styles/style.css">
 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="styles/style.css">
 
-</HEAD>
+</head>
 
-<BODY TEXT="#202020">
+<body text="#202020">
 
-<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
-<TR>
-<TD ALIGN=left HEIGHT=100 VALIGN=middle>
-<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="images/dba_400_home.jpg"> 
-</TD>
-<TD ALIGN=right HEIGHT=95 ROWSPAN=2 VALIGN=middle>
-<IMG ALIGN=right ALT="Map of Fiji (where I met my Wife) and the South Pacific" BORDER=1 HEIGHT=92 WIDTH=248 SRC="images/site_map_vsml.gif">
-</TD>
-</TR>
+<table border=0 cellpadding=0 CELLSPACING=0 width=100%>
+<tr>
+<td align=left height=100 valign=middle>
+<img alt="Database Answers Header" height=58 width=400 src="images/dba_400_home.jpg">
+</td>
+<td align=right height=95 rowspan=2 valign=middle>
+<img align=right alt="Map of Fiji (where I met my Wife) and the South Pacific" border=1 height=92 width=248 src="images/site_map_vsml.gif">
+</td>
+</tr>
 
-<!--- <TR><TD ALIGN=left COLSPAN=2 VALIGN=middle><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></TD></TR> --->
+<!--- <tr><td align=left colspan=2 valign=middle><p class="time"><nobr><script language="JavaScript">theDate();</script></nobr></p></td></tr> --->
 
-</TABLE>
+</table>
 
-<FONT COLOR=blue FACE=Verdana SIZE=2>
+<font color=blue face=Verdana size=2>
 <!-- end Standard Header - Version 3-->
 
 <!--- START OF MAY 21ST. TOP MENU BAR --->
@@ -35,37 +35,37 @@
   <tr>
     <td height="32" background="images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
-	<td width="1%"><img src="images/spacer.gif" width="15" height="15"></td>
-	<td WIDTH=5% wiIIIdth="6%"><A STYLE="text-decoration:none" HREF="index.htm"><font COLOR=white FACE=Verdana SIZE=2>Home</font></td>
+        <tr>
+	<td width="1%"><img src="/images/spacer.gif" width="15" height="15"></td>
+	<td width=5% width="6%"><a style="text-decoration:none" href="index.html"><font color=white face=Verdana size=2>Home</font></td>
 
 
-	<td align=LEFT WIDTH=5% wiIIIdth="10%"><A STYLE="text-decoration:none" HREF="first_timers.htm"><font color=white FACE=Verdana SIZE=2>First Timers</font></A>
+	<td align=LEFT width=5% width="10%"><a style="text-decoration:none" href="first_timers.html"><font color=white face=Verdana size=2>First Timers</font></a>
 	</td>
 
 <!---
-	<td align=LEFT WIDTH=5% wiIIIdth="10%"><A STYLE="text-decoration:none" HREF="about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+	<td align=LEFT width=5% width="10%"><a style="text-decoration:none" href="about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
 	</td>
 --->
 
-	<td WIDTH=8% wiIIIdth="10%"><A STYLE="text-decoration:none" HREF="pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
-	Ask a Question</font></A></td>
+	<td width=8% width="10%"><a style="text-decoration:none" href="pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
 
     	<td width="7%">
-	<A STYLE="text-decoration:none" HREF="careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<a style="text-decoration:none" href="careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
 	</td>
-	<td width="7%"><A STYLE="text-decoration:none" HREF="clients.htm"><font color=white FACE=Verdana SIZE=2>Clients</font></A>
+	<td width="7%"><a style="text-decoration:none" href="clients.html"><font color=white face=Verdana size=2>Clients</font></a>
 	</td>
 <!---
-	<td align=LEFT WIDTH=8% wiIIIdth="18%"><A STYLE="text-decoration:none" HREF="contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td align=LEFT width=8% width="18%"><a style="text-decoration:none" href="contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
 	</td>
 --->
 
-          <td width="10%"><A STYLE="text-decoration:none" HREF="data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="10%"><a style="text-decoration:none" href="data_models/index.html"><font color="#FFFFFF" face=Verdana size=2>Data Models</font></a></td>
 
-          <td WIDTH=10%><A STYLE="text-decoration:none" HREF="tutorials.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Tutorials</font></A></td>
+          <td width=10%><a style="text-decoration:none" href="tutorials.html"><font color="#FFFFFF" face=Verdana size=2>Tutorials</font></a></td>
 
-        <td WIDTH=10%><A STYLE="text-decoration:none" HREF="site_map.htm"><font color=yellow FACE=Verdana SIZE=2>Site Map</font></A></td>
+        <td width=10%><a style="text-decoration:none" href="site_map.html"><font color=yellow face=Verdana size=2>Site Map</font></a></td>
 
         </tr>
       </table>
@@ -75,782 +75,782 @@
 
 <!--- END OF MAY 21ST. TOP MENU BAR --->
 
-<!--- <FONT COLOR=blue FACE=Verdana SIZE=2> --->
+<!--- <font color=blue face=Verdana size=2> --->
 <!--- (1) --->
-<TABLE border=0 BGCOLOR="98CEFD" WIDTH=100%>
-<TR BGCOLOuuuR=blue>
-<TD ALIGN=left VALIGN=top><FONT COLOR=blue SIZE=2>
+<table border=0 bgcolor="98CEFD" width=100%>
+<tr bgcolor=blue>
+<td align=left valign=top><font color=blue size=2>
 <UL>
 
-<LI><A HREF="answer_in_arabic.doc"><FONT SIZE=2>Answer in Arabic</A> 
+<li><a href="answer_in_arabic.doc"><font size=2>Answer in Arabic</a>
 
 
-<LI><A HREeeeF="about_us.htm"><FONT SIZE=2>About this Web Site</A> 
+<li><a HREeeeF="about_us.html"><font size=2>About this Web Site</a>
 <OL>
 
-<LI><A HREF="A_Self_Service_Web_Site.htm"><FONT COLOR=blue SIZE=1>A Self-Service Web Site</A>
-<LI><A HREF="Future_of_Databases/building_blocks.htm">Building Blocks</A> 
-<LI><A HREF="glossary_of_terms_presented_alphabetically.htm">Glossary of Terms</A>
-<LI><A HREF="best_practice_road_map/self_assessment.htm">Self Assessment</A>
-<LI><A HREF="Site_Map_Architecture.htm">Site Map Architecture</A> 
+<li><a href="A_Self_Service_Web_Site.html"><font color=blue size=1>A Self-Service Web Site</a>
+<li><a href="Future_of_Databases/building_blocks.html">Building Blocks</a>
+<li><a href="glossary_of_terms_presented_alphabetically.html">Glossary of Terms</a>
+<li><a href="best_practice_road_map/self_assessment.html">Self Assessment</a>
+<li><a href="Site_Map_Architecture.html">Site Map Architecture</a>
 </OL>
 
-<LI><A HREF="about_us.htm"><FONT SIZE=2>About Us</A> 
-<LI><A HREF="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><B>Ask a Question</B></A>
-<LI><A HREF="architecture.htm"><FONT COLOR=blue SIZE=2><B>Architecture ...</B></A>
+<li><a href="about_us.html"><font size=2>About Us</a>
+<li><a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><b>Ask a Question</b></a>
+<li><a href="architecture.html"><font color=blue size=2><b>Architecture ...</b></a>
 <OL>
-<LI><A HREF="http://www.architectureandgovernance.com/" TARGET=_NEW><FONT COLOR=blue SIZE=1><B>Architecture and Governance Magazine</B></A> 
-<LI><A HREF="data_arch_books.htm"><FONT COLOR=blue SIZE=1>Books on Data Architecture</A>
-<LI><A HREF="components.htm"><FONT COLOR=blue SIZE=1>Components in a RDBMS</A>
-<LI><A HREF="data_arch_books.htm"><FONT COLOR=blue SIZE=1>Data Architect Books</A>
+<li><a href="http://www.architectureandgovernance.com/" target="_new"><font color=blue size=1><b>Architecture and Governance Magazine</b></a>
+<li><a href="data_arch_books.html"><font color=blue size=1>Books on Data Architecture</a>
+<li><a href="components.html"><font color=blue size=1>Components in a RDBMS</a>
+<li><a href="data_arch_books.html"><font color=blue size=1>Data Architect Books</a>
 
-<!--- <LI><A HREF="data_arch/data_islands.htm"><FONT COLOR=blue SIZE=1>Data Architecture for a WebSite</A> --->
+<!--- <li><a href="data_arch/data_islands.html"><font color=blue size=1>Data Architecture for a WebSite</a> --->
 
-<LI><A HREF="data_arch/index.htm"><FONT COLOR=blue SIZE=1>Design a Data Architecture</A>
-<!--- <LI><A HREF="architecture4_global_accountability.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Global Accountability</FONT></A> --->
-<LI><A HREF="info_arch.htm"><FONT COLOR=blue SIZE=1>Information Architecture</A>
-<!--- <LI><A HREF="data_arch_jobs.htm"><FONT COLOR=blue SIZE=1>Job Prospects as a Data Architect</A> --->
+<li><a href="data_arch/index.html"><font color=blue size=1>Design a Data Architecture</a>
+<!--- <li><a href="architecture4_global_accountability.html"><font color=blue face=Verdana size=1>Global Accountability</font></a> --->
+<li><a href="info_arch.html"><font color=blue size=1>Information Architecture</a>
+<!--- <li><a href="data_arch_jobs.html"><font color=blue size=1>Job Prospects as a Data Architect</a> --->
 
-<LI><A HREF="data_arch/map_uml_to_erd.htm"><FONT COLOR=blue SIZE=1>Mapping UML to ERD</A> 
+<li><a href="data_arch/map_uml_to_erd.html"><font color=blue size=1>Mapping UML to ERD</a>
 
-<LI><A HREF="mapping_and_toplink.htm"><FONT COLOR=blue SIZE=1>Mapping with TopLink</A> 
-
-
+<li><a href="mapping_and_toplink.html"><font color=blue size=1>Mapping with TopLink</a>
 
 
 
-<LI><A HREF="data_arch/need_for_data_arch.htm"><FONT COLOR=blue SIZE=1>Need for a Data Architecture</A>
-<!--- <LI><A HREF="bcs_paper/index.htm"><FONT COLOR=blue SIZE=1>Paper on Client-Server</A> --->
-<LI><A HREF="role_of_data_architect.htm"><FONT COLOR=blue SIZE=1>Role of a Data Architect</A>
+
+
+<li><a href="data_arch/need_for_data_arch.html"><font color=blue size=1>Need for a Data Architecture</a>
+<!--- <li><a href="bcs_paper/index.html"><font color=blue size=1>Paper on Client-Server</a> --->
+<li><a href="role_of_data_architect.html"><font color=blue size=1>Role of a Data Architect</a>
 </OL>
 
-<!--- <LI><A HREF="ask_a_question.htm"><FONT COLOR=blue SIZE=2>Ask Us a Question</A> --->
-<!--- <LI><A HREF="books_of_the_week.htm"><FONT COLOR=blue SIZE=2>Books of the Week</A> -->
+<!--- <li><a href="ask_a_question.html"><font color=blue size=2>Ask Us a Question</a> --->
+<!--- <li><a href="books_of_the_week.html"><font color=blue size=2>Books of the Week</a> -->
 
 
-<LI><A HREF="http://www.w3.org/History/1989/proposal.html" TARGET=_NEW><FONT COLOR=blue SIZE=2>Berners-Lee's Original Internet Vision</A> 
+<li><a href="http://www.w3.org/History/1989/proposal.html" target="_new"><font color=blue size=2>Berners-Lee's Original Internet Vision</a>
 
-<LI><A HREF="pi_best_practice_display/index.asp"><FONT COLOR=blue SIZE=2>Best Practice (Database-driven)</A>
-<LI><A HREF="best_practice_road_map/index.htm"><FONT COLOR=blue SIZE=2>Best Practice Road Map</FONT></A> 
-<LI><A HREF="bp_road_map_what_with_stages_diagram.htm"><FONT COLOR=green>Best Practice Road Map with Diagram</FONT></A> 
-<LI><A HREF="framework_for_data_management_with_value_added_phases.htm"><FONT COLOR=green>Best Practice with Value-Added Phases</FONT></A> 
-<LI><A HREF="black_music/index.htm"><FONT COLOR=blue SIZE=2>Black Music</FONT></A> 
-<LI><A HREF="bmews/index.htm">BMEWS Business Monitoring and Early Warning</A> 
-<LI><A HREF="bmews/BMEWS_Anglo_Swiss_Demo.htm">BMEWS Anglo Swiss KPIs Demo</A> 
-<LI><A HREF="bmews4_salesforce/index.htm"><FONT COLOR=blue SIZE=2>BMEWS for Salesforce</A> 
-<LI><A HREF="book_on_data_modelling.htm">Book on Data Modelling</A> <IMG SRC="images/new.gif">
+<li><a href="pi_best_practice_display/index.asp"><font color=blue size=2>Best Practice (Database-driven)</a>
+<li><a href="best_practice_road_map/index.html"><font color=blue size=2>Best Practice Road Map</font></a>
+<li><a href="bp_road_map_what_with_stages_diagram.html"><font color=green>Best Practice Road Map with Diagram</font></a>
+<li><a href="framework_for_data_management_with_value_added_phases.html"><font color=green>Best Practice with Value-Added Phases</font></a>
+<li><a href="black_music/index.html"><font color=blue size=2>Black Music</font></a>
+<li><a href="bmews/index.html">BMEWS Business Monitoring and Early Warning</a>
+<li><a href="bmews/BMEWS_Anglo_Swiss_Demo.html">BMEWS Anglo Swiss KPIs Demo</a>
+<li><a href="bmews4_salesforce/index.html"><font color=blue size=2>BMEWS for Salesforce</a>
+<li><a href="book_on_data_modelling.html">Book on Data Modelling</a> <img src="/images/new.gif">
 
 <!---
-<LI><A HREF="http://www.databaseanswers.org/pi_best_practice_display/manual.asp?manual_id=BOOK" TARGET=_NEW><FONT COLOR=blue SIZE=2>Book on Real World Data Modelling</A> 
-<LI><A HREF="business_rules/index.htm"><FONT COLOR=blue SIZE=2>BMEWS</A>  
+<li><a href="http://www.databaseanswers.org/pi_best_practice_display/manual.asp?manual_id=BOOK" target="_new"><font color=blue size=2>Book on Real World Data Modelling</a>
+<li><a href="business_rules/index.html"><font color=blue size=2>BMEWS</a>
 --->
-<LI><A HREF="business_intelligence.htm"><FONT COLOR=blue SIZE=2>Business Intelligence</A> 
-<LI><A HREF="careers.htm"><FONT COLOR=blue SIZE=2><B>Careers ...</B></A>
+<li><a href="business_intelligence.html"><font color=blue size=2>Business Intelligence</a>
+<li><a href="careers.html"><font color=blue size=2><b>Careers ...</b></a>
 
 <OL>
-<LI><A HREF="careers.htm"><FONT COLOR=blue SIZE=1>Careers with Database Skills</A>
-<LI><A HREF="certification.htm"><FONT COLOR=blue SIZE=1>Certification</A>
-<LI><A HREF="data_warehouse_architect.htm"><FONT COLOR=blue SIZE=1>Data Warehouse Architect</A> 
-<LI><A HREF="snr_data_modeller.htm">Data Modeller</A> <IMG SRC="images/new.gif">
-<LI><A HREF="a_day_in_the_life.htm"><FONT COLOR=blue SIZE=1>Day in the Life of a DBA</A>
-<LI><A HREF="dba_as_a_career.htm"><FONT COLOR=blue SIZE=1>DBA as a Career</A>
-<LI><A HREF="dba_interview_questions.htm"><FONT COLOR=blue SIZE=1>DBA Interview Questions</A>
-<LI><A HREF="http://www.humanresourcesdegree.com/" TARGET=_NEW>HR Degree Colleges</A> 
-<LI><A HREF="http://www.ITJobsWatch.co.uk" TARGET=_NEW><FONT COLOR=blue SIZE=1>IT Jobs Watch (UK)</A> <FONT SIZE=1><B>(Recommended)</B></FONT> 
-<LI><A HREF="data_arch_jobs.htm"><FONT COLOR=blue SIZE=1>Jobs as Data Architect</A>
-<LI><A HREF="jobs_check.htm"><FONT COLOR=blue SIZE=1>Jobs Check</A>
-<LI><A HREF="http://www.dice.com" TARGET=_NEW><FONT COLOR=blue SIZE=1>Jobs in IT - Dice</A>
-<LI><A HREF="http://www.jobstats.co.uk" TARGET=_NEW><FONT COLOR=blue SIZE=1>Jobs Stats (UK) - picking up !!!</A>
-<LI><A HREF="http://www.justengineers.net" TARGET=_NEW><FONT COLOR=blue SIZE=1>Just Engineers (UK)</A>
-<LI><A HREF="ora_careers.htm"><FONT COLOR=blue SIZE=1>Oracle Careers</A>
-<LI><A HREF="personal_qualities_for_success.htm"><FONT COLOR=red>Personal Qualities for Success</FONT></A> 
-<LI><A HREF="careers_future.htm"><FONT COLOR=blue SIZE=1>Planning your Future Career</A>
-<LI><A HREF="skills_in_demand.htm"><FONT COLOR=blue SIZE=1>Skills in Demand</A>
-<LI><A HREF="tutorials_3rd_party.htm"><FONT COLOR=blue SIZE=1>Tutorials from 3rd.Parties</A>
-<LI><A HREF="what_is_a_dba.htm"><FONT COLOR=red SIZE=1>What is a DBA ?</FONT></A>
+<li><a href="careers.html"><font color=blue size=1>Careers with Database Skills</a>
+<li><a href="certification.html"><font color=blue size=1>Certification</a>
+<li><a href="data_warehouse_architect.html"><font color=blue size=1>Data Warehouse Architect</a>
+<li><a href="snr_data_modeller.html">Data Modeller</a> <img src="/images/new.gif">
+<li><a href="a_day_in_the_life.html"><font color=blue size=1>Day in the Life of a DBA</a>
+<li><a href="dba_as_a_career.html"><font color=blue size=1>DBA as a Career</a>
+<li><a href="dba_interview_questions.html"><font color=blue size=1>DBA Interview Questions</a>
+<li><a href="http://www.humanresourcesdegree.com/" target="_new">HR Degree Colleges</a>
+<li><a href="http://www.ITJobsWatch.co.uk" target="_new"><font color=blue size=1>IT Jobs Watch (UK)</a> <font size=1><b>(Recommended)</b></font>
+<li><a href="data_arch_jobs.html"><font color=blue size=1>Jobs as Data Architect</a>
+<li><a href="jobs_check.html"><font color=blue size=1>Jobs Check</a>
+<li><a href="http://www.dice.com" target="_new"><font color=blue size=1>Jobs in IT - Dice</a>
+<li><a href="http://www.jobstats.co.uk" target="_new"><font color=blue size=1>Jobs Stats (UK) - picking up !!!</a>
+<li><a href="http://www.justengineers.net" target="_new"><font color=blue size=1>Just Engineers (UK)</a>
+<li><a href="ora_careers.html"><font color=blue size=1>Oracle Careers</a>
+<li><a href="personal_qualities_for_success.html"><font color=red>Personal Qualities for Success</font></a>
+<li><a href="careers_future.html"><font color=blue size=1>Planning your Future Career</a>
+<li><a href="skills_in_demand.html"><font color=blue size=1>Skills in Demand</a>
+<li><a href="tutorials_3rd_party.html"><font color=blue size=1>Tutorials from 3rd.Parties</a>
+<li><a href="what_is_a_dba.html"><font color=red size=1>What is a DBA ?</font></a>
 </OL>
 
-<LI><A HREF="certification.htm"><FONT COLOR=blue SIZE=2>Certification</A> 
+<li><a href="certification.html"><font color=blue size=2>Certification</a>
 
-<LI><A HREeeeF="cloud_computing.htm"><FONT COLOR=blue SIZE=2><B>Cloud Computing ...</B></A>
+<li><a HREeeeF="cloud_computing.html"><font color=blue size=2><b>Cloud Computing ...</b></a>
 <OL>
-<LI><A HREF="http://www.dashboardinsight.com/dashboards/product-demos/we-are-cloud-bime-dashboard.aspx" TARGET=_NEW>BI in the Clouds</A>
-<LI><A HREF="http://www.ibm.com/ibm/cloud/" TARGET=_NEW><FONT COLOR=blue SIZE=1>IBM</A>
-<LI><A HREF="http://www.microsoft.com/windowsazure/" TARGET=_NEW><FONT COLOR=blue SIZE=1>Microsoft Azure Platform</A>
-<LI><A HREF="http://www.oracle.com/technology/tech/cloud/index.html" TARGET=_NEW><FONT COLOR=blue SIZE=1>Oracle</A>
-<LI><A HREF="http://www.salesforce.com" TARGET=_NEW><FONT COLOR=blue SIZE=1>Salesforce</A>
-<LI><A HREF="http://www.quest.com/toad-for-cloud-databases/" TARGET=_NEW><FONT COLOR=blue SIZE=1>Toad</A> 
-<LI><A HREF="http://www.quest.com/survive-and-thrive/" TARGET=_NEW>Toad "Survive-and-Thrive"</A>
+<li><a href="http://www.dashboardinsight.com/dashboards/product-demos/we-are-cloud-bime-dashboard.aspx" target="_new">BI in the Clouds</a>
+<li><a href="http://www.ibm.com/ibm/cloud/" target="_new"><font color=blue size=1>IBM</a>
+<li><a href="http://www.microsoft.com/windowsazure/" target="_new"><font color=blue size=1>Microsoft Azure Platform</a>
+<li><a href="http://www.oracle.com/technology/tech/cloud/index.html" target="_new"><font color=blue size=1>Oracle</a>
+<li><a href="http://www.salesforce.com" target="_new"><font color=blue size=1>Salesforce</a>
+<li><a href="http://www.quest.com/toad-for-cloud-databases/" target="_new"><font color=blue size=1>Toad</a>
+<li><a href="http://www.quest.com/survive-and-thrive/" target="_new">Toad "Survive-and-Thrive"</a>
 </OL>
 
-<LI><A HREF="http://www.databaseanswers.org/rosinski/index.htm"><FONT COLOR=blue SIZE=2>Coaching Across Cultures</FONT></A> 
-<LI><A HREF="codds_page.htm"><FONT COLOR=blue SIZE=2>Codd's Page</FONT></A>
-<!--- <LI><A HREF="coldfusion.htm"><FONT COLOR=blue SIZE=2>Cold Fusion</FONT></A> --->
+<li><a href="http://www.databaseanswers.org/rosinski/index.html"><font color=blue size=2>Coaching Across Cultures</font></a>
+<li><a href="codds_page.html"><font color=blue size=2>Codd's Page</font></a>
+<!--- <li><a href="coldfusion.html"><font color=blue size=2>Cold Fusion</font></a> --->
 
-<LI><A HREF="pi_communities/boards.asp"><FONT COLOR=blue SIZE=2>Communities</A> 
-<LI><A HREF="compliance.htm"><FONT COLOR=blue SIZE=2>Compliance</A> 
-<LI><A HREF="content_management_systems.htm">Content Mgt Systems (CMS)</B></A>
-<LI><A HREF="crm_page.htm"><B><FONT COLOR=blue SIZE=2>CRM Page</FONT></B></A>
-<LI><A HREeeeF="http://www.the-cdi-institute.com/" HREF="customer_data_integration.htm"><FONT COLOR=blue SIZE=2>Customer Data Integration</FONT></A> 
+<li><a href="pi_communities/boards.asp"><font color=blue size=2>Communities</a>
+<li><a href="compliance.html"><font color=blue size=2>Compliance</a>
+<li><a href="content_management_systems.html">Content Mgt Systems (CMS)</b></a>
+<li><a href="crm_page.html"><b><font color=blue size=2>CRM Page</font></b></a>
+<li><a HREeeeF="http://www.the-cdi-institute.com/" href="customer_data_integration.html"><font color=blue size=2>Customer Data Integration</font></a>
 
-<LI><A HREF="customer_data_strategy.htm"><FONT COLOR=blue SIZE=2>Customer Data Strategy</FONT></A>
-<LI><A HREF="db_design.htm"><FONT COLOR=blue SIZE=2><B>Database Design ...</B></A>
+<li><a href="customer_data_strategy.html"><font color=blue size=2>Customer Data Strategy</font></a>
+<li><a href="db_design.html"><font color=blue size=2><b>Database Design ...</b></a>
 <OL>
-<LI><A HREF="approach2db_design.htm"><FONT COLOR=blue SIZE=1>Approach to Database Design</A>
-<!--- <LI><A HREF="collaboration/index.htm"><FONT COLOR=blue SIZE=1>Collaboration Design Research</A> --->
+<li><a href="approach2db_design.html"><font color=blue size=1>Approach to Database Design</a>
+<!--- <li><a href="collaboration/index.html"><font color=blue size=1>Collaboration Design Research</a> --->
 
 
-<LI><A HREF="Geoff_Duniams_Paper_on_Database_Design_for_Performance.doc" TARGET=_NEW>DB Design for Performance (<B>Geoff Duniam</B>'s Paper)</A>
-<LI><A HREF="tutorials/db_design/extreme_database_design.htm"><FONT COLOR=blue SIZE=1>Extreme Database Design</A> 
+<li><a href="Geoff_Duniams_Paper_on_Database_Design_for_Performance.doc" target="_new">DB Design for Performance (<b>Geoff Duniam</b>'s Paper)</a>
+<li><a href="tutorials/db_design/extreme_database_design.html"><font color=blue size=1>Extreme Database Design</a>
 
-<LI><A HREF="data_models/car_dealership/method.htm">General Approach (to Car Dealerships)
+<li><a href="data_models/car_dealership/method.html">General Approach (to Car Dealerships)
 
-<LI><A HREF="object_integration.htm"><FONT COLOR=blue SIZE=1>Integrating Objects and Tables</A>
-<LI><A HREF="get_the_facts.htm"><FONT COLOR=blue SIZE=1>"Just Get the Facts."</A>
-<!--- <LI><A HREF="tutorials_database_driven/index.htm"><FONT COLOR=blue SIZE=1>Database-Driven Tutorial</A> --->
+<li><a href="object_integration.html"><font color=blue size=1>Integrating Objects and Tables</a>
+<li><a href="get_the_facts.html"><font color=blue size=1>"Just Get the Facts."</a>
+<!--- <li><a href="tutorials_database_driven/index.html"><font color=blue size=1>Database-Driven Tutorial</a> --->
 
-<LI><A HREF="seq_diagram.htm"><FONT COLOR=blue SIZE=1>Sequence Diagram</A>
+<li><a href="seq_diagram.html"><font color=blue size=1>Sequence Diagram</a>
 </OL>
 
-<!--- <LI><A HREF="data_cleansing.htm"><FONT COLOR=blue SIZE=2>Data Cleansing</A> --->
+<!--- <li><a href="data_cleansing.html"><font color=blue size=2>Data Cleansing</a> --->
 
-<LI><A HREF="databases_in_demand.htm"><FONT COLOR=blue SIZE=2>Databases in Demand</A> 
-<LI><A HREF="databases4_life.htm">Databases for Life</A>
+<li><a href="databases_in_demand.html"><font color=blue size=2>Databases in Demand</a>
+<li><a href="databases4_life.html">Databases for Life</a>
 
-<LI><A HREF="what_is_a_data_architect.htm"><FONT COLOR=blue SIZE=2>Data Architect (What is one ?)</A> 
-<IMG SRC="images/new.gif">
+<li><a href="what_is_a_data_architect.html"><font color=blue size=2>Data Architect (What is one ?)</a>
+<img src="/images/new.gif">
 
 
-<LI><A HREF="data_dictionaries.htm"><FONT COLOR=blue SIZE=2>Data Dictionaries</A> 
-<LI><A HREF="data_federation_and_virtualisation.htm">
-Data Federation and Virtualisation</A> 
-<!--- <LI><A HREF="datafeed_from_it_toolbox.htm"><FONT COLOR=blue SIZE=2>Datafeed from IT Toolbox</A> --->
+<li><a href="data_dictionaries.html"><font color=blue size=2>Data Dictionaries</a>
+<li><a href="data_federation_and_virtualisation.html">
+Data Federation and Virtualisation</a>
+<!--- <li><a href="datafeed_from_it_toolbox.html"><font color=blue size=2>Datafeed from IT Toolbox</a> --->
 
-<LI><A HREF="data_governance.htm">Data Governance</A>
+<li><a href="data_governance.html">Data Governance</a>
 
-<LI><FONT COLOR=blue SIZE=2>
-<A HREF="enterprise_data_integration.htm">Data Integration ...</A>
-<OL><FONT COLOR=blue SIZE=1>
-<LI><A HREF="data_integration_architecture.htm"><FONT COLOR=blue SIZE=1>Data Integration Architecture</A> 
-<LI><A HREF="data_integration_case_study.htm"><FONT COLOR=blue SIZE=1>Data Integration Case Study</A>  
+<li><font color=blue size=2>
+<a href="enterprise_data_integration.html">Data Integration ...</a>
+<OL><font color=blue size=1>
+<li><a href="data_integration_architecture.html"><font color=blue size=1>Data Integration Architecture</a>
+<li><a href="data_integration_case_study.html"><font color=blue size=1>Data Integration Case Study</a>
 
-<!--- <LI><A HREF="data_integrity.htm"><FONT COLOR=blue SIZE=1>Data Integration in e-Business</A> --->
+<!--- <li><a href="data_integrity.html"><font color=blue size=1>Data Integration in e-Business</a> --->
 
-<LI><A HREF="data_integration_overview.htm"><FONT COLOR=blue SIZE=1>Data Integration Overview</A>
-<LI><A HREF="data_integration_vendors.htm"><FONT COLOR=blue SIZE=1>Data Integration Vendors</A> 
-<LI><A HREF="deduping.htm"><FONT COLOR=blue SIZE=1>DeDuping</FONT></A> 
-<LI><A HREF="open_source_data_integration.htm"><FONT COLOR=blue SIZE=1>Open Source Data Integration</A> 
+<li><a href="data_integration_overview.html"><font color=blue size=1>Data Integration Overview</a>
+<li><a href="data_integration_vendors.html"><font color=blue size=1>Data Integration Vendors</a>
+<li><a href="deduping.html"><font color=blue size=1>DeDuping</font></a>
+<li><a href="open_source_data_integration.html"><font color=blue size=1>Open Source Data Integration</a>
 </OL>
 
-<LI><FONT COLOR=blue SIZE=2>
-<A HREF="data_models/banking_data_warehouses/federated_data_marts.htm">Data Marts (Banking)</A>
-<LI><A HREF="data_models/retail_customers/index.htm">Data Marts (Retail)
-<LI><A HREF="data_migration.htm"><B>Data Migration ...</B></A>
-<OL><FONT COLOR=blue SIZE=1>
-<LI><A HREF="data_migration/general_migration_approach.htm">Approach (General)</A>
-<LI><A HREF="data_migration/simple_migration_approach.htm">Approach (Simplified)</A>
-<LI><A HREF="data_migration/approach_user_oriented.htm">Approach (User-Oriented)</A>
-<LI><A HREF="data_cleansing.htm"><FONT COLOR=blue SIZE=1><B>Data Cleansing</B></FONT></A> 
-<LI><A HREF="data_conversion_tools.htm"><FONT COLOR=blue SIZE=1>Data Conversion Tools</A> 
-<LI><A HREF="data_factory.htm"><FONT COLOR=blue SIZE=1>Data Factory</A>
-<LI><A HREF="mapping_specs4_law_enforcement.htm"><FONT COLOR=green>Data Mapping Specs for Law Enforcement</FONT></A> 
-<LI><A HREF="mapping_tools.htm"><FONT COLOR=blue SIZE=1>Data Mapping Tools</A>
-<LI><A HREF="data_migration_vendors.htm"><FONT COLOR=blue SIZE=1>Data Migration Vendors</A>
-<LI><A HREF="data_quality_and_profiling_tools.htm"><FONT COLOR=blue SIZE=1>Data Quality and Profiling Tools</A> 
-<LI><A HREF="etl_products.htm"><FONT COLOR=blue SIZE=1><B>E</B>xtract, <B>T</B>ransform and <B>L</B>oad 
- <B>(ETL</B>) Products</FONT></A>
-<LI><A HREF="metadata_repositories.htm"><FONT COLOR=blue SIZE=1>MetaData Repositories</A>
-<LI><A HREF="reverse_engineering.htm"><FONT COLOR=blue SIZE=1>Reverse Engineering</A>
-<LI><A HREF="data_migration_vendors.htm"><FONT COLOR=blue SIZE=1>Data Migration Vendors</A>
+<li><font color=blue size=2>
+<a href="data_models/banking_data_warehouses/federated_data_marts.html">Data Marts (Banking)</a>
+<li><a href="data_models/retail_customers/index.html">Data Marts (Retail)
+<li><a href="data_migration.html"><b>Data Migration ...</b></a>
+<OL><font color=blue size=1>
+<li><a href="data_migration/general_migration_approach.html">Approach (General)</a>
+<li><a href="data_migration/simple_migration_approach.html">Approach (Simplified)</a>
+<li><a href="data_migration/approach_user_oriented.html">Approach (User-Oriented)</a>
+<li><a href="data_cleansing.html"><font color=blue size=1><b>Data Cleansing</b></font></a>
+<li><a href="data_conversion_tools.html"><font color=blue size=1>Data Conversion Tools</a>
+<li><a href="data_factory.html"><font color=blue size=1>Data Factory</a>
+<li><a href="mapping_specs4_law_enforcement.html"><font color=green>Data Mapping Specs for Law Enforcement</font></a>
+<li><a href="mapping_tools.html"><font color=blue size=1>Data Mapping Tools</a>
+<li><a href="data_migration_vendors.html"><font color=blue size=1>Data Migration Vendors</a>
+<li><a href="data_quality_and_profiling_tools.html"><font color=blue size=1>Data Quality and Profiling Tools</a>
+<li><a href="etl_products.html"><font color=blue size=1><b>E</b>xtract, <b>T</b>ransform and <b>L</b>oad
+ <b>(ETL</b>) Products</font></a>
+<li><a href="metadata_repositories.html"><font color=blue size=1>MetaData Repositories</a>
+<li><a href="reverse_engineering.html"><font color=blue size=1>Reverse Engineering</a>
+<li><a href="data_migration_vendors.html"><font color=blue size=1>Data Migration Vendors</a>
 </OL>
 
 <P>
 
-</TD>
+</td>
 
-<TD VALIGN=top>
-<FONT COLOR=blue SIZE=2>
+<td valign=top>
+<font color=blue size=2>
 
 <UL>
-<LI><A HREeeeF="data_modelling.htm"><FONT COLOR=blue SIZE=2><B>Data Modelling ...</B></A>
+<li><a HREeeeF="data_modelling.html"><font color=blue size=2><b>Data Modelling ...</b></a>
 
 <OL>
-<FONT SIZE=1>
-<LI><A HREF="data_models/index.htm"><FONT COLOR=red SIZE=1><B>Over 800 Free Databases</B></FONT></A>
-<LI><A HREF="data_models/index_in_arabic.htm" TARGET=_NEW><FONT SIZE=1>Over 800 Free Databases<FONT COLOR=red> <B>in Arabic</B></FONT></A>
-<LI><A HREF="data_models/index_in_chinese.htm" TARGET=_NEW><FONT SIZE=1>Over 800 Free Databases<FONT COLOR=red> <B>in Chinese</B></FONT></A>
-<LI><A HREF="data_models/index_in_french.htm" TARGET=_NEW><FONT SIZE=1>Over 800 Free Databases<FONT COLOR=red> <B>in French</B></FONT></A>
-<LI><A HREF="data_models/index_in_japanese.htm" TARGET=_NEW><FONT SIZE=1>Over 800 Free Databases<FONT COLOR=red> <B>in Japanese</B></FONT></A>
+<font size=1>
+<li><a href="data_models/index.html"><font color=red size=1><b>Over 800 Free Databases</b></font></a>
+<li><a href="data_models/index_in_arabic.html" target="_new"><font size=1>Over 800 Free Databases<font color=red> <b>in Arabic</b></font></a>
+<li><a href="data_models/index_in_chinese.html" target="_new"><font size=1>Over 800 Free Databases<font color=red> <b>in Chinese</b></font></a>
+<li><a href="data_models/index_in_french.html" target="_new"><font size=1>Over 800 Free Databases<font color=red> <b>in French</b></font></a>
+<li><a href="data_models/index_in_japanese.html" target="_new"><font size=1>Over 800 Free Databases<font color=red> <b>in Japanese</b></font></a>
 
-<LI><A HREF="data_models/index_in_spanish.htm" TARGET=_NEW><FONT SIZE=1>Over 800 Free Databases<FONT COLOR=red> <B>in Spanish</B></FONT></A>
-<LI><A HREF="data_models/index_in_vietnamese.htm" TARGET=_NEW><FONT SIZE=1>Over 800 Free Databases<FONT COLOR=red> <B>in Vietnamese</B></FONT></A>
+<li><a href="data_models/index_in_spanish.html" target="_new"><font size=1>Over 800 Free Databases<font color=red> <b>in Spanish</b></font></a>
+<li><a href="data_models/index_in_vietnamese.html" target="_new"><font size=1>Over 800 Free Databases<font color=red> <b>in Vietnamese</b></font></a>
 
 <!--- Over 800 Free Databases in Arabic --->
 
-<FONT SIZE=1>
-<LI><A HREF="books_from_amazon.htm"><FONT COLOR=blue SIZE=1>Data Modelling Books</A>
-<LI><A HREF="modelling_tools.htm"><FONT COLOR=blue SIZE=1><B>Data Modelling Tools</B></A>
-<LI><A HREF="data_quality_tools.htm"><FONT COLOR=blue SIZE=1>Data Quality Tools</A> 
+<font size=1>
+<li><a href="books_from_amazon.html"><font color=blue size=1>Data Modelling Books</a>
+<li><a href="modelling_tools.html"><font color=blue size=1><b>Data Modelling Tools</b></a>
+<li><a href="data_quality_tools.html"><font color=blue size=1>Data Quality Tools</a>
 
 
 <!---
-<LI><A HREF="http://wb.itboards.com/default.asp?action=10&shp=49&fid=49" TARGET=_NEW><FONT COLOR=blue SIZE=1>Data Modelling Tools Forum</A>
-<LI><A HREF="heuristics4modelling/index.htm"><FONT COLOR=blue SIZE=1><I>Heuristics for Data Modelling</I></A> 
+<li><a href="http://wb.itboards.com/default.asp?action=10&shp=49&fid=49" target="_new"><font color=blue size=1>Data Modelling Tools Forum</a>
+<li><a href="heuristics4modelling/index.html"><font color=blue size=1><I>Heuristics for Data Modelling</I></a>
 --->
 
-<LI><A HREF="data_models/index.htm">Library of Database Designs</A>
-<!--- <LI><A HREF="http://ourworld.compuserve.com/homepages/Ken_North/IM_Revwr.htm" TARGET=_NEW>A FACTS-based approach.</A> ---->
+<li><a href="data_models/index.html">Library of Database Designs</a>
+<!--- <li><a href="http://ourworld.compuserve.com/homepages/Ken_North/IM_Revwr.html" target="_new">A FACTS-based approach.</a> ---->
 
-<LI><A HREF="modelling_web_sites.htm"><FONT COLOR=blue SIZE=1>Other Modelling WebSites</A> 
+<li><a href="modelling_web_sites.html"><font color=blue size=1>Other Modelling WebSites</a>
 </OL>
 <!--- </UL> --->
 
-<LI><A HREF="data_platforms.htm"><FONT COLOR=blue SIZE=2>Data Platforms</A>
-<LI><A HREF="data_warehouse/index.htm"><FONT COLOR=blue SIZE=2>Data Warehousing</A>
-<LI><A HREF="db_audit.htm"><FONT COLOR=blue SIZE=2>Database Audit</A>
-<!--- <LI><A HREF="globalization.htm"><FONT COLOR=blue SIZE=2>Databases and Globalization</A> --->
-<LI><A HREF="a_day_in_the_life.htm">Day in the Life of the DBA</A> 
+<li><a href="data_platforms.html"><font color=blue size=2>Data Platforms</a>
+<li><a href="data_warehouse/index.html"><font color=blue size=2>Data Warehousing</a>
+<li><a href="db_audit.html"><font color=blue size=2>Database Audit</a>
+<!--- <li><a href="globalization.html"><font color=blue size=2>Databases and Globalization</a> --->
+<li><a href="a_day_in_the_life.html">Day in the Life of the DBA</a>
 
-<!--- <LI><A HREF="deduping.htm"><FONT COLOR=blue SIZE=2>DeDuping</FONT></A> --->
+<!--- <li><a href="deduping.html"><font color=blue size=2>DeDuping</font></a> --->
 
-<LI><A HREF="http://patterns.endeca.com/content/library/en/home.html" TARGET=_NEW>Design Patterns - User Interface</A> 
+<li><a href="http://patterns.endeca.com/content/library/en/home.html" target="_new">Design Patterns - User Interface</a>
 
-<LI><A HREF="designing_olap_cubes.htm"><FONT COLOR=blue SIZE=2>Designing OLAP Cubes</FONT></A>
+<li><a href="designing_olap_cubes.html"><font color=blue size=2>Designing OLAP Cubes</font></a>
 
-<LI><B>Development ...</B>
+<li><b>Development ...</b>
 <OL>
-<FONT COLOR=blue SIZE=1>
-<LI><A HREF="http://www.alphasoftware.com/" TARGET=_NEW>Alpha 5</A>
-<LI><A HREF="http://developer.apple.com/macosx/coredata.html" TARGET=_NEW>Apple's Core Data</A> (based on MVC)
-<LI><A HREF="oussama/generalised_application_framework.htm">Generalized Application Framework (GAF)</A> 
-<LI><A HREF="business_rules/index.htm"><FONT COLOR=blue SIZE=1>Business Rules</A>
-<LI><A HREF="http://www.softvelocity.com/" TARGET=_NEW>Clarion Program Generator</A> 
-<LI><A HREF="http://codeigniter.com/" TARGET=_NEW>CodeIgnitor</A> Open Source Web Application Framework 
-<LI><A HREF="coldfusion.htm">Cold Fusion</A> 
-<LI><A HREF="db_backed_web_sites.htm"><FONT SIZE=1>Database-backed WebSites</A>
-<LI><A HREF="http://www.datasprings.com/" TARGET=_NEW>DataSprings</A>  
-<LI><A HREF="desperado/index.htm"><FONT COLOR=blue SIZE=1>Desperado and PL/SQL</FONT></A>
-<LI><A HREF="development_productivity.htm">Development Productivity</A> 
-<LI><A HREF="dev_tools.htm"><FONT COLOR=blue SIZE=1>Development Tools</FONT></A>
-<LI><A HREF="http://www.dotnetnuke.com/" TARGET=_NEW>DotNetNuke</A>  
-<LI><A HREF="http://www.merbivore.com/" TARGET=_NEW>Merb</A> (another MVC Framework) 
-<LI><A HREF="microsoft_approach_to_development.htm">Microsoft Approach</A> 
+<font color=blue size=1>
+<li><a href="http://www.alphasoftware.com/" target="_new">Alpha 5</a>
+<li><a href="http://developer.apple.com/macosx/coredata.html" target="_new">Apple's Core Data</a> (based on MVC)
+<li><a href="oussama/generalised_application_framework.html">Generalized Application Framework (GAF)</a>
+<li><a href="business_rules/index.html"><font color=blue size=1>Business Rules</a>
+<li><a href="http://www.softvelocity.com/" target="_new">Clarion Program Generator</a>
+<li><a href="http://codeigniter.com/" target="_new">CodeIgnitor</a> Open Source Web Application Framework
+<li><a href="coldfusion.html">Cold Fusion</a>
+<li><a href="db_backed_web_sites.html"><font size=1>Database-backed WebSites</a>
+<li><a href="http://www.datasprings.com/" target="_new">DataSprings</a>
+<li><a href="desperado/index.html"><font color=blue size=1>Desperado and PL/SQL</font></a>
+<li><a href="development_productivity.html">Development Productivity</a>
+<li><a href="dev_tools.html"><font color=blue size=1>Development Tools</font></a>
+<li><a href="http://www.dotnetnuke.com/" target="_new">DotNetNuke</a>
+<li><a href="http://www.merbivore.com/" target="_new">Merb</a> (another MVC Framework)
+<li><a href="microsoft_approach_to_development.html">Microsoft Approach</a>
 
-<LI><A HREF="http://datamapper.org/" Target=_new><B>Object-Relational DataMapper</B></A> 
-<LI><A HREF="http://www.appfactor.com/" TARGET=_NEW>On-demand - AppFactor</A> 
-<LI><A HREF="https://www.appirio.com/" TARGET=_NEW><FONT COLOR=blue SIZE=1>On-demand - Appirio</FONT></A> 
+<li><a href="http://datamapper.org/" Target=_new><b>Object-Relational DataMapper</b></a>
+<li><a href="http://www.appfactor.com/" target="_new">On-demand - AppFactor</a>
+<li><a href="https://www.appirio.com/" target="_new"><font color=blue size=1>On-demand - Appirio</font></a>
 
-<LI><A HREF="https://www.salesforce.com/developer/" TARGET=_NEW><FONT COLOR=blue SIZE=1>On-demand - Salesforce.com</FONT></A> 
-<LI><A HREF="http://www.theikos.com/" TARGET=_NEW><FONT COLOR=blue SIZE=1>On-demand - Theikos</FONT></A> 
+<li><a href="https://www.salesforce.com/developer/" target="_new"><font color=blue size=1>On-demand - Salesforce.com</font></a>
+<li><a href="http://www.theikos.com/" target="_new"><font color=blue size=1>On-demand - Theikos</font></a>
 
-<LI><A HREF="ora_htmldb_application_express.htm">Oracle's Application Express(HTMLDB)</A> 
-<LI><A HREF="mysql_php.htm"><FONT COLOR=blue SIZE=1>PHP & MySQL</A> 
-<LI><A HREF="iron_speed_problems/index.htm">Problems with <B>Iron Speed</B></A> 
-<LI><A HREF="ruby_on_rails.htm"><FONT COLOR=blue SIZE=1>Ruby on Rails</FONT></A> (an MVC Framework)
+<li><a href="ora_htmldb_application_express.html">Oracle's Application Express(HTMLDB)</a>
+<li><a href="mysql_php.html"><font color=blue size=1>PHP & MySQL</a>
+<li><a href="iron_speed_problems/index.html">Problems with <b>Iron Speed</b></a>
+<li><a href="ruby_on_rails.html"><font color=blue size=1>Ruby on Rails</font></a> (an MVC Framework)
 
-<FONT COLOR=RED SIZE=1><LI><B>Toolkits for Mashups :-</B></font>
+<font color=RED size=1><li><b>Toolkits for Mashups :-</b></font>
 <UL>
 
-<FONT SIZE=1>
-<li><A HREF="http://labs.adobe.com/technologies/air/" TARGET=_NEW>Adobe's Apollo (Integrated Runtime) </A>
-<LI><A HREF="http://devnet.map24.com/" TARGET=_NEW><B>Mapping</B> with Map24</A>
-<LI><A HREF="http://code.google.com/android/what-is-android.html" TRAGET=_NEW>Google <B>Mobile</B> Android</A>
-<LI><A HREF="http://www.google.com/webmasters/gadgets/" TARGET=_NEW>Google Gadgets</A> 
-<LI><A HREF="http://code.google.com/apis/gears/index.html" TARGET=_NEW>Google Gears</A> 
-<LI><A HREF="http://www.kirona.com" TARGET=_NEW>Kirona's <B>Mobile</B> Toolkit</A>
-<LI><A HREF="google_maps.htm" TARGET=_NEW><FONT COLOR=blue SIZE=1>Google <B>Maps</B></FONT></A> 
-<LI><A HREF="http://code.google.com/gme/" TARGET=_NEW><FONT COLOR=blue SIZE=1>Google Mashup Editor</FONT></A> 
-<LI><A HREF="http://code.google.com/webtoolkit/" TARGET=_NEW>Google Web Toolkit</A>  
-<LI><A HREF="http://www.popfly.ms/" TARGET=_NEW><FONT COLOR=blue SIZE=1>Microsoft Popfly</A>
-<LI><A HREF="http://www.microsoft.com/silverlight/" TARGET=_NEW><FONT COLOR=blue SIZE=1>Microsoft's Silverlight</A></FONT>
-<LI><A HREF="http://www.serena.com/" TARGET=_NEW>Serena <B>Enterprise Mashup Editor</B></a>
-<LI><A HREF="http://en.wikipedia.org/wiki/Enterprise_mashups" TARGET=_NEW>Wikipedia on Mashups</A>
-<LI><A HREF="http://pipes.yahoo.com/pipes/" TARGET=_NEW>Yahoo Pipes</A> 
-<LI><A HREF="http://en.wikipedia.org/wiki/Yahoo!_Pipes" TARGET=_NEW>Yahoo Pipes in Wikipedia</A> 
-</UL> 
-
-<LI><A HREF="https://www.salesforce.com/developer/" TARGET=_NEW><FONT COLOR=blue SIZE=1>Salesforce.com</FONT></A> 
-
-<LI><A HREF="tools_to_build_a_generalised_application_framework.htm">Tools to build an IDE/GAF</A>
-
-<LI><A HREF="user_scenarios.htm"><FONT COLOR=blue SIZE=1>User Scenarios</A> 
-</FONT>
-
-<FONT COLOR=red SIZE=1><LI><B>Widgets :-</B></font>
-<UL>
-
-<FONT SIZE=1>
-<LI><A HREF="http://code.google.com/apis/opensocial/" TARGET=_NEW>Google's OpenSocial</A>
-<LI><A HREF="http://www.zazzle.com/haikoozoo" TARGET=_NEW>Haikoo Zoo</A>
-<LI><A HREF="http://www.ilike.com/" TARGET=_NEW>iLike</A> (Share things you like). 
-<LI><A HREF="http://www.profootballpicks.com/" TARGET=_NEW>Pro  Football Picks</A>
-<LI><A HREF="http://www.renkoo.com/" TARGET=_NEW>Renkoo</A>
-<LI><A HREF="http://www.rockyou.com/" TARGET=_NEW>RockYou</A>
-<LI><A HREF="http://www.slide.com/" TARGET=_NEW>Slide</A> (Create Slideshows to share)
-<LI><A HREF="http://www.soup.io/" TARGET=_NEW><B>Soup</B></A> 
-<LI><A HREF="http://www.mspremade.com/topfriends.html" TARGET=_NEW>TopFriends</A>
-</FONT>
+<font size=1>
+<li><a href="http://labs.adobe.com/technologies/air/" target="_new">Adobe's Apollo (Integrated Runtime) </a>
+<li><a href="http://devnet.map24.com/" target="_new"><b>Mapping</b> with Map24</a>
+<li><a href="http://code.google.com/android/what-is-android.html" TRAGET=_NEW>Google <b>Mobile</b> Android</a>
+<li><a href="http://www.google.com/webmasters/gadgets/" target="_new">Google Gadgets</a>
+<li><a href="http://code.google.com/apis/gears/index.html" target="_new">Google Gears</a>
+<li><a href="http://www.kirona.com" target="_new">Kirona's <b>Mobile</b> Toolkit</a>
+<li><a href="google_maps.html" target="_new"><font color=blue size=1>Google <b>Maps</b></font></a>
+<li><a href="http://code.google.com/gme/" target="_new"><font color=blue size=1>Google Mashup Editor</font></a>
+<li><a href="http://code.google.com/webtoolkit/" target="_new">Google Web Toolkit</a>
+<li><a href="http://www.popfly.ms/" target="_new"><font color=blue size=1>Microsoft Popfly</a>
+<li><a href="http://www.microsoft.com/silverlight/" target="_new"><font color=blue size=1>Microsoft's Silverlight</a></font>
+<li><a href="http://www.serena.com/" target="_new">Serena <b>Enterprise Mashup Editor</b></a>
+<li><a href="http://en.wikipedia.org/wiki/Enterprise_mashups" target="_new">Wikipedia on Mashups</a>
+<li><a href="http://pipes.yahoo.com/pipes/" target="_new">Yahoo Pipes</a>
+<li><a href="http://en.wikipedia.org/wiki/Yahoo!_Pipes" target="_new">Yahoo Pipes in Wikipedia</a>
 </UL>
-</FONT>
+
+<li><a href="https://www.salesforce.com/developer/" target="_new"><font color=blue size=1>Salesforce.com</font></a>
+
+<li><a href="tools_to_build_a_generalised_application_framework.html">Tools to build an IDE/GAF</a>
+
+<li><a href="user_scenarios.html"><font color=blue size=1>User Scenarios</a>
+</font>
+
+<font color=red size=1><li><b>Widgets :-</b></font>
+<UL>
+
+<font size=1>
+<li><a href="http://code.google.com/apis/opensocial/" target="_new">Google's OpenSocial</a>
+<li><a href="http://www.zazzle.com/haikoozoo" target="_new">Haikoo Zoo</a>
+<li><a href="http://www.ilike.com/" target="_new">iLike</a> (Share things you like).
+<li><a href="http://www.profootballpicks.com/" target="_new">Pro  Football Picks</a>
+<li><a href="http://www.renkoo.com/" target="_new">Renkoo</a>
+<li><a href="http://www.rockyou.com/" target="_new">RockYou</a>
+<li><a href="http://www.slide.com/" target="_new">Slide</a> (Create Slideshows to share)
+<li><a href="http://www.soup.io/" target="_new"><b>Soup</b></a>
+<li><a href="http://www.mspremade.com/topfriends.html" target="_new">TopFriends</a>
+</font>
+</UL>
+</font>
 </OL>
 
-<LI><A HREF="digital_arts_award.htm"><FONT SIZE=2>Digital Arts Award</A>  
-<LI><A HREF="document_and_content_mgt_systems.htm">Document Mgt Systems</B></A> 
-<LI><A HREF="downloads.htm">Downloads Page</A> 
-<LI><A HREF="eb_xml.htm"><FONT COLOR=blue SIZE=2>E-Business XML.</A>
-<LI><A HREF="vendors_b2b_ecommerce.htm"><FONT COLOR=blue SIZE=2>E-Commerce Vendors</A>
-<LI><A HREF="e_government_uk.htm"><FONT COLOR=blue SIZE=2>E-Government (UK)</A>
+<li><a href="digital_arts_award.html"><font size=2>Digital Arts Award</a>
+<li><a href="document_and_content_mgt_systems.html">Document Mgt Systems</b></a>
+<li><a href="downloads.html">Downloads Page</a>
+<li><a href="eb_xml.html"><font color=blue size=2>E-Business XML.</a>
+<li><a href="vendors_b2b_ecommerce.html"><font color=blue size=2>E-Commerce Vendors</a>
+<li><a href="e_government_uk.html"><font color=blue size=2>E-Government (UK)</a>
 </OL>
 
-<LI><A HREF="etl_products.htm"><B>E</B>xtract, <B>T</B>ransform and <B>L</B>oad <B>(ETL</B>)</A> 
+<li><a href="etl_products.html"><b>E</b>xtract, <b>T</b>ransform and <b>L</b>oad <b>(ETL</b>)</a>
 
-<!--- <LI><A HREF="enterprise_data_forum_paper/index.htm"><FONT COLOR=blue SIZE=2>Enterprise Data Forum Paper</A> --->
-<!--- <LI><A HREF="portals_intro.htm"><FONT COLOR=blue SIZE=2>Enterprise Information Portals</A> --->
-<!--- <LI><A HREF="events.htm"><FONT COLOR=blue SIZE=2>Events</A> --->
-<!--- <LI><A HREF="tutorials/db_design/extreme_database_design.htm"><FONT COLOR=blue SIZE=2>Extreme Database Design</A> --->
+<!--- <li><a href="enterprise_data_forum_paper/index.html"><font color=blue size=2>Enterprise Data Forum Paper</a> --->
+<!--- <li><a href="portals_intro.html"><font color=blue size=2>Enterprise Information Portals</a> --->
+<!--- <li><a href="events.html"><font color=blue size=2>Events</a> --->
+<!--- <li><a href="tutorials/db_design/extreme_database_design.html"><font color=blue size=2>Extreme Database Design</a> --->
 
-<!--- <LI><A HREF="feedback.htm"><FONT COLOR=blue SIZE=2>Feedback</A> --->
+<!--- <li><a href="feedback.html"><font color=blue size=2>Feedback</a> --->
 
-<FONT COLOR=blue SIZE=2>
-<LI><A HREF="faqs.htm"><B>FQAs (Frequently Asked Questions)</B></A>
+<font color=blue size=2>
+<li><a href="faqs.html"><b>FQAs (Frequently Asked Questions)</b></a>
 
-<LI><A HREF="first_timers.htm"><B>First Time Users</B></A>
+<li><a href="first_timers.html"><b>First Time Users</b></a>
 
-<LI>From Concept to Specs
-(<A HREF="from_concept_to_specs_generic.htm">Generic</A>,
- <A HREF="from_concept_to_specs_ibm.htm">IBM</A> and 
- <A HREF="from_concept_to_specs_microsoft.htm">Microsoft</A>)
+<li>From Concept to Specs
+(<a href="from_concept_to_specs_generic.html">Generic</a>,
+ <a href="from_concept_to_specs_ibm.html">IBM</a> and
+ <a href="from_concept_to_specs_microsoft.html">Microsoft</a>)
 
 
 
-<LI><A HREF="framework_for_data_management_with_value_added_phases.htm"><FONT COLOR=green>Framework with Value-Added Phases</FONT></A> 
+<li><a href="framework_for_data_management_with_value_added_phases.html"><font color=green>Framework with Value-Added Phases</font></a>
 
-<LI><A HREF="Future_of_Databases/index.htm"><FONT COLOR=red SIZE=2><B>Future of Databases</B></A></FONT>
-<OL><FONT COLOR=green SIZE=1>
-<LI><A HREF="BMEWS_Case_Study.doc">BMEWS Case Study (Word)</A> 
-<LI><A HREF="BMEWS_presentation_1.htm">BMEWS Presentation</A>
-<LI><A HREF="Future_of_Databases/building_blocks.htm">Building Blocks</A> 
-<LI><A HREF="Future_of_Databases/migration_to_the_future.htm">Migration to the Future</A> 
-<LI><A HREF="mydba_research_project.htm">myDBA research Project</A>
-<LI><A HREF="Future_of_Databases/proof_of_concept.htm"><FONT COLOR=green SIZE=1>Proof-of-Concept</A> 
-<LI><A HREF="Future_of_Databases/poc_bmews.htm">Proof-of-Concept for BMEWS</A> 
-<LI><A HREF="Future_of_Databases/poc_bmews_ibm.htm">Proof-of-Concept with IBM</A>
-<LI><A HREF="Future_of_Databases/poc_bmews_microsoft.htm">Proof-of-Concept with Microsoft</A> 
-<LI><A HREF="Future_of_Databases/poc_bmews_oracle.htm">Proof-of-Concept with Oracle</A> 
+<li><a href="Future_of_Databases/index.html"><font color=red size=2><b>Future of Databases</b></a></font>
+<OL><font color=green size=1>
+<li><a href="BMEWS_Case_Study.doc">BMEWS Case Study (Word)</a>
+<li><a href="BMEWS_presentation_1.html">BMEWS Presentation</a>
+<li><a href="Future_of_Databases/building_blocks.html">Building Blocks</a>
+<li><a href="Future_of_Databases/migration_to_the_future.html">Migration to the Future</a>
+<li><a href="mydba_research_project.html">myDBA research Project</a>
+<li><a href="Future_of_Databases/proof_of_concept.html"><font color=green size=1>Proof-of-Concept</a>
+<li><a href="Future_of_Databases/poc_bmews.html">Proof-of-Concept for BMEWS</a>
+<li><a href="Future_of_Databases/poc_bmews_ibm.html">Proof-of-Concept with IBM</a>
+<li><a href="Future_of_Databases/poc_bmews_microsoft.html">Proof-of-Concept with Microsoft</a>
+<li><a href="Future_of_Databases/poc_bmews_oracle.html">Proof-of-Concept with Oracle</a>
 
-</FONT>
+</font>
 </OL>
 
 
-<FONT COLOR=blue SIZE=2>
-<LI><A HREF="global_accountability.htm"><FONT COLOR=blue SIZE=2><B>Global Accountability ...</B></A>
-<OL><FONT COLOR=blue SIZE=1>
-<LI><A HREF="bmews.htm"><FONT COLOR=blue SIZE=1>Best Practice Monitoring</FONT></A> 
-<LI><A HREF="compliance.htm"><FONT COLOR=blue SIZE=1>Compliance</FONT></A> 
-<LI><A HREF="architecture4_global_accountability.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Global Accountability</FONT></A> 
-<LI><A HREF="globalization.htm"><FONT COLOR=blue SIZE=1>Globalization and Databases</A>
-<LI><A HREF="ict_toolkit.htm"><FONT COLOR=blue SIZE=1>ICT Toolkit</A> 
-<LI><A HREF="performance_reporting_architecture.htm"><B>Perf Rpting Architecture</B></A> 
-<LI><A HREF="global_accountability_self_assessment.htm">Self-Assessment</A> 
+<font color=blue size=2>
+<li><a href="global_accountability.html"><font color=blue size=2><b>Global Accountability ...</b></a>
+<OL><font color=blue size=1>
+<li><a href="bmews.html"><font color=blue size=1>Best Practice Monitoring</font></a>
+<li><a href="compliance.html"><font color=blue size=1>Compliance</font></a>
+<li><a href="architecture4_global_accountability.html"><font color=blue face=Verdana size=1>Global Accountability</font></a>
+<li><a href="globalization.html"><font color=blue size=1>Globalization and Databases</a>
+<li><a href="ict_toolkit.html"><font color=blue size=1>ICT Toolkit</a>
+<li><a href="performance_reporting_architecture.html"><b>Perf Rpting Architecture</b></a>
+<li><a href="global_accountability_self_assessment.html">Self-Assessment</a>
 
 
-<!--- <LI><A HREeeF="sops/index.htm"><FONT COLOR=blue SIZE=1>Standard Operating Procedures</A> --->
-<LI><A HREF="ungc/index.htm"><FONT COLOR=blue SIZE=1>UN Global Compact</A>
+<!--- <li><a HREeeF="sops/index.html"><font color=blue size=1>Standard Operating Procedures</a> --->
+<li><a href="ungc/index.html"><font color=blue size=1>UN Global Compact</a>
 </OL>
 
-<LI><A HREF="glossary_of_terms.htm"><FONT COLOR=blue SIZE=2>Glossary of Terms</A>
-<LI><A HREF="history.htm"><FONT COLOR=blue SIZE=2>History of Databases</A>
-<LI><A HREF="ibm_global_entrepreneur/index.htm"><FONT COLOR=blue SIZE=2>IBM Global Entrepeneur</A> 
+<li><a href="glossary_of_terms.html"><font color=blue size=2>Glossary of Terms</a>
+<li><a href="history.html"><font color=blue size=2>History of Databases</a>
+<li><a href="ibm_global_entrepreneur/index.html"><font color=blue size=2>IBM Global Entrepeneur</a>
 
-<LI><A HREF="ibm_page.htm"><FONT COLOR=blue SIZE=2>IBM Page</A>
-<LI><A HREF="ict_toolkit.htm"><FONT COLOR=blue SIZE=2>ICT Toolkit for Development</A> 
+<li><a href="ibm_page.html"><font color=blue size=2>IBM Page</a>
+<li><a href="ict_toolkit.html"><font color=blue size=2>ICT Toolkit for Development</a>
 
-<!--- <LI><A HREF="jobs_check.htm"><FONT COLOR=blue SIZE=2>Jobs Check</A> --->
+<!--- <li><a href="jobs_check.html"><font color=blue size=2>Jobs Check</a> --->
 
-<LI><A HREF="ikm_software_tools.htm">Indigenous Knowledge Mgt S'Ware</A>
-<LI><A HREF="http://www.databaseanswers.org/pi_information_catalog/browse.asp">Information Catalog (browse)</A> <IMG SRC="images/new.gif">
-<LI><A HREF="best_practice_road_map\user1\Information_Catalogue.xls">Information Catalogue (xls)</A>
-<LI><A HREF="knowledge_base.htm">Knowledge Base</A>  
-<LI><A HREF="knowledge_management.htm">Knowledge Management</A> 
-<LI><A HREF="letters/index.htm">Letters from Grateful Clients</A> 
-<LI><A HREF="localfavourites/index.htm">Local Favourites</A>
-<LI><A HREF="mdm_master_data_management.htm">Master Data Management</A> 
-<LI><A HREF="best_practice_road_map/maturity_model.htm">Maturity Model</A> 
-<LI><A HREF="best_practice_road_map/mdm_and_data_quality.htm">MDM and Data Quality</A>
-<LI><A HREF="dba_mdm_framework.htm">MDM Framework</A>
-<LI><B>MetaData ...</B>
+<li><a href="ikm_software_tools.html">Indigenous Knowledge Mgt S'Ware</a>
+<li><a href="http://www.databaseanswers.org/pi_information_catalog/browse.asp">Information Catalog (browse)</a> <img src="/images/new.gif">
+<li><a href="best_practice_road_map\user1\Information_Catalogue.xls">Information Catalogue (xls)</a>
+<li><a href="knowledge_base.html">Knowledge Base</a>
+<li><a href="knowledge_management.html">Knowledge Management</a>
+<li><a href="letters/index.html">Letters from Grateful Clients</a>
+<li><a href="localfavourites/index.html">Local Favourites</a>
+<li><a href="mdm_master_data_management.html">Master Data Management</a>
+<li><a href="best_practice_road_map/maturity_model.html">Maturity Model</a>
+<li><a href="best_practice_road_map/mdm_and_data_quality.html">MDM and Data Quality</a>
+<li><a href="dba_mdm_framework.html">MDM Framework</a>
+<li><b>MetaData ...</b>
 <OL>
-<FONT COLOR=blue SIZE=1>
-<LI><A HREF="metadata_management.htm"><FONT COLOR=blue SIZE=1>MetaData Management</FONT></A>  
-<LI><A HREF="metadata_notes_on_getting_started.htm"><FONT COLOR=blue SIZE=1>MetaData Notes on Getting Started</FONT></A>
+<font color=blue size=1>
+<li><a href="metadata_management.html"><font color=blue size=1>MetaData Management</font></a>
+<li><a href="metadata_notes_on_getting_started.html"><font color=blue size=1>MetaData Notes on Getting Started</font></a>
 
-<LI><A HREF="metadata_repositories.htm"><FONT COLOR=blue SIZE=1>MetaData Repositories</FONT></A>
+<li><a href="metadata_repositories.html"><font color=blue size=1>MetaData Repositories</font></a>
 </OL>
 
-<LI><A HREF="music_over_the_internet.htm"><FONT COLOR=blue SIZE=2>Music over the Internet</A> 
-<LI><A HREF="mydba_research_project.htm"><FONT COLOR=green>myDBA Research Project</FONT></A> 
-<LI><A HREF="mysql_php.htm"><FONT COLOR=blue SIZE=2>MySQL & PHP</A> 
+<li><a href="music_over_the_internet.html"><font color=blue size=2>Music over the Internet</a>
+<li><a href="mydba_research_project.html"><font color=green>myDBA Research Project</font></a>
+<li><a href="mysql_php.html"><font color=blue size=2>MySQL & PHP</a>
 
 
 <!---
 <OL>
-<LI><A HREF="http://www.brinkster.com" TARGET=_NEW><FONT COLOR=blue SIZE=1>Brinkster</A>
-<LI><A HREF="http://www.eCriteria.net" TARGET=_NEW>eCriteria</A>
-<LI><A HREF="http://www.onlinedatabase.co.uk" TARGET=_NEW><FONT COLOR=blue SIZE=1>OnlineDatabase</A>
-<LI><A HREF="http://www.quickbase.com" TARGET=_NEW><FONT COLOR=blue SIZE=1>QuickBase</A>
-<LI><A HREF="http://www.rent-a-db.com" TARGET=_NEW><FONT COLOR=blue SIZE=1>Rent-a-DB</A>
-<LI><A HREF="http://www.i-con.dk/wdb" TARGET=_NEW><FONT COLOR=blue SIZE=1>Web-To-DB Interface</A>
-<LI><A HREF="http://www.webware.com" TARGET=_NEW><FONT COLOR=blue SIZE=1>WebWare</A>
+<li><a href="http://www.brinkster.com" target="_new"><font color=blue size=1>Brinkster</a>
+<li><a href="http://www.eCriteria.net" target="_new">eCriteria</a>
+<li><a href="http://www.onlinedatabase.co.uk" target="_new"><font color=blue size=1>OnlineDatabase</a>
+<li><a href="http://www.quickbase.com" target="_new"><font color=blue size=1>QuickBase</a>
+<li><a href="http://www.rent-a-db.com" target="_new"><font color=blue size=1>Rent-a-DB</a>
+<li><a href="http://www.i-con.dk/wdb" target="_new"><font color=blue size=1>Web-To-DB Interface</a>
+<li><a href="http://www.webware.com" target="_new"><font color=blue size=1>WebWare</a>
 </OL>
 --->
 
-<!--- <LI><A HREF="online_training.htm"><FONT COLOR=blue SIZE=2>Online Training</FONT></A> --->
-<!--- <LI><A HREF="tutorials_database_answers/index.htm"><FONT COLOR=blue SIZE=2>Our Tutorials</FONT></A> --->
+<!--- <li><a href="online_training.html"><font color=blue size=2>Online Training</font></a> --->
+<!--- <li><a href="tutorials_database_answers/index.html"><font color=blue size=2>Our Tutorials</font></a> --->
 
-<LI><A HREeeeF="objects.htm"><FONT COLOR=blue SIZE=2><B>Objects ...</B></A>
+<li><a HREeeeF="objects.html"><font color=blue size=2><b>Objects ...</b></a>
 <OL>
-<LI><A HREF="http://www.ambysoft.com/agileDatabaseTechniques.html" TARGET=_NEW><FONT COLOR=blue SIZE=1>Agile Development Book</A>
-<LI><A HREeeeF="objects_ibm_relational_modeling_with_uml.pdf" TARGET=_NEW>IBM Paper on ER Modeling with UML</A> (pdf)
-<LI><A HREF="object_integration.htm">Integrating Objects and Relations</A>
-<LI><A HREF="data_arch/map_uml_to_erd.htm">Mapping UML to ERD</A>
-<LI><A HREF="http://en.wikipedia.org/wiki/Hibernate_(Java)" TARGET=_NEW>Mapping Object to Relational with <B>Hibernate</B></A> 
-<LI><A HREF="mapping_and_toplink.htm"><FONT COLOR=blue SIZE=1>Mapping Object to Relational with <B>TopLink</B></A> 
-<LI><A HREF="objects_in_use.htm">Objects in Use</A>
-</FONT></OL>
+<li><a href="http://www.ambysoft.com/agileDatabaseTechniques.html" target="_new"><font color=blue size=1>Agile Development Book</a>
+<li><a HREeeeF="objects_ibm_relational_modeling_with_uml.pdf" target="_new">IBM Paper on ER Modeling with UML</a> (pdf)
+<li><a href="object_integration.html">Integrating Objects and Relations</a>
+<li><a href="data_arch/map_uml_to_erd.html">Mapping UML to ERD</a>
+<li><a href="http://en.wikipedia.org/wiki/Hibernate_(Java)" target="_new">Mapping Object to Relational with <b>Hibernate</b></a>
+<li><a href="mapping_and_toplink.html"><font color=blue size=1>Mapping Object to Relational with <b>TopLink</b></a>
+<li><a href="objects_in_use.html">Objects in Use</a>
+</font></OL>
 
-<LI><A HREF="designing_olap_cubes.htm"><FONT COLOR=blue SIZE=2>OLAP Cubes</FONT></A>
-<LI><A HREF="online_databases.htm"><FONT COLOR=blue SIZE=2>Online Databases</A> 
-<LI><A HREF="online_project_mgt.htm"><FONT COLOR=blue SIZE=2>Online Project Mgt.</A> 
-<LI><A HREF="online_universities.htm">Online Universities</A>
+<li><a href="designing_olap_cubes.html"><font color=blue size=2>OLAP Cubes</font></a>
+<li><a href="online_databases.html"><font color=blue size=2>Online Databases</a>
+<li><a href="online_project_mgt.html"><font color=blue size=2>Online Project Mgt.</a>
+<li><a href="online_universities.html">Online Universities</a>
 
-</TD>
+</td>
 
-<TD VALIGN=top><FONT COLOR=blue SIZE=2>
+<td valign=top><font color=blue size=2>
 
 
-<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<font color=blue face="Verdana" size=2>
 <!-- begin body Text --->
 <form method="get" action="http://search.atomz.com/search/">
-<input SIZE=35 name="sp-q">
+<input size=35 name="sp-q">
 <input type=submit value="Search">
 <input type=hidden name="sp-a" value="000a2cd3-sp00000000"></form>
 
 <UL>
-<LI><A HREF="ora_page.htm"><FONT COLOR=blue SIZE=2><B>Oracle Page ...</B></FONT></A>
-<!--- <LI><A HREF="dynamic_psp_page.htm"><FONT COLOR=blue SIZE=1>Dynamic PSP Page</A> --->
-<OL><FONT COLOR=blue SIZE=1>
+<li><a href="ora_page.html"><font color=blue size=2><b>Oracle Page ...</b></font></a>
+<!--- <li><a href="dynamic_psp_page.html"><font color=blue size=1>Dynamic PSP Page</a> --->
+<OL><font color=blue size=1>
 
-<LI><A HREF="http://www.oracle.com/technology/products/database/xe/index.html" TARGET=_NEW>10g Oracle Express</A>
-<BR>small footprint, free download.
+<li><a href="http://www.oracle.com/technology/products/database/xe/index.html" target="_new">10g Oracle Express</a>
+<br>small footprint, free download.
 
-<LI><A HREF="ora_htmldb_application_express.htm">Application Express / HTMLDB</A> 
-<LI><A HREF="ora_books.htm">Books</A>
-<LI><A HREF="ora_careers.htm"><FONT COLOR=blue SIZE=1>Careers</A>
-<LI><A HREF="ora_data_dict.htm"><FONT COLOR=blue SIZE=1>Data Dictionary</A>
-<LI><A HREF="http://www.ozwindev.com/wd-oracle.html" TARGET=_NEW><FONT COLOR=blue SIZE=1>Development with WinDev</A>
-<LI><A HREF="http://edelivery.oracle.com/" TARGET=_NEW>e-Delivery</a> 
-<LI><A HREF="http://www.oracle.com/uk/education/"><FONT COLOR=blue SIZE=1>Education (UK)</A>
-<LI><A HREF="ora_experts.htm"><FONT COLOR=blue SIZE=1>Experts</A> 
-<LI><A HREF="ora_htmldb_application_express.htm">HTMLDB</A> 
-<LI><A HREF="ora_links.htm"><FONT COLOR=blue SIZE=1>Links</A>
-<LI><A HREF="ora_to_db2_mapping.htm"><FONT COLOR=blue SIZE=1>Mapping to DB2</A> 
-<LI><A HREF="ora_nls_support.htm"><FONT COLOR=blue SIZE=1>NLS Support</A>
-<LI><A HREF="http://www.oracle.com/technology/products/berkeley-db/index.html" TARGET=_NEW>Oracle Berkeley DB</A> 
-<LI><A HREF="http://www.oracle.com/database/berkeley-db/xml/index.html" TARGET=_NEW>Oracle Berkely DB XML</A>
-<LI><A HREF="http://www.oracle.com/database/timesten.html" TARGET=_NEW>Oracle TimesTen In-Memory Database</A>
-<LI><A HREF="ora_hosting.htm"><FONT COLOR=blue SIZE=1>Oracle Hosting</A>
-<LI><A HREF="ora_pl_sql.htm"><FONT COLOR=blue SIZE=1>PL/SQL</A>
-<LI><A HREF="http://www.solutionsarchitect.co.uk/articles/oracle_soa.html" TARGET=_NEW>Svc Oriented Architecture</A>
+<li><a href="ora_htmldb_application_express.html">Application Express / HTMLDB</a>
+<li><a href="ora_books.html">Books</a>
+<li><a href="ora_careers.html"><font color=blue size=1>Careers</a>
+<li><a href="ora_data_dict.html"><font color=blue size=1>Data Dictionary</a>
+<li><a href="http://www.ozwindev.com/wd-oracle.html" target="_new"><font color=blue size=1>Development with WinDev</a>
+<li><a href="http://edelivery.oracle.com/" target="_new">e-Delivery</a>
+<li><a href="http://www.oracle.com/uk/education/"><font color=blue size=1>Education (UK)</a>
+<li><a href="ora_experts.html"><font color=blue size=1>Experts</a>
+<li><a href="ora_htmldb_application_express.html">HTMLDB</a>
+<li><a href="ora_links.html"><font color=blue size=1>Links</a>
+<li><a href="ora_to_db2_mapping.html"><font color=blue size=1>Mapping to DB2</a>
+<li><a href="ora_nls_support.html"><font color=blue size=1>NLS Support</a>
+<li><a href="http://www.oracle.com/technology/products/berkeley-db/index.html" target="_new">Oracle Berkeley DB</a>
+<li><a href="http://www.oracle.com/database/berkeley-db/xml/index.html" target="_new">Oracle Berkely DB XML</a>
+<li><a href="http://www.oracle.com/database/timesten.html" target="_new">Oracle TimesTen In-Memory Database</a>
+<li><a href="ora_hosting.html"><font color=blue size=1>Oracle Hosting</a>
+<li><a href="ora_pl_sql.html"><font color=blue size=1>PL/SQL</a>
+<li><a href="http://www.solutionsarchitect.co.uk/articles/oracle_soa.html" target="_new">Svc Oriented Architecture</a>
 
 <!--- , from
-<A HREF="http://www.solutionsarchitect.co.uk/articles/oracle_soa.html" TARGET=_NEW>
-Solutions Architect</A>. --->
+<a href="http://www.solutionsarchitect.co.uk/articles/oracle_soa.html" target="_new">
+Solutions Architect</a>. --->
 
-<LI><A HREF="oracle_system_tables.htm"><FONT COLOR=blue SIZE=1>System Tables</A> 
-<LI><A HREF="http://technet.oracle.com/software/content.html" TARGET=_NEW><FONT COLOR=blue SIZE=1>Technology Tracks</A>
-<LI><A HREF="ora_training.htm"><FONT COLOR=blue SIZE=1>Training Links</A>
-<LI><A HREF="http://www.orafans.com" TARGET=_NEW><FONT COLOR=blue SIZE=1>User Forum & Fan Club</A> 
-<!--- <LI><A HREF="what_is_a_dba.htm"><FONT COLOR=red SIZE=1>What is a DBA ?</FONT></A> --->
+<li><a href="oracle_system_tables.html"><font color=blue size=1>System Tables</a>
+<li><a href="http://technet.oracle.com/software/content.html" target="_new"><font color=blue size=1>Technology Tracks</a>
+<li><a href="ora_training.html"><font color=blue size=1>Training Links</a>
+<li><a href="http://www.orafans.com" target="_new"><font color=blue size=1>User Forum & Fan Club</a>
+<!--- <li><a href="what_is_a_dba.html"><font color=red size=1>What is a DBA ?</font></a> --->
 </OL>
 
-<LI><A HREF="other_databases.htm"><FONT COLOR=blue SIZE=2><B>Other Databases</B></A>
-<OL><FONT COLOR=blue SIZE=1>
-<LI><A HREF="http://aws.amazon.com/simpledb/" TARGET=_NEW>Amazon SimpleDB</A> 
-<LI><A HREF="http://aws.amazon.com/sqs/" TARGET=_NEW>Amazon Simple Queue Service</A> 
-<LI><A HREF="http://aws.amazon.com/s3/" TARGET=_NEW>Amazon Simple Storage Service</A> 
-<LI><A HREF="http://cassandra.apache.org/" TARGET=_NEW>Apache Cassandra Distributed DB</A> 
-<LI><A HREF="http://couchdb.apache.org/" TARGET=_NEW>Apache CouchDB</A> - a Document Server
-<LI><A HREF="http://www.asterdata.com/" TARGET=_NEW>AsterData</A> An analytics DB 
-<LI><A HREF="http://en.wikipedia.org/wiki/BigTable" TARGET=_NEW>BigTable (from Google)</A>
+<li><a href="other_databases.html"><font color=blue size=2><b>Other Databases</b></a>
+<OL><font color=blue size=1>
+<li><a href="http://aws.amazon.com/simpledb/" target="_new">Amazon SimpleDB</a>
+<li><a href="http://aws.amazon.com/sqs/" target="_new">Amazon Simple Queue Service</a>
+<li><a href="http://aws.amazon.com/s3/" target="_new">Amazon Simple Storage Service</a>
+<li><a href="http://cassandra.apache.org/" target="_new">Apache Cassandra Distributed DB</a>
+<li><a href="http://couchdb.apache.org/" target="_new">Apache CouchDB</a> - a Document Server
+<li><a href="http://www.asterdata.com/" target="_new">AsterData</a> An analytics DB
+<li><a href="http://en.wikipedia.org/wiki/BigTable" target="_new">BigTable (from Google)</a>
 
-<LI><A HREF="http://cassandra.apache.org/" TARGET=_NEW>Cassandra Distributed DB (from Apache)</A> 
+<li><a href="http://cassandra.apache.org/" target="_new">Cassandra Distributed DB (from Apache)</a>
 
 
-<LI><A HREF="http://en.wikipedia.org/wiki/DBpedia" TARGET=_NEW>DBpedia</A> - a kind of DB for Wikipedia 
-<LI><A HREF="http://www.mcobject.com/extremedbfamily.shtml" TARGET=_NEW>ExtremeDB</A> (real-time) 
+<li><a href="http://en.wikipedia.org/wiki/DBpedia" target="_new">DBpedia</a> - a kind of DB for Wikipedia
+<li><a href="http://www.mcobject.com/extremedbfamily.shtml" target="_new">ExtremeDB</a> (real-time)
 
-<LI><A HREF="http://www.firebirdsql.org/" TARGET=_NEW>Firebird</A> (Free Open Source)
-<LI><A HREF="http://en.wikipedia.org/wiki/BigTable" TARGET=_NEW>Google BigTable</A>
-<LI><A HREF="http://hsqldb.org/" TARGET=_NEW>HyperSQL</A> (Open Source)
- 
-<LI><A HREF="http://www.hypertable.org"  TARGET=_NEW>Hypertable</A> (Open Source)
-<LI><A HREF="http://www.infobright.com" TARGET=_NEW>InfoBright</A> (Column-oriented) 
-<LI><A HREF="http://www.luciddb.org" TARGET=_NEW>LucidDB</A> (Open-Source,Column-oriented) 
+<li><a href="http://www.firebirdsql.org/" target="_new">Firebird</a> (Free Open Source)
+<li><a href="http://en.wikipedia.org/wiki/BigTable" target="_new">Google BigTable</a>
+<li><a href="http://hsqldb.org/" target="_new">HyperSQL</a> (Open Source)
 
-<LI><A HREF="http://www.hughes.com.au/products/msql/"  TARGET=_NEW>MiniSQL (aka mSQL)</A>
+<li><a href="http://www.hypertable.org"  target="_new">Hypertable</a> (Open Source)
+<li><a href="http://www.infobright.com" target="_new">InfoBright</a> (Column-oriented)
+<li><a href="http://www.luciddb.org" target="_new">LucidDB</a> (Open-Source,Column-oriented)
 
-<LI><A HREF="http://monetdb.cwi.nl/" TARGET=_NEW>MonetDB</A> (Open Source) 
-<LI><A HREF="http://www.mongodb.org/" TARGET=_NEW>MongoDB</A> (NoSQL) 
-<LI><A HREF="https://launchpad.net/drizzle" TARGET=_NEW>MySQL Drizzle</A> 
-<LI><A HREF="http://nosql-database.org/" TARGET=_NEW>NoSQL</A> 
-<LI><A HREF="http://searchenterpriselinux.techtarget.com/tip/0,289483,sid39_gci1236205,00.html" TARGET=_NEW>
-Open Source Access</A> 
+<li><a href="http://www.hughes.com.au/products/msql/"  target="_new">MiniSQL (aka mSQL)</a>
 
-<LI><A HREF="http://www.oracle.com/technology/products/berkeley-db/index.html" TARGET=_NEW>Oracle Berkeley DB</A> 
-<LI><A HREF="http://www.oracle.com/database/berkeley-db/xml/index.html" TARGET=_NEW>Oracle Berkely DB XML</A>
+<li><a href="http://monetdb.cwi.nl/" target="_new">MonetDB</a> (Open Source)
+<li><a href="http://www.mongodb.org/" target="_new">MongoDB</a> (NoSQL)
+<li><a href="https://launchpad.net/drizzle" target="_new">MySQL Drizzle</a>
+<li><a href="http://nosql-database.org/" target="_new">NoSQL</a>
+<li><a href="http://searchenterpriselinux.techtarget.com/tip/0,289483,sid39_gci1236205,00.html" target="_new">
+Open Source Access</a>
 
-<LI><A HREF="http://www.mcobject.com/perst" TARGET=_NEW>Perst (OO, embedded)</A>  
-<LI><A HREF="http://www.qrimp.com/" TARGET=_NEW>Qrimp</A>  (worth checking out)
-<LI><A HREF="http://www.raima.com" TARGET=_NEW>Raima</A> <IMG SRC="images/new.gif">
-<LI><A HREF="http://www.scaledb.com" TARGET=_NEW>ScaleDB</A> 
-<LI><A HREF="http://en.wikipedia.org/wiki/SolidDB" TARGET=_NEW>SolidDB (in Wikipedia)</A> 
-<LI><A HREF="http://www.sqlite.org" TARGET=_NEW>SQLite</A> 
-<LI><A HREF="http://www.thunderstone.com/texis/site/pages/Texis.html" TARGET=_NEW>Texis</A> (Search RDBMS for unstructured data) 
-<LI><A HREF="http://unibase.zenucom.com/wordpress/" TARGET=_NEW>Unibase</A> (an Associative DB)
-<LI><A HREF="http://www.vertica.com/" TARGET=_NEW>Vertica</A> (Column-oriented) 
+<li><a href="http://www.oracle.com/technology/products/berkeley-db/index.html" target="_new">Oracle Berkeley DB</a>
+<li><a href="http://www.oracle.com/database/berkeley-db/xml/index.html" target="_new">Oracle Berkely DB XML</a>
+
+<li><a href="http://www.mcobject.com/perst" target="_new">Perst (OO, embedded)</a>
+<li><a href="http://www.qrimp.com/" target="_new">Qrimp</a>  (worth checking out)
+<li><a href="http://www.raima.com" target="_new">Raima</a> <img src="/images/new.gif">
+<li><a href="http://www.scaledb.com" target="_new">ScaleDB</a>
+<li><a href="http://en.wikipedia.org/wiki/SolidDB" target="_new">SolidDB (in Wikipedia)</a>
+<li><a href="http://www.sqlite.org" target="_new">SQLite</a>
+<li><a href="http://www.thunderstone.com/texis/site/pages/Texis.html" target="_new">Texis</a> (Search RDBMS for unstructured data)
+<li><a href="http://unibase.zenucom.com/wordpress/" target="_new">Unibase</a> (an Associative DB)
+<li><a href="http://www.vertica.com/" target="_new">Vertica</a> (Column-oriented)
  </OL>
 
-<LI><A HREF="other_database_sites.htm"><FONT COLOR=blue SIZE=2>Other Database Sites</A>
-<LI><A HREF="other_experts.htm"><FONT COLOR=blue SIZE=2>Other Experts</A>
-<LI><A HREF="products/index.htm"><FONT COLOR=blue SIZE=2>Our Products</A> 
-<LI><A HREF="perfmon.htm"><FONT COLOR=blue SIZE=2>Performance Monitoring</A>
-<LI><A HREeF="personalization/index.htm"><FONT COLOR=blue SIZE=2><B>Personalization ...</B></A>
-<OL><LI><A HREeeeF="personalization/index.htm"><FONT COLOR=blue SIZE=1>Creating Personalization Profile</A>
-    <LI><A HREF="personalization_web_sites.htm"><FONT COLOR=blue SIZE=1>Sites offering a 'My' Personal Page.</A>
-    <LI><A HREF="usr_prof.htm"><FONT COLOR=blue SIZE=1>User Profiles.</A>
+<li><a href="other_database_sites.html"><font color=blue size=2>Other Database Sites</a>
+<li><a href="other_experts.html"><font color=blue size=2>Other Experts</a>
+<li><a href="products/index.html"><font color=blue size=2>Our Products</a>
+<li><a href="perfmon.html"><font color=blue size=2>Performance Monitoring</a>
+<li><a HREeF="personalization/index.html"><font color=blue size=2><b>Personalization ...</b></a>
+<OL><li><a HREeeeF="personalization/index.html"><font color=blue size=1>Creating Personalization Profile</a>
+    <li><a href="personalization_web_sites.html"><font color=blue size=1>Sites offering a 'My' Personal Page.</a>
+    <li><a href="usr_prof.html"><font color=blue size=1>User Profiles.</a>
 </OL>
 
-<!--- <LI><A HREF="mysql_php.htm"><FONT COLOR=blue SIZE=2>PHP & MySQL</A>  --->
+<!--- <li><a href="mysql_php.html"><font color=blue size=2>PHP & MySQL</a>  --->
 
-<LI><A HREeF="personalization/index.htm"><FONT COLOR=blue SIZE=2><B>Portals ...</B></A>
-<OL><LI><A HREF="portals_intro.htm"><FONT COLOR=blue SIZE=1>Introduction</A>
-    <LI><A HREF="portal_build.htm"><FONT COLOR=blue SIZE=1>Build a Portal</A>
-    <LI><A HREF="phone_book_barry.htm"><FONT COLOR=blue SIZE=1>Phone Book</A> 
+<li><a HREeF="personalization/index.html"><font color=blue size=2><b>Portals ...</b></a>
+<OL><li><a href="portals_intro.html"><font color=blue size=1>Introduction</a>
+    <li><a href="portal_build.html"><font color=blue size=1>Build a Portal</a>
+    <li><a href="phone_book_barry.html"><font color=blue size=1>Phone Book</a>
 </OL>
 
-<LI><A HREeF="personalization/index.htm"><FONT COLOR=blue SIZE=2><B>Presentations ...</B></A> 
-<OL><LI><A HREF="presentations/data_standards_in_public_sector.ppt" TARGET=_NEW><FONT COLOR=blue SIZE=1>Data Standards in Public Sector</A>
-    <LI><A HREF="presentations/MDM_and_Ref_Data.ppt" TARGET=_NEW><FONT COLOR=blue SIZE=1>MDM and Reference Data</A> 
-<LI><A HREF="presentations/Presentation_on_Strategy_for_Data_Management.ppt" TARGET=_NEW><FONT COLOR=blue SIZE=1>Strategy for Data Management</A> 
-<LI><A HREF="presentations/Strategy_for_Data_Quality.ppt" TARGET=_NEW><FONT COLOR=blue SIZE=1>Strategy for Data Quality</A>
-<LI><A HREF="presentations/info_mgt_strategy.ppt" TARGET=_NEW><FONT COLOR=blue SIZE=1>Strategy for Information Management</A>
-<LI><A HREF="why_you_need_a_strategy.htm"><FONT COLOR=red SIZE=1>Why you need a Strategy (for Data Mgt)</A> <IMG SRC="images/new.gif">
+<li><a HREeF="personalization/index.html"><font color=blue size=2><b>Presentations ...</b></a>
+<OL><li><a href="presentations/data_standards_in_public_sector.ppt" target="_new"><font color=blue size=1>Data Standards in Public Sector</a>
+    <li><a href="presentations/MDM_and_Ref_Data.ppt" target="_new"><font color=blue size=1>MDM and Reference Data</a>
+<li><a href="presentations/Presentation_on_Strategy_for_Data_Management.ppt" target="_new"><font color=blue size=1>Strategy for Data Management</a>
+<li><a href="presentations/Strategy_for_Data_Quality.ppt" target="_new"><font color=blue size=1>Strategy for Data Quality</a>
+<li><a href="presentations/info_mgt_strategy.ppt" target="_new"><font color=blue size=1>Strategy for Information Management</a>
+<li><a href="why_you_need_a_strategy.html"><font color=red size=1>Why you need a Strategy (for Data Mgt)</a> <img src="/images/new.gif">
 
-</FONT>
+</font>
 </OL>
 
-<!--- <LI><A HREF="products/index.htm"><FONT COLOR=blue SIZE=2><B>Products</B></A> --->
+<!--- <li><a href="products/index.html"><font color=blue size=2><b>Products</b></a> --->
 
 <!---
 <OL>
-<LI><A HREF="products/best_practice_manager/index.htm"><FONT COLOR=blue SIZE=1>Best Practice Manager</A>  
-<LI><A HREF="products/information_catalog/index.htm"><FONT COLOR=blue SIZE=1>Information Catalog</A>  
-<LI><A HREF="products/reference_database/index.htm"><FONT COLOR=blue SIZE=1>Reference Database</A>
-<LI><A HREF="products/reference_data_manager/index.htm"><FONT COLOR=blue SIZE=1>Reference Data Manager</A>
-<LI><A HREF="products/talent_management_agency/index.htm"><FONT COLOR=blue SIZE=1>Talent Management Agency</A> 
+<li><a href="products/best_practice_manager/index.html"><font color=blue size=1>Best Practice Manager</a>
+<li><a href="products/information_catalog/index.html"><font color=blue size=1>Information Catalog</a>
+<li><a href="products/reference_database/index.html"><font color=blue size=1>Reference Database</a>
+<li><a href="products/reference_data_manager/index.html"><font color=blue size=1>Reference Data Manager</a>
+<li><a href="products/talent_management_agency/index.html"><font color=blue size=1>Talent Management Agency</a>
 </OL>
 --->
 
-<FONT SIZE=2>
+<font size=2>
 <!---
-<LI>Proof of Concept :- 
-<OL><LI><A HREF="best_practice_road_map\proof_of_concept_with_ibm_and_microsoft.htm"><FONT SIZE=1>POC Road Map for IBM and Microsoft</A> 
-<LI><A HREF="Future_of_Databases/proof_of_concept_for_the_future.htm"><FONT SIZE=1>The Future</A> 
-<LI><A HREF="Future_of_Databases/proof_of_concept_for_the_future_data_arch.htm">The Future Data Architecture</A> 
+<li>Proof of Concept :-
+<OL><li><a href="best_practice_road_map\proof_of_concept_with_ibm_and_microsoft.html"><font size=1>POC Road Map for IBM and Microsoft</a>
+<li><a href="Future_of_Databases/proof_of_concept_for_the_future.html"><font size=1>The Future</a>
+<li><a href="Future_of_Databases/proof_of_concept_for_the_future_data_arch.html">The Future Data Architecture</a>
 </OL>
 --->
 
-<LI><A HREF="ref_data_overview.htm"><FONT COLOR=blue SIZE=2>Reference Data</A> 
-<!--- <LI><A HREF="registration_benefits.htm"><FONT COLOR=blue SIZE=2>Registration Benefits</A> --->
+<li><a href="ref_data_overview.html"><font color=blue size=2>Reference Data</a>
+<!--- <li><a href="registration_benefits.html"><font color=blue size=2>Registration Benefits</a> --->
 
-<LI><A HREF="remote_db_monitoring.htm"><FONT COLOR=blue SIZE=2>Remote DB Monitoring</A>
-<LI><A HREF="reporting_tools.htm"><FONT COLOR=blue SIZE=2>Reporting Tools</A>
+<li><a href="remote_db_monitoring.html"><font color=blue size=2>Remote DB Monitoring</a>
+<li><a href="reporting_tools.html"><font color=blue size=2>Reporting Tools</a>
 
-<LI><A HREF="metadata_repositories.htm"><FONT COLOR=blue SIZE=2>Repositories for MetaData</A> 
-<LI><A HREF="mydba_research_project.htm"><FONT COLOR=green>Research Project</FONT></A>
+<li><a href="metadata_repositories.html"><font color=blue size=2>Repositories for MetaData</a>
+<li><a href="mydba_research_project.html"><font color=green>Research Project</font></a>
 
-<LI><A HREF="best_practice_road_map/index.htm"><FONT COLOR=blue SIZE=2>Road Map</FONT></A> 
+<li><a href="best_practice_road_map/index.html"><font color=blue size=2>Road Map</font></a>
 
-<LI><A HREF="best_practice_road_map/road_map_with_ibm_and_microsoft.htm">Road Map with IBM and Microsoft</A>
+<li><a href="best_practice_road_map/road_map_with_ibm_and_microsoft.html">Road Map with IBM and Microsoft</a>
 
-<LI><A HREF="rosinski/index.htm"><FONT COLOR=blue SIZE=2>Rosinski - <FONT SIZE=1>Coaching Across Cultures</FONT></FONT></A>
-<LI><A HREF="satisfied_users.htm"><FONT COLOR=blue SIZE=2><B><I>Satisfied Users</I></B></A> 
+<li><a href="rosinski/index.html"><font color=blue size=2>Rosinski - <font size=1>Coaching Across Cultures</font></font></a>
+<li><a href="satisfied_users.html"><font color=blue size=2><b><I>Satisfied Users</I></b></a>
 
-<LI><A HREF="semantic_web.htm"><FONT COLOR=green>Semantic Web</FONT></A>  
-<OL><FONT SIZE=1>
-<LI><A HREF="glossary_of_terms_entry_for_mdm.htm">Glossary Entry for MDM</A>
-<LI><A HREF="glossary_of_terms_presented_alphabetically.htm">Glossary presented Alphabetically</A>
-<LI><A HREF="site_content_and_tags.htm">Site Content and Tags</A> 
-<LI><A HREF="website_user_interface_vocabulary.htm">Website User Glossary Interface</A>
-<LI><A HREF="zylab_user_scenario.htm">Zylab Proof-of-Concept</A>    
-</FONT>
+<li><a href="semantic_web.html"><font color=green>Semantic Web</font></a>
+<OL><font size=1>
+<li><a href="glossary_of_terms_entry_for_mdm.html">Glossary Entry for MDM</a>
+<li><a href="glossary_of_terms_presented_alphabetically.html">Glossary presented Alphabetically</a>
+<li><a href="site_content_and_tags.html">Site Content and Tags</a>
+<li><a href="website_user_interface_vocabulary.html">Website User Glossary Interface</a>
+<li><a href="zylab_user_scenario.html">Zylab Proof-of-Concept</a>
+</font>
 </OL>
 
-<!--- <LI><A HREF="soap.htm"><FONT COLOR=blue SIZE=2>SOAP</A> --->
-<LI><A HREF="soa.htm"><FONT COLOR=blue SIZE=2>Service Oriented Architectures (SOA)</A>
+<!--- <li><a href="soap.html"><font color=blue size=2>SOAP</a> --->
+<li><a href="soa.html"><font color=blue size=2>Service Oriented Architectures (SOA)</a>
 
-<LI><A HREF="site_map.htm">Site Map</A>
-<LI><A HREF="site_map_architecture.htm"><FONT COLOR=green>Site Map Architecture</FONT></A> 
-<LI><A HREF="A_Self_Service_Web_Site.htm"><FONT COLOR=green>Site Map for Self-Servic</FONT>e</A>  
+<li><a href="site_map.html">Site Map</a>
+<li><a href="site_map_architecture.html"><font color=green>Site Map Architecture</font></a>
+<li><a href="A_Self_Service_Web_Site.html"><font color=green>Site Map for Self-Servic</font>e</a>
 
-<LI><FONT COLOR=blue SIZE=2><B>Slide Shows ...</B></A> <IMG SRC="images/new.gif">
-<OL><FONT COLOR=blue SIZE=1>
-<LI><A HREF="best_practice_road_map/slide_1_intro.htm">Best Practice Road Map</A>
-<LI><A HREF="ezv_poc/index.htm">EZV Proof-of-Concept</A> 
-<LI><A HREF="http://translate.google.com/translate?hl=en&sl=en&tl=de&u=http%3A%2F%2Fwww.databaseanswers.org%2Fezv_poc%2Findex.htm" TARGET=_NEW>EZV Proof-of-Concept (in German)</A> 
+<li><font color=blue size=2><b>Slide Shows ...</b></a> <img src="/images/new.gif">
+<OL><font color=blue size=1>
+<li><a href="best_practice_road_map/slide_1_intro.html">Best Practice Road Map</a>
+<li><a href="ezv_poc/index.html">EZV Proof-of-Concept</a>
+<li><a href="http://translate.google.com/translate?hl=en&sl=en&tl=de&u=http%3A%2F%2Fwww.databaseanswers.org%2Fezv_poc%2Findex.html" target="_new">EZV Proof-of-Concept (in German)</a>
 
-<LI><A HREF="slideshow_pb/index.htm">Private Banking Proof-of-Concept</A> <IMG SRC="images/new.gif">
-
-</OL>
-
-<LI><A HREF="web_services.htm"><FONT COLOR=blue SIZE=2>SOA and Web Services</A>
-<LI><FONT COLOR=blue SIZE=2><B>Software As a Service (SaaS) ...</B></A>
-<OL><FONT COLOR=blue SIZE=1>
-<LI><A HREF="http://aws.amazon.com/simpledb/" TARGET=_NEW>Amazon SimpleDB</A> 
-<LI><A HREF="http://aws.amazon.com/sqs/" TARGET=_NEW>Amazon Simple Queue Service</A> 
-<LI><A HREF="http://aws.amazon.com/s3/" TARGET=_NEW>Amazon Simple Storage Service</A> 
-<LI><A HREF="http://www.coda.com/products-services/Salesforce/CODA2go" TARGET=_NEW>Coda2Go</A> 
-<LI><A HREF="http://www.ebizq.net/topics/web20/features/9984.html" TARGET=_NEW><B>Ebizq Comment</B></A>
-<LI><A HREF="http://docs.google.com/" TARGET=_NEW>Google Docs</A>
-<LI><A HREF="http://www.lucidera.com/" TARGET=_NEW>Lucid Era BI</A> (esp. for SalesForce)
-<LI><A HREF="http://www.windowslive.com/" TARGET=_NEW>Microsoft Windows Live</A>
-<LI><A HREF="http://www.salesforce.com/" TARGET=_NEW><B>Salesforce.com</B></A> (Daddy of them all) 
-<LI><A HREF="http://www.salesforce.com/uk/products/ideas/" TARGET=_NEW>SalesForce Ideas</A>
-<LI><A HREF="http://www.successfactors.com/" TARGET=_NEW>SuccessFactors HR</A> 
-<LI><A HREF="http://www.workday.com/" TARGET=_NEW>Workday HR</A> 
-<LI><A HREF="http://www.zoho.com" TARGET=_NEW><FONT COLOR=green SIZE=1>Zoho</A></FONT> (includes <A HREF="http://db.zoho.com/ZDBHome.cc" TARGET=_NEW>Online Database</A>)
-<LI><A HREF="http://www.zuora.com/" TARGET=_NEW>Zuora (Invoicing)</A> 
-<LI><A HREF="http://www.zuora.com/company/index.html" TARGET=_NEW>Zuora Profile</A>
-</OL>
-
-<LI><FONT COLOR=blue SIZE=2><B>SQL ...</B></A>
-<OL><FONT COLOR=blue SIZE=1>
-<LI><A HREF="learn_sql.htm">How can I Learn SQL</A>  <IMG SRC="images/new.gif">
-<LI><A HREF="http://www.sqldownunder.com/" TARGET=_NEW>SQL Down Under</A>  (SQL Server Podcast) 
-<LI><A HREF="http://www.sqlhosting.net" TARGET=_NEW>SQL Hosting</A> 
-<LI><A HREF="http://www.sql.org/" TARGET=_NEW>SQL.org</A>  
-<LI><A HREF="sql_scripts/index.htm"><FONT COLOR=green SIZE=1>SQL Scripts</A></FONT>
-<LI><A HREF="sql_server_replication.htm"><FONT COLOR=blue SIZE=1>SQL Server Replication</A></FONT> 
-<LI><A HREF="sql_standards.htm"><FONT COLOR=blue SIZE=1>SQL Standards</A></FONT>
-<LI><A HREF="sql_topics.htm"><FONT COLOR=blue SIZE=1>SQL Topics</A></FONT>
-<LI><A HREF="http://developer.yahoo.com/yql/" TARGET=_NEW>Yahoo Query Language (YQL)</A> 
+<li><a href="slideshow_pb/index.html">Private Banking Proof-of-Concept</a> <img src="/images/new.gif">
 
 </OL>
 
-<FONT COLOR=blue SIZE=2>
-
-<LI>SQL Server :-
-<OL><FONT COLOR=blue FACE=Verdana SIZE=1>
-<LI><A HREF="http://www.microsoft.com/sql/editions/compact/default.mspx" TARGET=_NEW>SQL Server 2005 Compact</A> 
-<LI><A HREF="sql_server_2005_express/index.htm">SQL Server 2005 Express</A>
-<LI><A HREF="http://www.sqlservercentral.com/" TARGET=_NEW>SQL Server Central</a> 
-</FONT>
+<li><a href="web_services.html"><font color=blue size=2>SOA and Web Services</a>
+<li><font color=blue size=2><b>Software As a Service (SaaS) ...</b></a>
+<OL><font color=blue size=1>
+<li><a href="http://aws.amazon.com/simpledb/" target="_new">Amazon SimpleDB</a>
+<li><a href="http://aws.amazon.com/sqs/" target="_new">Amazon Simple Queue Service</a>
+<li><a href="http://aws.amazon.com/s3/" target="_new">Amazon Simple Storage Service</a>
+<li><a href="http://www.coda.com/products-services/Salesforce/CODA2go" target="_new">Coda2Go</a>
+<li><a href="http://www.ebizq.net/topics/web20/features/9984.html" target="_new"><b>Ebizq Comment</b></a>
+<li><a href="http://docs.google.com/" target="_new">Google Docs</a>
+<li><a href="http://www.lucidera.com/" target="_new">Lucid Era BI</a> (esp. for SalesForce)
+<li><a href="http://www.windowslive.com/" target="_new">Microsoft Windows Live</a>
+<li><a href="http://www.salesforce.com/" target="_new"><b>Salesforce.com</b></a> (Daddy of them all)
+<li><a href="http://www.salesforce.com/uk/products/ideas/" target="_new">SalesForce Ideas</a>
+<li><a href="http://www.successfactors.com/" target="_new">SuccessFactors HR</a>
+<li><a href="http://www.workday.com/" target="_new">Workday HR</a>
+<li><a href="http://www.zoho.com" target="_new"><font color=green size=1>Zoho</a></font> (includes <a href="http://db.zoho.com/ZDBHome.cc" target="_new">Online Database</a>)
+<li><a href="http://www.zuora.com/" target="_new">Zuora (Invoicing)</a>
+<li><a href="http://www.zuora.com/company/index.html" target="_new">Zuora Profile</a>
 </OL>
 
-<!--- <LI><A HREF="sops/index.htm"><FONT COLOR=blue SIZE=2>Standard Operating Procedures</A> --->
+<li><font color=blue size=2><b>SQL ...</b></a>
+<OL><font color=blue size=1>
+<li><a href="learn_sql.html">How can I Learn SQL</a>  <img src="/images/new.gif">
+<li><a href="http://www.sqldownunder.com/" target="_new">SQL Down Under</a>  (SQL Server Podcast)
+<li><a href="http://www.sqlhosting.net" target="_new">SQL Hosting</a>
+<li><a href="http://www.sql.org/" target="_new">SQL.org</a>
+<li><a href="sql_scripts/index.html"><font color=green size=1>SQL Scripts</a></font>
+<li><a href="sql_server_replication.html"><font color=blue size=1>SQL Server Replication</a></font>
+<li><a href="sql_standards.html"><font color=blue size=1>SQL Standards</a></font>
+<li><a href="sql_topics.html"><font color=blue size=1>SQL Topics</a></font>
+<li><a href="http://developer.yahoo.com/yql/" target="_new">Yahoo Query Language (YQL)</a>
 
-<!--- <LI><A HREF="state_of_the_art.htm"><FONT COLOR=blue SIZE=2>State-of-the-Art</A> --->
+</OL>
+
+<font color=blue size=2>
+
+<li>SQL Server :-
+<OL><font color=blue face=Verdana size=1>
+<li><a href="http://www.microsoft.com/sql/editions/compact/default.mspx" target="_new">SQL Server 2005 Compact</a>
+<li><a href="sql_server_2005_express/index.html">SQL Server 2005 Express</a>
+<li><a href="http://www.sqlservercentral.com/" target="_new">SQL Server Central</a>
+</font>
+</OL>
+
+<!--- <li><a href="sops/index.html"><font color=blue size=2>Standard Operating Procedures</a> --->
+
+<!--- <li><a href="state_of_the_art.html"><font color=blue size=2>State-of-the-Art</a> --->
 
 
-<LI><A HREF="state_of_the_art_surveys.htm"><FONT COLOR=green>State-of-the-Art Surveys</FONT></A>
-<LI><A HREF="why_you_need_a_strategy.htm">Strategy (Why you need one)</A> <IMG SRC="images/new.gif">
-<LI><A HREF="why_you_need_a_strategy_ibm.htm">Strategy (IBM version)</A> 
-<LI><A HREF="why_you_need_a_strategy_oracle.htm">Strategy (Oracle version)</A> 
-<LI><A HREF="street_environment_services.htm">Street Environment Services (UK)</A>
-<LI><A HREF="Tabs_in_HTML.htm">Tabs in HTML</A>  
+<li><a href="state_of_the_art_surveys.html"><font color=green>State-of-the-Art Surveys</font></a>
+<li><a href="why_you_need_a_strategy.html">Strategy (Why you need one)</a> <img src="/images/new.gif">
+<li><a href="why_you_need_a_strategy_ibm.html">Strategy (IBM version)</a>
+<li><a href="why_you_need_a_strategy_oracle.html">Strategy (Oracle version)</a>
+<li><a href="street_environment_services.html">Street Environment Services (UK)</a>
+<li><a href="Tabs_in_HTML.html">Tabs in HTML</a>
 
-<LI><A HREF="telematics.htm">Telematics</A> 
+<li><a href="telematics.html">Telematics</a>
 
-<LI><A HREF="template_for_new_style_pages.htm">Template for New Style Pages</A> 
+<li><a href="template_for_new_style_pages.html">Template for New Style Pages</a>
 
 
-<LI>Tim's Developments / Templates :-
-<FONT COLOR=blue SIZE=1>
+<li>Tim's Developments / Templates :-
+<font color=blue size=1>
 <OL>
-<LI><A HREF="best_practice_road_map/questions_and_stages.htm">1a) Questions and Stages</A> 
-<LI><A HREF="http://timl.somee.com/Default.aspx" TARGET=_NEW>1aT1) Tim's Questions and Stages</A>
-<LI><A HREF="http://timl.somee.com/EditQuestion.aspx?question_id=8189" TARGET=_NEW>1aT2) Tim's Answer Mgt</A>
-<LI><A HREF="template_nr_1_for_answers.htm">1b) Answers</A> 
-<LI><A HREF="http://www.databaseanswers.org/roadmap/default.aspx">Questions and Stages (March 22nd)</A>
-<LI><A HREF="http://www.databaseanswers.org/roadmap/selectQuestion.aspx">Select Question (March 22nd)</A>
+<li><a href="best_practice_road_map/questions_and_stages.html">1a) Questions and Stages</a>
+<li><a href="http://timl.somee.com/Default.aspx" target="_new">1aT1) Tim's Questions and Stages</a>
+<li><a href="http://timl.somee.com/EditQuestion.aspx?question_id=8189" target="_new">1aT2) Tim's Answer Mgt</a>
+<li><a href="template_nr_1_for_answers.html">1b) Answers</a>
+<li><a href="http://www.databaseanswers.org/roadmap/default.aspx">Questions and Stages (March 22nd)</a>
+<li><a href="http://www.databaseanswers.org/roadmap/selectQuestion.aspx">Select Question (March 22nd)</a>
 </OL>
-</FONT>
+</font>
 
-<LI><A HREF="top_ten_smartphones.htm"><FONT COLOR=blue SIZE=2>Top Ten Smartphones</FONT></A> 
-<LI><A HREF="topics_and_faqs.htm"><FONT COLOR=green>Topics and FAQs</FONT></A> 
-<LI><A HREF="tutorials.htm"><FONT COLOR=blue SIZE=2><B>Tutorials ...</B></FONT></A>
+<li><a href="top_ten_smartphones.html"><font color=blue size=2>Top Ten Smartphones</font></a>
+<li><a href="topics_and_faqs.html"><font color=green>Topics and FAQs</font></a>
+<li><a href="tutorials.html"><font color=blue size=2><b>Tutorials ...</b></font></a>
 <OL>
-<FONT SIZE=1>
-<!--- <LI><A HREF="http://www.databaseanswers.org" TARGET=_NEW">Best Practice Tutorials</A> --->
-<!--- <LI><A HREF="tutorials_database_driven/index.htm">Database-driven Tutorials</A> --->
+<font size=1>
+<!--- <li><a href="http://www.databaseanswers.org" target="_new"">Best Practice Tutorials</a> --->
+<!--- <li><a href="tutorials_database_driven/index.html">Database-driven Tutorials</a> --->
 
-<LI><A HREF="tutorial4_data_modelling_cartoon_style/index.htm">Beginners Guide to Data Modelling - Cartoon Style</A>  
+<li><a href="tutorial4_data_modelling_cartoon_style/index.html">Beginners Guide to Data Modelling - Cartoon Style</a>
 
-<LI><A HREF="tutorial4_data_modelling/index.htm">Beginners Guide to Data Modelling</A> using <FONT COLOR=red>
-Dezign</FONT>
-<LI><A HREF="tutorial4_data_modelling/tutorial_in_arabic.htm">Beginners Guide to Data Modelling <FONT COLOR=green>(in Arabic)</FONT></A> 
-<LI><A HREF="tutorial4_data_modelling/tutorial_in_portuguese.htm">Beginners Guide to Data Modelling <FONT COLOR=green>(in Portuguese)</FONT></A>
-<LI><A HREF="tutorial4_data_modelling/tutorial_in_spanish.htm">Beginners Guide to Data Modelling <FONT COLOR=green>(in Spanish)</FONT></A> 
-<BR><BR>
-<LI><A HREF="http://www.databaseanswers.org/pi_best_practice_display/index.asp">Best Practice Database-Driven Tutorials</A> 
-<BR><BR>
+<li><a href="tutorial4_data_modelling/index.html">Beginners Guide to Data Modelling</a> using <font color=red>
+Dezign</font>
+<li><a href="tutorial4_data_modelling/tutorial_in_arabic.html">Beginners Guide to Data Modelling <font color=green>(in Arabic)</font></a>
+<li><a href="tutorial4_data_modelling/tutorial_in_portuguese.html">Beginners Guide to Data Modelling <font color=green>(in Portuguese)</font></a>
+<li><a href="tutorial4_data_modelling/tutorial_in_spanish.html">Beginners Guide to Data Modelling <font color=green>(in Spanish)</font></a>
+<br><br>
+<li><a href="http://www.databaseanswers.org/pi_best_practice_display/index.asp">Best Practice Database-Driven Tutorials</a>
+<br><br>
 
-<LI><A HREF="Tutorial_on_Checking_Quality_of_Data_in_a_Database.zip"><B>Checking Quality of Data in a Database</A> (PDF Download)
+<li><a href="Tutorial_on_Checking_Quality_of_Data_in_a_Database.zip"><b>Checking Quality of Data in a Database</a> (PDF Download)
 
-<LI><A HREF="holiday_in_malaysia/index.htm"><FONT COLOR=red>Holiday in Malaysia</FONT></A>
-<li><a href="tutorial4_data_modelling_dimple_and_toby_visit_the_blue_mosque/index.htm">Young People's Guide to Data Modelling - The Blue Mosque in Turkey</A> 
-<IMG SRC="images/new.gif">
+<li><a href="holiday_in_malaysia/index.html"><font color=red>Holiday in Malaysia</font></a>
+<li><a href="tutorial4_data_modelling_dimple_and_toby_visit_the_blue_mosque/index.html">Young People's Guide to Data Modelling - The Blue Mosque in Turkey</a>
+<img src="/images/new.gif">
 
-<LI><A HREF="tutorial4_data_modelling_dimple_and_toby_visit_starbucks/index.htm">Young People's Guide to Data Modelling - Starbucks</A> 
-<LI><A HREF="tutorial4_data_modelling_dimple_and_toby_visit_windsor_castle/index.htm">Young People's Guide to Data Modelling - <B>Windsor Castle</B></A> 
+<li><a href="tutorial4_data_modelling_dimple_and_toby_visit_starbucks/index.html">Young People's Guide to Data Modelling - Starbucks</a>
+<li><a href="tutorial4_data_modelling_dimple_and_toby_visit_windsor_castle/index.html">Young People's Guide to Data Modelling - <b>Windsor Castle</b></a>
 
-<LI><A HREF="tutorial_on_data_modelling.htm">Data Modelling - in the Real World</A> 
-<LI><A HREF="tutorials/db_design/extreme_data_centric_db_design.htm">Data Modelling - Data-Centric</A>
-<LI><A HREF="data_models/me_and_mommy/me_and_mommy_tutorial.htm">Data Modelling - Me and Mommy</A> 
+<li><a href="tutorial_on_data_modelling.html">Data Modelling - in the Real World</a>
+<li><a href="tutorials/db_design/extreme_data_centric_db_design.html">Data Modelling - Data-Centric</a>
+<li><a href="data_models/me_and_mommy/me_and_mommy_tutorial.html">Data Modelling - Me and Mommy</a>
 
-<LI><A HREF="tutorials/db_design/extreme_user_centric_db_design.htm">Data Modelling - User-Centric</A>
+<li><a href="tutorials/db_design/extreme_user_centric_db_design.html">Data Modelling - User-Centric</a>
 
-<!--- <LI><A HREF="online_training.htm"><FONT COLOR=blue SIZE=1>Online Training</FONT></A> --->
+<!--- <li><a href="online_training.html"><font color=blue size=1>Online Training</font></a> --->
 
-<LI><A HREF="tutorial4_dev_best_practice/index.htm">Development Best Practice</A> 
+<li><a href="tutorial4_dev_best_practice/index.html">Development Best Practice</a>
 
-<LI><A HREF="tutorial4_getting_started_with_db_design/index.htm">Getting Started in DB Design</A> 
-<LI><A HREF="tutorial4_integrated_performance_reporting/index.htm"><B>Integrated Performance Reporting</B></A> 
-<LI><A HREF="tutorial4_mdm_in_crm/index.htm">Master Data Management(<B>MDM</B>) for CRM</A> 
+<li><a href="tutorial4_getting_started_with_db_design/index.html">Getting Started in DB Design</a>
+<li><a href="tutorial4_integrated_performance_reporting/index.html"><b>Integrated Performance Reporting</b></a>
+<li><a href="tutorial4_mdm_in_crm/index.html">Master Data Management(<b>MDM</b>) for CRM</a>
 
-<!--- <LI><A HREF="tutorial4_mdm_in_product_shipments/MDM_Tutorial4_e_Government.htm"><B>MDM</B> for e-Government</A>aaa --->
+<!--- <li><a href="tutorial4_mdm_in_product_shipments/MDM_Tutorial4_e_Government.html"><b>MDM</b> for e-Government</a>aaa --->
 
-<LI><A HREF="tutorial4_mdm_in_law_enforcement/index.htm"><B>MDM</B> for Law Enforcement</A> 
-<LI><A HREF="tutorial4_mdm_in_local_govt/index.htm"><B>MDM</B> for Local Government</A>
+<li><a href="tutorial4_mdm_in_law_enforcement/index.html"><b>MDM</b> for Law Enforcement</a>
+<li><a href="tutorial4_mdm_in_local_govt/index.html"><b>MDM</b> for Local Government</a>
 
-<LI><A HREF="http://www.databaseanswers.org/pi_best_practice_display/manual.asp?manual_id=BP_MDM"><B>MDM</B> for Reference Data</A> 
+<li><a href="http://www.databaseanswers.org/pi_best_practice_display/manual.asp?manual_id=BP_MDM"><b>MDM</b> for Reference Data</a>
 
 
-<LI><A HREF="Tutorial_on_Quality_Assurance_of_a_Data_Model.zip"><B>QA of a Data Model</A> (PDF Download) 
+<li><a href="Tutorial_on_Quality_Assurance_of_a_Data_Model.zip"><b>QA of a Data Model</a> (PDF Download)
 
-<LI><A HREF="tutorials_at_3_levels.htm">Tutorials at 3 Levels</A> 
-<LI><A HREF="tutorials_3rd_party.htm">Tutorials from other Sources</A> 
-<LI><A HREF="tutorial4_db_schema/index.htm">Understanding a DB Schema</A>
-<LI><A HREF="tutorials/sse_dm_tutorial.wmv" TARGET=_NEW>Understanding a DB Schema (Video-25Mb)</A>
-<!--- <LI><A HREF="online_universities.htm">Universities Online</A> --->
-<!--- <LI><A HREeeeF="tutorial4_web_svcs_dev/index.htm">Web Services Development</A> --->
-</FONT>
+<li><a href="tutorials_at_3_levels.html">Tutorials at 3 Levels</a>
+<li><a href="tutorials_3rd_party.html">Tutorials from other Sources</a>
+<li><a href="tutorial4_db_schema/index.html">Understanding a DB Schema</a>
+<li><a href="tutorials/sse_dm_tutorial.wmv" target="_new">Understanding a DB Schema (Video-25Mb)</a>
+<!--- <li><a href="online_universities.html">Universities Online</a> --->
+<!--- <li><a HREeeeF="tutorial4_web_svcs_dev/index.html">Web Services Development</a> --->
+</font>
 </OL>
 
-<LI><A HREF="tv_over_the_internet.htm"><FONT COLOR=blue SIZE=2>TV over the Internet</A> 
-<LI><A HREF="data_models/user_extendable_database/uedb_data.asp?table_name=Addresses" TARGET=_NEW><FONT COLOR=blue SIZE=2>UDT Address Table</A> (requires login)
+<li><a href="tv_over_the_internet.html"><font color=blue size=2>TV over the Internet</a>
+<li><a href="data_models/user_extendable_database/uedb_data.asp?table_name=Addresses" target="_new"><font color=blue size=2>UDT Address Table</a> (requires login)
 
-<LI><A HREF="images/screenshot_of_udt.jpg"><FONT COLOR=blue SIZE=2>UDT Address Table Screenshot</A>
+<li><a href="images/screenshot_of_udt.jpg"><font color=blue size=2>UDT Address Table Screenshot</a>
 
 
 
@@ -858,101 +858,101 @@ Dezign</FONT>
 
 
 <!---
-<LI><A HREF="images/screenshot_of_salesforce_task.jpg"><FONT COLOR=blue SIZE=2>Salesforce Task Screenshot</A>
+<li><a href="images/screenshot_of_salesforce_task.jpg"><font color=blue size=2>Salesforce Task Screenshot</a>
 --->
 
 
 
 
 
-<LI><B>Ubiquitous Data</B> :-
-<OL><FONT SIZE=1>
-<LI><A HREF="http://www.apprizem2m.com" TARGET=_NEW>Apprize M2M Platform</A>
-<LI><A HREF="http://www.jeffkirvin.net/2010/09/the-joy-of-ubiquitous-data/" TARGET=_NEW><B>Blog</B> from Jeff Kirvin</A>
-<LI><A HREF="http://www.connectedworldmag.com/" TARGET=_NEW>Connected World Mag</A>
-<LI><A HREF="http://www.dataonline.com/contact.php" TARGET=_NEW>Data OnLine (UK and KL)</A>
-<LI><A HREF="http://www.time.com/intelligentcities" TARGET=_NEW>Intelligent Cities (Time magazine)</A> 
-<LI><A HREF="http://www.connectedworldmag.com/10_2_magazinearticle.aspx?id=MAZ0101019150211240" TARGET=_NEW>Internet of Connected Things</A>
+<li><b>Ubiquitous Data</b> :-
+<OL><font size=1>
+<li><a href="http://www.apprizem2m.com" target="_new">Apprize M2M Platform</a>
+<li><a href="http://www.jeffkirvin.net/2010/09/the-joy-of-ubiquitous-data/" target="_new"><b>Blog</b> from Jeff Kirvin</a>
+<li><a href="http://www.connectedworldmag.com/" target="_new">Connected World Mag</a>
+<li><a href="http://www.dataonline.com/contact.php" target="_new">Data OnLine (UK and KL)</a>
+<li><a href="http://www.time.com/intelligentcities" target="_new">Intelligent Cities (Time magazine)</a>
+<li><a href="http://www.connectedworldmag.com/10_2_magazinearticle.aspx?id=MAZ0101019150211240" target="_new">Internet of Connected Things</a>
 
-<LI><A HREF="Future_of_Databases/the_vision.htm">Our Vision of the Future</a>
-<LI><A HREF="http://www.ubicomp.nileu.edu.eg/" TARGET=_NEW>Ubiquitous Computing at <B>Nile University</B></A>
-<LI><A HREF="http://en.wikipedia.org/wiki/List_of_ubiquitous_computing_research_centers" TARGET=_NEW>Ubiquitous Computing Research Centers</A>
-<LI><A HREF="Future_of_Databases/ubiquitous_data_with_denodo.htm">Ubiquitous Data with <B>Denodo</B></A> 
-</FONT>
+<li><a href="Future_of_Databases/the_vision.html">Our Vision of the Future</a>
+<li><a href="http://www.ubicomp.nileu.edu.eg/" target="_new">Ubiquitous Computing at <b>Nile University</b></a>
+<li><a href="http://en.wikipedia.org/wiki/List_of_ubiquitous_computing_research_centers" target="_new">Ubiquitous Computing Research Centers</a>
+<li><a href="Future_of_Databases/ubiquitous_data_with_denodo.html">Ubiquitous Data with <b>Denodo</b></a>
+</font>
 </OL>
 
 
-<LI><A HREF="ungc/index.htm"><FONT COLOR=blue SIZE=2>UN Global Compact</A>
-<LI><A HREF="Future_of_Databases/Universal_Information_Architecture.htm"><FONT COLOR=green>Universal Information Architecture</FONT></A> 
-<LI><A HREF="useful_links.htm"><FONT COLOR=blue SIZE=2>Useful Links,(MySQL, PHP, etc.)</A>
+<li><a href="ungc/index.html"><font color=blue size=2>UN Global Compact</a>
+<li><a href="Future_of_Databases/Universal_Information_Architecture.html"><font color=green>Universal Information Architecture</font></a>
+<li><a href="useful_links.html"><font color=blue size=2>Useful Links,(MySQL, PHP, etc.)</a>
 
-<!--- <LI><A HREF="user_scenarios.htm"><FONT COLOR=blue SIZE=2>User Scenarios</A> --->
-<!--- <LI><A HREF="vendors_b2b_ecommerce.htm"><FONT COLOR=blue SIZE=2>Vendors of B2B e-Commerce Products</A> --->
-<!--- <LI><A HREF="vendors_data_integration.htm"><FONT COLOR=blue SIZE=2>Vendors of Data Integration Products</A> ---->
-<!--- <LI><A HREF="vldb.htm"><FONT COLOR=blue SIZE=2>Very Large Database (VLDB) Performance</A> --->
-<!--- <LI><A HREF="what_is_a_dba.htm"><FONT COLOR=blue SIZE=2>What is a DBA ?</A> --->
-<!--- <LI><A HREF="soap.htm"><FONT COLOR=blue SIZE=2>What is SOAP ?</A>           --->
-
-
-<LI><A HREF="xml.htm"><FONT COLOR=blue SIZE=2>XML</A> 
-
-<!--- <LI><A HREF="venture_candy.htm">Venture Candy Application</A> --->
-
-<LI><A HREF="clickstream_analysis.htm"><FONT COLOR=blue SIZE=2>WebSite ClickStream Analysis</A>
-<LI>Web Site Design :- 
-<OL><FONT SIZE=1>
-<LI><A HREF="glossary_driven_user_interface.htm"><B>Glossary-Driven User Interface</B></A>
-<!--- <LI><A HREF="mydba_front_end.htm">myDBA Front-End</A> --->
-
-<LI><A HREF="A_Self_Service_Web_Site.htm">Self-Service Web Site</a>
-<LI><A HREF="http://www.databaseanswers.org/roadmap/default.aspx">Tim's Road Map</A>
-<LI><A HREF="http://www.databaseanswers.org/roadmap/selectQuestion.aspx">Tim's Select a Question</A>
-<LI><A HREF="web_site_architecture.htm">Web Site Architecture</A>
+<!--- <li><a href="user_scenarios.html"><font color=blue size=2>User Scenarios</a> --->
+<!--- <li><a href="vendors_b2b_ecommerce.html"><font color=blue size=2>Vendors of B2B e-Commerce Products</a> --->
+<!--- <li><a href="vendors_data_integration.html"><font color=blue size=2>Vendors of Data Integration Products</a> ---->
+<!--- <li><a href="vldb.html"><font color=blue size=2>Very Large Database (VLDB) Performance</a> --->
+<!--- <li><a href="what_is_a_dba.html"><font color=blue size=2>What is a DBA ?</a> --->
+<!--- <li><a href="soap.html"><font color=blue size=2>What is SOAP ?</a>           --->
 
 
-<LI><A HREF="site_content_and_tags.htm">WebSite Content and Tags</A> 
-<LI><A HREF="website_development.htm">WebSite Development Plan</A> 
-<LI><A HREF="website_user_interface_vocabulary.htm">WebSite User Interface and Vocabulary</A>  
-</FONT>
+<li><a href="xml.html"><font color=blue size=2>XML</a>
+
+<!--- <li><a href="venture_candy.html">Venture Candy Application</a> --->
+
+<li><a href="clickstream_analysis.html"><font color=blue size=2>WebSite ClickStream Analysis</a>
+<li>Web Site Design :-
+<OL><font size=1>
+<li><a href="glossary_driven_user_interface.html"><b>Glossary-Driven User Interface</b></a>
+<!--- <li><a href="mydba_front_end.html">myDBA Front-End</a> --->
+
+<li><a href="A_Self_Service_Web_Site.html">Self-Service Web Site</a>
+<li><a href="http://www.databaseanswers.org/roadmap/default.aspx">Tim's Road Map</a>
+<li><a href="http://www.databaseanswers.org/roadmap/selectQuestion.aspx">Tim's Select a Question</a>
+<li><a href="web_site_architecture.html">Web Site Architecture</a>
+
+
+<li><a href="site_content_and_tags.html">WebSite Content and Tags</a>
+<li><a href="website_development.html">WebSite Development Plan</a>
+<li><a href="website_user_interface_vocabulary.html">WebSite User Interface and Vocabulary</a>
+</font>
 </OL>
 
 
-<FONT COLOR=blue SIZE=1>
-<LI><A HREF="web_services.htm"><FONT COLOR=blue SIZE=2>Web Services</A>, also see
-	<A HREF="soa.htm"><FONT COLOR=blue SIZE=2>SOA</FONT></A>
-<!--- <LI><A HREF="website_development.htm"><FONT COLOR=blue SIZE=2>Website Development</A> --->
+<font color=blue size=1>
+<li><a href="web_services.html"><font color=blue size=2>Web Services</a>, also see
+	<a href="soa.html"><font color=blue size=2>SOA</font></a>
+<!--- <li><a href="website_development.html"><font color=blue size=2>Website Development</a> --->
 
 
-<LI><A HREF="usability.htm"><FONT COLOR=blue SIZE=2>Website Usability Studies</A>
-<LI><A HREF="what_is_a_data_architect.htm">What is a Data Architect ?</A> <IMG SRC="images/new.gif">
-<LI><FONT COLOR=blue SIZE=2><B>White Papers ...</B></FONT>
+<li><a href="usability.html"><font color=blue size=2>Website Usability Studies</a>
+<li><a href="what_is_a_data_architect.html">What is a Data Architect ?</a> <img src="/images/new.gif">
+<li><font color=blue size=2><b>White Papers ...</b></font>
 <OL>
-<FONT SIZE=1>
-<LI><A HREF="bcs_paper/index.htm"><FONT COLOR=blue SIZE=1>Client Server Architecture</A>
-<LI><A HREF="globalization_paper.htm">Databases and Globalization</A>
-<LI><A HREF="enterprise_data_forum_paper/index.htm">Impact of Global Terrorism</A>
-</FONT>
+<font size=1>
+<li><a href="bcs_paper/index.html"><font color=blue size=1>Client Server Architecture</a>
+<li><a href="globalization_paper.html">Databases and Globalization</a>
+<li><a href="enterprise_data_forum_paper/index.html">Impact of Global Terrorism</a>
+</font>
 </OL>
 
-<LI><A HREF="0_what_we_like.htm"><FONT COLOR=blue SIZE=2>What we Like (in design)</FONT></A>
-<LI><A HREF="0_what_we_would_like.htm"><FONT COLOR=blue SIZE=2>What We Would Like</A>, including <A HREF="templates.htm">Templates</A>
-</FONT>
-<!--- <LI><A HREF="who_are_we.htm"><FONT SIZE=2>Who We Are ?</A> --->
+<li><a href="0_what_we_like.html"><font color=blue size=2>What we Like (in design)</font></a>
+<li><a href="0_what_we_would_like.html"><font color=blue size=2>What We Would Like</a>, including <a href="templates.html">Templates</a>
+</font>
+<!--- <li><a href="who_are_we.html"><font size=2>Who We Are ?</a> --->
 
-<LI><FONT COLOR=blue SIZE=2><B>Work in Progress ...</B></FONT>
+<li><font color=blue size=2><b>Work in Progress ...</b></font>
 <OL>
-<FONT SIZE=1>
-<LI><A HREF="localfavourites/index.htm"><FONT COLOR=blue SIZE=1>Local Favourites Web Site</A>
-<LI><A HREF="globalization_paper.htm">Databases and Globalization</A>
-<LI><A HREF="enterprise_data_forum_paper/index.htm">Impact of Global Terrorism</A>
-</FONT>
+<font size=1>
+<li><a href="localfavourites/index.html"><font color=blue size=1>Local Favourites Web Site</a>
+<li><a href="globalization_paper.html">Databases and Globalization</a>
+<li><a href="enterprise_data_forum_paper/index.html">Impact of Global Terrorism</a>
+</font>
 </OL>
 
-</TD>
+</td>
 
-</TR>
+</tr>
 
-<TR><TD COLSPAN=3>
+<tr><td colspan=3>
 
 <!-- End of  Standard Footer -->
 
@@ -961,12 +961,12 @@ Dezign</FONT>
   <tr>
     <td height="32" background="images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
-	<td width="80%"><img src="images/spacer.gif" width="80" height="15"></td>
-	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+        <tr>
+	<td width="80%"><img src="/images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
 </td>
 
-	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td align=LEFT width=15%><a style="text-decoration:none" href="contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
 	</td>
         </tr>
       </table>
@@ -977,14 +977,14 @@ Dezign</FONT>
 <!--- END OF may 21st. BOTTOM MENU BAR --->
 
 
-<CENTER><FONT COLOR=blue FONT=Verdana SIZE=1><I> &#169 DataBase Answers.org 2010</I></FONT></CENTER>
+<center><font color=blue FONT=Verdana size=1><I> &#169 DataBase Answers.org 2010</I></font></center>
 
-</TD>
-</TR>
+</td>
+</tr>
 
-</TABLE>
-</CENTER>
+</table>
+</center>
 
-</BODY>
+</body>
 
 </HTML>

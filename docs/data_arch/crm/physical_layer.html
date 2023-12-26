@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+
+<head><title>Physical Level</title></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+
+<table BGCOLOoooR="#FFFFCC" border=0 cellpadding="0" width=80%>
+<tr>
+<td align=left valign=top><H1><img alt="Database Answers Logo" border=0 heiight=66 wiidth=494 src="images/dba_banner_and_btn.jpg"></td>
+<td rowspan=2>
+<img align=right alt="Kyomizu Dera Forest, Japan" border=0 HEIiiGHT=58 WIiiDTH=282 src="images/kiyomizu-dera_sml.jpg">
+
+</td>
+</tr>
+<tr>
+<td valign=bottom><font color=red face="Comic Sans MS" size=4>
+<b>Background to the Design of the Physical Level</font></td>
+</tr>
+</table>
+
+<hr>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<font color=blue face="Verdana" size=2>
+<!-- begin body Text -->
+<pre><font color=blue face="Verdana" size=2><b>THE PHYSICAL DESIGN</b>
+The Physical Design translates the Logical Design into physical terms.
+
+<b>Deliverables</b> in this Stage will include a statement of requirements for the components and
+features in a Software Toolkit to implement the Logical Data Architecture.
+For example, one requirement is Enterprise Data Integration software.
+The requirements will be formulated by identifying the generic components to be provided,
+and used as a checklist to evaluate potential 'make or buy' software solutions.
+Some consideration will be given to operational aspects, such as Archiving, <a href="database_sizing.html">Database sizing</a>
+and Backup and Recovery.
+
+<b>Data Access Requirements</b>
+The Data Architecture contains a number of Applications that share data.
+The Requirements for data transformation between two Applications can be defined as the
+support of an interface mechanism between two indepedent Components which collaborate in sharing data.
+
+<b>Data Mapping</b> is driven by Interface Schema which define the data to be sent and retrieved at each Interface.
+Data Access Mechanisms include :-
+1 Direct Access
+      - extract and return a file, provide SQL Access, either 'native' or using ODBC or JDBC
+2 Through a published Data Service to get data
+      - this would be a Method in O-O terminology, or a View in a Relational Database.
+3 Through a published Business Rule or Service
+      - this would be a Stored Procedure in a Relational Database.
+4 Replicate onwards
+      - from a Source Application to local storage, where one of the above Access Mechanisms would then be used.
+5 Real-time Feeds
+      - such as News Feeds, appear in the Data Architecture for completeness, but they are not mapped to the Database
+        and are accessed by a technique that might be described as 'pass-through'.
+</pre>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

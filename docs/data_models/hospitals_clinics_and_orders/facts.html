@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>Facts for the Hospitals Clinics and Orders Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.massgeneral.org/" target="_new">
+<img align=right alt="Mass General Hospital, Boston, Massachusetts,USA" border=0 hspace="0" vspace="4" src="../../images/mass_general.jpg"></a>
+</td>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+
+</p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Specifications for the Data Model for Hospitals Clinics and Orders</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+Back to the <a href="index.html">Data Model</a>
+
+<pre><font color=blue face="Verdana" size=2><b>A Data Model for Hospitals, Clinics and Orders.</b>
+
+I am looking for help with a hospital/medical clinic DB.
+
+I have 2 that I am working on, but neither are working exactly for what our business needs are.
+
+One is very rudimentary that I created, and one is an attempt modifying the MS Northwind Traders DB.
+
+Is there a way to have you look at what I have and to get some input on being able to get our process moving?
+
+I am part of a team that is transforming the ordering process for about 300 medical clinics.
+
+Currently we are using an Excel spreadsheet and creating new sheets for each clinic.
+
+This becomes problematic due to the number of items that we are currently tracking, about 3500.
+
+I need a way to have a master list of items, and create clinic set orders for each separate clinic.
+
+Each clinic will have their own standard set of items that will be auto replenished.
+
+Thank You
+
+Logan</pre>
+
+<!----- Manley ---->
+
+
+
+
+
+<!-------
+Semantic Layer</b> is a translation layer that sits between the Data Warehouse (with Data Marts) and the end user.
+
+A Subject Matter Expert ('SME') is frequently involved in defining the translations, which can be stored in an online data Dictionary.
+
+This means that Users can be 'Self-Service' and define their Reporting requirements using common familiar businessterms.
+
+Wikipedia -
+A semantic layer translates Data Modelling terminology into business-friendly representation that helps Subject Matter Experts (SMEs) and
+end users to access data on a self-service basis with using common business terms.
+
+In other words, it maps complex data into familiar business terms such as product, customer, or revenue to offer a unified, consolidated
+view of data across the organization.
+
+This shows the four layers in a typical Data Architecture :-
+
+<img src="../../images/four_layer_platform_with_semantic_layer.gif">
+<hr>
+----->
+
+
+<center><font size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2014</I></font></center></pre>
+
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

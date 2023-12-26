@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- include meta-robots.html -%}
+  {% comment %}
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ccccff">
+  {% endcomment %}
+  <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
+  <meta name="msapplication-TileColor" content="#ccccff">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="keywords" content="data management, data management best practice, database tutorials, free databases, access databases, data models, generic data models">
+  {%- seo -%}
+  {%- assign cache_buster = site.time | date: '?v=%s' -%}
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url | append: cache_buster }}" />
+</head>

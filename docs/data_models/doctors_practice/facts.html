@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+
+<head><title>Requirements for a Health Centre</title></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<font color=blue face="Verdana" size=2>
+
+<a name="TOP">
+
+<table BGCOLOoooR="#FFFFCC" border=0 cellpadding="0" width=90%>
+<tr>
+<td align=left valign=top><img alt="Database Answers Logo" border=0 height=58 width=400 src="../../images/dba_400_home.jpg"></td>
+<td rowspan=2>
+<img align=right alt="The Doctors Practice is just out of sight (in Fiji)" border=0 HEIiiGHT=131 WIiiDTH=197 src="../../images/vendors_xsml.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=left valign=top>
+<img alt="Doctors Practice" height=19 width=120 src="../../images/buttons/button_studio/doctors_practice.gif">
+</td>
+</tr>
+
+</table>
+
+
+<table bgcolor=blue border=0 width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../../index.html"><img alt="Home" border=0 src="../../images/buttons/home_alt.gif"></a></td>
+<td align=left valign=top width=100>
+<a href="../../ask_a_question.html"><img alt="Ask a Question" border=0 src="../../images/buttons/ask_a_question_alt.gif"></a>
+</td>
+<td align=left bgcolor=white valign=top width=85>
+<a href="../../data_models/index.html"><img alt="Data Models" border=0 src="../../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><img alt="FAQs" border=0 src="../../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../site_map.html"><img alt="Search" border=0 src="../../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><img alt="Site Map" border=0 src="../../images/buttons/site_map_alt.gif"></a>
+</td>
+<td>&nbsp</td>
+</tr>
+</table>
+
+
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<table bgcolor="98CEDF" width=90%>
+<tr><td><font color=blue face=Verdana size=2>
+<a href="specifications/index.html">The draft Specifications</a> are available, and this Page defines the
+Business Rules for a Database for a Doctors Practice.
+<pre><font size=2><b>Additional User Requirements (added 7th. June 2003):-</b>
+The Staff for the Practice has includes :-
+<li>6 doctors, 2 practice nurses, 1 midwife, 1 health-visitor and 2 district nurses.
+<li>There are around 12 000 patients currently on the practice records and they can
+    make appointments with any of the surgery staff.
+
+<li>The surgery requires a database that will allow:
+    maintenance of patient records including keeping records of all previous appointments;
+<li>Produce a list of appointments for each member of staff at the beginning of each surgery that they hold.
+
+The following criteria should also be taken into account:
+<li>Patients are identified by their NHS number
+<li>The general format for this number is 6 alphanumeric characters
+    followed by a three-digit number although older patients
+    numbers may not use all 6 characters in the first part of the number.
+    For example an older patient may have a number such as MHHE 134, whilst
+    a younger patient may have a number such as APD89E 250
+<li>It should be possible to see an historical list of each patient's
+    appointments as part of their individual record.
+</pre>
+
+<b>Business Rules :-</b>
+There are four Sections :
+<br>1. Things of Interest
+<br>2. How these Things are related
+<br>3. Characteristics of these Things
+<br>4. User Scenarios
+
+<OL>
+<li><b>The Things of Interest include :-</b>
+<UL>
+<li>Patients
+<li>Patient Records
+<li>Assistants
+<li>Doctors
+<li>Staff
+<li>Staff Roles
+</UL>
+<li><b>How are these Things related :-</b>
+<UL>
+<li>Any Doctor or Assistant can become a Registered User.
+<li>Registered Users can look at any part of any Patients Record.
+<li>A<li>Any Doctor or Assistant can become a Registered User.
+<li>Registered Users can update only the parts of a Patients Record
+that they have entered.
+
+</UL>
+<li><b>Characteristics of these Things :-</b>
+<UL><li>A Patient has :-
+<li>First Name, Last Name, Address, Home Phone Number, Email Address, Height, Weight,
+Date of Birth.
+</UL>
+
+<P><b>Barry Williams</b>
+<br>Principal Consultant
+<br>Database Answers
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face=Verdana size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="ask_a_question_rbw.php3">Ask Us a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="site_map.html">Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 DataBase Answers.com November, 2002</I></font></center>
+</td></tr>
+</table>
+
+</body>
+
+</html>

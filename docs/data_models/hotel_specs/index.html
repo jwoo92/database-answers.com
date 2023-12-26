@@ -1,0 +1,345 @@
+<html>
+<head>
+<title>Data Model for Hotel Specs</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script>#</script>
+
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.waterfrontresort.com/groupandmeeting/floorplans" target="_new">
+<img align=right " border=0 hspace="0" vspace="4" src="images/hungtingdon_post_med.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+--->
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for DBA Hotel Specs&nbsp;&nbsp;&nbsp;</font></pre></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for Hotel Specs'>An Access Database</a> is available.
+
+If you have any comments or suggestions
+<a href='mailto:dba_requests@barryw.org?subject=Comments on Database Model for Data Model for Hotel Specs'>I'd be glad to hear them</a>.
+
+<!------------ <a href="facts.html"><b>The Specifications</b></a> for the Data Model have been defined as an example of our Best Practice.  ------------>
+
+
+<br><br>
+
+<table border=1>
+<tr>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br>These Specs are for a <b> a Proof-of-Concept</b>,
+<br>for which I need just two tables - Customers and Events
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+
+<br><img border=0 alt="Conceptual Data Model for Hotel Specs" src="images/events_and_status.jpg">
+<br>
+</td>
+<td valign=top><font color=blue face=Verdana size=2>
+
+<pre><font color=blue face=Verdana size=2><br><b>Step-by-Step :-</b>
+
+Step 1. Create a record for a new Hotel Booking, with Status='New Booking'
+Step 2. Update Record Status to 'Checked-In'
+Step 3. Update Record Status to 'Bill Paid'
+Step 4. Update Record Status to 'Checked-Out'
+
+<br>
+
+</td>
+</tr>
+
+
+</table>
+
+
+<!-----------------------------
+
+<br><br>
+
+<table border=1>
+
+<tr>
+
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br><b>Dezign Logical Data Model</b>
+<br>In this Model we show interesting details of Organisations more clearly.
+
+<br><br><img border=0 alt="Dezign Logical Data Model" src="images/dezign_logical_data_model.gif">
+
+</td>
+
+
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>
+<br>Logical Data Model
+<br><br><br><img border=0 alt="Logical Data Model" src="images/logical_data_model.gif">
+</td>
+</tr>
+
+
+
+<tr>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br><b>Complete Layered Data Architecture </b>
+<br>
+<img src="../../images/reference_data_architecture.gif">
+<br><br>
+</td>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br><b>'Getting Started' Layered Data Architecture </b>
+<br>In discussion with Stakeholders, we agree to start with these Layers.
+<br>
+<img src="../../images/getting_started_reference_data_architecture.jpg">
+</td>
+</tr>
+
+<tr>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>
+<br>Conceptual Data Model
+
+<br><img border=0 alt="Conceptual Data Model for for Hotel Specs" src="images/conceptual_data_model_phase_2a.jpg">
+<br>
+</td>
+<td valign=top><font color=blue face=Verdana size=2>
+
+<pre><font color=blue face=Verdana size=2><br><b>Our Approach :-</b>
+<li>Step 1. Create a draft Conceptual Data Model to show the important 'Things of Interest'.
+<li>Step 2. Request Stakeholder feedback on the Conceptual Data Model.
+<li>Step 3. Update the Conceptual Data Model to reflect the Stakeholder feedback.
+<li>Step 4. Obtain Stakeholder agreement to the updated the Conceptual Data Model.
+<li>Step 5. Produce the cost estimate for Phase 1.
+<li>Step 6. Discuss the cost estimate with the Stakeholder.
+<li>Step 7. Plan the next Steps.
+</pre>
+<br>We agree with Stakeholders what are the most important
+<br>functional areas that should appear in this High-level Data Model.
+
+</td>
+</tr>
+
+</table>
+
+
+<!-------------------------
+<br><br>
+
+<table border=1>
+
+<tr>
+
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br><b>Layered Data Architecture </b>
+<br>
+
+<br>
+
+
+<img src="../../images/reference_data_architecture.gif">
+</td>
+
+
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>
+<br>The Logical Data Model
+<br><br><img border=0 alt="Logical Data Model" src="images/logical_data_model.gif">
+</td>
+</tr>
+
+<tr>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>
+<br>The Conceptual Data Model
+<br><br><img border=0 alt="Conceptual Data Model for HR - Human Resources" src="images/conceptual_data_model_phase_2.jpg">
+</td>
+<td align=left valign=top>
+<pre><font color=blue face=Verdana size=2><br><b>Our Approach :-</b>
+<li>Step 1. Create a draft Conceptual Data Model to show the important 'Things of Interest'.
+<li>Step 2. Request Stakeholder feedback on the Conceptual Data Model.
+<li>Step 3. Update the Conceptual Data Model to reflect the Stakeholder feedback.
+<li>Step 4. Obtain Stakeholder agreement to the updated the Conceptual Data Model.
+<li>Step 5. Produce the cost estimate for Phase 1.
+<li>Step 6. Discuss the cost estimate with the Stakeholder.
+<li>Step 7. Plan the next Steps.
+</td>
+</tr>
+
+<tr>
+
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br><b>Layered Data Architecture </b>
+<br>
+
+<br>
+
+
+<img src="../../images/reference_data_architecture.gif">
+</td>
+
+
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>
+<br>The Logical Data Model
+<br><br><img border=0 alt="Logical Data Model" src="images/logical_data_model.gif">
+</td>
+</tr>
+</table>
+------->
+
+
+
+
+<!-----------
+<table border=1>
+
+<tr>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br><b>Layered Data Architecture </b>
+<br>
+
+
+<img src="../../images/reference_data_architecture.gif">
+</td>
+
+
+<td align=middle valign=top><font color=blue face=Verdana size=2><b>
+<br>Conceptual Data Model Phase
+<br><img border=0 alt="Conceptual Data Model for HR - Human Resources" src="images/conceptual_data_model_phase_2.jpg">
+<br>
+</td>
+
+</table>
+---------->
+
+
+<br><br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+<br>November 20th. 2017
+<br>
+</td><br>
+</tr>
+</table>
+
+<center><font COLOr=blue face=Verdana size=1>
+<br><br><I> &#169 Database Answers Ltd. 2017</I></font>
+</center>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<html><head><title>Approach to Database Design</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<a name="TOP">
+<table width=90%>
+
+<tr>
+<td align=left valign=top><img alt="Database Answers Header" border=0 height=58 width=400 src="../../images/dba_banner_and_btn_400.jpg">
+</td>
+
+<td align=right rowspan=2 valign=top>
+<img align=right alt="Steps to Peacock Pond, Florida" heiight=98 wiidth=238 src="../../images/steps_xsml.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=left valign=top>
+<font color=red face="Comic Sans MS" size=4><b>Steps to Database Design</font>
+</td>
+</tr>
+
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<table bgcolor=blue width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../../index.html"><img alt="Home" border=0 src="../../images/buttons/home_alt.gif"></a></td>
+<td align=left valign=top width=100>
+<a href="../../ask_a_question.html"><img alt="Ask a Question" border=0 src="../../images/buttons/ask_a_question_alt.gif"></a></td>
+<td align=middle valign=top width=60>
+<a href="../../careers.html"><img alt="Careers" border=0 src="../../images/buttons/careers_alt.jpg"></a></td>
+<td align=left valign=top width=85>
+<a href="../../data_models/index.html"><img alt="Data Models" border=0 src="../../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><img alt="FAQs" border=0 src="../../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../search.html"><img alt="Search" border=0 src="../../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><img alt="Site Map" border=0 src="../../images/buttons/site_map_alt.gif"></a></td>
+<td>&nbsp</td>
+</tr>
+</table>
+
+<P>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<font color=green face=Verdana size=2><b>The material on this Page is laid out to reflect the way in which
+it would be generated from a Database.
+<br>This has resulted in additional format comments for clarification.
+</b></font>
+
+We have also drafted <a href="extreme_data_centric_db_design.html">Data-Centric Extreme Approach to Database Design</a>
+and a <a href="extreme_user_centric_db_design.html">User-Centric Extreme Approach</a>. <img src="../../images/new.gif"?
+
+<font color=blue face=Verdana size=2>
+<P>In this General Approach we have defined a sequence of Steps in a structured method to design a Database.
+<br>You can have a look at this Page to see how this Approach applies to the design of a
+Database for <a href="../../data_models/hr_intro.html">an HR Department.</a>
+
+<P>This Approach is based on establishing the <b>Business Rules or FACTS</b> in a  sequence of structured Steps.
+<P><b><font color=red>Chapter 1. Establish the Business Rules.</font></b>
+<P><b>Section 1.1 Define the Scope of the Data Model.</b>
+<br>Paragraph 1.1.1 Introduction
+<font size=1>
+<OL>
+<li>Line 1.1.1.1 The Scope is the Area of Interest, for example, the HR Department in an organization.
+<li>Line 1.1.1.2 Define the "Things of Interest",(e.g. Employees), in the Area of Interest.
+<li>Line 1.1.1.3 Analyze the Things of Interest and identify the corresponding Tables.
+<li>Line 1.1.1.4 Identify the Static and Reference Data, such as Country Codes or Customer Types.
+</OL>
+</font>
+
+<P>Paragraph 1.1.2 Determine the characteristics of each Thing of Interest.
+<font size=1>
+<OL><li>Line 1.1.2.1 For example, "an Employee has a Date-of-Birth".
+</OL>
+</font>
+
+<P><b>Section 1.2 Establish the relationships between the Tables. </b>
+<P><b>Section 1.3 Define a Range of User Scenarios.</b>
+<br>Paragraph 1.3.1 Work with Users to define a range of representative User Scenarios.
+
+<P><b><font color=red>Chapter 2. Design the Database.</font></b>
+<br>Section 2.1 Define a Primary Key for all Tables.</b>
+<br>Paragraph 2.1.1 Reference Data
+<font size=1>
+<OL>
+<li>Line 2.1.1.1 For Reference Tables, use the'Code' as the Key, often with only one other field, which is the Description field.
+</font>
+</OL>
+
+<br>Paragraph 2.1.2 Other Data
+<font size=1>
+<OL>
+<li>Line 2.1.2.1 For all other Data, you can use a generated number as the Primary Key.
+<li>Line 2.1.2.2 This has some benefits, for example, it provides flexibility, and it's really the only choice for a Database supporting a Web Site.
+<li>Line 2.1.2.3 However, it complicates life for developers, which have to use the natural key to join on, as well
+as the 'surrogate' key.
+<li>Line 2.1.2.4 It also makes it possible to postpone a thorough analysis of what the actual Primary Key should be.
+<li>Which means, of course, that it often never gets done.
+</OL>
+</font>
+
+<b><font color=red>Chapter 3. Verify the design of the Database.</font></b>
+<br>Section 3.1 Obtain a small set of Sample Data.
+<br>Paragraph 3.1.1
+<font size=1>
+<OL>
+<li>Line 3.1.1.1 For example, "John Doe is a Maintenance Engineer and was born on 1st. August, 1965 and lives at 22 Woodland Street, New Haven.
+<li>Line 3.1.1.2 "He is currently assigned to maintenance of the Air-Conditioning and becomes available in 4 weeks time"
+</OL>
+</font>
+
+<P>Section 3.2 Review the draft of the Database design against the Business Rules and Sample Data.
+<P>Section 3.3 Establish some representative enquiries for the Database.
+<P>Section 3.4 Ask the Users to define their 'Top Ten' Enquiries.
+<br>Paragraph 3.4.1
+<font size=1>
+<OL>
+<li>Line 3.4.1.1 - For example, "How many Maintenance Engineers do we have on staff coming available in the next 4 weeks ?"
+<li>Line 3.4.1.2 Review Code or Type Data which is (more or less) constant, which can be classified as Reference Data.
+<li>Line 3.4.1.3 For example, Currency or Country Codes. Where possible, use standard values, such as ISO Codes.
+<li>Line 3.4.1.4 Look for 'has a' relationships. These can become Foreign Keys, or 'Parent-Child' relationships.
+</OL>
+</font>
+
+<P>Section 3.5 Work through the User Scenarios with Users using some sample data to check that that Database supports the required functionality.
+
+<P>
+<b><font color=red>Chapter 4. Agree the Results with the Users</font></b>
+<br>Section 4.1 This final Step is very important.
+<br>Paragraph 4.1.1 It usually takes several discussions to achieve concensus.
+<font size=1>
+<OL>
+<li>Line 4.1.1.1 Review the Results with appropriate people, such as Users, Managers,
+<li>Line 4.1.1.2 Development staff, etc. and repeat until the final Database design is reached.
+</OL>
+</font>
+
+</body>
+
+<P>
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="ask_a_question.html">Ask Us a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="faqs.html">FAQs</a>
+        | <a href="search.html">Search</a>
+        | <a href="site_map.html">Site Map</a> ]
+</center>
+<P>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2002</I></font></center>
+
+</html>

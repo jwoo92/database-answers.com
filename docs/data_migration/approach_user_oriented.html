@@ -1,0 +1,286 @@
+<html>
+<head>
+<title>Approach to Data Migration</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height=68 valign=top><img src="../images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></td>
+<td align=right rowspan=2 width=100%><img alt="Steps to Peacock Pond, Florida" src="../images/steps_xsml.jpg" hspace="0" vspace="4" wiIIdth=251 heiIIght=94></td>
+</tr>
+<tr><td><p class="time"><nobr><script language="JavaScript">theDate();</script></nobr></p></td></tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../ask_a_question.html"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../careers.html"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.html"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<!---	<td width="90" background="../images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+	<img alt="Our Sponsor, Barry Williams" src="../images/barryw_sml.jpg" width="81" heiIIIght="122" vspace="5">
+     	<p><img src="../images/spacer.gif" width="90"></p></td>
+--->
+
+	<td valign="top"><img src="../images/spacer.gif" width="3" height="239"></td>
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="../images/spacer.gif" height=20>
+
+            <table width=90% width="590" border=0 cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">
+		Steps in a User-Oriented Approach to Data Migration<img src="../images/spacer.gif" width="5" height="1">
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr>
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900">
+                <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="../images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%">
+<!--- barry - TEXT STARTS HERE ... --->
+
+<font color=blue face=Verdana size=2>
+<OL><li>Establish the <b>business benefits</b> of the proposed Migration.
+<li>Attend stakeholder workshops to agree data to be migrated.
+<li>Support design walkthrough and User Scenarios for potential <b>software package</b>.
+<li>Identify the preferred package.
+<li>Draft the <b>Business Rules</b> for Data Validation, Clean-up and Transformation.
+<li>Review the Business Rules with Users and modify according to User comments.
+<li>Obtain formal User sign-off for the Business Rules.
+<li>Define the <b>End-to-End Data Load Processes</b>, including procedures for resolving data quality discrepancies.
+<li>Select <b>Data Modelling Tool</b>,in accordance with relevant Standards.
+<li>Create Data Models for Sources and Targets.
+<li>Define procedures to maintain the Data Model as detailed in the Requirements Specification under
+Change Control (following system design changes)
+<li>Complex Change Management Projects.</pre>
+
+
+Carry out data preparation to defined business rules for data input.
+Carry out data cleansing to defined business rules for data input.
+Support data input processes, including resolving data quality queries.
+</OL>
+
+<hr>
+
+<P>
+<UL>
+<li><b><font color=blue face=Verdana size=2>A. Setting-up the Data Migration Process ...</font></b>
+<OL>
+<font color=green>
+
+<li>Define the Business Rules for Data Validation, Cleansing and Transformation.
+<li>Define the Business Rules for Data Input.
+
+
+Carry out data cleansing to defined business rules for data input.
+Support data input processes, including resolving data quality queries.
+
+
+
+
+
+
+Choose a <a href="../modelling_tools.html">Data Modelling Tool</a>
+with Reverse Engineering Capability,(such as ERWin).</font>
+
+<font color=green><li>Identify all the required <a href="data_islands.html"><b>Data Sources</b></a>, and an 'owner' for each Source.
+<UL>
+<li><a HREeF="data_islands.html">Data Feeds</a>
+<li><a HREeF="data_islands.html">Legacy Systems</a>
+<li><a HREeF="data_islands.html">Operational Data Stores</a>
+</UL>
+</font>
+
+<a HREeeF="staging_area.html"><font color=green><li>Define the Data Items</a> required, in consultation with the Users.</font>
+<a HREeeF="staging_area.html"><font color=green><li>Create the Data Models for the Source Data.</a></font>
+
+<!---
+<li>Define <a href="data_validation_checks.html">Data Validation Checks</a> (bottom-up) and Clean-Up Business Rules for Source Data.</a>
+
+<a HREeeF="staging_area.html"><font color=green><li>Define the Validation and Conversion</a> for each Data Item.</font>
+
+<li>Carry out  <a href="db_quality_audit.html">an Audit of the Data Quality</a> in major Databases, (bottom-up and top-down).
+
+<a HREeeF="staging_area.html"><font color=green><li>Define the Staging Area</a>, with MIRror Tables to store Extract Files.</font>
+<a HREeF="http://www.metagon.com/">
+<font color=green><li>Create the <b>Enterprise/Integrated Data Model</b> for the Target Database</font></a>
+<font color=green><li>Define the <a href="migration_mapping.html"><font color=green><b>Data Mapping</b></a> between Source and Target Data Items.
+
+<br><a HREeF="chk_sys_cat.html">If possible, use SQL Script to check System Catalogues</a>
+
+<font color=green>
+<li>Optionally, <a href="crud_matrix.html">create a CRUD Matrix</b></a> to identify the interactions between Data and Functions.</font>
+<li>Carry out  <a href="db_quality_audit.html">an Audit of the Data Quality</a> in major Databases.
+<li>Define <a href="data_validation_checks.html">Data Validation Checks</a> and Clean-Up Business Rules for Source Data.</a>
+<li><a HREeF="../modelling_tools.html">Define Acceptance Tests for data in the Integrated Database.</a>
+</OL>
+--->
+
+<font color=blue>
+</OL>
+
+<br><br>
+<li><b>B. Executing the Data Migration Process.</b></font>
+<OL><font color=green>
+<li>Optionally, choose a <a href="../vendors_migration_tools.html">Data Migration Tool.</a>
+<li><a HREeF="../modelling_tools.html">Create Extract Files for each Data Source in turn</a>.
+<li><a HREeF="../modelling_tools.html">Resolve any Errors with the Users.</a>
+<li><a HREeF="../modelling_tools.html">Create Extract and perform Data Clean-Up.
+<li><a HREeF="../modelling_tools.html">Complete the Migration, (Extract, Transform and Load) for each Data Source.</a>
+<li><a HREeF="../modelling_tools.html">Run Acceptance Tests on the Integrated Target Database,(esp. Referential Integrity).</a>
+</font>
+
+</OL>
+
+</UL>
+
+<!---
+<P><b>C. BOOKS</b>
+<br>
+There are not many <font color=blue><b>books on Database Migration</b></font>, but here are two :-
+<br><br>C.1 Migrating Legacy Systems, by Brodie and Stonebraker
+<br>Stonebraker is well-respected as the Architect of Ingres, but I didn't like this book very much.
+<br>
+At <a href="http://www.amazon.com/exec/obidos/ASIN/1558603301/qid=980637443/sr=2-3/ref=sc_b_3/102-6273647-8032908" target="_new">
+Amazon.com</a>, but the only reviewer gave it 4 stars.
+<br><br>C.2 90 Days to the Data Mart, by Alan Simon.
+<br>This,of course,is devoted to Data Marts, but covers some common ground.
+<br>At <a href="http://www.amazon.com/exec/obidos/ASIN/0471251941/qid=980637607/sr=2-1/ref=sc_b_1/102-6273647-8032908" target="_new">
+Amazon.com</a>, but the only reviewer gave this one 5 Stars.
+</OL>
+---->
+
+       		</td>
+        	</tr>
+            	</table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+        </td>
+      </tr></table>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"><img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.html"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

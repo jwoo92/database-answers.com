@@ -1,0 +1,2957 @@
+﻿<html><head><title>Industry Data Models</title>
+<meta Name="description"
+Content="Industry Data Models">
+<meta Name="keywords"
+Content="industry data model,industry data models">
+
+<meta http-ildrens clinic
+equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../styles/style.css">
+
+<!--- Google Analytics tracking software --->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-841908-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'hts://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" WIiiiDTH="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table border=0 name="HEADER" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height=68 rowspan=2 valign=middle><img src="../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers">
+
+<br>
+<!--- Start of PayPal Button Code --->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_NEW">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="5KQSYPCYBFNN4">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<!--- End of PayPal Button Code --->
+</td>
+
+
+<td align=right rowspan=2 width="100%" valign=middle>
+<!--- <img src="../../images/maldives_sml.jpg" hspace="0" vspace="4"> --->
+<!--- START OF CLUSTRMAP CODE -->
+<a href="http://www3.clustrmaps.com/counter/maps.php?url=http://http://www.databaseanswers.org/data_models/index.html" id="clustrMapsLink"><img src="http://www3.clustrmaps.com/counter/index2.php?url=http://http://www.databaseanswers.org/data_models/index.html" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onError="this.onError=null; this.src='http://www2.clustrmaps.com/../images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://www2.clustrmaps.com'" />
+</a>
+<!--- END OF CLUSTRMAP CODE --->
+
+</td></tr>
+
+</table>
+
+
+<!--- START OF APRIL 1ST. MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width=5% width="6%"><a style="text-decoration:none" href="../index.html"><font color=white face=Verdana size=2>Home</font></td>
+
+	<td align=LEFT width=5% width="10%"><a style="text-decoration:none" href="../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+	</td>
+
+	<td width=8% width="10%"><a style="text-decoration:none" HREeeeF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+
+    	<td width="7%">
+	<a style="text-decoration:none" href="../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="7%"><a style="text-decoration:none" href="../clients.html"><font color="#FFFFFF" face=Verdana size=2>Clients</font></a>
+	</td>
+
+	<td align=LEFT width=8% width="18%"><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+
+          <td width="10%"><a style="text-decoration:none" href="../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+
+          <td width=10%><a style="text-decoration:none" href="../tutorials.html"><font color="#FFFFFF" face=Verdana size=2>Tutorials</font></a></td>
+
+        <td width=10%><a style="text-decoration:none" href="../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF APRIL 1ST. MENU BAR --->
+
+
+
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+  <tr>
+	<td width="90" background="../../images/v3/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+            <p><img src="../../images/v3/spacer.gif" width=3 width="90"></p>
+	</td>
+	<td valign="top"><img src="../../images/v3/spacer.gif" width="3" height="239">
+	</td>
+
+
+          <td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+            <table border=0 width="100%" cellspacing="0" cellpadding="2">
+	<tbody>
+              <tr>
+
+                <td align=center colspan=4 valign=middle bgcolor="#3399CC" background="../images/v3/px-left.gif"><img src="../images/spacer.gif" width="1" height="10">
+
+                  <span class="header2">
+<!--- <a href="#CLUSTR_MAP"><font color=white face=Verdana size=2>Here's a Map</b></a> </b>showing where my Visitors are located</font> --->
+
+<hr><b><a href="http://courses.databaseanswers.org/data-modelling-design-course/" target="_new"><font color=yellow><b>Click here for our new Courses on Database Design and Data Modelling.</font></b></a>
+<hr>
+
+
+<br><font color=white>This page shows a list of our Industry-specific Data Models in 50 categories that cover Subject Areas and are used to create Enterprise Data Models.
+
+<br><font color=white>Here is an alphabetical list <a href="index_all_models.html"><b><font color=yellow>all of our 1,700+ Data Models</font></b></a>.
+
+<br><br>
+
+<a href="index_where_used.html"><font color=yellow><b>Click here</b></font></a> to see where our Models are used.
+
+<br><br>We have written a
+<a href="../downloads/Short_Tutorial_on_DWH_by_Example.pdf" target="_new"><b><font color=white>Short downloadable Tutorial</font></b></a> on creating a Data Warehouse using any of the Models on this page.
+
+<hr>
+
+
+
+<br>
+<img src="../images/spacer.gif" width="1" height="5">
+</td>
+</tr>
+
+
+<tr>
+<td valign=top class="cell"><font color=blue face=Verdana size=2>
+<OL>
+<li><a href="advertising_data_models.html"><b>Advertising</b></a>
+
+<font size=1>
+<OL>
+<li><a href="advertising_agencies/index.html">Advertising Agencies</a>
+<li><a href="advertising_billboards/index.html">Advertising Billboards</a>
+<li><a href="advertising_online/index.html">Advertising Online</a>
+<li><a href="advertising_systems/index.html">Advertising Systems</a>
+<li><a href="future_of_databases/index.html">Architecture for the Future</a>
+<li><a href="multi_media_publication/index.html">Multi-Media Publications</a>
+<li><a href="publish_and_subscribe_basic/index.html">Publish and Subscribe (Basic)</a>
+<li><a href="financial_portals/index.html">Publish and Subscribe (Financial Portal)</a>
+<li><a href="publish_and_subscribe/index.html">Publish and Subscribe (using Tags)</a>
+<li><a href="website_analytics/index.html">Web Site Analytics</a>
+</OL>
+</font>
+
+<li><a HREeeeF="advertising_data_models.html"><b>Agents</b></a>
+<font size=1><OL>
+<li><a href="agents_and_leads/index.html">Agents and Leads</a>
+<li><a href="sales_commissions/index.html">Agents Commissions</a>
+<li><a href="agents_generic/index.html">Agents (Generic)</a>
+<li><a href="newsagents/index.html">Newsagents</a>
+<li><a href="real_estate_agent/index.html">Real Estate Agents</a>
+<li><a href="talent_agencies/index.html">Talent Agencies</a>
+<li><a href="travel_agents/index.html">Travel Agents</a>
+</OL></font>
+
+<li><a href="agile_enterprise_data_models.html"><b><font color=red face=Verdana size=2>Agile Enterprise Data Models</font></b></a>
+<font size=1><OL>
+<li><a href="agile_asset_mgt/index.html">Asset Management</a>
+<li><a href="agile_banking/index.html">Banking</a>
+<li><a href="agile_construction/index.html">Construction</a>
+<li><a href="agile_customers/index.html">Customers</a>
+
+<li><a href=" agile_customer_data_platform/index.html">Customer Data Platform</a>
+
+
+
+<li><a href="agile_data_roadmap/index.html">Data Roadmap</a>
+<li><a href="agile_dba_services/index.html">DBA Services</a>
+<li><a href="agile_documents/index.html">Documents</a>
+<li><a href="agile_education/index.html">Education</a>
+<li><a href="agile_entertainment/index.html">Entertainment</a>
+<li><a href="agile_events/index.html">Events</a>
+<li><a href="agile_financial_services/index.html"><b>Financial Services</b></a>
+<li><a href="agile_jas/index.html">Freight Fowarders (Jas)</a>
+<li><a href="agile_govt/index.html">Government</a>
+<li><a href="agile_botswana/index.html">Government of Botswana</a>
+<li><a href="agile_hotels/index.html">Hotels</a>
+<li><a href="agile_insurance/index.html"><b>Insurance</b></a>
+<li><a href="agile_law_enforcement/index.html">Law Enforcement</a>
+<li><a href="agile_logistics/index.html"><b>Logistics</b></a>
+<li><a href="agile_medical/index.html">Medical</a>
+<li><a href="agile_natural_resources/index.html">Natural Resources</a>
+
+<li><a href="agile_oil_business/index.html">Oil Business</a>
+
+<li><a href="agile_Pharmaceuticals/index.html">Pharmaceuticals</a>
+<li><a href="agile_retail_sales/index.html"><b>Retail Sales</b></a>
+<li><a href="agile_sales_cycle/index.html">Sales Cycle</a>
+<li><a href="agile_self_service/index.html">Self-Service</a>
+<li><a href="agile_students/index.html">Students</a> <img src="/images/new.gif">
+<li><a href="agile_tekno_consultancy/index.html">Tekno Consultancy</a>
+<li><a href="agile_tongaat_hulett/index.html">Tongaat Hulett (South Africa)</a>
+<li><a href="agile_tracking/index.html">Tracking</a>
+<li><a href="agile_uk/index.html">UK (Great Britain)</a>
+<li><a href="agile_universal_model/index.html">Universal Model</a>
+<li><a href="agile_wine/index.html">Wine (Enterprise and Life-Cycle)</a>
+</OL></font>
+
+
+<li><a href="air_transport.html"><b>Air Transport</b></a>
+<font size=1>
+<OL>
+<li><a href="aircraft_from_ww2/index.html">Aircraft from WW2</a>
+
+<li><a href="aircraft_parts_and_orders/index.html">Aircraft Parts and Orders</a>
+<li><a href="airline_bookings_in_africa/index.html">Airline Bookings in Africa</a>
+<li><a href="airline_operations/index.html">Airline Operations</a>
+<li><a href="airline_reservations/index.html">Airline Reservations</a>
+<li><a href="travel_routes/index.html">Airline Travel Routes</a>
+<li><a href="airport_in_a_box/index.html">Airport in a Box</a>
+<li><a href="airport_management/index.html">Airport Management</a>
+<li><a href="airport_mgt_and_the_internet_of_things/index.html">Airport Managment and the Internet of Things</a>
+<li><a href="airport_mgt_platform/index.html">Airport Management Platform</a>
+
+<li><a href="airport_operations2/index.html">Airport Operations2</a>
+
+<li><a href="air_transport_platform_2020/index.html">Air Transport Platform 2020</a>
+
+<li><a href="airport_management/BAA_top_level_model.html">BAA (British Airports Authority)</a>
+
+<li><a href="enterprise_data_model_for_air_travel/index.html">Enterprise Data Model for Air Travel</a>
+
+<li><a href="flight_bookings/index.html">Flight Bookings</a>
+
+<li><a href="flight_bookings_private/index.html">Flight Bookings (Private)
+
+<li><a href="heathrow_airport/index.html">Heathrow Airport</a>
+<li><a href="mh370_missing_plane/index.html">Missing Flight MH370</a>
+<li><a href="travel_terminals/index.html">Travel Terminals</a>
+
+</OL>
+</font>
+
+
+<li><font size=2><b>Animal Sanctuaries</b></font>
+<font size=1>
+<OL>
+<li><a HREeeeF="butterfly_world/index.html">Butterfly World</a>
+<li><a href="dog_breeding/index.html">Dog Breeding</a>
+<li><a href="dog_kennels/index.html">Dog Kennels</a>
+<li><a href="dog_whisperer/index.html">Dog Whisperer</a>
+
+<!--- <li><a href="donkey_sanctuary/index.html">Donkey Sanctuary</a> --->
+<li><a href="http://www.thedonkeysanctuary.org.uk/" target="_new">The Donkey Sanctuary (3rd. party)</a>
+
+<li><a href="elephant_sanctuaries/index.html">Elephant Sanctuaries</a>
+
+<li><a href="hedgehogs/index.html">Hedgehogs</a>
+
+<li><a href="turtle_conservancy/index.html">Turtle Conservancy</a>
+<li><a href="5_minute_tutorials/feeding_time_at_the_zoo.html">Zoo Feeding Time</a> <font color=red>(5 minutes Tutorial)</font>
+</OL>
+</font>
+
+
+<li><font size=2><b>Assets</b></font>
+<font size=1>
+<OL>
+<li><a href="asset_management/index.html">Asset Management</a>
+
+<li><a href="asset_management_self_service/index.html">Asset Management (Self Service)</a>
+
+<li><a href="assets/index.html">Assets</a>
+<li><a href="assets_and_locations/index.html">Assets and Locations</a>
+<li><a href="assets_and_insurance/index.html">Assets and Insurance</a>
+<li><a href="assets_maintenance/index.html">Assets Maintenance</a>
+<li><a href="assets_schedules/index.html">Assets Schedules</a>
+<li><a href="inventory_of_it_assets/index.html">IT Assets</a>
+
+</OL>
+</font>
+
+
+
+<li><a href="automotive_industry.html"><font size=2><b>Automotive Industry</b></font>
+<font size=1>
+<OL>
+<li><a href="car_parts_suppliers/index.html">Car Parts Suppliers</a>
+<li><a href="car_sales/index.html">Car Sales</a>
+<li><a href="car_svc_center/index.html">Car Service Center</a>
+<li><a href="car_sales_simple/index.html">Simple Car Sales</a>
+<li><a href="motor_trade/index.html">Motor Trade</a>
+<li><a href="vehicle_parts_manufacture/index.html">Vehicle Parts Manufacture</a>
+</OL>
+</font>
+
+
+
+
+
+
+
+
+<li><a HREeeeF="air_transport.html"><b>Banks</b></a>
+<font size=1>
+<OL>
+<li><a href="bank_and_branches/index.html">Bank and Branches</a>
+<li><a href="banking_acquisitions/index.html">Banking Acquisitions</a>
+
+<!------ <li><a href="banking_checking_accounts/index.html">Banking Checking Accounts</a> ------------>
+<li><a href="banking_data_marts/index.html">Banking Data Marts</a>
+<li><a href="banking_data_warehouses/index.html">Banking Data Warehouses</a>
+
+<li><a href="banking_in_a_box/index.html">Banking in a Box</a> <img src="/images/new.gif">
+
+
+<li><a href="POC_banking_platform_2020/index.html">Banking Platform 2020</a>
+<li><a href="blockchain/index.html">Blockchain</a>
+<li><a href="challenger_banks/index.html">Challenger Banks</a>
+<li><a href="banking_checking_accounts/index.html">Checking Accounts</a>
+<li><a href="banking_generic_data_model/index.html">Generic Banking</a> (Retail and Investment)
+<li><a href="investment_banking/index.html">Investment Banks</a>
+<li><a href="online_banking/index.html">Online Banking</a>
+<li><a href="lending_and_leasing/index.html">Lending and leasing<A>
+<li><a href="retail_banks/index.html">Retail Banks</a>
+<li><a href="retail_bank_accounts_for_husbands_and_wives/index.html">Retail Bank Accounts for Husbands and Wives</a>
+<li><a href="retail_banking_in_the_clouds/index.html">Retail Banking in the Clouds</a>
+</OL>
+</font>
+
+<li><b>Big Data</b>
+<font size=1>
+<OL>
+<li><a href="big_data/index.html">Big Data</a>
+
+<li><a href="big_data_demo/index.html">Big Data - Demo</a>
+
+<li><a href="big_data_hadoop/index.html">Big Data - Hadoop</a>
+<li><a href="big_data_oracles_approach/index.html">Big Data - Oracle's Approach</a>
+
+<li><a href="big_data/Teradata_Unified_Data_Architecture.html">Big Data - Teradata Architecture
+<li><a href="big_data_tutorial/index.html">Big Data - Tutorial</a>
+<li><a href="data_lakes/index.html">Data Lakes</a>
+</OL>
+</font>
+
+<li><a HREeeeF="bang_for_the_buck_models.html"><b>British Artefacts</b></a>
+<font size=1><OL>
+<li><a href="airport_management/BAA_top_level_model.html">BAA (British Airports Authority)</a>
+<li><a href="broadcasting_corporations/index.html">British Broadcasting Corporation (BBC)</a>
+<li><a href="british_council/index.html">British Council</a>
+<li><a href="british_open_golf_2015/index.html">British Golf</a>
+<li><a HREeeeF="airport_management/BAA_top_level_model.html">British Library</a>
+<li><a href="museums_generic/index.html">British Museum</a>
+<li><a href="https://www.visitbritain.com/gb/en">Visit Britain (British Tourist Authority)</a>
+<li><a href="british_village_life/index.html">British Village Life</a>
+
+</OL></font>
+
+<li><a HREeeeF="bang_for_the_buck_models.html"><b>Business Activity Monitoring (BAM)</b></a>
+<font size=1><OL>
+<li><a href="business_activity_monitoring/index.html">BAM</a>
+<li><a href="bam_and_dq/index.html">BAM and Data Quality</a>
+<li><a href="bam_event_driven_architecture/index.html">BAM and Event Data Architecture</a>
+</OL></font>
+
+<li><a HREeeeF="air_transport.html"><b>Business Intelligence (BI)</b></a>
+<font size=1>
+<OL>
+<li><a href="bmews_bi_on_the_beach/index.html">BI on the Beach</a>
+<li><a href="bmews_123/index.html">BMEWS 123</a>
+<li><a href="bmews_data_architecture/index.html">BMEWS Data Architecture</a>
+<li><a href="bmews_design_pattern_1/index.html">BMEWS Design Pattern 1</a>
+<li><a href="bmews_organization/index.html">BMEWS Organization</a>
+</OL>
+</font>
+
+<!---
+<li><a href="boating_marinas/index.html">Boating Marinas</a>
+
+<li><a href="boatyards/index.html">Boatyards</a>
+<li><a href="bookkeeping/index.html">Bookkeeping</a>
+
+<li><a href="bookstore/index.html">Bookstore</a>
+<li><a href="bookstore_and_warehouses/index.html">Bookstore and Warehouses</a>
+<li><a href="libraries_and_books/index.html">Books and Libraries</a>
+<li><a href="botanics_databases/index.html">Botanical Gardens</a>
+<li><a href="boutiques/index.html">Boutiques</a>
+<li><a href="boy_scouts/index.html">Boy Scouts</a>
+<li><a href="cancer_screening/index.html">Breast Cancer Screening</a>
+
+<li><a HREeeeF="bang_for_the_buck_models.html">Breeding</a>
+<OL><font size=1>
+<li><a href="cattle_breeding/index.html">Cattle Breeding</a>
+<li><a href="dog_breeding/index.html">Dog Breeding</a>
+<li><a href="pigeon_breeding/index.html">Pigeon Breeding</a>
+</font></OL>
+
+<li><a href="brookfield_global_relocation_svcs/index.html">Brookfield Global Relocation Services</a>
+<li><a href="bus_tracking/index.html">Bus Tracking</a>
+<li><a href="b2b/index.html">Business 2 Business e-Commerce (b2b)</a>
+<li><a href="b2c/index.html">Business 2 Consumer e-Commerce (b2c)</a>
+<li><a href="business_directories/index.html">Business Directories</a>
+<li><a href="call_centers/index.html">Call Centers</a>
+<li><a href="canal_trips/index.html">Canal Trips</a>
+<li><a href="cancer_screening/index.html">Cancer Screening</a>
+<li><a href="canonical_data_models/index.html">Canonical Data Model</a>
+<li><a href="car_dealership/index.html">Car Dealership</a>
+<li><a href="car_hire/index.html">Car Hire</a>
+<li><a href="insurance.html">Car insurance and Claims</a>
+<li><a href="car_park_security/index.html">Car Park Security</a>
+<li><a href="car_parking_enforcement/index.html">Car Parking Enforcement</a>
+<li><a href="car_parts_suppliers/index.html">Car Parts Suppliers</a>
+<li><a href="car_sales/index.html">Car Sales</a>
+
+<li><a href="car_sales_simple/index.html">Car Sales (Simple)</a>
+
+<li><a href="car_svc_center/index.html">Car Service Center</a>
+<li><a href="caravan_park_holiday_bookings/index.html">Caravan Park Holiday Bookings</a>
+
+<li><a href="cardiac_catherization_registry/index.html">Cardiac Catherization Registry (& EAV)</a>
+<li><a href="cargo_ship_at_night/index.html">Cargo Ship at Night</a>
+<li><a href="carphone_warehouse/index.html">Carphone Warehouse</a>
+<li><a href="case_management/index.html">Case Management (Lawyers)</a>
+
+<li><a href="case_management_role_based/index.html>Case Management (Role-based)</a>
+
+<li><a href="social_workers_case_mgt/index.html">Case Management (Social Workers)</a>
+<li><a href="casinos/index.html">Casinos</a>
+<li><a href="product_catalogs/index.html">Catalogs of Products</a>
+<li><a href="catering_businesses/index.html">Catering Businesses for Schools</a>
+<li><a href="catering_services/index.html">Catering Services</a>
+<li><a href="catteries/index.html">Catteries</a>
+<li><a href="cattle_breeding/index.html">Cattle Breeding</a>
+<li><a href="cd_collection/index.html">CD Collection</a>
+<li><a href="cdl_drivers_medical_review/index.html">CDL Drivers Medical Review</a>
+<li><a href="cell_mobile_apps_stores/index.html">Cell Apps Stores</a>
+<li><a href="cemetaries/index.html">Cemetaries</a>
+<li><a href="census/index.html">Census Results</a>
+-------->
+
+<li><font color=blue><b>Charities</b></font>
+<font size=1>
+<OL>
+<li><a href="charities_tutorial/index.html">Charities <font color=red</font> (a Tutorial)</font>
+
+<li><a href="charities/index.html">Charities and Appeals</a>
+<li><a href="charities_and_collection_tins/index.html">Charities and Collection Tins</a>
+<li><a href="just_giving_charity/index.html">Charities (Just Giving)</a>
+</OL>
+</font>
+
+<li><font color=blue><b>Children</b></font>
+<font size=1>
+<OL>
+<li><a href="child_care_centres/index.html">Child Care Centres</a>
+<li><a href="children_and_families_support/index.html">Children and Families Support</a>
+<li><a href="children_in_institutions/index.html">Children in Institutions (UNICEF)</a>
+<li><a href="childrens_aid/index.html">Children's Aid Rcds Mgt</a>
+<li><a href="childrens_charities_flights/index.html">Children's Charities Flights</a>
+<li><a href="childrens_clinics/index.html">Children's Clinics</a>
+<li><a href="childrens_common_assessment_framework/index.html">Children's Common Assessment Framework (UK)</a>
+<li><a href="childrens_lives/index.html">Childrens Lives</a>
+<li><a href="childrens_national_database/index.html">Children's National Database</a>
+<li><a href="childrens_playgroup/index.html">Children's Playgroups</a>
+</OL>
+</font>
+
+
+<li><b>Churches</b>
+<font size=1>
+<OL>
+<li><a href="church_donations/index.html">Church Donations</a>
+<li><a href="visits_to_church_food_pantry/index.html">Church Food_Pantry Visits</a>
+<li><a href="church_members/index.html">Church Members (Visio)</a>
+<li><a href="missionaries/index.html">Church Missionaries</a>
+<li><a href="church_praise_teams/index.html">Church Praise Teams</a>
+<li><a href="church_sunday_schools/index.html">Church Sunday Schools</a>
+<li><a href="youth_church/index.html">Church (Youth)</a>
+</OL>
+</font>
+
+<!---
+<li><a href="cinema_bookings/index.html">Cinema Bookings</a>
+<li><a href="circus/index.html">Circus</a>
+<li><a href="cirque_du_soleil/index.html">Cirque du Soleil</a>
+<li><a href="citizens_and_services/index.html">Citizens and Services</a>
+<li><a href="city_councils/index.html">City Councils</a>
+<li><a href="city_hall_certificate_registration/index.html">City Hall Certificate Registration</a>
+<li><a href="city_licences/index.html">City Licences</a>
+<li><a href="city_tourist_guide/index.html">City Tourist Guide</a>
+
+<li><a href="cleaning_companies/index.html">Cleaning Companies</a>
+
+<li><a href="click_stream_analysis/index.html">Click Stream Analysis</a>
+<li><a href="consultants_and_clients/index.html">Clients and Consultants</a>
+<li><a href="clients_and_fees/index.html">Clients and Fees</a>
+<li><a href="clients_and_locations/index.html">Clients and Locations</a>
+<li><a href="clinical_trials/index.html">Clinical Trials</a>
+<li><a href="medical_clinics_and_pharmacies/index.html">Clinics and Pharmacies</a>
+<li><a href="cloud_computing/index.html">Cloud Computing</a>
+<li><a href="clown_registry/index.html">Clown Registry</a>
+<li><a href="club_members/index.html">Club Members</a>
+<li><a href="cmdb_configuration_mgt_db/index.html">CMDB - Configuration Mgt DB</a>
+
+<li><a href="coach_trips/index.html">Coach Trips</a>
+<li><a href="coding4fun/index.html">Coding 4 Fun Projects</a>
+<li><a href="comedy_central/index.html">Comedy Central</a>
+<li><a href="commercial_properties/index.html">Commercial Properties</a>
+<li><font color=green>Commercial Web Sites ...</font>
+<OL><font size=1>
+<li><a href="avon_cosmetics/index.html">Avon Cosmetics</a>
+<li><a href="baltimore_police_department/index.html">Baltimore Police Department</a>
+<li><a href="brookfield_global_relocation_svcs/index.html">Brookfield Global Relocation Services</a>
+<li><a href="cirque_du_soleil/index.html">Cirque du Soleil</a>
+<li><a href="descartes_systems_group/index.html"</a>Descartes Systems Group</a>
+<li><a href="job_seekers_web_site/index.html">Dice (Job Seekers Web Site)</a>
+<li><a href="digital_innovation_incorporated/index.html">Digital Innovation Inc.</a>
+<li><a href="dog_whisperer/index.html">Dog Whisperer</a>
+<li><a href="ebay_deals/index.html">eBay Deals</a>
+<li><a href="financial_services_authority/index.html">Financial Services Authority</a>
+<li><a href="gearhead_outfitters/index.html">Gearhead Outfitters</a>
+<li><a href="go_compare/index.html">Go Compare.com</a>
+<li><a href="gumtree/index.html">Gumtree</a>
+<li><a href="ideal_shopping/index.html">Ideal Shopping</a>
+<li><a href="imdb/index.html">IMDB (Internet Movie DB)</a>
+<li><a href="just_giving_charity/index.html">Just Giving (Charity)</a>
+<li><a href="keytec_netherlands/index.html">Keytec (Netherlands)</a>
+<li><a href="linked_in/index.html">Linked In</a>
+<li><a href="magic_gatherer_cards/index.html">Magic Gatherer Cards</a>
+
+
+
+<li><a href="my_life_bits/index.html">MyLifeBits Research</a>
+<li><a href="newegg/index.html">NewEgg</a>
+<li><a href="open_university/index.html">Open University</a>
+<li><a href="oxford_university_press/index.html">Oxford University Press</a>
+<li><a href="performing_rights_society/index.html">Performing Rights Society</a>
+<li><a href="regus_office_accommodation/index.html">Regus Office Accommodation</a>
+<li><a href="salesforce_dotcom/index.html">SalesForce</a>
+<li><a href="salim/index.html">Salim</a>
+<li><a href="shrek_2_movie/index.html">Shrek 2 Movie</a>
+<li><a href="sony_computer_entertainment_europe/index.html">Sony Computer Entertainment Europe</a>
+<li><a href="sony_corporation/index.html">Sony Corporation</a>
+<li><a href="starbubble_cafe/index.html">Starbubble Cafe, Eindhoven, Holland</a>
+<li><a href="starcraft_2/index.html">Star Craft 2 Game</a>
+<li><a href="the_maritime_group/index.html">The Maritime Group</a>
+<li><a href="ticketmaster/index.html">Ticketmaster</a>
+<li><a href="TKM_retail/index.html">TK Maxx<A>
+<li><a href="woot/index.html">Woot</a>
+<li><a href="yell/index.html">Yell (UK)</a>
+</OL></font>
+
+<li><a href="common_data_model/index.html">Common Data Model</a>
+
+<li>Communities ...
+<OL><font size=1>
+<li><a href="community_groups_and_workers/index.html">Community Groups and Workers</a>
+<li><a href="community_newsletters_and_questions/index.html">FAQs and Newsletters</a>
+<li><a href="community_personalization/index.html">Personalization</a>
+<li><a href="communities_by_philip_greenspun/index.html">Philip Greenspun</a>
+<li><a href="fi_kpi_portal.html">Publish/Subscribe & KPI Portal</a>
+<li><a href="community_website/index.html">User Registration</a>
+<li><a href="community_website/index.html">Community Web Site</a>
+</font>
+</OL>
+<font size=2>
+<li><a href="community_medical_centers/index.html">Community Medical Centers</a>
+<li><a href="company_associations/index.html">Company Associations</a>
+<li><a href="complaints_and_feedback/index.html">Complaints and Feedback</a>
+<li><a href="competition_results/index.html">Competition Results</a>
+<li><a href="complex_event_processing/index.html">Complex Event Processing</a>
+<li><a href="dell_computer_sales/index.html">Computer Sales (Dell)</a>
+<li><a href="conference_centers/index.html">Conference Centers</a>
+<li><a href="conference_proceedings/index.html">Conference Proceedings</a>
+<li><a href="conference_proceedings_management/index.html">Conference Proceedings Management</a>
+<li><a href="conservation_of_historic_objects/index.html">Conservation of Historic Objects</a>
+<li><a href="construction_and_manufacturing/index.html">Construction and Manufacturing</a>
+<li><a href="construction_jobs_bidding/index.html">Construction Jobs Bidding</a>
+<li><a href="consultants_and_clients/index.html">Consultants and Clients</a>
+<li><a href="consultant_search/index.html">Consultant Search Web Site</a>
+<li><a href="cpg_consumer_packaged_goods/index.html">Consumer Packaged Goods <b>(CPG)</b></a>
+
+<li><a href="contacts_and_products/index.html">Contacts and Products</a>
+<li><a href="contact_management/index.html">Contact Management</a>
+<li><a href="container_shipping/index.html">Container Shipping</a>
+<li><a href="contract_management/index.html">Contract Management</a>
+<li><a href="contract_staff_agencies/index.html">Contract Staff Agencies</a>
+
+<li><a href="copyright_hub/index.html">Copyright Hub</a>
+
+<li><a href="corporate_hierarchy/index.html">Corporate Hierarchy</a>
+
+<li><a href="corporate_intranet/index.html">Corporate Intranet</a>
+<li><a href="cosmetics_home_sales/index.html">Cosmetics Home Sales</a>
+<li><a href="university_course_catalogs/index.html">Course Catalogs</a>
+<li><a href="cows_events/index.html">Cow's Events</a>
+
+
+<li><a href="craigslist/index.html">CraigsList</a>
+<li><a href="credit_accumulation_and_transfer/index.html">Credit Accumulation (Europe)</a>
+<li><a href="criminal_record_keeping/index.html">Criminal Record Keeping</a>
+<li><a href="crisis_call_centers/index.html">Crisis Call Centers</a>
+<li><a href="crm/index.html">CRM</a>
+<li><a href="crud/index.html">CRUD - <b>C</b>reate,<b>R</b>ead,<b>U</b>pdate,<b>D</b>elete</a>
+
+<!---
+<li><a href="crm_marketing_data/index.html">CRM Marketing Data</a>
+<li><a href="crm_marketing_data_architecture/index.html">CRM Marketing Data Architecture</a>
+<li><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/crmsdk/htm/objectschemas.asp" target="_new">
+CRM - Microsoft's Data Model</a>
+--->
+
+<li><b>Conflict Resolution</b>
+<font size=1>
+<OL>
+<li><a href="conflict_and_wars/index.html">Conflict and Wars</a>
+<li><a href="middle_east_conflict/index.html">Middle East conflict</a>
+<li><a href="quality_of_life/index.html">Quality of Life</a>
+<li><a href="resolution_planning/index.html">Resolution Planning</a>
+</OL>
+</font>
+
+
+<li><b>Cruises</b>
+<font size=1>
+<OL>
+<li><a href="passengers_on_a_cruise/index.html">Cruise Liners and Passengers</a>
+<li><a href="cruise_ship_administration/index.html">Cruise Ship Adminstration</a>
+<li><a href="cruise_ships/index.html">Cruise Ships</a>
+</OL>
+</font>
+
+
+<!---
+<li><a href="csr_framework/index.html">CSR Framework</a>
+<li><a href="cultural_club/index.html">Cultural club</a>
+<li><a href="cv_and_job_history/index.html">CVs and Job Histories</a> (Visio)
+<li><a href="dance_school/index.html">Dance School</a>
+<li><a href="data_arch/index.html">Data Architecture</a>
+<li><a href="data_dictionary/index.html">Data Dictionary</a>
+
+
+<li>Data Management ...
+<OL><font size=1>
+<li><a href="data_integration/index.html">Data Integration</a>
+</font>
+</OL>
+
+<li><a href="../best_practice_road_map/data_marts_case_studies.html">Data Mart Case Studies</a>
+<li><a href="enterprise_data_mashups/index.html">Data Mashups</a>
+<li><a href="data_migration/index.html">Data Migration and Design Patterns</a>
+--->
+
+
+
+<li><a href="data_marts_data_warehouses.html"><b>Data Marts / Data Warehouses :-</b></a>
+<font size=1>
+<OL>
+<li><a href="basic_data_mart/index.html">Basic Data Mart</a>
+<li><a href="customers_and_purchases_data_warehouse/index.html">Customers and Purchases</a>
+<li><a href="data_warehouse_ecommerce/index.html">eCommerce Data Warehouse</a>
+<li><a href="data_warehouse_loading/index.html">Loading a Data Warehouse</a>
+<li><a href="data_warehouse_loading_alt/index.html">Data Warehouse Loading (Alt)</a>
+
+<li><a href="federated_data_marts/index.html">Federated Data Marts</a>
+
+<li><a href="pharmaceuticals_dw/index.html">Pharmaceuticals</a>
+<li><a href="snowflake.html">Snowflake Design for Transaction</a>
+<li><a href="star_classes/index.html">Star Design for Teaching Schedule</a>
+<li><a href="star_conceptual.html">Star Design for Transaction (Conceptual)</a>
+<li><a href="star_physical.html">Star Design for Transaction (Physical)</a>
+</OL>
+</font>
+
+
+<li><a href="data_marts_data_warehouses.html"><b>Data Migration (DWH + DMT):-</b></a>
+<font size=2>
+<OL>
+<li><a href="basic_data_mart/index.html">Freight Forwarders</a>
+<li><a href="customers_and_purchases_data_warehouse/index.html">Logistics</a>
+</OL>
+</font>
+
+
+<!---
+<li><a href="../databases4_life.html">Databases for Life</a>
+<li><a href="dating_sites/index.html">Dating Sites</a>
+<li><a href="day_care_centers/index.html">Day Care Centers</a>
+<li><a href="debt_collection/index.html">Debt Collection</a>
+<li><a href="debt_management/index.html">Debt Management</a>
+<li><a href="defense_logistics/index.html">Defense Logistics</a>
+<li><a href="dell_computer_sales/index.html">Dell Computer Sales</a>
+<li><a href="department_store/index.html">Department Store</a>
+<li><a href="descartes_systems_group/index.html"</a>Descartes Systems Group</a>
+<li><a href="design_patterns_and_generic_models.html">Design Patterns and Generic Models</a>
+<li><a href="diabetes_diagnosis_and_treatment/index.html">Diabetes Diagnosis and Treatment</a>
+<li><a href="diet_decision_support_system/index.html">Diet Decision Support System</a>
+<li><a href="dietician/index.html">Dietician's Consulting Practice</a>
+<li><a href="dictionaries_for_foreign_languages/index.html">Dictionaries for Foreign Languages</a>
+<li><a href="digital_challenge/index.html">Digital Challenge (UK)</a>
+<li><a href="disaster_recovery/index.html">Disaster Recovery</a>
+
+<li><a href="symptoms_and_diseases/index.html">Diseases and Symptoms</a>
+<li><a href="doctors_practice/index.html">Doctor's Practice</a>
+--->
+
+<li><a href="dba_cloud_services/index.html"><font color=red><b>DBA Cloud Services</b></font></a>
+<font size=1><OL>
+<li><a href="dba_cloud_svcs_for_smbs/index.html">Cloud Services for SMBs</a>
+<li><a href="dba_commodities_exchange/index.html">Commodities Exchange</a>
+<li><a href="dba_data_platform/index.html">Data Platform</a>
+<li><a href="dba_cloud_svcs_for_heathrow/index.html">Logistics for Heathrow</a>
+<li><a href="dba_packaged_services/index.html">OSS for SMEs</a>
+<li><a href="removals_cloud_service/index.html">Removals</a>
+ </OL></font>
+
+
+<li><b>Digital Transformation :-</b>
+<font size=1><OL>
+<li><a href="digital_transformation/index.html">Basic</a>
+<li><a href="challenger_banks/index.html">Challenger Banks</a>
+
+
+<li><a href="digital_transformation_getting_started/index.html">Getting Started</a>
+
+<li><a href="digital_transformation_getting_started_with_self_service/index.html">Getting Started with Self-Service</a>
+<li><a href="digital_transformation_platform/index.html">Platform</a> <img src="/images/new.gif">
+
+<li><a href="digital_transformation_with_self_service/index.html">Self-Service</a>
+<li><a href="digital_transformation_with_data_services/index.html">with Data Services</a>
+</OL></font>
+
+<li><b>Documents</b>
+<font size=1>
+<OL>
+<li><a href="document_control_systems/index.html">Document Control Systems</a>
+
+<li><a href="document_tracking/index.html">Document Destruction Tracking</a>
+
+<li><a href="document_management/index.html">Document Management - Basic</a>
+<li><a href="doc_mgt_generic/index.html">Document Management - Generic</a>
+<li><a href="document_management_for_security/index.html">Document Management - Security</a>
+<li><a href="doc_mgt_specific/index.html">Document Management - Specific</a>
+<li><a href="document_publication/index.html">Document Publication</a>
+<li><a href="document_template_management/index.html">Document Template Management</a>
+<li><a href="document_workflow/index.html">Document Workflow</a>
+<li><a href="documents_and_collections/index.html">Documents and Collections</a>
+<li><a href="documents_and_expenses/index.html">Documents and Expenses</a>
+</OL>
+</font>
+
+
+<!---
+<li><a href="dog_breeding/index.html">Dog Breeding</a>
+<li><a href="dog_kennels/index.html">Dog Kennels</a>
+<li><a href="dog_whisperer/index.html">Dog Whisperer</a>
+<li><a href="domestic_violence_centers/index.html">Domestic Violence Centers</a>
+<li>Donations :-
+<OL><font size=1>
+<li><a href="church_donations/index.html">Church Donations</a>
+<li><a href="library_donations/index.html">Library Donations</a>
+</font>
+</OL>
+
+<li><a href="drinks_in_a_sports_bar/index.html">Drinks in a Sports Bar</a>
+<li><a href="driver_recruitment_agencies/index.html">Driver Recruitment Agencies</a>
+<li><a href="drivers_violations_citations_log/index.html">Drivers Citations Log</a>
+<li><a href="drivers_education/index.html">Drivers Education</a>
+<li><a href="driving_schools_simple/index.html">Driving School (Simple)</a>
+<li><a href="driving_schools_complex/index.html">Driving School (Complex)</a>
+<li><a href="driving_test_scores_database/index.html">Driving Test Scores Database</a>
+<li><a href="dry_cleaners/index.html">Dry Cleaners</a>
+<li><a href="earth_moving_equipment/index.html">Earth-Moving Equipment</a>
+--->
+
+<li><b>Education</b>
+<font size=1>
+<OL>
+<li><a href="educational_networks/index.html">Educational Networks</a>
+<li><a href="enterprise_data_model_for_education/index.html">Enterprise Data Model</a>
+<li><a href="open_university/index.html">Open University</a>
+<li><a href="school_management_systems/index.html">School Management Systems</a>
+<li><a href="school_print_shops/index.html">School Print Shops</a>
+<li><a href="schools_sports_tournaments/index.html">Schools Sports Tournaments</a>
+<li><a href="student_accommodation/index.html">Student Accommodation</a>
+<li><a href="student_activities/index.html">Student Activities</a>
+<li><a href="student_applications/index.html">Student Applications</a>
+<li><a href="student_assessments_simple/index.html">Student Assessments (Simple)</a>
+<li><a href="student_assessments_complex/index.html">Student Assessments (Complex)</a>
+<li><a href="student_assignments/index.html">Student Assignments</a>
+<li><a href="athletes_and_teams/index.html">Student Athletes and Teams</a>
+<li><a href="student_exams/index.html">Student Exams</a>
+<li><a href="student_exams_in_saudi/index.html">Student Exams in Saudi</a>
+<li><a href="student_information_systems/index.html">Student Information Systems</a>
+<li><a href="student_internships/index.html">Student Internships</a>
+<li><a href="student_loans/index.html">Student Loans</a>
+<li><a href="student_placements/index.html">Student Placements</a>
+<li><a href="student_registration/index.html">Student Registration</a>
+<li><a href="student_rosters/index.html">Student Rosters</a>
+<li><a href="students_transcript_tracking/index.html">Student Transcripts Tracking</a>
+<li><a href="student_placements/index.html">Student Work Placements</a>
+<li><a href="University_course_catalogs/index.html">University Course Catalogs</a>
+<li><a href="university_gymnastics/index.html">University Gymnastics</a>
+<li><a href="university_organisation/index.html">University Organisation</a>
+
+</OL>
+</font>
+
+
+<!---
+<font size=2>
+<li><a href="ebay_deals/index.html">eBay Deals</a>
+--->
+
+<li><b>e-Commerce</b>
+<font size=1>
+<OL>
+<li><a href="b2b.html">B2B e-Commerce</a>
+<li><a href="b2c.html">B2C e-Commerce</a>
+<li><a href="customers_and_campaigns_and_ecommerce/index.html">Customers, Campaigns and e-Commerce</a>
+<li><a href="e_commerce/index.html">e-Commerce</a>
+<li><a href="e_commerce_business/index.html">e-Commerce Business</a>
+<li><a href="game_shop/index.html">Games Web Site</a>
+<li><a href="online_art_galleries/index.html">Online Art Galleries</a>
+<li><a href="e_commerce/index.html"><b>Orders & Shipments</b></a>
+<li><a href="photo_catalogs/index.html">Photo Catalogs</a>
+<li><a href="e_commerce_shopping_carts/index.html">Shopping Carts</a>
+</OL>
+</font>
+
+<!---
+<li><a href="e_government/index.html">e-Government</a>
+<OL><font size=1><li><a href="uk_egovt_standard_data/index.html">UK e-Govt Standard Data</a>
+</font></OL>
+
+<li><a href="e_learning/index.html">e-Learning</a>
+<li><a href="electrical_power_suppliers/index.html">Electrical Power Suppliers</a>
+<li><a href="elephant_sanctuaries/index.html">Elephant Sanctuaries</a>
+--->
+
+<li><b>Emergency Services</b>
+<font size=1>
+<OL>
+<li><a href="emergency_services/index.html">Emergency Services</a>
+<li><a href="emergency_services_volunteers/index.html">Emergency Services Volunteers</a>
+</OL>
+</font>
+
+
+<li><b>Employees</b>
+<font size=1>
+<OL>
+<li><a href="employee_record_keeping/index.html">Employee Record Keeping</a>
+<li><a href="employees/index.html">Employees</a>
+<li><a href="employee_generic_model/index.html">Employees (Generic)</a>
+<li><a href="employees_leave_record_keeping/index.html">Employees Leave Records</a>
+<li><a href="employees_owners_locations/index.html">Employees Owners and Locations</a>
+<li><a href="employees_savings_funds/index.html">Employees Savings Funds</a>
+<li><a href="employees_schedules/index.html">Employees Schedules</a>
+<li><a href="employees_working_at_home/index.html">Employees Working at Home</a>
+<li><a href="employment_agencies/index.html">Employment Agencies</a>
+
+<li><a href="employment_jobs_for_mussie/index.html">Employment and Jobs</a>
+
+</OL>
+</font>
+
+
+<!---
+<li><a href="endangered_species/index.html">Endangered Species</a>
+<li><a href="enterprise_data_mashups/index.html">Enterprise Data Mashups</a>
+--->
+
+<!--- <li><a href="sql_server_2008_enterprise_data_platform/index.html">SQL Server 2008</a> --->
+
+
+<li><a href="enterprise_data_models.html"><b>Enterprise Data Models</b></a>
+<font size=1>
+<OL>
+<li><a href="enterprise_data_model_for_air_travel/index.html">Air Travel</a>
+<li><a href="enterprise_data_model_for_BMEWS/index.html">BMEWS BI</a>
+<li><a href="container_shipping/index.html">Container Shipping</a>
+
+<!--- <li><a href="generic_enterprise_data_model/index.html"><font color=Green>Generic Enterprise Data Model</font></a> --->
+
+<li><a href="digital_innovation_incorporated/index.html">Digital Innovation Inc.</a>
+<li><a href="enterprise_data_model_for_education/index.html">Education</a>
+
+
+
+<li><a href="electrical_power_suppliers/index.html">Electrical Power Suppliers</a>
+
+<li><a href="enterprise_data_model_for_events_and_exhibitions/index.html">Events and Exhibitions</a>
+<li><a href="gym_management/index.html">Gym Management</a> <font color=red>(& Tutorial)</font>
+<li><a href="enterprise_data_model_for_insurance/index.html">Insurance</a>
+<li><a href="enterprise_data_model_for_investment_banks/index.html">Investment Banks</a>
+<li><a href="enterprise_data_model_for_local_government/index.html">Local Government</a>
+<li><a href="enterprise_data_model_for_logistics/index.html">Logistics</a>
+
+
+<li><a href="oil_companies/index.html">Oil Companies</a>
+<li><a href="enterprise_data_model_for_retail/index.html">Retail Sales</a>
+
+<li><a href="waste_management/index.html">Waste Management</a>
+<li><a href="enterprise_data_model_for_wine/index.html">Wine</a>
+
+</OL>
+</font>
+
+
+<li><a href="top_ten_data_models_entertainment.html"><b>Entertainment</b></a>
+<font size=1>
+<OL>
+<li><a href="drama_workshop_groups/index.html">Drama Workshop Groups</a>
+
+<li><a href="entertainment_data_platform/index.html">Entertainment Data Platform</a>
+
+<li><a href="shrek_2_movie/index.html">Shrek Movie</a>
+<li><a href="talent_agencies/index.html">Talent Agencies</a>
+<li><a href="tanning_salons/index.html">Tanning Salons</a>
+<li><a href="theater_bookings/index.html">Theater Bookings</a>
+<li><a href="theme_parks/index.html">Theme Parks</a>
+</OL>
+</font>
+
+<li><a href="events_data_models.html"><b>Events</b></a>
+<font size=1>
+<OL>
+<!--- <li><a href="best_practice_and_user_events/index.html">Best Practice and User Events</a> --->
+
+<li><a href="complex_event_processing/index.html">Complex Event Processing</a>
+
+<li><a href="bam_event_driven_architecture/index.html">Event-Driven Architecture (and BAM)</a>
+
+<li><a href="event_driven_platform/index.html">Event Driven Platform</a>
+
+<li><a href="event_management/index.html">Event Management</a>
+
+<li><a href="event_planning/index.html">Event Planning</a>
+<li><a href="event_registrations/index.html">Event Registrations</a>
+<li><a href="event_reservations/index.html">Event Reservations</a>
+<li><a href="athletes_and_events/index.html">Events and Athletes</a>
+<li><a href="enterprise_data_model_for_events_and_exhibitions/index.html">Events and Exhibitions</a>
+
+<li><a href="events_and_kpis/index.html">Events and KPIS</a>
+
+<li><a href="events_and_staff_training/index.html">Events and Staff Training</a>
+<li><a href="cows_events/index.html">Events in a Cow's Life</a>
+<li><a href="hazard_event_management/index.html">Hazard Event Management</a>
+<li><a href="generic_foundation/index.html">Organisations, People and Events</a>
+<li><a href="restaurant_bookings/restaurant_events_bookings.html">Restaurant Events Bookings</a>
+</OL>
+</font>
+
+
+<!---
+<li><a href="documents_and_expenses/index.html">Expenses and Documents</a>
+<li><a href="experts_and_questions/index.html">Experts and Questions</a>
+<li><a href="social_networking/index.html">Facebook and Social Networking Sites</a>
+<li><a href="my_facebook_app_invitations/index.html"><b>Facebook</b> App Invitations</a>
+<li><a href="facilitated_workshops/index.html">Facilitated Workshops</a>
+<li><a href="facilities_assignment/index.html">Facilities Assignment</a>
+<li><a href="inspections_of_facilities/index.html">Facilities and Inspections</a>
+
+<li><a href="faqs/index.html">FAQs</a>
+<li><a href="families_and_wills/index.html">Families and Wills</a>
+<li><a href="family_advocacy/index.html">Family Advocacy</a>
+<li><a href="farm_management/index.html">Farm Management</a>
+<li><a href="cows_events/index.html">Farms and Cow's Events</a>
+<li><a href="boutiques/index.html">Fashion Boutiques</a>
+<li><a href="father_of_all_models/index.html"><font color=green>Father of all Data Models</font></a>
+<li><a href="father_of_all_data_warehouses/index.html">Father of all Data Warehouses</a>
+
+<li><a href="fbi_global_database/index.html">FBI Global Database</a>
+<li><a href="feedback/index.html">Feedback</a>
+<li><a href="complaints_and_feedback/index.html">Feedback and Complaints</a>
+<li><a href="file_archiving_systems/index.html">File Archiving Systems</a>
+<li><a href="finance_subject_area/index.html">Finance Subject Area</a>
+<li><a href="financial_engagement/index.html">Financial Engagement</a>
+
+
+
+<li><a href="global_custody/index.html">Financial Global Custody</a>
+<li><a href="financial_portals/index.html">Financial Portals</a>
+<li><a href="financial_services_authority/index.html">Financial Services Authority</a>
+<li><a href="fingerprint_recognition/index.html">Fingerprint Recognition</a>
+<li><a href="fish_factory/index.html">Fish Factory</a>
+<li><a href="fishing_industry/index.html">Fishing Industry</a>
+<li><a href="flight_catering_systems/index.html">Flight Catering Systems</a>
+<li><a href="childrens_charities_flights/index.html">Flights for Children's Charities</a>
+<li><a href="food_distribution/index.html">Food Distribution</a>
+<li><a href="football_clubs/index.html">Football Clubs</a>
+<li><a href="dictionaries_for_foreign_languages/index.html">Foreign Language Dictionaries</a>
+<li><a href="foreign_language_tournament_listings/index.html">Foreign Language Tournament Listings</a>
+
+<li><a href="forensics/index.html">Forensics</a>
+
+<li><a href="forensic_science_labs/index.html">Forensic Science Labs</a>
+<li><a href="forklift_truck_servicing/index.html">Forklift Truck Servicing</a>
+<li><a href="fox_hunting/index.html">Fox Hunting</a>
+<li><a href="franchise_operators/index.html">Franchise Operators</a>
+<li><a href="freight_forwarders/index.html">Freight Forwarders</a>
+<li><a href="frozen_yoghurt_shops/index.html">Frozen Yoghurt Shops</a>
+<li><a href="fuel_coupons_management/index.html">Fuel Coupons Mgt</a>
+<li><a href="fund_raising/index.html">Fund Raising</a>
+<li><a href="funeral_homes/index.html">Funeral Homes</a>
+<li><a href="future_of_databases/index.html"><font color=green>Future of Databases</font></a>
+</font>
+--->
+
+
+
+<li><a HREeeeF="gaming.html"><b>Gaming</b></a>
+
+<font color=blue face=Verdana size=1>
+<OL>
+<li><a href="online_gambling/index.html">Gambling (Online)</a>
+<li><a href="gaming_generic/index.html"><font color=green>Gaming - Generic</font></a> (+University Courses)
+<li><a href="games_features/index.html">Games Features</a>
+<li><a href="game_shop/index.html">Games Store</a>
+<li><a href="gaming_leagues/index.html">Gaming Leagues</a>
+<li><a href="gaming_gears_of_war/index.html">Gaming - Specific - Gears of War</a>
+<li><a href="gaming_table_top/index.html">Gaming - Specific - Table Top</a>
+<li><a href="gaming_web_sites/index.html">Gaming Web Sites</a>
+<li><a href="shrek_2_movie/index.html">Shrek Movie</a>
+</OL>
+</font>
+
+<li><a HREeeeF="gaming.html"><b>Gardens</b></a>
+
+<font color=blue face=Verdana size=1>
+<OL>
+
+<li><a href="botanics_databases/index.html">Botanical Gardens</a>
+<li><a href="landscape_gardening/index.html">Landscape Gardening</a>
+<li><a href="organic_vegetable_garden_planner/index.html">Organic Vegetable Garden Planner</a>
+<li><a href="inventory_of_plants_in_a_nursery/index.html">Plants in a Nursery</a>
+</OL>
+</font>
+
+<li><a href="design_patterns_and_generic_models.html"><b>Generic Models (and Design Patterns)</b></a>
+
+<font color=blue face=Verdana size=1>
+<OL>
+
+<li><a href="canonical_data_models/index.html">Canonical Data Model</a>
+<li><a href="childrens_lives/index.html">Childrens Lives</a>
+<li><a href="circus/index.html">Circus (Events & Players)</a>
+<li><a href="customers_generic_model/index.html">Customers</a>
+<li><a href="customers_and_services/index.html">Customers and Services</a>
+
+<li><a href="banking_data_warehouses/generic_dimensional_model.html">Dimensional Model</a>
+
+<li><a href="doc_mgt_generic/index.html">Document Management</a>
+<li><a href="generic_enterprise_data_model/index.html">Enterprise Data Model</a>
+<li><a href="father_of_all_models/index.html"><font color=green>Father of All Models</font></a>
+<li><a href="generic_foundation/index.html">Generic Foundation</a>
+<li><a href="generic_and_specific_models/index.html">Generic Me and My Life</a>
+<li><a href="museums_generic/index.html">Museums</a>
+<li><a href="organisations_and_people/index.html">Organisations and People</a>
+<li><a href="organisations_and_people_and_transactions/index.html">Organisations, People and Transactions</a>
+<li><a href="organisations_members_and_events/index.html">Organisations, Members & Events</a>
+<li><a href="organisations_members_and_meetings/index.html">Organisations, Members & Meetings</a>
+<li><a href="organisations_staff_and_changes/index.html">Organisations, Staff and Changes</a>
+
+<li><a href="patient_care/index.html">Patient Care</a>
+
+<li><a href="payments_generic_model/index.html">Payments (Generic)</a>
+
+<li><a href="invoices_and_payments/index.html">Payments and Invoices</a>
+
+<li><a href="publish_and_subscribe_basic/index.html">Publish and Subscribe (Basic)</a>
+<li><a href="financial_portals/index.html">Publish and Subscribe (Financial Portal)</a>
+<li><a href="publish_and_subscribe/index.html">Publish and Subscribe (using Tags)</a>
+
+<li><a href="generic_reservations/index.html">Reservations</a>
+<li><a href="generic_retail/index.html">Retail (Generic)</a>
+<li><a href="shrek_2_movie/index.html">Shrek 2 Movie (Events & Places)</a>
+<li><a href="generic_transport/index.html">Transport</a>
+<li><a href="user_defined_hierarchies/index.html">User-defined Hierarchies</a>
+<li><a href="usual_suspects/index.html">Usual Suspects</a>
+</OL>
+</font>
+
+
+<font size=2>
+<li><a HREeeeF="design_patterns_and_generic_models.html"><b>Global</b></a>
+
+<font color=blue face=Verdana size=1>
+<OL>
+<li><a href="global_accountability/index.html">Global Accountability</a>
+<li><a href="global_community/index.html">Global Community</a>
+<li><a href="gci_global_consulting_infrastructure/index.html">Global Consulting</a>
+<li><a href="global_credit_crunch/index.html">Global Credit Crunch</a>
+<li><a href="global_crime/index.html">Global Crime</a>
+<li><a href="global_custody/index.html">Global Custody</a>
+<li><a href="global_law_firm/index.html">Global Law Firm</a>
+<li><a href="global_project_management/index.html">Global Project Management</a>
+<li><a href="global_relocation_services/index.html">Global Relocation Services</a>
+<li><a href="reference_database/index.html">Global Reference Database</a>
+<li><a href="global_retail_marketing/index.html"><font color=green>Global Retail Marketing</font></a>
+</OL>
+</font>
+
+<li><b>Golf</b>
+<font color=blue face=Verdana size=1>
+<OL>
+<li><a href="british_open_golf_2015/index.html">British Open Championship<A>
+<li><a href="golf_club_management/index.html">Golf Club Management</a>
+<li><a href="golf_course_maintenance/index.html">Golf Course Maintenance</a>
+<li><a href="golf_courses/index.html">Golf Courses</a>
+<li><a href="golf_course_specifications/index.html">Golf Course Specifications</a>
+<li><a href="golf_course_maintenance_employee_tasks/index.html">Golf Course Maintenance Employee Tasks</a>
+<li><a href="golf_memorabilia/index.html">Golf Memorabilia</a>
+<li><a href="golf_tournaments/index.html">Golf Tournaments</a>
+</OL>
+</font>
+
+<!---
+<li><a href="google_adsense/index.html">Google AdSense</a>
+<li><a href="google_analytics/index.html">Google Analytics</a>
+<li><a href="google_android/index.html">Google Android Phone Platform</a>
+--->
+
+<li><b>Governance, Risk Mgt and Compliance</b>
+<font color=blue face=Verdana size=1>
+<OL>
+<li><a href="bmews_bi_on_the_beach/index.html">BI on the Beach</a>
+<li><a href="governance_risk_mgt_compliance_GRC/index.html">GRC</a>
+</OL>
+</font>
+
+<li><b><a href="healthcare_models.html">Healthcare</a></b>
+
+
+<li><b><a href="hldm_models.html">High-Level Data Models (HLDMs)</a></b>
+<font color=blue face=Verdana size=1>
+<OL>
+<li><a HREeeeF="bmews_bi_on_the_beach/index.html">Banking</a>
+<li><a HREeeeF="governance_risk_mgt_compliance_GRC/index.html">Education</a>
+<li><a HREeeeF="governance_risk_mgt_compliance_GRC/index.html">Everyday Events</a>
+<li><a HREeeeF="governance_risk_mgt_compliance_GRC/index.html">Insurance</a>
+<li><a HREeeeF="governance_risk_mgt_compliance_GRC/index.html">Logistics</a>
+<li><a href="POC_Real_Estate_Platform/hldm_for_real_estate.html">Real Estate</a>
+
+<li><a href="student_information_systems/hldm_for_students.html">Students</a>
+
+<li><a href="telecomms/hldm_for_telecomms.html">Telecomms</a>
+</OL>
+</font>
+
+
+
+
+
+</td>
+
+
+
+
+<td valign=top><font color=blue face=Verdana size=2>
+<OL>
+<li><b>Customers</b>
+<font size=1>
+<OL><font size=1>
+<li><a href="clients_and_fees/index.html">Clients and Fees</a>
+<li><a href="clients_and_locations/index.html">Clients and Locations</a>
+<li><a href="clients_services_and_fees/index.html">Clients, Services and Fees</a>
+<li><a href="crm/index.html">CRM</a>
+<UL><font size=1>
+
+<!--- <li><a href="crm_customer_metrics/index.html">CRM Customer Metrics</a>
+<li><a href="crm_personalization/index.html">CRM and Personalization</a>
+<li><a href="crm_marketing_data/index.html">CRM Marketing Data</a>
+<li><a href="crm_marketing_data_architecture/index.html">CRM Marketing Data Architecture</a>
+<li><a href="crm_top_level/index.html">CRM Top-Level Architecture</a>
+<li><a href="crm/index.html">CRM Top-Level Overview</a>
+<hr>
+--->
+
+<li><a href="crm/call_centre_conceptual_erd.html">Call Centers</a>
+<li><a href="crm_customer_metrics/index.html">Customer Metrics</a>
+<!--- <li><a href="crm_architecture.html">Loyalty Architecture</a> --->
+
+<li><a href="crm_marketing_data/index.html">Marketing Data</a>
+<li><a href="crm_marketing_data_architecture/index.html">Marketing Data Architecture</a>
+<li><a href="http://msdn.microsoft.com/en-us/library/aa477389.aspx" target="_new">Microsoft Dynamics CRM</a>
+<li><a href="crm_personalization/index.html">Personalization</a>
+<li><a href="crm_top_level/index.html">Top-Level Data Model</a>
+<li>Template for a <a href="crm/source_systems_analysis.html">Source Systems Data Dictionary</a>
+</font></UL>
+
+<font size=2>
+<li><a href="customer_data/index.html">Customer Data</a>
+
+<li><a href="customer_data_analytics/index.html">Customer Data Analytics</a>
+<li><a href="customer_data_platform/index.html">Customer Data Platform</a>
+<li><a href="customer_data_platform_architecture/index.html">Customer Data Platform Architecture</a>
+
+<li><a href="customer_data_platform_corp_and_mkting/index.html">Customer Data Platform - Corporate and Marketing</a>
+
+<li><a href="customer_data_platform_for_kpis/index.html">Customer Data Platform for KPIs</a>
+
+<li><a href="customer_experience_management/index.html">Customer Experience Management</a>
+
+<li><a href="customer_journey_mapping_data_models.html">Customer Journey Mapping</a>
+<font size=2><OL>
+<li><a href="customer_journey_mapping_basic/index.html">Basic</a>
+<li><a href="customer_journey_mapping_intermediate/index.html">Intermediate</a>
+<li><a href="customer_journey_mapping_advanced/index.html">Advanced</a>
+<li><a href="customer_journey_mapping_more_advanced/index.html">More Advanced</a>
+<li><a href="customer_journey_mapping_to_retail_platform/index.html">Convert to Retail Platform</a>
+
+</OL></font>
+
+
+<!--------------
+<li><a href="customer_journey_mapping_basic/index.html">Customer Journey Mapping (Basic)</a>
+<li><a href="customer_journey_mapping_intermediate/index.html">Customer Journey Mapping (Intermediate)</a>
+<li><a href="customer_journey_mapping_advanced/index.html">Customer Journey Mapping (Advanced)</a>
+<li><a href="customer_journey_mapping_more_advanced/index.html">Customer Journey Mapping (More Advanced)</a>
+--------------->
+
+<li><a href="customers_life_and_times/index.html">Customer Life and Times</a>
+<li><a href="customer_lifetime_value/index.html">Customer Lifetime Value</a>
+
+<li><a href="customer_management_systems/index.html">Customer Management Systems</a>
+
+<!--------- <li><a href="master_data_mgt/master_data_mgt_customers.html">Customer Master Index</a> <img src="/images/new.gif"> ------------------------->
+
+<li><a href="customer_master_index/index.html">Customer Master Index</a>
+
+
+<li><a href="customer_service_on_the_move/index.html">Customer Service on the Move</a>
+
+<li><a href="b2c.html">Customers with multi-lingual B2C</a>
+<li><a href="bank_and_branches/index.html">Customers at a Bank</a>
+<li><a href="retail_banks/index.html">Customers at a Bank (retail)</a>
+<li><a href="bookstore/index.html">Customers at a Bookstore</a>
+<li><a href="call_centers/index.html">Customers at a Call Center</a>
+<li><a href="customers_and_addresses/index.html">Customers and Addresses</a>
+<li><a href="customers_and_campaigns/index.html">Customers and Campaigns</a>
+<li><a href="car_hire/index.html">Customers and Car Hire</a>
+
+<li><a href="customers_and_car_parts/index.html">Customers and Car Parts</a>
+
+<li><a href="car_sales/index.html">Customers and Car Sales</a>
+<li><a href="car_svc_center/index.html">Customers and Car Servicing</a>
+<li><a href="customers_and_credit_cards/index.html">Customers and Credit Cards</a>
+<li><a href="department_store/index.html">Customers and Dept Stores</a>
+<li><a href="customers_and_deals/index.html">Customers and Deals (UML)</a>
+<li><a href="customer_deliveries/index.html">Customers and Deliveries</a>
+<li><a href="customers_and_campaigns_and_ecommerce/index.html">Customers and e-Commerce</a>
+<li><a href="customers_and_financial_services/index.html">Customers and Financial Services</a>
+
+<li><a href="customers_and_financial_transactions/index.html"><b>Customers and Financial Transactions</b></a>
+
+
+<li><a href="frozen_yoghurt_shops/index.html">Customers and Frozen Yoghurt Shops</a>
+
+<li><a href="game_shop/index.html">Customers and Games Shops</a>
+<li><a href="hairdressers/index.html">Customers and Hairdressers</a>
+<li><a href="hardware_sales/index.html">Customers and Hardware Store</a>
+<li><a href="health_centres/index.html">Customers and Health Centres</a>
+<li><a href="insurance.html">Customers and Insurance</a>
+<li><a href="customers_and_inventory_mgt/index.html">Customers and Inventory Management</a>
+
+<li><a href="customers_and_invoices/index.html">Customers and Invoices</a>
+<li><a href="customers_and_jobs/index.html">Customers and Jobs</a>
+<li><a href="loan_management/index.html">Customers and Loans</a>
+<li><a href="crm_customer_metrics/index.html">Customers and Loyalty</a>
+<li><a href="customers_and_memberships/index.html">Customers and Memberships</a>
+<li><a href="online_banking/index.html">Customers and Online Banking</a>
+<li><a href="customers_and_orders/index.html">Customers and Orders</a>
+<li><a href="customers_and_partial_deliveries/index.html">Customers and Partial Deliveries</a>
+<li><a href="customers_and_payments/index.html">Customers and Payments</a>
+<li><a href="customers_and_payments_e_govt/index.html">Customers and Payments (e-Gov't)</a>
+<li><a href="customers_and_phone_bills/index.html">Customers and Phone Bills</a>
+<li><a href="price_comparison_web_sites/index.html">Customers and Price Comparison Web Sites</a>
+<li><a href="customers_and_products/index.html">Customers and Products</a>
+<li><a href="customers_and_products_canonical/index.html">Customers and Products (Canonical)</a>
+
+<li><a href="customers_and_products_generic/index.html">Customers and Products (Generic)</a>
+
+<li><a href="customers_and_products_and_promotions/index.html">Customers and Products and Promotions</a>
+<li><a href="customers_and_products_and_inheritance/index.html">Customers and Products and Inheritance</a>
+<li><a href="customers_and_purchases_data_warehouse/index.html">Customers and Purchases Data W'hse</a>
+
+<li><a href="customers_and_queries/index.html">Customers and Queries</a>
+
+<li><a href="retail_customers/index.html">Customers and Retail</a>
+
+<li><a HREeeeF="customers_and_services/index.html">Customers and Services</a>
+<UL><font size=1>
+<li><a href="customers_and_services_advanced/index.html">Customers and Services (Advanced)</a>
+<li><a href="customers_and_services/index.html">Customers and Services (Basic)</a>
+<li><a href="customers_and_services_ems_ship_supply/index.html">Customers and Services (EMS Ship Supply)</a>
+<li><a href="customers_and_services_generic/index.html">Customers and Services (Generic)</a>
+<li><a href="customers_and_services_vecom_marine/index.html">Customers and Services (Vecom Marine)</a>
+<li><a href="services_local/index.html">Local Services</a>
+</UL>
+
+<li><a href="shoppers_recommendations/index.html">Customers and Shoppers Recommendations</a>
+<li><a href="telemarketing/index.html">Customers and Telemarketing</a>
+
+<li><a href="customers_and_timesheets/index.html">Customers and Timesheets</a>
+
+<li><a href="water_bills/index.html">Customers and Water Bills</a>
+
+<!--- <li><a href="customers_and_orders/index.html">Customers and Orders</a> --->
+<!--- <li><a href="customers_card_transactions/index.html">Customers Card Transactions</a> --->
+
+<li><a href="student_class_scheduling/index.html">Customers Class Scheduling</a>
+<li><a href="customers_commercial_and_personal/index.html">Customers Comm & Personal</a>
+<li><a href="customer_data/index.html">Customers Data</a>
+<li><a href="customer_data_catalog/index.html">Customers Data Catalog</a>
+<li><a href="customers_data_warehouse/index.html">Customers Data Warehouse</a>
+<li><a href="customers_inventory_and_pos/index.html">Customers Inventory and POS</a>
+<li><a href="customer_journey_mapping/index.html">Customer Journey Mapping</a>
+<li><a href="customer_journey_mapping_complex/index.html">Customer Journey Mapping - Complex</a>
+
+<!--- <li><a href="customers_and_campaigns/index.html">Customers and Marketing Campaigns</a> --->
+<li><a href="customers_commercial_and_personal/index.html">Customers (Commercial & Personal)</a>
+<li><a href="retail_customers/index.html">Customers (Retail)</a>
+<li><a href="customer_metadata/index.html">Customers MetaData Repository</a>
+<li><a href="crm_customer_metrics/index.html">Customers Metrics</a>
+<li><a href="tracking_orders/index.html">Customers Order Tracking</a>
+<li><a href="generic_customer_model/index.html">Generic Customer Model (Popkin)</a>
+<li><a href="know_your_customer/index.html">Know your Customer</a>
+
+
+</font>
+
+<!--- </OL> --->
+
+<font size=2>
+
+
+
+
+<!--- <li><a href="online_gambling/index.html">Gambling (Online)</a> --->
+
+</OL>
+
+
+
+<font size=2>
+<li><a href="generic_enterprise_solutions.html">
+<font color=red>Generic Enterprise Soutions</a>
+<font size=1>
+<OL>
+<li><a href="chart_of_accounts/index.html">Chart of Accounts</a>
+<li><a href="customers_and_queries/index.html">Customers and Queries</a>
+<li><a href="finance_subject_area/index.html">Finance Subject Area</a>
+<li><a href="financial_cashflows/index.html">Financial Cashflows</a>
+<li><a href="financial_engagement/index.html">Financial Engagement</a>
+<li><a href="global_custody/index.html">Financial Global Custody</a>
+<li><a href="financial_services/index.html">Financial Services</a>
+<li><a href="financial_portals/index.html">Financial Portals</a>
+<li><a href="financial_reporting_platform/index.html">Financial Reporting Platform</a>
+<li><a href="financial_services/index.html">Financial Services</a>
+<li><a href="financial_statement_generator/index.html">Financial Statement Generator</a>
+<li><a href="report_generators/index.html">Report Generators</a>
+</OL>
+</font>
+</font>
+
+
+
+
+
+<font size=2>
+<li><a href="hobbies_and_pastimes/index.html"><b>Hobbies and Pastimes</b></a>
+<font size=1>
+<OL>
+<li><a href="chess_tournaments/index.html">Chess Tournaments</a>
+<li><a href="golf_tournaments/index.html">Golf Tournaments</a>
+<li><a href="olympic_games/index.html">Olympic Games</a>
+<li><a href="olympic_sports/index.html">Olympic Sports</a>
+<li><a href="swimming_clubs/index.html">Swimming Clubs</a>
+<li><a href="sailing_club/index.html">Sailing Clubs</a>
+</OL>
+</font>
+
+
+
+
+<li><a href="hospital_management/index.html"><b>Hospital Management</b></a>
+<font size=1>
+<OL>
+<li><a href="hospital_admissions/index.html">Hospital Admissions</a>
+<li><a href="hospitals_clinics_and_orders/index.html">Hospitals Clinics and Orders</a>
+<li><a href="hospital_operating_theaters/index.html">Hospital Operating Theaters</a>
+<li><a href="hospital_outpatients/index.html">Hospital Outpatients</a>
+<li><a href="hospital_patients/index.html">Hospital Patients</a>
+<li><a href="hospital_staff/index.html">Hospital Staff</a>
+<li><a href="hospital_supplies/index.html">Hospital Supplies</a>
+<li><a href="hospital_visits/index.html">Hospital Visits</a>
+</OL>
+</font>
+
+
+<li><b>Hotels and Accommodation</b></a>
+<font size=1>
+<OL>
+<li><a href="apartment_rentals/index.html">Apartment Rentals</a>
+<li><a href="hotel_reporting_services/index.html">Hotel Reporting Services</a>
+<li><a href="hotels/index.html">Hotel Reservations</a>
+<li><a href="hotels_and_tourist_attractions/index.html">Hotels and Tourist Attractions</a>
+<li><a href="hotels_platform2020/index.html">Hotels Platform</a>
+<li><a href="longterm_accommodation/index.html">Long Term Accommodation</a>
+</OL>
+</font>
+
+<!---
+<li><a href="hr_intro.html">HR or Personnel Department</a>
+<li><a href="houses_and_rooms/index.html">Houses and Rooms</a>
+<li><a href="iia_insurance_party/index.html">IIA Insurance Party</a>
+<li><a href="icons_of_the_western_world/index.html">Icons of the Western World</a>
+<li><a href="imdb/index.html">IMDB (Internet Movie DB)</a>
+<li><a href="import_export_logistics/index.html">Import/Export Logistics</a>
+<li><a href="importing_client_data/index.html">Importing Client Data</a>
+<li><a href="indigenous_peoples/index.html">Indigenous Peoples</a>
+--->
+
+<li><a href="industry_specific.html"><b>Industry Data Models</b></a>
+<font size=1>
+<OL>
+<li><a href="top_ten_data_models_crm_and_customers.html">CRM and Customers</a>
+<li><a href="top_ten_data_models_e_commerce.html">e-Commerce</a>
+<li><a href="top_ten_data_models_education.html">Education</a>
+<li><a href="top_ten_data_models_entertainment.html">Entertainment</a>
+<li><a href="top_ten_data_models_health_and_fitness.html">Health and Fitness</a>
+<li><a href="top_ten_data_models_law_enforcement.html">Law Enforcement</a>
+<li><a href="oil_companies/retail_sales_subject_area.html">Retail Sales (Oil Companies)</a>
+<li><a href="top_ten_data_models_students.html">Students</a>
+<li><a href="top_ten_data_models_transport_and_travel.html">Transport and Travel</a>
+</OL>
+</font>
+
+<!---
+<li><a href="../inheritance_design_notes.html"><font color=green>Inheritance Models</font></a>
+<OL><font size=2>
+	<li><a href="american_studies/index.html">American Studies</a>
+	<li><a href="baltimore_police_department/index.html">Baltimore Police Department</a>
+	<li><a href="births_deaths_and_marriages/index.html">Births, Deaths and Marriages</a>
+	<li><a href="charities/index.html">Charities</a>
+	<li><a href="city_tourist_guide/index.html">City Tourist Guide</a>
+	<li><a href="cmdb_configuration_mgt_db/index.html">CMDB - Configuration Mgt DB</a>
+	<li><a href="customers_commercial_and_personal/index.html">Customers Commercial and Personal</a>
+	<li><a href="event_registrations/index.html">Event Registrations</a>
+	<li><a href="game_shop/index.html">Games Store</a>
+	<li><a href="icons_of_the_western_world/index.html">Icons of the Western World</a>
+        <li><a href="insurance_brokers/index.html">Insurance Brokers</a>
+        <li><a href="library_for_lawyers/index.html">Libraries for Lawyers</a>
+	<li><a href="my_work/index.html">My Work</a>
+	<li><a href="national_trust_properties/index.html">National Trust (UK)</a>
+	<li><a href="newegg/index.html">NewEgg</a>
+	<li><a href="photo_catalogs/index.html">Photo Catalogs</a>
+
+	<li><a href="roles_inheritance_and_subtypes/index.html">Roles Inheritance and Subtypes</a>
+
+	<li><a href="school_management_systems/index.html">School Management Systems</a>
+	<li><a href="shrek_2_movie/index.html">Shrek 2 Movie</a>
+	<li><a href="tracking_manufactured_items/index.html">Tracking Manufactured Items</a>
+	<li><a href="travel_and_tourism_worldwide/index.html">Travel & Tourism Worldwide</a>
+	<li><a href="union_grievances/union_grievances_inheritance_model.html">Union Grievances</a>
+	<li><a href="vehicle_imports/index.html">Vehicle Imports</a>
+</font>
+</OL>
+
+<li><a href="inspections_of_facilities/index.html">Inspections of Facilities</a>
+--->
+
+<li><a href="insurance_data_models.html"><b>Insurance</b></a>
+<font size=1>
+<OL>
+
+<li><a href="https://www.information-management.com/opinion/machines-will-save-the-insurance-industry-not-bankers" target="_new">
+Insurance and Digitization</a> (3rd.party)
+
+
+
+
+
+<li><a href="insurance_applications/index.html">Insurance Applications</a>
+<li><a href="insurance_applications_advanced/index.html">Insurance Applications (Advanced)</a>
+
+<li><a href="insurance_brokers/index.html">Insurance Brokers</a>
+<li><a href="insurance_and_eclaims/index.html">Insurance and eClaims</a>
+
+<li><a href="insurance_fnol/index.html">Insurance FNOL</a>
+
+<li><a href="insurance_policies/index.html">Insurance Policies - Car, Home and Life</a>
+<li><a href="archimate_for_insurance_claims/index.html">Insurance Claims (in Archimate)</a>
+<li><a href="insurance_data_warehouses/index.html">Insurance Data Warehouses</a>
+
+<li><a href="insurance_general/index.html">Insurance (General)</a>
+<li><a href="insurance_offshore/index.html">Insurance (Offshore)</a>
+
+
+<li><a href="insurance_personal/index.html">Insurance (Personal)</a>
+<!----------- <li><a href="insurance_platform/index.html">Insurance Platform 2020</a>  ----------------->
+<li><a href="POC_insurance_platform_2020/index.html">Insurance Platform</a>
+
+<li><a href="insurance_policies_and_claims/index.html">Insurance Policies and Claims</a>
+<li><a href="solvency_ii/index.html">Solvency II</a>
+</OL>
+</font>
+
+<!---
+<li><a href="intelligent_environments/index.html">Intelligent Environments</a>
+<li><a href="intelligent_transport_systems/index.html">Intelligent Transport Systems</a>
+<li><a href="internet_music_radio_stations/index.html">Internet Music Radio Stations</a>
+--->
+
+<li><b>Inventory</b></a>
+<font size=1>
+<OL>
+<li><a href="fuel_stock/index.html">Fuel Stock</a>
+
+<li><a href="inventory_of_rental_equipment/inventory_equipment_maintenance.html">Inventory and Equipment Maintenance</a>
+<li><a href="inventory_and_sales/index.html">Inventory and Sales</a>
+<li><a href="inventory_control_for_files_in_boxes/index.html">Inventory Control (Files in Boxes)</a>
+<li><a href="inventory_control_for_manuals/index.html">Inventory Control (Manuals)</a>
+<li><a href="inventory_control_for_publishing/index.html">Inventory Control (Publishing)</a>
+<li><a href="inventory_control_for_retail/index.html">Inventory Control (Retail Store)</a>
+<li><a href="inventory_control_for_sports_centers/index.html">Inventory Control (Sports Centers)</a>
+<li><a href="inventory_control_and_pricing/index.html">Inventory Control and Pricing</a>
+
+<li><a href="customers_inventory_and_pos/index.html">Inventory - Customers and POS</a>
+
+<li><a href="inventory_of_furniture/index.html">Inventory of Furniture</a>
+<li><a href="inventory_of_it_assets/index.html">Inventory of IT Assets</a>
+<li><a href="inventory_of_plants_in_a_nursery/index.html">Inventory of Plants in a Nursery</a>
+<li><a href="inventory_of_rental_equipment/index.html">Inventory of Rental Equipment</a>
+<li><a href="inventory_of_servers/index.html">Inventory of Servers</a>
+<li><a href="inventory_for_ships_stores/index.html">Inventory of Ship's Stores</a>
+<li><a href="inventory_of_tooling_equipment/index.html">Inventory of Tooling Equipment</a>
+</OL>
+</font>
+
+<li><a href="investment_banking/index.html"><b>Investment Banking</b></a>
+<font size=1>
+<OL>
+<li><a href="investment_banking/accounts.html">Accounts</a>
+<li><a href="investment_banking/clients.html">Clients (Customers)</a>
+<li><a href="investment_banking/data_mart_fx_deals.html">Data Mart for FX Deals</a>
+<li><a href="banking_data_marts/index.html">Data Marts Generic Framework</a>
+<li><a href="banking_data_warehouses/index.html">Data Warehouses</a>
+<li><a href="enterprise_data_model_for_investment_banks/index.html">Enterprise Data Model</a>
+<li><a href="investment_banking/financial_instruments_model.html">Financial Instruments</a>
+<li><a href="financial_reporting_platform/index.html">Financial Reporting Platform</a>
+<li><a href="financial_services_authority/index.html">Financial Services Authority</a>
+<li><a href="investment_banking/deals_fx.html">FX Deals</a>
+<li><a href="global_custody/index.html">Global Custody</a>
+<li><a href="investment_banking/settlements.html">Settlements</a>
+<li><a href="stock_exchanges/index.html">Stock Exchanges</a>
+
+<li><a href="wealth_management/index.html">Wealth Management</a>
+
+</OL>
+</font>
+
+
+
+<!---
+<li><a HREeeF="investment_banking/index.html">Invisible Models</a>
+<OL><font size=1>
+	<li><a href="cargo_ship_at_night/index.html">Cargo Ship at Night</a>
+	<li><a href="cruise_ships/index.html">Cruise Ships</a>
+	<li><a HREeeeF="dutch_barges/index.html">Dutch Barges</a>
+	<li><a HREeeeF="office_building_htc41/index.html">Office Building (HTC 41)</a>
+	<li><a HREeeeF="taxis/index.html">Taxis</a>
+	<li><a HREeeeF="uk_pillar_boxes.html">UK Pillar Boxes</a>
+</font>
+</OL>
+
+<li><a href="invoices_and_payments/index.html">Invoices and Payments</a>
+<li><a href="issue_tracking_software/index.html">Issue Tracking (Software)</a>
+<li><a href="itil/index.html">ITIL - IT Infastructure Library</a>
+<li><a href="jewellery_stores/index.html">Jewellery Stores</a>
+<li><a HREeeF="investment_banking/index.html"><b>Jobs</b></a>
+<OL><font size=1>
+<li><a href="job_costing_and_profitability/index.html">Job Costing and Profitability</a>
+<li><a href="job_scheduling/index.html">Job Scheduling (Loading Data Warehouse)</a>
+<li><a href="services_job_scheduling/index.html">Job Scheduling (Services)</a>
+<li><a href="job_seekers_web_site/index.html">Job Seekers Web Sites(Dice)</a>
+<li><a href="jobs_skills_and_users/index.html">Jobs Skills and Users</a>
+</font></OL>
+
+<li><a href="judges_and_courts/index.html">Judges and Courts</a>
+<li><a href="justice_department/index.html">Justice Department</a>
+
+
+<li><a href="kpis_and_sops/index.html">Key Performance Indicators</a>
+<li><a href="keytec_netherlands/index.html">Keytec (Netherlands)</a>
+<li><a href="kitchen_cabinets/index.html">Kitchen Cabinets</a>
+<li><a href="task_logs_knowledge_management/index.html">Knowledge Management</a>
+<li><a href="laboratory_test_systems/index.html">Laboratory Test Systems</a>
+<li><a href="laboratory_management/index.html">Laboratory Management</a>
+<li><a href="land_registry/index.html">Land Registry</a>
+<li><a href="landscape_gardening/index.html">Landscape Gardening</a>
+<li><a href="language_schools/index.html">Language Schools</a>
+--->
+
+
+<li><a href="top_ten_data_models_law_enforcement.html"><b>Law Enforcement</b></a>
+<font size=1>
+<OL>
+<li><a href="anti_money_laundering/index.html">Anti-Money Laundering</a>
+<li><a href="baltimore_police_department/index.html">Baltimore Police Department</a>
+
+<li><a href="bank_robberies/index.html">Bank Robberies</a>
+
+<li><a href="bureau_of_justice_statistics/index.html">Bureau of Justice Statistics</a>
+<li><a href="case_management/index.html">Case Management</a>
+<li><a href="case_management_role_based/index.html">Case Management (Role-based)</a>
+<li><a href="crime_investigation/index.html">Crime Investigation</a>
+
+
+<li><a href="fingerprint_recognition/index.html">Fingerprint Recognition</a>
+<li><a href="forensics/index.html">Forensics</a>
+
+<li><a href="forensic_science_labs/index.html">Forensic Science Labs</a>
+<li><a href="global_crime/index.html">Global Crime</a>
+<li><a href="global_justice_usa/index.html">Global Justice (USA)</a>
+<li><a href="yakuza_japanese_crime/index.html">Japanese Crime (Yakuza)</a>
+<li><a href="judges_and_courts/index.html">Judges and Courts</a>
+<li><a href="justice_department/index.html">Justice Department</a>
+<li><a href="lawyers_cases_and_bills/index.html">Lawyers, Cases and Bills</a>
+<li><a href="case_management/index.html">Legal Case Management</a>
+<li><a href="legal_entities/index.html">Legal Entities</a>
+
+<li><a href="legal_practice_management/index.html">Legal Practice Management</a>
+
+<li><a href="library_for_lawyers/index.html">Libraries for Lawyers</a>
+<li><a href="mafia_organised_crime/index.html">Mafia Organised Crime</a>
+<li><a href="mobile_police_application/index.html">Mobile Police Application</a>
+<li><a href="offenders_and_movements/index.html">Offenders and Movements</a>
+<li><a href="parking_tickets/index.html">Parking Tickets</a>
+<li><a href="police_departments/index.html">Police Departments</a>
+<li><a href="police_generalized_data_model/index.html">Police Generalized Data Model</a>
+<li><a href="police_information_reports/index.html">Police Information Reports</a>
+<li><a href="police_mdm_data_model/index.html">Police MDM Data Model</a>
+<li><a href="cell_mobile_apps_stores/index.html">Mobile Apps Stores</a>
+<li><a href="mobile_police_application/index.html">Police Mobile Application</a>
+<li><a href="police_canonical_data_model/index.html">Police Canonical Data Model</a>
+<li><a href="prisons_and_prisoners/index.html">Prisons and Prisoners</a>
+<li><a href="private_investigators/index.html">Private Investigators</a>
+
+<li><a href="terrorism/index.html">Terrorism</a>
+<li><a href="tracking_terrorists/index.html">Terrorists (Tracking)</a>
+
+<li><a href="tracking_evidence/index.html">Tracking Evidence</a>
+<li><a href="traffic_cops_and_tickets/index.html">Traffic Cops and Tickets</a>
+<li><a href="tracking_terrorists/index.html">Tracking Terrorists</a>
+<li><a href="tracking_terrorists_domestic_uk/index.html">Tracking Terrorists (Domestic UK)</a>
+<li><a href="tracking_terrorists/index.html">Tracking Terrorists</a>
+<li><a href="tracking_terrorists_in_the_middle_east/index.html">Tracking Terrorists in the Middle East</a>
+
+
+<li><a href="yakuza_japanese_crime/index.html">Yakuza Japanese Crime</a>
+</OL>
+</font>
+
+<!---
+<li><a href="lawn_bowling_clubs/index.html">Lawn Bowling Clubs</a>
+<li><a href="ldap/index.html">LDAP</a>
+--->
+
+<!--- <li><a href="case_management/index.html">Legal Case Management</a> --->
+
+
+<li><a HREeeeF="library/index.html"><b>Libraries</b></a>
+<font size=1>
+<OL>
+<li><a href="library/index.html">Libraries Basic Model</a>
+<li><a href="libraries_and_books/index.html">Libraries and Books</a>
+
+<li><a href="libraries_and_librarians/index.html">Libraries and Librarians</a>
+
+<li><a href="library_of_digital_assets/index.html">Libraries of Digital Assets</a>
+<li><a href="library_of_film_tapes/index.html">Libraries of Film Tapes</a>
+<li><a href="media_libraries/index.html">Libraries of Media Items</a>
+
+<li><a href="library_of_sheet_music/index.html">Libraries of Sheet Music</a>
+<li><a href="library_for_lawyers/index.html">Libraries for Lawyers</a>
+<li><a href="library_for_teachers/index.html">Libraries for Teachers</a>
+<li><a href="library_for_a_uk_school/index.html">Libraries for UK Schools</a>
+
+<li><a href="library_asset_register/index.html">Library Asset Register</a>
+
+<li><a href="library_donations/index.html">Library Donations</a>
+<li><a href="library_for_haidar_salim/index.html">Library for Haidar Salim in Iraq</a>
+
+<li><a href="library_of_my_books/index.html">My Library (<b>for Amazon Web Svcs</b>)</a>
+<li><a href="opac_library_catalog/index.html">OPAC - Library Catalog</a>
+<li><a href="my_life_bits/index.html">Virtual Library for MyLifeBits</a>
+</OL>
+</font>
+
+<li><b>Local Government (UK)</b>
+<font size=1>
+<OL>
+<li><a href="master_data_mgt/master_data_mgt_customers.html">Customer MDM</a>
+<li><a href="enterprise_data_model_for_local_government/index.html">Enterprise Data Model</a>
+<li><a href="environmental_monitoring/index.html">Environmental Monitoring</a>
+<li><a href="local_govt_and_iot/index.html">Internet of Things</a>
+<li><a href="oss_and_local_govt/index.html">Operational Support Services (OSS)</a>
+
+
+<li><a href="local_govt_uk_residents/index.html">Residents</a>
+<li><a href="local_govt_uk_residents/local_govt_uk_many_to_many_print_version.html">Subject Areas</a>
+<li><a href="local_govt_top_level/index.html">Top-Level</a>
+</OL>
+</font>
+
+<li><a href="logistics_data_models.html"><b>Logistics</b></a>
+<font size=1>
+<OL>
+<li><a href="logistics_basic/index.html">Basic Logistics</a>
+<li><a href="logistics_canonical_model/index.html">Canonical Style Model</a>
+<li><a href="logistics/index.html">Corporate</a>
+<li><a href="descartes_systems_group/index.html"</a>Descartes Systems Group</a>
+<li><a href="defense_logistics/index.html">Defense</a>
+
+<li><a href="enterprise_data_model_for_logistics/index.html">Enterprise Model for Logistics</a>
+
+<li><a href="freight_forwarders/index.html">Freight Forwarders</a>
+<li><a href="logistics_and_iot/index.html">Internet of Things</a>
+<li><a href="logistics_and_shipments/index.html">Logistics and Shipments</a>
+
+<li><a href="logistics_and_travel/index.html">Logistics and Travel</a>
+
+<li><a href="logistics_movements/index.html">Movements</a>
+<li><a href="shipment_logistics/index.html">Shipments</a>
+<li><a href="ships_stores_logistics/index.html">Ships Stores</a>
+</OL>
+</font>
+
+
+<li><a HREeeF="maintenance_contracts_products_with_no_parts/index.html"><b>Manufacturing</b>
+<OL>
+<li><a href="orders_parts/index.html"><font size=1>Aircraft Orders and Parts</a>
+<li><a href="assets_maintenance/index.html">Assets Maintenance</a>
+<li><a href="bom/index.html">Bill of Materials</a>
+<li><a href="keytec_netherlands/index.html">Component Manufacture (Keytec, Netherlands)</a>
+
+<li><a href="concrete_manufacturing/index.html">Concrete Manufacturing</a>
+
+<li><a href="construction_and_manufacturing/index.html">Construction and Manufacturing</a>
+<li><a href="customers_and_purchases_data_warehouse/index.html">Customer Purchases Data W'house</a>
+<li><a href="packaging_equipment_manufacturers/index.html">Packaging Equipment Manufacturers</a>
+<li><a href="bom/bom_paper_warehouse.html">Paper Manufacturing</a>
+<li><a href="product_catalogs/index.html">Product Catalogs</a>
+<li><a href="shower_screens_manufacture/index.html">Shower Screens Manufacture</a>
+<li><a href="tracking_orders/index.html">Tracking Customer Orders</a>
+<li><a href="generic_transport/index.html">Vehicle Maintenance</a>
+<li><a href="vehicle_maintenance_with_inheritance/index.html">Vehicle Maintenance with Inheritance</a>
+
+<li><a href="vehicle_manufacturers/index.html">Vehicle Manufacturers</a>
+
+<li><a href="vehicle_parts_manufacture/index.html"><font size=1>Vehicle Parts Manufacture</a></font>
+</OL>
+
+<font size=2>
+
+
+<li><a HREeF="maintenance_contracts/index.html"><b>Maritime</b></a>
+
+<font size=1>
+<OL>
+<li><a href="freight_forwarders/index.html">Freight Forwarders</a>
+<li><a href="harbour_management/index.html">Harbour Management</a>
+<li><a HREeeeF="marine_archeology/index.html">Marine Archeology</a>
+<li><a href="maritime_museums/index.html">Maritime Museums</a>
+<li><a href="scuba_diving/index.html">Scuba Diving</a>
+<li><a href="mentoring_naval_officers/index.html">Mentoring Naval Officers</a>
+<li><a href="swimming_clubs/index.html">Swimming Clubs</a>
+<li><a href="the_maritime_group/index.html">The Maritime Group</a>
+<li><a href="equipment_maintenance/index.html">US Navy</a>
+</OL>
+</font>
+
+
+
+
+<li><a href="master_data_mgt/index.html"><b>Master Data Management (MDM)</b></a>
+
+<font size=1>
+<OL>
+<li><a href="master_data_mgt/master_data_mgt_customers.html">Customers (Local Government)</a>
+<li><a href="master_data_mgt/index.html">Enterprise Data Platform</a>
+<li><a href="master_data_in_malaysia/index.html">Master Data in Malaysia</a>
+<li><a href="master_data_in_the_clouds/index.html">Master Data in the Clouds</a> <font color=red>(& Tutorial)</font>
+<li><a href="master_data_mgt_motor_trade/index.html">Motor Trade</a>
+
+<li><a href="police_mdm_data_model/index.html">Police MDM Data Model</a>
+<li><a href="master_data_mgt/master_data_mgt_products.html">Products</a>
+<li><a href="reference_database/index.html">Reference Data</a>
+<li><a href="master_data_self_service/index.html">Self-Service</a>
+
+
+
+
+</OL>
+</font>
+
+<li><a HREeF="maintenance_contracts/index.html"><b>Medical</b></a>
+
+<font size=1>
+<OL>
+<li><a href="blood_banks/index.html">Blood Banks</a>
+<li><a href="cancer_screening/index.html">Cancer Screening</a>
+<li><a href="cancer_treatment_effectiveness/index.html">Cancer Treatment Effectiveness</a>
+
+<li><a href="cardiac_catherization_registry/index.html">Cardiac Catherization Registry</a>
+<li><a href="cardiac_surgery_database/index.html">Cardiac Surgery Database</a>
+
+<li><a href="community_medical_centers/index.html">Community Medical Centers</a>
+<li><a href="dietician/index.html">Dietician Practice</a>
+
+<li><a href="development_disabilities_services/index.html">Development Disabilities Services</a>
+
+
+<li><a href="doctors_practice/index.html">Doctor's Practice</a>
+
+<li><a href="ebola_victims/index.html">Ebola Victims</a>
+
+<li><a href="electronic_medical_records/index.html">Electronic Medical Records</a>
+<li><a href="emr_childrens_home/index.html">EMRs for Scramento Childrens Home</a> <img src="/images/new.gif">
+
+
+<li><a href="health_centres/index.html">Health Centers</a>
+<li><a href="health_insurance_claims/index.html">Health Insurance Claims</a>
+
+<li><a href="health_topics_and_educational_material/index.html">Health Topics and Educational Material</a>
+
+
+<li><a href="healthcare_database/index.html">Healthcare Database</a>
+
+
+<li><a href="hospice_patient_care/index.html">Hospice Patient Care</a>
+<li><a href="hospital_admissions/index.html">Hospital Admissions</a>
+<li><a href="hospital_operating_theaters/index.html">Hospital Operating Theaters</a>
+<li><a href="hospital_outpatients/index.html">Hospital Outpatients</a>
+<li><a href="hospitals_and_patients/index.html">Hospitals and Patients</a>
+<li><a href="community_medical_centers/index.html">Medical Centers (Community)</a>
+<li><a href="medical_clinics_and_pharmacies/index.html">Medical Clinics and Pharmacies</a>
+
+<li><a href="medical_laboratories/index.html">Medical Laboratories</a>
+<li><a href="medical_laboratories_with_payments/index.html">Medical Laboratories with Payments</a>
+<li><a href="medicines_and_authorisations/index.html">Medicines and Authorisations</a>
+<li><a href="mortuaries/index.html">Mortuaries</a>
+<li><a href="natural_disease_treatments/index.html">Natural Disease Treatments</a>
+<li><a href="nurses_roster/index.html">Nurses Roster</a>
+<li><a href="nursing_home/index.html">Nursing Home</a>
+<li><a href="occupational_health/index.html"> Occupational Health</a>
+<li><a href="outpatients_medical_center/index.html">Outpatients Medical Center</a>
+<li><a href="pathology_tests/index.html">Pathology Tests</a>
+
+<li><a href="patient_care/index.html">Patient Care</a>
+<li><a href="patient_data_warehouse/index.html">Patient Data Warehouse</a>
+<li><a href="patient_tests/index.html">Patient Tests</a>
+<li><a href="patients_visits_to_the_clinic/index.html">Patients Visits to the Clinic</a>
+<li><a href="patients_visits_to_the_doctor/index.html">Patients Visits to the Doctor</a>
+
+
+<li><a href="pharma_and_biotechnology_information/index.html">Pharma and Biotech Info</a>
+
+<li><a href="pharmacies_and_generics/index.html">Pharmacies and Generics</a>
+<li><a href="pharmacies_and_prescriptions/index.html">Pharmacies and Prescriptions</a>
+<li><a href="pharmaceuticals_dw/index.html">Pharmaceuticals Data Warehouse</a>
+<li><a href="pharmaceutical_supplies/index.html">Pharmaceutical Supplies</a>
+<li><a href="podiatry_clinics/index.html">Podiatry Clinics</a>
+<li><a href="prescriptions_database/index.html">Prescriptions Database</a>
+
+<li><a href="stop_smoking_services/index.html">Stop Smoking Services</a>
+<li><a href="symptoms_and_diseases/index.html">Symptoms and Diseases</a>
+<li><a href="tracking_results_of_treatment/index.html">Tracking Results of Treatment</a>
+</OL>
+</font>
+<!------- </td> ------>
+
+
+<li><b>Mobile Applications</b>
+<font size=1>
+<OL>
+<li><a href="insurance_and_eclaims/mobile_print_version.html">Insurance eClaims</a>
+<li><a href="mobile_purchases/index.html">Purchases</a>
+</OL>
+</font>
+
+</td>
+
+<td valign=top><font color=blue face=Verdana size=2>
+<OL>
+
+<li><a HREeeeF="police.html"><b>Parties</b></a>
+<font size=1>
+<OL>
+<li><a href="parties_roles_and_customers/index.html">Parties, Roles and Customers</a>
+<li><a href="insurance_party/index.html">Party - Insurance</a>
+<li><a href="party_master_index/index.html">Party Master Index</a>
+</OL></font>
+
+<li><a HREeeeF="police.html"><b>Payments</b></a>
+<font size=1>
+<OL>
+<li><a href="customers_and_payments_e_govt/index.html">Customers and Payments (e-Gov't)</a>
+<li><a href="invoices_and_payments/index.html">Invoices and Payments</a>
+<li><a href="future_of_payments/index.html">Future of Payments</a>
+<li><a href="payments_generic_model/index.html">Generic Payments</a>
+<li><a href="medical_laboratories_with_payments/index.html">Medical Laboratories with Payments</a>
+<li><a href="mobile_payments_services/index.html">Mobile Payments Services</a>
+<li><a href="payments_engine/index.html">Payments Engine</a>
+
+<li><a href="payments_platform/index.html">Payments Platform</a>
+<li><a href="payments_subject_area/index.html">Payments Subject Area</a>
+<li><a href="tracking_multiple_job_payments/index.html">Tracking Multiple Job Payments<A>
+</OL>
+</font>
+
+<li><b>Pharmaceuticals</b>
+<font size=1>
+<OL>
+<li><a href="pharma_and_biotechnology_information/index.html">Pharma and Biotechnology Information</a>
+<li><a href="pharmacies_and_generics/index.html">Pharmacies and Generics</a>
+<li><a href="medical_clinics_and_pharmacies/index.html">Pharmacies and Medical Clinics</a>
+<li><a href="pharmacies_and_prescriptions/index.html">Pharmacies and Prescriptions</a>
+<li><a href="pharmaceuticals_dw/index.html">Pharmaceuticals Data Warehouse</a>
+<li><a href="pharmaceutical_companies/index.html">Pharmaceutical Companies</a>
+<li><a href="tracking_visits_of_pharmaceutical_vendors/index.html">Pharmaceutical Vendors Visits</a>
+<li><a href="pharmaceutical_supplies/index.html">Pharmaceutical Supplies</a>
+</OL></font>
+
+<li><a href="people.html"><b>People</b></a>
+<li><a HREeeeF="patforms.html"><b>Platforms</b></a>
+<OL><font size=2>
+<li><a href="airport_mgt_platform/index.html">Airport Management Platform</a>
+
+<li><a href="asset_management/Asset_Mgt_Platform_POC.html">Asset Management</a>
+
+
+<li><a href="automotive_industry_platform/index.html">Automotive Industry Platform</a>
+<li><a href="POC_banking_platform_2020/index.html">Banking Platform 2020</a>
+
+<li><a href="customer_data_platform_for_kpis/index.html">Customer Data Platform for KPIs</a>
+<li><a href="end_user_platforms/index.html"><b>End-User Platforms</b></a>
+
+<li><a href="POC_generic_data_platform/index.html"><font color=red>Generic Data Platform</font></a>
+
+<li><a href="hedge_fund_platform/index.html">Hedge Fund Platform</a>
+
+<li><a href="hotel_specs/index.html"><font color=red>Hotel Specs</font></a>
+
+
+<li><a href="hr_platform/index.html">HR Platform</a>
+
+<font size=2><OL>
+<li><a href="insurance_platform/index.html">Insurance</a>
+<li><a href="payments_platform/index.html">Payments</a>
+
+<li><a HREeeeF="documents_and_expenses/index.html">Recruitment Agencies</a>
+<li><a HREeeeF="generic_reservations/index.html">Removals</a>
+</OL></font>
+
+<li><a href="master_data_mgt/index.html">Enterprise / MDM Data Platform</a>
+<li><a href="event_driven_platform/index.html">Event Driven Platform</a>
+<li><a href="financial_reporting_platform/index.html">Financial Reporting Platform</a>
+<li><a href="financial_statement_generator/index.html">Financial Statement Generator</a>
+<li><a href="generic_platform/index.html"><font color=red><b>Generic</b></font> Platform</a>
+
+
+<li><a href="generalised_reporting_platform/index.html">Generalised Reporting Platform</a>
+
+<li><a href="https://www.globalplatform.org/" target="_new">Global Platform (3rd.Party)</a>
+
+
+<li><a href="google_android/index.html">Google Android Phone Platform</a>
+
+<li><a href="insurance_platform/index.html">Insurance Platform</a>
+
+<li><a href="logistics_platform/index.html">Logistics Platform</a>
+<li><a href="multi_dimensional_data_analysis/index.html">Multi-Dimensional Data Analysis <font size=1>Platform</font></a>
+
+
+<li><a href="platform_for_on_demand_services/index.html">On-Demand Services</a> <img src="/images/new.gif">
+
+
+<li><a href="payments_platform/index.html">Payments Platform</a>
+<li><a href="platform_project/index.html">Platform Project</a>
+
+<!------- barry starts here ------------->
+
+<li><a href="POC_Project/index.html"><font color=red><b>POC Project</b></font></a>
+<UL>
+<li><a href="https://cloud.google.com/sql/docs/mysql/" target="_new">Google and SQL</a>
+</UL>
+
+
+
+<li><a href="POC_Cloud_Services.html"><b>POC Services Platforms 2020</b></a>
+<font size=2>
+<OL>
+<li><a href="POC_air_transport_platform_2020/index.html">Air Transport Platform</a>
+<li><a href="asset_management/Asset_Mgt_Platform_POC.html">Asset Management</a>
+
+<li><a href="POC_Investment_Banking_platform_2020/index.html">Banking - Investment</a>
+<li><a href="POC_banking_platform_2020/index.html">Banking - Self-Service (Retail)</a>
+<li><a href="POC_Doctors_and_Patients_platform_2020/index.html">Doctors and Patients</a>
+<li><a href="dog_whisperer/index.html">Dog Whisperer TV Show</a>
+<li><a href="POC_Gym_Training_Diary_platform_2020/index.html">Gym Training Diary</a>
+<li><a href="POC_hr_platform_2020/index.html">HR Self-Service</a>
+<li><a href="POC_insurance_platform_2020/index.html">Insurance Self-Service</a>
+<li><a href="POC_law_enforcement_platform_2020/index.html">Law Enforcement</a>
+<li><a href="POC_Local_Govt_platform_2020/index.html">Local Government</a>
+<li><a href="POC_logistics_platform_2020/index.html">Logistics</a>
+<li><a href="POC_Olympic_Games_2020/index.html">Olympic Games</a>
+<li><a href="POC_Pharmaceutical_Companies_2020/index.html">Pharmaceutical Companies</a>
+<li><a href="POC_Phone_Bills_platform_2020/index.html">Phone Bills</a>
+<li><a href="POC_restaurant_guides_platform_2020/index.html">Restaurant Guides</a>
+<li><a href="POC_retail_sales_platform_2020/index.html">Retail Sales</a> <font color=red>POC</font>
+<li><a href="school_management_systems/index.html">School Management Systems</a>
+<li><a href="POC_student_registration_platform_2020/index.html">Student Self-Service Registration</a> <font color=red>POC</font>
+
+
+<li><a href="Telecomms/index.html">Telecomms</a>
+<li><a href="un_global_compact_platforms_for_2017/index.html">UN Global Compact Platform</a>
+
+<!-----------
+<li><a href="POC_Telecomms_Platform_2020/index.html">Telecomms</a>
+<li><a href="POC_Utilities_platform_2020/index.html">Utilities</a>
+<li><a href="POC_Waste_Management_platform_2020/index.html">Waste Management</a>
+<li><a href="POC_Wine_Stores_platform_2020/index.html">Wine Stores</a>
+------------------->
+
+</OL>
+</font>
+
+<!------- and ends here ------------->
+
+<li><a href="product_regulatory_compliance/index.html">Product Regulatory Compliance Platform</a>
+<li><a href="POC_Real_Estate_Platform/index.html">Real Estate</a>
+<li><a href="retail_data_platform/index.html">Retail Data Platform</a>
+<li><a href="service_delivery_platform/index.html">Service Delivery Platform</a>
+
+<font size=2><OL>
+<li><a href="timesheets/index.html">Timesheets</a>
+<li><a href="documents_and_expenses/index.html">Expenses</a>
+<li><a href="generic_reservations/index.html">Reservations</a>
+<li><a href="complex_event_processing/index.html">Events</a>
+<li><a href="hr_intro.html">HR</a>
+</OL></font>
+
+<li><a href="layered_service_delivery_platforms/index.html">Service Delivery Platforms (Layered)</a>
+<li><a href="service_requests_platform/index.html">Service Requests Platform (OSS)</a>
+
+<li><a href="subscription_based_business_platforms/index.html">Subscription-based Business</a>
+
+
+
+<li><a href="two_sided_platforms/index.html">Two-Sided Platforms</a>
+<li><a HREeeeF="service_delivery_platform/index.html">Wealth Mgt Platforms (3rd. party)</a>
+
+<font size=2><OL>
+<li><a href="http://www.ssctech.com/Software/PortfolioAccountingandReporting/WealthManagementSoftware.aspx" TARGET_NEW>Global</a>
+<li><a href="http://www.mazewealth.com/platform.php" target="_new">Maze</a>
+<li><a href="http://www.tpllp.com/wealth-platform/" target="_new">True Potential</a>
+
+</OL></font>
+
+<li><a href="http://sarver.org/2013/09/26/what-is-a-platform/" target="_new">What is a Platform ? (Blog)</a>
+
+</OL>
+</font>
+
+<li><a href="police.html"><b>Police</b></a>
+<OL><font size=2>
+<li><a href="baltimore_police_department/index.html">Baltimore Police Department</a>
+<li><a href="police_canonical_data_model/index.html">Police Canonical Data Model</a>
+<li><a href="police_departments/index.html">Police Departments</a>
+<li><a href="police_generalized_data_model/index.html">Police Generalized Data Model</a>
+<li><a href="police_information_reports/index.html">Police Information Reports</a>
+<li><a href="police_mdm_data_model/index.html">Police MDM Data Model</a>
+<li><a href="mobile_police_application/index.html">Police Mobile Application</a>
+<li><a href="tracking_evidence/index.html">Tracking Evidence</a>
+<li><a href="traffic_cops_and_tickets/index.html">Traffic Cops and Tickets</a>
+</OL>
+</font>
+
+
+<li><a HREeF="product_catalogue/index.html"><b>Popular Culture</b></a>
+<OL><font size=2>
+<li><a href="sue_grafton_alphabet_mysteries/index.html">Sue Grafton's Alphabet Mysteries</a>
+</font>
+</OL>
+
+
+<li><a HREeF="product_catalogue/index.html"><b>Products</b></a>
+<OL><font size=2>
+<li><a href="bom/index.html">Bill of Materials</a>
+<li><a href="product_catalogs/index.html">Product Catalogs (Simple)</a>
+
+<li><a href="product_catalogs_selfridges/index.html">Product Catalogs (Selfridges)</a>
+<li><a href="product_categories/index.html">Product Categories</a>
+<li><a href="products_and_generic_characteristics/index.html">Product Characteristics</a>
+<li><a href="product_distribution/index.html">Product Distribution</a>
+<li><a href="hierarchies/index.html">Product Hierarchies</a>
+
+<li><a href="product_regulatory_compliance/index.html">Product Regulatory Compliance</a>
+
+<li><a href="product_servicing/index.html">Product Servicing</a>
+<li><a href="products_and_manufacturers/index.html">Products and Manufacturers</a>
+<li><a href="products_and_pricing/index.html">Products and Pricing</a>
+<li><a href="products_and_security/index.html">Products and Security</a>
+<li><a href="products_categories_and_attributes/index.html">Products, Categories and Attributes</a>
+<li><a href="products_for_hire/index.html">Products for Hire</a>
+<li><a href="products_orders_and_deliveries/index.html">Products, Orders and Deliveries</a>
+
+<li><b>Product Catalogs (Commercial)</b> :-
+<font size=2>
+<OL>
+<li><a href="product_catalogs_comvita/index.html">Comvita</a>
+<li><a href="product_catalogs_hotel_chocolat/index.html">Hotel Chocolat</a>
+<li><a href="product_catalogs_selfridges/index.html">Selfridges</a>
+<li><a href="tk_maxx_product_catalogue/index.html">TK Maxx</a>
+<li><a href="wine_lists/index.html">Wine Lists</a>
+</OL>
+</font>
+
+<!----- </font></OL> ---->
+
+
+<b><li>Professional Services :-</b>
+<font size=2><OL>
+<li><a href="professional_services/index.html">Professional Services</a>
+<li><a href="professional_services_automation/index.html">Professional Services Automation</a>
+<li><a href="professional_services_third_generation_platforms/index.html">Professional Services with Third Generation Platforms</a>
+</OL></font>
+
+<li><b>Real Estate</b>
+<OL><font size=2>
+<li><a href="real_estate_commercial_development/index.html">Commercial Development and Risk</a>
+<li><a href="commercial_properties/index.html">Commercial Properties</a>
+<li><a href="homeowners_associations/index.html">Homeowners Associations</a>
+<li><a href="properties/index.html">Properties</a>
+<li><a href="property_investment/index.html">Property Investment</a>
+<li><a href="real_estate_agent/index.html">Real Estate Agents</a>
+<li><a href="real_estate_rentals/index.html">Rentals</a>
+<li><a href="real_estate_properties/index.html">Sales</a>
+</OL></font>
+
+
+
+
+<li><a HREeeeF="generic_reservations/index.html"><b>Reservations</b></a>
+<OL>
+<li><a href="apartment_rentals/index.html"><font color=blue face=Verdana size=2>Apartment Rentals</a>
+<li><a href="airline_reservations/index.html"><font color=blue face=Verdana size=2>Airline Reservations</a>
+<li><a href="car_hire/index.html"><font color=blue face=Verdana size=2>Car Hire</a>
+<li><a href="caravan_park_holiday_bookings/index.html">Caravan Park Holiday Bookings</a>
+<li><a href="cinema_bookings/index.html"><font color=blue face=Verdana size=2>Cinema Bookings</font></a>
+<li><a href="coach_trips/index.html"><font color=blue face=Verdana size=2>Coach Trips</font></a>
+
+<li><a href="community_centre_reservations/index.html">Community Centre Bookings</a>
+
+
+<li><a href="doctors_practice/index.html">Doctors Practice</a>
+
+<li><a href="driving_school/index.html"><font color=blue face=Verdana size=2>Driving School</font></a>
+<li><a href="event_reservations/index.html"><font color=blue face=Verdana size=2>Event Reservations</font></a>
+
+<li><a href="facility_reservations/index.html">Facility Reservations</a> <img src="/images/new.gif">
+
+
+
+<li><a href="childrens_charities_flights/index.html">Flights for Children's Charities</a>
+<li><a href="generic_reservations/index.html">Generic Reservations</a>
+<li><a href="hairdressers/index.html"><font color=blue face=Verdana size=2>Hairdressers Appointments</font></a>
+<li><a href="health_centres/index.html"><font color=blue face=Verdana size=2>Health Centers</font></a>
+<li><a href="holiday_homes/index.html">Holiday Homes</a>
+<li><a href="hotels/index.html"><font color=blue face=Verdana size=2>Hotel Reservations</font></a>
+<li><a href="limousine_services/index.html">Limousine Services</a>
+<li><a href="multi_resource_scheduling/index.html">Multi-Resource Scheduling</a>
+<li><a href="online_scheduling/index.html">Online Scheduling</a>
+<li><a href="park_shelter_reservations/index.html">Park Shelters</a> <img src="/images/new.gif">
+
+<li><a href="pool_hall_management/index.html">Pool Hall Management</a>
+<li><a href="railway_reservations/index.html"><font color=blue face=Verdana size=2>Railway Reservations</font></a>
+<li><a href="restaurant_bookings/index.html"><font color=blue face=Verdana size=2>Restaurant Bookings</font></a>
+<li><a href="restaurant_bookings/restaurant_events_bookings.html"><font color=blue face=Verdana size=2>Restaurant Events Bookings</font></a>
+<li><a href="sports_centers/index.html"><font color=blue face=Verdana size=2>Sports Centers</a>
+<li><a href="the_maritime_group/index.html">The Maritime Group</a>
+<li><a href="theater_bookings/index.html">Theater Bookings</a>
+<li><a href="ticketmaster/index.html"><font color=blue face=Verdana size=2>Ticketmaster</a>
+<li><a href="vehicle_rental/index.html">Vehicle Rental</a> </font>
+<li><a href="visitor_management_system/index.html">Visitor Management System</a>
+</OL>
+
+<font size=2>
+<!--- <li><a href="resources_requesters/index.html">Resources Requesters</a> --->
+
+<li><a HREeeeF="generic_reservations/index.html"><b>Restaurants</b></a>
+<font size=1>
+<OL>
+<li><a href="restaurant_bookings/index.html">Restaurant Bookings</a>
+<li><a href="restaurant_delivery_service/index.html">Restaurant Delivery Service</a>
+<li><a href="restaurant_bookings/restaurant_events_bookings.html">Restaurant Events Bookings</a>
+<li><a href="restaurant_guide/index.html">Restaurant Guide</a>
+<li><a href="restaurants_and_customers/index.html">Restaurants and Customers</a>
+  </OL>
+</font>
+
+<li><a href="retail_data_models.html"><b>Retail</b></a>
+<OL>
+<font size=2>
+<li><a href="enterprise_data_model_for_retail/index.html">Enterprise Retail</a>
+<li><a href="generic_pos/index.html">Generic Point of Sale (POS)</a>
+
+<li><a href="generic_retail/index.html">Generic Retail</a>
+
+<li><a href="omni_channel_retailing/index.html">Omni Channel Retailing</a>
+
+<li><a href="shop_direct_online_retail_and_fin_svcs/index.html">Online Retail and Financial Svcs(Shop Direct)</a>
+
+<li><a href="retail_banks/index.html">Retail Banks</a>
+<li><a href="retail_bank_accounts_for_husbands_and_wives/index.html">Retail Bank Accounts for Husbands and Wives</a>
+<li><a href="retail_banking_in_the_clouds/index.html">Retail Banking in the Clouds</a>
+
+<li><a href="retail_customers/index.html">Retail Customers</a>
+<li><a href="arts_retail_data_model/index.html">Retail Customers (ARTS Standard Model)</a>
+<li><a href="arts_retail_and_can_data_model/index.html">Retail (ARTS) and Canonical Model</a></<A>
+
+<li><a href="retail_sales/index.html">Retail Sales</a>
+<li><a href="mendix_stuff/print_version.html">Retail Sales (Mendix)</a> <img src="/images/new.gif">
+
+
+<li><a href="TKM_retail/index.html">TK Maxx</a>
+
+</OL>
+</font>
+
+
+
+<li><a HREeeeF="generic_reservations/index.html"><b>Sales</b></a>
+
+<font size=1>
+<OL>
+<li><a href="sales_commissions/index.html">Sales Commissions</a>
+<li><a href="dell_computer_sales/index.html">Sales (Computer - Dell)</a>
+<li><a href="salesforce/index.html">Salesforce</a>
+<li><a href="salesforce_dotcom/index.html">Salesforce.dot.com</a>
+<li><a href="salesforce_strategy_for_customer_data_mgt/index.html">Salesforce CDM Strategy</a>
+<li><a href="salesforce_data_integration/index.html">Salesforce Data Integration</a>
+<li><a href="salesforce_developer_challenge/index.html">Salesforce.com Developer Challenge</a>
+<li><a href="lifecycle_of_a_sale/index.html">Sales Lifecycle</a>
+<li><a href="sales_promotion_analysis/index.html">Sales Promotion Analysis</a>
+</OL>
+</font>
+
+<li><b>Sales Receipts</b>
+<font size=1>
+<OL>
+<li><a href="sales_receipts_generic/index.html">Sales Receipts - Generic</a>
+<li><a href="sales_receipts_airline_boarding_pass/index.html">Airline Boarding Pass</a>
+<li><a href="sales_receipts_dutch_railways/index.html">Dutch Railways</a>
+<li><a href="sales_receipts_from_malaysia/index.html">Malaysia</a>
+<li><a href="sales_receipts_for_tk_maxx/index.html">TK Maxx</a>
+</OL>
+</font>
+
+<li><a HREeeeF="sales_receipts/index.html"><b>Schools</b></a>
+<font size=1>
+<OL>
+<li><a href="high_school_activities/index.html">High School Activities</a>
+<li><a href="school_management_systems/index.html">School Management Systems</a>
+<li><a href="school_print_shops/index.html">School Print Shops</a>
+<li><a href="school_reporting_in_chile/index.html">School Reporting in Chile</a>
+<li><a href="schools_sports_tournaments/index.html">Schools Sports Tournaments</a>
+</OL>
+</font>
+
+
+
+<li><a HREeeeF="sales_receipts/index.html"><b>Services</b></a>
+<font size=1>
+<OL>
+<li><a href="services_local/index.html">Local Services</a>
+
+
+<li><a href="service_assessment/index.html">Service Assessment</a>
+<li><a href="service_call_tracking/index.html">Service Call Tracking</a>
+<li><a href="service_delivery_platform/index.html">Service Delivery Platform</a>
+
+<li><a href="service_delivery_platform/index.html">Service Delivery Platform</a>
+
+<li><a href="layered_service_delivery_platforms/index.html">Service Delivery Platforms (Layered)</a>
+
+<li><a href="service_magic_professionals/index.html">Service Magic Professionals</a>
+
+<li><a href="service_request_calls/index.html">Service Request Calls</a>
+
+<li><a href="service_requests_platform/index.html">Service Requests Platform (OSS)</a>
+
+<li><a href="services_for_certification/index.html">Services for Certification</a> <font color=red>(& Tutorial)</font>
+<li><a href="services_job_scheduling/index.html">Services Job Scheduling</a>
+
+<li><a href="services_local/index.html">Services (Local)</a>
+
+</OL>
+</font>
+
+
+<!--- <li><a href="sewing_rooms/index.html">Sewing Rooms</a>
+<li><a href="shipping_companies/index.html">Shipping Companies</a>
+<li><a href="shipment_logistics\index.html">Shipment Logistics</a>
+<li><a href="ships_stores_logistics/index.html">Ships Stores Logistics</a>
+<li><a href="shoppers_recommendations/index.html">Shoppers Recommendations</a>
+<li><a href="shopping_malls/index.html">Shopping Malls</a>
+--->
+
+<li><a HREeeeF="inventory_control/index.html"><b>Show Business</b></a>
+
+<font size=1>
+<OL>
+<li><a href="ballet_companies/index.html">Ballet Companies</a>
+<li><a href="cd_collection/index.html">CD Collection</a>
+<li><a href="circus/index.html">Circus</a>
+<li><a href="clown_registry/index.html">Clown Registry</a>
+<li><a href="dance_school/index.html">Dance School</a>
+<li><a href="talent_agencies/index.html">Talent Agencies</a>
+<li><a href="theater_company/index.html">Theater Company</a>
+<li><a href="theme_park_and_visitor_activity/index.html">Theme Park and Visitor Activity</a>
+<li><a href="ticketmaster/index.html">ticketmaster</a>
+</OL>
+</font>
+
+
+
+<li><a href="showcase_models.html"><b>Showcase Models</b></a>
+
+<OL><font size=1>
+<!--- <li><a href="generic_retail/index.html">Generic Retail</a> --->
+<!--- <li><a href="inventory_of_furniture/index.html">Inventory of Furniture</a> --->
+
+</font>
+</OL>
+
+
+
+
+<li><a HREeeeF="social_anthropology/index.html"><font color=green><b>Social Anthropology</b></font></a>
+<font size=1>
+<OL>
+<li><a href="coping_with_life/index.html">Coping with Life</a>
+<li><a href="middle_east_conflict/index.html">Middle-East Conflict</a>
+<li><a href="quality_of_life/index.html">Quality of Life</a>
+<li><a href="usual_suspects/index.html">Usual Suspects</a>
+</OL>
+</font>
+
+
+
+<li><b>Social Media</b>
+<font size=1>
+<OL>
+<li><a href="social_media/index.html">Social Media</a>
+<li><a href="social_media_monitoring/index.html">Social Media Monitoring</a>
+<li><a href="social_networking/index.html">Social Networking Sites</a>
+</OL>
+</font>
+
+
+<li><b>Students</b>
+<OL><font size=2>
+<li><a href="student_assessments/index.html">Achievements and Assessments</a>
+<li><a href="alumni_web_portals/index.html">Alumni Web Portals</a>
+<li><a href="student_analytics/index.html">Analytics</a>  <img src="/images/new.gif">
+<li><a href="behavior_monitoring/index.html">Behavior Monitoring</a>
+<li><a href="church_sunday_schools/index.html">Church Sunday Schools</a>
+<li><a href="student_class_scheduling/index.html">Class Scheduling</a>
+<li><a href="credit_accumulation_and_transfer/index.html">Credit Accumulation (Europe)</a>
+<li><a href="e_learning/index.html">e-Learning</a>
+<li><a href="high_school_football/index.html">High School Football</a>
+<li><a href="online_exams/index.html">Online Exams</a>
+<li><a href="catering_businesses/index.html">School Catering Businesses</a>
+<li><a href="school_management_systems/index.html">School Management Systems</a>
+<li><a href="schools_sports_tournaments/index.html">Schools Sports Tournaments</a>
+<li><a href="school_timetables/index.html">School Timetables</a>
+<li><a href="student_accommodation/index.html">Student Accommodation</a>
+<li><a href="student_activities/index.html">Student Activities</a>
+<li><a href="student_applications/index.html">Student Applications</a>
+<li><a href="student_assessments_simple/index.html">Student Assessments (Simple)</a>
+<li><a href="student_assessments_complex/index.html">Student Assessments (Complex)</a>
+
+<li><a href="student_assignments/index.html">Student Assignments</a>
+<li><a href="athletes_and_teams/index.html">Student Athletes</a>
+<li><a href="student_exams/index.html">Student Exams</a>
+<li><a href="student_exams_in_saudi/index.html">Student Exams in Saudi Arabia</a>
+<li><a href="student_fees_collection/index.html">Student Fees Collection</a>
+<li><a href="student_fitness_tests/index.html">Student Fitness Tests</a>
+<li><a href="student_information_systems/index.html">Student Information Systems</a>
+<li><a href="student_internships/index.html">Student Internships</a>
+<li><a href="student_loans/index.html">Student Loans</a>
+
+<li><a href="student_marking/index.html">Student Marking</a>
+
+<li><a href="student_placements/index.html">Student Placements</a>
+<li><a href="student_questionnaires/index.html">Student Questionnaires</a>
+<li><a href="student_registration/index.html">Student Registration</a>
+<li><a href="student_rosters/index.html">Student Rosters</a>
+<li><a href="students_transcript_tracking/index.html">Student Transcripts Tracking</a>
+<li><a href="student_placements/index.html">Student Work Placements</a>
+
+<!----------- <li><a href="students_from_wyoming/index.html">Students from Wyoming</a> --------------->
+
+
+
+
+<li><a href="university_course_catalogs/index.html">University Course Catalogs</a>
+<li><a href="university_gymnastics/index.html">University Gymnastics</a>
+<li><a href="university_organisation/index.html">University Organisation</a>
+</OL></font>
+
+<li><a href="subject_area_data_models.html"><b>Subject Areas</b></a>
+<OL><font size=2>
+<li><a href="investment_banking/accounts.html">Accounts</a>
+<li><a href="addresses_and_parties/index.html">Addresses and Parties</a>
+<li><a href="oil_companies/contracts_subject_area.html">Contracts</a>
+<li><a href="customers_commercial_and_personal/index.html">Customers</a>
+<li><a href="subject_area_customers_addresses_and_payment_methods/index.html">Customers Addresses and Payment Methods<A>
+<li><a href="master_data_mgt/master_data_mgt_customers.html">Customer Master Data</a>
+<li><a href="customer_deliveries/index.html">Deliveries</a>
+<li><a href="oil_companies/warehouse_deliveries_subject_area.html">Deliveries (Warehouse)
+<li><a href="equipment_maintenance/index.html">Equipment Maintenance</a>
+<li><a href="finance_subject_area/index.html">Finance</a>
+<li><a href="financial_transactions/index.html">Financial Transactions</a>
+<li><a href="enterprise_data_model_for_insurance/index.html">Insurance</a>
+<li><a href="enterprise_data_model_for_investment_banks/index.html">Investment Banks</a>
+<li><a href="invoices_and_payments/index.html">Invoices and Payments</a>
+<li><a href="payments_subject_area/index.html">Payments </a>
+<li><a href="invoices_and_payments/index.html">Payments and Invoices</a>
+<li><a href="payments_subject_area/index.html">Payments Subject Area</a>
+<li><a href="wholesale_banks_payment_systems/index.html">Payments (Wholesale Banks)</a>
+<li><a href="enterprise_data_model_for_local_government/index.html">Local Government</a>
+<li><a href="oil_companies/procurement_subject_area.html">Procurement</a>
+<li><a href="product_catalogs/complex_product_catalogs.html">Product Catalogs</a>
+<li><a href="master_data_mgt/master_data_mgt_products.html">Product Master Data</a>
+
+<li><a href="customers_and_products_and_inheritance/offerings_subject_area.html">Products and Services</a>
+
+<li><a href="reference_database/index.html">Reference Database</a>
+<li><a href="reference_data_manager/index.html">Reference Data Manager</a>
+<li><a href="subject_area_reservations/index.html">Reservations</a>
+<li><a href="retail_customers/index.html">Retail Customers</a>
+<li><a href="cleaning_job_scheduling/index.html">Scheduling (Cleaning Job Scheduling)</a>
+<li><a href="oil_companies/warehouse_deliveries_subject_area.html">Warehouse Deliveries</a>
+</OL>
+</font>
+
+
+
+
+<li><b>Telecomms</b>
+<font size=1>
+<OL>
+<li><a href="customers_and_phone_bills/index.html">Phone Bills Generation</a>
+<li><a href="customers_and_phone_bills/customers_phone_bills_payments.html">Phone Bills Payment</a>
+<li><a href="telecomms/index.html">Telecomms</a>
+<li><a href="teradata_communications_data_model/index.html">Teradata Communications Data Model</a>
+</OL>
+</font>
+
+
+<li><a href="top_ten_data_models_utilities.html">Top Three Utilities</a>
+
+
+
+<li><b>Tracking</b>
+<font size=1>
+<OL>
+<li><a href="tracking_orders/index.html">Tracking Customer Orders</a>
+
+<li><a href="tracking_customer_shipments/index.html">Tracking Customer Shipments</a>
+
+<li><a href="document_tracking/index.html">Tracking Document Destruction</a>
+
+<li><a href="tracking_employee_time/index.html">Tracking Employee Time</a>
+
+<li><a href="tracking_evidence/index.html">Tracking Evidence</a>
+
+<li><a href="tracking_exam_proctors/index.html">Tracking Exam Proctors</a>
+
+<li><a href="facilities_maintenance/index.html">Tracking Facilities Maintenance</a> <img src="/images/new.gif">
+
+
+
+<li><a href="tracking_farmers_payments/index.html">Tracking Farmers Payments</a>
+<li><a href="tracking_first_aid_kits/index.html">Tracking First Aid Kits</a>
+<li><a href="tracking_grants_for_research/index.html">Tracking Grants for Research</a>
+<li><a href="tracking_grants_for_skills_development/index.html">Tracking Grants for Skills Development</a>
+<li><a href="tracking_hospital_staff/index.html">Tracking Hospital Staff</a>
+<li><a href="tracking_hospital_infections/index.html">Tracking Hospital Infections</a>
+
+
+<li><a href="tracking_inspection_equipment/index.html">Tracking Inspection Equipment</a>
+<li><a href="tracking_internships/index.html">Tracking Internships</a>
+<li><a href="tracking_inventory_for_restaurants/index.html">Tracking Inventory for Restaurants</a>
+
+<li><a href="tracking_items_in_a_lab/index.html">Tracking Items in a Lab</a>
+
+<li><a href="tracking_job_vacancies/index.html">Tracking Job Vacancies</a>
+
+<li><a href="tracking_locks_and_keys/index.html">Tracking Locks and Keys</a>
+
+<li><a href="tracking_logistics_and_wip/index.html">Tracking Logistics and WIP</a>
+
+<li><a href="tracking_lost_racing_pigeons/index.html">Tracking Lost Racing Pigeons</a>
+
+<li><a href="tracking_machines_and_counters/index.html">Tracking Machines and Counters</a>
+<li><a href="tracking_manufactured_items/index.html">Tracking Manufactured Items</a>
+<li><a href="tracking_manufacturers_orders/index.html">Tracking Manufacturers Orders</a>
+<li><a href="tracking_medical_results/index.html">Tracking Medical Results</a>
+
+<li><a href="tracking_multiple_job_payments/index.html">Tracking Multiple Job Payments<A>
+
+<li><a href="tracking_orders/index.html">Tracking Orders</a> <img src="/images/new.gif">
+
+
+<li><a href="tracking_people_in_offices/index.html">Tracking People in Offices</a>
+
+<li><a href="tracking_petroleum_shipments/index.html">Tracking Petroleum Shipments</a>
+
+<li><a href="tracking_printer_cartridges/index.html">Tracking Printer Cartridges</a>
+<li><a href="tracking_processes_and_steps/index.html">Tracking Processes and Steps</a>
+
+<li><a href="tracking_progess_in_training/index.html">Tracking Progess in Training</a>
+<li><a href="tracking_progress_on_projects/index.html">Tracking Progress on Projects</a>
+<li><a href="property_tax_appeals/index.html">Tracking Property Tax Appeals</a>
+<li><a href="tracking_results_of_treatment/index.html">Tracking Results of Treatment</a>
+<li><a href="tracking_search_and_rescue_equipment/index.html">Tracking Search and Rescue Equipment</a>
+<li><a href="tracking_share_transactions/index.html">Tracking Share Transactions</a>
+<li><a href="tracking_shipping/index.html">Tracking Shipping</a> <font color=red>(& Tutorial)</font>
+<li><a href="tracking_software_problems/index.html">Tracking Software Problems</a>
+<li><a href="tracking_software_registration/index.html">Tracking Software Registration</a>
+<li><a href="tracking_staff_assignments/index.html">Tracking Staff Assignments</a>
+<li><a href="tracking_staff_training/index.html">Tracking Staff Training</a>
+<li><a href="tracking_subject_areas/index.html"><font color=green>Tracking Subject Areas</font></a>
+<li><a href="tracking_telephone_calls/index.html">Tracking Telephone Calls</a>
+<li><a href="tenant_contact_tracking/index.html">Tracking Tenant Contacts</a>
+<li><a href="tracking_terrorists/index.html">Tracking Terrorists</a>
+
+<li><a href="tracking_terrorists_domestic_uk/index.html">Tracking Terrorists (Domestic UK)</a>
+
+<li><a href="tracking_terrorists_in_the_middle_east/index.html">Tracking Terrorists in the Middle East</a>
+
+<li><a href="internet_of_things/index.html">Tracking <font color=red>Things</font> on the Move</a>
+<li><a href="tracking_transport_facts/index.html">Tracking Transport Facts</a>
+<li><a href="tracking_vehicles/index.html">Tracking Vehicles</a>
+
+<li><a href="tracking_village_school_improvement/index.html">Tracking Village School Improvement</a>
+
+<li><a href="tracking_visits_of_pharmaceutical_vendors/index.html">Tracking Visits of Pharmaceutical Vendor</a>
+<li><a href="tracking_visitors_to_a_building/index.html">Tracking Visitors to a Building</a>
+<li><a href="tracking_warehouse_movements/index.html">Tracking Warehouse Movements</a>
+
+<li><a href="tracking_zoo_deliveries/index.html">Tracking Zoo Deliveries</a>
+
+</OL>
+</font>
+
+
+<li><a href="top_ten_data_models_transport_and_travel.html"><b>Travel and Transport</b></a>
+
+
+<li><b>Tutorials</b>
+<font size=1>
+<OL>
+<li><a href="5_minute_tutorials/feeding_time_at_the_zoo.html">Feeding Time at the Zoo <font color=red>(5 minutes Tutorial)</font></a>
+<li><a href="gym_management/index.html">Gym Management</a>
+
+</OL>
+</font>
+
+
+
+
+
+<li><b><a href="UN_models.html">United Nations</a></b>
+<font size=1>
+<OL>
+<li><a href="un_activities/index.html">Activities Analysis Platform</a>
+<li><a href="un_convention_on_biological_diversity/index.html">Convention on Biological Diversity</a>
+<li><a href="https://www.unodc.org/unodc/en/corruption/news-elearning-course.html" target="_new">eLearning</a>
+<li><a href="un_events/index.html">Events</a>
+<li><a href="https://www.unglobalcompact.org/sdgs/sdg-solutions-platforms" target="_new">Platforms for UNGC</a>
+<li><a href="un_global_compact/index.html">UN Global Compact</a>
+<li><a href="../letters/un_letter.html">UN Global Compact Letter</a>
+<li><a href="un_global_compact_platforms_for_2017/index.html">UN Global Compact Platforms for 2017</a>
+
+<li><a href="ungc_global_opportunity_explorer/index.html">UNGC Global Opportunity Explorer Platform</a>
+<li><a href="un_maritime_piracy/index.html">UN Maritime Piracy</a>
+<li><a href="unicef_activities/index.html">Unicef Activities</a>
+</OL>
+</font>
+
+<li><b>Unusual Models</b>
+<font size=1>
+<OL>
+<li><a href="tv_in_shower/index.html">TV in the Shower</a>
+</OL>
+</font>
+
+
+
+<font size=1>
+<OL>
+<li><a href="customer_master_index/index.html">Customer Master Index</a>
+
+<li><a href="ldap/index.html">LDAP</a>
+<li><a href="single_view_of_a_customer/index.html">Single View of the Customer</a>
+<li><a href="user_identity_management/index.html">User Identity Management</a>
+</OL>
+</font>
+
+
+
+
+<li><a href="usual_suspects/index.html"><font color=green><b>Usual Suspects</b></font></a>
+<font size=1>
+<OL>
+<li><a href="conflict_and_wars/index.html">Conflict and Wars</a>
+<li><a href="english_gentlemen/index.html">English Gentlemen</a>
+<li><a href="football_clubs/index.html">Football Clubs</a>
+<li><a href="fox_hunting/index.html">Fox Hunting</a>
+<li><a href="wedding_parties/index.html">Wedding Parties</a>
+</OL>
+</font>
+
+
+
+<li><a HREeeeF="usual_suspects/index.html"><b>Vehicles</b></a>
+<font size=1>
+<OL>
+<li><a href="motor_trade/index.html">Motor Trade</a>
+<li><a href="vehicle_insurance/index.html">Vehicle Insurance</a>
+<li><a href="vehicle_imports/index.html">Vehicle Imports</a>
+<li><a href="vehicle_maintenance/index.html">Vehicle Maintenance</a>
+<li><a href="vehicle_maintenance_with_inheritance/index.html">Vehicle Maintenance with Inheritance</a>
+<li><a href="vehicle_manufacturers/index.html">Vehicle Manufacturers</a>
+<li><a href="vehicle_mileage/index.html">Vehicle Mileage Tracking</a>
+<li><a href="vehicle_manufacturers/index.html">Vehicle Manufacturers</a>
+<li><a href="vehicle_parts_manufacture/index.html">Vehicle Parts Manufacture</a>
+<li><a href="vehicle_registration_authority/index.html">Vehicle Registration Authority</a>
+<li><a href="vehicle_rental/index.html">Vehicle Rental</a>
+
+<li><a href="vehicle_speed_violations/index.html">Vehicle Speed Violations</a> <img src="/images/new.gif">
+
+<li><a href="vehicle_tracking/index.html">Vehicle Tracking</a>
+</OL>
+</font>
+
+<li><a href="vertical_applications.html"><b>Vertical Applications</b></a>
+<font size=1>
+<OL>
+<li><a href="top_ten_data_models_crm_and_customers.html">CRM and Customers</a>
+<li><a href="top_ten_data_models_e_commerce.html">e-Commerce</a>
+<li><a href="top_ten_data_models_education.html">Education</a>
+<li><a href="top_ten_data_models_entertainment.html">Entertainment</a>
+<li><a href="top_ten_data_models_health_and_fitness.html">Health and Fitness</a>
+<li><a href="top_ten_data_models_law_enforcement.html">Law Enforcement</a>
+<li><a href="top_ten_data_models_students.html">Students</a>
+<li><a href="top_ten_data_models_transport_and_travel.html">Transport and Travel</a>
+</OL>
+</font>
+
+
+
+<li><a HREeeeF="vertical_applications.html"><b>Web</b></a>
+<font size=1>
+<OL>
+<li><a href="web_2.0/index.html">Web 2.0</a>
+<li><a href="web_portal_navigation/index.html">Web Portal Navigation</a>
+<li><a href="community_website/index.html">Web Site for a Community</a>
+<li><a href="website_for_databaseanswers/index.html">Web Site for DBA Site</a>
+<li><a href="website_analytics/index.html">Web Site Analytics</a>
+<li><a href="website_pages/index.html">Web Site Pages</a>
+<li><a href="website_registration/index.html">Web Site Registration</a>
+<li><a href="web_traffic.html">Web Site Traffic Analysis</a>
+<li><a href="web_site_user_Plans/index.html">Web Site User Plans</a>
+
+<li><a href="websites_for_hobbies_and_pastimes/index.html" target="_new">Web Sites for Hobbies and Pastimes</a>
+
+<li><a href="website_visits/index.html">Web Site Visits</a>
+
+</OL>
+</font>
+
+
+
+<li><a href="wine_data_models.html"><b>Wine</b></a>
+<font size=1>
+<OL>
+<li><a href="enterprise_data_model_for_wine/index.html">Enterprise Data Model</a>
+
+<li><a href="agile_wine/index.html">Enterprise and Life-Cycle</a>
+
+<li><a href="wine/index.html">Wine</a>
+<li><a href="wine_cellars/index.html">Wine Cellars</a> (ERwin)
+<li><a href="wine_food_and_merchants/index.html">Wine, Food and Merchants</a> (ERwin)
+<li><a href="wine_food_and_pairings/index.html">Wine, Food and Pairings</a>
+<li><a href="wine_lists/index.html">Wine Lists</a>
+<li><a href="wine_stores/index.html">Wine Stores</a>
+<li><a href="wine_vineyards_and_roles/index.html">Wine, Vineyards and Roles</a>
+</OL>
+</font>
+
+
+
+</OL>
+</td>
+
+<td bgcolor=white valign=top>
+<font color=blue face=Verdana size=2>
+<a href="../course.html" target="_new">Our <b>NEW</b> UK Data Modelling Course</a>
+
+<br><br>
+
+
+<br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-5308840645116823";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</font></td>
+
+
+              </tr>
+
+<tr><td colspan=3><font color=blue face=Verdana size=2>
+<!---
+<hr>
+<a name="CLUSTR_MAP"><b><font color=red>This shows where my Visitors are located ...</font></b>
+<br> --->
+<!--- START OF CLUSTRMAP CODE -->
+<!--- <a href="http://www3.clustrmaps.com/counter/maps.php?url=http://http://www.databaseanswers.org/data_models/index.html" id="clustrMapsLink"><img src="http://www3.clustrmaps.com/counter/index2.php?url=http://http://www.databaseanswers.org/data_models/index.html" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onError="this.onError=null; this.src='http://www2.clustrmaps.com/../images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://www2.clustrmaps.com'" />
+</a> --->
+<!--- END OF CLUSTRMAP CODE --->
+
+
+<!----------
+
+<hr>
+<font color=blue><b>My Data Models are being used in some interesting places, including :-</b>
+
+<li><b>In Africa for the <a href="http://209.88.21.36/opencms/opencms/grnnet/NAMPOL/" target="_new">Police Force in Namibia</a>
+<li><b>In Africa for the <a href="http://www.zambian.com/html/zambia-government-ministries.html" target="_new">Government of Zambia</a>
+<li><b>In Belize at the <a href="http://www.fiu.gov.bz/" target="_new">Financial Intelligence Unit</a></b>
+<li><b>In Brazil at the <a href="http://www.embrapa.br/english" target="_new">Agricultural Research Corporation</a>
+and the <a href="http://www.tjse.jus.br/portal/" target="_new">State Court of Sergipe</a>.
+
+<li>In Mauritius, at the <a href="http://www.mcb.mu/en/" target="_new">Commercial BanK</a>
+
+<li><b>In Peru, South America at <a href="http://www.ibm.com/pe/es/" target="_new">IBM</a>.
+<li>In Saudi Arabia at the <a href="http://www.saadmedical.com/patient/index.aspx" target="_new">SAAD Specialist Hospital</a>
+<li><b>In Tasmania, Australia at the <a href="http://www.dhhs.tas.gov.au/" target="_new">Department of Health and Human Services</a>
+<li>In Turkey at the <a href="http://www.iett.gov.tr/en" target="_new">Department of Transportation</a>
+<li>In Russia, at <a href="http://www.yandex.ru/" target="_new">Yandex</a>
+
+
+
+<br><br>
+<li><a href="http://www.usace.army.mil/" TARGET-_NEW><b>U.S. Army Corp of Engineers</b></a>
+
+<li><a href="http://www.bls.gov/" target="_new">U.S Bureau of Labor Statistics</a>
+
+<li><a href="http://www.dol.gov/" target="_new"><b>U.S. Department of Labor</b></a>
+<li><a href="http://www.blm.gov/wo/st/en.html" target="_new">U.S. Department of the Interior (BLM) </b></a>
+<li><a href="http://www.va.gov/" target="_new"><b>U.S. Department of Veterans Affairs</b></a>
+
+
+<li><a href="http://www.mass.gov/portal/" target="_new">U.S. Government of the State of Massachusetts</a>
+<li><a href="http://www.positivelyminnesota.com/" target=_NEDW><b>U.S. Minnesota Department of Employment</b></a>
+<li><a href="http://www.navy.mil/local/NBSD/" target="_new">U.S. Navy at San DIego</a>
+<li><a href="http://portlc.com/" target="_new"><b>U.S. Police Department, Port of Lake Charles, Louisiana</b></a>
+<li><a href="http://www.dds.ca.gov/" target="_new">U.S. State of California (Department of Developmental Services)</a>
+<li><a href="http://www.nppd.com/" target="_new"><b>U.S. State of Nebraska</a> (Public Power District)
+<li><a href="http://www.michigan.gov/" target="_new">U.S. State of Michigan</a> </b></b>(Alexis)
+<li><a href="http://www.dir.texas.gov/Pages/Home.aspx" target="_new"><b>U.S. State of Texas</b></a>
+<li><a href="http://osse.dc.gov/" target="_new">U.S. Superintendent of Education, Washington, D.C.</a> (Lia)
+
+<hr>They are also helping Teachers and Students at <b>Universities and Colleges around the world</b> :-
+</b>
+
+<li>In Argentina, at the
+<a href="http://en.wikipedia.org/wiki/National_Technological_University_-_C%C3%B3rdoba_Regional_Faculty" target="_new">National Technological University</a>
+--- <a href="http://www.frc.utn.edu.ar/" target="_new">Córdoba Regional Faculty</a>
+
+
+
+<li>In Australia at the <a href="http://www.uow.edu.au/health/index.html" target="_new"><b>University of Wollongong</b></a>
+
+<li>In Boznia & Herzgovenia  at <a href="http://www.apeiron-uni.eu/apeironinenglish/indexeng.html" target="_new"><b>Aperion University</b></a>
+
+and the <a href="http://www.unmo.ba/en/university" target="_new"><b>Dzemal Bijedic University of Mostar</b></a>
+
+
+<li>In Canada at the <a href="http://www.ucalgary.ca/" target="_new">University of Calgary</a>
+
+<li>In Chile at <a href="http://www.santotomas.cl/english/mision_vision.html"" target="_new">Santo Tomas</a>
+
+<li>In China, at <a href="http://www.sysu.edu.cn/2012/en/index.html" target="_new">Sun Yat-Sen University</a> in Guangzhou
+
+<li>In the Congo at <a href="http://www.isdrgl.org/index.php" target="_new">ISDRL</a>
+
+<li>In Costa Rica at the <a href="http://www.tec.ac.cr/" target="_new">Technological University</a>
+
+
+
+<li>In the Dominican Republic at the <a href="http://uasd.edu.do/index.php/en/" target="_new"><b>University Autonoma of Santo Domingo</b></a> (founded in 1538).
+
+<li>In Germany at <a href="http://www.jacobs-university.de" target="_new"><b>Jacobs University</b></a>
+
+<li>In 	<font color=red>Iran</font>, at <a href="http://en.wikipedia.org/wiki/Tabriz_University" target="_new"><b>Tabriz University</b></a>
+
+<li>In Italy, by GianLuca Moro at the <a href="http://www.unibo.it/SitoWebDocente/default.html?UPN=gianluca.moro%40unibo.it" target="_new"><b>University of Bologna</b></a>
+
+<li>In Malaysia in the <a href="http://www.iium.edu.my/cfs/departments-1" target="_new">IT Department</a>
+at the <a href="http://www.iium.edu.my/" target="_new"><b>International Islamic University of Malaysia</b></a>
+and the <a href="https://www.mmu.edu.my/index.php" target="_new"><b>Multi-Media University</b></a>
+
+<li>In Mexico, at the <a href="http://www.upslp.edu.mx/" target="_new"><b>University of San Luis Potosi</b></a>.
+
+<li>In New Zealand, by Andrew Reynolds in the <a href="http://www.canterbury.ac.nz/" target="_new"><b>University of Canterbury</b></a>.
+
+<li>In Pakistan, at the <a href="http://lgu.edu.pk/" target="_new">Lahore Garrison University</a>
+
+<li>In Peru at the <a href="http://www.ucsm.edu.pe/catolica/index.php" target="_new"><b>Catholic University of St.Mary</b></a>
+
+
+<li>In Saudi Arabia, at <a href="http://www.mohe.gov.sa/en/studyinside/Government-Universities/Pages/TaibahU.aspx" target="_new">Taibah University</a>
+
+<li>In Turkey, at <a href="http://gsu.edu.tr/en/" target="_new">Galatasaray University</a>
+and
+<a href="http://www.sakarya.edu.tr/en/" target="_new">Sakarya Univerity</a>
+
+<li>In Uganda, at <a href="http://www.busitema.ac.ug/" target="_new">Busitema University</a>
+
+<li>In the UK at the <a href="http://www.cl.cam.ac.uk/teaching/1011/Databases/" target="_new">
+<font color=blue><b>University of Cambridge</b></font></a>
+<li>In Vietnam at <a href="http://www.fpt.com.vn/en/about_us/subsidiaries_and_associates/information_technology_telecommunications/fpt_university/" target="_new">
+<b>FPT University</b></a>
+<li>In Zimbabwe, at <a href="http://www.buse.ac.zw/" target="_new">Bindura University</a>
+
+<br><br>
+<li><b>In the United States</b>
+
+<li>at <a href="http://calvarychapelacademy.com/" target="_new">Calvary Chapel Academy, Belen, New Mexico</a>
+<li>at <a href="http://www.chemeketa.edu/index.html" btarget="_new">Chemeketa Community College, Oregon</a>
+<li>at <a href="http://www.cccd.edu/Pages/home.aspx" target="_new">Coast Colleges of California</a>
+<li>at <a href="http://www.fgcu.edu/" target="_new">Florida Gulf Coast University</a>
+<li>at <a href="http://www.fiu.edu/" target="_new"><b>Florida International University</b></a>
+<li>at <a href="http://gru.edu/about/" target="_new"><b>Georgia Regents University</b></a> (established 1828)
+<li>at <a href="http://www.mtu.edu/" target="_new">Michigan Tech</a>
+<li>at <a href="http://www.oakland.edu/" target="_new">Oakland University</a>
+
+<li>at <a href="http://www.udc.edu/" target="_new">University of the District of Columbia</a>
+<li>at <a href="http://www.houston.edu/" target="_new">University of Houston, Texas</a> (Jose)
+
+<li>at <a href="http://uml.edu/" target="_new">University of Massachussets at Lowell</a>
+
+<li>at <a href="http://www.olemiss.edu/" target="_new">University of Mississippi</a> Jaime at Ol Miss, (established 1844)
+<li>at <a href="http://www.unlv.edu/" target="_new"><b>University of Nevada at Las Vegas</b></a> by Tami
+<li>at <a href="http://utdallas.edu/" target="_new">University of Texas at Dallas</a>
+<li>at <a href="http://www.utsouthwestern.edu/index.html" target="_new">University of Texas South Western Medical Center</a> </b>by Jerry.
+<li>at <a href="http://www.commerce.virginia.edu/Pages/default.aspx" target="_new"><b>University of Virgina</b></a> (Founded by Thomas Jefferson in 1819) by Professor Gigi Kelly
+<li>and at <a href="http://www.yale.edu" target="_new"><font color=blue><b>Yale University</b></font></a></font> (established 1718) by Katarina
+
+-------->
+
+<center><font color=BLUE size=1><I><a HREeeeF="index_alt1.html">&#169 Database Answers Ltd. 2017</a>
+<br><br>
+
+
+<!--- BARRY - detailed listings end here ... --->
+
+
+              </tbody>
+            </table>
+            </td>
+      </tr></table>
+
+
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>

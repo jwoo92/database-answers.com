@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+/usr/bin/clear && printf '\e[3J'
+echo -e "Starting dev server...\n"
+cd ./docs
+# bundle exec jekyll serve --watch --incremental --trace
+bundle exec jekyll serve --livereload --trace
+
+echo "Cleaning up..."
+rm -Rf _site
+cd -

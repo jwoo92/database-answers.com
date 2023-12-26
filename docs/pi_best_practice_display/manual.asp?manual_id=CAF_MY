@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Best Practice Manual Viewer</title>
-	
+
 <script type="text/javascript">
 
 /**********************************************
-* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
 * Visit http://www.dynamicdrive.com/ for full source code
 **********************************************/
@@ -79,12 +79,12 @@ inc++
 }
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -120,7 +120,7 @@ var alltags=document.all? document.all : document.getElementsByTagName("*")
 ccollect=getElementbyClass(alltags, "switchcontent")
 statecollect=getElementbyClass(alltags, "showstate")
 if (enablepersist=="on" && ccollect.length>0){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -142,7 +142,7 @@ window.onunload=saveswitchstate
 </script>
 
 
-	
+
 </head>
 
 <body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
@@ -159,24 +159,24 @@ window.onunload=saveswitchstate
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>
@@ -215,7 +215,7 @@ window.onunload=saveswitchstate
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -234,14 +234,14 @@ window.onunload=saveswitchstate
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
+
 	<p>
 
 <font face="Verdana" size=2 color="blue">
 <b><font COLOR=blue size=+1> Common Assessment Framework (CAF) in Malaysian language</font></b><br>This is a Malaysian Translation of the original English material taken from <A HREF="http://www.everychildmatters.gov.uk/deliveringservices/caf/" TARGET=_NEW>the UK Goverment CAF Web Site</A>.<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.0&nbsp;Bagaimama boleh memberi putolongen.</b></font><p><div id="chap0" class="switchcontent">  </div><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.0&nbsp;Kenapa Kah CAF telah di gutaken.</b></font><p><div id="chap1" class="switchcontent"></div><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.0&nbsp;Bilakat madyana CAF tidak bolah diguneken.</b></font><p><div id="chap2" class="switchcontent"></div><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.0&nbsp;Bilakat makny unluk menginolka.</b></font><p><div id="chap3" class="switchcontent"></div><p><font color="red" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.0&nbsp;Process dikale CAF digunak.</b></font><p><div id="chap4" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.1       &nbsp;Lara I   : Persediaan</b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.2       &nbsp;Lara II : Perbicaraan</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.3       &nbsp;Lara III: Penutupan</b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"></font></div></td></tr></table>
 </font>
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>
@@ -254,24 +254,24 @@ window.onunload=saveswitchstate
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>

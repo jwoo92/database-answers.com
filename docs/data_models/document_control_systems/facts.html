@@ -1,0 +1,224 @@
+<html><head><title>Document Control System Data Model</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<table border=0 width=100%>
+<tr>
+<td align=left colspan=2 height=100 valign=middle>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_400_home.jpg">
+</td>
+</td>
+
+<td align=right rowspan=2 width="100%" valign=middle>
+<a href="http://ec.europa.eu/environment/emas/toolkit/toolkit_12_1.html" target="_new">
+<img alt="EU Document Control (Click for Web Site)" border=0 src="images/eu_document_control_sml.jpg">
+</td>
+</tr>
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<!--- Barry's changes on Monday, Dec 7th means that the total is less than 100% - but it looks OK --->
+<table width="100%" border=0 cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+          <td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></td>
+          <td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+          <td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a>
+	</td>
+          <td width="9%">
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+          <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% width="30%" width="37%"><a style="text-decoration:none" href="../../site_map.html"><font color=WHITE face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu Bar --->
+
+<font color=blue face="Verdana" size=2>
+
+<table bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+<!---   <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> --->
+	<td align=left width="10%"><pre><font color=yellow face=Verdana size=2>Document Control Systems</font></td>
+	</tr>
+      </table>
+    </td>
+  </tr>
+
+
+<tr>
+<td rowspan=3 valign=top width=80>&nbsp;
+<!---
+<img align=left  alt="Scuba Diving in Fiji (where I met my beautiful Malaysian wife) is a great solution to Stress" src="images/advertising_systems.jpg">
+--->
+
+</td>
+
+<td>
+<font color=blue face="Verdana" size=2><a href="index.html">Back to the Data Model.</a>
+
+<!--- Thomas Hamper hamperg at gmail.com --->
+
+<pre><font color=blue face=Verdana size=2><b>The Requirements</b> have been defined as follows by Thomas Hamper :-
+Subject: Database for a document control system
+Question: I looked at the designs in the data models and did not seem to think that they were suitable for my project.
+
+Here are my requirements
+1. The system needs to track documents.
+   A document can be a physical paper, a CD, a hard drive etc.
+2. A document can have multiple drafts, so there should be a common field for all the drafts and a uniqe one to differentiate them.
+   Each draft can then have further copies.
+   The copies will have the same draft number, but each copy can be circulated to different people.
+3. Some documents (items) received from outside the organization will need to be associated with their receipt date and the receipt
+   number (like a ups or fedex tracking number)
+4. A document can have only one status at a time, suck as it is circulated to an employee or it has been mailed externally to a
+   mailing address code.
+5. The documents can be circulated to an employee.
+   I need to track the circulation history
+6. Any change made to a document needs to be tracked along with what user made the change.
+
+   What would be a good design schema for such an application ?
+
+<br>
+<li><b>Barry says The Things of Interest are :-</b>
+<li> Addresses
+<li> Changes
+<li> Documents
+<li> Document Types
+<li> Drafts
+<li> Employees
+
+
+
+
+
+
+<!---
+<br><br>This Page shows small examples of a Glossary of Terms and Business Rules, which are important supporting documentation for a Data Model :-
+<li>A Glossary of Terms which is recommended so that everyone adopts common jargon.
+<br>Terms shown in <b>Bold</b> also appear as entries in the Glossary.
+<li>Business Rules
+
+
+<br><br>
+
+<table border=1 width=90%>
+<tr>
+<td align=middle><font color=blue face=Verdana size=2><b>TERM</b></td>
+<td align=middle><font color=blue face=Verdana size=2><b>ALSO CALLED</b></td>
+<td align=middle><font color=blue face=Verdana size=2><b>EXAMPLES</b></td>
+<td align=middle><font color=blue face=Verdana size=2><b>MEANING</b></td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>Channel</td>
+<td valign=top><font color=blue face=Verdana size=2>Format, Media</td>
+<td valign=top><font color=blue face=Verdana size=2>Internet, Print, TV</td>
+<td valign=top><font color=blue face=Verdana size=2>A Channel for delivering Advertisements to the market.
+</td>
+</tr>
+
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>Format</td>
+<td valign=top><font color=blue face=Verdana size=2>Channel, Media</td>
+<td valign=top><font color=blue face=Verdana size=2>Internet, Print, TV</td>
+<td valign=top><font color=blue face=Verdana size=2>The Format in which Advertisements are delivered to the market.
+</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>Media</td>
+<td valign=top><font color=blue face=Verdana size=2>Channel, Format</td>
+<td valign=top><font color=blue face=Verdana size=2>Internet, Print, TV</td>
+<td valign=top><font color=blue face=Verdana size=2>The Media defines the mode in which Advertisements are delivered to the market.
+</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>Reference Data</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Channel Types</td>
+<td valign=top><font color=blue face=Verdana size=2>This is data that never changes.
+<br>It is used to define the range of values which is valid for other Transaction-related data.
+<br>The names of Tables that hold Reference Data begin 'Ref_'.
+</td>
+</tr>
+
+
+</table>
+--->
+
+
+<!---
+<br>These Rules define the relationships between the 'Things of Interest' in the Scope of the Data Model.
+<br>For example :-
+<li> An Agency can place zero, one or many Adverts.
+<li>A Channel must be of one and only one Channel Type
+<li> A Marketing Campaign can involve one or many Advertisements.
+--->
+
+</td>
+
+<!-- Start of Standard Footer -->
+<tr>
+<td>
+<br>
+<center><font size=1><I><font color=blue face="Verdana" size=1>&#169 DatabaseAnswers.org 2010</I></font></center></center>
+<br>
+</td>
+</tr>
+
+</table>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+</td></tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+

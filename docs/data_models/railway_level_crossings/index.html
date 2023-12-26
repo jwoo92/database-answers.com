@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Data Model for Railway Level Crossings</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.geograph.org.uk/photo/27795" target="_new">
+<img align=right alt="Bentley Heath Level Crossing (UK) (Click for Web Site)" border=0 hspace="0" vspace="4" src="../../images/bentley_heath_level_crossing_sml.jpg">
+</td>
+</td>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+--->
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for Railway Level Crossings&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+<!---
+<hr>This is another of my <b>Invisible Models</b> that are based on things that we see around us every day without giving them much thought.
+<br>
+We demonstrate how to develop a 3NF Data Model and Data Marts from this simple start, using our Best Practice Event-driven Approach.
+
+<br>My first thought when I started this work was simply that I was interested in seeing where it would lead me.
+<br><br>My second thought was that because I was dealing with things I came across in my everyday life, that it would inevitably
+lead me to my <a href="canonical_data_models/index.html">Canonical Data MOdel</a>.
+
+<br><br>I was very pleased to find this was the case ;-0)
+
+<hr>
+<a href="slide_show_lewis_as_a_baby.html">Start the Slide Show</a> (each slide changes after 10m seconds).
+<hr>
+Here are some useful links :-
+<li><a href="http://www.bubbleology.co.uk/" target="_new"</a>BubbleOlogy in London</a>
+<li><a href="http://bubbletea.com/" target="_new">BubbleTea.com</a> - based in Hawaii and offers online shopping for Bubble Tea
+<li><a href="http://www.yelp.co.uk/search?find_desc=bubble+tea&find_loc=London" target="_new">Guide to Bubble Tea in London</a>
+<li><a href="http://en.wikipedia.org/wiki/Bubble_tea" target="_new">Wikipedia on Bubble Tea</a>
+--->
+
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for Railway Level Crossings'>An Access Database</a> is available on demand.
+
+<br>The <a HREeeeF="facts.html">Specifications</a> for the Data Model were obtained by thinking about Level Crossings.
+
+<br><br>We have designed <a href="data_warehouse.html">a Data Warehouse</a>, which is very useful for providng data for Reports and Business Intelligence.
+
+<br><br>We would be glad to have
+<a href='mailto:dba_requests@barryw.org?subject=Comments on the Data Model for the Railway Level Crossings'>your comments</a>.
+
+<br><br>If you are new to Data Models, this page of my new Tutorial will help you <a href="../../tutorial4_db_schema/tutorial_slide_5.html"><b>understand the Data Model</b></a>.
+
+<br><br><a href="http://www.rail-reg.gov.uk/server/show/nav.1134" target="_new">The UK Office of Rail Regulation</a> is a good starting-point,
+and
+<a href="http://www.safety.networkrail.co.uk/Services/Jargon-Buster/A/AK-AO/ALCRM" target="_new">ALCRM (All Level Crossing Risk Model)</a> is a useful acronym.
+<br>
+
+
+<!---
+<br><br>This Model show only Entity names which makes it easy to read.
+you can see also see a <a href="data_model_showing_attributes.html">Model showing Keys and all the Attributes</a>.
+--->
+
+
+<br>
+<table border=1>
+<tr>
+<td align=left valign=top><font color=blue face=Verdana size=2>
+<br><b>Step 1 : Create the ERD with the 'Things of Interest'</b>
+<br><br><img align=middle alt="Data Model for Railway Level Crossings" border=0 valign=top src="images/data_model.gif">
+</td>
+</tr>
+
+<!---
+<tr>
+<td align=left valign=top>
+<font color=blue face=Verdana size=2>
+<b>Step 2: Create the ERD Data Model</b>
+<br>When we think about how these various things are related, we can define the following Business Rules and
+<br>how they might look in a 3NF Normalised Data Model.
+<br><br><img align=left alt="ERD Data Model for Railway Level Crossings" border=0 src="images/data_model_2.gif">
+</td>
+</tr>
+
+<tr>
+<td align=left valign=top>
+<font color=blue face=Verdana size=2>
+<b>Step 3: Align the ERD to our Canonical Data Model</b>
+<br>When we align the ERD to our standard Database Answers Canonical Data Model,
+<br>this is the result (showing only the Entity names) :-
+<br><br><img align=left alt="Canonical Data Model for Railway Level Crossings" border=0 src="images/canonical_data_model_for_hotel_napkin.gif">
+</td>
+</tr>
+--->
+
+</table>
+
+
+<!---
+<hr>
+<table border=1>
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+When I started thinking about my Hotel Napkin, I was leaving the Savoy Hotel in London.
+I had been attending a Presentation organised by an American company called Adaptive Planning.
+<br>I met people in similar interests to mine and also with different interests which made for an interesting outing.
+
+<br><br>So we end up with this draft list that provides our starting-point for designing the Data Model ...
+<br><br><img align=middle alt="Entities in a Data Model for Railway Level Crossings" border=0 valign=top src="images/data_model_1.gif">
+</td>
+
+<td align=middle valign=top>
+<font color=blue face=Verdana size=2>
+Then we think about how these various things are related, and how they might look on a 3NF Normalised Data Model.
+
+<br>For example, Companies organisase Presentations, arrange a Venue and invite people to participate.
+
+<br><br><img align=left alt="ERD Data Model for Railway Level Crossings" border=0 src="images/data_model_2.gif">
+
+</td>
+</tr>
+</table>
+--->
+
+<br><br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+<br>March 7th. 2013
+<br>
+</td>
+</tr>
+</table>
+
+<center><font COLOr=blue face=Verdana size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2013</I></font>
+</center>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

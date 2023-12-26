@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Best Practice Manual Viewer</title>
-	
+
 <script type="text/javascript">
 
 /**********************************************
-* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
 * Visit http://www.dynamicdrive.com/ for full source code
 **********************************************/
@@ -79,12 +79,12 @@ inc++
 }
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -120,7 +120,7 @@ var alltags=document.all? document.all : document.getElementsByTagName("*")
 ccollect=getElementbyClass(alltags, "switchcontent")
 statecollect=getElementbyClass(alltags, "showstate")
 if (enablepersist=="on" && ccollect.length>0){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -142,7 +142,7 @@ window.onunload=saveswitchstate
 </script>
 
 
-	
+
 </head>
 
 <body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
@@ -159,24 +159,24 @@ window.onunload=saveswitchstate
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>
@@ -215,7 +215,7 @@ window.onunload=saveswitchstate
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -234,17 +234,17 @@ window.onunload=saveswitchstate
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
+
 	<p>
 
 <font face="Verdana" size=2 color="blue">
-<b><font COLOR=blue size=+1> UNESCO Guidelines for Best Practices on Indigenous Knowledge</font></b><br>These are Guidelines for describing Best Practice in line with a 
-<A HREF="http://www.unesco.org/most/bpindi.htm" TARGET=_NEW><B>UNESCO MOST standard</A></B>.
+<b><font COLOR=blue size=+1> UNESCO Guidelines for Best Practices on Indigenous Knowledge</font></b><br>These are Guidelines for describing Best Practice in line with a
+<A HREF="http://www.unesco.org/most/bpindi.html" TARGET=_NEW><B>UNESCO MOST standard</A></B>.
 <p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.0&nbsp;Title</b></font><p><div id="chap0" class="switchcontent">For example, 'Traditional harvesting and marketing of honey and wax in Indonesia'.</div><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.0&nbsp;Introducing the Practice</b></font><p><div id="chap1" class="switchcontent">A description of the background and related studies.</div><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.0&nbsp;Stakeholders and Beneficiaries</b></font><p><div id="chap2" class="switchcontent">Description of participants, Project team, and so on.</div><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.0&nbsp;The role of indigenous knowledge</b></font><p><div id="chap3" class="switchcontent">Description of how the IK fitted in to the culture of the community.</div><p><font color="red" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>6.0&nbsp;Achievements and results</b></font><p><div id="chap4" class="switchcontent">Description of the changes and improvements achieved as a result of the Best Practice Project.</div><p><font color="red" onClick="expandcontent(this, 'chap5')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>7.0&nbsp;Strengths and weaknesses of the Practice</b></font><p><div id="chap5" class="switchcontent">Description of how Best Practice provided insight.</div><p><font color="red" onClick="expandcontent(this, 'chap6')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>8.0&nbsp;Source of Inspiration</b></font><p><div id="chap6" class="switchcontent">Description of how the Best Practice could be replicated in other areas and countries.</div><p><font color="red" onClick="expandcontent(this, 'chap7')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>9.0&nbsp;Additional remarks and information</b></font><p><div id="chap7" class="switchcontent">Description of relevant background, such as people who played key roles.</div><p><font color="red" onClick="expandcontent(this, 'chap8')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>10.0&nbsp;Publications</b></font><p><div id="chap8" class="switchcontent">List of Articles and Project Reports.</div><p><font color="red" onClick="expandcontent(this, 'chap9')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>11.0&nbsp;Administrative Data</b></font><p><div id="chap9" class="switchcontent">List of Organisations and partners involved in the Practice.
 </div><p><font color="red" onClick="expandcontent(this, 'chap10')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>12.0&nbsp;Funding</b></font><p><div id="chap10" class="switchcontent">Description of source and amoutn of funding for the Project.</div><p><font color="red" onClick="expandcontent(this, 'chap11')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>13.0&nbsp;Person(s) who have described this Best Practice</b></font><p><div id="chap11" class="switchcontent">Name and Contact details of people who created this Best Practice description.</div>
 </font>
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>
@@ -257,24 +257,24 @@ window.onunload=saveswitchstate
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.html"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
       	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
 	Ask a Question</font></A></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
 	</td>
 
 	<td width="9%">
 <!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	<A STYLE="text-decoration:none" HREF="../careers.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.html"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
         </tr>
       </table>
     </td>

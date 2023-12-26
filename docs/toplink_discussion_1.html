@@ -1,0 +1,87 @@
+<html><head><title>TopLink Discussion 1</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jug" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+
+<table BGCOLOoooR="#FFFFCC" border=0 cellpadding="0" wiidth=80%>
+
+<tr>
+<td align=left valign=bottom><img alt="Database Answers Logo" border=0 heiight=66 wiidth=494 src="images/dba_banner_and_btn.jpg"></td>
+</tr>
+
+<tr>
+<td valign=top><font color=red face="Comic Sans MS" size=4>
+Toplink Discussion 1</b></font>
+</td>
+</tr>
+
+</table>
+
+<hr>
+<!-- end Standard Header - Version 3-->
+
+<font face="Verdana" size=2>
+
+<!-- begin body Text -->
+<img align=right alt="Montreux, Switzerland" border=1 height=268 width=275 src="images/switzerland/montreux.jpg">
+
+<font color=blue face=Verdana size=2>
+<pre><font size=2>
+I am working on a project where a Java servlet front-end handling
+UI interactions will work with a back-end engine (the one that implements
+the "business logic") which in turn will use an underlying, transaction-capable
+data store, probably an Oracle database.
+
+The engine will abstract the functionality to the point where the client
+servlet won't, and must not, know that Oracle is underneath.
+
+As such, it will actually wrap tables into specialized objects that load
+information from Oracle using SQL queries, and store information back into Oracle
+the same way.
+
+Has anybody grappled with the intricacies of such a three-tier architecture?
+The implications for transaction control and cache coherency are interesting and
+potentially huge.
+In effect, our engine becomes a database in itself, as has been pointed out by an
+OODBMS developer that we have spoken with -- and much of the logic we will need to
+implement ends up mimicking or reinventing the functionality of generic O/R mappings
+such as Castor.
+
+I realize that this sounds vague, but anyone who has bumped into the problem before should recognize
+the design issues, hopefully :-)
+
+In researching the subject, we have looked at OODBMS products like Versant, ObjectStore and Ozone.
+Of these, Ozone was the most convenient since its transaction model interfered minimally with the
+application code, whereas Versant and ObjectStore both require explicit transaction semantics in the
+code (resulting in, imho, a clutter of try-except-finally blocks and needless database code).
+Unfortunatelly, Ozone does not seem mature, and it is based on RMI, which in our opinion would result
+in excessive calls and object references across process boundaries.
+
+We have also looked at Castor, the open-source O/R mapping framework, but Castor does not work well in load-balanced clusters, because Castor instances cannot communicate
+with other instances -- this becomes a problem with record locking.
+
+In short, we should *like* to use an O/R mapping or OODBMS, but so far the products evaluated have not matched our expectations.
+</pre>
+
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="ask_a_question.html">Ask me a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email</a>
+        | <a href="faqs.html">FAQs</a>
+        | <a href="history.html">History of Databases</a>
+        | <a href="links.html">Useful Links</a> ]
+<!--    | <a href="scripts.html">DBA Scripts</a> --->
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2000</I></font></center>
+
+
+</html>

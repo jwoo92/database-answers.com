@@ -1,0 +1,64 @@
+<header>
+  <!-- Header -->
+  <table border="0" name="HEADER" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+    <tr class="header">
+      <td height="68" rowspan="2" valign="middle">
+        {%- if page.url != '/' -%}
+          <a class="header-logo" href="/">
+        {%- else -%}
+          <div class="header-logo">
+        {%- endif -%}
+        <img src="/images/dba_400_home.jpg" width="400" height="58" alt="Database Answers" />
+        {%- if page.url != '/' -%}
+          </a>
+        {%- else -%}
+          </div>
+        {%- endif -%}
+      </td>
+      <td align="right" rowspan="2" valign="middle">
+        <img src="//www.clustrmaps.com/map_v2.png?d=sqLXmlfqivAWVY-yA_Rph20ONCRotLYsRhHmmeQN8uE" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onError=null; this.src='http://www2.clustrmaps.com/../images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://www2.clustrmaps.com'" width="180" height="117" />
+      </td>
+    </tr>
+  </table>
+  <!-- Navigation -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="navbar">
+        <table class="navbar-wrapper" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr class="nav-items">
+            <td align="left">
+              <a style="text-decoration: none" href="/">
+                <font color="{%- if page.url == '/' -%}yellow{%- else -%}#FFFFFF{%- endif -%}" face="Verdana" size="2">Home
+                </font>
+              </a>
+            </td>
+            <td>
+              <a style="text-decoration: none" href="/data_models">
+                <font color="{%- if page.url contains '/data_models' -%}yellow{%- else -%}#FFFFFF{%- endif -%}" face="Verdana" size="2">Data Models
+                </font>
+              </a>
+            </td>
+            <td>
+              <a style="text-decoration: none" href="/tutorials">
+                <font color="{%- if page.url contains '/tutorials' -%}yellow{%- else -%}#FFFFFF{%- endif -%}" face="Verdana" size="2">Tutorials
+                </font>
+              </a>
+            </td>
+            <td>
+              <a style="text-decoration: none" href="/careers">
+                <font color="{%- if page.url contains '/careers' -%}yellow{%- else -%}#FFFFFF{%- endif -%}" face="Verdana" size="2">Career Guide
+                </font>
+              </a>
+            </td>
+            <td align="right">
+              <a style="text-decoration: none" href="/site_map">
+                <font color="{%- if page.url contains '/site_map' -%}yellow{%- else -%}#FFFFFF{%- endif -%}" face="Verdana" size="2">Site Map
+                </font>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</header>

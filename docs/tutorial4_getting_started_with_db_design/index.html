@@ -1,0 +1,636 @@
+<html>
+<head><title>Tutorial on Getting Started in Database Design</title>
+
+<meta Name="description"
+Content="We provide a Library of Data Models and free Databases.">
+<meta Name="keywords"
+Content="free access databases, access databases, access data models, data models,database designs, free databases, generic data models">
+
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script>#</script>
+
+<!--  Start of Table 1 --->
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td ROWSPANnnn=1 valign=middle><img alt="Database Answers" src="../images/dba_400_home.jpg" width=400 height=58></td>
+<td align=right rowspan=2 valign=middle nowrap>
+<img alt="This is Starbucks first Cafe, which opened in Pikes Place Market, Seattle, Washington in 1971." border=0 src="images/starbucks_pikes_place_market_first_cafe_sml.jpg">
+</td>
+</tr>
+
+</table>
+<!--  End of Table 1 --->
+
+<!--  Start of Table 2 --->
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+<!---	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td> --->
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<!---	<td><a href="../first_timers.html"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td> --->
+<!---
+<td><a href="../pi_information_catalog/browse.asp"><img src="../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>              --->
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+<!--  End of Table 2 --->
+
+<!--  Start of Table 3 --->
+<table name="GRAY NAVBAR" border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td width=80% bgcolor="#CCCCFF" align=center>
+
+<!--  Start of Table 5 --->
+
+	<table border=0 cellpadding=0 cellspacing=0 valign=top width=100%>
+	<tr>
+	<td> <!-- Body Starts -->
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<!--  Start of Table 6 --->
+
+	<table border=0 width=100% WIiiiDTH=580 cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="61">&nbsp;</td>
+	<td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+	<td colspan="3" width="100%" align="right" class="header1"><b>Welcome to my Tutorial in Getting Started in Database Design</b>
+	<img src="/images/spacer.gif" width="5" height="1"></td>
+	<td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width=1 height="20"></td>
+        </tr>
+
+        <tr>
+	<td rowspan="3" valign="top" width="61">&nbsp;</td>
+     	<td colspan="4" height=0 rowspan="3" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height=0>
+            <tr bgcolor="#FF9900">
+            <td><img src="/images/px-orange.gif" width="1" height=3></td>
+            </tr>
+            </table>
+
+<!--  End of Table 6   --->
+<!--  Start of Table 7 --->
+
+            <table bgcolor=white width="100%" border=0 cellspacing="0" cellpadding="0">
+            <tr>
+            <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+	    <td align=left bgcolor="#CCCCFF" WIiiiDTH=15% width="90" backgroundDDD="images/px-left.guf" valign="top" bgcolor="#3399CC">
+	    <font color=blue face=Verdana size=2>
+
+<!---	<br> --->
+	<table border=1>
+
+
+	<tr>
+	<td colspan=2 valign=top><font color=blue face=Verdana size=2><b>INTRODUCTION :</b>
+	<br>This Tutorial is based on designing an <b>Order Processing Database</b> to deal with Customers placing Orders, firstly at Starbucks and then with Amazon.
+	<br>I have done it this way because Starbucks is quite simple so it provides us with a good starting-point.
+	<br><br>Then I look at the questions of extending this simple Database Design to deal with the more complex situation with Amazon.
+	<br>I hope you find this Tutorial interesting and helpful.
+	<br>Please
+	<a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on new Tutorial'>email me</a> and let me know.
+	<br><br>
+	</td>
+	</tr>
+
+
+
+
+	<tr>
+	<td valign=top><font color=blue face=Verdana size=2><b>GETTING STARTED :</b>
+	<li>We stand outside Starbucks, planning to go in.
+	<li>We can see Customers, and inside we can anticipate seeing a wide range of things to eat and drink.
+	<li>In this Tutorial, I will start by designing a Database for Starbucks and then extend it to include Amazon.
+	<li><b>My Approach</b> has three Steps :-
+<OL><li>Establish the Scope of the Database
+<li>Identify the 'Things of Interest' that are within the Scope, (called <b>Entities</b> or Tables in a Database).
+<li>Determine the <b>Relationships</b> between them.
+</OL>
+
+	<li>At the end of this Tutorial, We have will produced a diagram of the Database Design, which is commonly referred as an 'Entity-Relationship Diagram', or <b>ERD</b>
+	<li>During the Tutorial, I will refer to Tables as the 'Things of Interest', whereas Data Modellers would refer to Entities, but I think that 'Tables' is more User-Friendly.
+	</td>
+
+	<td>
+	<img align=rleft alt="One of the 270 Starbucks Coffee Shops in new York City in 2007" src="images/starbucks_one_of_270_in_nyc.jpg">
+	<br>
+	</td>
+	</tr>
+
+
+<tr>
+<td><img align=right alt="Starbucks Other Products" src="images/starbucks_other_products.jpg">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>DECIDING THE SCOPE OF OUR DATABASE</b>
+<li>When we step inside, we see that Starbucks sells a wide range of Products, so our first task is to decide which of them should be included in our Database.
+
+<li>Right now, we are interested only in something to eat and something to drink.
+<li>Therefore, all the mugs and other items shown in this picture on the left, are outside the <b>Scope</b> of our Database, and are not <b>'Things of Interest'.
+</td>
+</tr>
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>LOOKING AT THE PRODUCTS :</b>
+	<li>Turning away from the mugs, we can see a display of Food and Drink, and that is what we are looking for.
+	<li>Right now, we are thinking about getting something to eat and something to drink.
+
+
+	<br><br><li>When we go in as an ordinary Customer, we are thinking about what we would like to eat and drink.
+	<li>However, when we go in as a Database Designer, we look at the display from a different point of view.
+	<li>We want to discover the structures in the data and how they are related.
+	</td>
+
+	<td>
+	<img align=rleft alt="Starbucks Food and Drink Products" src="images/starbucks_food_and_drink_products.jpg">
+	<br>
+	</td>
+	</tr>
+
+
+
+
+<tr>
+<td valign=top><img align=right alt="Cash Customers" src="images/starbucks_customers_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li> Starbucks (and Retailers in general) know nothing about their cash Customers</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li> Retailers can find out the Name,Address and other details about Customers who pay with a Card.
+<li> Reference data is an important topic and I will come back to it later.
+<br><br><li><b>Primary Keys</b>
+<OL><li>You will notice that the first field in the Customers_version2 Table is the Customer_id.
+<li>It has a 'PK' symbol beside it, which indicates that it is the Primary Key for the Table.
+<li>The Primary Key is very important and is the way that we can recognise each individual record in the Table.
+<li>In the case of Starbucks, they will have hundreds of thousands of Customers over a period of time.
+Therefore we need a way of automatically generating this ID field.
+<li>The way we do this is to use what is called an <b>'Auto-Increment' field</b>. This means that every time you add a new Record, a new Customer ID is automatically generated.
+<li>Every DBMS has an Auto-Increment field. It is called a 'UniqueIdentifier' data type in Access, an 'Identity' in  SQL Server and a 'Sequence' in Oracle.
+</OL>
+
+<br><li><b>Foreign Keys</b>
+<OL><li>When this Primary Key is used in another Table, it is referred to as a'Foreign Key'.
+<li>We can see a good exapmple in this diagram, where the customer_id appears in the Customers_Payment_Methods Table as a Foreign Key.
+<li>This is shown with an 'FK' symbol beside it
+</OL>
+
+<br><li><b>Mandatory Key Fields</b>
+<OL><li>A Foreign Key is usually <b>mandatory</b>, in other words, a value for a customer_id in the Customers_Payment_Methods Table
+must correspond to an actual value of the customer_id in the Customers_Version_1 Table.
+<li>This is shown in the diagram by the short straight line at the end of the dotted loine close to the Customers Table.
+</OL>
+
+<br><li><b>Optional Key Fields</b>
+<OL><li>Not every Customer will have a Payment_Method. In general, they would but we need to allow for situations where Customers change their minds and don't buy anything.
+<li>In other words, we would say that the Relationship is <b>optional</b> at the Customers_Payment_Methods Table end.
+<li>This is shown by the little 'O' at that end of the Relationship dotted line.
+</OL>
+
+<br><li><b>One-to-Many Relationships</b>
+<OL><li>A Customer can have more than one Payment_Method, for example, American Express or Cash.
+<li>In other words, we would say that the Relationship is <b>optional</b> at the Customers_Payment_Methods Table end.
+<li>This is shown by the symbol that has three small lines at that end of the Relationship dotted line, which is referred to as <b>Crow's Feet</b>.
+
+</OL>
+</OL>
+
+</td>
+
+<td valign=top><img align=left alt="Customers Version 2" src="images/starbucks_customers_v2.gif">
+<br>
+</td>
+
+</tr>
+
+
+<tr>
+<td valign=top><img align=right alt="Menu Board" src="images/starbucks_menu_board.jpg">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li>We can make a start on the Product hierarchy by looking at the Menu Board.
+<br><br><li>At the top level, we have :-
+<OL>
+<li>Coffeehouse Favourites
+<li>Expresso
+<li>Frappuccino
+</OL>
+
+<br>I always like to put things in alphabetical order as soon as possible.
+
+<br><br>
+Then looking more closely, we can see the Products listed under <b>Frappuccino</b>, in the top-right-hand corner, are as follows :-
+<UL>Blended Drinks
+<li>Caramel Cream
+<li>Chocolate CremeExpresso
+<li>Srawberries and Cream
+<li>Vanilla Cream
+</UL>
+
+<br><br><br>At this point, we have defined three levels within our Product Hierarchy :-
+
+<br><br><li>The top level 1
+<OL>
+<li>Coffeehouse Favourites
+<li>Expresso
+<li>Frappuccino
+
+<UL><li>Blended Drinks
+<OL><li>Caramel Cream
+<li>Chocolate CremeExpresso
+<li>Srawberries and Cream
+<li>Vanilla Cream
+</OL>
+</OL>
+
+
+<br><br>Then we can see that Caramel Cream, Chocolate CremeExpresso. Srawberries and Cream and Vanilla Cream
+all have a common Parent Product, which is 'Blended Drinks'.
+</td>
+</tr>
+
+<tr>
+<td valign=top><img align=right alt="Products" src="images/products_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li>This diagram shows how the hierarchies of Products and Product Types that we have just discussed are shown in our <b>Entity-Relationship Diagram</b>.
+</td>
+</tr>
+
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>COMMENTS :</b>
+	<li>Food and Drink are specific examples of the more general Thing called a Product.
+	<li>They inherit some common attributes from the Product, and also have some of their own.
+	<li>For example, Food can contain Nuts but Drink do not contain nuts, but both have a Product Name.
+
+
+<br><br><br>
+	<li><b>Rabbits Ears</b>
+	<li><font size=2>You will notice that the table called 'Product_Types_v1' has a dotted line coming out on the right-hand side and going back in again on the top-right corner.
+	<li>Data Analysts call this a Reflexive Relationship, or informally, simply 'Rabbits Ears'.
+	<li>In plain English, we would say that the Table is joined to itself and it means that a record in this Table can be related to another record in the Table.
+	<li>This approach is how we handle the situation where each Product can be in a hierarchy and related to another Product.
+	<li>For example, a Product called Panini could be in a Product Sub-Category called 'Miscelleneous Sandwiches' which could be a higher Product Category called 'Cold Food', which itself could be in a higher Product Super-Category called simply 'Food'.
+	<li>Next time you go into Starbucks, take a look at the borad behind the counter and try to decide how you design the Products area of the Database.
+
+
+ 	<li>You should <b>pay special attention</b> to the little 'zeros' at each end of the dotted line.
+	<li>These are how we implement the fact that the 'Parent Product Type Code' is optional, because the highest level will not have a Parent.
+	<li>It's important to think through this level of detail otherwise you will get caught out somewhere down the line when real data can't be stored in your Database.
+	<li>In practice, it's smart to have a checklist of things like this to run through before you expose the first draft of your new Database design to a critical audience.
+ 	<li>It's good practice even if you don't have a critical audience because otherwise your design will need to be corrected.
+	<li>This topic is discussed again in the final Slide that looks at Deliveries.
+	<li>If you find this kind of thing interesting then maybe you would be happy earning a living as a Database specialist.
+	<li>If not, then keep well away from ti, and make sure your livelihood sdoesn't depened on your abaility to produce a well-design ed Database.
+	<li>You can trust me when I say that if you don't like it, or have an aptitude for it, it quickly becomes a chore that you would hate, because it requires concentrated thought and attention for ;prolonged periods of time.
+	<li>You could think of it <b>like solving crosswords</b> eight hours a day, five days a week.
+
+	<br><br><li><b>Hierarchies in Products and Product Types</b>
+	<li>It's important to understand the difference between these two things, which is that the Product Type Hierarchy defines the Category names and levels, while the Product Hierarchy defines where specific Products fit into the Product Type Hierarchy.
+	</font>
+	</td>
+
+	<td valign=top>
+	<img align=rleft alt="Products (Version 2) showing Inheritance" src="images/products_v2.gif">
+	<br>
+	</td>
+	</tr>
+
+
+<!-- Start of text to copy --->
+<tr>
+<td><img align=right alt="Orders - Version 1" src="images/orders_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li>This is a very simple (and unrealistic) Diagram.
+<li>It shows that Customers order Products,such as Latte and a Muffin
+</td>
+</tr>
+
+
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>COMMENTS :</b>
+	<li>This is a realistic Diagram showing the detail necessary
+	to correctly model Customers, Products and Order details.
+	</td>
+
+	<td>
+	<img align=rleft alt="Orders (Version 2)" src="images/orders_v2.gif">
+	<br>
+	</td>
+	</tr>
+
+<!-- End of text to copy --->
+
+
+<tr>
+<td colspan=1><font color=blue face=Verdana size=2>
+<OL>
+<b><li>What have we found in Starbucks ?</b>
+<UL><li>Customers</UL>
+<UL><li>Orders</UL>
+<UL><li>Products
+<UL><li>Food
+<li>Drink
+
+
+</UL>
+</OL>
+</td>
+<td valign=bottom><font color=blue face=Verdana size=2>
+<b>Now we move on to Amazon ...</b></td>
+<tr>
+
+<!-- Start of text to copy --->
+<tr>
+<td><img align=right alt="Amazon Customers - Version 1" src="images/amazon_customers_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li>Amazon Customers need to give their Delivery Address, their Billing Address and finally their Home Address.
+These can all be different.
+<li>We could simply include them all in the Customer record, as we show in this diagram of Version 1.
+However, this looks ugly.
+It also breaks one of the very important Rules of Relational Database Thoery, which is that 'Repeating Groups are not allowed'.
+In this case, Addresses are clearly Repeating Groups, and so we must find another way to represent them in our Database.
+</td>
+</tr>
+
+
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>COMMENTS :</b>
+	<li>And this is how we do it.
+	<li>We have a separate Address Table, which allows us to have more than one Address for any Customer very easily.
+	<li>This design also has some other benefits :-
+	<OL><li>We can accomodate more than one person at the same Address.
+	We need to do this because different members of a family may sign-up separately with Amazon.
+	<li>With a separate table of Addresses, we can easily use commercial software to validate our Addresses.
+	To find this kind of software, simply Google for "Address Validation Software".
+	I have used QAS with great success in the past.
+	With this approach, we can always be sure that we have 100% good Address data in our Database.
+	</OL>
+	<li><b>Reference Data</b>
+	<UL><li>This diagram shows Address Types, which are an example of Reference Data.
+	<li>This kind of data has the following characteristics :-
+	<OL><li> it doesn't change very much
+        <li>it has a relatively small number of values, usually less than a few dozen and never more than a few hundred.
+	<li>Therefore we can show it with a Code as a Primary Key.
+	<li>Data in Reference Data Tables can be used to populate drop-down lists for Users to select from.
+	<li>In this way, it is used to ensure that all new data is valid.
+	</OL>
+
+	<li><b>Standards</b>
+	<UL><li>In the Address Table, you will see a field called 'iso_country_codes'.
+	<li>iso stands for the 'International Standards Organisation'.
+	<li>Where possible, it's always good to use national or international standaRds.
+	</OL>
+
+	</td>
+
+	<td>
+	<img align=rleft alt="Amazon Customers - Version 2" src="images/amazon_customers_v2.gif">
+	<br>
+	</td>
+	</tr>
+
+<!-- End of text to copy --->
+
+<!-- Start of text to copy --->
+<tr>
+<td valign=top><img align=right alt="Amazon Products - Version 1" src="images/amazon_products_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>COMMENTS :</b>
+<li>Different kinds of Products, like Books, are added quite easily.
+<li>We simply add different kinds of Products, and I have shown Books as an example.
+<li>You will see that the attibutes for Books are specific to Books and don't apply to Food or Drink.
+<li>For example, an Author and an ISBN.
+<li>Because all Products are handled in a Database in a similar way, it was very easy for Amazon to extend its range of Products.
+
+<br><br><br>
+<li><b>Inheritance</b>
+<li>The unusual symbol in the middle of the diagram, composed of a circle with two small lines underneath it is how Inheritance is shown using the particular Data Modelling Tool that I am using,which is called Dezign.
+<li>Inheritance is a very important topic when you are designing a Database.
+<li>In plain English, we would say that Inheritance occurs where a Parent-Child relationship exists between Things of Interest (or Entities).
+<li>You can ask the simple <b>'Is-a' question</b> - in this case, if we ask 'Is a Book a Product' then clearly the answer is 'Yes' so we think there is an Inheritance relationship between them.
+
+
+<li>In the example of Inheritance shown in this diagram, we can see that all Products have Names and Descriptions. Therefore, Books, Food and Drink will inherit these characteristics from the parent Product.
+<li>However, each type of Product will have specific characteristics that it does not share with other types of Products. For example, Books have ISBNs and Authors, but Food and Drink do not.
+<li>One of the important things in your Database design is to be sure you have identified all the Inheritance relationships.
+<li>However, from many years of experince as a DBA, I should point out that relationship is often blurred in a real physical Database because it can be clumsy to implement.
+<li>I sometimes find myself showing Inheritance in a Logical Data Model which then disappears when I design the Physical Database, which is what ultimately becomes the Database.
+
+
+<br><br><br>
+<li><b>There are three different approaches to implementing Inheritance in a Database :-</b>
+<OL><li>Implement nthe design as you see it , in other words, have a separate physical Table for each Product Entity in this diagram.
+<li>Add all attributes in the Product Super-Type to the Books, Food and Drink Sub-Types so you end up with three Tables. This is appealing because it seems a natural approach but it can be more difficulty when it comes to development.
+<li>Add all attributes from the Books, Food and Drink Sub-Types to the Product Super-Type.
+<br>This results in one large Table, where two-thirds of all Attributes are not populated in every record.
+<br>However, software development can be easier, depending on the coding conventions that are followed. Currently, wasted space is not such an issue, so this Approach is common.
+</td>
+</tr>
+
+
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>COMMENTS :</b>
+	<li>Although Deliveries are complex in the real world, it is easy to add them to our Database design.
+	<li>We simply add a Reference Data Table of Delivery Status Codes and one Table for tracking Order Deliveries.
+	<li>You will notice that the name of this Table is 'Customer_Orders_Delivery', which follows our convention of combining the names of Tables that are combined in the data that is stored in the Table.
+
+	<li><b>Rabbits Ears</b>
+	<li><font size=2>You will notice that the table called 'Ref_Delivery_Stage_Codes' has a dotted line coming out on the right-hand side and going back in again on the top-right corner.
+	<li>Data Analysts call this a Reflexive Relationship, or informally, simply 'Rabbits Ears'.
+	<li>In plain English, we would say that the Table is joined to itself and it means that a record in this Table can be related to another record in the Table.
+	<li>This approach is how we handle the situation where each Delivery Stage is related to another one.
+	<li>When you buy a product from Amazon, you can track its progress as it leaves the Warehouse, clears Customs and is finally delivered to you.
+ 	<li>You should <b>pay special attention</b> to the little 'zeros' at each end of the dotted line.
+	<li>These are how we implement the fact that the 'Next Delivery Stage Code' is optional, because the last Stage in Delivery will not have a Next one.
+	<li>It's important to think through this level of detail otherwise you will get caught out somewhere down the line when real data can't be stored in your Database.
+	<li>In practice, it's smart to have a checklist of things like this to run through before you expose the first draft of your new Database design to a critical audience.
+ 	<li>It's good practice even if you don't have a critical audience because otherwise your design will need to be corrected.
+	</font>
+
+
+	</td>
+
+	<td>
+	<img align=rleft alt="Amazon Deliveries - Version 1" src="images/amazon_deliveries_v1.gif">
+	<br>
+	</td>
+	</tr>
+
+<!-- End of text to copy --->
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+
+<b>Finally, here's a  Summary of the  Rules for designing a Database</b>
+<OL>
+<li>Define the <b>Scope</b> of your Database.
+<li>Define the <b>"Things of Interest"</b>,(e.g. <b>Customers</b> and <b>Order</b>), that are within Scope.
+<li>Establish how these Things are related and write down the 'Business Rules'.
+<br>For example, "A <b>Customer</b> can have zero, one or many <b>Addresses</b>.
+<li>Determine what else you know about these Things.
+<br>For example, "Books have an ISBN and one or many <b>Authors</b>
+<li>Identify the Reference Data, such as <b>Address Types</b> and <b>Product Types</b>.
+</OL>
+
+<br><li>You need to define a Primary Key for all Tables.
+<li>For Reference Tables, use the'Code' as the Key, often with only one other field, which is the Description field.
+<li>For all other Data, you can use a generated number as the Primary Key.
+<br>This has some major benefits, for example, it provides flexibility, and it's really the only choice for a Database supporting a Web Site.
+
+
+<br><br><b><li>How to Validate your Database Design</b>
+<br>t's always useful to validate your design.
+<br>One good way is to talk through it with someone who knopw a littlw about what you are doing, or about Amazon or Stabuckls !!
+<br>Another good way is to check that you will be able to store actual data in your new Database.
+<li>Firstly, obtain a small set of Sample Data by thinking about your last trip to Starbucks, or the last book you bought from Amazon.
+<li>Confirm the first draft of the Database design against the Sample Data.
+<li>Obtain from the users some representative enquiries for the Database,
+<br>e.g. "How many Hot Drinks are on offer in Starbucks ?"
+
+<li>Review Code or Type Data which is (more or less) constant, which can be classified as <b>Reference Data</b>.
+<br>Look for external standards which can be national or international.
+<br>For example, Currency or Country Codes might have ISO Codes.
+
+<li>Finally, define User Scenarios and step through them with some sample data to check that that Database supports the required functionality.
+
+</OL>
+</UL>
+
+<br><b><li>Please email me with your comments</b>
+<li>I hope you have found this Tutorial interesting and useful.
+<li>Please
+<a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on new Tutorial'>email me</a> with your questions or suggestions so I can improve this first draft Tutorial.
+
+<br>Good luck with designing your first Database !
+<br><br><b>Barry Williams</b>
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+
+</OL>
+</td>
+
+<tr>
+
+</table>
+
+
+
+
+
+
+          </td>
+        </tr>
+      </table>
+
+<!--  End of Table ?? --->
+
+<br>
+
+<!--- <hr> --->
+
+
+
+
+
+
+
+<!--- barry extract ends here --->
+
+<br>
+
+
+	<!-- Sample Section Ends -->
+	<!-- Body Ends -->
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<!--  Start of Table 10 --->
+
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<!---	<td><img src="images/v3/spacer.gif" width=5 height=24>AAAA</td> --->
+
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-bottom.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+<!---	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td> --->
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<!---	<td><a href="../first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td> --->
+<!---	<td><a href="../pi_information_catalog/browse.asp"><img src="images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>              --->
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<!--  End of Table 10 --->
+
+<font color=black face="Verdana" size=1>
+
+<br><center><font color=red><I> &#169 DatabaseAnswers.org 2008</I></font></center>
+
+</body>
+</html>
+

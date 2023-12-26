@@ -1,0 +1,102 @@
+<html><head><title>Vehicle Mileage</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+<table bgcolor="#FFFFCC" border=0 cellpadding="0" width=80%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_banner_and_btn_400.jpg">
+<br><br><font color=red face="Comic Sans MS" size=4><b>FACTS for tracking Vehicle Mileage</font>
+</td>
+<td align=right rowspan=1>
+<img align=right alt="Red Thread River House Book Cover" src="../../images/cars/1936cord_sml.jpg"></a>
+</td>
+</tr>
+
+</table>
+<hr>
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+The design of this Database has been created by following
+<a href="../../approach2db_design.html"><b>our General Approach</b>.</a>
+<hr>
+<pre><font color=blue face=Verdana size=2>The purpose of the Database is to track Vehicle Mileage.
+
+<P>
+A. Things of Interest :-
+A.1 Formulae for calculation of Maintenance Schedules
+A.2 Maintenance Schedules
+A.3 Sites of Vehicles
+A.4 Vehicles
+
+B. What do we know about the Things of Interest :-
+B.1 Vehicles have an end-of-day Mileage.
+B.2 Vehicles become due for maintenance based on mileage,
+    calculated accordingly to a formula.
+
+*********
+Original specification of Requirements :-
+Email : nailss in AskMe.com on 4/24/2002:
+
+An Excel Spreadsheet is available that will show
+most of the information and allow for import into Access.
+
+1 Sites
+2 Vehicles
+2 13 sites using vehicles from list
+3 record end of day mileage for each vehichle
+4 flag vehicles due for maintain that is based on mileage (can supply formulas)
+5 prefer to enter data in form view
+
+Is someone interested in helping?
+
+
+<hr>
+<!---
+Clarification is required of the appropriate Keys (primary, foreign, composite etc.)
+A good approach for Primary Keys is to make them 'surrogate' keys, which are simply unique integers,
+which are constantly increasing. These are implemented as Sequences in Oracle and Identity Fields in Microsoft
+SQL Server.
+This is especially appropriate for Patients, where it is useful to have use a number which can be automatically
+generated in a straightforward manner.
+
+For Tables of Reference or Static Data, such as Levels of Patient Care, there is usually an obvious Primary
+Key,such as the Level Number, which can be used as the Primary Key.
+
+There are other situations, frequently referring to fixed assets or situations, where there may be an obvious
+Primary Key.
+
+A good example is the Rooms in the Nursing Home, where it might be sensible to use the Room Number as the Primary Key
+of the Rooms Entity or Table.
+
+It is necessary to be sure that Rooms will always be referred to in the same way in the future.
+If they are not integers, such as Room 213, then the field can be defined as a character string.
+By choosing a length, such as 10 characters, provides a substantial amount of flexibility for the future.
+A length of 5 might also be adequate for the present, and migrating in the future is a straightfoward DBA task.
+--->
+
+Barry Williams
+Principal Consultant
+Database Answers
+27th. April 2002
+</pre>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

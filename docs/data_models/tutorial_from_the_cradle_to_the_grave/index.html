@@ -1,0 +1,913 @@
+<html>
+<head><title>Data Modelling from the Cradle to the Grave by Example</title>
+
+<meta Name="description"
+Content="We provide a Library of Data Models and free Databases.">
+<meta Name="keywords"
+Content="free access databases, access databases, access data models, data models,database designs, free databases, generic data models">
+
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!--  Start of Table 1 --->
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td ROWSPANnnn=1 valign=middle><img alt="Database Answers" src="../../images/dba_400_home.jpg" width=400 height=58></td>
+<td align=right rowspan=2 valign=middle nowrap>
+<a href="http://www.talkorigins.org/faqs/homs/faqs.html" target="_new">
+<img alt="Evolution" border=0 src="images/cradle_to_grave.jpg"></a>
+</td>
+</tr>
+
+</table>
+<!--  End of Table 1 --->
+
+<!--  Start of Table 2 --->
+<!------
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><a href="../../index.html"> <img name="menu_home" src="../../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top.gif" width=28 height=24></td>
+	<td><a href="../../pi_ask_a_question/index.asp"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../pi_communities/boards.asp"><img src="../../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../../contact_us.html"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<td><a href="../first_timers.html"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+<td><a href="../pi_information_catalog/browse.asp"><img src="../../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>
+	<td><a href="../../search.html"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.html"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+--------->
+
+<!--  End of Table 2 --->
+
+<!--  Start of Table 3 --->
+<table name="GRAY NAVBAR" border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td width=80% bgcolor="#CCCCFF" align=center>
+
+<!--  Start of Table 5 --->
+
+	<table border=0 cellpadding=0 cellspacing=0 valign=top width=100%>
+	<tr>
+	<td> <!-- Body Starts -->
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<!--  Start of Table 6 --->
+
+	<table border=0 width=100% WIiiiDTH=580 cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="61">&nbsp;</td>
+	<td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+	<td colspan="3" width="100%" align="middle" class="header1">
+	<font color=blue face=Verdana size=4>
+
+
+	<b>Welcome to our 'Cradle to the Grave' Tutorial</b>
+
+
+	<img src="/images/spacer.gif" width="5" height="1"></td>
+	<td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width=1 height="20"></td>
+        </tr>
+
+        <tr>
+	<td rowspan="3" valign="top" width="61">&nbsp;</td>
+     	<td colspan="4" height=0 rowspan="3" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height=0>
+            <tr bgcolor="#FF9900">
+            <td><img src="/images/px-orange.gif" width="1" height=3></td>
+            </tr>
+            </table>
+
+<!--  End of Table 6   --->
+<!--  Start of Table 7 --->
+
+            <table bgcolor=white width="100%" border=0 cellspacing="0" cellpadding="0">
+            <tr>
+            <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+
+	    <td align=left bgcolor="#CCCCFF" WIiiiDTH=15% width="90" backgroundDDD="images/px-left.guf" valign="top" bgcolor="#3399CC">
+	    <font color=blue face=Verdana size=2>
+
+<!---	<br> --->
+	<table border=2>
+
+	<tr>
+	<td colspan=2 valign=top><font color=blue face=Verdana size=2>
+	Back to the <a href="../index.html">Home Page</a>
+<br><br>
+<b>1) INTRODUCTION :</b>
+	<br>This Tutorial is for beginners to Data Modelling.
+	<br><br>
+	Topics covered in this Tutorial include :-
+	<OL><li>Creating Entities
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>1-to-Many Relationships
+	<li>Hierarchies
+	<li>Inheritance
+	<li>Reference Data
+	</OL>
+
+	<br>I have used the <a href="http://www.datanamic.com" target="_new"><font color=red>Dezign Data Modelling Tool</font></a> to create the Data Models in this Tutorial.
+	<br>I chose Datanamic because it is powerful, flexible and affordable.
+<!----	<br>Members of the Database Answers Community can purchase Dezign and <b>benefit from a discount of 25%</b>. ---->
+
+
+<!---	<br>In order to gain the benefit of this <b>discount</b>, all you have to do is
+	<a href='mailto:dba_requests&#64;barryw.org?subject=Request for Dezign at a Discount'>send me an email</a>
+
+<br>In order to gain the benefit of this discount, all you have to do is
+<a href='mailto:dba_requests&#64;barryw.org?subject=Request for Dezign at a Discount'>
+send me an email</a> with your Database Answers Community ID.
+<br>I will then send you the order instructions.
+---->
+
+	<br><br><li>At the end of this Tutorial, we will have designed a number of Logical Data Models, which are commonly referred as <b>Entity-Relationship Diagrams</b>, or <b>'ERD'</b>
+
+<hr>
+On July 4th. I added Conceptual Models to make things easier to understand.
+<br>I created these in colour in Microsoft Word and their purpose is to be more 'user friendly'.
+<br><br>If you are completely new to Data modelling, I recommend you go through this Tutorial and just look at these coloured Conceptual Models until you understand what is going on.
+<br><br>Then look at the Logical Data Models and see how they compare.
+<hr>
+
+	I hope you find this Tutorial interesting and helpful.
+	<br>Please
+	<a href='mailto:info&#64;barryw.org?subject=Comments on Tutorial on Data Modelling'>email me</a> and let me know.
+	<br><br>
+	</td>
+	</tr>
+
+	<tr>
+	<td valign=top><font color=blue face=Verdana size=2><b>2) FROM  THE  CRADLE</b>
+	<br>Topics covered include :-
+	<li>Entities
+	<li>Primary Keys
+
+<br><br>
+The approach I have chosen for this Tutorial is to cover the Life span of a typical human being, from the cradle to the grave.
+
+<br>This allows me to trace the increasing complexity in life and match it to an increasing complexity in Logical Data Models.
+
+	<li>The first task is to decide on the scope of our Data Model.
+	<li><b>My Approach</b> has three Steps :-
+	<OL><li>Establish the Scope of the Data Model
+	<li>Identify the 'Things of Interest' that are within the Scope,
+	These will be called <b>Entities</b>.
+	<li>Determine the <b>Relationships</b> between them.
+	</OL>
+
+<br><b>DECIDING THE SCOPE OF OUR DATA MODEL</b>
+<li>I have decided that the Scope is 'From the Cradle to the Grave'.
+<li>This will include childhood, teenage years, becoming a student, getting a job, getting married, getting sick, and finally dying
+<li>Therefore, anything outside this scope are not <b>'Things of Interest'</b>.
+
+	</td>
+
+	<td border=1 valign=top>
+
+
+	<img align=left alt="Me" border=1 valign=top src="images/conceptual_model_me.gif">
+<br>
+<br>
+<br>
+
+	<img align=left alt="From the Cradle" border=1 valign=top src="images/from_the_cradle.gif">
+	<br>
+	</td>
+	</tr>
+
+
+<tr>
+<td>
+<img align=middle alt="Cradle to the Grave - Conceptual Model Number 2" border=1 src="images/conceptual_model_2.gif">
+<img align=right alt="Cradle to the Grave - Model Number 2" border=1 src="images/me_and_mommy_model_2.gif"><br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>3) ME AND MOMMY</b>
+	<br>Topics covered include :-
+	<li> Entities
+	<li> Foreign Keys
+	<li> Primary Keys
+	<li> One-to-Many Relationships
+
+
+<br><br><font color=red><b>How to create an Entity in Dezign</b></font>
+<br>1. Right-click on a blank area in the diagram
+<br>2. From the drop-down list, choose Insert and Entity
+<br>3. Check the 'PK' box for the Primary Key attribute,
+<br>  which will usually be the first one on the Entity.
+<br>4. Click on Close to save the results.
+
+</td>
+</tr>
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>4) ME, MOMMY AND MY MEALS :</b>
+	<br>Topics covered include :-
+	<li> Entities
+	<li> Foreign Keys
+	<li> Primary Keys
+	<li> One-to-Many Relationships
+	<li> Many-to-Many Relationships
+	<li> Reference Data
+
+	<OL>
+	<li> At this Stage, we show only the Entities with no Relationships and minimum Attributes.
+	and specify only the Primary Key and one 'details' field that will be replaced later on.
+
+	<br><li> The Primary Key field(s) should always be first.
+
+<li>You will notice that the first field in the Customers_version2 Table is the Customer_id.
+<li>It has a 'PK' symbol beside it, which indicates that it is the Primary Key for the Table.
+<li>The Primary Key is very important and is the way that we can recognise each individual record in the Table.
+</OL>
+
+<font color=red>Creating a Primary Key in Dezign</font>
+<br>1. Right-click on the Entity
+<br>2. Choose Attributes
+<br>3. Check the 'PK' box for the Primary Key attribute, which will usually be the first one on the Entity.
+<br>4. Click on Close to save the results.
+
+
+	</td>
+
+	<td>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_my_meals.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+	<img align=left alt="Cradle to the Grave - Model Number 3" border=1 src="images/me_and_mommy_model_3.gif">
+	<br>
+	</td>
+	</tr>
+
+
+
+
+<tr>
+<td valign=top>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_fees_schedule.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img align=left alt="Children's Playgroup" border=1 src="images/childrens_playgroup_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>5) ME AND THE PLAYGROUP :</b>
+	<br>Topics covered include :-
+	<li> Entities
+	<li> Foreign Keys
+	<li> Primary Keys
+	<li> One-to-Many Relationships
+	<li> Many-to-Many Relationships
+
+
+
+<li>Here we have added the <b>Relationships</b> between the <b>Entities</b>.
+
+<OL><li>When this Primary Key is used in another Table, it is referred to as a'Foreign Key'.
+<li>We can see a good example in this diagram, where the customer_id appears in the Customers_Payment_Methods Table as a Foreign Key.
+<li>This is shown with an 'FK' symbol beside it
+</OL>
+
+
+<br><li><b>Mandatory Key Fields</b>
+<OL><li>A Foreign Key is usually <b>mandatory</b>, in other words, a value for a customer_id in the Customers_Payment_Methods Table
+must correspond to an actual value of the customer_id in the Customers_Version_1 Table.
+<li>This is shown in the diagram by the short straight line at the end of the dotted line close to the Customers Table.
+</OL>
+
+
+<font color=red>Foreign Keys in Dezign</font>
+<br>1. Foreign Keys are created automatically when you make a Relationship between two Entities.
+<br>2. I recommend that you move the field up in the Entity so that it takes it place alphabetically among the Key fields.
+<br>   To do this, right-click on the Entity choose the Attributes option, then click on the up or down arrow on the right-hand side.
+
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>6) I GO TO CHURCH SUNDAY SCHOOL :</b>
+	<br>Topics covered include :-
+	<li> Entities
+	<li> Foreign Keys
+	<li> Primary Keys
+	<li> One-to-Many Relationships
+	<li> Many-to-Many Relationships
+	<li> Addresses
+
+<br><li><b>One-to-Many Relationships</b>
+<OL><li>A Customer can have more than one Payment_Method, for example, American Express or Cash.
+<li>In other words, we would say that the Relationship is <b>optional</b> at the Customers_Payment_Methods Table end.
+<li>This is shown by the symbol that has three small lines at that end of the Relationship dotted line, which is referred to as <b>Crow's Feet</b>.
+</OL>
+</OL>
+
+
+<br><li><b>Optional Key Fields</b>
+<OL><li>Not every Customer will have a Payment_Method. In general, they would but we need to allow for situations where Customers change their minds and don't buy anything.
+<li>In other words, we would say that the Relationship is <b>optional</b> at the Customers_Payment_Methods Table end.
+<li>This is shown by the little 'O' at that end of the Relationship dotted line.
+</OL>
+
+</OL>
+</OL>
+
+</td>
+
+<td valign=top>
+
+	<img align=left alt="Me" border=1 src="images/conceptual_model_sunday_school.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+
+<img align=left alt="Church Sunday Schools (Made smaller for this page)" border=1 src="images/church_sunday_schools_model_med.gif">
+<br>
+</td>
+
+</tr>
+
+
+
+
+<tr>
+<td valign=top>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_student_accommodation.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+
+<img align=left alt="Student Accommodation" border=1 src="images/student_accommodation_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>7) I MOVE INTO STUDENT ACCOMMODATION :</b>
+	<br>Topics covered include :-
+	<li> Entities
+	<li> Foreign Keys
+	<li> Primary Keys
+	<li> One-to-Many Relationships
+	<li> Many-to-Many Relationships
+	<li> Reference Data
+
+
+
+<br>At this Stage, we add Reference Data.
+
+<hr>
+<li>This diagram shows how the hierarchies of Products and Product Types that we have just discussed are shown in our <b>Entity-Relationship Diagram</b>.
+
+
+<br><br><br>
+	<li><b>Rabbits Ears</b>
+	<li><font size=2>You will notice that the table called 'Product_Types_v1' has a dotted line coming out on the right-hand side and going back in again on the top-right corner.
+	<li>Data Analysts call this a Reflexive Relationship, or informally, simply 'Rabbits Ears'.
+	<li>In plain English, we would say that the Table is joined to itself and it means that a record in this Table can be related to another record in the Table.
+	<li>This approach is how we handle the situation where each Product can be in a hierarchy and related to another Product.
+	<li>For example, a Product called Panini could be in a Product Sub-Category called 'Miscelleneous Sandwiches' which could be a higher Product Category called 'Cold Food', which itself could be in a higher Product Super-Category called simply 'Food'.
+	<li>Next time you go into Starbucks, take a look at the borad behind the counter and try to decide how you design the Products area of the Data Model.
+
+
+ 	<li>You should <b>pay special attention</b> to the little 'zeros' at each end of the dotted line.
+	<li>These are how we implement the fact that the 'Parent Product Type Code' is optional, because the highest level will not have a Parent.
+</td>
+</tr>
+
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>8) STUDENT ASSESSMENTS !!! :</b>
+
+	<br>Topics covered include :-
+	<li> Entities
+	<li> Foreign Keys
+	<li> Primary Keys
+	<li> One-to-Many Relationships
+	<li> Many-to-Many Relationships
+	<li> Addresses
+
+<hr>
+
+	<li>Food and Drink are specific examples of the more general Thing called a Product.
+	<li>They inherit some common attributes from the Product, and also have some of their own.
+	<li>For example, Food can contain Nuts but Drink do not contain nuts, but both have a Product Name.
+
+<br><br><br>
+<li>The unusual symbol in the middle of the diagram, composed of a circle with two small lines underneath it is how Inheritance is shown using the particular Data Modelling Tool that I am using,which is called Dezign.
+<li>Inheritance is a very important topic when you are creating a Data Model.
+<li>In plain English, we would say that Inheritance occurs where a Parent-Child relationship exists between Things of Interest (or Entities).
+<li>You can ask the simple <b>'Is-a' question</b> - in this case, if we ask 'Is a Book a Product' then clearly the answer is 'Yes' so we think there is an Inheritance relationship between them.
+
+
+<li>In the example of Inheritance shown in this diagram, we can see that all Products have Names and Descriptions. Therefore, Books, Food and Drink will inherit these characteristics from the parent Product.
+<li>However, each type of Product will have specific characteristics that it does not share with other types of Products. For example, Books have ISBNs and Authors, but Food and Drink do not.
+<li>One of the important things in your Data Model is to be sure you have identified all the Inheritance relationships.
+<li>However, from many years of experince as a DBA, I should point out that relationship is often blurred in a real physical Database because it can be clumsy to implement.
+<li>I sometimes find myself showing Inheritance in a Logical Data Model which then disappears when I design the Physical Database, which is what ultimately becomes the Database.
+
+
+	</font>
+	</td>
+
+	<td valign=top>
+
+	<img align=left alt="Me" border=1 src="images/conceptual_model_student_assessments.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+
+	<img align=left alt="Student Assessments" border=1 src="images/student_assessments_model.gif">
+	<br>
+	</td>
+	</tr>
+
+
+	<tr>
+	<td>
+
+	<img align=left alt="Me" border=1 src="images/conceptual_model_social_networking.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+	<img align=left alt="Social Networking Sites - eg Facebook" border=1 src="images/social_networking_model.gif">
+	<br>
+	</td>
+
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>9) I JOIN FACEBOOK :</b>
+	<br>Topics covered include :-
+	<li> Entities
+	<li> Foreign Keys
+	<li> Primary Keys
+	<li> One-to-Many Relationships
+	<li> Many-to-Many Relationships
+
+<hr>
+
+	<UL><li>This diagram shows Address Types, which are an example of Reference Data.
+	<li>This kind of data has the following characteristics :-
+	<OL><li> it doesn't change very much
+        <li>it has a relatively small number of values, usually less than a few dozen and never more than a few hundred.
+	<li>Therefore we can show it with a Code as a Primary Key.
+	<li>Data in Reference Data Tables can be used to populate drop-down lists for Users to select from.
+	<li>In this way, it is used to ensure that all new data is valid.
+	</OL>
+
+	<li><b>Standards</b>
+	<UL><li>In the Address Table, you will see a field called 'iso_country_codes'.
+	<li>iso stands for the 'International Standards Organisation'.
+	<li>Where possible, it's always good to use national or international standards.
+	</OL>
+
+</OL>
+
+
+	<br><br><b>Customer Addresses</b>
+	<li>This is a general and flexible approach to handling Addresses in our Data Model.
+	<li>We have a separate Address Table, which allows us to have more than one Address for any Customer very easily.
+	<li>This design also has some other benefits :-
+	<OL><li>We can accomodate more than one person at the same Address.
+	We need to do this because different members of a family may sign-up separately with Amazon.
+	<li>With a separate table of Addresses, we can easily use commercial software to validate our Addresses.
+	To find this kind of software, simply Google for "Address Validation Software".
+	I have used QAS with great success in the past.
+	With this approach, we can always be sure that we have 100% good Address data in our Database.
+	</OL>
+
+	</td>
+
+	</tr>
+
+<hr>
+<!-- Start of text to copy --->
+<!---
+<tr>
+<td><img align=right alt="Orders - Version 1" src="images/orders_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>8) COMMENTS :</b>
+<li>This is a very simple (and unrealistic) Diagram.
+<li>It shows that Customers order Products,such as Latte and a Muffin
+</td>
+</tr>
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>10) COMMENTS :</b>
+	<li>This is a realistic Diagram showing the detail necessary
+	to correctly model Customers, Products and Order details.
+	</td>
+
+	<td>
+
+	<img align=rleft alt="Orders (Version 2)" src="images/orders_v2.gif">
+	<br>
+	</td>
+	</tr>
+--->
+
+<!-- End of text to copy --->
+<!---
+<tr>
+<td colspan=1><font color=blue face=Verdana size=2>
+<OL>
+<b><li>What have we found in Starbucks ?</b>
+<UL><li>Customers</UL>
+<UL><li>Orders</UL>
+<UL><li>Products
+<UL><li>Food
+<li>Drink
+
+
+</UL>
+</OL>
+</td>
+<td valign=bottom><font color=blue face=Verdana size=2>
+<b>Now we move on to Amazon ...</b></td>
+<tr>
+--->
+
+
+<tr>
+
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>10) I JOIN THE SWIMMING CLUB :</b>
+
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Reference Data (eg Address Types and Payment Methods)
+	</OL>
+</OL>
+
+</td>
+
+<td>
+	<img align=left alt="Swimming Club" border=1 src="images/conceptual_model_swimming_clubs.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+
+<img align=left alt="Swimming Clubs Model" border=1 src="images/swimming_clubs_model.gif">
+<br>
+</td>
+
+</tr>
+
+<tr>
+<td>
+
+	<img align=left alt="Me" border=1 src="images/conceptual_model_traffic_cops.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+<img align=right alt="Traffic Cops and Tickets Model" src="images/traffic_cops_and_tickets_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>11) I GET A TICKET FROM A TRAFFIC COP :</b>
+
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Reference Data, eg Document Types and Record Status
+	</OL>
+</OL>
+</td>
+</tr>
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>12) I GET MARRIED :</b>
+<OL>
+<b>Topics covered :-</b>	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Reference Data
+	</OL>
+</OL>
+
+<li>This Model was created using a different Data Modelling Tool, called ERWin from Computer Associates.
+<li> It shows that if you are familiar with the underlying principles that you will be able to understand and ERD.
+
+</td>
+
+<td>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_weddings.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+<img align=left alt="Weddings Model" border=1 src="images/weddings_model.gif">
+<br>
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+
+	<img align=left alt="Me" border=1 src="images/conceptual_model_baseball_umpires.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+<img align=left alt="Baseball Umpire Scheduling Model" border=1 src="images/baseball_umpire_scheduling_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>13) I BECOME A BASEBALL UMPIRE :</b>
+
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Reference Data, eg Division Types
+	</OL>
+</OL>
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>14) I GO TO HOSPITAL :</b>
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Reference Data
+	</OL>
+</OL>
+
+</td>
+<td>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_hospital_admissions.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+
+<img align=left alt="Hospital Admissions Model" border=1 src="images/hospital_admissions_model.gif">
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_funeral_homes.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+<img align=right alt="Funeral Homes Model" border=1 src="images/funeral_homes_model.gif">
+<br>
+</td>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>15) TO THE GRAVE :</b>
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Reference Data
+	</OL>
+</OL>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>16) EVENTS IN MY LIFE :</b>
+
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Reference Data
+	</OL>
+</OL>
+</td>
+<td>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_my_life.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+<img align=left alt="My Life Data Model" border=1 src="images/my_life_model.gif">
+<br>
+</td>
+</tr>
+
+
+<tr>
+<td>
+	<img align=left alt="Me" border=1 src="images/conceptual_model_my_work.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br><br>
+
+<img align=left alt="My Work Data Model" border=1 src="images/my_work_model.gif">
+<br>
+</td>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>17) EVENTS IN MY WORK :</b>
+
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Hierarchies (eg Organisations)
+	<li>Inheritance (from Information_Catalogue to Customer_Data, Invoices, Contracts and Orders.
+	<li>Reference Data eg Status_Codes
+	</OL>
+</OL>
+</td>
+</tr>
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>18) SUMMARY OF TOPICS IN THIS TUTORIAL :</b>
+<OL>
+<b>Topics covered :-</b>
+	<OL>
+	<li>Primary Keys
+	<li>Foreign Keys
+	<li>One-to-Many Relationships
+	<li>Many-to-Many Relationships
+	<li>Hierarchies
+	<li>Inheritance
+	<li>Reference Data
+	</OL>
+</OL>
+<li>If you would like to see other Topics included, please <a href='mailto:databaseanswers&#64;gmail.com?subject=Suggested Topics for the Data Modelling Tutorial'>let me know</a>. Tutorial.
+</td>
+
+<td>
+
+	<img align=left alt="Me" border=1 src="images/conceptual_model_topics.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<img align=left alt="Top-Level Data Model" border=1 src="images/top_level_model.gif">
+<br>
+</td>
+</tr>
+
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+
+
+<br><b>19) PLEASE EMAIL ME</b>
+<li>I hope you have found this Tutorial interesting and useful.
+<li>Please
+<a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on Data Modelling Tutorial'>email me</a> with your questions or suggestions so I can improve it.
+
+
+<br><br><li>If you want to try the <b>Dezign Data Modelling Tool</b>, you can download it from the <a href="http://www.datanamic.com" target="_new"><font color=red>Datanamic Web Site</font></a>.
+
+<br><br>Good luck with creating your first Data Model !!!
+
+<br><br><b>Barry Williams</b>
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+
+</OL>
+</td>
+
+<tr>
+
+</table>
+
+
+
+
+
+
+          </td>
+        </tr>
+      </table>
+
+<!--  End of Table ?? --->
+
+<br>
+
+<!--- <hr> --->
+
+
+
+
+
+
+
+<!--- barry extract ends here --->
+
+<br>
+
+
+	<!-- Sample Section Ends -->
+	<!-- Body Ends -->
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<!--  Start of Table 10 --->
+
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<!---	<td><img src="images/v3/spacer.gif" width=5 height=24>AAAA</td> --->
+
+	<td><a href="../index.html"> <img name="menu_home" src="../../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+<!---	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td> --->
+	<td><a href="../pi_communities/boards.asp"><img src="../../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.html"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<!---	<td><a href="../first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td> --->
+<!---	<td><a href="../pi_information_catalog/browse.asp"><img src="images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>              --->
+	<td><a href="../search.html"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<!--  End of Table 10 --->
+
+<font color=black face="Verdana" size=1>
+
+<br><center><font color=blue><I> &#169 DatabaseAnswers.org 2015</I></font></center>
+
+</body>
+</html>
+

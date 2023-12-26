@@ -1,0 +1,114 @@
+<html><head><title>Vehicle Rental</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+<table bgcolor="#FFFFCC" border=0 cellpadding="0" width=80%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_banner_and_btn_400.jpg">
+<br><br><font color=red face="Comic Sans MS" size=4><b>FACTS for a Database for Vehicle Rental</font>
+</td>
+<td align=right rowspan=1>
+<img align=right alt="1936 Cord" src="../../images/cars/1936cord_sml.jpg"></a>
+</td>
+</tr>
+
+</table>
+<hr>
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+The design of this Database has been created by following
+<a href="../../approach2db_design.html"><b>our General Approach</b>.</a>
+<hr>
+<pre><font color=blue face=Verdana size=2>The purpose of the Web Site is to support a Vehicle Rental System.
+<hr>A Vehicle Rental Company.
+
+<!---
+Email : confused@no-email.com
+--->
+
+The full scenario includes data on staff, offices and so on but, the Data Model addresses
+ about one part of this.
+
+The company rents out 2 types of vehicle - "car" and "van"
+
+For each Vehicle - the following data is collected  Registration Number
+  Manufacturer Name  Model  Engine Size  Passenger Capacity  Current Mileage
+  current location  daily hire rate  date of next MOT inspection
+
+( In Britain - MOT inspection is a mandatory annual inspection all vehicles
+have to undergo from its 3rd year )
+
+My attempt to produce 3rd Normal Form has produced the following tables :
+TBL_VEHICLE  Reg_number         (PRIMARY KEY)  engine_size  date_MOT_due
+  current_mileage  current_location  model_codeTBL_MODEL_DETAILS
+  model_code              (COMPOSITE PRIMARY KEY)
+  Manufacturer_name  (COMPOSITE PRIMARY KEY)
+  Model_name            (COMPOSITE PRIMARY KEY)  passenger_capacity
+  daily_hire_rate_code  vehicle_type       ( C for "car" V for "van" )
+
+
+       TBL_HIRE_RATE  daily_hire_rate_code (PRIMARY KEY)  amount
+
+
+Specific questions:
+1:  It is "better" to include an additional table, linking hire rate to
+    vehicle model - something like:
+       TBL_HIRE_RATE_FOR_MODEL
+       1 model_code             (COMPOSITE PRIMARY KEY)
+       2 daily_hire_rate_code   (COMPOSITE PRIMARY KEY)
+2: What would be the best way of separating "manufacturer" into its owntable ?
+3: Is it "better" to include an additional table for vehicle_type, or to
+   leave it as an attribute of TBL_MODEL_DETAILS, given that there are only 2 types ?
+
+
+
+
+
+<hr>
+Clarification is required of the appropriate Keys (primary, foreign, composite etc.)
+A good approach for Primary Keys is to make them 'surrogate' keys, which are simply unique integers,
+which are constantly increasing. These are implemented as Sequences in Oracle and Identity Fields in Microsoft
+SQL Server.
+This is especially appropriate for Patients, where it is useful to have use a number which can be automatically
+generated in a straightforward manner.
+
+For Tables of Reference or Static Data, such as Levels of Patient Care, there is usually an obvious Primary
+Key,such as the Level Number, which can be used as the Primary Key.
+
+There are other situations, frequently referring to fixed assets or situations, where there may be an obvious
+Primary Key.
+
+A good example is the Rooms in the Nursing Home, where it might be sensible to use the Room Number as the Primary Key
+of the Rooms Entity or Table.
+
+It is necessary to be sure that Rooms will always be referred to in the same way in the future.
+If they are not integers, such as Room 213, then the field can be defined as a character string.
+By choosing a length, such as 10 characters, provides a substantial amount of flexibility for the future.
+A length of 5 might also be adequate for the present, and migrating in the future is a straightfoward DBA task.
+
+Barry Williams
+Principal Consultant
+Database Answers
+15th. April 2001
+</pre>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

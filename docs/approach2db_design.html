@@ -1,0 +1,183 @@
+<html><head><title>Tutorial - Approach to Database Design</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<a name="TOP">
+<table width=100%>
+
+<tr>
+<td align=left valign=top><img alt="Database Answers Header" border=0 height=58 width=400 src="images/dba_banner_and_btn_400.jpg">
+</td>
+
+<td align=right rowspan=2 valign=top>
+<img align=right alt="Steps to Peacock Pond, Florida" heiight=98 wiidth=238 src="images/steps_xsml.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=left valign=top>
+<font color=red face="Comic Sans MS" size=4><b>An Approach to Database Design</font>
+</td>
+</tr>
+
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<table bgcolor=blue border=0 width=100%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="index.html"><img alt="Home" border=0 src="images/buttons/home_alt.gif"></a></td>
+<td align=left valign=top width=100>
+<a href="ask_a_question.html"><img alt="Ask a Question" border=0 src="images/buttons/ask_a_question_alt.gif"></a></td>
+<td align=middle valign=top width=60>
+<a href="careers.html"><img alt="Careers" border=0 src="images/buttons/careers_alt.jpg"></a></td>
+<td align=left valign=top width=85>
+<a href="data_models/index.html"><img alt="Data Models" border=0 src="images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="faqs.html"><img alt="FAQs" border=0 src="images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="site_map.html"><img alt="Search" border=0 src="images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="site_map.html"><img alt="Site Map" border=0 src="images/buttons/site_map_alt.gif"></a></td>
+<td>&nbsp</td>
+</tr>
+</table>
+
+<P>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<font color=blue size=2>In this General Approach we define the Steps in a structured method to design a Database,
+and there
+<br>is <a href="#ANOTHER_APPROACH">another Approach</a> at the bottom of the page.
+
+<br><br>You can have a look at this Page to see how this Approach applies to the design of a
+Database for <a href="data_models/hr_intro.html">an HR Department.</a>
+<br>The Approach defined here is aimed at beginners and experienced practitioners.
+<br>It makes some recommendations to simplify basic design decisions on key structures.
+<P>These are the Steps in a Top-Down Approach :-
+
+<OL>
+<li>Define the Scope as the Area of Interest,(e.g. the HR Department in an organization).
+<li>Define the "Things of Interest",(e.g. Employees), in the Area of Interest.
+<li>Analyze the Things of Interest and identify the corresponding Tables.
+<li>Consider cases of 'Inheritance', where there are general Entities and Specific Entities.
+<br>For example, a Customer is a General Entity, and Commercial Customer and Personal Customer
+would be Specific Entities.
+<br>If you are just starting out, I suggest that you postpone this level of analysis.
+</li>
+<li>At this point, you can produce a List of Things of Interest.</li>
+
+<li>Establish the relationships between the Tables.
+<br>For example, "A Customer can place many Orders", and
+"A Product can be purchased many times and appear in many Orders."
+<li>Determine the characteristics of each Table,(e.g. an Employee has a Date-of-Birth).
+<li>Identify the Static and Reference Data, such as Country Codes or Customer Types.
+<li>Obtain a small set of Sample Data,
+<br>e.g. "John Doe is a Maintenance Engineer and was born on 1st. August, 1965 and lives at 22 Woodland Street, New Haven.
+<br>"He is currently assigned to maintenance of the Air-Conditioning and becomes available in 4 weeks time"
+
+<li>Review Code or Type Data which is (more or less) constant, which can be classified as Reference Data.
+<br>For example, Currency or Country Codes. Where possible, use standard values, such as ISO Codes.
+<li>Look for 'has a' relationships. These can become Foreign Keys, or 'Parent-Child' relationships.
+
+<li>You need to define a Primary Key for all Tables.
+<br>For Reference Tables, use the'Code' as the Key, often with only one other field, which is the Description field.
+<br>I recommend that names of Reference Data Tables all start with 'REF_'.
+
+<br>For all non-Reference Data Tables, I suggest that you simply assign an Auto-increment Integer for each Primary Key.
+<br>This has some benefits, for example, it provides flexibility, and it's really the only choice for a Database supporting a Web Site.
+<br>However, it complicates life for developers, which have to use the natural key to join on, as well
+as the 'surrogate' key.
+<br>It also makes it possible to postpone a thorough analysis of what the actual Primary Key should be, Which means, of course, that it often never gets done.
+<li>Confirm the first draft of the Database design against the Sample Data.
+<li>Review the Business Rules with Users,(if you can find any Users).</li>
+<li>Obtain from the Users some representative enquiries for the Database,
+<br>e.g. "How many Maintenance Engineers do we have on staff coming available in the next 4 weeks ?"
+
+<li>Review the Results of Steps 1) to 9) with appropriate people, such as Users, Managers,
+<br>Development staff, etc. and repeat until the final Database design is reached.
+<li>Define User Scenarios and step through them with some sample data to check that that Database supports the required functionality.
+
+</OL>
+
+<a name="#ANOTHER_APPROACH">
+<hr>
+And here's <b>another approach</b> based on the concept of Design Patterns, studying relevant Data Models and
+then creating one that meets your requirements.
+<pre><font color=blue face=Verdana size=2>1) Start by looking at the Student-related Models on this page of the Database Answers web site :-
+         http://www.databaseanswers.com/data_models/index.html
+  2) Identify the Data Model(s) that most closely match your requirements.
+  3) Choose the Entities that you need (a valuable learning experience)
+  4) Assemble the corresponding Business Rules
+  5) Modify the Rules as appropriate.
+  6) Assemble some Test Data - just 10 or 20 records.
+  7) Define a typical User Scenario based on the test data.
+  8) Put 4 pieces of paper on a desk or table -
+      i) Data MOdels
+     ii) Business Rules
+    iii) User Scenarios
+     iv) Test Data
+  9) Reflect on them while driving, in the shower, on the bus/train, out walking and so on.
+ 10) Prepare a presentation to show the requirements,(Rules), and the logic of your solution.
+ 11) Let me know how it goes !
+
+Good luck.
+</pre>
+<!---
+<hr>Some recommended background reading ...
+<center>
+<table border=1>
+<tr>
+<td><font color=blue face=Verdana size=2>BOOK TITLE</td>
+<td><font color=blue face=Verdana size=2>COMMENT</td>
+<td><font color=blue face=Verdana size=2>AMAZON RATING</td>
+</tr>
+
+<tr>
+<td>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0471412937/qid=1029691374/sr=1-1/ref=sr_1_1/104-8198904-3989520" target="_new">
+<font color=blue face=Verdana size=2>
+Business Rules Applied, by Barbara von Halle</font></a></td>
+<td>Includes Data Model Design as part of a more general discussion of Business Rules.</td>
+<td>4 Stars from 8 Reviews</td>
+</tr>
+
+<tr>
+<td>
+<a href="http://www.amazon.com/exec/obidos/ASIN/1558606726/qid=1029691191/sr=2-1/ref=sr_2_1/104-8198904-3989520"" target="_new">
+<font color=blue face=Verdana size=2>, by Terry Halpin</font></a></td>
+<td>Discusses a Fact-based Approach as part of a more general technique called Object Role Modelling.</td>
+<td>4.5 Stars from 3 Reviews</td>
+</tr>
+
+</table>
+</center>
+--->
+
+</body>
+
+<P>
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="ask_a_question.html">Ask Us a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="faqs.html">FAQs</a>
+        | <a href="search.html">Search</a>
+        | <a href="site_map.html">Site Map</a> ]
+</center>
+<P>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 Database Answers 2002</I></font></center>
+
+</html>

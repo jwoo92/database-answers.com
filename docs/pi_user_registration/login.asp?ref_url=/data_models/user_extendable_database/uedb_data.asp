@@ -21,24 +21,24 @@
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=white FACE=Verdana SIZE=2>Home</font></td>
-      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
-	Ask a Question</font></A></td>
+	<td width="6%"><a style="text-decoration:none" href="../index.html"><font color=white face=Verdana size=2>Home</font></td>
+      	<td width="11%"><a style="text-decoration:none" href="../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<a style="text-decoration:none" href="../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a>
 	</td>
 
 	<td width="9%">
-<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+<!---	<a style="text-decoration:none" href="pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><a style="text-decoration:none" href="../data_models/index.html"><font color="#FFFFFF" face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% wiiiidth="37%"><a style="text-decoration:none" href="../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
         </tr>
       </table>
     </td>
@@ -65,7 +65,7 @@
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -86,23 +86,23 @@
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
+
 	<p>
-	
-<HR><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<hr><font color=blue face=Verdana size=2>
 
 
 <FORM ACTION="login.asp" method="POST">
 
-<!--- <B>SECTION A : Basic Registration details ...</B> --->
+<!--- <b>SECTION A : Basic Registration details ...</b> --->
 
-<B>1. Your Login name (e.g. johnd):</B> <INPUT TYPE="TEXT" NAME="login" MAXLENGTH=50>
-
-<p>
-<FONT SIZE=2><B>2. Password ?</B> <INPUT TYPE="password" NAME="password" MAXLENGTH="50">
+<b>1. Your Login name (e.g. johnd):</b> <INPUT TYPE="TEXT" name="login" MAXLENGTH=50>
 
 <p>
-<font size=2><b>3. Your language:</b> 
+<font size=2><b>2. Password ?</b> <INPUT TYPE="password" name="password" MAXLENGTH="50">
+
+<p>
+<font size=2><b>3. Your language:</b>
 <select name="language">
 
 <option value="English"> English
@@ -139,16 +139,16 @@
 
 <input type="hidden" name="ref_url" value="/data_models/user_extendable_database/uedb_data.asp">
 
-<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Submit">
+<INPUT TYPE="SUBMIT" name="Submit" VALUE="Submit">
 <input type="hidden" name="action" value="login">
 
 </FORM>
 
 
-<HR>
+<hr>
 
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>
@@ -162,24 +162,24 @@
   <tr>
     <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr> 
+        <tr>
        	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
-	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=white FACE=Verdana SIZE=2>Home</font></td>
-      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
-	Ask a Question</font></A></td>
+	<td width="6%"><a style="text-decoration:none" href="../index.html"><font color=white face=Verdana size=2>Home</font></td>
+      	<td width="11%"><a style="text-decoration:none" href="../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
 	<td width="10%">
-	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	<a style="text-decoration:none" href="../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a>
 	</td>
 
 	<td width="9%">
-<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
-	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+<!---	<a style="text-decoration:none" href="pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
 	</td>
-	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	<td width="9%"><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
 	</td>
-          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
-          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
-          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+          <td width="10%"><a style="text-decoration:none" href="../data_models/index.html"><font color="#FFFFFF" face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% wiiiidth="37%"><a style="text-decoration:none" href="../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
         </tr>
       </table>
     </td>

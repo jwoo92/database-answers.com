@@ -1,13 +1,13 @@
 
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <title>Orang Asli Project Rpt</title>
 
 <script type="text/javascript">
 
 /***********************************************
-* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
 * This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
 * Visit http://www.dynamicdrive.com/ for full source code
 ***********************************************/
@@ -80,12 +80,12 @@ inc++
 }
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -121,7 +121,7 @@ var alltags=document.all? document.all : document.getElementsByTagName("*")
 ccollect=getElementbyClass(alltags, "switchcontent")
 statecollect=getElementbyClass(alltags, "showstate")
 if (enablepersist=="on" && ccollect.length>0){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -151,7 +151,7 @@ window.onunload=saveswitchstate
 <tr>
 	<td><img height="78" width="622" src="images/header1.gif"></td>
 </tr>
-				
+
 <tr>
 	<td><img height="54" width="620" src="images/photo_line.gif"></td>
 </tr>
@@ -170,19 +170,19 @@ window.onunload=saveswitchstate
 --->
 
 	<td bgcoloUr="#c5bea5" bgcolor="#afa58c" COLSPAN=1>
-	<A HREF="ikm_norlia_1_in_malay.htm"><IMG ALIGN=left BORDER=0 SRC="images/flags/flag_malaysia.jpg"></A>
+	<A HREF="ikm_norlia_1_in_malay.html"><IMG ALIGN=left BORDER=0 SRC="images/flags/flag_malaysia.jpg"></A>
 	<center>
 	<font color="#7a5529" size="2" face="Verdana,Arial,Helvetica,Genevan">
-	<B>Small example of Indigenous Knowledge for</B> <FONT COLOR=yellow>Norlia Shidan</FONT> 
-	</center> 
+	<B>Small example of Indigenous Knowledge for</B> <FONT COLOR=yellow>Norlia Shidan</FONT>
+	</center>
 	</td>
 
 <!---
 	<td bgcolor="#afa58c" bgcoloUr="#c5bea5" wiIIIdth="124">
 	<center>
 	<font color="#7a5529" size="2" face="Verdana,Arial,Helvetica,Genevan">
-	<B>Map</B> 
-	</center> 
+	<B>Map</B>
+	</center>
 	</td>
 --->
 
@@ -192,10 +192,10 @@ window.onunload=saveswitchstate
 <!---	<td ALIGN=middle rowspan="3" bgcolor="#c5bea5" width="124" VALIGN=top><br>
 	<img height="10" width="123" src="images/Norlias_links_tl.gif"><br>
 
-	<a href="index.htm"><img height="9" width="123" src="images/-home.gif" border="0" alt="index page"></a><br>
+	<a href="index.html"><img height="9" width="123" src="images/-home.gif" border="0" alt="index page"></a><br>
 	<a hreEEEf="mailto:info_aatt_norlia.com"><img height="10" width="123" src="images/-email_me.gif" border="0" alt="e-Mail"></a><br>
-	<a href="background.htm"><img height="10" width="123" src="images/-my_background.gif" border="0" alt="my background"></a><br>
-	<a href="recipes.htm"><img height="10" width="123" src="images/-recipes.gif" border="0" alt="recipes"></a><br>
+	<a href="background.html"><img height="10" width="123" src="images/-my_background.gif" border="0" alt="my background"></a><br>
+	<a href="recipes.html"><img height="10" width="123" src="images/-recipes.gif" border="0" alt="recipes"></a><br>
 
 	<br>
 
@@ -216,14 +216,14 @@ window.onunload=saveswitchstate
 
 <font face="Verdana" size=2 color="#7a5529">
 <b><font COLOR="#7a5529" size=+1> Orang Asli Indigenous Knowledge provided by Zumeera</font></b><br>Click on a +/- Icon to see the contents.<p><p><font color="#7a5529" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Introduction</b></font><p><div id="chap0" class="switchcontent">Zummeera is a lively and energetic representative of the young generation of Orang Asli.
-<BR>She maintains her own <A HREF="http://zumeer.blogspot.com/" TARGET=_NEW>Blog</A> where she gives her views on things that are important to <BR>her and provides an insight into OA life.</div><p><font color="#7a5529" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>   &nbsp;Traditional Dance</b></font><p><div id="chap1" class="switchcontent">   </div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.        &nbsp;Introduction to <I>Sewang</I></b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529">The <I>Sewang</I> is the traditional dance of the OA in the area of Ipoh, Perak. 
-<BR>In the past, it was usually performed <B>to heal the sick</B> and during our <I>genggulang</I> celebration day. 
-<BR>The <I>Sewang</I> is performed by a group of dancers, comprised of both men and women, led by the <I>Shaman</I> and accompanied by a group of musicians. <BR>The <I>shaman</I> will recite the healing mantras and the mantras will be repeated by the dancers and the musicians. 
-<BR>Usually the dancers will dance in a circle and the </I>shaman</I> will be singing the mantras outside the circle. 
-<BR>While dancing they will shake the "pom-poms" (they are not really pom-poms). 
-<BR>The musicians are usually positioned either behind the dancers or at the side playing instruments that are made out of bamboos. 
-<BR>The bamboo is designed specially to create a different and unique tone from each other, similar to the Balinese <I>angklung</I>, but our bamboos sound louder. 
-<BR>Nowadays, the <I>sewang</I> dance is performed during <I>genggulang</I> and <B>to welcome important visitors</B> or other special occasions. 
+<BR>She maintains her own <A HREF="http://zumeer.blogspot.com/" TARGET=_NEW>Blog</A> where she gives her views on things that are important to <BR>her and provides an insight into OA life.</div><p><font color="#7a5529" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>   &nbsp;Traditional Dance</b></font><p><div id="chap1" class="switchcontent">   </div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.        &nbsp;Introduction to <I>Sewang</I></b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529">The <I>Sewang</I> is the traditional dance of the OA in the area of Ipoh, Perak.
+<BR>In the past, it was usually performed <B>to heal the sick</B> and during our <I>genggulang</I> celebration day.
+<BR>The <I>Sewang</I> is performed by a group of dancers, comprised of both men and women, led by the <I>Shaman</I> and accompanied by a group of musicians. <BR>The <I>shaman</I> will recite the healing mantras and the mantras will be repeated by the dancers and the musicians.
+<BR>Usually the dancers will dance in a circle and the </I>shaman</I> will be singing the mantras outside the circle.
+<BR>While dancing they will shake the "pom-poms" (they are not really pom-poms).
+<BR>The musicians are usually positioned either behind the dancers or at the side playing instruments that are made out of bamboos.
+<BR>The bamboo is designed specially to create a different and unique tone from each other, similar to the Balinese <I>angklung</I>, but our bamboos sound louder.
+<BR>Nowadays, the <I>sewang</I> dance is performed during <I>genggulang</I> and <B>to welcome important visitors</B> or other special occasions.
 <BR>Here are some of the photos of the <I>sewang</I> taken during a festival.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.        &nbsp;Traditional costume of the <I>Sewang</I></b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529"><IMG ALIGN=left ALT=Sewang Dance" SRC="http://www.databaseanswers.org/images/zumeera/sewang_dance_photo_1.jpg">.
 The dancers are wearing the traditional costume and make-up of <I>Sewang</I>.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.        &nbsp;Musicians of the <I>Sewang</I>.</b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529"><IMG ALIGN=right ALT="Musicians" SRC="http://www.databaseanswers.org/images/zumeera/sewang_dance_photo_2.jpg">
 Musicians of the <I>Sewang</I> using bamboo to create music.
@@ -255,22 +255,22 @@ Musicians are close to the dancers.</font></div></td></tr></table><table border=
 
 	</tr>
 
-	
+
 	</table>
 
-	<br>	
+	<br>
 	<font color="#cc0000" face="verdana,Verdana,Arial,helvetica" size="2">
-	
+
 	<br>
 	<table border="0" cellpadding="0" cellspacing="0" width="635">
 	<tr>
 		<td>
 		<font size="1" face="Verdana,Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#7a5529">
 		<center>
-		[ <a href="index.htm">Home Page</a> | 
-		<a hreEEEf="mailto:info_aatt_norlia.com">Email Me</a> | 
-		<a href="research_project.htm">Research Project</a> | 
-		<a href="site_map.htm">Site Map</a> ] 
+		[ <a href="index.html">Home Page</a> |
+		<a hreEEEf="mailto:info_aatt_norlia.com">Email Me</a> |
+		<a href="research_project.html">Research Project</a> |
+		<a href="site_map.html">Site Map</a> ]
 		</center>
 		</td>
 	</tr>

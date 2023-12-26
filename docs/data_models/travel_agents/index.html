@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>Travel Agents Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a HREeeeF="http://www.spsinternational.ca/sitemap.php" target="_new">
+<img align=right alt="Sea and Sun Umbrella" border=0  heiight=88 wiidth=206 hspace="0" vspace="4" src="images/sea_and_sun_umbrella_sml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+--->
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="7%"><pre><font color=yellow face=Verdana size=2>Data Model for Travel Agents &nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for Travel Agents Data Model'>An Access Database</a> is available.
+
+<!--- We have <a href="data_model_showing_attributes.html">a Top-Level Model showing Attributes</a>&nbsp;&nbsp;nbsp; --->
+
+<pre><font color=blue face=Verdana size=2>In this discussion, we follow the typical sequence of Step for Visitors.
+Step 1 : Travel Agent Staff registers the Customer details
+Step 2 : Staff makes Airline Flight Reservation
+Step 3 : Staff makes Hotel Reservation
+Step 4 : Customer makes Payment
+Step 5 : Customer gives Feedback
+</pre>
+
+<table border=1><tr><td valign=top><font color=blue face=Verdana size=2>This is the Enterprise Data Model :-
+<br><br><img align=left alt="Travel Agents Data Model" border=0 src="images/data_model.gif">
+</td>
+
+<td valign=top><pre><font color=blue face=Verdana size=2>These are the Subject Area Models :-
+<li><a href="../airline_reservations/index.html">Airline Reservations</a>
+<li><a href="../car_hire/index.html">Car Hire</a>
+<li><a href="../feedback_for_services/index.html">Feedback for Services</a>
+<li><a href="../hotels/hotel_reservations_dezign.html">Hotel Reservations</a>
+<li><a href="payments_subject_area.html">Payments</a>
+<li><a href="../restaurant_bookings/restaurant_events_bookings.html">Restaurant Bookings</a>
+<li><a href="services_subject_area.html">Services</a>
+
+
+<!--- <li><a href="party_subject_area.html">Party</a> --->
+<!--- <li><a href="data_model_showing_attributes.html">Top-Level Model showing Attributes</a> --->
+
+Barry Williams
+Database Answers Ltd.
+London, England
+<br>January 7th. 2014
+</td>
+</tr>
+</table>
+
+
+
+
+
+<!---
+We have compared our Canonical Data Model with these models from practitioners whom we respect (listed alphabetically):-
+<li><a href="david_hays_model.html"><b>David Hay</b>'s Generic Enterprise Model</a>
+
+<li><a href="graeme_simsions_model.html"><b>Graeme Simsion</b>'s 'High-Level Supertypes'</a>
+<li><a href="john_giles_nimble_elephant.html"><b>John Giles</b>' Integration Patterns</a>.
+<li><a href="lawrence_sanders_model.html"><b>Lawrence Sanders</b>' Generic Organizational Data Model</a>
+<li><a href="steve_hobermans_model.html"><b>Steve Hoberman</b>'s Very High-Level Data Model</a>
+
+<br><br>
+Here are some other Universal Data Model on our Web Site :-
+<br>
+<li><a href="canonical_logistics.html">Canonical Logistics</a>
+<li><a href="canonical_shipments_with_messages.html">Canonical Shipments with Messages</a>
+<li><a href="customers_and_events.html">Customers and Events</a>
+<li><a href="customers_and_events_data_mart.html">Customers and Events Data Mart</a>
+<li><a href="../police_canonical_data_model/index.html">Police Canonical Data Model</a>
+<hr>
+<li><a href="data_mart.html">Data Mart</a>
+<li><a href="getting_started.html">Getting Started December 17th</a>
+<li><a href="getting_started_retail.html">Getting Started Retail (Dec 27th)</a>
+<hr>
+
+<br>
+Here are some more interesting external Web Links :-
+<li>From IBM on
+<a href="https://www.ibm.com/developerworks/data/library/techarticle/dm-0803sauter/" target="_new">
+SOA and Universal Data Model</a>
+<li>from <a href="http://eaipatterns.com/CanonicalDataModel.html" target="_new">EAI Patterns</a>
+<br>
+<li>Wikipedia on <a href="http://en.wikipedia.org/wiki/Semantics_of_Business_Vocabulary_and_Business_Rules" target="_new">SBVR (Semantics for Business Volcabulary and Rules)</a> -  this helps provide guidelines for 'What is Customer ?' (thanks to <b>John Giles</b>).
+
+<br>
+
+<br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+<br>January 4th. 2014
+<br>
+</td>
+</tr>
+</table>
+
+--->
+
+<center><font COLOr=blue face=Verdana size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2014</I></font>
+</center>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

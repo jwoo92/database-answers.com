@@ -76,27 +76,27 @@
 	
 	<p>
 	
-<HR><FONT COLOR=blue FACE=Verdana SIZE=2>
+<hr><font color=blue face=Verdana size=2>
 
 
 <FORM ACTION="index.asp" method="POST">
 
-<!--- <B>SECTION A : Basic Registration details ...</B> --->
+<!--- <b>SECTION A : Basic Registration details ...</b> --->
 
-<B>1. Your Login name (e.g. johnd):</B> <INPUT TYPE="TEXT" NAME="login" MAXLENGTH=50>
+<b>1. Your Login name (e.g. johnd):</b> <INPUT TYPE="TEXT" name="login" MAXLENGTH=50>
 
 <p>
-<FONT SIZE=2><B>2. Password ?</B> <INPUT TYPE="password" NAME="password" MAXLENGTH="50">
+<font size=2><b>2. Password ?</b> <INPUT TYPE="password" name="password" MAXLENGTH="50">
 
 <p align=center>
 
-<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Submit">
+<INPUT TYPE="SUBMIT" name="Submit" VALUE="Submit">
 <input type="hidden" name="action" value="login">
 
 </FORM>
 
 
-<HR>
+<hr>
 
 	
 	<!-- Body Ends -->	

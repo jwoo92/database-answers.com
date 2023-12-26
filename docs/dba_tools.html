@@ -1,0 +1,338 @@
+<html>
+<head>
+<title>DBA Tools</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+	<td valign=middle><img src="images/dba_400_home.jpg" width="400" height="58" alt="Database Answers">
+	</td>
+          <td height=95 rowspan=2 width="100%" align="right" valign=top>
+<img alt="Bienecke Reference Library, Yale University" height=88 width=149 src="images/bienecke_xsml.jpg" hspace="0" vspace="4"></td>
+</tr>
+
+<tr>
+    <td valign=bottom>
+	<p class="time"><nobr><script language="JavaScript">theDate();</script></nobr></p>
+	</td>
+</tr>
+
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<!--- <td><a href="faqs.html"><img name="menu_faqs" src="images/v3/menu-faqs.gif" width=48 height=24 border=0 alt="FAQ's"></a></td> --->
+<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table border=0 name="MAIN CONTENT" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<!---
+<td width="90" background="images/v3/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+<img alt="Boschendhal Estate, South Africa" src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5">
+<p><img src="images/v3/spacer.gif" width="90"></p>
+</td>
+--->
+
+<td valign="top"><img src="images/v3/spacer.gif" width="3" height="239"></td>
+<td width="100%" bgcolor="#B0D8FF" valign="top"><img src="images/v3/spacer.gif" height=20>
+<!--- CHECK BORDER IN NEXT TABLE ... --->
+<!--- This Table is nested within the previous Table. --->
+
+	<table border=0 width=90% width="590" cellspacing="0" cellpadding="0">
+	<tr>
+      	<td rowspan="4" valign="top" width="30"><img src="images/v3/spacer.gif" width="21" height="1"></td>
+	<td width="61">&nbsp;</td>
+	<td rowspan="4" width="6"><img src="images/v3/spacer.gif" width="6" height="1"></td>
+	<td colspan="3" width="100%" align="right" class="header1">
+
+Tools for the DBA
+
+                <img src="images/v3/spacer.gif" width="5" height="1"></td>
+	<td width="3" bgcolor="#FF9900"><img src="images/v3/px-orange.gif" width="3" height="20"></td>
+        </tr>
+
+	<tr>
+       	<td rowspan="3" valign="top" width="1">&nbsp;</td>
+	<td colspan="4" height="3" rowspan="3" valign="top">
+<!--- This Table is nested within the previous Table. --->
+
+		<table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              	<tr bgcolor="#FF9900">
+         	<td><img src="images/v3/px-orange.gif" width="1" height="3"></td>
+              	</tr>
+            	</table>
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              	<tr>
+               	<td bgcolor="#FF9900"><img src="images/v3/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/v3/spacer.gif" width="8" height="1"></td>
+          	<td width="100%"><p class="small">
+
+This Page describes some of the Tools which are available to help the DBA to do his (or her!!) job.
+
+<br><b>If you have a recommendation or a comment based on your experience, please <a href="mailto:dba_tools@databaseanswers.com"><b>email us</b></a>.</b>
+<br>Over a period of time, a DBA will usually put together a library of different software utilities.
+<br>For example, Shell Scripts and SQL Scripts. The general trend is towards more automation of common repetitive tasks, and for a Production DBA,
+this means more opportunity to get involved in different areas such as Data Architecture.
+
+           	</td>
+              	</tr>
+            	</table>
+          </td>
+        </tr>
+        <!--- <tr>AAA </tr> --->
+        <!--- <tr>BBB </tr> --->
+      </table>
+      <br>
+	<table wiIIdth="590" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="25"><img src="images/v3/spacer.gif" border="0" width="31"></td>
+	<td>
+<!--- This Table is nested within the previous Table. --->
+
+<!--- The data generated from the Database begins here ... --->
+<! If the Table is empty, then a message should be generated 'No Data in this Table.' --->
+	<table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#FF9900" name="change me">
+
+<!--- The data generated from the Database begins here ... --->
+        <tr>
+		<td class="header2" colspan=5><div align="center">
+Please let me know if you have any <a href="mailto:dba_tools_comments@databaseanswers.com">recommendations or comments.</a></div></td>
+	</tr>
+	<tr>
+            	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Product</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Vendor</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Price</b></td>
+        	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Description</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Comments</b></td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.alligatorsql.com/" target="_new">
+			<b>AlligatorSQL</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.alligator.com" target="_new">
+			Alligator</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Administer Databases - Oracle, MySQL, Interbase, Birdstep, PostgreSQL, MSSQL, DB2 and Ingres.</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"></td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.embarcadero.com/products/dbartisan/" target="_new">
+			<b>DBArtisan</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.embarcadero.com" target="_new">
+			Embarcadero</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Administer Databases - Oracle, SQL Server,DB2.</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF" width=120><a href="http://www.confio.com/English/Products/Products.php" target="_new">
+			<b>DBFlash(Oracle).</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.confio.com" target="_new">
+			Confio</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">"Tools for Senior DBAs,(Oracle, SQL Server,DB2)"</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.confio.com/English/Forms/Download_Software.php
+		" target="_new">
+		Downloadable Trial available</a></td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top width=80><a href="http://www.keeptool.com/en/products.html" target="_new">
+			<b>Hora, etc..</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF" valign=top><a href="http://www.keeptool.com" target="_new">
+		KeepTool</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>$900</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">An impressive range of Tools for the Professional DBA,
+		including an ER Diagrammer at $210.</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>Descriptions also available in French and German.</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF" width=120><a href="http://www.front-row-seat.com/html/import_export.html" target="_new">
+			<b>Import-Export</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.front-row-seat.com" target="_new">
+			Front Row Seat</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">$75</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Provides direct import/export between Oracle Databases without .DMP files.</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Looks like remarkable value.</td>
+	</tr>
+
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">
+		<a href="http://www.bmc.com/products/proddocview/0,,0_0_0_9030,00.html" target="_new"><b>SmartDBA</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.bmc.com/" target="_new">BMC</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Supports remote monitoring of Databases.</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Provides execution of DBA functions.</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>
+		<a href="http://www.sqlconsole.com/" target="_new"><b>SQL Console</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF" valign=top><a href="http://www.chillisource.com" target="_new">ChilliSource</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>$39.00</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">SQL Console</a>
+ 		Visual Design of SQL queries - Drag and drop tables and joins to create Queries in minutes.</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>
+		<a href="http://www.red-gate.com/sql_data_compare.html" target="_new"><b>SQL Data Compare</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF" valign=top><a href="http://www.red-gate.com" target="_new">Red Gate</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>�350/<br>$500</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Compares and synchronizes the contents of two databases,
+		Downloadable <b>Free Trial</b> available.
+		<br>"In use by over 45,000 DBAs, developers and testers."</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>
+		<a href="http://www.laplas-soft.com/" target="_new"><b>SQLExecMS</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF" valign=top><a href="http://www.laplas-soft.com" target="_new">Laplas Soft</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>$59.99(Personal)</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">"SQLExecMS has almost everything DBA or developer needs to work with MS SQL Server."</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>
+		<a href="http://www.quest.com/toad/" target="_new"><b>TOAD</b></a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF" valign=top>
+		<a href="http://www.quest.com/" target="_new">Quest</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>$250</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top><b>Tool of choice</b> for maintaining data and checking table definitions in Oracle databases.</td>
+		<td align=left class="cell" bgcolor="#B0D8FF" valign=top>Recommended - Toad plugs a major gap in Oracle's software tools.
+		<br>I have been in places where Oracle employees have used and recommended TOAD.
+<br>Toad also supports Reverse Engineering of Oracle Databases into Data Models.
+</td>
+	</tr>
+
+<!--- The data generated from the Database ends here ... --->
+
+	</table>
+	</td>
+	</tr>
+	</table>
+
+<!--- End of Nested Table is here. --->
+
+<p>&nbsp;</p></td>
+</tr>
+</table>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td>
+</tr>
+<tr>
+	<td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td>
+</tr>
+<tr>
+	<td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td>
+</tr>
+</table>
+
+<table name="bottom NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue2.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" sOUrcE="images/v3/menu-careers-active.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+    <table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td>
+      </tr>
+      <tr>
+        <td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td>
+      </tr>
+    </table>
+    <!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td></tr></table>
+</body>
+</html>

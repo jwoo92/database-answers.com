@@ -1,0 +1,156 @@
+<html><head><title>Designing a CRM Data Architecture</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<table border=0 width=90%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_400_home.jpg">
+
+<font color=red face="Comic Sans MS" size=4>
+<br><br><b>Case Study : Design a CRM Data Architecture</b></font>
+</td>
+<td align=right valign=top>
+<img align=right alt="The Remarkable Architecture of the Bienecke Libary, Yale University" heiight=129 wiidth=129 src="../../images/bienecke_vsml.jpg">
+</td>
+</tr>
+
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<table bgcolor=blue border=0 width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../../index.html"><img alt="Home" border=0 src="../../images/buttons/home_alt.gif"></a>
+</td>
+<td align=left valign=top width=100>
+<a href="../../ask_a_question.html"><img alt="Ask a Question" border=0 src="../../images/buttons/ask_a_question_alt.gif"></a>
+</td><td align=left valign=top width=85>
+<a href="../../data_models/index.html"><img alt="Data Models" border=0 src="../../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><img alt="FAQs" border=0 src="../../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../site_map.html"><img alt="Search" border=0 src="../../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><img alt="Site Map" border=0 src="../../images/buttons/site_map_alt.gif"></a>
+</td>
+<td>&nbsp</td>
+</tr>
+
+</table>
+
+<font color=blue face="Verdana" size=2>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<!-- begin body Text -->
+This is a description of a <a HREeeF="general_approach.html">General Approach</a> to the design of a CRM Data Architecture.
+
+<P>The Approach is defined as a <a href="data_arch_steps_summary.html">series of Steps</a>,with associated Background comments, some
+<br>clearly-defined <a href="deliverables.html">Deliverables</a>,and some sample Template Documents are being prepared to be used
+<br>in the application of the Approach to a specific Project.
+
+<P>The General Approach is based on
+<a HREeeeF="3_design_levels.html">three Levels of Design</a> :-
+
+<!---
+<a href="sample_docs/three_levels.doc">three Levels of Specification</a> :-<I><b>(a Word document)</b></I>
+--->
+
+<li>The Logical Level
+<li>The Physical Level
+<li>The Implementation Level
+
+<P>Each Level is specified in three Stages  :-
+<P><li>
+<b>Stage 1 : Design the Logical Level</b> (<a href="logical_layer.html">Background</a>).
+<OL>
+<li>Create a Data Dictionary with an Inventory of the Applications,
+<a HREeF="template_docs/inventory_of_applications.html">(Example as HTML Page</a> ,
+<a HREeF="template_docs/inventory_of_applications.doc">Template Word Document).</a>
+
+<li>Agree the Owners for the Data Sources and the major Data Items.
+
+<li>Obtain Data Models from the Application Vendors
+<a HREeF="template_docs/sample_crm_vendors_model.html" HREeeF="kana_visio_data_model.vsd">(Template CRM Vendors Data Model).</a>
+
+<li>Create first draft of the Top-Level Data Architecture,
+(<a HREeF="cre_first_draft_data_arch.html">Background</a>,
+ <a HREeeF="sample_docs/systems_design_new.html">Example of Diagram</a>
+,<a HREeF="top_level_data_model.html">Example of Data Model).</a>
+
+<li>Create Data Models for the Functions and Data Islands,e.g. Personalization,
+(<a HREeF="cre_data_model.html">Background</a>
+,<a HREeF="template_docs/personalisation_data_model.html">Template Model).</a>
+
+<!---,<a HREeeF="sample_docs/personalisation_data_model.doc">Template Word Document)</a>--->
+
+<li>Design the Integrated Normalised Data Model,
+<a HREeF="db_design_approach.html">(Background)</a>
+
+<li>Review the Data Dictionary, <a href="data_dict.html">(Background</a>,
+ <a HREeF="template_docs/data_dict.doc">Template Word Document).</a>
+</OL>
+
+<P><li><b>Stage 2 : Design the Physical Level</b> (<a href="physical_layer.html">Background</a>).
+<OL>
+<li>Define the Data Islands and their Interfaces,<a HREeF="data_islands.html">(Background)</a>
+<li><a HREeeF="crud_matric.doc">Produce a CRUD Matrix</a>,
+<a HREeF="crud_matrix.html">(Background,</a>
+<a HREeF="template_docs/crud_matrix.doc"> Template)</a>
+<li><a HREeeF="crud_matric.doc">Create Data Flow Diagrams
+<li>Translate UML Model to Entity-Relationship Diagram,<a HREeF="map_uml_to_erd.html">(Background)</a>
+<li>Agree User Scenarios, <a HREeF="user_scenarios.html">(Background</a>,
+<a HREeF="template_docs/user_scenarios.doc"> Template)</a>.
+</OL>
+
+<P><li><b>Stage 3 :  Design the Implementation Level for a Pilot Project</b>
+<a href="pilot_project.html">(Background)</a>
+<OL>
+<li>Choose Tools for Data Migration,
+<a HREeF="migration_tools.html">(Background)</a>
+
+<li>Carry out a Design Review.
+<li>Produce Database Sizing Estimates, <a HREeF="database_sizing.html">(Background).</a>
+
+<li>Agree Terms of Reference for the Pilot.
+<li>Agree Conditions for Success for the Pilot.
+</OL>
+
+
+<!---
+<P><b><li>Data Layer 4 - Specify the Derived Data Layer</b>
+<a HREeF="example_1_kpi_banking/derived_data_phys.html">(Example 4)</a>
+
+<P><b><font color=blue><li>Data Layer 5 - Specify the Presentation Layer</b>
+<a HREeeF="example_1_kpi_banking/presentation_layer_phys.html">(Example 5)</a>
+<br><a HREeF="http://www.metagon.com/"><font color=blue><li>Establish Data Flows and Replication Requirements</font></a>
+<li><a href="data_migration_tools.html"><font color=blue>Evaluate Data Migration Tools</font></a>
+<li>Create Data Flow Diagrams
+<li>Estimate Volumes
+<li>Establish Feasibility of End-to-End Data Flow
+</OL>
+--->
+
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 DatabaseAnswers.org 2001</I></font></center>
+
+</html>

@@ -1,0 +1,1047 @@
+<html>
+<head><title>Tutorial on Master Data Management for Local Government</title>
+
+<meta Name="description"
+Content="We provide a Library of Data Models and free Databases.">
+<meta Name="keywords"
+Content="free access databases, access databases, access data models, data models,database designs, free databases, generic data models">
+
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!--  Start of Table 1 --->
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td ROWSPANnnn=1 valign=middle><img alt="Database Answers" src="../images/dba_400_home.jpg" width=400 height=58></td>
+<td align=right rowspan=2 valign=middle nowrap>
+<a href="images/father_of_all_data_models.gif" target="_new">
+<img alt="The Father of all Data Models" border=0 src="images/father_of_all_data_models_sml.gif"></a>
+</td>
+</tr>
+
+</table>
+<!--  End of Table 1 --->
+
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../data_models/index.html"><font color=white face=Verdana size=2>Data Models</font></a></td>
+         <td width=10%><a style="text-decoration:none" href="../tutorials.html"><font color=yellow face=Verdana size=2>Tutorials</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!--  Start of Table 2 --->
+<!---
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.html"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+
+<td><a href="../pi_information_catalog/browse.asp"><img src="../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+--->
+<!--  End of Table 2 --->
+
+<!--  Start of Table 3 --->
+<table name="GRAY NAVBAR" border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td width=80% bgcolor="#CCCCFF" align=center>
+
+<!--  Start of Table 5 --->
+
+	<table border=0 cellpadding=0 cellspacing=0 valign=top width=100%>
+	<tr>
+	<td> <!-- Body Starts -->
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<!--  Start of Table 6 --->
+
+	<table border=0 width=100% WIiiiDTH=580 cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="61">&nbsp;</td>
+	<td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+	<td colspan="3" width="100%" align="right" class="header1"><br><b>Welcome to our Tutorial on Master Data Management for Local Government</b>
+	<img src="/images/spacer.gif" width="5" height="1"></td>
+	<td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width=1 height="20"></td>
+        </tr>
+
+        <tr>
+	<td rowspan="3" valign="top" width="61">&nbsp;</td>
+     	<td colspan="4" height=0 rowspan="3" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height=0>
+            <tr bgcolor="#FF9900">
+            <td><img src="/images/px-orange.gif" width="1" height=3></td>
+            </tr>
+            </table>
+
+<!--  End of Table 6   --->
+<!--  Start of Table 7 --->
+
+            <table bgcolor=white width="100%" border=0 cellspacing="0" cellpadding="0">
+            <tr>
+            <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+
+	    <td align=left bgcolor="#CCCCFF" WIiiiDTH=15% width="90" backgroundDDD="images/px-left.guf" valign="top" bgcolor="#3399CC">
+	    <font color=blue face=Verdana size=2>
+
+<!---	<br> --->
+	<table border=2>
+
+	<tr>
+	<td colspan=2 valign=top><font color=blue face=Verdana size=2><b>INTRODUCTION :</b>
+	<br>This Tutorial is on <b>Master Data Management</b> for Local Government.
+	<br>It presents the Steps involved as Best Practice.
+	<br><br>
+	Topics covered in this Tutorial include Data Sources and Targets, mapping between them, Data Quality, Data Governance and Reference Data
+
+	<br><br>I hope you find this Tutorial interesting and helpful.
+	<br>Please
+	<a href='mailto:barryw&#64;databaseanswers.org?subject=Comments on Tutorial on Master Data Management in e-Government'>email us</a> and let me know, and you can also
+<a href='mailto:barryw&#64;databaseanswers.org?subject=Request for Mapping Specs for Tutorial on Master Data Management'>email us</a> for a detailed Mapping Specifications document</a>.
+
+
+
+	<br><br>These are the Steps in the Tutorial :-
+	<OL>
+	<li>Agree the Scope of the Project
+	<li>Identify the Data Sources
+	<li>Determine the Target
+	<li>Specificy the Mapping between Sources and Target.
+	<li>Review Guidelines for managing Reference Data
+	<li>Address the Issue of Data Quality
+	<li>Ensure comliance with Data Governance
+	<li>Check that the MDM Data Model can provide data for <a HREeeeF="../data_models/police_information_reports/index.html">Perforcement Reports</a> as specified by the Users.
+
+	</OL>
+
+	My starting-point is the Data Model for <a href="../data_models/customers_and_payments_e_govt/index.html">
+Customers and Payments in e-Government</a>.
+	<br>
+	</td>
+	</tr>
+
+
+<!--- Start of 1) Target MDM Generic Data Model --->
+
+<!--- end of 1) --->
+
+
+
+
+	<tr>
+	<td valign=top>
+
+	<font color=blue face=Verdana size=2><b>This is the MDM Local Government <font color=red>Generic Enterprise Data Model</font> which is the Target</b>
+	<br>This shows how data from a number of sources is integrated into one Generic Master Data Management Model.
+	<br><br>
+	<img align=left alt="Top-Level Local Government Data Model" src="images/local_govt_top_Level_model.gif">
+	<br>
+	</td>
+
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>1) ENTITY MAPPING SPECIFICATIONS :</b>
+
+<br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Source Area</td>
+	<td><font color=blue face=Verdana size=2><b>Source Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Target Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Ref Data</td>
+</tr>
+
+<!---
+<tr>
+	<td><font color=blue face=Verdana size=2>Council_Tax</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>USPS DPV or UK_PAF_File</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+--->
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Council_Tax</td>
+	<td><font color=blue face=Verdana size=2>Council_Tax</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Parking_Payments</td>
+	<td><font color=blue face=Verdana size=2>N/A</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Ref_Payment_Methods</td>
+	<td><font color=blue face=Verdana size=2>Ref_Data</td>
+	<td><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+
+
+
+
+
+
+
+
+</table>
+</tr>
+<!--- End of Target Model --->
+
+
+
+
+<!-- Start of Reference Data --->
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>2) REFERENCE DATA :</b>
+<OL>
+<b>Each Data Source will have its own sets of Reference Data.</b>
+<br>These have to be mapped to a common set of Data, which in turn is subject to corporate Data Governance.
+</td>
+<td><img align=left alt="Reference Data Model" src="images/ref_data_model.gif">
+<br>
+</td>
+</tr>
+
+
+
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<img align=left alt="Customers and Services Data Model" src="images/customers_and_services_model.gif">
+	<br>
+	</td>
+
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>3) MDM CUSTOMERS AND SERVICES :</b>
+
+<br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Source Area</td>
+	<td><font color=blue face=Verdana size=2><b>Source Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Target Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Ref Data</td>
+</tr>
+
+<!---
+<tr>
+	<td><font color=blue face=Verdana size=2>Council_Tax</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>USPS DPV or UK_PAF_File</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+--->
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Council_Tax</td>
+	<td><font color=blue face=Verdana size=2>Council_Tax</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Parking_Payments</td>
+	<td><font color=blue face=Verdana size=2>N/A</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Ref_Payment_Methods</td>
+	<td><font color=blue face=Verdana size=2>Ref_Data</td>
+	<td><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+	<td><font color=blue face=Verdana size=2>&nbsp;</td>
+</tr>
+
+
+
+
+
+
+
+
+
+</table>
+</tr>
+<!--- End of Target Model --->
+
+
+	<tr>
+	<td valign=top><font color=blue face=Verdana size=2><b>4) COUNCIL TAX :</b>
+
+<br>This shows the fields in the Tables that are candidates for mapping to the MDM Tables.
+
+<br><br>
+<center>
+<table border=1>
+
+
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Council Tax Table</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>ct_resident_id</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>ct_resident_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+</table>
+</center>
+
+	</td>
+
+	<td>
+	<img align=left alt="Council Tax Data Model" src="images/council_tax_model.gif">
+	<br>
+	</td>
+	</tr>
+
+
+
+<tr>
+<td><img align=right alt="Electoral Register Data Model" src="images/electoral_register_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>5) ELECTORAL REGISTER :</b>
+<br>This shows the fields in the Tables that are candidates for mapping to the MDM Tables.
+
+<br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Electoral Register Table</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>er_voter_id</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>er_voter_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+
+</table>
+
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>6) HOUSING BENEFITS :</b>
+<br>This shows the fields in the Tables that are candidates for mapping to the MDM Tables.
+
+
+<br><br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Housing Benefits</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>hb_recipient_id</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>hb_recipient_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+
+
+</table>
+
+</td>
+
+<td valign=top><img align=left alt="Housing Benefits Data Model" src="images/housing_benefits_model.gif">
+<br>
+</td>
+
+</TR
+
+	</td>
+
+
+	</tr>
+
+<hr>
+
+<tr>
+<td><img align=right alt="Parking_Tickets Data Model" src="images/parking_tickets_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>7) PARKING TICKETS :</b>
+<br>This shows the fields in the Tables that are candidates for mapping to the MDM Tables.
+
+<br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Parking Tickets Table</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>pt_offender_id</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>pt_offender_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+
+</table>
+
+<br><br><br><br><br><br><br>
+<b>Parking Tickets are not Master Data</b> and are not included in this mapping activity.
+<br>However, the Payment Methods are Master Data and they are included in the Reference Data category.
+
+
+
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>8) SOCIAL SERVICES :</b>
+<br>This shows the fields in the Tables that are candidates for mapping to the MDM Tables.
+
+
+<br><br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Social Services</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>ss_client_id</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>ss_client_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+</table>
+
+</td>
+
+<td valign=top><img align=left alt="Social Services Data Model" src="images/social_services_model.gif">
+<br>
+</td>
+
+</TR
+
+	</td>
+
+
+	</tr>
+
+<hr>
+<!-- Start of text to copy --->
+
+
+<!-- Start of 9) Reference Data --->
+
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+<br><b>9) DRAFT FIELD LEVEL MAPPING SPECIFICATIONS TO THE MDM DATA MODEL :</b>
+<br>These Specifications have been partially completed to provide guidelines.
+
+<br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Source Area</td>
+	<td><font color=blue face=Verdana size=2><b>Source Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Source Field</td>
+	<td><font color=blue face=Verdana size=2><b>Field Validation</td>
+	<td><font color=blue face=Verdana size=2><b>Field Transformation</td>
+	<td><font color=blue face=Verdana size=2><b>Target Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Target Field</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Council Tax</td>
+	<td><font color=blue face=Verdana size=2>Council Tax</td>
+	<td><font color=blue face=Verdana size=2>ct_resident_id</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Created in CMI</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customer_Index</td>
+	<td><font color=blue face=Verdana size=2>AutoIncrement</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Council Tax</td>
+	<td><font color=blue face=Verdana size=2>Council_TaX</td>
+	<td><font color=blue face=Verdana size=2>ct_resident_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>er_voter_id</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Created in CMI</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customer_Index</td>
+	<td><font color=blue face=Verdana size=2>AutoIncrement</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>er_voter_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>hb_recipient_id</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Created in CMI</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customer_Index</td>
+	<td><font color=blue face=Verdana size=2>AutoIncrement</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>hb_recipient_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>pt_offender_id</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Created in CMI</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customer_Index</td>
+	<td><font color=blue face=Verdana size=2>AutoIncrement</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>pt_offender_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Payments</td>
+	<td><font color=blue face=Verdana size=2>Parking_Payments</td>
+	<td><font color=blue face=Verdana size=2>pt_payment_id</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>N/A</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>ss_client_id</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Created in CMI</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customer_Index</td>
+	<td><font color=blue face=Verdana size=2>AutoIncrement</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>ss_client_details</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+
+	<td><font color=blue face=Verdana size=2>MDM_Customers</td>
+	<td><font color=blue face=Verdana size=2>To be determined</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td align=middle colspan=3><font color=blue face=Verdana size=2><b><I>REFERENCE DATA ...</I></b></td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Source Area</td>
+	<td><font color=blue face=Verdana size=2><b>Source Field</td>
+	<td><font color=blue face=Verdana size=2><b>Target Field</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Council_Tax</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Electoral_Register</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Housing_Benefits</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Tickets</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Parking_Payments</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>N/A</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Social_Services</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+
+</table>
+
+
+
+</td>
+
+<tr>
+
+
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+<br><b>PLEASE EMAIL ME</b>
+
+<UL>
+<b><li>During this short Tutorial,we have covered the following Topics :-</b>
+	<OL><li>An Approach to MDM
+	<li>Creating a Data Dictionary
+	<li>Mapping from Sources to the Target MDM Data Model.
+	<li>Reference Data
+	</OL>
+</OL>
+
+<li>I hope you have found this Tutorial interesting and useful.
+<li>I would be pleased to have
+<a href='mailto:dba_requests&#64;barryw.org?subject=Comments on Tutorial on MDM for Local Government'>your comments</a> with your questions or suggestions.
+
+<br><br>Good luck with your first MDM Project !
+
+<br><br><b>Barry Williams</b>
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+
+</OL>
+</td>
+
+<tr>
+
+</table>
+
+
+
+
+
+
+          </td>
+        </tr>
+      </table>
+
+<!--  End of Table ?? --->
+
+<!--- barry extract ends here --->
+
+<br>
+
+
+	<!-- Sample Section Ends -->
+	<!-- Body Ends -->
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../data_models/index.html"><font color=white face=Verdana size=2>Data Models</font></a></td>
+
+         <td width=10%><a style="text-decoration:none" href="../tutorials.html"><font color=yellow face=Verdana size=2>Tutorials</font></a></td>
+
+          <td width="7%"><a style="text-decoration:none" href="../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<font color=black face="Verdana" size=1>
+
+<br><center><font color=blue><I> &#169 DatabaseAnswers.org 2010</I></font></center>
+
+</body>
+</html>
+

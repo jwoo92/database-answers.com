@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Registration Benefits</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="styles/style.css">
 
 <SCRIPT LANGUAGE="JavaScript">
@@ -40,7 +40,7 @@ var date = dateObj.getDate()
 var fyear = dateObj.getYear()
 document.write(wday + " " + lmonth + " " + date + ", " + fyear)
 }
-		
+
 //-->
 </SCRIPT>
 
@@ -67,28 +67,28 @@ document.write(wday + " " + lmonth + " " + date + ", " + fyear)
 </table>
 
 <table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
-<tr>	
+<tr>
 	<td bgcolor="#FF9900"><img ALT="images/v3/px-orange.gif" src="images/v3/px-orange.gif" width=6 height=24></td>
-	<td bgcolor="#FF9900"><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+	<td bgcolor="#FF9900"><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
 	<td><img ALT="images/v3/curve-top.gif" src="images/v3/curve-top.gif" width=28 height=24></td>
-	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
-	<td><a href="careers.htm"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
-	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>	
-	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
-		
-<!---	<td> <a href="#"><img name="menu_faqs" src="images/v3/menu-faqs.gif" width=48 height=24 border=0 alt="FAQ's"></a></td>
---->		
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
 
-	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
-	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
-	<td width="100%"> <a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+<!---	<td> <a href="#"><img name="menu_faqs" src="images/v3/menu-faqs.gif" width=48 height=24 border=0 alt="FAQ's"></a></td>
+--->
+
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"> <a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
 </tr>
 </table>
 
 <table NAME="GRAY NAVBAR" width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
 <tr><td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
-<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
 </table>
 
 <table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
@@ -107,52 +107,52 @@ document.write(wday + " " + lmonth + " " + date + ", " + fyear)
         <input type="text" name="textfield">
         <input type="button" name="Button" value="Search"></form>
 </td></tr></table>
- 
+
 <!---
       	<table width="570" border="0" cellspacing="0" cellpadding="0">
 	</table>
 --->
 
-     
+
       <table wiIIdth="570" border=0 cellspacing="0" cellpadding="0">
-        <tr> 
-          <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="33" height="1"></td>
+        <tr>
+          <td rowspan="4" valign="top" width="30"><img src="/images/spacer.gif" width="33" height="1"></td>
           <td width="61">&nbsp;</td>
-          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+          <td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
           <td colspan="3" width="100%" align="right" class="header1">
-	  The Benefits of Registration<img src="images/v3/spacer.gif" width="5" height="1"> 
+	  The Benefits of Registration<img src="images/v3/spacer.gif" width="5" height="1">
           </td>
-          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+          <td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="20"></td>
         </tr>
 
-        <tr> 
+        <tr>
 	<td rowspan="3" valign="top" width="61">
 <!--- <img src="images/v3/content1.gif" width="61" height="61"> --->
-&nbsp</td> 
+&nbsp</td>
 
           <td colspan="4" height="3" rowspan="3" valign="top">
             <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
-              <tr bgcolor="#FF9900"> 
-                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              <tr bgcolor="#FF9900">
+                <td><img src="/images/px-orange.gif" width="1" height="3"></td>
               </tr>
             </table>
             <table width="100%" border=0 cellspacing="0" cellpadding="0">
               <tr>
-                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
-                <td><img src="images/spacer.gif" width="8" height="1"></td>
-                <td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2> 
+                <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="/images/spacer.gif" width="8" height="1"></td>
+                <td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2>
 		The benefits of becoming a Registered User with Database Answers, ('DBA'),
 		include access to the Reference Database, collaboration in User Communities, Best Practice and Tutorials.
 		This allows you to build your expertise in areas of particular interest to you, and to create
 		<B>a 'myDBA' Profile</B> which is perzonalized for you.
  		<BR><BR>The facilities for Registered Users include :-
-         	
+
 		<p><img src="images/v3/arrow.gif" width="13" height="15">
 		<A HREF="http://www.barryw.org/dba/pi_ask_a_question/index.asp">Ask a Question (with guaranteed 24 hour response);</A> </p>
 
 		<p><img src="images/v3/arrow.gif" width="13" height="15">
 		<A HREF="http://www.barryw.org/dba/pi_communities/boards.asp">Join a Community;</A></p>
-		
+
 		<p><img src="images/v3/arrow.gif" width="13" height="15">
 		<A HREF="http://www.barryw.org/dba/pi_communities/boards.asp">Create a Community;</A></p>
 
@@ -165,7 +165,7 @@ document.write(wday + " " + lmonth + " " + date + ", " + fyear)
      		<p><img src="images/v3/arrow.gif" width="13" height="15">
 		<A HREF="http://www.barryw.org/dba/pi_information_catalog/browse.asp">Browse the Information Catalog;</A></p>
 
-<BR>		
+<BR>
 <!---
 		<p><img src="images/v3/arrow.gif" width="13" height="15">
 		<A HREF="http://www.barryw.org/dba/pi_ask_a_question/answer_questions.asp">Answer a Question (Administrator only);</A> </p>
@@ -204,40 +204,40 @@ document.write(wday + " " + lmonth + " " + date + ", " + fyear)
 
 <table NAME="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td height="2"><img src="images/spacer.gif" width="663" height="2"></td>
+    <td height="2"><img src="/images/spacer.gif" width="663" height="2"></td>
   </tr>
   <tr>
-    <td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td>
+    <td height="3" bgcolor="#999999"><img src="/images/spacer.gif" width="663" height="3"></td>
   </tr>
   <tr>
-    <td height="2"><img src="images/spacer.gif" width="663" height="2"></td>
+    <td height="2"><img src="/images/spacer.gif" width="663" height="2"></td>
   </tr>
 </table>
 
 
 
 <table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
-<tr>	
+<tr>
 	<td bgcolor="#FF9900"><img src="images/v3/px-orange.gif" width=6 height=24></td>
-	<td bgcolor="#FF9900"><a href="index.htm"><img name="menu_home" src="images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+	<td bgcolor="#FF9900"><a href="index.html"><img name="menu_home" src="images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
 	<td><img ALT="curve-bottom.gif" src="images/v3/curve-bottom-home.gif" width=28 height=24></td>
-	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
-	<td><a href="careers.htm"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
-	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>	
-	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
-		
-<!---	<td> <a href="#"><img name="menu_faqs" src="images/v3/menu-faqs.gif" width=48 height=24 border=0 alt="FAQ's"></a></td>
---->		
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
 
-	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
-	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
-	<td width="100%"> <a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+<!---	<td> <a href="#"><img name="menu_faqs" src="images/v3/menu-faqs.gif" width=48 height=24 border=0 alt="FAQ's"></a></td>
+--->
+
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"> <a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
 </tr>
 </table>
 
 <table NAME="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
-<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="/images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="/images/spacer.gif" width="663" height="3"></td></tr>
 </table>
 
 <!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->

@@ -1,0 +1,70 @@
+<html><head><title>SQL to check Table Owners</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jpg" bgcolor="#FFFFCC" text="#202020">
+
+<a name=TOP></a>
+
+<table bgcolor="FFFF66" border="1" COLS="1" width="100%" CLASS="navbar">
+<tr>
+ <td><font face=Verdana size=1>
+    <a Title="Home" href="index.html">Home</a>
+    <img src="images/rt_arrow.gif" alt="Rt_Arrow.gif" width="13" height="9">
+    <a href="index.html">sql scripts</a>
+    <img src="images/rt_arrow.gif" alt="Rt_Arrow.gif" width="13" height="9">
+    check table owners</font>
+ </td>
+</tr>
+</table>
+
+<table BGCOLOoooR="#FFFFCC" border=0 cellpadding="5" width=80%>
+
+<tr>
+<td><img alt="Moon and Dish" heiight=32 wiidth=32 src="images/doctordb_logo.jpg" border=0>
+</td>
+<td><H1><font color=blue><b>Database Answers SQL Scripts</b></H1></td>
+</tr>
+</table>
+<hr>
+<!-- end Standard Header - Version 3-->
+
+<font face="Verdana" size=2>
+
+<!-- begin body Text -->
+<br><center><b><I>Step 1. SQL Script to Check Table Owners</I>
+</b>
+</center>
+<hr>
+<! End of Standard Header -->
+
+<OL>
+<li>Check Table Owners ...
+<br>SELECT owner,COUNT(*) FROM all_tables GROUP  BY owner ;
+<li>Check Table Names by Owner ...
+<br>(HINT : Select only those for the Application)
+<br>SELECT owner,Table_name FROM all_tables
+ORDER BY owner,Table_name ;
+<li>Generate SQL to check Row Counts for all Tables ...
+<br>SELECT owner,Table_name FROM all_tables WHERE
+owner='identified above' ORDER BY owner,Table_name ;
+</OL>
+
+<UL>
+<li>Optionally check Table names & Table Spaces...
+<br>SELECT table_name, tablespace_name FROM user_tables
+ORDER  BY table_name,tablespace_name ;
+<li>Check Table Spaces & Table Names...
+<br>SELECT tablespace_name, table_name  FROM   user_tables
+ORDER  BY tablespace_name, table_name ;
+
+</body>
+<Start of Standard Footer>
+<hr size="5">
+<center>
+        [ <a href="index.html">Home Page</a>
+        | <a href="site_map.html">Search & Site Map</a>
+        | <a href="whatsnew.html">What's New</a> ]
+</center>
+<hr size="5">
+<!-- End of Standard Footer>
+
+</html>

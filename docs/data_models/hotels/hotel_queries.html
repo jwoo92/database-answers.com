@@ -1,0 +1,97 @@
+<html><head><title>Hotel Queries</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+<table bgcolor="#FFFFCC" border=0 cellpadding="0" width=100%>
+<tr>
+<td align=left valign=top>
+<H1><img alt="Database Answers Header" border=0 height=66 width=475 src="../../images/dba_banner_and_btn_400_home.jpg">
+<br><br><font color=red face="Comic Sans MS" size=4><b>Typical Queries for a Hotel Reservation System</font>
+</td>
+<td align=right rowspan=1>
+<img align=right alt="Chateau Laurier,Ottawa,Canada" border=0 src="../../images/chateau_laurier_1912_sml.jpg"></a>
+</td>
+</tr>
+</table>
+<hr>
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE>
+<tr>
+<tr>
+<td bgcolor=white valign=top>
+<li><a href="../../index.html"><font size=1>Home</font></a>
+<li><a href="../../ask_a_question.html"><font size=1>Ask a Question</font></a>
+<li><a href="../../data_models/index.html"><font size=1>Data Models</font></a>
+<li><a href="../../faqs.html"><font size=1>FAQs</font></a>
+<li><a href="../../sql_scripts/index.html"><font size=1>SQL Scripts</font></a>
+<li><a href="../../state_of_the_art.html"><font size=1>StateOfTheArt</font></a>
+<li><a href="../../site_map.html"><font size=1>Search</font></a>
+<li><a href="../../site_map.html"><font size=1>Site Map</font></a>
+<br><br>
+<img align=left alt="Underwater in Fiji" border=1 height=122 width=95 src="../../images/fiji_underwater_1.jpg"></a>
+</td>
+
+
+<td valign=top>
+
+<!---
+Print all the SQL statements.
+Hotel(Hotel_No, Name, Address, City) Hotel_No is the primary key.
+Room(Room_no, Hotel_No, Type, Price) Room_no is the PK.
+Booking(Hotel_No, Guest_No, Date_from, Date_to, Room_No) Hotel_No & Guest_No is the PK.
+Guest(Guest_No, Name, Address, City) Guest_No is the PK.
+--->
+
+<pre><font color=blue face="Verdana" size=2>Here are two typical Queries ...
+
+<b>Question 1 :</b> What is the total revenue per reservation from all double rooms?
+
+Answer 1 :
+   SELECT booking_ID,SUM(room_Price*Days_in (date_To - Date_From))
+   FROM   Bookings, Rooms
+   WHERE  room_Type_Code LIKE 'Double%'
+   AND    Bookings.room_number = Rooms.room_number
+   GROUP  BY booking_ID ;
+
+<b>Question 2 :</b>
+How many distinct guests have made bookings for Aug. 1997 in each hotel?
+
+Answer 2 :
+    SELECT hotel_ID,hotel_Name,COUNT(DISTINCT guest_Number)
+    FROM   Bookings
+          ,Hotels
+          ,Rooms
+    WHERE ("Aug/97/" >= Month(date_From)
+    OR     "Aug/97/" <= Month(date_To)  )
+    AND    Bookings.room_number = Rooms.room_number
+    AND    Rooms.hotel_ID       = Hotels.hotel_ID
+    GROUP  BY hotel_ID, hotel_Name;
+</pre>
+
+</td>
+</tr>
+</table>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 Database Answers Ltd. 2001</I></font></center>
+
+</html>

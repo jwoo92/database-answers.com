@@ -1,0 +1,124 @@
+<head><title>Oracle Sequence for Auto-Increment</title></head>
+<body text="#202020">
+
+<table width=90%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../images/dba_banner_and_btn_400.jpg">
+</td>
+<td align=right rowspan=2 valign=top>
+<img alt="Rhuddlan Castle, North Wales" height=85 width=266 src="../images/welsh_castle_sml.jpg">
+</td>
+</tr>
+
+<tr>
+<td><font color=red face="Comic Sans MS" size=4>
+<b>Oracle Sequence for Auto-Increment</b></font>
+</td>
+</tr>
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<table bgcolor=blue border=0 width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../index.html"><img alt="Home" border=0 src="../images/buttons/home_alt.gif"></a>
+</td>
+
+<td align=left valign=top width=100>
+<a href="../ask_a_question.html"><img alt="Ask a Question" border=0 src="../images/buttons/ask_a_question_alt.gif"></a>
+</td>
+<td align=middle valign=middle width=60>
+<a href="../careers.html"><img alt="Careers" border=0 src="../images/buttons/careers_alt.jpg"></a>
+</td>
+<td align=left valign=top width=85>
+<a href="../data_models/index.html"><img alt="Data Models" border=0 src="../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../faqs.html"><img alt="FAQs" border=0 src="../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../site_map.html"><img alt="Search" border=0 src="../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../site_map.html"><img alt="Site Map" border=0 src="../images/buttons/site_map_alt.gif"></a>
+</td>
+<td>&nbsp</td>
+</tr>
+
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<body bgcolor="#FFFFFF">
+
+<! Start of Standard Header -->
+<img src="images/book.gif">Welcome to Barry's Book of Useful Scripts
+
+<hr><b>Example Number 1 ...</b>
+<pre><font color=blue face="Verdana" size=2>
+create sequence product_seq start with 1 increment 1
+/
+create or replace trigger product_insert before insert for each row begin
+select productseq.nextval
+into :new.product_id
+from dual;
+end;
+/
+</pre>
+
+<hr><b>Example Number 2 ...</b>
+<pre><font color=blue face="Verdana" size=2>How to create an autoincrement field in a table with a sequence ...
+
+SQLWKS> create table bob(a number , b varchar2(21));
+Statement processed.
+
+First create a sequence
+SQLWKS> create sequence x ;
+Statement processed.
+
+Then create the trigger.
+create trigger y before insert on bob
+for each row
+when (new.a is null)
+begin
+ select x.nextval into :new.a from dual;
+end;
+/
+</pre>
+
+<hr><b>Example Number 3 ...</b>
+<pre><font color=blue face="Verdana" size=2>    First create a sequence:
+
+create sequence emp_no_seq;
+
+By default it increments by 1 starting at 0.
+Use its values when inserting data into the table:
+
+insert into t_emp values (emp_no_seq.nexval, 'Joe Black');
+</pre>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font color=blue face="Verdana" size=1>
+        [ <a href="../index.html">Home Page</a>
+        | <a href="../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../contact_us.html">Contact Us</a>
+        | <a href="../a_day_in_the_life.html">The Life of a DBA</a>
+<!---   | <a href="mailto:info@databaseanswers.com">Email Us</a> --->
+        | <a href="../faqs.html">FAQs</a>
+        | <a href="../search.html">Search</a>
+        | <a href="../site_map.html">Site Map</a> ]
+</center>
+<P>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

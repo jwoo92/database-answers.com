@@ -1,0 +1,175 @@
+<html><head><title>Business Rules for Resources Requesters</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<table width=90%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_banner_and_btn_400_home.jpg">
+</td>
+
+<td align=right rowspan=2>
+<img alt="Icy Field" src="../../images/philg/ice_field_vsml.jpg">
+</td>
+</tr>
+
+<tr>
+<td align=left valign=bottom>
+<font color=red face="Comic Sans MS" size=4><b>Business Rules for Resources Requesters</font>
+</td>
+
+</table>
+
+<table bgcolor="#6699FF" width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../../index.html"><font color=white face=Verdana size=1>Home</a>
+</td>
+<td align=left valign=top width=100><a href="../../ask_a_question.html"><font color=white face=Verdana size=1>Ask a Question</a>
+</td><td align=left valign=top width=85>
+<a href="../../data_models/index.html"><font color=white face=Verdana size=1>Data Models</a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><font color=white face=Verdana size=1>FAQs</a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><font color=white face=Verdana size=1>SQL Scripts</a>
+</td><td align=left valign=top width=50>
+<a href="../../site_map.html"><font color=white face=Verdana size=1>Search</a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><font color=white face=Verdana size=1>Site Map</a>
+</td>
+<td align=right valign=top>&nbsp
+<font color=white face="Verdana" size="1"><SCRIPT</td>
+</tr>
+
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<P>
+
+<font color=blue face="Verdana" size=2>
+<a href="index.html">Back to the Conceptual Data Model.</a>
+
+<br>The design of this Database has been created by following
+<a href="../../approach2db_design.html"><b>our General Approach</b>.</a>
+<hr>
+<pre><font color=blue face=Verdana size=2>User Requirements :-
+AREA BEING MODELLED : Automation of Requests of Rights & Resource Ownership
+
+<b>A. PURPOSE</b>
+
+A.1 To maintain an Inventory of Request of Rights on certain resources
+A.2 Keep track of who has access to what Resource
+A.3 To maintain an overview of the Resource Ownership of all available resources.
+A.4 To be able to consult a history of all requests ever made and the results of those requests
+A.5 To have an overview on all existing groups having access to certain resources
+A.6 To have an overview on all requesters being member of the available groups
+A.7 Other requirements to be determined.
+
+<b>B. Things of Interest </b>
+
+B.1 Administrators
+B.2 Groups
+B.3 History
+B.4 Requests
+B.5 Requesters
+B.6 Resources
+B.7 Resource_Owners
+B.8 Rights
+B.9 Systems
+B.10 Other to be determined.
+
+<b>C. How are these THINGS related to each other ?</b>
+
+Barry 1. Each Requester is a person who belongs to one or more Groups.
+Barry 2. Access Rights are granted to Groups.
+Barry 3. To achieve a certain level of access, an individual must join the appropriate Group.
+Barry 4. The level of Access available to a Requester depends on the groups the Requester belongs to.
+
+
+C.1 A Requester can make one or more requests to obtain certain Rights
+C.2 Granted rights are applied on one or more Resources
+C.3 Each Resource is owned by a Resource Owner
+C.4 Each Resource Owner can own more then one Resource
+C.5 Each Request results in a feedback towards the Requester (either granted or rejected)
+C.6 Each Resource Owner must be able to consult the History of all previous requests
+C.7 All requests, approvals, ... must be timestamped
+C.8 Each Requester is member of one or more Groups
+C.9 All Groups and Requesters are administered by an Administrator (can be a resource owner or not)
+C.10 Each system is owned by a Resource Owner
+
+
+D. Open questions
+
+D.1 Must the Resources be limited to only folders and/or directories or must also systems as such be included in the scope ?
+D.2 ...
+
+E. Sample Data includes
+
+To be determined
+
+F. Typical Enquiries include
+
+F.1 Who has rights on what Resource ?
+F.2 Who owns which Resource ?
+F.3 Who requested what and when ?
+F.4 When has an approval been send to a Requester and by who ?
+F.5 Who is member of which group ?
+F.6 Which group has which rights ?
+F.7 Which administrator administers which groups and which users ?
+F.8 ...?
+
+<hr>
+<!---
+<b>A. What are the Things of Interest ?</b>
+A.1 Bookings
+A.2 Cars
+A.3 Confirmation Letters
+A.4 Customers
+A.5 Invoices
+A.6 Payments
+A.7 Vans
+A.8 Vehicles
+
+<b>B. How are the Things of Interest related ?</b>
+B.1 A Booking is for one Vehicle and one Customer.
+B.2 A Customer can be associated with one or many Vehicles.
+B.3 A customer cannot hire a car for longer than a week.
+B.4 A Customer can receive one or many Invoices.
+B.5 A Vehicle can be a Car or a Van.
+B.6 An Invoice is for one and only one Customer.
+
+<b>C. What are the characteristics of the Things of Interest ?</b>
+C.1 Customer details include name,address, gender telephone number.
+C.2 Each booking includes customer, car, date of hire and
+    date on which the vehicle is to be returned.
+--->
+
+
+Barry Williams
+Principal Consultant
+Database Answers
+15th. April 2001
+</pre>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

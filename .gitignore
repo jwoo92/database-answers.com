@@ -10,3 +10,7 @@ yarn-error.log
 # VSCode
 .vscode/
 jsconfig.json
+
+# Jekyll
+_site/
+.sass-cache

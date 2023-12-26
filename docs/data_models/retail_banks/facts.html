@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>Facts for a Retail Banks Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.theaustralian.com.au/business/financial-services/national-australian-bank-in-talks-to-sell-clydesdale-and-yorkshire-banks-for-23bn/story-fn91wd6x-1226130908364
+" target="_new">
+<img align=right alt="UK Banking Share, published in The Australian (Click for Web Site)" border=0 hspace="0" vspace="4" src="images/retail_banks_sml.gif"></a>
+</td>
+</tr>
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for Retail Banks</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="0099FF" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+<a href="index.html">Back to the Data Model</a>
+
+<pre><font color=blue face=Verdana size=2><b>A. The requirement is to design a Database to support BI for Retail Banks.</b>
+
+<pre><font color=blue FONT=Verdana size=2>Subject: creating an olap system from an oltap system
+
+Question: Creating an OLAP System from an OLTP System Traditional database design emphasises accurate
+recording of data but this may not produce a database that is easy to use for ad-hoc reporting.
+
+On the next page is a cut down schema from an OLTP database for a retail banking system.
+
+Customers have one or more accounts at a particular bank branch.
+
+Branches process and record all their customer?s transactions.
+
+When a transaction is processed, the balance in the corresponding account is updated.
+
+Each customer is linked to census data for the area they live in.
+
+(Note this schema is quite a bit simpler than real life but this is only an exercise!)
+
+You must create a data warehouse design for the bank based on this data.
+
+It needs to allow the bank to produce a variety of different reports such as:
+<li> Transaction details, broken down by date (day/month/year), time of day (eg morning, afternoon, evening),
+  transaction type, customer details (age, city, suburb), branch details (city, suburb, employees) and census details.
+<li> Average as well as total transaction values and number/value/average of deposits and withdrawals.
+<li> Average balances, broken down by date, customer/branch details and census data.
+<li> Ratio of total transaction value in a month to average balance (eg over several months).
+
+Design a data warehouse schema and data cube based on the OLTP database that will allow the reports above to be easily
+produced (ie no complex SQL required).
+
+1. Draw a sketch of an appropriate star/snowflake database design.
+   Indicate what data items will be in each of the dimension and fact tables.
+   Indicate any necessary keys. Explain/justify your design.
+
+2. Describe any data transformations that will need to be applied to data from
+   the OLTP system to use it in the data warehouse.
+
+3. For the data cube, describe how the measures would be defined (including any calculations)
+   and what the dimensions would be (including any useful hierarchies).
+
+4. Discuss whether any dimensions would require special processing over time, eg any ?slowly
+   changing? dimensions.
+   It's not necessary to get the design absolutely perfect ? we will use this as a source of discussion in class.
+
+You are not required to actually create the OLAP DB ? just produce a diagram of it.
+However you can download the Access schema and use it to create your diagram.
+COMP 631 2 2011 Simplified Schema for a Retail Bank
+
+Notes: In Account Account Type indicates checking, savings, child account,
+etc. Current Balance is updated whenever a transaction is processed.
+
+In Transaction: Trans Type indicates if on-line, in branch, ATM, etc.
+Credit/Debit tells whether it is a deposit or a withdrawal.
+
+In Branch: Branch Type indicates large, medium, small.
+<hr>
+<pre><font color=blue face=Verdana size=2>
+<b>A. The Things of Interest are :-</b>
+   A.1  To be determined
+
+<b>B. How are they related ?</b>
+   B.1 To be determined
+
+<p class="cell"><font color=blue face=Verdana size=2>
+<br><b>Barry Williams</b>
+<br>August 11th. 2011
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

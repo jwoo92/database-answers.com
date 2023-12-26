@@ -1,0 +1,82 @@
+<html><head><title>Design Patterns in Data Migration</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<b>Design Patterns in Data Migration</b>
+<br>This page starts with the suggestion that Data Models are 'A Good Thing' and you can never have too much of 'A Good Thing'
+<br>Therefore, if the answer to everything is a Data Model then what exactly are the Questions ?
+
+<br>
+<br>We propose that an End-to-End range of Data Models provides a robust and generalised foundation for any
+Data Migration activity.
+<br>Of course, we consider it is true that 'Data Migration' is a deceptively simple way of describing the activities
+that occupy most of our waking (or working) hours most of the time.
+<br>This is appropriate whether we are Data Architects, Data Modellers or Data Analysts,
+where each role has a different range of skills and responbsibilities.
+
+<br>We start with Operational Data Stores and end with a Dimensional Model that feeds data for a BI Layer.
+
+<br><br>Our question then becomes :-
+<br>What kind of Data Models do we need to cover our End-to-End Scope ?
+
+<br><br>
+We propose a range from ODS, Data Mapping, Data Warehouse, Dimensional Models and Semantic Models
+
+<br><br>This seems a modest ambition, so let's discuss it in detail to see if it holds up under detailed analysis.
+
+<br><br>
+<table border=1><tr>
+<td valign=top><align=CENTER><font color=blue face=Verdana size=2>This page shows <b>four Design Patterns in Data Migration</b>.
+<br><br><b>1) The first Design Pattern</b> shows Semantic Data Models which provide a 'User Friendly' front-end.
+<br>This helps Users to request KPIs, Reports and analyses using words and terminology that they normally use.
+<br>For example, talking about Customers, rather than Parties.
+
+<br>If Semantic Data Models have been created, then we can say that the work has been done to the established standards of Best Practice.
+<br><br><img alt="Semantic Data Models" HEIIIIGHT=633 valign=top src="images/1_semantic_data_models.gif">
+
+<hr>
+<br><b>2) The second Design Pattern</b> shows Mapping Specifications which translate Source data to Target data.
+
+<br><br><img alt="Mapping Specifications" HEIIIIGHT=633 valign=top src="images/2_data_mapping_specifications.gif">
+
+<hr><b>3) The third Design Pattern</b> identifies KPIs, and traces their derivation.
+<br>This helps to establish the Data Lineage for Sarbanes-Oxley and other Statutory Reporting requirements.
+<br><br><img alt="KPIs, Data Lineage and Agile Modelling" src="images/3_KPIs_data_lineage_and_agile_modelling.gif">
+
+<hr>
+<b>4) The fourth Design Pattern</b> shows the complete End-to-End scope of Data Models.
+<br>The <a href="../canonical_data_models/common_data_model.html">Common Data Model</a> is used to standardise data that is loaded into the Data Warehouse (DWH).
+<br>We can also be sure that we have a 'Single View of the Truth' at any point in time.
+<br>It helps us to build the design of the DWH in a step-by-step fashion.
+<br><br>We identify that the Enterprise Data Warehouse is a top-level design which will have lower-level <b>Subject Area Models</b> such as Customer Purchases.
+
+<br><img alt="End-to-End Data Model Foundation" HEIIIIGHT=633 valign=top src="images/4_end_to_end_scope.gif">
+
+<hr>
+<br>Finally, we show the complete <b>Data Warehouse Bus Architecture</b>
+<br>
+<img align=left src="images/5_data_warehouse_bus_architecture.jpg">
+
+</td>
+
+<!---
+<td  valign=top><font color=blue face=Verdana size=2>and this is the final version of the Data Model with Subject Areas :-
+<br>
+<br><img  alt="Final Data Model with Subject Areas"  HEIiiiGHT=633 valign=top src="images/data_model_with_subject_areas.gif">
+</td>
+--->
+
+</tr>
+</table>
+
+
+<font size=1>
+<br><br><I> &#169 Database Answers Ltd. 2012</I></font>
+</font>
+</body>
+
+</html>

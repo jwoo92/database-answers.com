@@ -82,17 +82,17 @@
 		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
 		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Original Message</b></font></td>
 		</tr>
-	
+
 		<tr bgcolor="#CCCCCC" valign=top>
 		<td>
-		
+
 			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 			<b><a href="profile.asp?id=1"><font color="#990000">dba_admin</font></a></b><br>
 			<font size=1">Posts: 30</font>
 			<p>
-			
-			
-		
+
+
+
 		</td>
 		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 		<table border=0 cellpadding=0 cellspacing=0 width=100%>
@@ -109,11 +109,22 @@
 			</form>
 		</table>
 		<hr>
-		This is a summary of what appears on this Page as 'Why do I do this for free ?':-<br>http://www.databaseanswers.com/data_models/index.htm<br><br>I design these Data Models for free to Each Model is usually what I can do in the 20 minutes of voluntary work that I allocate from my consulting work. <br><br>My intention is to provide a wide range of 'Kick Start' Models that anyone can use as a starting-point, and could extend cleanly and logically, with appropriate reference to the Business Rules. <br><br>It is not my intention to provide Models that can be used off-the-shelf to meet the requirements of a large commercial organisation. <br><br>None of the Models is the complete and final solution in its area, but any of them can be added to easily and quickly to meet a specific requirement. The logic in each Model is intended to be correct and to contain the minimum Entities for the area being modelled. <br><br>Generally, I try to make the Data Models and the associated Business Rules consistent, but I don't always define the Rules because that is a very valuable 'exercise for the student'. 
+		This is a summary of what appears on this Page as 'Why do I do this for free ?':-.html
+<br>http://www.databaseanswers.com/data_models/index.html
+<br>
+<br>I design these Data Models for free to Each Model is usually what I can do in the 20 minutes of voluntary work that I allocate from my consulting work.
+<br>
+<br>My intention is to provide a wide range of 'Kick Start' Models that anyone can use as a starting-point, and could extend cleanly and logically, with appropriate reference to the Business Rules.
+<br>
+<br>It is not my intention to provide Models that can be used off-the-shelf to meet the requirements of a large commercial organisation.
+<br>
+<br>None of the Models is the complete and final solution in its area, but any of them can be added to easily and quickly to meet a specific requirement. The logic in each Model is intended to be correct and to contain the minimum Entities for the area being modelled.
+<br>
+<br>Generally, I try to make the Data Models and the associated Business Rules consistent, but I don't always define the Rules because that is a very valuable 'exercise for the student'.
 		</font></td>
 		</tr>
 	</table>
-	
+
 	<p>
 	<table border=0 cellpadding=2 cellspacing=0 width=100%>
 		<tr>
@@ -125,11 +136,11 @@
 		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
 		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
 		</tr>
-	
-	</table>
-	
 
-	<!-- Body Ends -->	
+	</table>
+
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>

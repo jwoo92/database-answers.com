@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>Facts for the Cruise Ship Administration Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.inquisitr.com/45632/worlds-largest-cruise-ship-oasis-of-the-seas-takes-maiden-voyage/" target="_new">
+<img align=right alt="Largest Cruise Ship in the World (Click for Web Site)" border=0 hspace="0" vspace="4" src="images/largest_cruise_ship_sml.jpg">
+</td>
+</td>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+
+</p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for Cruise Ship Administration</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+Back to the <a href="index.html">Data Model</a>
+
+<pre><font color=blue face="Verdana" size=2>Subject: Cruise Ship Booking and Accounting Database System
+
+Question: A database must be constructed for the following Cruise Ship Booking and Accounting System:
+Accommodation in different categories of staterooms (or cabins) .
+
+There may be zero, one, or many <b>passengers</b> (up to 2 adults and 2 children) in a given <b>stateroom</b> but a
+passenger cannot occupy more than one stateroom at a time
+
+the <b>crew</b> provide various <b>amenities</b>, some free, others at a <b>charge</b>, during their <b>stay</b>.
+
+Passengers do not pay for their food, but there is a <b>surcharge</b> for each <b>meal</b> when they dine at the
+prestigious <b>Todd English restaurant</b> or at the <b>First Mate's pub</b>.
+
+You should not charge guests for <b>shows, lectures or movies</b> but these should be recorded with the
+<b>amenities</b> so that the <b>bulletin</b> can publish what <b>entertainment</b> is available on a given day.
+
+<b>Entertainment is a subtype of Amenity</b> where <b>the day of cruise and time</b> is recorded.
+
+There is no booking for entertainment (first come, first served) but <b>certain amenities must be booked</b>
+for e.g. a <b>beauty therapy appointment</b> - and others e.g. drinks on deck are not booked for.
+
+Attached to each <b>room-category</b> is a certain <b>charge for the entire cruise</b> and a certain <b>gratuity rate
+per day</b> of the cruise .
+
+<b>Activities or Amenities</b> include <b>shore excursions</b>, most <b>drinks (fruit drinks, tea, coffee,
+hot chocolate free), phone calls, internet, beauty therapy, a variety of bars, health spa, chiropractic treatment</b> and others.
+
+Each different <b>amenity has a code, a description and a charge attached (if applicable); and an attendant who
+administers or manages the amenity (treatment)</b>.
+
+<b>Attendants are paid a basic salary and then may get commission</b> according to their activity participation or
+per treatment.
+
+Tips are not necessarily recorded, because they may be cash.
+
+You should allow for <b>two subtypes of dining places: dining rooms and restaurants</b>.
+
+All <b>dining places have attributes Maitre'd and capacity and daily menus</b>.
+
+<b>Your database does not have to include menus</b> or general dining staff on duty details.
+
+<b>Restaurants can be King's Court open restaurants or other restaurants</b>.
+
+<b>King's Court restaurants have as an attribute Buffet_Status</b>,
+
+<b>other restaurants have an attribute surcharge and Open_status</b>.
+
+<b>Some restaurants are only open when the weather is suitable.</b>
+
+Note that <b>a given restaurant will change it's buffet status and open status regularly</b>.
+
+The passengers are automatically assigned to one of 3 dining rooms, depending on their status
+(which level their stateroom is found). But they might decide to miss a meal, or dine at one of
+the other restaurants, where they may have to book.
+
+<b>You must keep a record of which dining room the passenger is assigned to or compute it automatically</b>
+
+when the passenger embarks (and at other times when necessary)
+
+The King's Court area has 4 restaurants:
+Lotus Carvery
+La Piazza Chef's Grill
+One of the top three is always buffet and the other two are subject to dinner bookings.
+
+This is . on an informal rotation basis -
+e.g. Monday buffet is Lotus
+     Tuesday buffet is Carvery
+     Wednesday buffet is La Piazza etc..
+
+You always have to book at Chef's Grill.
+
+The database must keep a record of which restaurant is buffet for each day of the cruise.
+
+The 3 dining rooms are
+1. Britannica,
+2. Princess Grill
+3. Queen's Grill.
+
+Passengers are assigned a table number at their allocated dining room
+
+There are five restaurants where booking for the day's evening meal is allowed :-
+1. Todd English
+2. First Mate's Pub
+3. King's Court
+4. King's Court
+5. Chef's Grill
+
+The database must keep <b>a record of all current bookings</b> and assign a <b>table number</b> to a given guest
+(by stateroom number).
+
+The passengers can also book for <b>shore excursions</b> when the <b>ship</b> visits a <b>port</b>.
+
+A passenger can book for several shore excursions on a cruise and each <b>excursion</b> can accommodate many,
+but a limited number of, <b>passengers</b>.
+
+Each day of the cruise is assigned a <b>dress code</b>.
+Dress codes which apply for after 18h00 are
+1) Formal ,
+2) Semi-formal,
+3) Smart Casual and
+4) Casual.
+
+The database must keep a record of each <b>day of the cruise and the dress code for that day</b>, as well as whether the clocks must be turned back or forward one hour at midnight
+if applicable when travelling east-west or west-east.
+
+The database must also keep a record of <b>birthdays and anniversaries for passengers</b> where applicable
+
+Your database must have sufficient information to print the daily bulletin and make announcements on the Cruise Director morning talk show (on the stateroom TV): giving
+1. dress code,
+2. status of restaurants,
+3. port of call if applicable,
+4. entertainment offered,
+5. notices of special days for passengers,
+
+You must keep sufficient information in your database to enable a passenger to book for an evening meal at a
+restaurant or an excursion, and an <b>invoice</b> to be created to charge the passengers for their cruise,
+including all <b>amenities</b>.
+
+You may assume a guest may occupy <b>more than one stateroom during their stay, i.e. they may move cabins</b> or be upgraded.
+<hr>
+<b>B. Barry says the Things of Interest are :-</b>
+1. Bookings
+2. Cruises
+3. Customers
+4. Payments
+5. Others to be determined
+
+<b>C. The Business Rules are as follows :-</b>
+1. To be determined.
+<center><font size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2011</I></font></center></pre>
+
+<!---
+<br>There is also a version <a href="rt_retail_customers_data_with_attributes.html"><b>showing all attributes</b></a>.
+--->
+
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<html><head><title>FACTs for Band Musicians Data Model</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<table border=0 width=90%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Header" height=58 width=400 src="../../images/dba_banner_and_btn_400.jpg">
+</td>
+<td align=right rowspan=2 valign=top>
+<img alt="Entrance to Tutenkhamun's Tomb" height=94 width=206 src="../../images/tutenkhamun_xsml.jpg">
+</td>
+</tr>
+
+<tr>
+<td><font color=red face="Comic Sans MS" size=4>
+<b>Facts for a Musicians in a Band</b></font>
+</td>
+</tr>
+</table>
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<table bgcolor=blue border=0 width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="index.html"><img alt="Home" border=0 src="../../images/buttons/home_alt.gif"></a>
+</td>
+
+<td align=left valign=top width=100>
+<a href="../../ask_a_question.html"><img alt="Ask a Question" border=0 src="../../images/buttons/ask_a_question_alt.gif"></a>
+</td>
+<td align=middle valign=top width=60>
+<a href="../../careers.html"><img alt="Careers" border=0 src="../../images/buttons/careers_alt.jpg"></a>
+</td>
+<td align=left bgcolor=white valign=top width=85>
+<a href="../../data_models/index.html"><img alt="Data Models" border=0 src="../../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../faqs.html"><img alt="FAQs" border=0 src="../../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../../search.html"><img alt="Search" border=0 src="../../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../../site_map.html"><img alt="Site Map" border=0 src="../../images/buttons/site_map_alt.gif"></a>
+</td>
+<td>&nbsp</td>
+</tr>
+
+</table>
+
+<!--- A Data Model is required for a Band and Musicians, for angel4eva on 8/17/2001. --->
+
+<P><b>The FACTS define the Business Rules ...</b>
+<P><b>1. What are the 'Things of Interest' in the Scope to be modelled ...</b>
+<UL>
+<li>Person (Persons_id, Person_name, Person_address, Person_phone)
+<li>Instrument (Instrument_id, Instrument_name, Instrument_type)
+<li>Proficiency (Persons_proficiency, Person_id, Instrument_id)
+<li>Band (Band_id, Band_name, Band_contact_peson_id)
+<li>Band_Member (Band_id, Person_id)
+</UL>
+
+<P><b>2. How are these 'Things of Interest' related ? ...</b>
+
+<UL>
+<li>An Instrument is always of one and only Type.
+<li>A Person can play one or many Instruments, if the Contact Person always plays an Instrument.
+<li>A Person can play zero or many Instruments, if the Contact Person could be a member who does not play an Instrument,
+such as a Band Manager or Agent.
+<li>A Person always has a specified Profiency Level in an Instrument.
+<li>A Person can be in zero or many Bands.
+<li>A Person has a specified Role in a Band, such as Contact Person, or Band Member.
+</UL>
+
+</UL>
+
+
+<P><b>3. What do we know about the 'Things of Interest' ? ...</b>
+<P>In the Data Model, an <b>'id' field</b>, such as person_id, is a generated integer,
+without any meaning in itself, and is used as a surrogate key.
+<br>A <b>'code' field</b> is an abbrevation of a name or description, and used because
+the volumes of data are smaller, and do not need to be generated dynamically.
+<P>
+<UL>
+<li>A Band has :-
+<OL>
+<li>A Band Code
+<li>A Band Name
+<li>The Date Started, if known.
+<li>The Date Disbanded, which will usually be in the future, and unspecified.
+</OL>
+
+<li>An Instrument has :-
+<OL>
+<li>An Instrument Code
+<li>An Instrument Name
+</OL>
+
+<li>A Person has :-
+<OL>
+<li>An ID.
+<li>A Name
+<li>An Address
+<li>A Phone.
+</OL>
+
+<li>A Role is Reference data ans has :-
+<OL>
+<li>A Role Code,(e.g. 'CONTACT')
+<li>A Description
+</OL>
+
+</UL>
+
+
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../search.html">Search</a>
+        | <a href="../../site_map.html">Site Map</a> ]
+</center>
+<P>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

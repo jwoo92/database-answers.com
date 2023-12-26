@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Loading a Data Warehouse (Alternate)</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td align=right height=100 rowspan=2 width="100%" valign=middle>
+<a href="images/data_warehouse_architecture_lge.jpg" target="_new">
+<img align=right alt="DWH Architecture (Click for Web Site)" border=0 hspace="0" vspace="4" height=100
+src="images/data_warehouse_architecture_sml.jpg"></a>
+</td>
+</tr>
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Loading a Data Warehouse (Alternate)</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="0099FF" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+<a href="index.html">Back to the Data Model</a>
+
+<pre><font color=blue face=Verdana size=2><b>A. The requirement is to design flexible database schema patterns</b>
+This text records a email conversation between Barry and someone with some interesting questions working for an Investment Bank
+
+<b>1. Email received February 22nd. 2011 :-</b>
+Hi,
+
+I am currently working as a SQL ETL developer for an Investment Bank.
+The bank has recently been taken over and thus the financial product reporting has been divided into
+various reporting streams which has meant various feeds have had to be created to supply the various new stake holders of the bank.
+Whilst we are able to produce these feeds I feel the current database architecture (set up by my predecessor) is perhaps not the best solution.
+This is simply because I have had to constantly tweak the tables to get the desired output.
+
+The database architecture is such that our sql servers are primarily used for ETL.
+The source data comes from Hyperion enterprise Management system which countries use to load their figures.
+The source data is uploaded into DDM (our SQL ETL environment) transformed and loaded into Essbase cubes.
+Due to there being copies of data in both Essbase and Hyperion only the latest MI data is stored in SQL Server.
+
+I am of the feeling that if we had a central repository of the data in sql, i.e. a data warehouse.
+
+It would give us the flexibility to provide feeds via datamarts for all our customers as well as handling the metadata,
+such as product hierarchies and location hierarchies which are used as dimensions in our OLAP cubes.
+
+I have had a look at your datamodel for how to load a banking datawarehouse I just need a little advice on how to model this.
+
+http://www.databaseanswers.org/data_models/data_warehouse_loading/index.html
+
+The central source data we receive is in the following format:
+
+Field Name
+Format
+Description
+
+DATACATEGORY
+ char(10)
+ Scenario with Year and Client type;
+
+< Material cut out here.>
+
+We receive about 11 of these files each corresponding to a different region for reporting.
+In addition to these files we also receive once a month meta data from our offshore team.
+We thus have a window of maintenance were implement the new meta data changes.
+These include the new product hierarchy structure, location structure and FX rates.
+The location and product structure are then used to build the product and location dimensions
+in our Essbase models.
+
+These dimensions are both parent child dimensions.
+
+I would imagine we would have fact table that shows the YTD amounts for each product in each category.
+Our dimensions would be product, account and location.
+For the product and dimension tables and Location would the data be stored?
+Should it be in hierarchical form? Is the Metadata stored in a separate datawarehouse?
+
+Any advice or information you could provide would be very much appreciated.
+
+Many thanks
+
+Your friend
+
+<!---  Eseosa Omoregie --->
+
+<b>2. Barry's respponse :-</b>
+Hi
+
+Your ideas are on the right lines.
+
+I have drafted a Data Architecture for you :-
+http://www.databaseanswers.org/data_models/data_warehouse_loading_alt/index.html
+
+The idea of  'de-coupling' Hyperion at the Back-end from Essbase at the Front-End gives
+you very valuable flexibility.
+
+HTH
+
+Barry
+
+
+<b>3. Email received February 23rd. 2011 :-</b>
+
+Hi Barry,
+
+Many thanks for your quick reply. I certainly do not have a budget for 500/day but I can definitely cover your pocket money : - )
+
+For me the main thing is to just streamline the processes that we have running now whilst maintaining
+the flexibility we currently have now particularly with regard to 'on request' refreshes etc
+
+For example the location structure and product structure we use to create our dimensions in essbase are actually present in
+Hyperion and can be extracted.
+
+Yet for historical reasons updates to the dimensions are . manually.
+If we can extract the structures directly from the source then they could be loaded into a datawarehouse, sliced and diced and
+then used to auotmatcally  update dimensions without the need for manual intervention.
+
+I am also very interested inthe staging area that you proposed. How many tables are needed, what lookups are used etc.
+</pre>
+
+<!---
+<b>Barry says the Things of Interest are :-</b>
+   A.1 Births
+   A.2 Deaths
+   A.3 Marriages
+   A.4 Others, to be determined
+
+<b>B. How are they related ?</b>
+   B.1 An Event can be a Birth, Death or Marriage.
+   B.2 A Parent can register one or many Events.
+   B.3 Others to be determined.</pre>
+--->
+
+<p class="cell"><font color=blue face=Verdana size=2>
+<br><b>Barry Williams</b>
+<br>February 22nd. 2011
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,9 +1,10 @@
-User-agent: Googlebot
-User-agent: Slurp
-User-agent: bingbot
-Allow: /
+---
+layout: none
+---
+
+# www.robotstxt.org/
+# Allow crawling of all content
 
 User-agent: *
-Allow: /
-
-Sitemap: https://www.databaseanswers.org/sitemap.xml
+Disallow:
+Sitemap: {{ site.url }}/sitemap.xml

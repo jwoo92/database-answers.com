@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>Student Information Systems Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://en.wikipedia.org/wiki/Student_information_system" target="_new">
+<img align=right alt="Student Information System (Click for Wikipedia Web Site)" border=1 heiight=88 hspace="0" vspace="4" src="images/Wikipedia_Student_Data_Management_sml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for a Student Information System&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+<a href='mailto:dba_requests&#64;barryw.org?subject=Request for a Database for Student Information Systems'>Email me</a> if you would like an Access Database.
+
+
+<!--- specified by a Question to Database Answers from Moustafa Adel (moustafa_hadi__at__hotmail.com) --->
+
+<!--- <a href="http://en.wikipedia.org/wiki/Pest_control" target="_new">the Wikipedia for Vehicle Imports</a>. --->
+
+
+<br><br><a href="facts.html">The Specifications</a> have been drafted.
+
+<br><br>
+This Data Model is based on the typical Life Cycle of a Student.
+
+The first thing a Student does is to register at a School, then sign up for Classes, followed by  completion of Assignments, taking Exams and finally leaving the Schoool (or transferring) and taking his or her Transcripts.
+
+The way in which these separate Models are related is defined in <a href="facts.html">the Information Catalog</a>.
+
+<br><br><a HREeeeF="student_information_systems_data_mart.html">A Data Mart</a> might be created to help with Enquiries and Reports.
+
+<br>Wikipedia has very interesting articles on a
+<a href="http://en.wikipedia.org/wiki/Student_information_system" target="_new">Student Information System</a>
+and
+<a href="http://en.wikipedia.org/wiki/Schools_Interoperability_Framework" target="_new">
+<b>a Schools_Interoperability_Framework (SIF)</b></a> which has been established to help in exchanging data through a standard approach to Student Information.
+<br>The SIF has been implemented in the United States, for example in Wyoming, which has launched the
+<a href="http://www.k12.wy.us/WISE/" target="_new"><b>WISE Project</b></a>, to "collect, certify, and transform school district data into standardized data sets".
+
+<br>It is increasingly being implemented in the Australia, India, UK and elsewhere.
+
+<br><a href="http://www.visualsi.com/Index.html" target="_new"><b>Visual Software</b></a>, with offices in the USA, the UK and Australia, is one of the companies playing a significant role in advancing the adoption of SIF.
+
+<br><br>This is a very simple and flexible 'Kick Start' Data Model.
+
+<br>
+<!-------- <img align=left alt="student_information_systems Data Model" border=0 src="images/student_information_systems_model.gif"> --------------->
+
+<hr>
+<a href="hldm_for_students.html">High-Level Data Model (LDM)</a> for Students
+<hr>
+
+Separate  Data Models have been designed for each of these activities :-
+<li><a href="../student_assignments/index.html">Assignments</a>
+<li><a href="../student_assessments_complex/index.html"">Attendance</a>
+<li><a href="../athletes_and_teams/index.html"">Athletes and Teams</a>
+<li><a href="../behavior_monitoring/index.html">Behavior Monitoring</a>
+<li><a href="../student_class_scheduling/index.html">Class Scheduling</a>
+<li><a href="../student_exams/index.html">Exams</a>
+<li><a href="../student_registration/index.html">Registration</a> (with Parents and Guardians)
+<li><a href="../student_loans/index.html">Student Loans</a>
+<li><a href="../students_transcript_tracking/index.html">Transcripts</a>
+</OL>
+
+</td>
+</tr>
+</table>
+
+
+<br><br>
+
+<table border=1>
+<tr>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br>
+<b>Conceptual Data Model</b>
+<br><br>
+<img alt="Conceptual Data Model" border=0 src="images/conceptual_data_model.jpg">
+
+<hr>
+<b>Conceptual Data Model for Analytics and Reports</b>
+<br><br>
+<img alt="Conceptual Data Model" border=0 src="images/dimensions_for_reports.jpg">
+
+
+</td>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<br>
+<b>Logical Data Model</b>
+<br><br>
+<img alt="Student Information Systems Data Model" border=0 src="images/student_information_systems_model.gif">
+</td>
+</tr>
+</table>
+
+<font color=blue face=Verdana size=1>
+<center>
+<br><I> &#169 DatabaseAnswers.org 2018</I></font>
+</center>
+<br>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

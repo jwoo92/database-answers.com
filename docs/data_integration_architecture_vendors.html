@@ -1,0 +1,575 @@
+<html>
+<head>
+<title>Data Integration Architecture</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/style.css">
+
+<script language="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="90%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+	<td valign=middle><img src="images/dba_400_home.jpg" width="400" height="58" alt="Database Answers">
+	</td>
+          <td height=95 rowspan=2 width="100%" align="right" valign=top>
+<img alt="Bienecke Reference Library, Yale University" height=88 width=149 src="images/bienecke_xsml.jpg" hspace="0" vspace="4"></td>
+</tr>
+
+<tr>
+    <td valign=bottom>
+	<p class="time"><nobr><script language="JavaScript">theDate();</script></nobr></p>
+	</td>
+</tr>
+
+</table>
+
+<table name="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table name="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<!--- <td><a href="faqs.html"><img name="menu_faqs" src="images/v3/menu-faqs.gif" width=48 height=24 border=0 alt="FAQ's"></a></td> --->
+<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table border=0 name="MAIN CONTENT" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<!---
+<td width="90" background="images/v3/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+<img alt="Boschendhal Estate, South Africa" src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5">
+<p><img src="images/v3/spacer.gif" width="90"></p>
+</td>
+--->
+
+<td valign="top"><img src="images/v3/spacer.gif" width="3" height="239"></td>
+<td width="100%" bgcolor="#B0D8FF" valign="top"><img src="images/v3/spacer.gif" height=20>
+<!--- CHECK BORDER IN NEXT TABLE ... --->
+<!--- This Table is nested within the previous Table. --->
+
+	<table border=0 width=90% width="590" cellspacing="0" cellpadding="0">
+	<tr>
+      	<td rowspan="4" valign="top" width="30"><img src="images/v3/spacer.gif" width="21" height="1"></td>
+	<td width="61">&nbsp;</td>
+	<td rowspan="4" width="6"><img src="images/v3/spacer.gif" width="6" height="1"></td>
+	<td colspan="3" width="100%" align="right" class="header1">
+	Data Integration Architecture Vendors
+
+                <img src="images/v3/spacer.gif" width="5" height="1"></td>
+	<td width="3" bgcolor="#FF9900"><img src="images/v3/px-orange.gif" width="3" height="20"></td>
+        </tr>
+
+	<tr>
+       	<td rowspan="3" valign="top" width="1">&nbsp;</td>
+	<td colspan="4" height="3" rowspan="3" valign="top">
+<!--- This Table is nested within the previous Table. --->
+
+		<table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              	<tr bgcolor="#FF9900">
+         	<td><img src="images/v3/px-orange.gif" width="1" height="3"></td>
+              	</tr>
+            	</table>
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              	<tr>
+               	<td bgcolor="#FF9900"><img src="images/v3/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/v3/spacer.gif" width="8" height="1"></td>
+          	<td width="100%"><font color=blue face=Verdana size=2>
+		'Data Integration' is the process of retrieving and consolidating data from various sources.
+		<br>It includes validation, removing errors in source data, and converting to a target format.
+<!---
+		<br>The approach I usually adopt is :-
+		<OL><li>Use a <a href="data_dictionary.html">Data Dictionary</a> to record each Data Item being cleaned up,
+		<li>For each Item, identify the responsible owner, and the validation criteria, specified both in English and SQL.
+		<li>Choose an appropriate Tool.
+		<li>Run batch jobs repetitively and review the results with the Owners after each Run
+		<li>Continue until the required level of correctness is reached.
+		<br>This will depend on the data items, and will not always be 100%.
+		<li>Ensure that full documentation is produced for Audit purposes.
+		</OL>
+--->
+
+		This table lists some options and some Products. Please let me have any <a href="mailto:integr_suggestions@databaseanswers.com">recommendations or comments</a>.</div></td>
+           	</td>
+              	</tr>
+            	</table>
+          </td>
+        </tr>
+        <!--- <tr>AAA </tr> --->
+        <!--- <tr>BBB </tr> --->
+      </table>
+      <br>
+	<table wiIIdth="590" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td width="25"><img src="images/v3/spacer.gif" border="0" width="31"></td>
+	<td>
+<!--- This Table is nested within the previous Table. --->
+
+	<table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#FF9900" name="change me">
+        <tr><td align=middle class="header2" colspan=9><b><I>OPTIONS for IMPLEMENTATION of the ARCHITECTURE</I></b></td></tr>
+
+<!---	<tr><td align=middle class="cell" bgcolor="#B0D8FF" colspan=4>&nbsp</td></tr>
+--->
+
+	<tr>
+ 		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Price</b></td>
+	       	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Repository</b></td>
+           	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Data Integration</b></td>
+         	<td align=middle class="cell" bgcolor="#B0D8FF"><b>ETL</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>On Demand</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Data Warehouse</b></td>
+        	<td align=middle class="cell" bgcolor="#B0D8FF"><b>GCDM</b></td>
+        	<td align=middle class="cell" bgcolor="#B0D8FF"><b>BI</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>SOA</b></td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">$$$$$</td>
+       		<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.asg.com/products/product_details.asp?code=ROC&id=50" target="_new">ASG Rochade</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.ascential.com/" target="_new">Ascential</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+        	<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.businessobjects.com/" target="_new">Business Objects</a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.polarlake.com/" target="_new">Polar Lake</a></td>
+	</tr>
+
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">$$$$$</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www3.ca.com/Solutions/Product.asp?ID=1439" target="_new">Platinum</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.metamatrix.com/" target="_new">MetaMatrix</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.seebeyond.com/" target="_new">See Beyond</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.kalido.com/" target="_new">Kalido</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.kalido.com/" target="_new">Kalido</a></td>
+        	<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.appdevadvisor.co.uk/newswires/soa/05/01feb/index.php?id=W004064#Topic2" target="_new">Progress </td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">$$$</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF"><a href="http://www.informatica.com/" target="_new">Informatica</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.sas.com/" target="_new">SAS</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+        	<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">$</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">Paper</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Access and ODBC.</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+        	<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+
+<!--- The data generated from the Database ends here ... --->
+
+	</table>
+
+<br>
+<font color=blue FONT=Verdana size=2>
+
+<!--- This Table is nested within the previous Table. --->
+
+	<table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#FF9900" name="change me">
+        <tr><td align=middle class="header2" colspan=7><b><I>ANALYSIS OF PRODUCTS</I></b></td></tr>
+
+<!---	<tr><td align=middle class="cell" bgcolor="#B0D8FF" colspan=4>&nbsp</td></tr>
+--->
+
+	<tr>
+ 		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Category</b></td>
+	       	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Product</b></td>
+           	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Pilot ?</b></td>
+         	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Entry Level</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Average Cost</b></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF"><b>Maximum Cost</b></td>
+        	<td align=middle class="cell" bgcolor="#B0D8FF"><b>Comment</b></td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">Bus. Intelligence</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.businessobjects.com/" target="_new">Business Objects</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">?</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Provides valuable 'User View' of data</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+<!---	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">Consultants</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.dqglobal.com/" target="_new">DQ Global</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+--->
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">Customer Hub</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.siebel.com/" target="_new">Siebel</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">'Universal Customer Master' offers Dashboards, KPIs, Alerts and Metrics</td>
+	</tr>
+
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Data Integration</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.avaki.com/" target="_new">Avaki</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">?</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Provides "Data Service Layer"</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Data Integration</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.metamatrix.com/" target="_new">MetaMatrix</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">?</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Provides Virtual Data Layer, 'Model-Driven Architecture', and supports Business Objects.
+		Supports standards - OMG's MOF, XMI and CWM.</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Data Integration</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.polarlake.com/" target="_new">PolarLake</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">?</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Database Integrator - 'Powerful graphical mapping and transformation Tools'.</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<td align=left class="cell" bgcolor="#B0D8FF">Data Migration</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.ascential.com/" target="_new">Ascential</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Involves Data Movement</td>
+	</tr>
+
+	<td align=left class="cell" bgcolor="#B0D8FF">Data Migration</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.informatica.com/" target="_new">Informatica</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Involves Data Movement. <br>Offers SOA, <b>Web Services</b>, a MetaData Exchange and support for <b>XML</b>.</td>
+	</tr>
+
+	<td align=left class="cell" bgcolor="#B0D8FF">Data Migration</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.sas.com/" target="_new">SAS</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Involves Data Movement</td>
+	</tr>
+
+	<td align=left class="cell" bgcolor="#B0D8FF">Data Migration</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.seebeyond.com/" target="_new">See Beyond</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Involves Data Movement.
+		<br>Offers a <b>Repository</b>, Global Customer Management,J2EE compliant and Web services-based approach,
+		an <b>Enterprise Service Bus</b>,Portals and executive <b>dashboards</b>
+		that track <b>key performance indicators</b> and provide
+		exception alerting for proactive business actions.
+		</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<td align=left class="cell" bgcolor="#B0D8FF">Data Modelling</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.silwoodtechnologies.com/" target="_new">Sapphir</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Provides Models for Siebel, SAP and other ERPS.</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">Data Warehouse</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.kalido.com/" target="_new">Kalido</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">Unique Dynamic Data Warehouse</td>
+	</tr>
+
+	<tr>
+		<td align=left class="cell" bgcolor="#B0D8FF">Data Warehouse</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.sas.com/" target="_new">SAS</a></td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Repository</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.asg.com/products/product_details.asp?code=ROC&id=50" target="_new">ASG Rochade</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Repository</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.ca.com/" target="_new">CA Platinum</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" colspan=7 bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Svc Oriented Arch</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.amberpoint.com/" target="_new">Amber Point</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">Yes</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Downloadable Trial available</td>
+	</tr>
+
+	<tr>
+		<td align=left   class="cell" bgcolor="#B0D8FF">Svc Oriented Arch</td>
+       		<td align=middle class="cell" bgcolor="#B0D8FF"><a href="http://www.polarlake.com/" target="_new">Polar Lake</a></td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">No</td>
+		<td align=middle class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+		<td align=left   class="cell" bgcolor="#B0D8FF">&nbsp</td>
+	</tr>
+
+	</table>
+
+
+<br>
+<OL><font color=blue FONT=Verdana size=2>
+<br><b>Relevant Industry Standards include :-</b>
+<br>CWM = Common Warehouse MetaModel
+<br>MOF = Meta-Object Facility from the OMG(Object Managament Group)
+<br>XMI = XML Interchange
+
+<br><br>
+<b>A series of Phases is shown below with increasing power and cost...</b>
+<li><b><I>Entry Level</I></b>
+<br>This provides a fixed solution for a Pilot Project at minimum cost.
+<br><UL><li>Microsoft Access and ODBC.</UL>
+
+<br>
+<li><b><I>Mid-Point Level</I></b>
+<br>This offers flexibility in the Data Integration Layer.
+<br><UL><li>Metamatrix
+<br><li>Saphir Data Modelling for SAP and Siebel.</UL>
+
+<br><br>
+<li><b><I>The Top-End</I></b>
+<br>A higher-price solution - including a Data Warehouse and Business Intelligence
+<br><UL><li>As above plus
+<br><li>Informatica or SeeBeyond
+<br><li>Kalido
+<br><li>Business Objects</UL>
+
+<br><br>
+<li><b><I>The Top-End ++</I></b>
+<br>The highest-price solution - providing a State-of-the-Art Solution.
+<br><UL><li>As above plus
+<br><li>Publish and Subscribe
+<br><li>Service oriented Architecture</UL>
+
+</OL>
+
+<br>
+<font color=blue FONT=Verdana size=2>
+<UL><li>Barry Williams
+<br>DatabaseAnswers.org
+</UL>
+
+	</td>
+	</tr>
+	</table>
+
+<!--- End of Nested Table is here. --->
+
+<p>&nbsp;</p></td>
+</tr>
+</table>
+
+
+	</td>
+	</tr>
+	</table>
+
+<!--- End of Nested Table is here. --->
+
+<p>&nbsp;</p></td>
+</tr>
+</table>
+
+
+
+
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td>
+</tr>
+<tr>
+	<td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td>
+</tr>
+<tr>
+	<td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td>
+</tr>
+</table>
+
+<table name="bottom NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.html"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue2.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.html"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.html"><img name="menu_careers" src="images/v3/menu-careers.gif" sOUrcE="images/v3/menu-careers-active.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.html"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.html"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.html"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.html"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.html"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+    <table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td>
+      </tr>
+      <tr>
+        <td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td>
+      </tr>
+    </table>
+    <!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td></tr></table>
+</body>
+</html>

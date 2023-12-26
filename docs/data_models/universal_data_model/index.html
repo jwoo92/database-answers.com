@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>Universal Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<!---
+<a HREeeeF="../father_of_all_models/index.html">
+<img align=right alt="Canonical Data Model" space="0" vspace="4" border=0 src="images/Canonical_Data_Model_without_Text_sml.jpg"></a>
+--->
+
+<a href="../father_of_all_models/index.html">
+<img align=right alt="Father of all Data Models (Click for large image)" space="0" vspace="4" border=0 src="../../images/father_of_all_data_models_sml.gif"></a>
+
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+--->
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="7%"><pre><font color=yellow face=Verdana size=2>The Database Answers Universal Data Model&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+<!---
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for Universal Data Model'>An Access Database</a> is available.
+--->
+<pre><font color=blue face=Verdana size=2>These are the Steps we followed in defining our Universal Data Model (UDM).
+
+Step 1 : Getting Started
+Recently (January, 2014) I started  thinking about the nature of a UDM.
+Then I realised that my starting-point would have to be my <a href="../canonical_data_models/index.html">Canonical Data Model</a> because I created it to be a transaction-level Generic Model.
+
+Step 2 : What else do I need ?
+My Canonical Data Model is Event-oriented so I wondered 'What do I need to include that is NOT an Event ?'
+I decided that everything that people do is an Event.
+At first it seemed I would have to include Activities as well as Events but I found that (In the UK) there is something called a <a href="http://www.horseshowcentral.com/flex/eventing_three_day_event/113/1" target="_new">Three-Day Event</a> which is an
+Equestrian competition, and, (of course) takes place over 3 days.
+
+Therefore I decided I did not need an extra Entity called Activities.
+
+So What I needed to include that is NOT an Event was the calculation of derived figures such as Financial Totals and data for Performance Reports.
+This might lead to the design for <a HREeeeF="data_mart.html">a Data Mart</a>, which is very useful for providing data for Reports and Business Intelligence.
+
+After more reflection, I realised that thw Model has to include things that happen before or after Events.
+In other words, those that are related to planning for Events or analysing Performance after EVents have taken place.
+
+Then I realised that all the things that happen before or after Events are simply other Events.
+
+Of course, we can identify different patterns in these Events so we can establish a Framework of Design Patterns.</pre>
+
+<table border=1><tr><td valign=top><br>
+<img align=left alt="Our Canonical Data Model" border=0 src="images/erwin_data_model.gif">
+</td>
+
+<td valign=top><pre><font color=blue face=Verdana size=2>
+We have <a href="data_model_showing_attributes.html">an earlier Top-Level Model showing Attributes</a> &nbsp;&nbsp;&nbsp;
+and some <a href="../subject_area_data_models.html"><b>Subject Area Models</b></a> :-
+<li><a href="../document_management_for_security/index.html">Documents</a>
+<li><a href="events_subject_area.html">Events</a>
+<li><a href="../inspections_of_facilities/index.html">Facilities</a>
+<li><a href="../locations/index.html">Locations</a>
+<li><a href="../parties_roles_and_customers/index.html">Parties, Roles and Customers</a>
+<li><a href="../product_catalogs/index.html">Product Catalogs</a>
+<li><a href="../service_assessment/index.html">Services</a>
+
+Barry Williams
+Database Answers Ltd.
+London, England
+<br>August 2nd. 2015
+
+<!-------
+<li><a href="../subject_area_data_models.html"><b>Subject Areas List</b></a>
+
+Other aspects include :-
+<li>Cars and Petrol
+<li>Payments
+<li>Suppliers
+<li>Support for Events
+<li>Trains and Schedules
+<li>Travel and Transport
+----->
+
+
+</td>
+</tr>
+</table>
+
+<center><font COLOr=blue face=Verdana size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2015</I></font>
+</center>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

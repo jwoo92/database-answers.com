@@ -1,0 +1,82 @@
+<html><head><title>Facts 2 - Airline Booking</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+<table bgcolor="#FFFFCC" border=0 cellpadding="0" width=80%>
+<tr>
+<td align=left valign=top>
+<H1><img alt="Database Answers Header" height=58 width=400 src="../../images/dba_banner_and_btn_400.jpg">
+<br><font color=red face="Comic Sans MS" size=4><b>FACTS for Airline Booking - Version 2</font>
+</td>
+<td align=right>
+<img alt="Sunset at Dulles Airport, Washington" height=94 width=255 src="../../images/dulles_airport_washington.jpg">
+</td>
+</tr>
+
+</table>
+<hr>
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+Back to the <a href="index.html">Conceptual Data Model</a>.
+<!-- begin body Text -->
+<P>
+<b>PURPOSE OF THESE FACTS :-</b>
+<br>These FACTS define the functional requirements which the Database must meet.
+<br>They form the basis for agreement between the User and the Database Designer and are
+<br>written in a form of structured English which is clear and unambiguous.
+<br>The Draft FACTS</a> have been defined and are detailed here ...
+<pre><font color=blue face="Verdana" size=2>A. The Area being Modelled is :-
+<li>An Airline Booking System.
+
+B. The THINGS OF INTEREST include :-
+B.1 Aircraft
+B.2 Destination Airports
+B.3 Flights
+B.4 Itineraries
+B.5 Origin Airports
+B.6 Passengers
+B.7 Passenger Bookings
+B.8 Seats
+B.9 Tickets
+B.10 Ticket Types
+B.11 Travel Class
+
+C. These THINGS OF INTEREST are Related as follows :-
+C.1 A PASSENGER can make one or many BOOKINGS.
+C.2 A BOOKING can be for one or many PASSENGERS.
+C.3 A BOOKING is always in a STATE,(e.g. Provisional, Confirmed or Cancelled).
+C.4 A GROUP_BOOKING can be for one or many PASSENGERS.
+C.5 A BOOKING can be for only one ITINERARY.
+C.6 A PASSENGER makes zero or many PAYMENTS for BOOKINGS.
+C.7 Each PAYMENT can be for one or many BOOKINGS.
+C.8 A BOOKING can be paid for by one or many PAYMENTS.
+C.9 An ITINERARY consists of one or many LEGS.
+C.0 A LEG is one aircraft taking off once and landing once
+    at different given airports at a given date and time with a particular
+    flight number.
+
+Barry Williams
+Principal Consultant
+Database Answers
+5th. November 2001
+</pre>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

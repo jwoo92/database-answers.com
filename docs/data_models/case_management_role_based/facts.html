@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>Facts for the Role-Based Legal Case Management Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a HREeeeF="http://www.systemiclogic.com/alternative-source-business-rules-engines-asbres/" target="_new"><img align=right alt="US Supreme Court" border=0 hspace="0" vspace="4" src="../../images/us_supreme_court_sml.jpg"></a>
+</td>
+</td>
+</td>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="right">
+<p class="time"><nobr><script language="JavaScript">theDate();</script>
+
+</p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>Data Model for Role-Based Legal Case Management</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+Back to the <a href="index.html">Data Model</a>
+
+<pre><font color=blue face="Verdana" size=2>Question to our Web Site :-
+
+Subject: Judicial Case Management Data Model
+Question: Background Info: I am in the process of designing a database for a legal case management system.
+
+One of the main tables of the system will be the CASE table.
+As one would assume, there are various types of actors involved along with their various roles.
+For example, I have a CASE_ROLE table tied between the CASE and CASE_ROLE_TYPE tables.
+
+Tied to the CASE_ROLE table is an ACTOR table.
+
+There are many different types of ACTORs in each CASE.
+
+Right now I have sub type tables, PERSON and ORGANIZATION tied to the ACTOR table.
+
+0Under the PERSON table there can be different types of PERSON which would also store their respective information.
+
+For example, under the PERSON table there can be ATTORNEY, JUDGE, OTHER, etc...
+
+I am trying to figure out the best database design to accommodate this ACTOR piece.
+
+Do you have a model that close resembles what I am looking to accomplish?
+
+Right now I have the ACTOR table and tied to it are PERSON and ORGANIZATION.
+
+Under Person I have tied to it ATTORNEY, JUDGE and OTHER.
+
+The primary key in ACTOR is actor_pk.
+
+In the person table I have a compound key of actor_fk and person_pk.
+
+In the ATTORNEY table I also have a compound key of actor_fk, person_fk and attorney_pk.
+
+Is there a better way this should be designed?
+
+Regards
+
+Mike
+</pre>
+
+<hr>
+
+<!----
+You can download a small sample of ten records for Air Travel Airline and Airport Codes in either CSV or XLS formats using the links provided.
+<b>Web Services</b> will be made available on this page as part of our Proof-of-Concept.
+
+Valuable data sources for Air Travel include this <a href="http://baa2.wordtravels.com/Airports/" target="_new">BAA WordTravels Airports Site</a>
+
+
+<table border=1 cellpadding=10>
+<tr>
+<td align=middle><font color=blue face=Verdana size=2><b>CATEGORY</td>
+<td align=middle><font color=blue face=Verdana size=2><b>TYPE</td>
+<td align=middle><font color=blue face=Verdana size=2><b>EXAMPLES</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Air Travel</td>
+<td><font color=blue face=Verdana size=2>Reference</td>
+<td><font color=blue face=Verdana size=2>Airline Codes (<a href="demo_data/ref_airline_codes_csv.csv">CSV</a>,<a href="demo_data/ref_airline_codes_xls.xls">XLS</a>),Airport Codes, (<a href="demo_data/ref_airport_codes_csv.csv">CSV</a>,<a href="demo_data/ref_airport_codes_xls.xls">XLS</a>),
+</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Air Travel</td>
+<td><font color=blue face=Verdana size=2>Master</td>
+<td><font color=blue face=Verdana size=2>Flight Schedules</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Calendar</td>
+<td><font color=blue face=Verdana size=2>Reference</td>
+<td><font color=blue face=Verdana size=2>Records Dates with Business days, Weekends and Corporate Financial Calendars</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>CRM</td>
+<td><font color=blue face=Verdana size=2>Reference</td>
+<td><font color=blue face=Verdana size=2>Booking Status,Contact Channels, Contact Outcomes, Contact Reasons</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>CRM</td>
+<td><font color=blue face=Verdana size=2>Master</td>
+<td><font color=blue face=Verdana size=2>Contact Channels, Contact Outcomes</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Customers</td>
+<td><font color=blue face=Verdana size=2>Reference</td>
+<td><font color=blue face=Verdana size=2>Address Types, Customer Categories, Product and Service Types</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Customers</td>
+<td><font color=blue face=Verdana size=2>Master</td>
+<td><font color=blue face=Verdana size=2>"A Single View of the Truth"</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Financial</td>
+<td><font color=blue face=Verdana size=2>Reference</td>
+<td><font color=blue face=Verdana size=2>Payment Methods, Transaction Types</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>ISO</td>
+<td><font color=blue face=Verdana size=2>Reference</td>
+<td><font color=blue face=Verdana size=2>Country Codes, Currency Codes</td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2>Personal</td>
+<td><font color=blue face=Verdana size=2>Reference</td>
+<td><font color=blue face=Verdana size=2>Gender, Marital Status, Relationship Types</td>
+</tr>
+
+</table>
+--->
+
+<center><font size=1><br><I> &#169 DataBase Answers Ltd. 2014</I></font></center></pre>
+
+
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

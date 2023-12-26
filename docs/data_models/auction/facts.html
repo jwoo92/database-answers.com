@@ -1,0 +1,93 @@
+<html><head><title>Auction Web Site</title><meta charset="UTF-8"></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+<table bgcolor="#FFFFCC" border=0 cellpadding="0" width=80%>
+<tr>
+<td align=left valign=top>
+<H1><img alt="Database Answers Header" border=0 height=66 width=475 src="../../images/dba_banner_and_btn.jpg">
+<br><font color=red face="Comic Sans MS" size=4><b>FACTS for a Database for an Auction Web Site</font>
+</td>
+<td align=right rowspan=1>
+<img align=right alt="An Auction in Fiji !!!" border=1 heiight=106 wiidth=180 src="../../images/vendors_vsml.jpg">
+</td>
+</tr>
+
+</table>
+<hr>
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+The design of this Database has been created by following
+<a href="../../approach2db_design.html"><b>our General Approach</b>.</a>
+
+<!-- begin body Text -->
+<P><b>PURPOSE OF THESE FACTS :-</b>
+<br>These FACTS define business requirements which the Database must support.
+<br>They form the basis for agreement between the User and the Database Designer and are
+<br>written in a form of structured English which is clear and unambiguous.
+<br>The Draft FACTS</a> have been defined and are detailed here ...
+<pre><font color=blue face="Verdana" size=2>A. The Area being Modelled is :-
+An Auction Web Site.
+
+<b>B. The Things of Interest, ('THINGS'), include :-</b>
+B.1 Auction Items
+B.2 Auction Item Categories
+B.3 Auction Item Status Codes
+B.4 Bids
+B.5 Bidders
+B.6 Payment Methods
+B.7 Payment Status
+B.8 Sellers
+B.9 Shipments
+
+<b>C. These THINGS are Related as follows :-</b>
+C.1 A BIDDER can place zero or many BIDS.
+C.2 A BID is always associated with one and only one BIDDER.
+C.3 A SELLER can provide one or more AUCTION ITEMS.
+C.4 An AUCTION ITEM can be in one or many AUCTION ITEM_CATEGORIES.
+C.5 An AUCTION ITEM can have zero or one PAYMENT METHODS.
+C.6 An AUCTION ITEM can have zero or one PAYMENT DATES.
+C.7 An AUCTION ITEM can have zero or one SHIPMENT METHOD.
+    Before it is shipped, this field would be blank or NULL,
+    and would be populated after it is shipped.
+C.8 An AUCTION ITEM can have zero or one SUCCESSFUL BIDDER.
+    Before a successful Bidder is identified, this field would
+    be blank or NULL, and would be populated after it is shipped.
+
+<b>D. Other Characteristics of these THINGS include :-</b>
+D.1 An AUCTION ITEM always has a RESERVED PRICE
+D.2 An AUCTION ITEM has zero or one ACTUAL SELLING PRICE.
+
+
+<b>E. Sample Data includes :-</b>
+To be determined
+
+<b>F. Typical Enquiries include :-</b>
+F.1 To be defined if required.
+
+
+Barry Williams
+Principal Consultant
+Database Answers
+25th. February 2001
+</pre>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../../index.html">Home Page</a>
+        | <a href="../../ask_a_question.html">Ask Us a Question</a>
+        | <a href="../../a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="../../faqs.html">FAQs</a>
+        | <a href="../../site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

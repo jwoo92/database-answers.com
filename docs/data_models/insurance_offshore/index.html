@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>The Insurance BI Offshore Data Model</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script>#</script>
+
+<table name="CHANGE MY WIDTH" width="100%" border=0 cellspacing=0 cellpadding=0><tr><td>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table name="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td align=right height=95 rowspan=2 width="100%" valign=middle>
+<a href="http://www.zurich.com/main/annualreport2010/servicepages/welcome.html" target="_new">
+<img align=right alt="Zurich, Switzerland (Click for Zurich Insurance Web Site)" border=0 hspace="0" vspace="4" src="images/zurich_switzerland_sml.jpg"></a>
+</td>
+</tr>
+
+<tr>
+<td width="100%" align="LEFT">
+
+<p class="time">
+<img alt="Printer" src="../../images/printer_icon.gif">
+<a href="print_version.html"><font color=blue face=Verdana size=1>Printer-friendly version</font></a>
+<nobr></p>
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../../data_models/index.html"><font color=yellow face=Verdana size=2>Data Models</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<font color=blue face="Verdana" size=2>
+<table bgcolor="#B0D8FF" bgcolor="#98CEFD" border=0 cellpadding=5 CELLSPACING=5 width=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td align=left background="../../images/nav_bg.jpg" height="32" width="10%"><pre><font color=yellow color="#FFFFFF" face=Verdana size=2>The Insurance BI Offshore Data Model&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!--- END OF PAGE NAME --->
+
+
+
+<table name="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<font color=blue face=Verdana size=2>
+
+<a href='mailto:dba_requests@barryw.org?subject=Request for Database for the Offshore Insurance Database'>An Access Database</a> is available on demand.
+
+<br><br><a href="facts.html">The Requirements</a> have been defined in a Question to this Web Site.
+
+<br><br>We would be glad to have
+<a href='mailto:dba_requests@barryw.org?subject=Comments Database for Insurance Offshore'>your comments</a>.
+
+<br><br>If you are new to Data Models, this page of my new Tutorial will help you <a href="../../tutorial4_db_schema/tutorial_slide_5.html"><b>understand the Data Model</b></a>.
+
+<br><br>Here's some very useful information about <a href="http://www.acord.org/Pages/default.aspx" target="_new">Insurance Data Standards</a> from ACORD,
+which was built on the
+<a href="http://www.prima-solutions.com/frontOffice/en/products/primaIBCS.jsp?lang=en" target="_new">
+Prima Reference Data Model</a>.
+
+<br><br>KPIs are very useful and here are two sources :-
+<li><a href="http://kpilibrary.com/categories/insurance" target="_new">KPIs for Insurance</a>
+<li><a href="http://www.smartkpis.com/kpi/industries/financial-institutions/insurance/" target="_new"><I>49 "smart</I>KPIs" for Insurance</a>
+<br><br>
+
+<!---
+<br><br>
+Here is a good example of BI Graphics for <a href="http://www.cifc.co.uk/Fundratios09.html" target="_new">KPIs for Fund Raising</a> from the Centre for Inter-Firm Comparison.
+--->
+
+<hr>
+<font color=red><b>Our Entities in the ERD are aligned with the "Primary Objects in the ACORD Data Model".</b></font>
+<hr>
+<!--- <br><br>There is also a design for <a href="data_warehouse.html">a Data Warehouse</a>. --->
+
+<!--- which will be very useful for providng data for Reports and Business Intelligence. --->
+
+
+
+
+<br><br>
+
+<table border=1>
+
+<tr>
+<td align=middle valign=top>
+<font color=blue face=Verdana size=2><b>1) Conceptual Data Model</b>
+<br>we start with a simple KPI like '% Successful Claims'
+
+<br><br><img align=left alt="Insurance Conceptual Data Model" border=0 src="images/conceptual_data_model.jpg">
+</td>
+
+
+<td align=middle valign=top>
+<font color=blue face=Verdana size=2><b>2) ER Model</b>
+<br>(Phase 2)
+
+
+<br><b>On Jan 06th I revised the Model after my discussion with ACORD.</b>
+
+<!--------
+<br>Shall we start with a Phase 1 ER Model by removing Customer_Demographics
+and the 3 Policy Types ?
+---------------->
+
+<!------ <br><br><img align=left alt="Insurance 3NF Data Model" border=0 src="images/data_model_phase_1.gif""> -------->
+<br><br><img src="images/logical_data_model_jan06th.gif">
+
+</td>
+</tr>
+
+<tr>
+<td align=middle colspan=2 valign=top><font color=blue face=Verdana size=2><b>3) Dimensional Model</b>
+<br>We will modify this Dimensional Model to keep it in line with our ERD Phase 1)
+<br><br><img align=left alt="Insurance Dimensional Model" border=0 src="images/insurance_dimensional_model.gif"">
+</td>
+</tr>
+</table>
+
+<br><br>There are also designs for :-
+<li><a href="data_staging_process.html">Data Staging Process</a>
+<li><a href="data_staging_tables.html">Data Staging Tables</a>
+
+
+
+
+<br><br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+<br>February 5th. 2017
+<br>
+</td>
+</tr>
+</table>
+
+<center><font COLOr=blue face=Verdana size=1>
+<br><br><I> &#169 DataBase Answers Ltd. 2017</I></font>
+</center>
+
+</td>
+</tr>
+</table>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT width=10%><a style="text-decoration:none" href="../../about_us.html"><font color="#FFFFFF" face=Verdana size=2>About Us</font></a>
+</td>
+
+	<td align=LEFT width=15%><a style="text-decoration:none" href="../../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

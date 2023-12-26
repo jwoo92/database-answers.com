@@ -1,0 +1,59 @@
+<html><head><title>Slide 6 - Tutorial on Database Schema</title><meta charset="UTF-8"></head>
+
+<body text="#202020">
+
+<font color=blue face=Verdana size=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<b>Tutorial on Database Schema - Slide 6</b> - Pay the Bill in Starbucks
+<br><br><a href="tutorial_slide_5.html">Back</a>&nbsp;&nbsp;&nbsp;<a href="tutorial_slide_7.html">Next Slide</a>
+
+<br><br>
+<!--- <img alt="Customers and Products Data Model" src="images/customers_and_products_dezign.gif"> --->
+
+<font color=blue face=Verdana size=2>
+<OL>
+<b><li>Pay the Bill</b>
+<UL><li>Enter Starbucks</UL>
+<UL><li>Order Coffee and Something to Eat</UL>
+<UL><li>Finally Pay for it.
+</OL>
+
+<img alt="Customer places an Order" src="images/starbucks_pay_the_bill.gif">
+
+<br><br>
+<hr><b>Payments</b>
+<li>Of course, we have to pay for what we have ordered before we get to consume it.
+<li>Fortunately, paying in Starbucks is quite straightforward.
+<li>In passing, let's note that the total price we have to pay is derived from the total cost of the individual items.
+
+<br><br><b>Customer Payment Methods</b>
+<li>These will usually be Cash or Credit Card, and are shown in more detail in the next diagram.
+<li>Payments are simpler at Starbucks than Amazon.com, but our design is general and covers both.
+
+<br><br>
+<b>Derived Data</b>
+<li>The total price we have to pay is derived from the total cost of the individual items.
+<li>In a 'Normalised' Database Schema, we do not normally show derived fields, such as total figures.
+<li>This allows us to drill-down to the basic fundamental data.
+<li>We want to get to the point where we can't remove anything without losing meaning or value.
+<li>For this reason, I have shown the total price as a 'Derived' field, and called it 'der_order_price'.
+<li>One of the strengths of the Relational Database is that it strips away everything which is not fundamental.
+
+
+<br><br>
+<b>Reference Data</b>
+<li>Reference data is important, because it occurs in virtually every Database Schema in the real world.
+
+<br><br><b>Status</b>
+<li>The status of an order in Starbucks usually changes so quickly that we don't need to keep track of it.
+<li>It is shown here to anticipate its use for Amazon.com, which is more complex, as we will see later.
+<li>The Status can be part of the Customer_Orders table, and take values from the 'Ref_Order_Status_Codes' table.
+<hr>
+<br><br><br><I> &#169 DataBaseAnswers.org 2006</I></font>
+
+</body>
+
+</html>
+

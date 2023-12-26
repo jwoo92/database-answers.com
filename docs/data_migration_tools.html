@@ -1,0 +1,443 @@
+<html>
+
+<head><title>Migration Tools Features Analysis</title></head>
+
+<body text="#202020">
+
+<a name="TOP">
+
+<table bgcolor=blue width=90%>
+<tr>
+<td align=left valign=top><img alt="Database Answers Logo" height=67 width=417 src="images/ivans_dba_logo_alt.jpg"></td>
+<td rowspan=2><a href="images/philg/japan/kiyomizu-dera_lge.jpg">
+<img align=right alt="Kiyomizu Forest, Japan  - Click for large picture(91K)" border=1 height=102 width=187 src="images/philg/japan/kiyomizu-dera_sml.jpg"></a>
+</td>
+</tr>
+<tr>
+<td valign=bottom><font color=red face="Comic Sans MS" size=4>
+<b>Data Migration Tools - Features Analysis</font></td>
+</tr>
+</table>
+
+<hr>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<font color=blue face="Verdana" size=2>
+All of these Tools can perform Extraction, Validation, Conversion and Loading into a Target Data Destination,(usually a Database).
+
+<br>The Analysis shown here is in the context of the <a href="data_arch/index.html">Data Architecture</a> described elsewhere on this Site.
+<P>The Analysis is intended to help identify products which meet the requirements of the Architecture.
+<br>The key component of the Architecture is a Data Dictionary which can be used to
+generate executable code for Data Migration.
+
+
+<P>
+Here's a short list of some recommended Data Migration Tools, and
+<br>if you have any specific recommendations or comments, please <a href="mailto:info@databaseanswers.com">email me.</a>
+
+<P><a href="http://www.realsoftstudio.com/" target="_new"><b>SQL Porter</b></a> looks good. <img src="/images/new.gif">
+
+<P><b>Real-Time</b> means that changes to Data Sources can be automatically monitored
+and rippled through to the Target Data Destinations.
+<br>Most of these products can be set to run automatically at short intervals, such as 1 minute,
+so that any changes can be rippled through at that frequency.
+<br>This is not Real-Time, but for many requirements, this will be adequate, technically simpler and cheaper.
+<hr><b>The Oracle WebHouse Builder :-</b>
+<li>Integrates data from OLTP,mainframe-based, ERP and e-Business systems.
+<li>A Design Tool and an ETT Tool, offering powerful graphical schema design facilities specifically for
+Data Warehousing,(e.g. <a href="data_models/images/ora_star_dimension_editor.gif">Star Schemas).</a>
+
+<li>Source-to-Target Mappings defined graphically.
+<li>Code is generated and can be optimized, enhanced or tuned.
+<li>Compatible with the Common Warehouse Model.
+<hr>
+<P>
+
+<center>
+<center><table border=1 cellpadding=5>
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>VENDOR</td>
+<td align=middle colspan=4 valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.datamirror.com" target="_new">DataMirror</a></td>
+<td valign=top><font color=blue face=Verdana size=2>Comment</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>PRODUCT</td>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.constellar.com/products.html" target="_new">iDeliver</a></td>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.constellar.com/products.html" target="_new">Transform Server</a></td>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.constellar.com/products.html" target="_new">Constellar HUB</a></td>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.constellar.com/products.html" target="_new">Web Integrator</a></td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Price</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>$70,000</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>$70,000</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>$250,000</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Approach</td>
+<td align=middle colspan=4 valign=top><font color=blue face=Verdana size=1>Uses a Data Dictionary to store Mappings defined in a
+ Transformation Definition Language.</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Comment</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Entry Level</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Data Dictionary</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Job Scheduler</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Publish & Subscribe</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Real-Time</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Within 5 seconds acceptable</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>UML</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Planned</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=1><b>Validation of Source Data</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Required</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>XML</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+</table>
+
+<P>
+
+<hr>
+
+<P>
+
+<center><table border=1 cellpadding=5>
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>VENDOR</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.dataflux.com" target="_new">DataFlux</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.datajunction.com" target="_new">DataJunction</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.eti.com" target="_new">ETI Corporation</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.metagon.com" target="_new">Metagon</a></td>
+
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.sagent.com" target="_new">Sagent</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.seebeyond.com" target="_new">seeBeyond</a></td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>PRODUCT</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.dataflux.com" target="_new">DataFlux</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.datajunction.com" target="_new">Data Junction</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.eti.com/" target="_new">ETI*Extractor</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.metagon.com/" target="_new">DQ Broker</a></td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.sagent.com" target="_new">Sagent</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.seebeyond.com" target="_new">e*Gate</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Price Range</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>$350 - $1,000</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>$25,000 - $250,000</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>$250,000</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Approach</td>
+<td align=middle colspan=6 valign=top><font color=blue face=Verdana size=1>All Products Use a Data Dictionary to store Mappings defined in a
+ Transformation Definition Language.</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Comment</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Consistent Award Winner</td>
+<td valign=top><font color=blue face=Verdana size=2>Industrial-Strength</td>
+<td valign=top><font color=blue face=Verdana size=2>A Serious Competitor</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Well-Established</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Data Dictionary</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Job Scheduler</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Publish & Subscribe</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Real-Time</b>
+           <br><font size=1>Within 5 seconds acceptable</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>No ?</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes ?</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>Replication</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>No ?</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes ?</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>UML</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=1><b>Validation of Source Data</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2><b>XML</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td align=middle valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+</table>
+
+<P>
+
+<!----
+<tr>
+<td><font color=blue face=Verdana size=2><b>PRODUCT</b></td>
+<td><font color=blue face=Verdana size=2><b>VENDOR</b></td>
+<td><font color=blue face=Verdana size=2><b>TYPICAL PRICE</b></td>
+<td><font color=blue face=Verdana size=2><b>DATA DICTIONARY</b></td>
+<td><font color=blue face=Verdana size=2><b>REAL-TIME</b></td>
+<td><font color=blue face=Verdana size=2><b>XML</b></td>
+<td><center><font color=blue face=Verdana size=2><b>COMMENTS</b></td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2><b>TYPICAL PRICE</b></td>
+<td><font color=blue face=Verdana size=2><b>DATA DICTIONARY</b></td>
+<td><font color=blue face=Verdana size=2><b>REAL-TIME</b></td>
+<td><font color=blue face=Verdana size=2><b>XML</b></td>
+<td><center><font color=blue face=Verdana size=2><b>COMMENTS</b></td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2><b>TYPICAL PRICE</b></td>
+<td><font color=blue face=Verdana size=2><b>DATA DICTIONARY</b></td>
+<td><font color=blue face=Verdana size=2><b>REAL-TIME</b></td>
+<td><font color=blue face=Verdana size=2><b>XML</b></td>
+<td><center><font color=blue face=Verdana size=2><b>COMMENTS</b></td>
+</tr>
+
+<tr>
+<td><font color=blue face=Verdana size=2><b>TYPICAL PRICE</b></td>
+<td><font color=blue face=Verdana size=2><b>DATA DICTIONARY</b></td>
+<td><font color=blue face=Verdana size=2><b>REAL-TIME</b></td>
+<td><font color=blue face=Verdana size=2><b>XML</b></td>
+<td><center><font color=blue face=Verdana size=2><b>COMMENTS</b></td>
+</tr>
+
+<table border=1 cellpadding=5>
+<tr>
+<td><font color=blue face=Verdana size=2><b>PRODUCT</b></td>
+<td><font color=blue face=Verdana size=2><b>VENDOR</b></td>
+<td><font color=blue face=Verdana size=2><b>TYPICAL PRICE</b></td>
+<td><font color=blue face=Verdana size=2><b>DATA DICTIONARY</b></td>
+<td><font color=blue face=Verdana size=2><b>REAL-TIME</b></td>
+<td><font color=blue face=Verdana size=2><b>XML</b></td>
+<td><center><font color=blue face=Verdana size=2><b>COMMENTS</b></td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.dataflux.com/products.asp" target="_new">Data Flux</a></td>
+<td valign=top><a href="http://www.dataflux.com" target="_new"><font color=blue face=Verdana size=2>Data Flux</a></td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.datajunction.com/products/index.html" target="_new">Data Junction</a></td>
+<td valign=top><a href="http://www.datajunction.com" target="_new"><font color=blue face=Verdana size=2>Data Junction</a></td>
+<td valign=top><font color=blue face=Verdana size=2>$350 - $1,000</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>No ?</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>Consistent Award Winner</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.eti.com/products/" target="_new">ETI Extractor</a></td>
+<td valign=top><a href="http://www.eti.com" target="_new"><font color=blue face=Verdana size=2>ETI</a></td>
+<td valign=top><font color=blue face=Verdana size=2>$25,000 - $250,000+</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>No ?</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Industrial-Strength Product</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.metagon.com/software/software.html" target="_new">DQBroker, etc..</a></td>
+<td valign=top><a href="http://www.metagon.com" target="_new"><font color=blue face=Verdana size=2>Metagon</a></td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>A Serious Competitor</td>
+</tr>
+
+<tr>
+<td valign=top><font color=blue face=Verdana size=2>
+<a href="http://www.seebeyond.com/products/" target="_new">e*Gate,etc..</a></td>
+<td valign=top><a href="http://www.metagon.com" target="_new">
+<font color=blue face=Verdana size=2>SeeBeyond</a></td>
+<td valign=top><font color=blue face=Verdana size=2>$250,000</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Yes ?</td>
+<td valign=top><font color=blue face=Verdana size=2>&nbsp</td>
+<td valign=top><font color=blue face=Verdana size=2>Well-established</td>
+</tr>
+
+</table>
+--->
+
+</center>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="index.html">Home Page</a>
+        | <a href="ask_a_question.html">Ask Us a Question</a>
+        | <a href="a_day_in_the_life.html">Day in the Life</a>
+        | <a href="mailto:info@databaseanswers.com">Email Us</a>
+        | <a href="faqs.html">FAQs</a>
+        | <a href="site_map.html">Search & Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 IceBreaker WebDesigns 2001</I></font></center>
+
+</html>

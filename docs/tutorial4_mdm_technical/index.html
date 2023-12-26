@@ -1,0 +1,1805 @@
+<html>
+<head><title>Tutorial on Master Data Management from a technical point of view</title>
+
+<meta Name="description"
+Content="We provide a Library of Data Models and free Databases.">
+<meta Name="keywords"
+Content="free access databases, access databases, access data models, data models,database designs, free databases, generic data models">
+
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!--  Start of Table 1 --->
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td ROWSPANnnn=1 valign=middle><img alt="Database Answers" src="../images/dba_400_home.jpg" width=400 height=58></td>
+<td align=right rowspan=2 valign=middle nowrap>
+<a href="images/father_of_all_data_models.gif" target="_new">
+<img alt="The Father of all Data Models" border=0 src="images/father_of_all_data_models_sml.gif"></a>
+</td>
+</tr>
+
+</table>
+<!--  End of Table 1 --->
+
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../data_models/index.html"><font color=white face=Verdana size=2>Data Models</font></a></td>
+         <td width=10%><a style="text-decoration:none" href="../tutorials.html"><font color=yellow face=Verdana size=2>Tutorials</font></a></td>
+          <td width="7%"><a style="text-decoration:none" href="../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!--  Start of Table 2 --->
+<!---
+<table border=0 name="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><a href="../index.html"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+	<td><a href="../careers.html"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.html"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.html"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.html"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+
+<td><a href="../pi_information_catalog/browse.asp"><img src="../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>
+	<td><a href="../search.html"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.html"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+--->
+<!--  End of Table 2 --->
+
+<!--  Start of Table 3 --->
+<table name="GRAY NAVBAR" border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td width=80% bgcolor="#CCCCFF" align=center>
+
+<!--  Start of Table 5 --->
+
+	<table border=0 cellpadding=0 cellspacing=0 valign=top width=100%>
+	<tr>
+	<td> <!-- Body Starts -->
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<!--  Start of Table 6 --->
+
+	<table border=0 width=100% WIiiiDTH=580 cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="61">&nbsp;</td>
+	<td rowspan="4" width="6"><img src="/images/spacer.gif" width="6" height="1"></td>
+	<td colspan="3" width="100%" align="right" class="header1"><b>Welcome to our Tutorial on Master Data Management</b>
+	<img src="/images/spacer.gif" width="5" height="1"></td>
+	<td width="3" bgcolor="#FF9900"><img src="/images/px-orange.gif" width=1 height="20"></td>
+        </tr>
+
+        <tr>
+	<td rowspan="3" valign="top" width="61">&nbsp;</td>
+     	<td colspan="4" height=0 rowspan="3" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height=0>
+            <tr bgcolor="#FF9900">
+            <td><img src="/images/px-orange.gif" width="1" height=3></td>
+            </tr>
+            </table>
+
+<!--  End of Table 6   --->
+<!--  Start of Table 7 --->
+
+            <table bgcolor=white width="100%" border=0 cellspacing="0" cellpadding="0">
+            <tr>
+            <td bgcolor="#FF9900"><img src="/images/px-orange.gif" width="3" height="1"></td>
+
+	    <td align=left bgcolor="#CCCCFF" WIiiiDTH=15% width="90" backgroundDDD="images/px-left.guf" valign="top" bgcolor="#3399CC">
+	    <font color=blue face=Verdana size=2>
+
+<!---	<br> --->
+	<table border=2>
+
+	<tr>
+	<td colspan=2 valign=top><font color=blue face=Verdana size=2><b>INTRODUCTION :</b>
+	<br>This Tutorial is on <b>Master Data Management</b> from a technical point of view.
+	<br>It presents the Steps involved as Best Practice.
+	<br><br>
+	Topics covered in this Tutorial include Data Sources and Targets, mapping between them, Data Quality, Data Governance and Reference Data
+
+	<br><br>I hope you find this Tutorial interesting and helpful.
+	<br>Please
+	<a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on Tutorial on Master Data Management'>email me</a> and let me know.
+
+	<br><br>These are the Steps in the Tutorial :-
+	<OL>
+	<li>Agree the Scope of the Project
+	<li>Identify the Data Sources
+	<li>Determine the Target
+	<li>Specificy the Mapping between Sources and Target.
+	<li>Review Guidelines for managing Reference Data
+	<li>Address the Issue of Data Quality
+	<li>Ensure comliance with Data Governance
+	</OL>
+
+	My starting-point is a list of <a href="../data_models/top_ten_data_models_law_enforcement.html"><b>14 relevant Data Models</b></a>.
+	<br>
+	</td>
+	</tr>
+
+	<tr>
+	<td valign=top><font color=blue face=Verdana size=2><b>1) Case Management :</b>
+
+<br><br><br>
+<center>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Case Management Model</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Cases_Trials</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Organisation_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Trial_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Trial_Status</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+</center>
+
+<!---
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Org and People Model</td>
+	<td><font color=blue face=Verdana size=2><b>Police Model</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Account</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Calendar</td>
+	<td><font color=blue face=Verdana size=2>Easily added to Org & People</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Party</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Asset</td>
+	<td><font color=blue face=Verdana size=2>Vehicle</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Event</td>
+	<td><font color=blue face=Verdana size=2>Business Activity</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Organisation</td>
+	<td><font color=blue face=Verdana size=2>Organisation</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>Person</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+--->
+
+
+
+
+	</td>
+
+	<td>
+	<img align=left alt="Case Management Data Model" src="images/case_management_model.gif">
+	<br>
+	</td>
+	</tr>
+
+<tr>
+<td><img align=right alt="Police Departments Data Model" src="images/police_departments_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>2) POLICE DEPARTMENTS DATA MODEL</b>
+
+<br><br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Police Department Model</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Departments</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incidents</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Status</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>3) POLICE GENERALIZED DATA MODEL</b>
+<br>This is a draft we produced a while ago.
+<br>It is not a Data Source but we need to be sure that it is compatible with the MDM Target Data Model.
+<br><br><br>
+<center>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Police Generalised Data Model</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Incidents</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Locations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Persons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Physical Objects</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Equipment</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Vehicles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Physical_Object_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+
+<!---
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Status</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+--->
+
+</table>
+</center>
+
+</td>
+<td><img align=left alt="Police Generalized Data Model" src="images/police_generalized_data_model.gif">
+<br>
+</td>
+</tr>
+
+
+	<tr>
+	<td>
+	<img align=right alt="Police Information Reports Data Model" src="images/police_information_reports_model.gif">
+	<br>
+	</td>
+
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>4) POLICE INFORMATION  REPORTS :</b>
+	<br>This is not a Data Source except that we need to be sure that the basic Entities are included in the Target
+MDM Data Model so that we can produce the required Reports.
+	<OL>
+	<li> At this Stage, we show only the Entities with no Relationships and minimum Attributes.
+	and specify only the Primary Key and one 'details' field that will be replaced later on..
+
+<br><br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Police Information reports</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Crimes</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Locations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Persons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Vehicles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Crime_Categories</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+
+	</td>
+	</tr>
+
+
+
+
+
+
+
+<tr>
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>5) PRISONS AND PRISONERS :</b>
+
+<br><br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Prisons and Prisoners Model</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Offences</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prison_Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisoners</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Gender</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Offence_Category</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Probation_Status</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Staff_Roles</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+
+</td>
+
+<td valign=top><img align=left alt="Prisons and Prisoners Data Model" src="images/prisons_and_prisoners_model.gif">
+<br>
+</td>
+
+</tr>
+
+
+
+
+<tr>
+<td valign=top><img align=right alt="Tracking Evidence" src="images/tracking_evidence_model.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>6) TRACKING EVIDENCE :</b>
+
+<br><br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Tracking Evidence Model</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Departments</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incidents</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Status</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Incident_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+
+<!---
+<br>At this Stage, we add Reference Data.
+<li>This diagram shows how the hierarchies of Products and Product Types that we have just discussed are shown in our <b>Entity-Relationship Diagram</b>.
+<br><li><b>One-to-Many Relationships</b>
+<OL><li>A Customer can have more than one Payment_Method, for example, American Express or Cash.
+<li>In other words, we would say that the Relationship is <b>optional</b> at the Customers_Payment_Methods Table end.
+<li>This is shown by the symbol that has three small lines at that end of the Relationship dotted line, which is referred to as <b>Crow's Feet</b>.
+</OL>
+</OL>
+<br><li><b>Optional Key Fields</b>
+<OL><li>Not every Customer will have a Payment_Method. In general, they would but we need to allow for situations where Customers change their minds and don't buy anything.
+<li>In other words, we would say that the Relationship is <b>optional</b> at the Customers_Payment_Methods Table end.
+<li>This is shown by the little 'O' at that end of the Relationship dotted line.
+</OL>
+
+</OL>
+</OL>
+--->
+
+
+
+
+</td>
+</tr>
+
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>7) TRAFFIC COPS AND TICKETS :</b>
+
+<br><br><br>
+<center>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2><b>Reference Data</td>
+	<td><font color=blue face=Verdana size=2><b>Comment</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Tickets</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Vehicles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Violaters</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Violations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Document_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Payment_Methods</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Ticket_Status</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Vehicle_Types</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+</table>
+</center>
+
+	</font>
+	</td>
+
+	<td valign=top>
+	<img align=rleft alt="Traffic Cops and Tickets" src="images/traffic_cops_and_tickets_model.gif">
+	<br>
+	</td>
+	</tr>
+
+	<tr>
+	<td valign=top>
+	<br><br>
+	<font color=blue face=Verdana size=2><b>This is the MDM Police Model which is the Target</b></font>
+	<br><br>
+	<img align=left alt="MDM Police Data Model" src="images/MDM_police_model.gif">
+	<br>
+	</td>
+
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>8) ENTITY MAPPING SPECIFICATIONS :</b>
+
+<br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Source Area</td>
+	<td><font color=blue face=Verdana size=2><b>Source Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Target Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Ref Data</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+
+	<td><font color=blue face=Verdana size=2>Cases_Trials</td>
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incidents</td>
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incident_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incident_Status</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incident_Types</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Departments</td>
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incidents</td>
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incident_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incident_Status</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incident_Types</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Offences</td>
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Prisons</td>
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Prison_Staff</td>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Persons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Gender</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Offence_Category</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Probation_Status</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Staff_Roles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Tickets</td>
+	<td><font color=blue face=Verdana size=2>Documents</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Vehicles</td>
+	<td><font color=blue face=Verdana size=2>Vehicles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Violaters</td>
+	<td><font color=blue face=Verdana size=2>Persons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Violations</td>
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Document_Types</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Payment_Methods</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Ticket_Status</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Vehicle_Types</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>Ref</td>
+</tr>
+
+</table>
+
+<!---
+	<UL><li>This diagram shows Address Types, which are an example of Reference Data.
+	<li>This kind of data has the following characteristics :-
+	<OL><li> it doesn't change very much
+        <li>it has a relatively small number of values, usually less than a few dozen and never more than a few hundred.
+	<li>Therefore we can show it with a Code as a Primary Key.
+	<li>Data in Reference Data Tables can be used to populate drop-down lists for Users to select from.
+	<li>In this way, it is used to ensure that all new data is valid.
+	</OL>
+
+	<li><b>Standards</b>
+	<UL><li>In the Address Table, you will see a field called 'iso_country_codes'.
+	<li>iso stands for the 'International Standards Organisation'.
+	<li>Where possible, it's always good to use national or international standards.
+	</OL>
+
+</OL>
+
+
+	<br><br><b>Customer Addresses</b>
+	<li>This is a general and flexible approach to handling Addresses in our Data Model.
+	<li>We have a separate Address Table, which allows us to have more than one Address for any Customer very easily.
+	<li>This design also has some other benefits :-
+	<OL><li>We can accomodate more than one person at the same Address.
+	We need to do this because different members of a family may sign-up separately with Amazon.
+	<li>With a separate table of Addresses, we can easily use commercial software to validate our Addresses.
+	To find this kind of software, simply Google for "Address Validation Software".
+	I have used QAS with great success in the past.
+	With this approach, we can always be sure that we have 100% good Address data in our Database.
+	</OL>
+--->
+
+	</td>
+
+
+	</tr>
+
+<hr>
+<!-- Start of text to copy --->
+<!---
+<tr>
+<td><img align=right alt="Orders - Version 1" src="images/orders_v1.gif">
+<br>
+</td>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>8) COMMENTS :</b>
+<li>This is a very simple (and unrealistic) Diagram.
+<li>It shows that Customers order Products,such as Latte and a Muffin
+</td>
+</tr>
+
+	<tr>
+	<td valign=top>
+	<font color=blue face=Verdana size=2>
+	<b>10) COMMENTS :</b>
+	<li>This is a realistic Diagram showing the detail necessary
+	to correctly model Customers, Products and Order details.
+	</td>
+
+	<td>
+	<img align=rleft alt="Orders (Version 2)" src="images/orders_v2.gif">
+	<br>
+	</td>
+	</tr>
+--->
+
+
+<!-- Start of text to copy --->
+<tr>
+
+<td valign=top>
+<font color=blue face=Verdana size=2>
+<b>9) REFERENCE DATA :</b>
+<OL>
+<b>Each Data Source will have its own sets of Reference Data.</b>
+<br>These have to be mapped to a common set of Data, which in turn is subject to corporate Data Governance.
+</td>
+<td><img align=left alt="MDM Reference Data" src="images/MDM_reference_data.gif">
+<br>
+</td>
+
+</tr>
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+<br><b>10) FIELD LEVEL MAPPING SPECIFICATIONS</b>
+<br>These Specifications have been partially completed to provide guidelines.
+
+<br><br>
+<table border=1>
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Source Area</td>
+	<td><font color=blue face=Verdana size=2><b>Source Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Source Field</td>
+	<td><font color=blue face=Verdana size=2><b>Field Validation</td>
+	<td><font color=blue face=Verdana size=2><b>Field Transformation</td>
+
+	<td><font color=blue face=Verdana size=2><b>Target Entity</td>
+	<td><font color=blue face=Verdana size=2><b>Target Field</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>line_1_building</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>line_2_street</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>line_3_area</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>city</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>zip_postcode</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>state_county</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>country</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Cases_Trials</td>
+	<td><font color=blue face=Verdana size=2>trial_outcome_code</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Map to Target Ref Data</td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Cases_Trials</td>
+	<td><font color=blue face=Verdana size=2>trial_status_code</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Map to Target Ref Data</td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Cases_Trials</td>
+	<td><font color=blue face=Verdana size=2>trial_start_date</td>
+	<td><font color=blue face=Verdana size=2>> Jan 1/2000</td>
+	<td><font color=blue face=Verdana size=2>Copy </td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>event_start_date</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Cases_Trials</td>
+	<td><font color=blue face=Verdana size=2>trial_end_date</td>
+	<td><font color=blue face=Verdana size=2>Not Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Copy </td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>event_end_date</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Cases_Trials</td>
+	<td><font color=blue face=Verdana size=2>expected_duration</td>
+	<td><font color=blue face=Verdana size=2>N/A</td>
+	<td><font color=blue face=Verdana size=2>Copy </td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>other_data</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incidents</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>organisation_name</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Copy</td>
+
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>organisation_name</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>first_name</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Copy</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>first_name</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>middle_name</td>
+	<td><font color=blue face=Verdana size=2>Not Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Copy</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>middle_name</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>last_name</td>
+	<td><font color=blue face=Verdana size=2>Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Copy</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>last_name</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>date_of_birth</td>
+	<td><font color=blue face=Verdana size=2>Not Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Copy</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>date_of_birth</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>People</td>
+	<td><font color=blue face=Verdana size=2>gender</td>
+	<td><font color=blue face=Verdana size=2>Not Mandatory</td>
+	<td><font color=blue face=Verdana size=2>Copy</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>gender</td>
+</tr>
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Departments</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incidents</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Associates</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Offences</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Prisons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Organisations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Prison_Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Prisoners</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Persons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+
+
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Addresses</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Officers</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Staff</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Tickets</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Documents</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Vehicles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Vehicles</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Violaters</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Persons</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Violations</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+
+	<td><font color=blue face=Verdana size=2>Events</td>
+	<td><font color=blue face=Verdana size=2>&nbsp</td>
+</tr>
+
+<tr>
+	<td align=middle colspan=3><font color=blue face=Verdana size=2><b><I>REFERENCE DATA ...</I></b></td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2><b>Source Area</td>
+	<td><font color=blue face=Verdana size=2><b>Source Field</td>
+	<td><font color=blue face=Verdana size=2><b>Target Field</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incident_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>Event_Outcomes</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incident_Status</td>
+	<td><font color=blue face=Verdana size=2>Event_Status</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Incident_Types</td>
+	<td><font color=blue face=Verdana size=2>Event_Types</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>Job_Titles</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Case Management</td>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>Staff_Types</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+	<td><font color=blue face=Verdana size=2>Address_Types</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incident_Outcomes</td>
+	<td><font color=blue face=Verdana size=2>Event_Outcomes</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incident_Status</td>
+	<td><font color=blue face=Verdana size=2>Event_Status</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Incident_Types</td>
+	<td><font color=blue face=Verdana size=2>Event_Types</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>Job_Titles</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Police Departments</td>
+	<td><font color=blue face=Verdana size=2>Roles</td>
+	<td><font color=blue face=Verdana size=2>Staff_Types</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Gender</td>
+	<td><font color=blue face=Verdana size=2>Gender</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Offence_Category</td>
+	<td><font color=blue face=Verdana size=2>Event_Types</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Probation_Status</td>
+	<td><font color=blue face=Verdana size=2>Event_Status</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Prisons and Prisoners</td>
+	<td><font color=blue face=Verdana size=2>Staff_Roles</td>
+	<td><font color=blue face=Verdana size=2>Staff_Types</td>
+</tr>
+
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Document_Types</td>
+	<td><font color=blue face=Verdana size=2>Document_Types</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Payment_Methods</td>
+	<td><font color=blue face=Verdana size=2>Payment_Methods</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Ranks</td>
+	<td><font color=blue face=Verdana size=2>Job_Titles</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Ticket_Status</td>
+	<td><font color=blue face=Verdana size=2>Document_Status</td>
+</tr>
+<tr>
+	<td><font color=blue face=Verdana size=2>Traffic Cops and Tickets</td>
+	<td><font color=blue face=Verdana size=2>Vehicle_Types</td>
+	<td><font color=blue face=Verdana size=2>Vehicle_Types</td>
+</tr>
+
+</table>
+
+
+
+</td>
+
+<tr>
+
+
+
+<tr>
+<td colspan=2><font color=blue face=Verdana size=2>
+<br><b>PLEASE EMAIL ME</b>
+
+<UL>
+<b><li>During this short Tutorial,we have covered the following Topics :-</b>
+	<OL><li>An Approach to MDM
+	<li>Creating a Data Dictionary
+	<li>Mapping from Sources to the Target MDM Data Model.
+	<li>Reference Data
+	</OL>
+</OL>
+
+<li>I hope you have found this Tutorial interesting and useful.
+<li>I would be pleased to have
+<a href='mailto:databaseanswers&#64;gmail.com?subject=Comments on MDM Technical Tutorial'>your comments</a> with your questions or suggestions.
+
+<br><br>Good luck with your first MDM Project !
+
+<br><br><b>Barry Williams</b>
+<br>Principal Consultant
+<br>Database Answers Ltd.
+<br>London, England
+
+</OL>
+</td>
+
+<tr>
+
+</table>
+
+
+
+
+
+
+          </td>
+        </tr>
+      </table>
+
+<!--  End of Table ?? --->
+
+<!--- barry extract ends here --->
+
+<br>
+
+
+	<!-- Sample Section Ends -->
+	<!-- Body Ends -->
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><a style="text-decoration:none" href="../index.html"><font color="#FFFFFF" face=Verdana size=2>Home</font></a></td>
+	<td width="11%"><a style="text-decoration:none" href="../pi_ask_a_question/index.asp"><font color="#FFFFFF" face=Verdana size=2>
+	Ask a Question</font></a></td>
+	<td width="10%">
+	<a style="text-decoration:none" href="../pi_best_practice_display/index.asp"><font color="#FFFFFF" face=Verdana size=2>Best Practice</font></a></td>
+
+    	<td width="9%">
+<!--- <a style="text-decoration:none" href="../pi_communities/boards.asp"><font color="#FFFFFF" face=Verdana size=2>Communities</font></a> --->
+	<a style="text-decoration:none" href="../careers.html"><font color="#FFFFFF" face=Verdana size=2>Careers</font></a>
+	</td>
+	<td width="9%"><a style="text-decoration:none" href="../contact_us.html"><font color="#FFFFFF" face=Verdana size=2>Contact Us</font></a>
+	</td>
+         <td width="10%"><a style="text-decoration:none" href="../data_models/index.html"><font color=white face=Verdana size=2>Data Models</font></a></td>
+
+         <td width=10%><a style="text-decoration:none" href="../tutorials.html"><font color=yellow face=Verdana size=2>Tutorials</font></a></td>
+
+          <td width="7%"><a style="text-decoration:none" href="../search.html"><font color="#FFFFFF" face=Verdana size=2>Search</font></td>
+          <td width=20% WIiiiDTH=10% width="30%"><a style="text-decoration:none" href="../site_map.html"><font color="#FFFFFF" face=Verdana size=2>Site Map</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<font color=black face="Verdana" size=1>
+
+<br><center><font color=red><I> &#169 DatabaseAnswers.org 2009</I></font></center>
+
+</body>
+</html>
+

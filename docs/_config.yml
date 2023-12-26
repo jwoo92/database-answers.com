@@ -1,0 +1,55 @@
+title: Database Answers
+description: We provide advice on Best Practice in Data Modelling and over 1,000 free Databases.
+domain: www.database-answers.com       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://www.database-answers.com  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: ''                            # place folder name if the site is served in a subfolder
+timezone: America/New_York
+
+repository: jwoo92/database-answers.com
+
+# # Analytics
+# analytics:
+#   provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+#   google:
+#     tracking_id:
+#     anonymize_ip: # true, false (default)
+
+# SEO - https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      description:
+      # og:image default
+      image:
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-github-metadata
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  sass_dir: _sass
+
+# Exclude these files from your production _site
+exclude:
+  - assets/local
+  - files
+  - Gemfile*
+  - LICENSE
+  - node_modules
+  - package*
+  - README.md
+  - scripts
+  - faq-rich-results.json
+
+# Markdown rendering
+markdown: kramdown

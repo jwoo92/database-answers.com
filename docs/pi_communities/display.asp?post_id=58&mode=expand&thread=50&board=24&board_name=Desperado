@@ -82,17 +82,17 @@
 		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
 		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Original Message</b></font></td>
 		</tr>
-	
+
 		<tr bgcolor="#CCCCCC" valign=top>
 		<td>
-		
+
 			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 			<b><a href="profile.asp?id=1"><font color="#990000">dba_admin</font></a></b><br>
 			<font size=1">Posts: 30</font>
 			<p>
-			
-			
-		
+
+
+
 		</td>
 		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 		<table border=0 cellpadding=0 cellspacing=0 width=100%>
@@ -109,11 +109,20 @@
 			</form>
 		</table>
 		<hr>
-		1) Data Dictionary - Dave P Bradley <dbradle9@csc.com><br><br>2) Help Desk - Karl Smith <Karl.Smith@orkney.gov.uk> <br><br>3) Help Desk - Annette Massie <annettem@CO.Saint-Croix.WI.US><br><br><br><br><br>
+		1) Data Dictionary - Dave P Bradley <dbradle9@csc.com>
+<br>
+<br>2) Help Desk - Karl Smith <Karl.Smith@orkney.gov.uk>
+<br>
+<br>3) Help Desk - Annette Massie <annettem@CO.Saint-Croix.WI.US>
+<br>
+<br>
+<br>
+<br>
+<br>
 		</font></td>
 		</tr>
 	</table>
-	
+
 	<p>
 	<table border=0 cellpadding=2 cellspacing=0 width=100%>
 		<tr>
@@ -125,17 +134,17 @@
 		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
 		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
 		</tr>
-	
+
 		<a name="58"></a>
 		<tr bgcolor="#E2E2E2" valign=top>
 		<td>
-		
+
 			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 			<b><a href="profile.asp?id=1"><font color="#990000">dba_admin</font></a></b><br>
 			<font size=1">Posts: 30</font>
 			<p>
-			
-			
+
+
 		</td>
 		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 		<table border=0 cellpadding=0 cellspacing=0 width=100%>
@@ -152,20 +161,30 @@
 			</form>
 		</table>
 		<hr>
-		Another Data Dictionary :-<br>ck.poon@hactl.com<br><br>Question dated 19th. Oct 2003 :-<br>Question: Few books provide details on data dictionary design and the application of repository for this purpose. <br>Where can I find information on data dictionary design and repository? <br>What are the functions of a repository product in data modeling and database design? <br>How common is it? <br>Background: Currently, we are doing an enterprise data architecture design. Data architecture is a part of the huge initiative, others being security architecture, services architecture, application architecture and so on. <br><br>I need a repository that implements data dictionaries for the whole enterprise and that can integrate the resources of data architecture and other architectures.
+		Another Data Dictionary :-
+<br>ck.poon@hactl.com
+<br>
+<br>Question dated 19th. Oct 2003 :-
+<br>Question: Few books provide details on data dictionary design and the application of repository for this purpose.
+<br>Where can I find information on data dictionary design and repository?
+<br>What are the functions of a repository product in data modeling and database design?
+<br>How common is it?
+<br>Background: Currently, we are doing an enterprise data architecture design. Data architecture is a part of the huge initiative, others being security architecture, services architecture, application architecture and so on.
+<br>
+<br>I need a repository that implements data dictionaries for the whole enterprise and that can integrate the resources of data architecture and other architectures.
 		</font></td>
 		</tr>
-		
+
 		<a name="58"></a>
 		<tr bgcolor="#CCCCCC" valign=top>
 		<td>
-		
+
 			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 			<b><a href="profile.asp?id=1"><font color="#990000">dba_admin</font></a></b><br>
 			<font size=1">Posts: 30</font>
-			<p>
-			
-			
+			<p>.html
+
+
 		</td>
 		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
 		<table border=0 cellpadding=0 cellspacing=0 width=100%>
@@ -182,14 +201,37 @@
 			</form>
 		</table>
 		<hr>
-		Contact : Leon Smith <br>Email   : bigceasie@hotmail.com <br>Date    : 5/19/2003<br>Question :-<br>how do i create a data dictionary<br>Question: i have just completed making my database and have completed most of the write up. i now need to create a data dictionary but do not know how to lay it out. <br><br>My Answer :-<br>1) My experience has been that there is a common basic design but then specific situations have specific needs.<br>2) The Data Dictionary would normally come first - maybe you mean a database design. You can create your own data dictionary from the RDBMS data dictionary.<br><br>3) I suggest that you design the tables you need and create an Access database. <br><br>4) Here''s a starting-point Data Model :-<br>http://www.databaseanswers.com/data_models/data_dictionary/index.htm<br><br>5) Then load it with data from a spreadsheet (prepared earlier).<br>6) Then design and run some queries to clarify the requirements.<br><br>Barry Williams<br>Principal Consultant<br>Database Answers<br><br> 
+		Contact : Leon Smith
+<br>Email   : bigceasie@hotmail.com
+<br>Date    : 5/19/2003
+<br>Question :-
+<br>how do i create a data dictionary
+<br>Question: i have just completed making my database and have completed most of the write up. i now need to create a data dictionary but do not know how to lay it out.
+<br>
+<br>My Answer :-
+<br>1) My experience has been that there is a common basic design but then specific situations have specific needs.
+<br>2) The Data Dictionary would normally come first - maybe you mean a database design. You can create your own data dictionary from the RDBMS data dictionary.
+<br>
+<br>3) I suggest that you design the tables you need and create an Access database.
+<br>
+<br>4) Here''s a starting-point Data Model :-
+<br>http://www.databaseanswers.com/data_models/data_dictionary/index.html
+<br>
+<br>5) Then load it with data from a spreadsheet (prepared earlier).
+<br>6) Then design and run some queries to clarify the requirements.
+<br>
+<br>Barry Williams
+<br>Principal Consultant
+<br>Database Answers
+<br>
+<br>
 		</font></td>
 		</tr>
-		
-	</table>
-	
 
-	<!-- Body Ends -->	
+	</table>
+
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>

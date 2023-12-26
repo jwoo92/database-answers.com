@@ -57,7 +57,7 @@
 	<tr>
 	<td>
 	<!-- Body Starts -->
-	
+
 	<!-- Sample Section Starts -->
 	<table border=0 cellpadding=0 cellspacing=0 width=100%>
 		<tr>
@@ -76,20 +76,20 @@
 		</tr>
 	</table>
 	<!-- Sample Section Ends -->
-	
+
 	<p>
 
 <font face="Verdana" size=2 color="blue">
 <b><font COLOR=blue size=+1>Meeting the Basel Requirements</font></b><br><p><p><font color="red"><b><LI></b></font>&nbsp;<font color="red"><b>Introduction</b></font><p>Basel addresses the question of Risk Management and the implications for Data Management within a Bank.
-<BR>We have prepared a 
-<A HREF="../white_papers/basel_requirements.htm">White Paper</A> which spells out the steps involved in a comprehensive approach.
-<table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=10></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue">1.1       Vendors <br>MetaMatrix have produced an excellent overview of the implications of Basel Accord, and they are working with Versata to present a consolidated approach which integrates Business Rules. </font></td></tr></table><p><font color="red"><b><li></b></font>&nbsp;<font color="red"><b>Step 1</b></font><p>Define the Data Sources using the 
-<A HREF="http://www.databaseanswers.org/pi_information_catalog/template4_sources.htm">Template</A>.
-<p><font color="red"><b><LI></b></font>&nbsp;<font color="red"><b>Step 2</b></font><p>Define the Mapping Specifications using the 
-<A HREF="../pi_information_catalog/template4_mapping.htm">Template</A>.
+<BR>We have prepared a
+<A HREF="../white_papers/basel_requirements.html">White Paper</A> which spells out the steps involved in a comprehensive approach.
+<table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=10></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue">1.1       Vendors <br>MetaMatrix have produced an excellent overview of the implications of Basel Accord, and they are working with Versata to present a consolidated approach which integrates Business Rules. </font></td></tr></table><p><font color="red"><b><li></b></font>&nbsp;<font color="red"><b>Step 1</b></font><p>Define the Data Sources using the
+<A HREF="http://www.databaseanswers.org/pi_information_catalog/template4_sources.html">Template</A>.
+<p><font color="red"><b><LI></b></font>&nbsp;<font color="red"><b>Step 2</b></font><p>Define the Mapping Specifications using the
+<A HREF="../pi_information_catalog/template4_mapping.html">Template</A>.
 </font>
-	
-	<!-- Body Ends -->	
+
+	<!-- Body Ends -->
 	</td>
 	</tr>
 	</table>

@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+
+<head><title>Steps in Data Migration</title></head>
+
+<body background="images/gmi_bk.jag" bgcolor="#FFFFCC" text="#202020">
+
+<a name="TOP">
+
+<table BGCOLOoooR="#FFFFCC" border=0 width=90%>
+<tr>
+<td align=left valign=top>
+<img alt="Database Answers Logo" border=0 height=58 width=400 src="../images/dba_400_home.jpg"></td>
+<td rowspan=2>
+<img align=right alt="Steps to Peacock Pond, Florida, Courtesy of Robert Smith, Australia" border=1 heiight=129 wiidth=129 src="../images/steps_xsml.jpg">
+</td>
+</tr>
+
+</table>
+
+<table bgcolor=blue border=0 width=90%>
+<tr>
+<td align=left colspan=1 valign=TOP width=40>
+<a href="../index.html"><img alt="Home" border=0 src="../images/buttons/home_alt.gif"></a>
+</td>
+<td align=left valign=top width=100>
+<a href="../ask_a_question.html"><img alt="Ask a Question" border=0 src="../images/buttons/ask_a_question_alt.gif"></a>
+</td><td align=left valign=top width=85>
+<a href="../data_models/index.html"><img alt="Data Models" border=0 src="../images/buttons/data_models_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../faqs.html"><img alt="FAQs" border=0 src="../images/buttons/faqs_alt.gif"></a>
+</td><td align=left valign=top width=75>
+<a href="../sql_scripts/index.html"><img alt="SQL Scripts" border=0 src="../images/buttons/sql_scripts_alt.gif"></a>
+</td><td align=left valign=top width=50>
+<a href="../search.html"><img alt="Search" border=0 src="../images/buttons/search_alt.gif"></a>
+</td><td align=left valign=top width=62>
+<a href="../site_map.html"><img alt="Site Map" border=0 src="../images/buttons/site_map_alt.gif"></a>
+</td>
+<td align=right valign=top><font color=white face="Verdana" size="1">&nbsp</td>
+</tr>
+
+</table>
+
+<font color=red face="Comic Sans MS" size=4><b>Steps in a General Approach to Data Migration</b></font>
+
+
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+
+<font color=green face="Verdana" size=2>
+
+<!-- begin body Text -->
+
+<P>This Page describes a series of Steps in a General Approach to Data Migration
+between Source Systems and Target Systems.
+<br>It covers Extract, Transformation and Load.
+<br>Here's a <a href="simple_migration_approach.html">Simple Approach</a> to Migration.
+<P>There are no technical risks in Data Migration because it is a well-established
+procedure.
+<br>However, it is important to get User involvement right from the start, and
+<br>to get User sign-off at the end when all the Data has been successfully migrated.
+
+<P>
+<UL>
+<li><b><font color=blue>Setting-up the Data Migration Process ...</font></b>
+<OL>
+<font color=green>
+
+<li>Choose a <a href="../modelling_tools.html">Data Modelling Tool</a>
+with Reverse Engineering Capability,(such as ERWin).</font>
+
+<li>Define and create the <a href="../data_dictionary.html">Data Dictionary</a>.
+
+<font color=green><li>Identify all the required <a href="data_islands.html"><b>Data Sources</b></a>, and an 'owner' for each Source.
+<UL>
+<li><a HREeF="data_islands.html">Data Feeds</a>
+<li><a HREeF="data_islands.html">Legacy Systems</a>
+<li><a HREeF="data_islands.html">Operational Data Stores</a>
+</UL>
+</font>
+
+<font color=green><li>If your Sources include Access Databases,
+then check out <a href="http://mdbtools.sourceforge.net/" target="_new">MDB Tools</a>,
+from Brian Burns.
+
+<li>Define the Data Items required, in consultation with the Users.</font>
+<font color=green><li>Create the Data Models for the Source Data.</font>
+
+<li>Define <a href="data_validation_checks.html">Data Validation Checks</a> (bottom-up) and Clean-Up Business Rules for Source Data.</a>
+
+<!--- <a HREeeF="staging_area.html"><font color=green><li>Define the Validation and Conversion</a> for each Data Item.</font> --->
+
+<li>Carry out  <a href="db_quality_audit.html">an Audit of the Data Quality</a> in major Databases, (bottom-up and top-down).
+
+<!--- <br>Consider using a Data Quality Management tool, such as <a href="http://www.similaritysystems.com/index.html" target="_new">Athanor</a> from Similarity software. --->
+
+<br>Evaluate the benefits of a Data Cleansing Product, such as <a href="http://www.candc-uk.com/ccproducts.html" target="_new">Seamless</a> from
+<a href="http://www.candc-uk.com" target="_new">the C and C Group</a>.
+<a HREeeF="staging_area.html"><font color=green><li>Define the Staging Area</a>, with MIRror Tables to store Extract Files.</font>
+<a HREeF="http://www.metagon.com/">
+<font color=green><li>Create the <b>Business Data Model</b> for the Consolidated Database</font></a>
+
+<font color=green><li>If the final target is an ERP, such as SAP, then create the <b>Data Model</b> for the Target ERP Database</font></a>
+<br>For SAP, J.D.Edwards, Peoplesoft and Siebel, a Modelling Tool called
+<a href="http://www.silwoodtechnology.com/products.html" target="_new"><b>Saphir</b></a>, from Silwood Technology
+<br>can be very useful here.
+
+<font color=green><li>Define the <a href="migration_mapping.html"><font color=green><b>Data Mapping</b></a> between Source and Target Data Items.
+
+<!---
+<br><a HREeF="chk_sys_cat.html">If possible, use SQL Script to check System Catalogues</a>
+--->
+
+<font color=green>
+<li>Optionally, <a href="crud_matrix.html">create a CRUD Matrix</b></a> to identify the interactions between Data and Functions.</font>
+<!--- <li>Carry out  <a href="db_quality_audit.html">an Audit of the Data Quality</a> in major Databases. --->
+<!--- <li>Define <a href="data_validation_checks.html">Data Validation Checks</a> and Clean-Up Business Rules for Source Data.</a> --->
+<li><a HREeF="../modelling_tools.html">Define Acceptance Tests for data in the Integrated Database.</a>
+</OL>
+
+<font color=blue>
+
+<P>
+<li><b>Executing the Data Migration Process.</b></font>
+<OL><font color=green>
+<li>Optionally, choose a <a href="../vendors_migration_tools.html">Data Migration Tool.</a>
+<li><a HREeF="../modelling_tools.html">Create Extract Files for each Data Source in turn</a>.
+<li><a HREeF="../modelling_tools.html">Resolve any Errors with the Users.</a>
+<li><a HREeF="../modelling_tools.html">Create Extract and perform Data Clean-Up.
+<li><a HREeF="../modelling_tools.html">Complete the Migration, (Extract, Transform and Load) for each Data Source.</a>
+<li><a HREeF="../modelling_tools.html">Run Acceptance Tests on the Integrated Target Database,(esp. Referential Integrity).</a>
+</font>
+
+</OL>
+
+</UL>
+
+<P>
+There are not many <font color=blue><b>books on Database Migration</b></font>, but here are two :-
+<OL><li>Migrating Legacy Systems, by Brodie and Stonebraker
+<br>Stonebraker is well-respected as the Architect of Ingres, but I didn't like this book very much.
+<br>
+At <a href="http://www.amazon.com/exec/obidos/ASIN/1558603301/qid=980637443/sr=2-3/ref=sc_b_3/102-6273647-8032908" target="_new">
+Amazon.com</a>, but the only reviewer gave it 4 stars.
+<li>90 Days to the Data Mart, by Alan Simon.
+<br>This,of course,is devoted to Data Marts, but covers some common ground.
+<br>At <a href="http://www.amazon.com/exec/obidos/ASIN/0471251941/qid=980637607/sr=2-1/ref=sc_b_1/102-6273647-8032908" target="_new">
+Amazon.com</a>, but the only reviewer gave this one 5 Stars.
+</OL>
+
+</body>
+
+<!-- Start of Standard Footer -->
+<hr size=3>
+<center><font face="Verdana" size=1>
+        [ <a href="../index.html">Home Page</a>
+        | <a href="../ask_a_question.html">Ask Me a Question</a>
+        | <a href="mailto:info@databaseanswers.com">Email Me</a>
+        | <a href="../site_map.html">Site Map</a> ]
+</center>
+<hr size=3>
+<!-- End of  Standard Footer -->
+
+<center><font size=1><I> &#169 DatabaseAnswers.com 2003</I></font></center>
+
+</html>
+
